@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import { u } from '../lib/data.js';
+import { AMAZON_DISCLOSURE } from '../lib/affiliate.js';
 ---
 <Base title="About, disclaimer and dealer opt-out">
   <h1>About UsedGlass.ca</h1>
@@ -10,8 +11,11 @@ import { u } from '../lib/data.js';
     <li>Prices, condition grades and availability come from dealer websites and are shown "as of" the time we checked. They change often. The dealer's own page is always the authority.</li>
     <li>Condition grades are translated from each dealer's own scale (e.g. LN, EX+, BGN, A+, 8/10) into a common five-step scale and may not match exactly.</li>
     <li>Model grouping and "deal" flags are automatic and can be wrong. Check the exact model, version and included accessories before buying.</li>
-    <li>We are not affiliated with any dealer or manufacturer. Some links may become affiliate links in future; that never changes prices or rankings, and we'll label it.</li>
+    <li>We are not affiliated with any dealer or manufacturer. See the affiliate disclosure below.</li>
   </ul>
+  <h2 id="affiliates">Affiliate disclosure</h2>
+  <p>{AMAZON_DISCLOSURE}</p>
+  <p>Some links on UsedGlass.ca, such as the "Check new price on Amazon.ca" links on model pages, are affiliate links. If you buy through one, we may earn a small commission at no extra cost to you. Affiliate links are marked, and they never change the prices we show or how listings are ranked. Dealer listing links are not affiliate links.</p>
   <h2 id="dealers">For dealers: listing, corrections and opt-out</h2>
   <p>We only read pages that are publicly available and allowed by your robots.txt, at most once a day, with an identifiable user agent (<code>UsedGlassBot</code>) and polite rate limits. If you'd like a correction, a better data feed, or to be removed, email us and we'll act within 2 business days. To block us automatically, disallow <code>UsedGlassBot</code> in robots.txt.</p>
   <p class="muted">Contact: hello@usedglass.ca (inbox coming soon)</p>

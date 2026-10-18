@@ -2,10 +2,12 @@
 import Base from '../../layouts/Base.astro';
 import ListingTable from '../../components/ListingTable.astro';
 import { models, byId, money, u } from '../../lib/data.js';
+import { amazonSearchUrl, SPONSORED_REL } from '../../lib/affiliate.js';
 export function getStaticPaths() {
   return Object.values(models).map((m) => ({ params: { key: m.key }, props: { m } }));
 }
 const { m } = Astro.props;
+const amazonUrl = amazonSearchUrl(m.name);
 const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => a.price_cad - b.price_cad);
 ---
 <Base title={`${m.name}: used prices in Canada`} description={`Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
@@ -17,6 +19,7 @@ const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => 
     <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">median, last 90 days ({m.observations_90d} listings seen)</span></div>
     <div><b>{rows.length}</b><span class="muted">listings at {m.dealers.length} {m.dealers.length === 1 ? 'seller' : 'sellers'}</span></div>
   </div>
+  <p class="amazon-cta"><a href={amazonUrl} rel={SPONSORED_REL} target="_blank">Check new price on Amazon.ca</a> <span class="muted">(affiliate link)</span></p>
   <ListingTable rows={rows} showModel={false} />
   <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
 </Base>

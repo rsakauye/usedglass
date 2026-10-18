@@ -1,6 +1,7 @@
 ---
 import NewsletterForm from '../components/NewsletterForm.astro';
 import { u, meta, asOf } from '../lib/data.js';
+import { AMAZON_DISCLOSURE } from '../lib/affiliate.js';
 const { title = 'UsedGlass.ca', description = 'Used camera and lens prices from Canadian dealers, updated daily.' } = Astro.props;
 const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens prices in Canada' : `${title} · UsedGlass.ca`;
 ---
@@ -72,7 +73,8 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
       </div>
       <div class="muted">
         Data refreshed daily from dealer websites. Last update: {asOf(meta.run_at)}.<br />
-        Prices and availability change; always confirm on the dealer's site. <a href={u('about/')}>Disclaimer &amp; dealer opt-out</a> · <a href={u('rss.xml')}>RSS</a>
+        Prices and availability change; always confirm on the dealer's site. <a href={u('about/')}>Disclaimer &amp; dealer opt-out</a> · <a href={u('rss.xml')}>RSS</a><br />
+        <span class="affiliate-disclosure">Some links are affiliate links, so we may earn a commission at no extra cost to you. {AMAZON_DISCLOSURE} <a href={u('about/#affiliates')}>Learn more</a></span>
       </div>
     </div>
   </footer>
