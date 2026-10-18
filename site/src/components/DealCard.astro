@@ -1,0 +1,17 @@
+---
+import { money, asOf, modelUrl } from '../lib/data.js';
+const { d, headline = false } = Astro.props;
+---
+{d && (
+  <div class="card deal">
+    {headline && <div class="muted">Deal of the day</div>}
+    <div style="font-weight:600"><a href={d.url} rel="nofollow noopener" target="_blank">{d.title}</a></div>
+    <div class="big">{d.price_cad != null ? money(d.price_cad) : ''}</div>
+    <div class="muted">{d.dealer}{d.condition ? ` · ${d.condition}` : ''}{d.comp_median ? ` · typical ${money(d.comp_median)}` : ''}</div>
+    <ul style="margin:.4rem 0 .2rem 1.1rem;padding:0">{(d.reasons || []).map((r) => <li>{r}</li>)}</ul>
+    <div class="muted">
+      {d.model_key && <a href={modelUrl(d.model_key)}>Compare all {d.model_name} listings</a>}
+      {d.model_key && ' · '}as of {asOf(d.fetched_at)}
+    </div>
+  </div>
+)}

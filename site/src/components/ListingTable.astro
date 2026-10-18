@@ -1,0 +1,25 @@
+---
+import { money, asOf, modelUrl } from '../lib/data.js';
+const { rows = [], showModel = true } = Astro.props;
+---
+<table>
+  <thead><tr><th>Item</th><th>Dealer</th><th>Condition</th><th class="price">Price (CAD)</th><th>As of</th></tr></thead>
+  <tbody>
+    {rows.map((l) => (
+      <tr>
+        <td>
+          <a href={l.url} rel="nofollow noopener" target="_blank">{l.title}</a>
+          <div>
+            {l.mount && <span class="pill">{l.mount}</span>}
+            {showModel && l.model_key && <a class="pill" href={modelUrl(l.model_key)}>Compare {l.model_name}</a>}
+            {l._badge && <span class="pill good">{l._badge}</span>}
+          </div>
+        </td>
+        <td>{l.dealer}{l.location && <div class="muted">{l.location}</div>}</td>
+        <td>{l.condition ?? <span class="muted">Not graded</span>}</td>
+        <td class="price">{money(l.price_cad)}{l.prev_price && l.prev_price > l.price_cad && <div class="muted"><s>{money(l.prev_price)}</s></div>}</td>
+        <td class="muted">{asOf(l.fetched_at)}{l.stale && <div class="pill warn">dealer fetch failed, older data</div>}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>

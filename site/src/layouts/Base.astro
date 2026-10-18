@@ -1,0 +1,79 @@
+---
+import { u, meta, asOf } from '../lib/data.js';
+const { title = 'UsedGlass.ca', description = 'Used camera and lens prices from Canadian dealers, updated daily.' } = Astro.props;
+const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens prices in Canada' : `${title} · UsedGlass.ca`;
+---
+<!doctype html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="alternate" type="application/rss+xml" title="UsedGlass.ca deals" href={u('rss.xml')} />
+  <link rel="icon" href={u('favicon.svg')} type="image/svg+xml" />
+  <style is:global>
+    :root { --fg:#16181d; --muted:#5b6170; --bg:#fafafa; --card:#fff; --line:#e4e6eb; --accent:#0f6fde; --good:#0a7d38; --warn:#b54708; }
+    * { box-sizing: border-box; }
+    body { margin:0; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--fg); background:var(--bg); }
+    a { color: var(--accent); }
+    header.site { background:#111; color:#fff; }
+    header.site .wrap { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between; }
+    header.site a { color:#fff; text-decoration:none; }
+    header.site nav a { margin-right:1rem; opacity:.85; font-size:.95rem; }
+    header.site nav a:hover { opacity:1; }
+    .logo { font-weight:800; font-size:1.25rem; letter-spacing:-.02em; }
+    .logo span { color:#7cc4ff; }
+    .wrap { max-width:1150px; margin:0 auto; padding:.8rem 1rem; }
+    main.wrap { padding-top:1.2rem; padding-bottom:3rem; }
+    .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1rem; }
+    .muted { color:var(--muted); font-size:.9rem; }
+    table { border-collapse: collapse; width:100%; background:var(--card); }
+    th, td { text-align:left; padding:.45rem .55rem; border-bottom:1px solid var(--line); vertical-align:top; font-size:.93rem; }
+    th { background:#f2f3f5; font-weight:600; }
+    td.price, th.price { text-align:right; white-space:nowrap; font-variant-numeric: tabular-nums; }
+    .pill { display:inline-block; font-size:.75rem; padding:.05rem .45rem; border-radius:99px; background:#eef1f6; color:#334; margin-right:.25rem; white-space:nowrap; }
+    .pill.good { background:#e3f6ea; color:var(--good); }
+    .pill.warn { background:#fff1e6; color:var(--warn); }
+    .grid { display:grid; gap:1rem; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .deal { border-left:4px solid var(--good); }
+    .big { font-size:1.6rem; font-weight:700; }
+    footer.site { border-top:1px solid var(--line); background:#fff; }
+    footer.site .wrap { display:flex; flex-wrap:wrap; gap:1.5rem; justify-content:space-between; font-size:.9rem; }
+    input, select, button { font:inherit; padding:.4rem .5rem; border:1px solid #c9ccd3; border-radius:6px; background:#fff; }
+    button { cursor:pointer; background:var(--accent); color:#fff; border-color:var(--accent); }
+    h1 { line-height:1.2; margin:.2rem 0 .6rem; }
+    .stats { display:flex; flex-wrap:wrap; gap:1.5rem; margin:.6rem 0 1rem; }
+    .stats div b { display:block; font-size:1.3rem; }
+  </style>
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a class="logo" href={u('')}>Used<span>Glass</span>.ca</a>
+      <nav>
+        <a href={u('')}>Search</a>
+        <a href={u('deals/')}>Deals</a>
+        <a href={u('new/')}>New today</a>
+        <a href={u('drops/')}>Price drops</a>
+        <a href={u('rebates/')}>Rebates</a>
+        <a href={u('dealers/')}>Dealers</a>
+        <a href={u('about/')}>About</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap"><slot /></main>
+  <footer class="site">
+    <div class="wrap">
+      <div>
+        <b>Get the weekly used-gear deals email</b><br />
+        <span class="muted">Newsletter launching soon. <a href={u('newsletter/')}>Details</a></span>
+      </div>
+      <div class="muted">
+        Data refreshed daily from dealer websites. Last update: {asOf(meta.run_at)}.<br />
+        Prices and availability change; always confirm on the dealer's site. <a href={u('about/')}>Disclaimer &amp; dealer opt-out</a> · <a href={u('rss.xml')}>RSS</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
