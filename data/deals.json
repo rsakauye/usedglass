@@ -1,6 +1,6 @@
 {
  "date": "2026-10-18",
- "generated_at": "2026-10-18T13:28:47+00:00",
+ "generated_at": "2026-10-18T13:31:00+00:00",
  "deal_of_the_day": {
   "type": "listing",
   "id": "gosselin-44291abd64",
@@ -18,7 +18,7 @@
   ],
   "score": 71.1,
   "is_new": true,
-  "fetched_at": "2026-10-18T13:28:47+00:00"
+  "fetched_at": "2026-10-18T13:31:00+00:00"
  },
  "deals": [
   {
@@ -38,7 +38,7 @@
    ],
    "score": 71.1,
    "is_new": true,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -57,7 +57,7 @@
    ],
    "score": 69.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -76,7 +76,7 @@
    ],
    "score": 61.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -95,7 +95,7 @@
    ],
    "score": 56.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -114,7 +114,7 @@
    ],
    "score": 54.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -133,7 +133,7 @@
    ],
    "score": 53.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -152,7 +152,7 @@
    ],
    "score": 51.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -171,7 +171,7 @@
    ],
    "score": 50.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -190,7 +190,7 @@
    ],
    "score": 45.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -209,7 +209,7 @@
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -228,7 +228,7 @@
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -247,7 +247,7 @@
    ],
    "score": 41.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -266,7 +266,7 @@
    ],
    "score": 40.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -285,7 +285,7 @@
    ],
    "score": 39.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -304,7 +304,7 @@
    ],
    "score": 39.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -323,7 +323,7 @@
    ],
    "score": 38.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -342,7 +342,7 @@
    ],
    "score": 38.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -361,7 +361,7 @@
    ],
    "score": 37.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -380,7 +380,7 @@
    ],
    "score": 35.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -399,7 +399,7 @@
    ],
    "score": 35.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -418,7 +418,7 @@
    ],
    "score": 35.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -437,7 +437,7 @@
    ],
    "score": 34.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -456,7 +456,7 @@
    ],
    "score": 32.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -475,7 +475,7 @@
    ],
    "score": 32.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -494,7 +494,7 @@
    ],
    "score": 32.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -513,7 +513,7 @@
    ],
    "score": 32.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -532,7 +532,7 @@
    ],
    "score": 31.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -551,7 +551,7 @@
    ],
    "score": 31.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -570,7 +570,7 @@
    ],
    "score": 31.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -589,7 +589,7 @@
    ],
    "score": 30.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -608,7 +608,7 @@
    ],
    "score": 28.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -627,7 +627,7 @@
    ],
    "score": 28.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -646,7 +646,7 @@
    ],
    "score": 28.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -665,7 +665,7 @@
    ],
    "score": 28.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -684,7 +684,7 @@
    ],
    "score": 28.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -703,7 +703,7 @@
    ],
    "score": 27.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -722,7 +722,7 @@
    ],
    "score": 27.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -741,7 +741,7 @@
    ],
    "score": 26.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -760,7 +760,7 @@
    ],
    "score": 26.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -779,7 +779,7 @@
    ],
    "score": 25.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -798,7 +798,7 @@
    ],
    "score": 25.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -817,7 +817,7 @@
    ],
    "score": 24.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -836,7 +836,7 @@
    ],
    "score": 23.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   },
   {
    "type": "listing",
@@ -855,7 +855,7 @@
    ],
    "score": 23.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T13:28:47+00:00"
+   "fetched_at": "2026-10-18T13:31:00+00:00"
   }
  ],
  "rules": {
