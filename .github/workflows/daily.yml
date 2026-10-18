@@ -15,6 +15,7 @@ concurrency:
 
 permissions:
   contents: write
+  issues: write   # scrape-failure alerts (scraper/alert.py)
 
 jobs:
   run:
@@ -30,14 +31,24 @@ jobs:
           python-version: "3.12"
 
       - name: Unit tests
-        run: python -m unittest -v tests.test_normalize
+        run: python -m unittest -v tests.test_normalize tests.test_alert
 
       - name: Scrape dealers (+ eBay if keys are set) and compute deals
+        id: scrape
         env:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_CAMPAIGN_ID: ${{ secrets.EBAY_CAMPAIGN_ID }}
         run: python -m scraper.run
+
+      # Opens/updates one "scrape-alert" issue when a dealer errors, returns 0 listings or collapses;
+      # closes it automatically once every feed is healthy again. Never fails the build itself.
+      - name: Scrape-failure alert (GitHub issue)
+        if: always() && github.event_name != 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SCRAPE_OUTCOME: ${{ steps.scrape.outcome }}
+        run: python -m scraper.alert
 
       - name: Commit data
         run: |
