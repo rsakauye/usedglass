@@ -17,7 +17,7 @@ Every Friday you'll get:
 Want something specific? Search by mount, brand, condition or price at https://usedglass.ca, or check today's pick at https://usedglass.ca/deals/.
 
 Happy shooting,
-Russell
-UsedGlass.ca, Edmonton AB
+
+Russell, UsedGlass.ca (Edmonton, AB)
 
 *Prices and stock change quickly. Always confirm with the dealer before you buy. UsedGlass isn't affiliated with any dealer.*

@@ -8,7 +8,7 @@ Hi there,
 Here are this week's standouts from about 2,900 used listings at 6 Canadian dealers. Prices are from Oct 17, 2026. Used gear sells fast, so check the link before you get attached.
 
 ## Deal of the week
-**Fujifilm XF 23mm f/1.4 R LM WR: $399** at Gosselin Photo (condition grade 7/10, "Fair")
+**Fujifilm XF 23mm f/1.4 R LM WR: $399** at Gosselin Photo (condition grade 7/10, "Fair").
 That's 55% below the $895 median for the same lens across Canadian dealers. A cleaner copy (grade 8) is $599 at the same store.
 https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749
 
@@ -30,7 +30,6 @@ All current deals: https://usedglass.ca/deals/
 
 Want a specific lens? Search all dealers at https://usedglass.ca.
 
-Russell
-UsedGlass.ca
+Russell, UsedGlass.ca
 
 *Prices are as of Oct 17, 2026 and may have changed. Confirm condition and price with the dealer. "Median" is the middle asking price for the same model across the dealers we track. UsedGlass isn't affiliated with any dealer.*

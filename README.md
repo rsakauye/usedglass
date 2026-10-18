@@ -64,6 +64,11 @@ on the Pages project (Workers & Pages → usedglass → Custom domains).
 | `CLOUDFLARE_API_TOKEN` | Cloudflare → My Profile → API Tokens → custom token, *Account → Cloudflare Pages → Edit* | for usedglass.ca deploys |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account id | for usedglass.ca deploys |
 
+## Newsletter (Kit)
+Footer and `/newsletter/` post straight to Kit form `10061701` (`https://app.kit.com/forms/10061701/subscriptions`,
+field `email_address`). Override with the repo variable `KIT_FORM_ID` (or `off`). Draft copy for the welcome
+email and the first weekly broadcast lives in `newsletter/`.
+
 ## Feeds
 - `/rss.xml`: deal of the day + flagged deals (for auto-posting to X/Bluesky later)
 - `/listings.json`: compact listing array used by the search page
