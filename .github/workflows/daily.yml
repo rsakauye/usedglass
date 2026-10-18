@@ -57,7 +57,9 @@ jobs:
           git add data
           if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
           git commit -m "data: daily update $(TZ=America/Edmonton date +%F)"
-          git pull --rebase origin main
+          # Another run may have pushed data since checkout (e.g. back-to-back pushes). This run's data is the
+          # newest, so on a data/ conflict keep ours (-X theirs = the commit being replayed during rebase).
+          git pull --rebase -X theirs origin main
           git push origin HEAD:main
 
       - uses: actions/setup-node@v4
