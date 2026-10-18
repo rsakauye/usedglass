@@ -1,22 +1,22 @@
 [
  {
   "type": "listing",
-  "id": "mcbain-8a51bfe195",
-  "title": "Olympus OM G Zuiko Auto N 28mm F3.5 Used Lens",
-  "dealer": "McBain Camera",
-  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905373",
-  "price_cad": 119.99,
-  "comp_median": 250.0,
-  "comps": 3,
-  "model_key": "lens-olympus-micro-four-thirds-28mm-f3_5",
-  "model_name": "Olympus 28mm f/3.5 (Micro Four Thirds)",
-  "condition": null,
+  "id": "gosselin-6a5d22efee",
+  "title": "USAGE (8) - Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
+  "price_cad": 429.0,
+  "comp_median": 975.0,
+  "comps": 5,
+  "model_key": "camera-nikon-fe2",
+  "model_name": "Nikon FE2",
+  "condition": "Good",
   "reasons": [
-   "52% below the median of 3 comparable listings"
+   "56% below the median of 5 comparable listings"
   ],
-  "score": 55.0,
+  "score": 61.0,
   "is_new": false,
-  "fetched_at": "2026-10-18T04:51:19+00:00",
+  "fetched_at": "2026-10-18T05:29:06+00:00",
   "date": "2026-10-17"
  }
 ]

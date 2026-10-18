@@ -1,26 +1,45 @@
 {
  "date": "2026-10-17",
- "generated_at": "2026-10-18T04:51:19+00:00",
+ "generated_at": "2026-10-18T05:29:06+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "mcbain-8a51bfe195",
-  "title": "Olympus OM G Zuiko Auto N 28mm F3.5 Used Lens",
-  "dealer": "McBain Camera",
-  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905373",
-  "price_cad": 119.99,
-  "comp_median": 250.0,
-  "comps": 3,
-  "model_key": "lens-olympus-micro-four-thirds-28mm-f3_5",
-  "model_name": "Olympus 28mm f/3.5 (Micro Four Thirds)",
-  "condition": null,
+  "id": "gosselin-6a5d22efee",
+  "title": "USAGE (8) - Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
+  "price_cad": 429.0,
+  "comp_median": 975.0,
+  "comps": 5,
+  "model_key": "camera-nikon-fe2",
+  "model_name": "Nikon FE2",
+  "condition": "Good",
   "reasons": [
-   "52% below the median of 3 comparable listings"
+   "56% below the median of 5 comparable listings"
   ],
-  "score": 55.0,
+  "score": 61.0,
   "is_new": false,
-  "fetched_at": "2026-10-18T04:51:19+00:00"
+  "fetched_at": "2026-10-18T05:29:06+00:00"
  },
  "deals": [
+  {
+   "type": "listing",
+   "id": "gosselin-6a5d22efee",
+   "title": "USAGE (8) - Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
+   "price_cad": 429.0,
+   "comp_median": 975.0,
+   "comps": 5,
+   "model_key": "camera-nikon-fe2",
+   "model_name": "Nikon FE2",
+   "condition": "Good",
+   "reasons": [
+    "56% below the median of 5 comparable listings"
+   ],
+   "score": 61.0,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
   {
    "type": "listing",
    "id": "gosselin-69a8658b93",
@@ -38,26 +57,64 @@
    ],
    "score": 58.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-8a51bfe195",
-   "title": "Olympus OM G Zuiko Auto N 28mm F3.5 Used Lens",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905373",
-   "price_cad": 119.99,
-   "comp_median": 250.0,
+   "id": "downtowncamera-f39dd88c12",
+   "title": "LEICA 90F2 SUMMICRON CND",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 850.0,
+   "comp_median": 1750.0,
    "comps": 3,
-   "model_key": "lens-olympus-micro-four-thirds-28mm-f3_5",
-   "model_name": "Olympus 28mm f/3.5 (Micro Four Thirds)",
+   "model_key": "lens-leica-leica-m-90mm-f2",
+   "model_name": "Leica 90mm f/2 (Leica M)",
    "condition": null,
    "reasons": [
-    "52% below the median of 3 comparable listings"
+    "51% below the median of 3 comparable listings"
    ],
-   "score": 55.0,
+   "score": 54.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "camtec-6aa2b4ac79",
+   "title": "Sony ZEISS Sonnar FE 55mm f/1.8 ZA T* - *A*",
+   "dealer": "Camtec Photo",
+   "url": "https://www.camtecphoto.com/en/product/sony-zeiss-sonnar-fe-55mm-f18-za-t-a-4",
+   "price_cad": 445.0,
+   "comp_median": 895.0,
+   "comps": 3,
+   "model_key": "lens-zeiss-sony-e-55mm-f1_8",
+   "model_name": "Zeiss 55mm f/1.8 (Sony E)",
+   "condition": "Excellent",
+   "reasons": [
+    "50% below the median of 3 comparable listings"
+   ],
+   "score": 53.3,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-8c0f34a022",
+   "title": "USAGE (8) - Tamron SP 24-70mm f/2.8 DI VC USD Nikon",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-8-tamron-sp-24-70mm-f-28-di-vc-usd-nikon-u107326",
+   "price_cad": 399.0,
+   "comp_median": 749.0,
+   "comps": 5,
+   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
+   "condition": "Good",
+   "reasons": [
+    "47% below the median of 5 comparable listings"
+   ],
+   "score": 51.7,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -76,7 +133,7 @@
    ],
    "score": 50.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -95,45 +152,64 @@
    ],
    "score": 47.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
-   "id": "downtowncamera-f39dd88c12",
-   "title": "LEICA 90F2 SUMMICRON CND",
-   "dealer": "Downtown Camera",
-   "url": "https://downtowncamera.com/used-equipment",
-   "price_cad": 850.0,
-   "comp_median": 1425.0,
-   "comps": 4,
-   "model_key": "lens-leica-90mm-f2",
-   "model_name": "Leica 90mm f/2",
+   "id": "beauphoto-42952155b0",
+   "title": "Used Leitz Leica Canada Summicron-M 90mm f2",
+   "dealer": "Beau Photo",
+   "url": "https://www.beauphoto.com/product/used-leitz-leica-canada-summicron-m-90mm-f2/",
+   "price_cad": 1000.0,
+   "comp_median": 1750.0,
+   "comps": 3,
+   "model_key": "lens-leica-leica-m-90mm-f2",
+   "model_name": "Leica 90mm f/2 (Leica M)",
+   "condition": "Good",
+   "reasons": [
+    "43% below the median of 3 comparable listings"
+   ],
+   "score": 45.9,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-fb67f12cb8",
+   "title": "Pentax ME Super with Tokina 28mm F2.8 Used Film Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905430",
+   "price_cad": 99.99,
+   "comp_median": 159.99,
+   "comps": 5,
+   "model_key": "camera-pentax-mesuper",
+   "model_name": "Pentax MESUPER",
    "condition": null,
    "reasons": [
-    "40% below the median of 4 comparable listings"
-   ],
-   "score": 44.4,
-   "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "mcbain-7e12b94515",
-   "title": "Pentax-M 50mm F2 (BGN) Used Lens",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907079",
-   "price_cad": 45.99,
-   "comp_median": 75.99,
-   "comps": 3,
-   "model_key": "lens-pentax-pentax-k-50mm-f2",
-   "model_name": "Pentax 50mm f/2 (Pentax K)",
-   "condition": "Fair",
-   "reasons": [
-    "39% below the median of 3 comparable listings"
+    "38% below the median of 5 comparable listings"
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-a067338af6",
+   "title": "USAGE (8) - Nikon Z50",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107293",
+   "price_cad": 499.0,
+   "comp_median": 799.0,
+   "comps": 5,
+   "model_key": "camera-nikon-z50",
+   "model_name": "Nikon Z50",
+   "condition": "Good",
+   "reasons": [
+    "38% below the median of 5 comparable listings"
+   ],
+   "score": 42.5,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -152,26 +228,45 @@
    ],
    "score": 40.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-b764197581",
-   "title": "Pentax-M 50mm f2 (BGN) P/K used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907672",
-   "price_cad": 49.99,
-   "comp_median": 75.99,
-   "comps": 3,
-   "model_key": "lens-pentax-pentax-k-50mm-f2",
-   "model_name": "Pentax 50mm f/2 (Pentax K)",
+   "id": "gosselin-8e1b2fa8f6",
+   "title": "USAGE (7) - Tamron 24-70mm f/2.8 DI VC USD nikon af",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
+   "price_cad": 499.0,
+   "comp_median": 749.0,
+   "comps": 5,
+   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
    "condition": "Fair",
    "reasons": [
-    "34% below the median of 3 comparable listings"
+    "33% below the median of 5 comparable listings"
    ],
-   "score": 37.2,
+   "score": 38.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-d904dd1229",
+   "title": "USAGE (8) - Nikon Z50",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107036",
+   "price_cad": 549.0,
+   "comp_median": 799.0,
+   "comps": 5,
+   "model_key": "camera-nikon-z50",
+   "model_name": "Nikon Z50",
+   "condition": "Good",
+   "reasons": [
+    "31% below the median of 5 comparable listings"
+   ],
+   "score": 36.3,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -190,26 +285,26 @@
    ],
    "score": 36.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
-   "id": "beauphoto-42952155b0",
-   "title": "Used Leitz Leica Canada Summicron-M 90mm f2",
-   "dealer": "Beau Photo",
-   "url": "https://www.beauphoto.com/product/used-leitz-leica-canada-summicron-m-90mm-f2/",
-   "price_cad": 1000.0,
-   "comp_median": 1425.0,
-   "comps": 4,
-   "model_key": "lens-leica-90mm-f2",
-   "model_name": "Leica 90mm f/2",
-   "condition": "Good",
+   "id": "mcbain-0dbe689281",
+   "title": "Canon R5 Used Mirrorless Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905468",
+   "price_cad": 2100.0,
+   "comp_median": 2999.0,
+   "comps": 5,
+   "model_key": "camera-canon-r5",
+   "model_name": "Canon R5",
+   "condition": null,
    "reasons": [
-    "30% below the median of 4 comparable listings"
+    "30% below the median of 5 comparable listings"
    ],
-   "score": 33.8,
+   "score": 35.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -228,7 +323,7 @@
    ],
    "score": 33.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -247,7 +342,45 @@
    ],
    "score": 33.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-72164c5783",
+   "title": "Canon R5 Used Mirrorless Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905467",
+   "price_cad": 2199.99,
+   "comp_median": 2999.0,
+   "comps": 5,
+   "model_key": "camera-canon-r5",
+   "model_name": "Canon R5",
+   "condition": null,
+   "reasons": [
+    "27% below the median of 5 comparable listings"
+   ],
+   "score": 31.6,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-34ef9a3ad1",
+   "title": "MINOLTA 7000 W/35-70F3.5-4.5",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 250.0,
+   "comp_median": 350.0,
+   "comps": 3,
+   "model_key": "camera-minolta-7000",
+   "model_name": "Minolta 7000",
+   "condition": null,
+   "reasons": [
+    "29% below the median of 3 comparable listings"
+   ],
+   "score": 31.6,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -266,26 +399,26 @@
    ],
    "score": 30.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-0dbe689281",
-   "title": "Canon R5 Used Mirrorless Camera",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905468",
-   "price_cad": 2100.0,
-   "comp_median": 2797.0,
-   "comps": 4,
-   "model_key": "camera-canon-r5",
-   "model_name": "Canon R5",
+   "id": "downtowncamera-de9826a08a",
+   "title": "NIKON FE2 W/50F2",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 750.0,
+   "comp_median": 975.0,
+   "comps": 5,
+   "model_key": "camera-nikon-fe2",
+   "model_name": "Nikon FE2",
    "condition": null,
    "reasons": [
-    "25% below the median of 4 comparable listings"
+    "23% below the median of 5 comparable listings"
    ],
-   "score": 28.9,
+   "score": 28.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -304,26 +437,7 @@
    ],
    "score": 28.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "downtowncamera-de9826a08a",
-   "title": "NIKON FE2 W/50F2",
-   "dealer": "Downtown Camera",
-   "url": "https://downtowncamera.com/used-equipment",
-   "price_cad": 750.0,
-   "comp_median": 985.0,
-   "comps": 4,
-   "model_key": "camera-nikon-fe2",
-   "model_name": "Nikon FE2",
-   "condition": null,
-   "reasons": [
-    "24% below the median of 4 comparable listings"
-   ],
-   "score": 27.9,
-   "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -334,34 +448,34 @@
    "price_cad": 45.99,
    "comp_median": 59.99,
    "comps": 3,
-   "model_key": "lens-olympus-micro-four-thirds-50mm-f1_8",
-   "model_name": "Olympus 50mm f/1.8 (Micro Four Thirds)",
+   "model_key": "lens-olympus-olympus-om-50mm-f1_8",
+   "model_name": "Olympus 50mm f/1.8 (Olympus OM)",
    "condition": "Fair",
    "reasons": [
     "23% below the median of 3 comparable listings"
    ],
    "score": 26.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-72164c5783",
-   "title": "Canon R5 Used Mirrorless Camera",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905467",
-   "price_cad": 2199.99,
-   "comp_median": 2797.0,
-   "comps": 4,
-   "model_key": "camera-canon-r5",
-   "model_name": "Canon R5",
+   "id": "thecamerastore-d8137e6616",
+   "title": "Panasonic LUMIX S5 with S 20-60mm f3.5-5.6 *USED",
+   "dealer": "The Camera Store",
+   "url": "https://thecamerastore.com/products/panasonic-lumix-s5-with-s-20-60mm-f3-5-5-6-used",
+   "price_cad": 1400.0,
+   "comp_median": 1800.0,
+   "comps": 3,
+   "model_key": "camera-panasonic-s5",
+   "model_name": "Panasonic S5",
    "condition": null,
    "reasons": [
-    "21% below the median of 4 comparable listings"
+    "22% below the median of 3 comparable listings"
    ],
-   "score": 25.3,
+   "score": 25.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -380,7 +494,7 @@
    ],
    "score": 24.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   },
   {
    "type": "listing",
@@ -399,7 +513,45 @@
    ],
    "score": 24.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T04:51:19+00:00"
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-1acad17ecc",
+   "title": "Hasselblad HASSELBLA 150F4 T* BK",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 550.0,
+   "comp_median": 695.0,
+   "comps": 3,
+   "model_key": "lens-hasselblad-hasselblad-v-150mm-f4",
+   "model_name": "Hasselblad 150mm f/4 (Hasselblad V)",
+   "condition": null,
+   "reasons": [
+    "21% below the median of 3 comparable listings"
+   ],
+   "score": 23.9,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "thecamerastore-8b0c5a68ab",
+   "title": "Hasselblad 150mm f4 Sonnar *USED",
+   "dealer": "The Camera Store",
+   "url": "https://thecamerastore.com/products/hasselblad-150mm-f4-sonnar-used",
+   "price_cad": 550.0,
+   "comp_median": 695.0,
+   "comps": 3,
+   "model_key": "lens-hasselblad-hasselblad-v-150mm-f4",
+   "model_name": "Hasselblad 150mm f/4 (Hasselblad V)",
+   "condition": null,
+   "reasons": [
+    "21% below the median of 3 comparable listings"
+   ],
+   "score": 23.9,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:29:06+00:00"
   }
  ],
  "rules": {
