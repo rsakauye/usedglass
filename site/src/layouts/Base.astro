@@ -1,4 +1,5 @@
 ---
+import NewsletterForm from '../components/NewsletterForm.astro';
 import { u, meta, asOf } from '../lib/data.js';
 const { title = 'UsedGlass.ca', description = 'Used camera and lens prices from Canadian dealers, updated daily.' } = Astro.props;
 const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens prices in Canada' : `${title} · UsedGlass.ca`;
@@ -67,7 +68,7 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
     <div class="wrap">
       <div>
         <b>Get the weekly used-gear deals email</b><br />
-        <span class="muted">Newsletter launching soon. <a href={u('newsletter/')}>Details</a></span>
+        <NewsletterForm compact={true} />
       </div>
       <div class="muted">
         Data refreshed daily from dealer websites. Last update: {asOf(meta.run_at)}.<br />

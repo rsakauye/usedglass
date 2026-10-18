@@ -1,16 +1,13 @@
 ---
 import Base from '../layouts/Base.astro';
+import NewsletterForm from '../components/NewsletterForm.astro';
 import { u } from '../lib/data.js';
 ---
 <Base title="Weekly used-gear deals newsletter">
   <h1>The UsedGlass weekly</h1>
   <p>Every Friday: the best used camera and lens deals in Canada, new manufacturer rebates, and the biggest price drops of the week. Free.</p>
   <div class="card" style="max-width:520px">
-    <p><b>Sign-up is coming soon.</b></p>
-    <form onsubmit="return false" style="display:flex;gap:.5rem;flex-wrap:wrap" aria-disabled="true">
-      <input type="email" placeholder="you@example.com" disabled style="flex:1" />
-      <button type="button" disabled>Notify me</button>
-    </form>
-    <p class="muted">Until then, follow the <a href={u('rss.xml')}>deals RSS feed</a>.</p>
+    <NewsletterForm />
   </div>
+  <p class="muted">Also available: the <a href={u('rss.xml')}>deals RSS feed</a>.</p>
 </Base>

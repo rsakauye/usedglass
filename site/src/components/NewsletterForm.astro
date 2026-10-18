@@ -1,0 +1,17 @@
+---
+import { kitAction } from '../lib/newsletter.js';
+import { u } from '../lib/data.js';
+const { compact = false } = Astro.props;
+---
+{kitAction ? (
+  <form action={kitAction} method="post" class="nl-form" style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+    <label for={compact ? 'nl-email-footer' : 'nl-email'} class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+    <input id={compact ? 'nl-email-footer' : 'nl-email'} type="email" name="email_address" required placeholder="you@example.com" autocomplete="email" style="flex:1;min-width:200px" />
+    <button type="submit">{compact ? 'Subscribe' : 'Get the weekly deals'}</button>
+    {!compact && <p class="muted" style="flex-basis:100%;margin:.25rem 0 0">Free. One email a week. Unsubscribe anytime.</p>}
+  </form>
+) : (
+  compact
+    ? <span class="muted">Newsletter launching soon. <a href={u('newsletter/')}>Details</a></span>
+    : <div><p><b>Sign-up is coming soon.</b></p><p class="muted">Until then, follow the <a href={u('rss.xml')}>deals RSS feed</a>.</p></div>
+)}
