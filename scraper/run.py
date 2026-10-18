@@ -26,6 +26,8 @@ DEAL_MIN_COMPS = 3
 DROP_MIN = 0.10
 DEAL_MAX_DISCOUNT = 0.70
 HISTORY_DAYS = 120
+DROP_ALERT_RATIO = 0.4      # warn when a dealer returns <40% of yesterday's listings (partial layout break)
+DROP_ALERT_MIN_PREV = 25
 
 
 def load(path: Path, default):
@@ -47,6 +49,7 @@ def main(argv: list[str]) -> int:
     today = now_dt.astimezone(TZ).date().isoformat()
     picks = argv or list(ADAPTERS) + ["ebay"]
     prev_listings = {x["id"]: x for x in load(DATA / "listings.json", [])}
+    prev_meta = load(DATA / "meta.json", {})
     state = load(DATA / "state.json", {})
     meta = {"run_at": now, "date": today, "dealers": {}, "errors": {}}
 
@@ -62,6 +65,10 @@ def main(argv: list[str]) -> int:
                 raise RuntimeError("0 listings parsed (layout change?)")
             listings += rows
             meta["dealers"][k] = {"count": len(rows), "status": "ok", "seconds": round(time.time() - t0, 1)}
+            prev = (prev_meta.get("dealers") or {}).get(k) or {}
+            if prev.get("status") == "ok" and prev.get("count", 0) >= DROP_ALERT_MIN_PREV \
+                    and len(rows) < prev["count"] * DROP_ALERT_RATIO:
+                meta["dealers"][k]["warning"] = f"listing count fell from {prev['count']} to {len(rows)}"
         except Exception as e:
             traceback.print_exc()
             stale = [x for x in prev_listings.values() if x["dealer_id"] == k]

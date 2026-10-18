@@ -17,25 +17,54 @@ DEALERS = {
     "downtowncamera": {"name": "Downtown Camera", "city": "Toronto, ON", "site": "https://downtowncamera.com"},
     "gosselin": {"name": "Gosselin Photo", "city": "Quebec", "site": "https://gosselinphoto.ca"},
     "camtec": {"name": "Camtec Photo", "city": "Montreal, QC", "site": "https://www.camtecphoto.com"},
+    "plotcamera": {"name": "Plot Camera", "city": "Vancouver, BC", "site": "https://www.plotcamera.com"},
+    "cameratraders": {"name": "Camera Traders", "city": "Victoria, BC", "site": "https://www.camera-traders.com"},
+    "maplecamera": {"name": "Maple Camera Co.", "city": "Scarborough, ON", "site": "https://maplecameraco.com"},
+    "cameratrading": {"name": "Camera Trading Company", "city": "Perth, ON", "site": "https://cameratradingcompany.com"},
+    "cameracanada": {"name": "Camera Canada", "city": "Ontario (online)", "site": "https://www.cameracanada.com"},
     "ebay": {"name": "eBay (Canadian sellers)", "city": "Canada", "site": "https://www.ebay.ca"},
 }
+# Shopify "vendor" values that are the store itself, not the gear brand
+STORE_VENDORS = {"the camera store", "gosselin", "gosselin photo", "plotcamera", "plot camera", "camera trading company",
+                 "camera traders", "maple camera co.", "maple camera company"}
 
 
-def _shopify(dealer_id: str, base: str, collection: str, now: str, max_pages: int = 20) -> list[dict]:
+def _shopify(dealer_id: str, base: str, collection: str | None, now: str, max_pages: int = 20, keep=None,
+             tag_hints: bool = False, type_hint: bool = True) -> list[dict]:
+    """Public Shopify storefront JSON (/products.json). keep(p) filters products; tag_hints passes structured
+    tags such as "lens mount_Nikon F" / "brand_Nikon" / "Excellent+" through as normalization hints."""
     out = []
     name = DEALERS[dealer_id]["name"]
+    path = f"/collections/{collection}/products.json" if collection else "/products.json"
     for page in range(1, max_pages + 1):
-        url = f"{base}/collections/{collection}/products.json?limit=250&page={page}"
-        prods = json.loads(fetch(url))["products"]
+        prods = json.loads(fetch(f"{base}{path}?limit=250&page={page}"))["products"]
         for p in prods:
+            if keep and not keep(p):
+                continue
             v = (p.get("variants") or [{}])[0]
             body = re.sub(r"<[^>]+>", " ", p.get("body_html") or "")[:600]
             img = (p.get("images") or [{}])[0].get("src") if p.get("images") else None
+            tags = p.get("tags", [])
+            if isinstance(tags, str):
+                tags = [t.strip() for t in tags.split(",")]
+            vendor = (p.get("vendor") or "").strip()
+            brand_hint = "" if vendor.lower() in STORE_VENDORS else vendor
+            mount_hint = ""
+            if tag_hints:
+                for t in tags:
+                    k, _, val = t.partition("_")
+                    if k.strip().lower() == "lens mount" and val and val.lower() != "other":
+                        mount_hint = val
+                    elif k.strip().lower() == "brand" and val and val.lower() != "other" and not brand_hint:
+                        brand_hint = val
+            cond_tags = " ".join(t for t in tags if "_" not in t)
+            if tag_hints and "New" in tags:
+                cond_tags += " like new"  # Plot Camera grades unused stock "New"
             out.append(make_listing(
                 dealer_id, name, p["title"], v.get("price"), f"{base}/products/{p['handle']}",
                 sku=str(v.get("id") or p["id"]), in_stock=v.get("available", True),
-                condition_hint=" ".join(p.get("tags", [])) + " " + (v.get("title") or "") + " " + body,
-                category_hint=p.get("product_type", ""), brand_hint=p.get("vendor", "") if p.get("vendor", "").lower() not in {"the camera store", "gosselin", "gosselin photo"} else "",
+                condition_hint=cond_tags + " " + (v.get("title") or "") + " " + body,
+                category_hint=p.get("product_type", "") if type_hint else "", brand_hint=brand_hint, mount_hint=mount_hint,
                 fetched_at=now, image=img))
         if len(prods) < 250:
             break
@@ -48,6 +77,69 @@ def thecamerastore(now: str) -> list[dict]:
 
 def gosselin(now: str) -> list[dict]:
     return _shopify("gosselin", "https://gosselinphoto.ca", "equipement-photo-video-usages", now)
+
+
+def plotcamera(now: str) -> list[dict]:
+    # Vancouver used-only shop; every product is inspected used gear, graded in tags (Like New / Excellent+ / ...).
+    # product_type is "Camera" on nearly everything (even flashes and straps), so it is not used as a category hint.
+    return _shopify("plotcamera", "https://www.plotcamera.com", "all", now, tag_hints=True, type_hint=False)
+
+
+def cameratraders(now: str) -> list[dict]:
+    # Victoria used department; tags carry brand_ / lens mount_ fields.
+    return _shopify("cameratraders", "https://www.camera-traders.com", "used-equipment", now, tag_hints=True)
+
+
+def maplecamera(now: str) -> list[dict]:
+    # Scarborough used-only shop; grade is the title suffix ("... - Excellent Plus").
+    return _shopify("maplecamera", "https://maplecameraco.com", "all", now,
+                    keep=lambda p: (p.get("product_type") or "").lower() not in {"memory card"})
+
+
+_CTC_SKIP_TYPES = {"film", "darkroom chemistry", "book", "ct-film", "paper", "darkroom paper"}
+
+
+def cameratrading(now: str) -> list[dict]:
+    # Perth ON (formerly Ottawa). Store also sells new film/chemistry/books; keep used + consignment gear only.
+    def keep(p):
+        tags = {t.lower() for t in (p.get("tags") or [])}
+        ptype = (p.get("product_type") or "").lower()
+        if ptype in _CTC_SKIP_TYPES or "film" in tags and not ({"ctc_used", "consignment"} & tags):
+            return False
+        return bool({"ctc_used", "consignment"} & tags) or ptype.startswith("ct-") or "used" in p["title"].lower()
+    return _shopify("cameratrading", "https://cameratradingcompany.com", None, now, keep=keep)
+
+
+def cameracanada(now: str) -> list[dict]:
+    # ASP.NET catalogue, server-rendered. subcat 267 = used, 265 = open box. 12 items per page.
+    base = "https://www.cameracanada.com"
+    out, seen = [], set()
+    for subcat, hint in ((267, "used"), (265, "open box")):
+        for page in range(1, 41):
+            h = fetch(f"{base}/products/index.aspx?cat=263&sort=1&subcat={subcat}&whichpage={page}").decode("utf-8", "ignore")
+            blocks = h.split("<div class='catalog-product-item'>")[1:]
+            for b in blocks:
+                t = re.search(r'productTitle">([^<]+)', b)
+                href = re.search(r'href="(/products/productDetail\.aspx\?pid=[^"]+)"', b)
+                if not t or not href:
+                    continue
+                sale = re.search(r"sale-price'[^>]*>\$([\d,]+\.\d\d)", b)
+                plain = [p for cls, p in re.findall(r"<div class='([^']*)'[^>]*>\$([\d,]+\.\d\d)", b) if "save" not in cls]
+                price = sale.group(1) if sale else (plain[0] if plain else None)
+                pid = href.group(1).split("pid=", 1)[1]
+                if not price or pid in seen:
+                    continue
+                seen.add(pid)
+                title = re.sub(r"(?i)^cameracanada\s+", "", html.unescape(t.group(1)).strip())
+                brand = re.search(r'productBrand">([^<]+)', b)
+                img = re.search(r'class="xproduct-short-image" src="([^"]+)"', b)
+                out.append(make_listing("cameracanada", DEALERS["cameracanada"]["name"], title, price, base + href.group(1).replace(" ", "%20"),
+                                        sku=pid, in_stock="out of stock" not in b, condition_hint=hint,
+                                        brand_hint=brand.group(1).strip() if brand and brand.group(1).strip().lower() != "cameracanada" else "",
+                                        fetched_at=now, image=("https:" + img.group(1)) if img and img.group(1).startswith("//") else None))
+            if len(blocks) < 12:
+                break
+    return out
 
 
 def mcbain(now: str) -> list[dict]:
@@ -144,4 +236,9 @@ ADAPTERS = {
     "beauphoto": beauphoto,
     "thecamerastore": thecamerastore,
     "camtec": camtec,
+    "plotcamera": plotcamera,
+    "cameratraders": cameratraders,
+    "maplecamera": maplecamera,
+    "cameratrading": cameratrading,
+    "cameracanada": cameracanada,
 }
