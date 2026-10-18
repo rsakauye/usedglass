@@ -1,0 +1,83 @@
+---
+import Base from '../layouts/Base.astro';
+import DealCard from '../components/DealCard.astro';
+import { listings, models, meta, deals, changes, u, uniqSorted, asOf } from '../lib/data.js';
+const brands = uniqSorted(listings.map((l) => l.brand));
+const mounts = uniqSorted(listings.map((l) => l.mount));
+const dealers = uniqSorted(listings.map((l) => l.dealer));
+const conditions = ['Like New', 'Excellent', 'Good', 'Fair', 'As Is'];
+const cats = uniqSorted(listings.map((l) => l.category));
+const nDealers = dealers.length;
+---
+<Base>
+  <h1>Every used camera &amp; lens from Canadian dealers, in one search</h1>
+  <p class="muted">{listings.length.toLocaleString('en-CA')} used listings from {nDealers} Canadian sellers, refreshed daily ({asOf(meta.run_at)}). Prices in CAD. Click any listing to buy from the dealer.</p>
+  <div class="stats">
+    <div><b>{listings.length.toLocaleString('en-CA')}</b><span class="muted">listings</span></div>
+    <div><b>{Object.keys(models).length.toLocaleString('en-CA')}</b><span class="muted">matched models</span></div>
+    <div><b>{(changes.new_today || []).length.toLocaleString('en-CA')}</b><span class="muted"><a href={u('new/')}>new today</a></span></div>
+    <div><b>{(changes.price_dropped || []).length.toLocaleString('en-CA')}</b><span class="muted"><a href={u('drops/')}>price drops</a></span></div>
+    <div><b>{(deals.deals || []).length}</b><span class="muted"><a href={u('deals/')}>flagged deals</a></span></div>
+  </div>
+  {deals.deal_of_the_day && <div style="max-width:620px;margin-bottom:1.2rem"><DealCard d={deals.deal_of_the_day} headline /></div>}
+
+  <form id="f" class="card" style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:end" onsubmit="return false">
+    <label style="flex:2 1 240px">Search<br /><input id="q" type="search" placeholder="e.g. 24-70 2.8, X-T5, Summicron" style="width:100%" /></label>
+    <label>Category<br /><select id="cat"><option value="">All</option>{cats.map((c) => <option>{c}</option>)}</select></label>
+    <label>Mount<br /><select id="mount"><option value="">All</option>{mounts.map((m) => <option>{m}</option>)}</select></label>
+    <label>Brand<br /><select id="brand"><option value="">All</option>{brands.map((b) => <option>{b}</option>)}</select></label>
+    <label>Dealer<br /><select id="dealer"><option value="">All</option>{dealers.map((d) => <option>{d}</option>)}</select></label>
+    <label>Condition<br /><select id="cond"><option value="">Any</option>{conditions.map((c) => <option>{c}</option>)}<option value="-">Not graded</option></select></label>
+    <label>Min $<br /><input id="min" type="number" min="0" style="width:6rem" /></label>
+    <label>Max $<br /><input id="max" type="number" min="0" style="width:6rem" /></label>
+    <label>Sort<br /><select id="sort"><option value="new">Newest first</option><option value="pa">Price low → high</option><option value="pd">Price high → low</option><option value="t">A → Z</option></select></label>
+  </form>
+  <p id="count" class="muted">Loading listings…</p>
+  <table id="results">
+    <thead><tr><th>Item</th><th>Dealer</th><th>Condition</th><th class="price">Price (CAD)</th><th>As of</th></tr></thead>
+    <tbody></tbody>
+  </table>
+  <p style="text-align:center"><button id="more" type="button" hidden>Show more</button></p>
+  <noscript><p>Search needs JavaScript. Browse <a href={u('deals/')}>deals</a>, <a href={u('new/')}>new listings</a> or <a href={u('dealers/')}>dealers</a> instead.</p></noscript>
+
+  <script is:inline define:vars={{ base: u(''), dataUrl: u('listings.json') }}>
+    const $ = (id) => document.getElementById(id);
+    const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const money = (v) => '$' + Number(v).toLocaleString('en-CA', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
+    const asOf = (iso) => new Date(iso).toLocaleString('en-CA', { timeZone: 'America/Edmonton', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' MT';
+    let rows = [], shown = 50;
+    const params = new URLSearchParams(location.search);
+    for (const k of ['q', 'cat', 'mount', 'brand', 'dealer', 'cond', 'min', 'max', 'sort']) if (params.get(k)) $(k).value = params.get(k);
+    function render() {
+      const q = $('q').value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      const f = { cat: $('cat').value, mount: $('mount').value, brand: $('brand').value, dealer: $('dealer').value, cond: $('cond').value };
+      const min = parseFloat($('min').value) || 0, max = parseFloat($('max').value) || Infinity;
+      let out = rows.filter((r) => {
+        if (f.cat && r[5] !== f.cat) return false;
+        if (f.mount && r[3] !== f.mount) return false;
+        if (f.brand && r[2] !== f.brand) return false;
+        if (f.dealer && r[1] !== f.dealer) return false;
+        if (f.cond === '-' ? r[4] : f.cond && r[4] !== f.cond) return false;
+        if (r[6] < min || r[6] > max) return false;
+        if (q.length) { const hay = (r[0] + ' ' + r[2] + ' ' + r[3]).toLowerCase(); return q.every((w) => hay.includes(w)); }
+        return true;
+      });
+      const s = $('sort').value;
+      out.sort(s === 'pa' ? (a, b) => a[6] - b[6] : s === 'pd' ? (a, b) => b[6] - a[6] : s === 't' ? (a, b) => a[0].localeCompare(b[0]) : (a, b) => (b[10] || '').localeCompare(a[10] || '') || a[6] - b[6]);
+      $('count').textContent = out.length.toLocaleString('en-CA') + ' matching listings';
+      $('results').tBodies[0].innerHTML = out.slice(0, shown).map((r) => `<tr>
+        <td><a href="${esc(r[7])}" rel="nofollow noopener" target="_blank">${esc(r[0])}</a><div>${r[3] ? `<span class="pill">${esc(r[3])}</span>` : ''}${r[8] ? `<a class="pill" href="${base}model/${esc(r[8])}/">Compare prices</a>` : ''}</div></td>
+        <td>${esc(r[1])}${r[12] ? `<div class="muted">${esc(r[12])}</div>` : ''}</td>
+        <td>${r[4] ? esc(r[4]) : '<span class="muted">Not graded</span>'}</td>
+        <td class="price">${money(r[6])}${r[11] > r[6] ? `<div class="muted"><s>${money(r[11])}</s></div>` : ''}</td>
+        <td class="muted">${asOf(r[9])}</td></tr>`).join('');
+      $('more').hidden = out.length <= shown;
+      const p = new URLSearchParams();
+      for (const k of ['q', 'cat', 'mount', 'brand', 'dealer', 'cond', 'min', 'max', 'sort']) if ($(k).value && !(k === 'sort' && $(k).value === 'new')) p.set(k, $(k).value);
+      history.replaceState(null, '', p.toString() ? '?' + p : location.pathname);
+    }
+    $('f').addEventListener('input', () => { shown = 50; render(); });
+    $('more').addEventListener('click', () => { shown += 100; render(); });
+    fetch(dataUrl).then((r) => r.json()).then((d) => { rows = d; render(); }).catch(() => { $('count').textContent = 'Could not load listings.'; });
+  </script>
+</Base>

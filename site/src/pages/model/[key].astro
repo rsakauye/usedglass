@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import ListingTable from '../../components/ListingTable.astro';
+import { models, byId, money, u } from '../../lib/data.js';
+export function getStaticPaths() {
+  return Object.values(models).map((m) => ({ params: { key: m.key }, props: { m } }));
+}
+const { m } = Astro.props;
+const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => a.price_cad - b.price_cad);
+---
+<Base title={`${m.name}: used prices in Canada`} description={`Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
+  <p class="muted"><a href={u('')}>Search</a> › {m.brand} › {m.category}</p>
+  <h1>{m.name}</h1>
+  <div class="stats">
+    <div><b>{money(m.min_price)}</b><span class="muted">lowest today</span></div>
+    <div><b>{money(m.median_price)}</b><span class="muted">median today</span></div>
+    <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">median, last 90 days ({m.observations_90d} listings seen)</span></div>
+    <div><b>{rows.length}</b><span class="muted">listings at {m.dealers.length} {m.dealers.length === 1 ? 'seller' : 'sellers'}</span></div>
+  </div>
+  <ListingTable rows={rows} showModel={false} />
+  <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
+</Base>
