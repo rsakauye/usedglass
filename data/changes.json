@@ -1,23 +1,6 @@
 {
  "date": "2026-10-18",
- "new_today": [
-  "gosselin-396e0a479a",
-  "gosselin-0ebdd4871f",
-  "gosselin-44291abd64",
-  "gosselin-4e6e8d5ad8",
-  "gosselin-58c0f11856",
-  "gosselin-86d7927bc4",
-  "gosselin-a51527ca00",
-  "gosselin-fe1424cd64",
-  "gosselin-ec9fd859b1",
-  "gosselin-61fe13efb1",
-  "gosselin-4ef5a4f89e",
-  "gosselin-249d518d5c",
-  "gosselin-b12598ee8a",
-  "gosselin-de994ee6e2",
-  "gosselin-5413797135",
-  "cameracanada-eb6daf4310"
- ],
+ "new_today": [],
  "price_dropped": [],
- "removed": 18
+ "removed": 0
 }

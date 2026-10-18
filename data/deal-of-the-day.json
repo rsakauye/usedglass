@@ -21,22 +21,22 @@
  },
  {
   "type": "listing",
-  "id": "gosselin-44291abd64",
-  "title": "USAGE (8) - Canon EOS 5D Mark II",
-  "dealer": "Gosselin Photo",
-  "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
-  "price_cad": 299.0,
-  "comp_median": 750.0,
+  "id": "mcbain-65e3671a87",
+  "title": "Pentax K1000 Used Film Camera",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905501",
+  "price_cad": 99.99,
+  "comp_median": 300.0,
   "comps": 3,
-  "model_key": "camera-canon-5d-ii",
-  "model_name": "Canon 5D II",
-  "condition": "Good",
+  "model_key": "camera-pentax-k1000",
+  "model_name": "Pentax K1000",
+  "condition": null,
   "reasons": [
-   "60% below the median of 3 comparable listings"
+   "67% below the median of 3 comparable listings"
   ],
-  "score": 71.1,
-  "is_new": true,
-  "fetched_at": "2026-10-18T13:31:00+00:00",
+  "score": 69.7,
+  "is_new": false,
+  "fetched_at": "2026-10-18T13:58:54+00:00",
   "date": "2026-10-18"
  }
 ]
