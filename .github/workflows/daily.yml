@@ -20,6 +20,8 @@ jobs:
   run:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      CF_DEPLOY: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -72,3 +74,25 @@ jobs:
           user_name: usedglass-bot
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
           commit_message: "preview: ${{ github.sha }}"
+
+      # ---- Cloudflare Pages (production: usedglass.ca / usedglass.pages.dev) ----
+      # Runs only when the repo secrets CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID exist;
+      # otherwise it is skipped and the GitHub Pages preview above remains the only deploy.
+      - name: Build site for Cloudflare Pages (root base path)
+        if: env.CF_DEPLOY == 'true'
+        working-directory: site
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://usedglass.ca' }}
+          BASE_PATH: /
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        if: env.CF_DEPLOY == 'true'
+        working-directory: site
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          # Creates the project on first run (no-op error if it already exists), then uploads dist/.
+          npx --yes wrangler@4 pages project create usedglass --production-branch=main || true
+          npx --yes wrangler@4 pages deploy dist --project-name=usedglass --branch=main --commit-dirty=true

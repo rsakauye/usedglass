@@ -46,18 +46,23 @@ cd site && npm ci && npm run dev      # reads ../data
 ```
 
 ## Deploy to Cloudflare Pages (production)
-Connect this repo in Cloudflare Pages:
-- Build command: `cd site && npm ci && npm run build`
-- Output directory: `site/dist`
-- Env vars: `SITE_URL=https://usedglass.ca`, `BASE_PATH=/`, `NODE_VERSION=22`
+The daily workflow deploys `site/dist` to the Cloudflare Pages project `usedglass` with
+`wrangler pages deploy` (direct upload), right after the GitHub Pages preview. The step is skipped
+until both `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` secrets exist; the first run with
+secrets creates the project. Production builds use `BASE_PATH=/` and `SITE_URL` from the repo
+variable `SITE_URL` (default `https://usedglass.ca`).
 
-Each daily data commit triggers a rebuild.
+Cloudflare zone `usedglass.ca` (free plan) has proxied CNAMEs `usedglass.ca` and `www` → `usedglass.pages.dev`
+and a 301 redirect rule `www` → apex. Attach `usedglass.ca` and `www.usedglass.ca` as custom domains
+on the Pages project (Workers & Pages → usedglass → Custom domains).
 
 ## Secrets (repo → Settings → Secrets and variables → Actions)
 | Secret | Where from | Required |
 |---|---|---|
 | `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET` | eBay Developers Program → production keyset | for eBay listings |
 | `EBAY_CAMPAIGN_ID` | eBay Partner Network campaign | optional, adds affiliate tracking |
+| `CLOUDFLARE_API_TOKEN` | Cloudflare → My Profile → API Tokens → custom token, *Account → Cloudflare Pages → Edit* | for usedglass.ca deploys |
+| `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account id | for usedglass.ca deploys |
 
 ## Feeds
 - `/rss.xml`: deal of the day + flagged deals (for auto-posting to X/Bluesky later)
