@@ -1,22 +1,22 @@
 [
  {
   "type": "listing",
-  "id": "mcbain-8a51bfe195",
-  "title": "Olympus OM G Zuiko Auto N 28mm F3.5 Used Lens",
-  "dealer": "McBain Camera",
-  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905373",
-  "price_cad": 119.99,
-  "comp_median": 250.0,
+  "id": "gosselin-69a8658b93",
+  "title": "USAGE (7) - Fujifilm XF 23mm f1.4 R LM WR",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749",
+  "price_cad": 399.0,
+  "comp_median": 895.0,
   "comps": 3,
-  "model_key": "lens-olympus-micro-four-thirds-28mm-f3_5",
-  "model_name": "Olympus 28mm f/3.5 (Micro Four Thirds)",
-  "condition": null,
+  "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+  "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+  "condition": "Fair",
   "reasons": [
-   "52% below the median of 3 comparable listings"
+   "55% below the median of 3 comparable listings"
   ],
-  "score": 55.0,
+  "score": 58.4,
   "is_new": false,
-  "fetched_at": "2026-10-18T04:38:05+00:00",
+  "fetched_at": "2026-10-18T04:47:19+00:00",
   "date": "2026-10-17"
  }
 ]
