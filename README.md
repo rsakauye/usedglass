@@ -30,9 +30,24 @@ GitHub Actions (daily 12:00 UTC ≈ 6 a.m. Mountain)
 | Beau Photo (Vancouver) | WooCommerce Store API | ~390 items |
 | Camtec (Montréal) | HTML, honours `Crawl-delay: 10` | ~130 items |
 | The Camera Store (Calgary) | Shopify `products.json` | ~90 items |
+| Camera Traders (Victoria) | Shopify `products.json` (`used-equipment`), brand/mount tags used as hints | ~640 items |
+| Camera Canada (online, ON) | Server-rendered ASP.NET catalogue: used + open box | ~180 items |
+| Maple Camera Co. (Scarborough) | Shopify `products.json`, used only | ~95 items |
+| Camera Trading Company (Perth, ON) | Shopify `products.json`, used/consignment only (new film, chemistry and books skipped) | ~55 items |
+| Plot Camera (Vancouver) | Shopify `products.json`, used only, grade tags | ~45 items |
 | eBay (Canadian sellers) | Official Browse API | needs keys |
 
-Polite by design: robots.txt checked, ≥2 s between requests per host (or the site's crawl-delay), identifiable UA `UsedGlassBot`, one run per day. If a dealer fails, yesterday's listings are kept and flagged stale.
+Polite by design: robots.txt checked, ≥2 s between requests per host (or the site's crawl-delay), identifiable UA `UsedGlassBot`, one run per day, transient errors retried twice with backoff. If a dealer fails, yesterday's listings are kept and flagged stale.
+
+Not scraped (checked Oct 2026): **Henry's** and **Kerrisdale Cameras** render used inventory client-side
+(Henry's Dynamics 365 Commerce, Kerrisdale's Dakis embed), so they would need a headless browser; **Vistek** and
+**Leo's Camera Supply** sit behind a Cloudflare bot challenge; **Aden Camera** (Shopify) sells new gear only.
+
+### Scrape-failure alerts
+After every run, `python -m scraper.alert` reads `data/meta.json`. If any dealer errored, returned 0 listings, or
+fell below 40% of its previous count, it opens (or updates and comments on) a single issue labelled
+`scrape-alert`; when every feed is healthy again it comments and closes that issue. Uses the workflow's
+`GITHUB_TOKEN` (`issues: write`); without a token it only prints the report.
 
 ### Deal rules
 A listing is a deal when it is ≥20% (and ≤70%, to filter mismatches) below the median of ≥3 comparable listings (same model key; current listings across dealers + last 90 days), or its price dropped ≥10%, or a new manufacturer rebate page appears. Tunable in `scraper/run.py`.
@@ -40,7 +55,7 @@ A listing is a deal when it is ≥20% (and ≤70%, to filter mismatches) below t
 ## Local development
 
 ```bash
-python -m unittest tests.test_normalize
+python -m unittest tests.test_normalize tests.test_alert
 python -m scraper.run                 # all dealers; or: python -m scraper.run mcbain camtec
 cd site && npm ci && npm run dev      # reads ../data
 ```

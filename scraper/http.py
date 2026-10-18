@@ -1,11 +1,14 @@
 """Polite HTTP helper: robots.txt aware, per-host rate limiting, identifiable user agent."""
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import urllib.robotparser
 
 UA = "UsedGlassBot/0.2 (+https://usedglass.ca/about/#bots)"
 DEFAULT_DELAY = 2.0
+RETRIES = 2          # transient network errors / 429 / 5xx only
+BACKOFF = 10.0       # seconds, grows linearly per attempt
 _last: dict[str, float] = {}
 _robots: dict[str, urllib.robotparser.RobotFileParser] = {}
 _delays: dict[str, float] = {}
@@ -46,7 +49,17 @@ def fetch(url: str, data: bytes | None = None, headers: dict | None = None, chec
         h["Content-Type"] = "application/x-www-form-urlencoded"
     h.update(headers or {})
     req = urllib.request.Request(url, data=data, headers=h)
-    try:
-        return urllib.request.urlopen(req, timeout=timeout).read()
-    finally:
-        _last[host] = time.time()
+    for attempt in range(RETRIES + 1):
+        try:
+            return urllib.request.urlopen(req, timeout=timeout).read()
+        except urllib.error.HTTPError as e:
+            # retry only "try again later" answers; a 403/404 is an answer, not a blip
+            if e.code not in (429, 500, 502, 503, 504) or attempt == RETRIES:
+                raise
+        except (urllib.error.URLError, TimeoutError, ConnectionError, OSError):
+            if attempt == RETRIES:
+                raise
+        finally:
+            _last[host] = time.time()
+        time.sleep(BACKOFF * (attempt + 1))
+    raise RuntimeError("unreachable")

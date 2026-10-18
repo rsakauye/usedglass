@@ -43,6 +43,52 @@ class NormalizeTests(unittest.TestCase):
         self.assertEqual(L("Canon EOS R6 Mark II Body")["model_key"], "camera-canon-r6-ii")
         self.assertEqual(L("Fujifilm X-T5 Body - *A*")["mount"], "Fujifilm X")
 
+    def test_new_mounts(self):
+        cases = {
+            "TAMRON 28-75F2.8 XR DI NIK": "Nikon F",
+            "SIGMA 30F1.4 DC \"C\" FUJI XF": "Fujifilm X",
+            "USAGE (8) - NIKON 50mm f/2.8 MC Monture Z": "Nikon Z",
+            "Olympus OM G Zuiko Auto N 28mm F3.5 Used Lens": "Olympus OM",
+            "Tamron 90mm F2.5 (BGN) Used Lens for Mamiya 645 Mount": "Mamiya 645",
+            "Used Pentax 67 Macro 135mm f4": "Pentax 67",
+            "Tokina RMC 80-200mm f4 (BGN) Y/C used": "Contax/Yashica",
+            "Used Fujinon A 240mm f9 lens on 4×4 Deardorff board": "Large Format",
+            "Pentax-M 50mm F2 (BGN) Used Lens": "Pentax K",
+            "Used Sony Sonnar E 24mm f/1.8": "Sony E",
+            "Sony A 16mm F2.8 SAM Used Fisheye Lens": "Sony A",
+            "Leica Vario-Elmarit 24-70mm f2.8 ASPH. *USED": "L-Mount",
+            "Leica Summaron 35mm f2.8 Goggles *USED": "Leica M",
+        }
+        for title, mount in cases.items():
+            self.assertEqual(L(title)["mount"], mount, title)
+
+    def test_camera_mounts_and_kits(self):
+        self.assertEqual(L("Leica Q3 *USED")["mount"], "Fixed Lens")
+        self.assertEqual(L("Nikon FTn W/55F3.5 MICRO BK")["mount"], "Nikon F")
+        x = L("Nikon Z30 + 16-50mm f3.5-6.3 DX VR (SC 300) used")
+        self.assertEqual((x["category"], x["mount"]), ("camera", "Nikon Z"))
+        x = L("Sony A7 III with Sigma 35mm f1.4 Art")
+        self.assertEqual((x["category"], x["brand"]), ("camera", "Sony"))
+        self.assertEqual(L("MINOLTA 7000 W/35-70F3.5-4.5")["mount"], "Sony A")
+        self.assertIsNone(L("MoviePix HD Video Camera - Used")["mount"])
+
+    def test_more_brands_and_hints(self):
+        self.assertEqual(L("Used Hensel 40 Degree grid")["brand"], "Hensel")
+        self.assertEqual(L("Neewer TT560 Flash (Canon)(EX) used")["brand"], "Neewer")
+        self.assertEqual(L("Plus III Transceivers", brand_hint="Pocketwizard")["brand"], "PocketWizard")
+        self.assertEqual(L("Some Widget 3000", brand_hint="Acme Optics")["brand"], "Acme Optics")
+        self.assertIsNone(L("Some Widget 3000", brand_hint="Other")["brand"])
+        self.assertEqual(L("Nikon D3200", mount_hint="Nikon F")["mount"], "Nikon F")
+
+    def test_more_conditions(self):
+        self.assertEqual(L("Nikon AF-S 70-200mm f/2.8G ED VR II Lens — Near Mint")["condition"], "Like New")
+        self.assertEqual(L("Canon EF 24-70mm f/2.8L USM Lens - Excellent Plus")["condition"], "Excellent")
+        self.assertEqual(L("Canon EF 50mm f/1.8 STM - Very Good")["condition"], "Good")
+        self.assertEqual(L("PENTAX 50F1.4 PK-A MINTY")["condition"], "Like New")
+        self.assertEqual(L("USAGE (N) - Hasselblad XCD 75mm f/3.4")["condition"], "Like New")
+        self.assertIsNone(L("Sigma 70-200mm F2.8 EX DG HSM for Canon")["condition"])
+        self.assertEqual(L("Nikon D3200", condition_hint="Some cosmetic wear, scuffs on the screen")["condition"], "Good")
+
 
 if __name__ == "__main__":
     unittest.main()
