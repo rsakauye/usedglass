@@ -74,6 +74,7 @@ jobs:
           SITE_URL: https://${{ github.repository_owner }}.github.io
           BASE_PATH: /${{ github.event.repository.name }}/
           PUBLIC_KIT_FORM_ID: ${{ vars.KIT_FORM_ID }}
+          PUBLIC_AMAZON_TAG: ${{ vars.AMAZON_TAG || 'usedglass-20' }}
         run: |
           npm ci
           npm run build
@@ -99,6 +100,7 @@ jobs:
           SITE_URL: ${{ vars.SITE_URL || 'https://usedglass.ca' }}
           BASE_PATH: /
           PUBLIC_KIT_FORM_ID: ${{ vars.KIT_FORM_ID }}
+          PUBLIC_AMAZON_TAG: ${{ vars.AMAZON_TAG || 'usedglass-20' }}
         run: npm run build
 
       - name: Deploy to Cloudflare Pages
