@@ -1,0 +1,55 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+import { AMAZON_DISCLOSURE } from '../lib/affiliate.js';
+---
+<Base title="Privacy Policy" description="What UsedGlass.ca collects, why, and the choices you have.">
+  <div style="max-width:760px">
+    <h1>Privacy Policy</h1>
+    <p class="muted">Effective October 18, 2026</p>
+    <p>UsedGlass.ca is a small, independent price tracker for used camera gear, run from Alberta, Canada. This page explains in plain language what information we collect, why we collect it, and the choices you have.</p>
+    <p><b>The short version:</b> you can use UsedGlass.ca without giving us any personal information. We don't set our own cookies, we don't use advertising trackers, and we never sell your personal information.</p>
+
+    <h2 id="who">Who we are</h2>
+    <p>"UsedGlass.ca", "we" and "us" mean the operator of this website, based in Alberta, Canada.</p>
+
+    <h2 id="visits">When you visit the site</h2>
+    <ul>
+      <li><b>Analytics.</b> We use Cloudflare Web Analytics to count visits. It doesn't use cookies and doesn't track you across websites. We only see totals, like which pages are popular, which sites sent visitors, and browser, device and country counts. It can't tell us who you are.</li>
+      <li><b>Hosting.</b> The site is hosted on Cloudflare. Like any web host, Cloudflare handles your IP address and basic request details to deliver pages and protect the site from attacks. If it needs to check that you're not a bot, Cloudflare may set a short-lived security cookie. See <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener" target="_blank">Cloudflare's privacy policy</a>.</li>
+      <li><b>Search and filters.</b> Searching and filtering listings happens in your own browser. What you type isn't sent to us.</li>
+      <li><b>No accounts.</b> There are no logins, comments or user profiles.</li>
+    </ul>
+
+    <h2 id="newsletter">The weekly deals newsletter</h2>
+    <p>If you sign up, we collect your <b>email address</b> and nothing else. The newsletter runs on <a href="https://kit.com/privacy" rel="noopener" target="_blank">Kit</a> (formerly ConvertKit), which stores your address, when you signed up, and standard email statistics such as opens and clicks. We use your address only to send the UsedGlass.ca newsletter.</p>
+    <ul>
+      <li>We only email you if you've signed up yourself, as Canada's Anti-Spam Legislation (CASL) requires.</li>
+      <li>Every email says who it's from and has an unsubscribe link.</li>
+      <li>You can unsubscribe at any time with one click, and we'll stop emailing you right away.</li>
+    </ul>
+
+    <h2 id="contacting">When you contact us</h2>
+    <p>If you email us, for example to reply to the newsletter or to ask for a listing correction as a dealer, we keep your email address and message so we can answer you. The site has no other forms besides the newsletter sign-up.</p>
+
+    <h2 id="affiliates">Affiliate links and retailer cookies</h2>
+    <p>Some links on UsedGlass.ca are affiliate links, such as the "Check new price on Amazon.ca" links on model pages. {AMAZON_DISCLOSURE} We may add other affiliate partners in the future, such as camera retailers, and the same rules will apply.</p>
+    <p>When you click an affiliate link, the retailer or its affiliate network may set cookies <b>on its own site</b> so it knows you came from UsedGlass.ca and can credit us for a purchase. We don't set those cookies, and the retailer's own privacy policy covers them. We only get summary reports, such as how many clicks and qualifying sales a link produced. We never see your name, address or payment details. You can block or clear these cookies in your browser settings. Links to dealer listings are not affiliate links.</p>
+
+    <h2 id="sharing">We don't sell your information</h2>
+    <p>We never sell, rent or trade personal information. We only share it with the services that run the site (Cloudflare for hosting and analytics, Kit for the newsletter), or when the law requires it.</p>
+
+    <h2 id="storage">Where it's stored and for how long</h2>
+    <p>Cloudflare and Kit are based in the United States, so your information may be stored or processed outside Canada and may be subject to the laws there. We keep your newsletter address until you unsubscribe, and emails only as long as we need them to help you.</p>
+
+    <h2 id="rights">Your rights</h2>
+    <p>Canada's privacy law for businesses, the Personal Information Protection and Electronic Documents Act (PIPEDA), applies to UsedGlass.ca, along with Alberta's Personal Information Protection Act (PIPA) where it applies. You can ask to see the personal information we hold about you, have it corrected, or have it deleted. If you're not happy with our answer, you can contact the <a href="https://www.priv.gc.ca/" rel="noopener" target="_blank">Office of the Privacy Commissioner of Canada</a>.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Questions, requests or concerns? Just reply to any UsedGlass.ca newsletter email. We're setting up a direct contact address and will post it here once it's ready.</p>
+
+    <h2 id="changes">Changes to this policy</h2>
+    <p>If we change how we handle information, we'll update this page and the effective date above.</p>
+    <p class="muted">See also our <a href={u('terms/')}>Terms of Use</a>.</p>
+  </div>
+</Base>

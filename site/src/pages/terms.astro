@@ -1,0 +1,33 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+import { AMAZON_DISCLOSURE } from '../lib/affiliate.js';
+---
+<Base title="Terms of Use" description="The simple terms for using UsedGlass.ca.">
+  <div style="max-width:760px">
+    <h1>Terms of Use</h1>
+    <p class="muted">Effective October 18, 2026</p>
+    <p>Thanks for using UsedGlass.ca. By using the site, you agree to these simple terms.</p>
+
+    <h2 id="as-is">Information is provided as is</h2>
+    <p>UsedGlass.ca is a free tool to help you compare used camera gear. We work hard to keep it accurate, but we provide everything on the site "as is", without guarantees of any kind.</p>
+
+    <h2 id="listings">Prices and listings come from dealers</h2>
+    <p>Prices, condition grades and availability come from third-party dealer websites. They're shown as of the time we last checked, they change often, and they may be wrong or out of date. Our model matching and "deal" flags are automatic and can make mistakes too. Always confirm the details on the dealer's own site before you buy. Any purchase is between you and the dealer.</p>
+
+    <h2 id="independent">We're independent</h2>
+    <p>UsedGlass.ca isn't affiliated with, endorsed by or sponsored by any of the dealers, retailers or manufacturers we list. Their names and trademarks belong to their owners.</p>
+
+    <h2 id="affiliates">Affiliate disclosure</h2>
+    <p>Some links are affiliate links, so we may earn a commission at no extra cost to you. {AMAZON_DISCLOSURE} Affiliate links never change the prices we show or how listings are ranked. See our <a href={u('privacy/#affiliates')}>Privacy Policy</a> for how affiliate cookies work.</p>
+
+    <h2 id="liability">Limits on our responsibility</h2>
+    <p>To the extent the law allows, UsedGlass.ca isn't responsible for losses that come from using the site, relying on its information, or buying from a dealer or retailer we link to. Other websites we link to have their own terms and policies.</p>
+
+    <h2 id="changes">Changes</h2>
+    <p>We may update these terms from time to time. We'll change the effective date above when we do. These terms are governed by the laws of Alberta and Canada.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>Questions? Reply to any UsedGlass.ca newsletter email.</p>
+  </div>
+</Base>
