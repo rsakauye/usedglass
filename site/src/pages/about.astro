@@ -1,0 +1,21 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+---
+<Base title="About, disclaimer and dealer opt-out">
+  <h1>About UsedGlass.ca</h1>
+  <p>UsedGlass.ca is an independent, Alberta-built price tracker for used cameras and lenses sold by Canadian dealers. Once a day we read each dealer's public used-inventory listing, tidy up the titles, group identical models, and show you where each item is cheapest. Every listing links straight to the dealer, where you buy it.</p>
+  <h2 id="disclaimer">Disclaimer</h2>
+  <ul>
+    <li>Prices, condition grades and availability come from dealer websites and are shown "as of" the time we checked. They change often. The dealer's own page is always the authority.</li>
+    <li>Condition grades are translated from each dealer's own scale (e.g. LN, EX+, BGN, A+, 8/10) into a common five-step scale and may not match exactly.</li>
+    <li>Model grouping and "deal" flags are automatic and can be wrong. Check the exact model, version and included accessories before buying.</li>
+    <li>We are not affiliated with any dealer or manufacturer. Some links may become affiliate links in future; that never changes prices or rankings, and we'll label it.</li>
+  </ul>
+  <h2 id="dealers">For dealers: listing, corrections and opt-out</h2>
+  <p>We only read pages that are publicly available and allowed by your robots.txt, at most once a day, with an identifiable user agent (<code>UsedGlassBot</code>) and polite rate limits. If you'd like a correction, a better data feed, or to be removed, email us and we'll act within 2 business days. To block us automatically, disallow <code>UsedGlassBot</code> in robots.txt.</p>
+  <p class="muted">Contact: hello@usedglass.ca (inbox coming soon)</p>
+  <h2 id="bots">How the data is collected</h2>
+  <p>The code is open source. Data is refreshed every morning around 6 a.m. Mountain Time.</p>
+  <p><a href={u('dealers/')}>See the dealers we track</a></p>
+</Base>

@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { meta, u } from '../lib/data.js';
+const info = meta.dealer_info || {};
+const rows = Object.entries(meta.dealers || {}).map(([id, d]) => ({ id, ...d, ...(info[id] || {}) }));
+---
+<Base title="Canadian used camera dealers we track">
+  <h1>Dealers</h1>
+  <p class="muted">Used inventory we check every day. Want your store listed or removed? See <a href={u('about/#dealers')}>dealer info</a>.</p>
+  <table>
+    <thead><tr><th>Dealer</th><th>Location</th><th class="price">Listings today</th><th>Status</th></tr></thead>
+    <tbody>
+      {rows.map((r) => (
+        <tr>
+          <td><a href={r.site} rel="noopener" target="_blank">{r.name}</a></td>
+          <td>{r.city}</td>
+          <td class="price"><a href={u(`?dealer=${encodeURIComponent(r.name)}`)}>{r.count}</a></td>
+          <td class="muted">{r.status}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</Base>

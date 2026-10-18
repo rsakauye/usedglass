@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import ListingTable from '../components/ListingTable.astro';
+import { changes, byId, money } from '../lib/data.js';
+const drops = (changes.price_dropped || []).filter((d) => byId[d.id]).sort((a, b) => b.pct - a.pct);
+const rows = drops.map((d) => ({ ...byId[d.id], prev_price: d.old, _badge: `-${Math.round(d.pct * 100)}%` }));
+---
+<Base title="Used camera gear price drops">
+  <h1>Price drops</h1>
+  <p class="muted">Listings whose price went down since the previous daily check ({changes.date}).</p>
+  {rows.length ? <ListingTable rows={rows} /> : <p class="card">No price drops yet. Drops show up after at least two daily checks.</p>}
+</Base>

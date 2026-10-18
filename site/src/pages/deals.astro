@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import DealCard from '../components/DealCard.astro';
+import { deals, dotdHistory, u } from '../lib/data.js';
+const rest = (deals.deals || []).filter((d) => !deals.deal_of_the_day || d.id !== deals.deal_of_the_day.id);
+const r = deals.rules || {};
+---
+<Base title="Deal of the day and steep used-gear discounts">
+  <h1>Deals</h1>
+  <p class="muted">Computed daily ({deals.date}). A listing is flagged when it is at least {Math.round((r.min_discount || 0.2) * 100)}% below the median price of {r.min_comps || 3}+ comparable listings (same matched model across dealers and the last 90 days), when its price drops {Math.round((r.min_drop || 0.1) * 100)}%+, or when a new manufacturer rebate appears. <a href={u('rss.xml')}>RSS feed</a></p>
+  {deals.deal_of_the_day && <div style="max-width:640px;margin:1rem 0"><DealCard d={deals.deal_of_the_day} headline /></div>}
+  <h2>All flagged deals</h2>
+  {rest.length ? <div class="grid">{rest.map((d) => <DealCard d={d} />)}</div> : <p>No other deals flagged today.</p>}
+  {dotdHistory.length > 1 && (<>
+    <h2>Past deals of the day</h2>
+    <ul>{dotdHistory.slice(0, -1).reverse().slice(0, 30).map((d) => <li>{d.date}: <a href={d.url} rel="nofollow noopener">{d.title}</a> ({d.dealer})</li>)}</ul>
+  </>)}
+  <p class="muted">Automatic flags can be wrong: a "deal" may be a different version, missing accessories, or a worse condition than the comparables. Check the listing.</p>
+</Base>
