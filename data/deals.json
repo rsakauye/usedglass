@@ -1,26 +1,45 @@
 {
  "date": "2026-10-17",
- "generated_at": "2026-10-18T05:29:06+00:00",
+ "generated_at": "2026-10-18T05:34:50+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "gosselin-6a5d22efee",
-  "title": "USAGE (8) - Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
-  "dealer": "Gosselin Photo",
-  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
-  "price_cad": 429.0,
-  "comp_median": 975.0,
+  "id": "cameratraders-bd2c6eb9fb",
+  "title": "Nikon D3200",
+  "dealer": "Camera Traders",
+  "url": "https://www.camera-traders.com/products/nikon-d3200-6",
+  "price_cad": 149.0,
+  "comp_median": 275.0,
   "comps": 5,
-  "model_key": "camera-nikon-fe2",
-  "model_name": "Nikon FE2",
+  "model_key": "camera-nikon-d3200",
+  "model_name": "Nikon D3200",
   "condition": "Good",
   "reasons": [
-   "56% below the median of 5 comparable listings"
+   "46% below the median of 5 comparable listings"
   ],
-  "score": 61.0,
-  "is_new": false,
-  "fetched_at": "2026-10-18T05:29:06+00:00"
+  "score": 58.8,
+  "is_new": true,
+  "fetched_at": "2026-10-18T05:34:50+00:00"
  },
  "deals": [
+  {
+   "type": "listing",
+   "id": "mcbain-65e3671a87",
+   "title": "Pentax K1000 Used Film Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905501",
+   "price_cad": 99.99,
+   "comp_median": 300.0,
+   "comps": 3,
+   "model_key": "camera-pentax-k1000",
+   "model_name": "Pentax K1000",
+   "condition": null,
+   "reasons": [
+    "67% below the median of 3 comparable listings"
+   ],
+   "score": 69.7,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
   {
    "type": "listing",
    "id": "gosselin-6a5d22efee",
@@ -38,7 +57,7 @@
    ],
    "score": 61.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -47,17 +66,36 @@
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749",
    "price_cad": 399.0,
-   "comp_median": 895.0,
-   "comps": 3,
+   "comp_median": 922.5,
+   "comps": 4,
    "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
    "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
    "condition": "Fair",
    "reasons": [
-    "55% below the median of 3 comparable listings"
+    "57% below the median of 4 comparable listings"
    ],
-   "score": 58.4,
+   "score": 60.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameratraders-bd2c6eb9fb",
+   "title": "Nikon D3200",
+   "dealer": "Camera Traders",
+   "url": "https://www.camera-traders.com/products/nikon-d3200-6",
+   "price_cad": 149.0,
+   "comp_median": 275.0,
+   "comps": 5,
+   "model_key": "camera-nikon-d3200",
+   "model_name": "Nikon D3200",
+   "condition": "Good",
+   "reasons": [
+    "46% below the median of 5 comparable listings"
+   ],
+   "score": 58.8,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -76,7 +114,7 @@
    ],
    "score": 54.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -95,7 +133,7 @@
    ],
    "score": 53.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -114,45 +152,26 @@
    ],
    "score": 51.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-5d613a2de3",
-   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Used Lens",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905308",
-   "price_cad": 89.99,
-   "comp_median": 169.0,
-   "comps": 4,
-   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
-   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
-   "condition": null,
-   "reasons": [
-    "47% below the median of 4 comparable listings"
-   ],
-   "score": 50.8,
-   "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "mcbain-a52ea4aaff",
-   "title": "Canon 18-45mm f4.5-6.3 IS STM (EX) RF used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907810",
-   "price_cad": 94.99,
-   "comp_median": 169.0,
-   "comps": 4,
-   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
-   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "id": "cameratrading-83aa194b46",
+   "title": "Canon AE-1 35mm SLR Camera with New FD 50mm f/1.8 Lens",
+   "dealer": "Camera Trading Company",
+   "url": "https://cameratradingcompany.com/products/canon-ae-1-35mm-slr-with-50mm-new-fd-50-1-8-serviced",
+   "price_cad": 329.99,
+   "comp_median": 499.99,
+   "comps": 7,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
    "condition": "Excellent",
    "reasons": [
-    "44% below the median of 4 comparable listings"
+    "34% below the median of 7 comparable listings"
    ],
-   "score": 47.8,
-   "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "score": 49.0,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -171,7 +190,7 @@
    ],
    "score": 45.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -190,26 +209,26 @@
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-a067338af6",
-   "title": "USAGE (8) - Nikon Z50",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107293",
-   "price_cad": 499.0,
-   "comp_median": 799.0,
-   "comps": 5,
-   "model_key": "camera-nikon-z50",
-   "model_name": "Nikon Z50",
-   "condition": "Good",
+   "id": "mcbain-7e12b94515",
+   "title": "Pentax-M 50mm F2 (BGN) Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907079",
+   "price_cad": 45.99,
+   "comp_median": 75.99,
+   "comps": 3,
+   "model_key": "lens-pentax-pentax-k-50mm-f2",
+   "model_name": "Pentax 50mm f/2 (Pentax K)",
+   "condition": "Fair",
    "reasons": [
-    "38% below the median of 5 comparable listings"
+    "39% below the median of 3 comparable listings"
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -228,7 +247,121 @@
    ],
    "score": 40.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-5af26c543c",
+   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Lens - Excellent Plus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm-lens-excellent-plus-10008",
+   "price_cad": 99.0,
+   "comp_median": 134.0,
+   "comps": 6,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "26% below the median of 6 comparable listings"
+   ],
+   "score": 40.1,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-7550750190",
+   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Lens - Excellent Plus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm-lens-excellent-plus-10011",
+   "price_cad": 99.0,
+   "comp_median": 134.0,
+   "comps": 6,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "26% below the median of 6 comparable listings"
+   ],
+   "score": 40.1,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-a067338af6",
+   "title": "USAGE (8) - Nikon Z50",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107293",
+   "price_cad": 499.0,
+   "comp_median": 749.5,
+   "comps": 6,
+   "model_key": "camera-nikon-z50",
+   "model_name": "Nikon Z50",
+   "condition": "Good",
+   "reasons": [
+    "33% below the median of 6 comparable listings"
+   ],
+   "score": 39.4,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-7f3f474306",
+   "title": "USAGE (8) - Fujifilm XF 23mm f/1.4 R LM WR",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/fujifilm-usage-8-fujifilm-xf-23mm-f-14-r-lm-wr-u107005",
+   "price_cad": 599.0,
+   "comp_median": 922.5,
+   "comps": 4,
+   "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+   "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+   "condition": "Good",
+   "reasons": [
+    "35% below the median of 4 comparable listings"
+   ],
+   "score": 39.1,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameratraders-0a9cbd8b4b",
+   "title": "Olympus M.Zuiko Digital 45mm f1.8",
+   "dealer": "Camera Traders",
+   "url": "https://www.camera-traders.com/products/olympus-m-zuiko-digital-45mm-f1-12",
+   "price_cad": 199.0,
+   "comp_median": 272.5,
+   "comps": 4,
+   "model_key": "lens-olympus-micro-four-thirds-45mm-f1_8",
+   "model_name": "Olympus 45mm f/1.8 (Micro Four Thirds)",
+   "condition": "Excellent",
+   "reasons": [
+    "27% below the median of 4 comparable listings"
+   ],
+   "score": 39.0,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-5d613a2de3",
+   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905308",
+   "price_cad": 89.99,
+   "comp_median": 134.0,
+   "comps": 6,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": null,
+   "reasons": [
+    "33% below the median of 6 comparable listings"
+   ],
+   "score": 38.8,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -247,45 +380,64 @@
    ],
    "score": 38.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-d904dd1229",
-   "title": "USAGE (8) - Nikon Z50",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107036",
-   "price_cad": 549.0,
-   "comp_median": 799.0,
-   "comps": 5,
-   "model_key": "camera-nikon-z50",
-   "model_name": "Nikon Z50",
-   "condition": "Good",
-   "reasons": [
-    "31% below the median of 5 comparable listings"
-   ],
-   "score": 36.3,
-   "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-7f3f474306",
-   "title": "USAGE (8) - Fujifilm XF 23mm f/1.4 R LM WR",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/fujifilm-usage-8-fujifilm-xf-23mm-f-14-r-lm-wr-u107005",
-   "price_cad": 599.0,
-   "comp_median": 895.0,
+   "id": "mcbain-b764197581",
+   "title": "Pentax-M 50mm f2 (BGN) P/K used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907672",
+   "price_cad": 49.99,
+   "comp_median": 75.99,
    "comps": 3,
-   "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
-   "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
-   "condition": "Good",
+   "model_key": "lens-pentax-pentax-k-50mm-f2",
+   "model_name": "Pentax 50mm f/2 (Pentax K)",
+   "condition": "Fair",
    "reasons": [
-    "33% below the median of 3 comparable listings"
+    "34% below the median of 3 comparable listings"
    ],
-   "score": 36.1,
+   "score": 37.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameratraders-a73a30ee84",
+   "title": "Asahi Takumar 135mm f3.5",
+   "dealer": "Camera Traders",
+   "url": "https://www.camera-traders.com/products/asahi-takumar-135mm-f3-7",
+   "price_cad": 69.0,
+   "comp_median": 89.0,
+   "comps": 6,
+   "model_key": "lens-pentax-m42-135mm-f3_5",
+   "model_name": "Pentax 135mm f/3.5 (M42)",
+   "condition": "Excellent",
+   "reasons": [
+    "22% below the median of 6 comparable listings"
+   ],
+   "score": 36.5,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-6cc9b597fb",
+   "title": "Fujifilm X-T30 II 26.1 MP Digital SLR Camera Silver (Body Only) - Excellent",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/fujifilm-x-t30-ii-26-1-mp-digital-slr-camera-silver-body-only-excellent-268",
+   "price_cad": 969.0,
+   "comp_median": 1295.0,
+   "comps": 3,
+   "model_key": "camera-fujifilm-xt30-ii",
+   "model_name": "Fujifilm XT30 II",
+   "condition": "Excellent",
+   "reasons": [
+    "25% below the median of 3 comparable listings"
+   ],
+   "score": 36.2,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -294,17 +446,74 @@
    "dealer": "McBain Camera",
    "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905468",
    "price_cad": 2100.0,
-   "comp_median": 2999.0,
-   "comps": 5,
+   "comp_median": 2997.0,
+   "comps": 6,
    "model_key": "camera-canon-r5",
    "model_name": "Canon R5",
    "condition": null,
    "reasons": [
-    "30% below the median of 5 comparable listings"
+    "30% below the median of 6 comparable listings"
    ],
-   "score": 35.0,
+   "score": 35.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-44929e51ff",
+   "title": "USAGE (8) - Canon RF-S 14-30mm f/4-6.3 IS STM PZ",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-rf-s-14-30mm-f-4-63-is-stm-pz-u106823",
+   "price_cad": 249.0,
+   "comp_median": 369.0,
+   "comps": 3,
+   "model_key": "lens-canon-canon-rf-14-30mm-f4-6_3-stab_stm",
+   "model_name": "Canon 14-30mm f/4-6.3 STAB STM (Canon RF)",
+   "condition": "Good",
+   "reasons": [
+    "33% below the median of 3 comparable listings"
+   ],
+   "score": 35.5,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-2a7ca7ea90",
+   "title": "Fujifilm X-T30 Camera Body Only - Near Mint Minus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/fujifilm-x-t30-camera-body-only-near-mint-minus-j22364-01",
+   "price_cad": 919.0,
+   "comp_median": 1199.99,
+   "comps": 4,
+   "model_key": "camera-fujifilm-xt30",
+   "model_name": "Fujifilm XT30",
+   "condition": "Like New",
+   "reasons": [
+    "23% below the median of 4 comparable listings"
+   ],
+   "score": 35.4,
+   "is_new": true,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-a52ea4aaff",
+   "title": "Canon 18-45mm f4.5-6.3 IS STM (EX) RF used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907810",
+   "price_cad": 94.99,
+   "comp_median": 134.0,
+   "comps": 6,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "29% below the median of 6 comparable listings"
+   ],
+   "score": 35.1,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -313,36 +522,36 @@
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-af-s-nikkor-50mm-f-18g-u107162",
    "price_cad": 125.0,
-   "comp_median": 169.99,
-   "comps": 7,
+   "comp_median": 169.5,
+   "comps": 8,
    "model_key": "lens-nikon-nikon-f-50mm-f1_8-afs",
    "model_name": "Nikon 50mm f/1.8 AFS (Nikon F)",
    "condition": "Good",
    "reasons": [
-    "26% below the median of 7 comparable listings"
+    "26% below the median of 8 comparable listings"
    ],
-   "score": 33.5,
+   "score": 34.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
-   "id": "downtowncamera-5a90b53e98",
-   "title": "PENTAX 135F3.5 M42-F",
-   "dealer": "Downtown Camera",
-   "url": "https://downtowncamera.com/used-equipment",
-   "price_cad": 70.0,
-   "comp_median": 100.0,
-   "comps": 3,
-   "model_key": "lens-pentax-m42-135mm-f3_5",
-   "model_name": "Pentax 135mm f/3.5 (M42)",
-   "condition": null,
+   "id": "gosselin-d904dd1229",
+   "title": "USAGE (8) - Nikon Z50",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107036",
+   "price_cad": 549.0,
+   "comp_median": 749.5,
+   "comps": 6,
+   "model_key": "camera-nikon-z50",
+   "model_name": "Nikon Z50",
+   "condition": "Good",
    "reasons": [
-    "30% below the median of 3 comparable listings"
+    "27% below the median of 6 comparable listings"
    ],
-   "score": 33.0,
+   "score": 32.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -351,17 +560,17 @@
    "dealer": "McBain Camera",
    "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905467",
    "price_cad": 2199.99,
-   "comp_median": 2999.0,
-   "comps": 5,
+   "comp_median": 2997.0,
+   "comps": 6,
    "model_key": "camera-canon-r5",
    "model_name": "Canon R5",
    "condition": null,
    "reasons": [
-    "27% below the median of 5 comparable listings"
+    "27% below the median of 6 comparable listings"
    ],
-   "score": 31.6,
+   "score": 32.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -380,7 +589,26 @@
    ],
    "score": 31.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "camtec-7e23938bea",
+   "title": "Fujinon GF 250mm F4 R LM OIS WR - *A*",
+   "dealer": "Camtec Photo",
+   "url": "https://www.camtecphoto.com/en/product/fujinon-gf-250mm-f4-r-lm-ois-wr-a",
+   "price_cad": 2485.0,
+   "comp_median": 3450.0,
+   "comps": 3,
+   "model_key": "lens-fujifilm-fujifilm-g-250mm-f4-lm_stab",
+   "model_name": "Fujifilm 250mm f/4 LM STAB (Fujifilm G)",
+   "condition": "Excellent",
+   "reasons": [
+    "28% below the median of 3 comparable listings"
+   ],
+   "score": 31.0,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -399,7 +627,64 @@
    ],
    "score": 30.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-26deba0300",
+   "title": "Nikon Z 24-70mm F4 S Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905392",
+   "price_cad": 579.99,
+   "comp_median": 749.99,
+   "comps": 6,
+   "model_key": "lens-nikon-nikon-z-24-70mm-f4-s",
+   "model_name": "Nikon 24-70mm f/4 S (Nikon Z)",
+   "condition": null,
+   "reasons": [
+    "23% below the median of 6 comparable listings"
+   ],
+   "score": 28.7,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-c9669efab6",
+   "title": "USAGE (8) - Fujifilm GF 100-200mm F/5.6 R LM OIS WR",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/fujifilm-usage-8-fujifilm-gf-100-200mm-f-56-r-lm-ois-wr-u100661",
+   "price_cad": 1599.0,
+   "comp_median": 2150.0,
+   "comps": 3,
+   "model_key": "lens-fujifilm-fujifilm-g-100-200mm-f5_6-lm_stab",
+   "model_name": "Fujifilm 100-200mm f/5.6 LM STAB (Fujifilm G)",
+   "condition": "Good",
+   "reasons": [
+    "26% below the median of 3 comparable listings"
+   ],
+   "score": 28.6,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-c17f916289",
+   "title": "USAGE (9) - Canon RF 35mm f/1.8 Macro IS STM",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/canon-usage-9-canon-rf-35mm-f-18-macro-is-stm-u107255",
+   "price_cad": 425.0,
+   "comp_median": 569.99,
+   "comps": 3,
+   "model_key": "lens-canon-canon-rf-35mm-f1_8-macro_stab_stm",
+   "model_name": "Canon 35mm f/1.8 MACRO STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "25% below the median of 3 comparable listings"
+   ],
+   "score": 28.4,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -418,26 +703,26 @@
    ],
    "score": 28.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
-   "id": "downtowncamera-83a98518cd",
+   "id": "downtowncamera-5a90b53e98",
    "title": "PENTAX 135F3.5 M42-F",
    "dealer": "Downtown Camera",
    "url": "https://downtowncamera.com/used-equipment",
-   "price_cad": 75.0,
-   "comp_median": 100.0,
-   "comps": 3,
+   "price_cad": 70.0,
+   "comp_median": 89.0,
+   "comps": 6,
    "model_key": "lens-pentax-m42-135mm-f3_5",
    "model_name": "Pentax 135mm f/3.5 (M42)",
    "condition": null,
    "reasons": [
-    "25% below the median of 3 comparable listings"
+    "21% below the median of 6 comparable listings"
    ],
-   "score": 28.0,
+   "score": 27.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -456,7 +741,26 @@
    ],
    "score": 26.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-a18ca95aa0",
+   "title": "USAGE (8) - Nikon Z 24-70mm f/4 S",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z-24-70mm-f-4-s-u107259",
+   "price_cad": 599.0,
+   "comp_median": 749.99,
+   "comps": 6,
+   "model_key": "lens-nikon-nikon-z-24-70mm-f4-s",
+   "model_name": "Nikon 24-70mm f/4 S (Nikon Z)",
+   "condition": "Good",
+   "reasons": [
+    "20% below the median of 6 comparable listings"
+   ],
+   "score": 26.1,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -475,7 +779,26 @@
    ],
    "score": 25.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-2070e43232",
+   "title": "USAGE (8) - Sony Cyber-shot DSC-RX10 IV",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/sony-usage-8-sony-cyber-shot-dsc-rx10-iv-u107233",
+   "price_cad": 1599.0,
+   "comp_median": 1999.0,
+   "comps": 5,
+   "model_key": "camera-sony-rx10-iv",
+   "model_name": "Sony RX10 IV",
+   "condition": "Good",
+   "reasons": [
+    "20% below the median of 5 comparable listings"
+   ],
+   "score": 25.0,
+   "is_new": false,
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -494,26 +817,7 @@
    ],
    "score": 24.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-2070e43232",
-   "title": "USAGE (8) - Sony Cyber-shot DSC-RX10 IV",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/sony-usage-8-sony-cyber-shot-dsc-rx10-iv-u107233",
-   "price_cad": 1599.0,
-   "comp_median": 1999.0,
-   "comps": 4,
-   "model_key": "camera-sony-rx10-iv",
-   "model_name": "Sony RX10 IV",
-   "condition": "Good",
-   "reasons": [
-    "20% below the median of 4 comparable listings"
-   ],
-   "score": 24.0,
-   "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -532,7 +836,7 @@
    ],
    "score": 23.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   },
   {
    "type": "listing",
@@ -551,7 +855,7 @@
    ],
    "score": 23.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:29:06+00:00"
+   "fetched_at": "2026-10-18T05:34:50+00:00"
   }
  ],
  "rules": {

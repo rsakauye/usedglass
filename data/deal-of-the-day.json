@@ -1,22 +1,22 @@
 [
  {
   "type": "listing",
-  "id": "gosselin-6a5d22efee",
-  "title": "USAGE (8) - Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
-  "dealer": "Gosselin Photo",
-  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
-  "price_cad": 429.0,
-  "comp_median": 975.0,
+  "id": "cameratraders-bd2c6eb9fb",
+  "title": "Nikon D3200",
+  "dealer": "Camera Traders",
+  "url": "https://www.camera-traders.com/products/nikon-d3200-6",
+  "price_cad": 149.0,
+  "comp_median": 275.0,
   "comps": 5,
-  "model_key": "camera-nikon-fe2",
-  "model_name": "Nikon FE2",
+  "model_key": "camera-nikon-d3200",
+  "model_name": "Nikon D3200",
   "condition": "Good",
   "reasons": [
-   "56% below the median of 5 comparable listings"
+   "46% below the median of 5 comparable listings"
   ],
-  "score": 61.0,
-  "is_new": false,
-  "fetched_at": "2026-10-18T05:29:06+00:00",
+  "score": 58.8,
+  "is_new": true,
+  "fetched_at": "2026-10-18T05:34:50+00:00",
   "date": "2026-10-17"
  }
 ]

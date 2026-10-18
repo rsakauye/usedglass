@@ -1,36 +1,61 @@
 {
- "run_at": "2026-10-18T05:29:06+00:00",
+ "run_at": "2026-10-18T05:34:50+00:00",
  "date": "2026-10-17",
  "dealers": {
   "mcbain": {
    "count": 990,
    "status": "ok",
-   "seconds": 2.1
+   "seconds": 1.2
   },
   "downtowncamera": {
    "count": 847,
    "status": "ok",
-   "seconds": 1.2
+   "seconds": 1.0
   },
   "gosselin": {
    "count": 453,
    "status": "ok",
-   "seconds": 3.5
+   "seconds": 3.4
   },
   "beauphoto": {
    "count": 388,
    "status": "ok",
-   "seconds": 11.4
+   "seconds": 11.6
   },
   "thecamerastore": {
    "count": 88,
    "status": "ok",
-   "seconds": 1.0
+   "seconds": 0.8
   },
   "camtec": {
    "count": 127,
    "status": "ok",
-   "seconds": 2.8
+   "seconds": 3.0
+  },
+  "plotcamera": {
+   "count": 45,
+   "status": "ok",
+   "seconds": 0.6
+  },
+  "cameratraders": {
+   "count": 657,
+   "status": "ok",
+   "seconds": 5.7
+  },
+  "maplecamera": {
+   "count": 96,
+   "status": "ok",
+   "seconds": 0.6
+  },
+  "cameratrading": {
+   "count": 57,
+   "status": "ok",
+   "seconds": 0.7
+  },
+  "cameracanada": {
+   "count": 177,
+   "status": "ok",
+   "seconds": 41.4
   },
   "ebay": {
    "count": 0,
@@ -38,11 +63,11 @@
   }
  },
  "errors": {},
- "total": 2883,
- "models": 1227,
- "new_today": 0,
+ "total": 3891,
+ "models": 1438,
+ "new_today": 1008,
  "price_dropped": 0,
- "deals": 28,
+ "deals": 44,
  "dealer_info": {
   "thecamerastore": {
    "name": "The Camera Store",
@@ -73,6 +98,31 @@
    "name": "Camtec Photo",
    "city": "Montreal, QC",
    "site": "https://www.camtecphoto.com"
+  },
+  "plotcamera": {
+   "name": "Plot Camera",
+   "city": "Vancouver, BC",
+   "site": "https://www.plotcamera.com"
+  },
+  "cameratraders": {
+   "name": "Camera Traders",
+   "city": "Victoria, BC",
+   "site": "https://www.camera-traders.com"
+  },
+  "maplecamera": {
+   "name": "Maple Camera Co.",
+   "city": "Scarborough, ON",
+   "site": "https://maplecameraco.com"
+  },
+  "cameratrading": {
+   "name": "Camera Trading Company",
+   "city": "Perth, ON",
+   "site": "https://cameratradingcompany.com"
+  },
+  "cameracanada": {
+   "name": "Camera Canada",
+   "city": "Ontario (online)",
+   "site": "https://www.cameracanada.com"
   },
   "ebay": {
    "name": "eBay (Canadian sellers)",
