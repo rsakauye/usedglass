@@ -1,0 +1,218 @@
+"""Daily pipeline: scrape -> normalize -> history/state -> models -> changes -> deals -> rebates.
+
+Usage: python -m scraper.run [dealer ...]   (default: all dealers + eBay if keys present)
+All outputs land in data/. Dates are America/Edmonton calendar days.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+import os
+import statistics
+import sys
+import time
+import traceback
+from pathlib import Path
+from zoneinfo import ZoneInfo
+
+from .dealers import ADAPTERS, DEALERS
+from .ebay import ebay
+from .rebates import rebates
+
+DATA = Path(os.environ.get("USEDGLASS_DATA", Path(__file__).resolve().parent.parent / "data"))
+TZ = ZoneInfo("America/Edmonton")
+DEAL_MIN_DISCOUNT = 0.20
+DEAL_MIN_COMPS = 3
+DROP_MIN = 0.10
+DEAL_MAX_DISCOUNT = 0.70
+HISTORY_DAYS = 120
+
+
+def load(path: Path, default):
+    try:
+        return json.loads(path.read_text())
+    except Exception:
+        return default
+
+
+def save(path: Path, obj, compact: bool = False):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    txt = json.dumps(obj, ensure_ascii=False, separators=(",", ":")) if compact else json.dumps(obj, ensure_ascii=False, indent=1)
+    path.write_text(txt + "\n")
+
+
+def main(argv: list[str]) -> int:
+    now_dt = dt.datetime.now(dt.timezone.utc)
+    now = now_dt.isoformat(timespec="seconds")
+    today = now_dt.astimezone(TZ).date().isoformat()
+    picks = argv or list(ADAPTERS) + ["ebay"]
+    prev_listings = {x["id"]: x for x in load(DATA / "listings.json", [])}
+    state = load(DATA / "state.json", {})
+    meta = {"run_at": now, "date": today, "dealers": {}, "errors": {}}
+
+    listings: list[dict] = []
+    for k in picks:
+        t0 = time.time()
+        try:
+            rows = ebay(now) if k == "ebay" else ADAPTERS[k](now)
+            if k == "ebay" and not rows:
+                meta["dealers"][k] = {"count": 0, "status": "skipped (no API keys)" if not os.environ.get("EBAY_CLIENT_ID") else "empty"}
+                continue
+            if not rows:
+                raise RuntimeError("0 listings parsed (layout change?)")
+            listings += rows
+            meta["dealers"][k] = {"count": len(rows), "status": "ok", "seconds": round(time.time() - t0, 1)}
+        except Exception as e:
+            traceback.print_exc()
+            stale = [x for x in prev_listings.values() if x["dealer_id"] == k]
+            for x in stale:
+                x["stale"] = True
+            listings += stale
+            meta["errors"][k] = f"{type(e).__name__}: {e}"
+            meta["dealers"][k] = {"count": len(stale), "status": "error - kept previous listings"}
+        print(k, meta["dealers"][k], flush=True)
+
+    # de-dup ids, drop junk prices
+    uniq = {}
+    for x in listings:
+        if x.get("price_cad") and x["price_cad"] >= 10:
+            uniq[x["id"]] = x
+    listings = list(uniq.values())
+
+    # ---- state + history
+    hist = {}
+    new_ids, dropped = [], []
+    for x in listings:
+        s = state.get(x["id"])
+        p = x["price_cad"]
+        if s is None:
+            s = {"fs": today, "p": [[today, p]], "mk": x.get("model_key")}
+            if x["id"] not in prev_listings:
+                new_ids.append(x["id"])
+        else:
+            last = s["p"][-1][1]
+            if p != last:
+                s["p"].append([today, p])
+                if p < last * (1 - 0.001):
+                    dropped.append({"id": x["id"], "old": last, "new": p, "pct": round(1 - p / last, 3)})
+        s["ls"] = today
+        s["mk"] = x.get("model_key")
+        state[x["id"]] = s
+        x["first_seen"] = s["fs"]
+        x["prev_price"] = s["p"][-2][1] if len(s["p"]) > 1 else None
+        x["lowest_seen"] = min(v for _, v in s["p"])
+        hist[x["id"]] = p
+    # prune state entries unseen for > HISTORY_DAYS
+    cutoff = (dt.date.fromisoformat(today) - dt.timedelta(days=HISTORY_DAYS)).isoformat()
+    state = {k: v for k, v in state.items() if v.get("ls", today) >= cutoff}
+    save(DATA / "history" / f"{today}.json", {"date": today, "run_at": now, "prices": hist}, compact=True)
+
+    # ---- models
+    current_ids = {x["id"] for x in listings}
+    models: dict[str, dict] = {}
+    for x in listings:
+        mk = x.get("model_key")
+        if not mk:
+            continue
+        m = models.setdefault(mk, {"key": mk, "name": x["model_name"], "category": x["category"], "brand": x["brand"],
+                                   "mount": x["mount"], "listing_ids": []})
+        m["listing_ids"].append(x["id"])
+        if not m["mount"] and x["mount"]:
+            m["mount"] = x["mount"]
+    hist_by_model: dict[str, list[float]] = {}
+    for lid, s in state.items():
+        if s.get("mk") and s.get("ls", "") >= (dt.date.fromisoformat(today) - dt.timedelta(days=90)).isoformat():
+            hist_by_model.setdefault(s["mk"], []).append(s["p"][-1][1])
+    by_id = {x["id"]: x for x in listings}
+    for mk, m in models.items():
+        prices = sorted(by_id[i]["price_cad"] for i in m["listing_ids"])
+        m["count"] = len(prices)
+        m["min_price"] = prices[0]
+        m["median_price"] = round(statistics.median(prices), 2)
+        hp = hist_by_model.get(mk, [])
+        m["median_90d"] = round(statistics.median(hp), 2) if hp else None
+        m["observations_90d"] = len(hp)
+        m["dealers"] = sorted({by_id[i]["dealer_id"] for i in m["listing_ids"]})
+    save(DATA / "models.json", models, compact=True)
+
+    # ---- deals
+    deals = []
+    dropped_by_id = {d["id"]: d for d in dropped}
+    for x in listings:
+        if x.get("condition") == "As Is" or x.get("stale"):
+            continue
+        p = x["price_cad"]
+        reasons, score, comp_median, ncomp = [], 0.0, None, 0
+        mk = x.get("model_key")
+        if mk:
+            comps = [by_id[i]["price_cad"] for i in models[mk]["listing_ids"]
+                     if i != x["id"] and by_id[i].get("condition") != "As Is"]
+            comps += [v for lid, s in state.items() if s.get("mk") == mk and lid not in current_ids
+                      for v in [s["p"][-1][1]]]
+            ncomp = len(comps)
+            if ncomp >= DEAL_MIN_COMPS:
+                comp_median = statistics.median(comps)
+                disc = 1 - p / comp_median
+                if DEAL_MIN_DISCOUNT <= disc <= DEAL_MAX_DISCOUNT:  # >70% off is almost always a mismatch
+                    reasons.append(f"{round(disc * 100)}% below the median of {ncomp} comparable listings")
+                    score += disc * 100 + min(ncomp, 10)
+        d = dropped_by_id.get(x["id"])
+        if d and d["pct"] >= DROP_MIN:
+            reasons.append(f"price dropped {round(d['pct'] * 100)}% (was ${d['old']:,.0f})")
+            score += d["pct"] * 60
+        if not reasons:
+            continue
+        if x["id"] in new_ids:
+            score += 8
+        deals.append({"type": "listing", "id": x["id"], "title": x["title"], "dealer": x["dealer"], "url": x["url"],
+                      "price_cad": p, "comp_median": round(comp_median, 2) if comp_median else None, "comps": ncomp,
+                      "model_key": mk, "model_name": x.get("model_name"), "condition": x.get("condition"),
+                      "reasons": reasons, "score": round(score, 1), "is_new": x["id"] in new_ids,
+                      "fetched_at": x["fetched_at"]})
+    deals.sort(key=lambda d: -d["score"])
+
+    # ---- rebates (new rebate pages become deals too)
+    prev_reb = load(DATA / "rebates.json", {"items": []})
+    try:
+        reb = rebates(now)
+    except Exception as e:
+        reb = dict(prev_reb, errors=[{"error": f"{type(e).__name__}: {e}"}])
+    prev_urls = {r["url"] for r in prev_reb.get("items", [])}
+    for r in reb.get("items", []):
+        r["first_seen"] = next((p.get("first_seen") for p in prev_reb.get("items", []) if p["url"] == r["url"]), today) or today
+        if r["url"] not in prev_urls and prev_reb.get("items"):
+            deals.insert(0, {"type": "rebate", "id": "rebate-" + r["url"], "title": f"New {r['brand']} rebate: {r['title']}",
+                             "url": r["url"], "dealer": r["brand"], "price_cad": None,
+                             "reasons": [f"up to ${r['max_amount_cad']:,}" if r.get("max_amount_cad") else "new manufacturer offer"],
+                             "score": 999, "is_new": True, "fetched_at": now})
+    save(DATA / "rebates.json", reb)
+
+    # ---- deal of the day (prefer something new/dropped today, avoid repeats in last 14 days)
+    dotd_hist = load(DATA / "deal-of-the-day.json", [])
+    recent = {h["id"] for h in dotd_hist[-14:]}
+    fresh = [d for d in deals if d["id"] not in recent]
+    pick = next((d for d in fresh if d.get("is_new") or d["id"] in dropped_by_id), fresh[0] if fresh else None)
+    if pick and not (dotd_hist and dotd_hist[-1].get("date") == today):
+        dotd_hist.append(dict(pick, date=today))
+    elif pick and dotd_hist and dotd_hist[-1].get("date") == today:
+        dotd_hist[-1] = dict(pick, date=today)
+    save(DATA / "deal-of-the-day.json", dotd_hist[-120:])
+    save(DATA / "deals.json", {"date": today, "generated_at": now, "deal_of_the_day": pick, "deals": deals[:100],
+                               "rules": {"min_discount": DEAL_MIN_DISCOUNT, "min_comps": DEAL_MIN_COMPS, "min_drop": DROP_MIN}})
+
+    # ---- changes + listings + meta
+    removed = [i for i in prev_listings if i not in current_ids]
+    save(DATA / "changes.json", {"date": today, "new_today": new_ids, "price_dropped": dropped, "removed": len(removed)})
+    listings.sort(key=lambda x: (x["dealer_id"], x["title"]))
+    save(DATA / "listings.json", listings, compact=True)
+    save(DATA / "state.json", state, compact=True)
+    meta.update({"total": len(listings), "models": len(models), "new_today": len(new_ids),
+                 "price_dropped": len(dropped), "deals": len(deals), "dealer_info": DEALERS})
+    save(DATA / "meta.json", meta)
+    print(json.dumps({k: meta[k] for k in ["total", "models", "new_today", "price_dropped", "deals"]}))
+    ok = [k for k, v in meta["dealers"].items() if v["status"] == "ok"]
+    return 0 if ok else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
