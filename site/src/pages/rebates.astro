@@ -1,0 +1,24 @@
+---
+import Base from '../layouts/Base.astro';
+import { rebates, asOf } from '../lib/data.js';
+---
+<Base title="Camera rebates in Canada">
+  <h1>Camera rebates &amp; instant savings in Canada</h1>
+  <p class="card">Early version. We check official Canadian manufacturer promotion pages daily and list what we find, with the dates we could read. Always confirm terms on the manufacturer's page.</p>
+  <table>
+    <thead><tr><th>Brand</th><th>Offer</th><th>Dates found</th><th class="price">Up to</th><th>Checked</th></tr></thead>
+    <tbody>
+      {(rebates.items || []).map((r) => (
+        <tr>
+          <td>{r.brand}</td>
+          <td><a href={r.url} rel="noopener" target="_blank">{r.title}</a></td>
+          <td>{r.starts || r.ends ? `${r.starts ?? '?'} to ${r.ends ?? '?'}` : <span class="muted">see page</span>}</td>
+          <td class="price">{r.max_amount_cad ? `$${r.max_amount_cad.toLocaleString('en-CA')}` : '—'}</td>
+          <td class="muted">{asOf(r.fetched_at)}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+  <h2>Check manually</h2>
+  <ul>{(rebates.manual_check || []).map((m) => <li>{m.brand}: <a href={m.url} rel="noopener" target="_blank">{m.url}</a> <span class="muted">({m.note})</span></li>)}</ul>
+</Base>
