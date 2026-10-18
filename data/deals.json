@@ -1,0 +1,410 @@
+{
+ "date": "2026-10-17",
+ "generated_at": "2026-10-18T04:03:50+00:00",
+ "deal_of_the_day": {
+  "type": "listing",
+  "id": "gosselin-69a8658b93",
+  "title": "USAGE (7) - Fujifilm XF 23mm f1.4 R LM WR",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749",
+  "price_cad": 399.0,
+  "comp_median": 895.0,
+  "comps": 3,
+  "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+  "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+  "condition": "Fair",
+  "reasons": [
+   "55% below the median of 3 comparable listings"
+  ],
+  "score": 66.4,
+  "is_new": true,
+  "fetched_at": "2026-10-18T04:03:50+00:00"
+ },
+ "deals": [
+  {
+   "type": "listing",
+   "id": "gosselin-69a8658b93",
+   "title": "USAGE (7) - Fujifilm XF 23mm f1.4 R LM WR",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749",
+   "price_cad": 399.0,
+   "comp_median": 895.0,
+   "comps": 3,
+   "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+   "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+   "condition": "Fair",
+   "reasons": [
+    "55% below the median of 3 comparable listings"
+   ],
+   "score": 66.4,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-8a51bfe195",
+   "title": "Olympus OM G Zuiko Auto N 28mm F3.5 Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905373",
+   "price_cad": 119.99,
+   "comp_median": 250.0,
+   "comps": 3,
+   "model_key": "lens-olympus-micro-four-thirds-28mm-f3_5",
+   "model_name": "Olympus 28mm f/3.5 (Micro Four Thirds)",
+   "condition": null,
+   "reasons": [
+    "52% below the median of 3 comparable listings"
+   ],
+   "score": 63.0,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-5d613a2de3",
+   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905308",
+   "price_cad": 89.99,
+   "comp_median": 169.0,
+   "comps": 4,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": null,
+   "reasons": [
+    "47% below the median of 4 comparable listings"
+   ],
+   "score": 58.8,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-a52ea4aaff",
+   "title": "Canon 18-45mm f4.5-6.3 IS STM (EX) RF used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907810",
+   "price_cad": 94.99,
+   "comp_median": 169.0,
+   "comps": 4,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "44% below the median of 4 comparable listings"
+   ],
+   "score": 55.8,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-f39dd88c12",
+   "title": "LEICA 90F2 SUMMICRON CND",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 850.0,
+   "comp_median": 1425.0,
+   "comps": 4,
+   "model_key": "lens-leica-90mm-f2",
+   "model_name": "Leica 90mm f/2",
+   "condition": null,
+   "reasons": [
+    "40% below the median of 4 comparable listings"
+   ],
+   "score": 52.4,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-7e12b94515",
+   "title": "Pentax-M 50mm F2 (BGN) Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907079",
+   "price_cad": 45.99,
+   "comp_median": 75.99,
+   "comps": 3,
+   "model_key": "lens-pentax-pentax-k-50mm-f2",
+   "model_name": "Pentax 50mm f/2 (Pentax K)",
+   "condition": "Fair",
+   "reasons": [
+    "39% below the median of 3 comparable listings"
+   ],
+   "score": 50.5,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-b909aa2f2e",
+   "title": "USAGE (8) - SIGMA 30MM F1.4 DC DN Monture L",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
+   "price_cad": 229.0,
+   "comp_median": 360.0,
+   "comps": 4,
+   "model_key": "lens-sigma-sony-e-30mm-f1_4",
+   "model_name": "Sigma 30mm f/1.4 (Sony E)",
+   "condition": "Good",
+   "reasons": [
+    "36% below the median of 4 comparable listings"
+   ],
+   "score": 48.4,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-b764197581",
+   "title": "Pentax-M 50mm f2 (BGN) P/K used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907672",
+   "price_cad": 49.99,
+   "comp_median": 75.99,
+   "comps": 3,
+   "model_key": "lens-pentax-pentax-k-50mm-f2",
+   "model_name": "Pentax 50mm f/2 (Pentax K)",
+   "condition": "Fair",
+   "reasons": [
+    "34% below the median of 3 comparable listings"
+   ],
+   "score": 45.2,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-7f3f474306",
+   "title": "USAGE (8) - Fujifilm XF 23mm f/1.4 R LM WR",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/fujifilm-usage-8-fujifilm-xf-23mm-f-14-r-lm-wr-u107005",
+   "price_cad": 599.0,
+   "comp_median": 895.0,
+   "comps": 3,
+   "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+   "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+   "condition": "Good",
+   "reasons": [
+    "33% below the median of 3 comparable listings"
+   ],
+   "score": 44.1,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "beauphoto-42952155b0",
+   "title": "Used Leitz Leica Canada Summicron-M 90mm f2",
+   "dealer": "Beau Photo",
+   "url": "https://www.beauphoto.com/product/used-leitz-leica-canada-summicron-m-90mm-f2/",
+   "price_cad": 1000.0,
+   "comp_median": 1425.0,
+   "comps": 4,
+   "model_key": "lens-leica-90mm-f2",
+   "model_name": "Leica 90mm f/2",
+   "condition": "Good",
+   "reasons": [
+    "30% below the median of 4 comparable listings"
+   ],
+   "score": 41.8,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-a519f8f7bc",
+   "title": "USAGE (8) - Nikon AF-S NIKKOR 50mm f/1.8G",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-af-s-nikkor-50mm-f-18g-u107162",
+   "price_cad": 125.0,
+   "comp_median": 169.99,
+   "comps": 7,
+   "model_key": "lens-nikon-nikon-f-50mm-f1_8-afs",
+   "model_name": "Nikon 50mm f/1.8 AFS (Nikon F)",
+   "condition": "Good",
+   "reasons": [
+    "26% below the median of 7 comparable listings"
+   ],
+   "score": 41.5,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-5a90b53e98",
+   "title": "PENTAX 135F3.5 M42-F",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 70.0,
+   "comp_median": 100.0,
+   "comps": 3,
+   "model_key": "lens-pentax-m42-135mm-f3_5",
+   "model_name": "Pentax 135mm f/3.5 (M42)",
+   "condition": null,
+   "reasons": [
+    "30% below the median of 3 comparable listings"
+   ],
+   "score": 41.0,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-e58d9aafb3",
+   "title": "USAGE (7) - Fujifilm x-t2 + vpb-xt2",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-x-t2-vpb-xt2-u104408",
+   "price_cad": 699.0,
+   "comp_median": 947.5,
+   "comps": 4,
+   "model_key": "camera-fujifilm-xt2",
+   "model_name": "Fujifilm XT2",
+   "condition": "Fair",
+   "reasons": [
+    "26% below the median of 4 comparable listings"
+   ],
+   "score": 38.2,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-0dbe689281",
+   "title": "Canon R5 Used Mirrorless Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905468",
+   "price_cad": 2100.0,
+   "comp_median": 2797.0,
+   "comps": 4,
+   "model_key": "camera-canon-r5",
+   "model_name": "Canon R5",
+   "condition": null,
+   "reasons": [
+    "25% below the median of 4 comparable listings"
+   ],
+   "score": 36.9,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-83a98518cd",
+   "title": "PENTAX 135F3.5 M42-F",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 75.0,
+   "comp_median": 100.0,
+   "comps": 3,
+   "model_key": "lens-pentax-m42-135mm-f3_5",
+   "model_name": "Pentax 135mm f/3.5 (M42)",
+   "condition": null,
+   "reasons": [
+    "25% below the median of 3 comparable listings"
+   ],
+   "score": 36.0,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-de9826a08a",
+   "title": "NIKON FE2 W/50F2",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 750.0,
+   "comp_median": 985.0,
+   "comps": 4,
+   "model_key": "camera-nikon-fe2",
+   "model_name": "Nikon FE2",
+   "condition": null,
+   "reasons": [
+    "24% below the median of 4 comparable listings"
+   ],
+   "score": 35.9,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-c886e4c1a1",
+   "title": "Olympus Zuiko 50mm f1.8 Auto-S (BGN) OM used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907745",
+   "price_cad": 45.99,
+   "comp_median": 59.99,
+   "comps": 3,
+   "model_key": "lens-olympus-micro-four-thirds-50mm-f1_8",
+   "model_name": "Olympus 50mm f/1.8 (Micro Four Thirds)",
+   "condition": "Fair",
+   "reasons": [
+    "23% below the median of 3 comparable listings"
+   ],
+   "score": 34.3,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-72164c5783",
+   "title": "Canon R5 Used Mirrorless Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905467",
+   "price_cad": 2199.99,
+   "comp_median": 2797.0,
+   "comps": 4,
+   "model_key": "camera-canon-r5",
+   "model_name": "Canon R5",
+   "condition": null,
+   "reasons": [
+    "21% below the median of 4 comparable listings"
+   ],
+   "score": 33.3,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-a424a2e5f2",
+   "title": "FUJI X-T2 XC W/VPB-XT2",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 750.0,
+   "comp_median": 947.5,
+   "comps": 4,
+   "model_key": "camera-fujifilm-xt2",
+   "model_name": "Fujifilm XT2",
+   "condition": null,
+   "reasons": [
+    "21% below the median of 4 comparable listings"
+   ],
+   "score": 32.8,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-2070e43232",
+   "title": "USAGE (8) - Sony Cyber-shot DSC-RX10 IV",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/sony-usage-8-sony-cyber-shot-dsc-rx10-iv-u107233",
+   "price_cad": 1599.0,
+   "comp_median": 1999.0,
+   "comps": 4,
+   "model_key": "camera-sony-rx10-iv",
+   "model_name": "Sony RX10 IV",
+   "condition": "Good",
+   "reasons": [
+    "20% below the median of 4 comparable listings"
+   ],
+   "score": 32.0,
+   "is_new": true,
+   "fetched_at": "2026-10-18T04:03:50+00:00"
+  }
+ ],
+ "rules": {
+  "min_discount": 0.2,
+  "min_comps": 3,
+  "min_drop": 0.1
+ }
+}

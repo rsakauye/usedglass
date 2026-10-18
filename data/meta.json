@@ -1,0 +1,83 @@
+{
+ "run_at": "2026-10-18T04:03:50+00:00",
+ "date": "2026-10-17",
+ "dealers": {
+  "mcbain": {
+   "count": 990,
+   "status": "ok",
+   "seconds": 2.0
+  },
+  "downtowncamera": {
+   "count": 847,
+   "status": "ok",
+   "seconds": 0.7
+  },
+  "gosselin": {
+   "count": 453,
+   "status": "ok",
+   "seconds": 3.3
+  },
+  "beauphoto": {
+   "count": 388,
+   "status": "ok",
+   "seconds": 12.9
+  },
+  "thecamerastore": {
+   "count": 88,
+   "status": "ok",
+   "seconds": 0.7
+  },
+  "camtec": {
+   "count": 127,
+   "status": "ok",
+   "seconds": 7.4
+  },
+  "ebay": {
+   "count": 0,
+   "status": "skipped (no API keys)"
+  }
+ },
+ "errors": {},
+ "total": 2883,
+ "models": 1183,
+ "new_today": 2883,
+ "price_dropped": 0,
+ "deals": 20,
+ "dealer_info": {
+  "thecamerastore": {
+   "name": "The Camera Store",
+   "city": "Calgary, AB",
+   "site": "https://thecamerastore.com"
+  },
+  "mcbain": {
+   "name": "McBain Camera",
+   "city": "Edmonton, AB",
+   "site": "https://www.mcbaincamera.com"
+  },
+  "beauphoto": {
+   "name": "Beau Photo",
+   "city": "Vancouver, BC",
+   "site": "https://www.beauphoto.com"
+  },
+  "downtowncamera": {
+   "name": "Downtown Camera",
+   "city": "Toronto, ON",
+   "site": "https://downtowncamera.com"
+  },
+  "gosselin": {
+   "name": "Gosselin Photo",
+   "city": "Quebec",
+   "site": "https://gosselinphoto.ca"
+  },
+  "camtec": {
+   "name": "Camtec Photo",
+   "city": "Montreal, QC",
+   "site": "https://www.camtecphoto.com"
+  },
+  "ebay": {
+   "name": "eBay (Canadian sellers)",
+   "city": "Canada",
+   "site": "https://www.ebay.ca"
+  }
+ }
+}

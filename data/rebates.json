@@ -1,0 +1,58 @@
+{
+ "fetched_at": "2026-10-18T04:03:50+00:00",
+ "items": [
+  {
+   "brand": "Canon",
+   "url": "https://www.canoncreatorlab.ca/offers/cashback-event/",
+   "title": "Cashback Event - Canon Creator Lab",
+   "starts": "September 4",
+   "ends": "October 29, 2026",
+   "max_amount_cad": 500,
+   "fetched_at": "2026-10-18T04:03:50+00:00",
+   "first_seen": "2026-10-17"
+  },
+  {
+   "brand": "Canon",
+   "url": "https://www.canoncreatorlab.ca/offers/eos-r8-mark-ii-limited-time-preorder-offer/",
+   "title": "EOS R8 Mark II Limited Time Preorder Offer - Canon Creator Lab",
+   "starts": "Sept 15",
+   "ends": "Oct 31, 2026",
+   "max_amount_cad": 500,
+   "fetched_at": "2026-10-18T04:03:50+00:00",
+   "first_seen": "2026-10-17"
+  },
+  {
+   "brand": "Fujifilm",
+   "url": "https://www.fujifilm-x.com/en-ca/travel-lens-promotion/",
+   "title": "Travel Lens Promotion",
+   "starts": "June 8, 2026",
+   "ends": "Aug 2, 2026",
+   "max_amount_cad": 105,
+   "fetched_at": "2026-10-18T04:03:50+00:00",
+   "first_seen": "2026-10-17"
+  },
+  {
+   "brand": "Nikon",
+   "url": "https://en.nikon.ca/content/rebate-program",
+   "title": "https://en.nikon.ca/content/rebate-program",
+   "starts": null,
+   "ends": null,
+   "max_amount_cad": null,
+   "fetched_at": "2026-10-18T04:03:50+00:00",
+   "first_seen": "2026-10-17"
+  }
+ ],
+ "manual_check": [
+  {
+   "brand": "Sony",
+   "url": "https://www.sony.ca/en/promotions",
+   "note": "sony.ca blocks automated fetches; check manually"
+  },
+  {
+   "brand": "Nikon",
+   "url": "https://store.nikon.ca/products-on-sale/",
+   "note": "JS-rendered instant savings list"
+  }
+ ],
+ "errors": []
+}

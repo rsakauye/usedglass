@@ -1,0 +1,22 @@
+[
+ {
+  "type": "listing",
+  "id": "gosselin-69a8658b93",
+  "title": "USAGE (7) - Fujifilm XF 23mm f1.4 R LM WR",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749",
+  "price_cad": 399.0,
+  "comp_median": 895.0,
+  "comps": 3,
+  "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+  "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+  "condition": "Fair",
+  "reasons": [
+   "55% below the median of 3 comparable listings"
+  ],
+  "score": 66.4,
+  "is_new": true,
+  "fetched_at": "2026-10-18T04:03:50+00:00",
+  "date": "2026-10-17"
+ }
+]
