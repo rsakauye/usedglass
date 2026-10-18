@@ -1,26 +1,45 @@
 {
- "date": "2026-10-17",
- "generated_at": "2026-10-18T05:34:50+00:00",
+ "date": "2026-10-18",
+ "generated_at": "2026-10-18T13:28:47+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "cameratraders-bd2c6eb9fb",
-  "title": "Nikon D3200",
-  "dealer": "Camera Traders",
-  "url": "https://www.camera-traders.com/products/nikon-d3200-6",
-  "price_cad": 149.0,
-  "comp_median": 275.0,
-  "comps": 5,
-  "model_key": "camera-nikon-d3200",
-  "model_name": "Nikon D3200",
+  "id": "gosselin-44291abd64",
+  "title": "USAGE (8) - Canon EOS 5D Mark II",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
+  "price_cad": 299.0,
+  "comp_median": 750.0,
+  "comps": 3,
+  "model_key": "camera-canon-5d-ii",
+  "model_name": "Canon 5D II",
   "condition": "Good",
   "reasons": [
-   "46% below the median of 5 comparable listings"
+   "60% below the median of 3 comparable listings"
   ],
-  "score": 58.8,
+  "score": 71.1,
   "is_new": true,
-  "fetched_at": "2026-10-18T05:34:50+00:00"
+  "fetched_at": "2026-10-18T13:28:47+00:00"
  },
  "deals": [
+  {
+   "type": "listing",
+   "id": "gosselin-44291abd64",
+   "title": "USAGE (8) - Canon EOS 5D Mark II",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
+   "price_cad": 299.0,
+   "comp_median": 750.0,
+   "comps": 3,
+   "model_key": "camera-canon-5d-ii",
+   "model_name": "Canon 5D II",
+   "condition": "Good",
+   "reasons": [
+    "60% below the median of 3 comparable listings"
+   ],
+   "score": 71.1,
+   "is_new": true,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
   {
    "type": "listing",
    "id": "mcbain-65e3671a87",
@@ -38,7 +57,7 @@
    ],
    "score": 69.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -57,45 +76,26 @@
    ],
    "score": 61.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-69a8658b93",
-   "title": "USAGE (7) - Fujifilm XF 23mm f1.4 R LM WR",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-xf-23mm-f14-r-lm-wr-u106749",
-   "price_cad": 399.0,
-   "comp_median": 922.5,
-   "comps": 4,
-   "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
-   "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
-   "condition": "Fair",
+   "id": "plotcamera-059e17404d",
+   "title": "Canon EOS 5D Mark II",
+   "dealer": "Plot Camera",
+   "url": "https://www.plotcamera.com/products/70090040",
+   "price_cad": 349.9,
+   "comp_median": 750.0,
+   "comps": 3,
+   "model_key": "camera-canon-5d-ii",
+   "model_name": "Canon 5D II",
+   "condition": "Excellent",
    "reasons": [
-    "57% below the median of 4 comparable listings"
+    "53% below the median of 3 comparable listings"
    ],
-   "score": 60.7,
+   "score": 56.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "cameratraders-bd2c6eb9fb",
-   "title": "Nikon D3200",
-   "dealer": "Camera Traders",
-   "url": "https://www.camera-traders.com/products/nikon-d3200-6",
-   "price_cad": 149.0,
-   "comp_median": 275.0,
-   "comps": 5,
-   "model_key": "camera-nikon-d3200",
-   "model_name": "Nikon D3200",
-   "condition": "Good",
-   "reasons": [
-    "46% below the median of 5 comparable listings"
-   ],
-   "score": 58.8,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -114,7 +114,7 @@
    ],
    "score": 54.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -133,7 +133,7 @@
    ],
    "score": 53.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -152,26 +152,26 @@
    ],
    "score": 51.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
-   "id": "cameratrading-83aa194b46",
-   "title": "Canon AE-1 35mm SLR Camera with New FD 50mm f/1.8 Lens",
-   "dealer": "Camera Trading Company",
-   "url": "https://cameratradingcompany.com/products/canon-ae-1-35mm-slr-with-50mm-new-fd-50-1-8-serviced",
-   "price_cad": 329.99,
-   "comp_median": 499.99,
-   "comps": 7,
-   "model_key": "camera-canon-ae1",
-   "model_name": "Canon AE1",
-   "condition": "Excellent",
+   "id": "cameratraders-bd2c6eb9fb",
+   "title": "Nikon D3200",
+   "dealer": "Camera Traders",
+   "url": "https://www.camera-traders.com/products/nikon-d3200-6",
+   "price_cad": 149.0,
+   "comp_median": 275.0,
+   "comps": 5,
+   "model_key": "camera-nikon-d3200",
+   "model_name": "Nikon D3200",
+   "condition": "Good",
    "reasons": [
-    "34% below the median of 7 comparable listings"
+    "46% below the median of 5 comparable listings"
    ],
-   "score": 49.0,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "score": 50.8,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -190,7 +190,7 @@
    ],
    "score": 45.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -209,7 +209,7 @@
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -228,7 +228,26 @@
    ],
    "score": 42.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameratrading-83aa194b46",
+   "title": "Canon AE-1 35mm SLR Camera with New FD 50mm f/1.8 Lens",
+   "dealer": "Camera Trading Company",
+   "url": "https://cameratradingcompany.com/products/canon-ae-1-35mm-slr-with-50mm-new-fd-50-1-8-serviced",
+   "price_cad": 329.99,
+   "comp_median": 499.99,
+   "comps": 7,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
+   "condition": "Excellent",
+   "reasons": [
+    "34% below the median of 7 comparable listings"
+   ],
+   "score": 41.0,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -247,45 +266,7 @@
    ],
    "score": 40.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "maplecamera-5af26c543c",
-   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Lens - Excellent Plus",
-   "dealer": "Maple Camera Co.",
-   "url": "https://maplecameraco.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm-lens-excellent-plus-10008",
-   "price_cad": 99.0,
-   "comp_median": 134.0,
-   "comps": 6,
-   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
-   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
-   "condition": "Excellent",
-   "reasons": [
-    "26% below the median of 6 comparable listings"
-   ],
-   "score": 40.1,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "maplecamera-7550750190",
-   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Lens - Excellent Plus",
-   "dealer": "Maple Camera Co.",
-   "url": "https://maplecameraco.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm-lens-excellent-plus-10011",
-   "price_cad": 99.0,
-   "comp_median": 134.0,
-   "comps": 6,
-   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
-   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
-   "condition": "Excellent",
-   "reasons": [
-    "26% below the median of 6 comparable listings"
-   ],
-   "score": 40.1,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -304,7 +285,7 @@
    ],
    "score": 39.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -323,26 +304,7 @@
    ],
    "score": 39.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "cameratraders-0a9cbd8b4b",
-   "title": "Olympus M.Zuiko Digital 45mm f1.8",
-   "dealer": "Camera Traders",
-   "url": "https://www.camera-traders.com/products/olympus-m-zuiko-digital-45mm-f1-12",
-   "price_cad": 199.0,
-   "comp_median": 272.5,
-   "comps": 4,
-   "model_key": "lens-olympus-micro-four-thirds-45mm-f1_8",
-   "model_name": "Olympus 45mm f/1.8 (Micro Four Thirds)",
-   "condition": "Excellent",
-   "reasons": [
-    "27% below the median of 4 comparable listings"
-   ],
-   "score": 39.0,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -361,7 +323,7 @@
    ],
    "score": 38.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -380,7 +342,7 @@
    ],
    "score": 38.4,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -399,45 +361,7 @@
    ],
    "score": 37.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "cameratraders-a73a30ee84",
-   "title": "Asahi Takumar 135mm f3.5",
-   "dealer": "Camera Traders",
-   "url": "https://www.camera-traders.com/products/asahi-takumar-135mm-f3-7",
-   "price_cad": 69.0,
-   "comp_median": 89.0,
-   "comps": 6,
-   "model_key": "lens-pentax-m42-135mm-f3_5",
-   "model_name": "Pentax 135mm f/3.5 (M42)",
-   "condition": "Excellent",
-   "reasons": [
-    "22% below the median of 6 comparable listings"
-   ],
-   "score": 36.5,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "maplecamera-6cc9b597fb",
-   "title": "Fujifilm X-T30 II 26.1 MP Digital SLR Camera Silver (Body Only) - Excellent",
-   "dealer": "Maple Camera Co.",
-   "url": "https://maplecameraco.com/products/fujifilm-x-t30-ii-26-1-mp-digital-slr-camera-silver-body-only-excellent-268",
-   "price_cad": 969.0,
-   "comp_median": 1295.0,
-   "comps": 3,
-   "model_key": "camera-fujifilm-xt30-ii",
-   "model_name": "Fujifilm XT30 II",
-   "condition": "Excellent",
-   "reasons": [
-    "25% below the median of 3 comparable listings"
-   ],
-   "score": 36.2,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -456,7 +380,7 @@
    ],
    "score": 35.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -475,26 +399,7 @@
    ],
    "score": 35.5,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "maplecamera-2a7ca7ea90",
-   "title": "Fujifilm X-T30 Camera Body Only - Near Mint Minus",
-   "dealer": "Maple Camera Co.",
-   "url": "https://maplecameraco.com/products/fujifilm-x-t30-camera-body-only-near-mint-minus-j22364-01",
-   "price_cad": 919.0,
-   "comp_median": 1199.99,
-   "comps": 4,
-   "model_key": "camera-fujifilm-xt30",
-   "model_name": "Fujifilm XT30",
-   "condition": "Like New",
-   "reasons": [
-    "23% below the median of 4 comparable listings"
-   ],
-   "score": 35.4,
-   "is_new": true,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -513,7 +418,7 @@
    ],
    "score": 35.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -532,7 +437,7 @@
    ],
    "score": 34.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -551,7 +456,7 @@
    ],
    "score": 32.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -570,7 +475,45 @@
    ],
    "score": 32.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-5af26c543c",
+   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Lens - Excellent Plus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm-lens-excellent-plus-10008",
+   "price_cad": 99.0,
+   "comp_median": 134.0,
+   "comps": 6,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "26% below the median of 6 comparable listings"
+   ],
+   "score": 32.1,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-7550750190",
+   "title": "Canon RF-S 18-45mm F4.5-6.3 IS STM Lens - Excellent Plus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm-lens-excellent-plus-10011",
+   "price_cad": 99.0,
+   "comp_median": 134.0,
+   "comps": 6,
+   "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+   "condition": "Excellent",
+   "reasons": [
+    "26% below the median of 6 comparable listings"
+   ],
+   "score": 32.1,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -589,7 +532,7 @@
    ],
    "score": 31.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -608,7 +551,26 @@
    ],
    "score": 31.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameratraders-0a9cbd8b4b",
+   "title": "Olympus M.Zuiko Digital 45mm f1.8",
+   "dealer": "Camera Traders",
+   "url": "https://www.camera-traders.com/products/olympus-m-zuiko-digital-45mm-f1-12",
+   "price_cad": 199.0,
+   "comp_median": 272.5,
+   "comps": 4,
+   "model_key": "lens-olympus-micro-four-thirds-45mm-f1_8",
+   "model_name": "Olympus 45mm f/1.8 (Micro Four Thirds)",
+   "condition": "Excellent",
+   "reasons": [
+    "27% below the median of 4 comparable listings"
+   ],
+   "score": 31.0,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -627,7 +589,7 @@
    ],
    "score": 30.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -646,7 +608,7 @@
    ],
    "score": 28.7,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -665,26 +627,45 @@
    ],
    "score": 28.6,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-c17f916289",
-   "title": "USAGE (9) - Canon RF 35mm f/1.8 Macro IS STM",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-9-canon-rf-35mm-f-18-macro-is-stm-u107255",
-   "price_cad": 425.0,
-   "comp_median": 569.99,
+   "id": "cameratraders-a73a30ee84",
+   "title": "Asahi Takumar 135mm f3.5",
+   "dealer": "Camera Traders",
+   "url": "https://www.camera-traders.com/products/asahi-takumar-135mm-f3-7",
+   "price_cad": 69.0,
+   "comp_median": 89.0,
+   "comps": 6,
+   "model_key": "lens-pentax-m42-135mm-f3_5",
+   "model_name": "Pentax 135mm f/3.5 (M42)",
+   "condition": "Excellent",
+   "reasons": [
+    "22% below the median of 6 comparable listings"
+   ],
+   "score": 28.5,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-6cc9b597fb",
+   "title": "Fujifilm X-T30 II 26.1 MP Digital SLR Camera Silver (Body Only) - Excellent",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/fujifilm-x-t30-ii-26-1-mp-digital-slr-camera-silver-body-only-excellent-268",
+   "price_cad": 969.0,
+   "comp_median": 1295.0,
    "comps": 3,
-   "model_key": "lens-canon-canon-rf-35mm-f1_8-macro_stab_stm",
-   "model_name": "Canon 35mm f/1.8 MACRO STAB STM (Canon RF)",
+   "model_key": "camera-fujifilm-xt30-ii",
+   "model_name": "Fujifilm XT30 II",
    "condition": "Excellent",
    "reasons": [
     "25% below the median of 3 comparable listings"
    ],
-   "score": 28.4,
+   "score": 28.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -703,7 +684,26 @@
    ],
    "score": 28.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-2a7ca7ea90",
+   "title": "Fujifilm X-T30 Camera Body Only - Near Mint Minus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/fujifilm-x-t30-camera-body-only-near-mint-minus-j22364-01",
+   "price_cad": 919.0,
+   "comp_median": 1199.99,
+   "comps": 4,
+   "model_key": "camera-fujifilm-xt30",
+   "model_name": "Fujifilm XT30",
+   "condition": "Like New",
+   "reasons": [
+    "23% below the median of 4 comparable listings"
+   ],
+   "score": 27.4,
+   "is_new": false,
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -722,7 +722,7 @@
    ],
    "score": 27.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -741,7 +741,7 @@
    ],
    "score": 26.3,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -760,7 +760,7 @@
    ],
    "score": 26.1,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -779,7 +779,7 @@
    ],
    "score": 25.2,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -798,7 +798,7 @@
    ],
    "score": 25.0,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -817,7 +817,7 @@
    ],
    "score": 24.8,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -836,7 +836,7 @@
    ],
    "score": 23.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   },
   {
    "type": "listing",
@@ -855,7 +855,7 @@
    ],
    "score": 23.9,
    "is_new": false,
-   "fetched_at": "2026-10-18T05:34:50+00:00"
+   "fetched_at": "2026-10-18T13:28:47+00:00"
   }
  ],
  "rules": {
