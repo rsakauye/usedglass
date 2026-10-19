@@ -421,6 +421,11 @@ CONDITION_RULES: list[tuple[str, str]] = [
     ("Good", r"\b(some|moderate|normal) (cosmetic )?(wear|marks|scuffs)\b|\bsigns of (use|wear)\b|\bvery good\b|\btr[eè]s bon\b|\bvg\+?(?=[\s)\]*,.-]|$)|\bgood\b|\bgd\b|\*b\+?\*|\b8\s?/\s?10\b|\bbon [ée]tat\b"),
     ("Fair", r"\(bgn\)|\bbgn\b|\bbargain\b|\bfair\b|\bpoor\b|\*c\*|\b[5-7]\s?/\s?10\b|\bwell used\b|\b(heavy|significant|considerable) (cosmetic )?wear\b|\bwell worn\b|\bud\b"),
 ]
+# Gosselin titles start "USAGE (8) - ...". The number is Gosselin's own condition grade, per their published scale
+# (https://gosselinphoto.ca/pages/echelle-evaluation-produits-usages, checked 2026-10-18): N = new in box with all
+# accessories; 9 = 97-99% of original condition, minimal wear; 8 = 80-96%, normal wear, light marks, no effect on
+# images; 7 = 70-79%, above-average wear, scuffs/dents, no effect on images; 6 = deep scratches/dents, lens marks that
+# affect image quality. Mapped below to Like New / Excellent / Good / Fair / Fair.
 GOSSELIN_RX = r"usag[ée]e?\s*\((\d{1,2})\)"
 
 
@@ -579,6 +584,23 @@ def clean_title(t: str) -> str:
     return t
 
 
+GOSSELIN_PREFIX_RX = re.compile(r"^\s*usag[ée]e?s?\s*\(\s*(?:\d{1,2}|n)\s*\)\s*[-–:]?\s*", re.I)
+# Only translate "pour" when a camera brand or mount follows, where it can only mean "for".
+POUR_RX = re.compile(r"\bpour\s+(?=(canon|nikon|sony|fuji|fujifilm|pentax|olympus|om[- ]system|leica|minolta|panasonic|"
+                     r"sigma|hasselblad|mamiya|contax|m42|micro\s?4/3|micro four thirds|l[- ]mount|monture)\b)", re.I)
+MONTURE_RX = re.compile(r"\bfor\s+monture\s+([A-Za-z0-9/-]+)", re.I)
+
+
+def display_title(t: str) -> str:
+    """Reader-facing title: drops Gosselin's "USAGE (8) - " prefix (the grade is kept in the condition field) and
+    turns "pour Canon FD" / "pour monture M42" into "for Canon FD" / "for M42 mount". The raw title is kept as
+    title_raw, and all matching (brand, model, condition) still runs on the raw title."""
+    d = GOSSELIN_PREFIX_RX.sub("", t)
+    d = POUR_RX.sub("for ", d)
+    d = MONTURE_RX.sub(lambda m: f"for {m.group(1)} mount", d)
+    return d.strip() or t
+
+
 def parse_price(p) -> float | None:
     if p is None or p == "":
         return None
@@ -621,7 +643,8 @@ def make_listing(dealer_id: str, dealer: str, title: str, price, url: str, *, sk
     ident = sku or url or title
     lid = f"{dealer_id}-" + hashlib.sha1(f"{ident}|{title if not sku else ''}".encode()).hexdigest()[:10]
     return {
-        "id": lid, "dealer_id": dealer_id, "dealer": dealer, "source": source, "title": title,
+        "id": lid, "dealer_id": dealer_id, "dealer": dealer, "source": source, "title": display_title(title),
+        "title_raw": title,
         "brand": brand, "mount": mount, "category": category, "condition": condition,
         "model_key": model_key, "model_name": model_name, "price_cad": parse_price(price), "url": url,
         "in_stock": bool(in_stock), "image": image, "location": location, "fetched_at": fetched_at,

@@ -1,6 +1,6 @@
 import unittest
 
-from scraper.normalize import make_listing
+from scraper.normalize import display_title, make_listing
 
 
 def L(title, **kw):
@@ -88,6 +88,17 @@ class NormalizeTests(unittest.TestCase):
         self.assertEqual(L("USAGE (N) - Hasselblad XCD 75mm f/3.4")["condition"], "Like New")
         self.assertIsNone(L("Sigma 70-200mm F2.8 EX DG HSM for Canon")["condition"])
         self.assertEqual(L("Nikon D3200", condition_hint="Some cosmetic wear, scuffs on the screen")["condition"], "Good")
+
+
+class DisplayTitleTests(unittest.TestCase):
+    def test_gosselin_prefix_and_pour(self):
+        x = make_listing("gosselin", "Gosselin Photo", "USAGE (7) - Image 28mm f/2.8 pour Canon FD", "99", "u",
+                         sku="1", fetched_at="t")
+        self.assertEqual(x["title"], "Image 28mm f/2.8 for Canon FD")
+        self.assertEqual(x["title_raw"], "USAGE (7) - Image 28mm f/2.8 pour Canon FD")
+        self.assertEqual(x["condition"], "Fair")  # Gosselin grade 7 = 70-79% of original condition
+        self.assertEqual(display_title("USAGE (8) - Takumar 135mm pour monture M42"), "Takumar 135mm for M42 mount")
+        self.assertEqual(display_title("USAGE (8) - boule de crystal pour photographie"), "boule de crystal pour photographie")
 
 
 if __name__ == "__main__":
