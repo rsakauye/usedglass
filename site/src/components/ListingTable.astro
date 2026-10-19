@@ -3,6 +3,7 @@
 // title, then dealer · condition · score with the price on the right, then tags and a relative "as of" time.
 import { money, asOf, modelUrl, shortDate } from '../lib/data.js';
 import ScoreBadge from './ScoreBadge.astro';
+import SaveButton from './SaveButton.astro';
 const { rows = [], showModel = true, showScoreWhy = false } = Astro.props;
 ---
 <table class="ltable">
@@ -17,6 +18,7 @@ const { rows = [], showModel = true, showScoreWhy = false } = Astro.props;
             <span class="l-price">{money(l.price_cad)}{l.prev_price && l.prev_price > l.price_cad && <s class="muted">{money(l.prev_price)}</s>}</span>
           </div>
           <div class="l-tags">
+            {l.model_key && <SaveButton k={l.model_key} n={l.model_name || l.title} m={l.mount} cat={l.category} />}
             {l.mount && <span class="pill">{l.mount}</span>}
             {showModel && l.model_key && <a class="pill" href={modelUrl(l.model_key)}>Compare prices</a>}
             {l._badge && <span class="pill good">{l._badge}</span>}

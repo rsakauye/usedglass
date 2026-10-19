@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import ListingTable from '../../components/ListingTable.astro';
 import { models, byId, money, u, modelUrl, currency } from '../../lib/data.js';
 import ScoreBadge from '../../components/ScoreBadge.astro';
+import SaveButton from '../../components/SaveButton.astro';
 import { amazonSearchUrl, SPONSORED_REL } from '../../lib/affiliate.js';
 export function getStaticPaths() {
   return Object.values(models).map((m) => ({ params: { key: m.key }, props: { m } }));
@@ -16,7 +17,8 @@ const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => 
 ---
 <Base title={`${m.name}: used prices in Canada`} description={`Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
   <p class="muted"><a href={u('')}>Search</a> › {m.brand} › {m.category}</p>
-  <h1>{m.name}</h1>
+  <h1>{m.name} <SaveButton k={m.key} n={m.name} m={m.mount} cat={m.category} label={true} /></h1>
+  <p class="muted" style="margin-top:-.3rem">Save it to your <a href={u('my/')}>wish list or a kit</a> to track it alongside the rest of your gear.</p>
   <div class="stats">
     <div><b>{money(m.min_price)}</b><span class="muted">lowest today</span></div>
     <div><b>{money(m.median_price)}</b><span class="muted">median today</span></div>

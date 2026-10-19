@@ -39,7 +39,7 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
     header.site { background:#111; color:#fff; }
     header.site .wrap { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between; }
     header.site a { color:#fff; text-decoration:none; }
-    header.site nav a { margin-right:1rem; opacity:.85; font-size:.95rem; }
+    header.site nav a { margin-right:1rem; opacity:.85; font-size:.95rem; white-space:nowrap; }
     header.site nav a:hover { opacity:1; }
     .logo { font-weight:800; font-size:1.25rem; letter-spacing:-.02em; }
     .logo { display:inline-flex; align-items:center; gap:.4rem; white-space:nowrap; }
@@ -68,6 +68,14 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
     .stats div b { display:block; font-size:1.3rem; }
     .pill.score { text-decoration:none; font-weight:600; }
     .score-why { display:block; font-size:.82rem; margin-top:.15rem; }
+    /* save-to-wish-list hearts (lib/mykit-core.js) */
+    .ug-save { background:none; border:0; padding:.1rem .25rem; color:#c2410c; line-height:1; vertical-align:middle; display:inline-flex; align-items:center; gap:.25rem; }
+    .ug-heart::before { content:'\2661'; font-size:1.15rem; }
+    .ug-save[aria-pressed=true] .ug-heart::before { content:'\2665'; }
+    .ug-save-label { border:1px solid #f4a261; border-radius:99px; padding:.2rem .6rem; font-size:.9rem; color:#9a3d00; background:#fff; }
+    .ug-save-label[aria-pressed=true] .ug-save-txt::after { content:'d'; }
+    #ug-toast { position:fixed; left:50%; bottom:1rem; transform:translateX(-50%); background:#14213d; color:#fff; padding:.55rem .9rem; border-radius:8px; font-size:.92rem; z-index:50; box-shadow:0 4px 18px rgba(0,0,0,.25); max-width:92vw; }
+    #ug-toast a { color:#f4a261; }
     .m-only { display:none; }
     .l-title { overflow-wrap:anywhere; }
     img, svg, video { max-width:100%; }
@@ -124,6 +132,7 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
         <a href={u('currency/')}>Currency</a>
         <a href={u('dealers/')}>Dealers</a>
         <a href={u('about/')}>About</a>
+        <a href={u('my/')} class="nav-my">♡ My kit</a>
       </nav>
     </div>
   </header>
@@ -141,5 +150,9 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
       </div>
     </div>
   </footer>
+  <script>
+    import { initSaveButtons } from '../lib/mykit-core.js';
+    initSaveButtons(import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'my/');
+  </script>
 </body>
 </html>
