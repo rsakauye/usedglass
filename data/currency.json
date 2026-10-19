@@ -1,0 +1,76 @@
+{
+ "date": "2026-10-18",
+ "generated_at": "2026-10-19T00:54:58+00:00",
+ "fx_latest": {
+  "USD": {
+   "date": "2026-10-16",
+   "rate": 1.4154,
+   "chg_7d": -0.0082,
+   "from_7d": 1.4271,
+   "chg_30d": 0.0148,
+   "from_30d": 1.3947,
+   "text_30d": "The Canadian dollar weakened 1.5% against the USD over 30 days.",
+   "text_7d": "The Canadian dollar strengthened 0.8% against the USD over 7 days."
+  },
+  "EUR": {
+   "date": "2026-10-16",
+   "rate": 1.5908,
+   "chg_7d": -0.0044,
+   "from_7d": 1.5978,
+   "chg_30d": -0.0103,
+   "from_30d": 1.6073,
+   "text_30d": "The Canadian dollar strengthened 1.0% against the EUR over 30 days.",
+   "text_7d": "The Canadian dollar strengthened 0.4% against the EUR over 7 days."
+  },
+  "GBP": {
+   "date": "2026-10-16",
+   "rate": 1.8871,
+   "chg_7d": -0.0004,
+   "from_7d": 1.8879,
+   "chg_30d": 0.0068,
+   "from_30d": 1.8743,
+   "text_30d": "The Canadian dollar weakened 0.7% against the GBP over 30 days.",
+   "text_7d": "The Canadian dollar is flat against the GBP over 7 days."
+  },
+  "JPY": {
+   "date": "2026-10-16",
+   "rate": 0.00896,
+   "chg_7d": -0.0067,
+   "from_7d": 0.00902,
+   "chg_30d": -0.0022,
+   "from_30d": 0.00898,
+   "text_30d": "The Canadian dollar strengthened 0.2% against the JPY over 30 days.",
+   "text_7d": "The Canadian dollar strengthened 0.7% against the JPY over 7 days."
+  }
+ },
+ "fx_source": "Bank of Canada daily exchange rates (Valet API)",
+ "fx_source_url": "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/",
+ "fx_error": null,
+ "us_offer_sources": {
+  "manual_or_feed": 0,
+  "ebay_us": {
+   "count": 0,
+   "status": "skipped (no API keys)"
+  }
+ },
+ "gap_rules": {
+  "min_pct": 0.05,
+  "min_cad": 50,
+  "default_ship_cad": 40.0,
+  "default_brokerage_cad": 25.0,
+  "tax_rate": 0.05,
+  "tax_note": "Estimate uses 5% GST (AB, BC, MB, SK, QC, territories; BC/MB/SK/QC provincial sales tax may also apply). HST provinces pay 13% (ON) or 15% (NB, NL, NS, PE) instead.",
+  "duty_note": "Most cameras and lenses enter Canada duty-free, but check the item's tariff code; couriers usually add a brokerage fee, estimated here, unless the seller ships duty-paid (DDP)."
+ },
+ "gaps": [],
+ "rate_moved": {
+  "currency": "USD",
+  "chg_30d": 0.0148,
+  "threshold": 0.025,
+  "direction": null,
+  "items": [],
+  "tracked_days": 0,
+  "status": "CAD moved 1.5% against the USD over 30 days, under the 2.5% threshold, so no price flags today."
+ },
+ "new_price_models": 839
+}
