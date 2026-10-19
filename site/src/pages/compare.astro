@@ -1,0 +1,142 @@
+---
+import Base from '../layouts/Base.astro';
+import fs from 'node:fs';
+import path from 'node:path';
+import { models, u, money, modelUrl } from '../lib/data.js';
+
+const DATA_DIR = process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data');
+const spec = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'compare-specs.json'), 'utf8'));
+const tr = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'model-traits.json'), 'utf8'));
+const B = spec.bodies;
+const keys = Object.keys(B);
+const max = (f) => Math.max(...keys.map((k) => B[k][f] || 0));
+const minW = Math.min(...keys.map((k) => B[k].weight_g));
+const vs = (b) => 0.6 * (b.video_max_k / max('video_max_k')) + 0.4 * (b.video_4k_fps / max('video_4k_fps'));
+const maxV = Math.max(...keys.map((k) => vs(B[k])));
+// RPG stats, each scaled 0-100 against the best body in this list.
+const AX = [
+  ['RES', 'Resolution', (b) => b.mp / max('mp'), (b) => `${b.mp} MP`],
+  ['SPD', 'Burst speed', (b) => b.burst_fps / max('burst_fps'), (b) => `${b.burst_fps} fps`],
+  ['VID', 'Video', (b) => vs(b) / maxV, (b) => b.video_note],
+  ['STA', 'Battery', (b) => b.battery_cipa / max('battery_cipa'), (b) => `${b.battery_cipa} shots`],
+  ['AGI', 'Portability', (b) => minW / b.weight_g, (b) => `${b.weight_g} g`],
+  ['STB', 'Stabilisation', (b) => b.stab_stops / max('stab_stops'), (b) => (b.stab_stops ? `${b.stab_stops} stops` : 'none')],
+];
+const bodies = keys.map((k) => {
+  const b = B[k], m = models[k];
+  return { k, n: b.name, br: b.brand, s: b.sensor, src: b.sources,
+    st: AX.map(([, , f, l]) => [Math.round(f(b) * 100), l(b)]),
+    t: tr.traits[k] || [], cards: b.card_note, scr: b.screen,
+    p: m ? m.min_price : null, url: m ? modelUrl(k) : null, c: m ? m.count : 0 };
+}).sort((a, b) => a.n.localeCompare(b.n));
+const ax = AX.map((a) => [a[0], a[1]]);
+const brands = [...new Set(bodies.map((b) => b.br))];
+const pmoney = Object.fromEntries(bodies.filter((b) => b.p != null).map((b) => [b.k, money(b.p)]));
+---
+<Base title="Compare cameras like RPG gear: stats, buffs and debuffs" description="Compare 16 mirrorless bodies from Canon, Sony, Fujifilm and Nikon on an overlapping stat radar, with maker-sourced buffs and known issues, plus the lowest used price in Canada.">
+  <style is:global>
+    .cmp-pick { display:grid; grid-template-columns:repeat(3,1fr); gap:.6rem; }
+    .cmp-pick label { display:flex; flex-direction:column; gap:.25rem; font-weight:600; }
+    .cmp-pick select { width:100%; padding:.45rem; font-size:1rem; }
+    .cmp-pick .sw { display:inline-block; width:.8rem; height:.8rem; border-radius:2px; margin-right:.35rem; vertical-align:-1px; }
+    .cmp-top { display:grid; grid-template-columns:minmax(260px,420px) 1fr; gap:1rem; align-items:start; margin:1rem 0; }
+    .cmp-radar svg { width:100%; height:auto; display:block; }
+    .cmp-radar .grid { fill:none; stroke:var(--line); }
+    .cmp-radar .lbl { fill:var(--muted); font:600 11px system-ui, sans-serif; letter-spacing:.04em; }
+    .cmp-legend { list-style:none; padding:0; margin:.4rem 0 0; display:flex; flex-wrap:wrap; gap:.3rem .9rem; font-size:.9rem; }
+    .cmp-cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:.8rem; }
+    .cmp-card h2 { margin:0 0 .15rem; font-size:1.15rem; }
+    .cmp-card .cls { margin:0 0 .5rem; font-size:.85rem; }
+    .cmp-stat { display:grid; grid-template-columns:2.6rem 1fr; gap:.15rem .5rem; align-items:center; margin:.3rem 0; font-size:.9rem; }
+    .cmp-stat b { font-variant-numeric:tabular-nums; letter-spacing:.04em; }
+    .cmp-bar { height:.55rem; background:var(--line); border-radius:3px; overflow:hidden; }
+    .cmp-bar i { display:block; height:100%; }
+    .cmp-stat span { grid-column:2; font-size:.8rem; }
+    .cmp-tr { list-style:none; padding:0; margin:.6rem 0 0; font-size:.9rem; }
+    .cmp-tr li { margin:.25rem 0; padding-left:1.3rem; text-indent:-1.3rem; }
+    .cmp-tr .buff b { color:var(--good); } .cmp-tr .debuff b { color:#c4320a; }
+    html[data-theme=dark] .cmp-tr .debuff b { color:#ff7a6b; }
+    .cmp-tr b { display:inline-block; width:1.3rem; text-indent:0; font-size:1rem; }
+    .cmp-tr a { font-size:.75rem; }
+    @media (max-width: 760px) { .cmp-top { grid-template-columns:1fr; } .cmp-pick { grid-template-columns:1fr; } .cmp-radar { max-width:420px; margin:0 auto; } }
+  </style>
+  <h1>Compare camera bodies like RPG gear</h1>
+  <p class="muted">Pick up to three bodies. Six stats on the radar, each scored against the best of the {bodies.length} bodies here (100 = best in this list). Green <b style="color:var(--good)">+</b> buffs and red <b style="color:#c4320a">−</b> debuffs come from each maker's own specs, with a source on every line.</p>
+  <div class="card">
+    <div class="cmp-pick">
+      {[0, 1, 2].map((i) => (
+        <label><span><span class="sw" data-sw={i}></span>{i === 0 ? 'Body 1' : i === 1 ? 'Body 2' : 'Body 3 (optional)'}</span>
+          <select id={`cmp-${i}`}><option value="">{i === 2 ? 'None' : 'Choose…'}</option>
+            {brands.map((br) => <optgroup label={br}>{bodies.filter((b) => b.br === br).map((b) => <option value={b.k}>{b.n}</option>)}</optgroup>)}
+          </select>
+        </label>
+      ))}
+    </div>
+  </div>
+  <div class="cmp-top">
+    <div class="card cmp-radar"><svg id="cmp-svg" viewBox="0 0 320 300" role="img" aria-label="Stat radar comparing the chosen cameras"></svg><ul class="cmp-legend" id="cmp-legend"></ul></div>
+    <div>
+      <h2 style="margin-top:0">What the stats mean</h2>
+      <ul>
+        <li><b>RES</b> resolution: effective megapixels.</li>
+        <li><b>SPD</b> speed: fastest full-resolution, uncropped burst on either shutter.</li>
+        <li><b>VID</b> video: widest internal recording plus top 4K frame rate.</li>
+        <li><b>STA</b> stamina: CIPA shots per charge using the rear screen.</li>
+        <li><b>AGI</b> agility: lighter scores higher (weight with battery and card).</li>
+        <li><b>STB</b> stabilisation: maker's best in-body claim in stops.</li>
+      </ul>
+      <p class="muted">Stats are spec-sheet numbers, not lab tests. Lens choice, firmware and how you shoot matter more than any one number.</p>
+    </div>
+  </div>
+  <div class="cmp-cards" id="cmp-cards" aria-live="polite"></div>
+  <p class="muted" style="margin-top:1rem">Specs checked {spec._updated} from Canon, Sony, Fujifilm and Nikon spec pages, help guides and FAQs. Spotted an error? Email <a href="mailto:hello@usedglass.ca">hello@usedglass.ca</a>. Also try the <a href={u('adapt/')}>adapter checker</a> to see which old lenses fit.</p>
+
+  <script define:vars={{ bodies, ax, pmoney, base: u('') }}>
+    window.__cmp = { bodies, ax, pmoney, base };
+  </script>
+  <script>
+    const { bodies, ax, pmoney } = (window as any).__cmp;
+    const COL = ['#2a9df4', '#f4a261', '#c03fd1'];
+    const by: any = Object.fromEntries(bodies.map((b: any) => [b.k, b]));
+    const $ = (id: string) => document.getElementById(id) as any;
+    const esc = (s: any) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' } as any)[c]);
+    document.querySelectorAll('[data-sw]').forEach((e: any) => (e.style.background = COL[+e.dataset.sw]));
+    const cx = 160, cy = 150, R = 105, N = ax.length;
+    const pt = (i: number, r: number) => { const a = -Math.PI / 2 + (i * 2 * Math.PI) / N; return [cx + r * Math.cos(a), cy + r * Math.sin(a)]; };
+    function radar(sel: any[]) {
+      let h = '';
+      for (const f of [0.25, 0.5, 0.75, 1]) h += `<polygon class="grid" points="${ax.map((_: any, i: number) => pt(i, R * f).join(',')).join(' ')}"/>`;
+      ax.forEach((a: any, i: number) => { const [x, y] = pt(i, R); const [lx, ly] = pt(i, R + 18); h += `<line class="grid" x1="${cx}" y1="${cy}" x2="${x}" y2="${y}"/><text class="lbl" x="${lx}" y="${ly + 4}" text-anchor="middle">${a[0]}</text>`; });
+      sel.forEach(([b, ci]: any) => {
+        const ps = b.st.map((s: any, i: number) => pt(i, R * Math.max(0.03, s[0] / 100)));
+        h += `<polygon points="${ps.map((p: any) => p.join(',')).join(' ')}" fill="${COL[ci]}" fill-opacity=".22" stroke="${COL[ci]}" stroke-width="2.5" stroke-linejoin="round"/>`;
+        h += ps.map((p: any) => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="${COL[ci]}"/>`).join('');
+      });
+      $('cmp-svg').innerHTML = h;
+      $('cmp-legend').innerHTML = sel.map(([b, ci]: any) => `<li><span class="sw" style="display:inline-block;width:.8rem;height:.8rem;border-radius:2px;margin-right:.35rem;background:${COL[ci]}"></span>${esc(b.n)}</li>`).join('');
+    }
+    function card(b: any, ci: number) {
+      const tot = b.st.reduce((a: number, s: any) => a + s[0], 0);
+      let h = `<section class="card cmp-card" style="border-top:5px solid ${COL[ci]}"><h2>${esc(b.n)}</h2><p class="cls muted">${esc(b.s)} · ${esc(b.scr)} screen · power ${tot}/600</p>`;
+      h += b.st.map((s: any, i: number) => `<div class="cmp-stat"><b title="${esc(ax[i][1])}">${ax[i][0]}</b><div class="cmp-bar" role="img" aria-label="${esc(ax[i][1])} ${s[0]} of 100"><i style="width:${s[0]}%;background:${COL[ci]}"></i></div><span class="muted">${esc(ax[i][1])}: ${esc(s[1])} (${s[0]})</span></div>`).join('');
+      const t = [...b.t].sort((x: any, y: any) => (x.t === y.t ? 0 : x.t === '+' ? -1 : 1));
+      h += `<ul class="cmp-tr">${t.map((x: any) => `<li class="${x.t === '+' ? 'buff' : 'debuff'}"><b aria-label="${x.t === '+' ? 'buff' : 'debuff'}">${x.t === '+' ? '+' : '−'}</b>${esc(x.text)} <a href="${esc(x.src)}" rel="nofollow noopener" target="_blank">source</a></li>`).join('')}</ul>`;
+      h += `<p style="margin:.6rem 0 0">${b.url ? `<a href="${b.url}">${b.c} used listing${b.c === 1 ? '' : 's'}${pmoney[b.k] ? `, from ${pmoney[b.k]}` : ''}</a>` : '<span class="muted">No used listings tracked right now.</span>'}</p>`;
+      h += `<p class="muted" style="margin:.3rem 0 0;font-size:.8rem">Specs: ${b.src.map((s: string, i: number) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${i + 1}</a>`).join(' ')}</p></section>`;
+      return h;
+    }
+    function render() {
+      const ks = [0, 1, 2].map((i) => $(`cmp-${i}`).value);
+      const sel = ks.map((k, i) => [by[k], i]).filter((x) => x[0]);
+      const qs = ks.filter(Boolean).join(',');
+      history.replaceState(null, '', qs ? '?b=' + qs : location.pathname);
+      radar(sel);
+      $('cmp-cards').innerHTML = sel.length ? sel.map(([b, ci]: any) => card(b, ci)).join('') : '<p>Pick a body to see its stats.</p>';
+    }
+    const q = (new URLSearchParams(location.search).get('b') || '').split(',').filter((k) => by[k]);
+    const def = q.length ? q : ['camera-canon-r5', 'camera-sony-a7-iii', 'camera-fujifilm-xt5'];
+    [0, 1, 2].forEach((i) => { $(`cmp-${i}`).value = def[i] || ''; $(`cmp-${i}`).addEventListener('change', render); });
+    if (q.length === 1) $('cmp-1').value = '';
+    render();
+  </script>
+</Base>

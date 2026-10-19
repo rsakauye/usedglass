@@ -1,0 +1,408 @@
+{
+ "_about": "RPG-style buffs (+) and debuffs (-) for /compare/. Every line cites the page it comes from (maker spec pages, help guides or FAQs). Debuffs are known limits stated by the maker, not opinions. Add lines with a source or leave them out.",
+ "_updated": "2026-10-19",
+ "traits": {
+  "camera-canon-r5": [
+   {
+    "t": "+",
+    "text": "Top-tier in-body stabilisation (up to 8 stops)",
+    "src": "https://www.canon-europe.com/cameras/eos-r5/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress B + SD UHS-II)",
+    "src": "https://www.canon-europe.com/cameras/eos-r5/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "8K internal video",
+    "src": "https://www.canon-europe.com/cameras/eos-r5/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "4K at 120 fps for slow motion",
+    "src": "https://www.canon-europe.com/cameras/eos-r5/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Canon warns long video clips get shorter when the camera runs hot",
+    "src": "https://www.canon-europe.com/cameras/eos-r5/specifications/"
+   }
+  ],
+  "camera-canon-r5-ii": [
+   {
+    "t": "+",
+    "text": "Top-tier in-body stabilisation (up to 8.5 stops)",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress B + SD UHS-II)",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "8K internal video",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "4K at 120 fps for slow motion",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "30 fps full-resolution bursts (electronic shutter)",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Heavy: 746 g ready to shoot",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Canon warns long video clips get shorter when the camera runs hot",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Dust- and water-resistant construction",
+    "src": "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   }
+  ],
+  "camera-canon-r6": [
+   {
+    "t": "+",
+    "text": "Top-tier in-body stabilisation (up to 8 stops)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (2x SD UHS-II)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Canon warns long video clips get shorter when the camera runs hot",
+    "src": "https://www.canon-europe.com/cameras/eos-r6/specifications/"
+   }
+  ],
+  "camera-canon-r6-ii": [
+   {
+    "t": "+",
+    "text": "Top-tier in-body stabilisation (up to 8 stops)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (2x SD UHS-II)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "40 fps full-resolution bursts (electronic shutter)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Long battery life (~760 shots CIPA)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Canon warns long video clips get shorter when the camera runs hot",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Dust- and water-resistant construction",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   }
+  ],
+  "camera-canon-r6-iii": [
+   {
+    "t": "+",
+    "text": "Top-tier in-body stabilisation (up to 8.5 stops)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress B + SD UHS-II)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "7K internal video",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "4K at 120 fps for slow motion",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "40 fps full-resolution bursts (electronic shutter)",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Canon warns long video clips get shorter when the camera runs hot",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Dust- and water-resistant construction",
+    "src": "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   }
+  ],
+  "camera-sony-a7-iii": [
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (SD UHS-II + SD UHS-I/Memory Stick)",
+    "src": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications"
+   },
+   {
+    "t": "-",
+    "text": "4K tops out at 30 fps",
+    "src": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications"
+   },
+   {
+    "t": "+",
+    "text": "Long battery life (~710 shots CIPA)",
+    "src": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications"
+   },
+   {
+    "t": "-",
+    "text": "Second slot is UHS-I only (slower writes)",
+    "src": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications"
+   },
+   {
+    "t": "-",
+    "text": "8-bit video only (4:2:2 8-bit over HDMI)",
+    "src": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications"
+   }
+  ],
+  "camera-sony-a7-iv": [
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress A/SD UHS-II + SD UHS-II)",
+    "src": "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications"
+   },
+   {
+    "t": "-",
+    "text": "4K60 only in Super 35 (APS-C) crop",
+    "src": "https://electronics.sony.com/imaging/interchangeable-lens-cameras/full-frame/p/ilce7m4-b"
+   }
+  ],
+  "camera-sony-a7-v": [
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress A/SD UHS-II + SD UHS-II)",
+    "src": "https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7m5/specifications"
+   },
+   {
+    "t": "+",
+    "text": "4K at 120 fps for slow motion",
+    "src": "https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7m5/specifications"
+   },
+   {
+    "t": "+",
+    "text": "30 fps full-resolution bursts (electronic shutter)",
+    "src": "https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7m5/specifications"
+   },
+   {
+    "t": "+",
+    "text": "Long battery life (~750 shots CIPA)",
+    "src": "https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7m5/specifications"
+   }
+  ],
+  "camera-fujifilm-xt5": [
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (2x SD UHS-II)",
+    "src": "https://www.fujifilm-x.com/en-us/products/cameras/x-t5/"
+   },
+   {
+    "t": "+",
+    "text": "6.2K internal video",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t5/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "20 fps electronic burst is a 1.29x crop; 13 fps uncropped",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t5/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "40.2 MP: most resolution in this list for APS-C",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t5/specifications/"
+   }
+  ],
+  "camera-fujifilm-xt4": [
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (2x SD UHS-II)",
+    "src": "https://fujifilm-dsc.com/en/manual/x-t4/technical_notes/spec/index.html"
+   },
+   {
+    "t": "-",
+    "text": "30 fps electronic burst is a 1.25x crop",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t4/specifications/"
+   }
+  ],
+  "camera-fujifilm-xt30-ii": [
+   {
+    "t": "-",
+    "text": "No in-body stabilisation: relies on lens VR/OIS",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t30-ii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Single card slot (1x SD UHS-I), no in-camera backup",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t30-ii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "4K tops out at 30 fps",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t30-ii/specifications/"
+   },
+   {
+    "t": "+",
+    "text": "Light: 378 g ready to shoot",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t30-ii/specifications/"
+   },
+   {
+    "t": "-",
+    "text": "Mechanical shutter tops out at 1/4000 s",
+    "src": "https://www.fujifilm-x.com/en-us/products/cameras/x-t30-ii/"
+   },
+   {
+    "t": "-",
+    "text": "30 fps electronic burst is a 1.25x crop",
+    "src": "https://www.fujifilm-x.com/global/products/cameras/x-t30-ii/specifications/"
+   }
+  ],
+  "camera-nikon-z6": [
+   {
+    "t": "-",
+    "text": "Single card slot (1x XQD/CFexpress B), no in-camera backup",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_6/"
+   },
+   {
+    "t": "-",
+    "text": "4K tops out at 30 fps",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_6/"
+   },
+   {
+    "t": "-",
+    "text": "Video clips stop at 29 min 59 s",
+    "src": "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   }
+  ],
+  "camera-nikon-z6-ii": [
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress B/XQD + SD UHS-II)",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_6_2/"
+   },
+   {
+    "t": "-",
+    "text": "Video clips stop at 29 min 59 s",
+    "src": "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   }
+  ],
+  "camera-nikon-z6-iii": [
+   {
+    "t": "+",
+    "text": "Top-tier in-body stabilisation (up to 8 stops)",
+    "src": "https://www.nikon.com/company/news/2024/0617_imaging_01/"
+   },
+   {
+    "t": "+",
+    "text": "Two card slots for instant backup (CFexpress B/XQD + SD UHS-II)",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "t": "+",
+    "text": "6K internal video",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "t": "+",
+    "text": "4K at 120 fps for slow motion",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "t": "-",
+    "text": "Heavy: 760 g ready to shoot",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "t": "+",
+    "text": "Pre-release capture up to 120 fps (reduced resolution)",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   },
+   {
+    "t": "+",
+    "text": "Rated for use down to -10°C",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/"
+   }
+  ],
+  "camera-nikon-z50": [
+   {
+    "t": "-",
+    "text": "No in-body stabilisation: relies on lens VR/OIS",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/"
+   },
+   {
+    "t": "-",
+    "text": "Single card slot (1x SD UHS-I), no in-camera backup",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/"
+   },
+   {
+    "t": "-",
+    "text": "4K tops out at 30 fps",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/"
+   },
+   {
+    "t": "-",
+    "text": "Short battery life (~320 shots CIPA): carry spares",
+    "src": "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   },
+   {
+    "t": "+",
+    "text": "Light: 450 g ready to shoot",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/"
+   },
+   {
+    "t": "-",
+    "text": "Video clips stop at 29 min 59 s",
+    "src": "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   }
+  ],
+  "camera-nikon-z50-ii": [
+   {
+    "t": "-",
+    "text": "No in-body stabilisation: relies on lens VR/OIS",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z50_2/"
+   },
+   {
+    "t": "-",
+    "text": "Single card slot (1x SD UHS-II), no in-camera backup",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z50_2/"
+   },
+   {
+    "t": "-",
+    "text": "Short battery life (~230 shots CIPA): carry spares",
+    "src": "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   },
+   {
+    "t": "-",
+    "text": "4K60 is cropped",
+    "src": "https://imaging.nikon.com/imaging/lineup/mirrorless/z50_2/"
+   }
+  ]
+ }
+}
