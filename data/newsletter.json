@@ -3,37 +3,37 @@
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
-   "date": "2026-10-16",
-   "rate": 1.4154,
-   "chg_7d": -0.0082,
-   "chg_30d": 0.0148,
-   "text_30d": "The Canadian dollar weakened 1.5% against the USD over 30 days."
+   "date": "2026-10-19",
+   "rate": 1.4097,
+   "chg_7d": -0.0122,
+   "chg_30d": 0.0068,
+   "text_30d": "The Canadian dollar weakened 0.7% against the USD over 30 days."
   },
   "EUR": {
-   "date": "2026-10-16",
-   "rate": 1.5908,
-   "chg_7d": -0.0044,
-   "chg_30d": -0.0103,
-   "text_30d": "The Canadian dollar strengthened 1.0% against the EUR over 30 days."
+   "date": "2026-10-19",
+   "rate": 1.581,
+   "chg_7d": -0.0105,
+   "chg_30d": -0.0158,
+   "text_30d": "The Canadian dollar strengthened 1.6% against the EUR over 30 days."
   },
   "GBP": {
-   "date": "2026-10-16",
-   "rate": 1.8871,
-   "chg_7d": -0.0004,
-   "chg_30d": 0.0068,
-   "text_30d": "The Canadian dollar weakened 0.7% against the GBP over 30 days."
+   "date": "2026-10-19",
+   "rate": 1.8767,
+   "chg_7d": -0.0059,
+   "chg_30d": 0.0025,
+   "text_30d": "The Canadian dollar weakened 0.2% against the GBP over 30 days."
   },
   "JPY": {
-   "date": "2026-10-16",
-   "rate": 0.00896,
-   "chg_7d": -0.0067,
-   "chg_30d": -0.0022,
-   "text_30d": "The Canadian dollar strengthened 0.2% against the JPY over 30 days."
+   "date": "2026-10-19",
+   "rate": 0.0089,
+   "chg_7d": -0.0133,
+   "chg_30d": -0.0011,
+   "text_30d": "The Canadian dollar strengthened 0.1% against the JPY over 30 days."
   }
  },
- "fx_headline": "The Canadian dollar weakened 1.5% against the USD over 30 days.",
+ "fx_headline": "The Canadian dollar weakened 0.7% against the USD over 30 days.",
  "rate_moved": {
-  "status": "CAD moved 1.5% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
+  "status": "CAD moved 0.7% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
   "direction": null,
   "items": []
  },
