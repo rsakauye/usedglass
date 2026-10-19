@@ -72,12 +72,13 @@ const nDealers = dealers.length;
       $('results').tBodies[0].innerHTML = out.slice(0, shown).map((r) => `<tr>
         <td class="c-item"><a class="l-title" href="${esc(r[7])}" rel="nofollow noopener" target="_blank">${esc(r[0])}</a>
           <div class="m-only l-mid"><span class="l-meta">${esc(r[1])}${r[12] ? ` (${esc(r[12])})` : ''} · ${r[4] ? esc(r[4]) : 'Not graded'}${badge(r[13])}</span><span class="l-price">${money(r[6])}${r[11] > r[6] ? `<s class="muted">${money(r[11])}</s>` : ''}</span></div>
-          <div class="l-tags">${r[3] ? `<span class="pill">${esc(r[3])}</span>` : ''}${r[8] ? `<a class="pill" href="${base}model/${esc(r[8])}/">Compare prices</a>` : ''}${r[13] != null ? `<span class="d-only">${badge(r[13])}</span>` : ''}${r[14] ? '<span class="pill warn m-only">older data</span>' : ''}<time class="m-only l-time" datetime="${esc(r[9])}" title="${esc(asOfFull(r[9]))}" data-rel>${esc(asOf(r[9]))}</time></div></td>
+          <div class="l-tags">${r[8] ? `<button type="button" class="ug-save" data-k="${esc(r[8])}" data-n="${esc(r[0])}" data-m="${esc(r[3])}" data-cat="${esc(r[5])}" aria-pressed="false" aria-label="Save to your wish list"><span class="ug-heart" aria-hidden="true"></span></button>` : ''}${r[3] ? `<span class="pill">${esc(r[3])}</span>` : ''}${r[8] ? `<a class="pill" href="${base}model/${esc(r[8])}/">Compare prices</a>` : ''}${r[13] != null ? `<span class="d-only">${badge(r[13])}</span>` : ''}${r[14] ? '<span class="pill warn m-only">older data</span>' : ''}<time class="m-only l-time" datetime="${esc(r[9])}" title="${esc(asOfFull(r[9]))}" data-rel>${esc(asOf(r[9]))}</time></div></td>
         <td class="d-cell">${esc(r[1])}${r[12] ? `<div class="muted">${esc(r[12])}</div>` : ''}</td>
         <td class="d-cell">${r[4] ? esc(r[4]) : '<span class="muted">Not graded</span>'}</td>
         <td class="d-cell price">${money(r[6])}${r[11] > r[6] ? `<div class="muted"><s>${money(r[11])}</s></div>` : ''}</td>
         <td class="d-cell muted">${asOf(r[9])}</td></tr>`).join('');
       window.ugRel && window.ugRel($('results'));
+      window.ugSaveSync && window.ugSaveSync($('results'));
       $('more').hidden = out.length <= shown;
       const p = new URLSearchParams();
       for (const k of ['q', 'cat', 'mount', 'brand', 'dealer', 'cond', 'min', 'max', 'sort']) if ($(k).value && !(k === 'sort' && $(k).value === 'new')) p.set(k, $(k).value);

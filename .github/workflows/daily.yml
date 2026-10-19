@@ -68,6 +68,9 @@ jobs:
           cache: npm
           cache-dependency-path: site/package-lock.json
 
+      - name: JS unit tests (kit builder)
+        run: node --test tests/test_mykit.mjs
+
       - name: Build site (GitHub Pages preview base path)
         working-directory: site
         env:
