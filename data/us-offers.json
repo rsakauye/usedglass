@@ -1,0 +1,4 @@
+{
+ "_about": "US-dollar offers for the currency-gap estimate (/currency/). Each item: {model_key, price, currency (USD), condition (new|used), seller, url, ship_cad or ship_usd (optional; default estimate used otherwise), brokerage_cad (optional), as_of}. Fill only from sources we may use: an affiliate product feed (e.g. B&H once approved), the eBay Browse API (automatic when EBAY_CLIENT_ID/SECRET are set), or a price checked by hand. Never from scraping a site that forbids it. Items older than 7 days are ignored.",
+ "items": []
+}
