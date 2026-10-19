@@ -1,29 +1,9 @@
 {
  "date": "2026-10-19",
  "new_today": [
-  "gosselin-77b09c2ef0",
-  "cameracanada-d6f141c4ac",
-  "cameracanada-e46698fbab"
+  "gosselin-ded42e01d9",
+  "gosselin-8c187373a2"
  ],
- "price_dropped": [
-  {
-   "id": "mcbain-f4fde604f6",
-   "old": 3559.99,
-   "new": 2399.99,
-   "pct": 0.326
-  },
-  {
-   "id": "cameracanada-c80100c277",
-   "old": 1099.0,
-   "new": 999.0,
-   "pct": 0.091
-  },
-  {
-   "id": "cameracanada-1dd7512938",
-   "old": 1149.0,
-   "new": 989.0,
-   "pct": 0.139
-  }
- ],
- "removed": 15
+ "price_dropped": [],
+ "removed": 0
 }
