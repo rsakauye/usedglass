@@ -1,6 +1,7 @@
 ---
 import { money, asOf, modelUrl } from '../lib/data.js';
-const { rows = [], showModel = true } = Astro.props;
+import ScoreBadge from './ScoreBadge.astro';
+const { rows = [], showModel = true, showScoreWhy = false } = Astro.props;
 ---
 <table>
   <thead><tr><th>Item</th><th>Dealer</th><th>Condition</th><th class="price">Price (CAD)</th><th>As of</th></tr></thead>
@@ -13,6 +14,7 @@ const { rows = [], showModel = true } = Astro.props;
             {l.mount && <span class="pill">{l.mount}</span>}
             {showModel && l.model_key && <a class="pill" href={modelUrl(l.model_key)}>Compare {l.model_name}</a>}
             {l._badge && <span class="pill good">{l._badge}</span>}
+            {l.deal_score != null && <ScoreBadge score={l.deal_score} why={l.score_why} basis={l.score_basis} compact={!showScoreWhy} />}
           </div>
         </td>
         <td>{l.dealer}{l.location && <div class="muted">{l.location}</div>}</td>

@@ -1,5 +1,6 @@
 ---
 import { money, asOf, modelUrl } from '../lib/data.js';
+import ScoreBadge from './ScoreBadge.astro';
 const { d, headline = false } = Astro.props;
 ---
 {d && (
@@ -8,7 +9,9 @@ const { d, headline = false } = Astro.props;
     <div style="font-weight:600"><a href={d.url} rel="nofollow noopener" target="_blank">{d.title}</a></div>
     <div class="big">{d.price_cad != null ? money(d.price_cad) : ''}</div>
     <div class="muted">{d.dealer}{d.condition ? ` · ${d.condition}` : ''}{d.comp_median ? ` · typical ${money(d.comp_median)}` : ''}</div>
+    {d.type === 'currency_gap' && <div class="pill warn">Estimated landed cost from the US</div>}
     <ul style="margin:.4rem 0 .2rem 1.1rem;padding:0">{(d.reasons || []).map((r) => <li>{r}</li>)}</ul>
+    {d.deal_score != null && <div style="margin:.2rem 0"><ScoreBadge score={d.deal_score} why={d.score_why} basis={d.score_basis} /></div>}
     <div class="muted">
       {d.model_key && <a href={modelUrl(d.model_key)}>Compare all {d.model_name} listings</a>}
       {d.model_key && ' · '}as of {asOf(d.fetched_at)}
