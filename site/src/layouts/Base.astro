@@ -20,6 +20,24 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
   <link rel="icon" href={u('favicon-16.png')} type="image/png" sizes="16x16" />
   <link rel="apple-touch-icon" href={u('apple-touch-icon.png')} sizes="180x180" />
   <meta name="theme-color" content="#111111" />
+  <script is:inline define:vars={{ ugFonts: u('retro-fonts.css') }}>
+    // Theme before first paint: saved choice, else the OS preference. Retro dark = the site's dark mode.
+    (function () {
+      var d = document.documentElement, mq = window.matchMedia ? matchMedia('(prefers-color-scheme: dark)') : null, saved = null;
+      try { saved = localStorage.getItem('ug.theme'); } catch (e) {}
+      window.ugSetTheme = function (dark, save) {
+        d.setAttribute('data-theme', dark ? 'dark' : 'light');
+        if (dark && !document.getElementById('ug-retro-fonts')) {
+          var l = document.createElement('link'); l.id = 'ug-retro-fonts'; l.rel = 'stylesheet'; l.href = ugFonts; l.setAttribute('blocking', 'render');
+          document.head.appendChild(l);
+        }
+        var m = document.querySelector('meta[name=theme-color]'); if (m) m.setAttribute('content', dark ? '#0d0c0b' : '#111111');
+        if (save) { try { localStorage.setItem('ug.theme', dark ? 'dark' : 'light'); } catch (e) {} }
+      };
+      window.ugSetTheme(saved ? saved === 'dark' : !!(mq && mq.matches), false);
+      if (mq && mq.addEventListener) mq.addEventListener('change', function (e) { var s2 = null; try { s2 = localStorage.getItem('ug.theme'); } catch (x) {} if (!s2) window.ugSetTheme(e.matches, false); });
+    })();
+  </script>
   <script is:inline>
     // "2h ago" for <time data-rel datetime=...>; the full timestamp stays in the title attribute.
     window.ugRel = function (root) {
@@ -102,6 +120,50 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
       form.card label { flex:1 1 45%; }
       form.card input, form.card select { width:100%; }
     }
+    /* ---------- Retro dark theme (the site's dark mode): darkroom / old LCD, 7-segment prices ---------- */
+    .ug-lever { display:inline-flex; align-items:center; gap:.35rem; background:none; border:1px solid var(--line); color:var(--muted); border-radius:6px; padding:.2rem .45rem; font-size:.8rem; line-height:1; margin-top:.5rem; }
+    .ug-lever svg { width:22px; height:14px; transition: transform .25s ease; transform-origin: 4px 7px; }
+    .ug-lever[aria-pressed=true] svg { transform: rotate(-28deg); }
+    .ug-lever .ug-frame { font: 700 .72rem/1 ui-monospace, Menlo, Consolas, monospace; background:#16181d; color:#ffb054; padding:.15rem .3rem; border-radius:3px; letter-spacing:.06em; min-width:2.2em; text-align:center; }
+    .sr-only { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+    html[data-theme=dark] { color-scheme: dark;
+      --fg:#ece4d6; --muted:#b9ae9b; --bg:#121110; --card:#1b1a17; --line:#34302a; --accent:#ffad5c; --good:#86d89f; --warn:#ffb67f; --seg:#ffa040; --safelight:#b3261e; }
+    html[data-theme=dark] body { background: var(--bg); }
+    html[data-theme=dark] body::before { content:''; position:fixed; inset:0; pointer-events:none; z-index:59;
+      background: radial-gradient(60vmax 40vmax at 102% -6%, rgba(255,128,40,.10), transparent 60%), radial-gradient(50vmax 30vmax at -8% 108%, rgba(179,38,30,.07), transparent 65%); }
+    html[data-theme=dark] body::after { content:''; position:fixed; inset:-60px; pointer-events:none; z-index:60; opacity:.055;
+      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 .92 0 0 0 0 .8 0 0 0 1 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      animation: ug-grain 1.4s steps(5) infinite; }
+    @keyframes ug-grain { 0%{transform:translate(0,0)} 20%{transform:translate(-18px,12px)} 40%{transform:translate(14px,-20px)} 60%{transform:translate(-10px,-8px)} 80%{transform:translate(20px,16px)} 100%{transform:translate(0,0)} }
+    @media (prefers-reduced-motion: reduce) { html[data-theme=dark] body::after { animation:none; } .ug-lever svg { transition:none; } }
+    html[data-theme=dark] header.site { background:#0d0c0b; border-bottom:2px solid var(--safelight); }
+    html[data-theme=dark] footer.site { background:#151412; }
+    html[data-theme=dark] th { background:#23201c; color:var(--fg); }
+    html[data-theme=dark] table { background:var(--card); }
+    html[data-theme=dark] .pill { background:#2a2622; color:#e6dac5; border:1px solid #3d372f; border-radius:3px; }
+    html[data-theme=dark] .pill.good { background:#17291d; color:var(--good); border-color:#2a4a33; }
+    html[data-theme=dark] .pill.warn, html[data-theme=dark] .pill.mk-warn { background:#33231a; color:var(--warn); border-color:#5a3a22; }
+    html[data-theme=dark] .pill.mk-bad { background:#3a1b1c; color:#ff9e9a; border-color:#6a2a2a; }
+    html[data-theme=dark] .mk-note.mk-warn, html[data-theme=dark] li.mk-warn { color:var(--warn); }
+    html[data-theme=dark] .mk-note.mk-bad, html[data-theme=dark] li.mk-bad { color:#ff9e9a; }
+    html[data-theme=dark] .card, html[data-theme=dark] .mk-item { border:2px solid; border-color:#3b362f #191714 #191714 #3b362f; border-radius:4px; }
+    html[data-theme=dark] .deal { border-left:4px solid var(--safelight); }
+    html[data-theme=dark] input, html[data-theme=dark] select, html[data-theme=dark] textarea { background:#0f0e0d; color:var(--fg); border:2px inset #3b362f; border-radius:2px; }
+    html[data-theme=dark] button { background:linear-gradient(#b65a1c,#8f4313); color:#fff; border:2px solid; border-color:#e08a4c #5a2a0c #5a2a0c #e08a4c; border-radius:3px; font-weight:600; box-shadow:1px 1px 0 #000; }
+    html[data-theme=dark] button:active { border-color:#5a2a0c #e08a4c #e08a4c #5a2a0c; box-shadow:none; }
+    html[data-theme=dark] button.secondary, html[data-theme=dark] .mk-tabs button, html[data-theme=dark] .v-sort button, html[data-theme=dark] .v-more, html[data-theme=dark] .ug-save-label, html[data-theme=dark] label.secondary {
+      background:linear-gradient(#34302a,#24211d) !important; color:var(--fg) !important; border:2px solid !important; border-color:#4d463d #14120f #14120f #4d463d !important; border-radius:3px !important; }
+    html[data-theme=dark] .mk-tabs button[aria-selected=true], html[data-theme=dark] .v-sort button[aria-pressed=true] { background:linear-gradient(#b65a1c,#8f4313) !important; color:#fff !important; border-color:#e08a4c #5a2a0c #5a2a0c #e08a4c !important; }
+    html[data-theme=dark] .ug-save { color:#ff9a5c; background:none; border:0; box-shadow:none; }
+    html[data-theme=dark] .ug-lever { border:2px solid; border-color:#4d463d #14120f #14120f #4d463d; background:#1f1c19; color:var(--muted); box-shadow:none; font-weight:400; }
+    html[data-theme=dark] .ug-lever .ug-frame { background:#000; color:var(--seg); text-shadow:0 0 6px rgba(255,140,40,.55); }
+    html[data-theme=dark] td.price, html[data-theme=dark] .l-price, html[data-theme=dark] .big, html[data-theme=dark] .stats b, html[data-theme=dark] .mk-used b {
+      font-family:'UG Seg7', ui-monospace, Menlo, Consolas, monospace; font-weight:700; color:var(--seg); text-shadow:0 0 6px rgba(255,140,40,.45); letter-spacing:.04em; font-size:.92em; }
+    html[data-theme=dark] .big { font-size:1.4rem; } html[data-theme=dark] .stats b { font-size:1.15rem; }
+    html[data-theme=dark] time, html[data-theme=dark] .ltable td.d-cell.muted:last-child {
+      font-family:'UG Seg14', ui-monospace, Menlo, Consolas, monospace; font-weight:700; color:var(--seg); text-shadow:0 0 5px rgba(255,140,40,.4); font-size:.72rem; letter-spacing:.03em; text-transform:uppercase; }
+    html[data-theme=dark] td.price s, html[data-theme=dark] .l-price s { color:var(--muted); text-shadow:none; }
+    html[data-theme=dark] ::selection { background:#7a3a12; color:#fff; }
   </style>
 </head>
 <body>
@@ -147,9 +209,20 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
         Data refreshed daily from dealer websites. Last update: {asOf(meta.run_at)}.<br />
         Prices and availability change; always confirm on the dealer's site. <a href={u('about/')}>Disclaimer &amp; dealer opt-out</a> · <a href={u('rss.xml')}>RSS</a> · <a href={u('privacy/')}>Privacy</a> · <a href={u('terms/')}>Terms</a><br />
         <span class="affiliate-disclosure">Some links are affiliate links, so we may earn a commission at no extra cost to you. {AMAZON_DISCLOSURE} <a href={u('about/#affiliates')}>Learn more</a></span>
+        <br /><button type="button" id="ug-theme" class="ug-lever" title="advance film?" aria-pressed="false"><svg viewBox="0 0 22 14" aria-hidden="true"><circle cx="4" cy="7" r="3.2" fill="currentColor"/><rect x="4" y="5.6" width="17" height="2.8" rx="1.4" fill="currentColor"/><rect x="17.5" y="3.5" width="3.5" height="7" rx="1.5" fill="currentColor"/></svg><span class="ug-frame" aria-hidden="true">00</span><span class="sr-only">Dark theme</span></button>
       </div>
     </div>
   </footer>
+  <script is:inline>
+    (function () {
+      var b = document.getElementById('ug-theme'); if (!b) return;
+      var f = b.querySelector('.ug-frame');
+      function paint() { var dk = document.documentElement.getAttribute('data-theme') === 'dark'; b.setAttribute('aria-pressed', dk ? 'true' : 'false'); f.textContent = dk ? '24' : '00'; }
+      paint();
+      b.addEventListener('click', function () { window.ugSetTheme(document.documentElement.getAttribute('data-theme') !== 'dark', true); paint(); });
+      new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+    })();
+  </script>
   <script>
     import { initSaveButtons } from '../lib/mykit-core.js';
     initSaveButtons(import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'my/');
