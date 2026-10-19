@@ -14,7 +14,12 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
   <meta name="description" content={description} />
   <meta name="fo-verify" content="80e91ecb-ef5e-4e35-9def-f6aecc44206b" />
   <link rel="alternate" type="application/rss+xml" title="UsedGlass.ca deals" href={u('rss.xml')} />
+  <link rel="icon" href={u('favicon.ico')} sizes="48x48" />
   <link rel="icon" href={u('favicon.svg')} type="image/svg+xml" />
+  <link rel="icon" href={u('favicon-32.png')} type="image/png" sizes="32x32" />
+  <link rel="icon" href={u('favicon-16.png')} type="image/png" sizes="16x16" />
+  <link rel="apple-touch-icon" href={u('apple-touch-icon.png')} sizes="180x180" />
+  <meta name="theme-color" content="#111111" />
   <script is:inline>
     // "2h ago" for <time data-rel datetime=...>; the full timestamp stays in the title attribute.
     window.ugRel = function (root) {
@@ -37,7 +42,9 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
     header.site nav a { margin-right:1rem; opacity:.85; font-size:.95rem; }
     header.site nav a:hover { opacity:1; }
     .logo { font-weight:800; font-size:1.25rem; letter-spacing:-.02em; }
-    .logo span { color:#7cc4ff; }
+    .logo { display:inline-flex; align-items:center; gap:.4rem; white-space:nowrap; }
+    .logo .wm span { color:#7cc4ff; }
+    .logo-mark { width:1.6em; height:1.6em; flex:none; display:block; }
     .wrap { max-width:1150px; margin:0 auto; padding:.8rem 1rem; }
     main.wrap { padding-top:1.2rem; padding-bottom:3rem; }
     .card { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:1rem; }
@@ -92,7 +99,22 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
 <body>
   <header class="site">
     <div class="wrap">
-      <a class="logo" href={u('')}>Used<span>Glass</span>.ca</a>
+      <a class="logo" href={u('')} aria-label="UsedGlass.ca home">
+        <span class="wm">Used<span>Glass</span>.ca</span>
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <rect x="35" y="12" width="9" height="5" rx="2" fill="#f4a261"/>
+          <rect x="6" y="16" width="44" height="32" rx="6" fill="#fff"/>
+          <path d="M11 17 L14 10.5 H23 L26 17 Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"/>
+          <rect x="38" y="21" width="7" height="4" rx="1.5" fill="#2a9df4"/>
+          <path d="M39.5 40.5 L56 57" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/>
+          <path d="M41 42 L55.5 56.5" stroke="#f4a261" stroke-width="3" stroke-linecap="round"/>
+          <circle cx="28" cy="32" r="13" fill="#14213d"/>
+          <circle cx="28" cy="32" r="11" fill="#fff"/>
+          <circle cx="28" cy="32" r="9.2" fill="#14213d"/>
+          <circle cx="28" cy="32" r="7.2" fill="#2a9df4"/>
+          <path d="M23.5 29a5.5 5.5 0 0 1 4.5-3" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+        </svg>
+      </a>
       <nav>
         <a href={u('')}>Search</a>
         <a href={u('deals/')}>Deals</a>
