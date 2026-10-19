@@ -16,7 +16,12 @@ GitHub Actions (daily 12:00 UTC ≈ 6 a.m. Mountain)
        ├─ history/state: data/history/YYYY-MM-DD.json, data/state.json (first seen, price changes)
        ├─ models.json (grouped models, medians), changes.json (new today, price drops)
        ├─ deals.json + deal-of-the-day.json (steep discounts vs comparable median, drops, new rebates)
-       └─ rebates.json (Canon / Fujifilm / Nikon Canada promo pages)
+       ├─ rebates.json (Canon / Fujifilm / Nikon Canada promo pages)
+       ├─ new-prices.json (Canadian NEW prices, The Camera Store public catalogue: scraper/newprices.py)
+       ├─ fx.json (Bank of Canada Valet API: USD, EUR, GBP, JPY in CAD, history + 7/30-day change)
+       ├─ currency.json (US landed-cost gaps + "rate moved, prices haven't": scraper/currency.py)
+       ├─ Deal Score 0-100 on listings/models/deals (scraper/dealscore.py, formula on /about/deal-score/)
+       └─ newsletter.json (data hook for the weekly Kit broadcast: FX headline, currency flags, top-scored deals)
   └─ commit data/ → build Astro site (site/) → publish preview to gh-pages
 ```
 
@@ -52,10 +57,28 @@ fell below 40% of its previous count, it opens (or updates and comments on) a si
 ### Deal rules
 A listing is a deal when it is ≥20% (and ≤70%, to filter mismatches) below the median of ≥3 comparable listings (same model key; current listings across dealers + last 90 days), or its price dropped ≥10%, or a new manufacturer rebate page appears. Tunable in `scraper/run.py`.
 
+### Currency watch (/currency/)
+- **Rates:** Bank of Canada Valet API (`FXUSDCAD`, `FXEURCAD`, `FXGBPCAD`, `FXJPYCAD`), one request per run, free, no key.
+  Attribution shown on the page; rates are indicative.
+- **Rate moved, prices haven't:** when USD/CAD moves ≥2.5% over 30 days, Canadian new prices unchanged in that window are
+  listed as "may adjust". Needs ≥14 days of our own new-price history (tracking began 2026-10-18).
+- **US price gap:** estimated landed CAD = USD × BoC rate + shipping (default $40) + brokerage (default $25) + 5% GST
+  (HST provinces pay 13–15%; most cameras/lenses are duty-free). Flagged when ≥5% and ≥$50 under the cheapest
+  Canadian price. US offers come from `data/us-offers.json` (hand-checked prices or an affiliate product feed) and,
+  automatically, from the eBay Browse API (`EBAY_US` marketplace, new, ships to CA) once `EBAY_CLIENT_ID/SECRET` exist
+  (`EBAY_US_GAP=0` turns it off). B&H is not scraped: robots.txt disallows its search/catalogue paths and it sits
+  behind a bot challenge; use its affiliate data feed once approved.
+
+### Deal Score
+`scraper/dealscore.py`: weighted 0–100 score (history vs comparables 45%, 90-day low 10%, used vs current
+Canadian new price adjusted for model age 25%, successor gap 20%, freshness ±8). Curated release dates/successors in
+`data/model-meta.json` (cite a manufacturer or reputable review URL for every entry; leave unknowns null).
+Models without metadata use history only and say so. Deals are sorted by Deal Score.
+
 ## Local development
 
 ```bash
-python -m unittest tests.test_normalize tests.test_alert
+python -m unittest tests.test_normalize tests.test_alert tests.test_currency
 python -m scraper.run                 # all dealers; or: python -m scraper.run mcbain camtec
 cd site && npm ci && npm run dev      # reads ../data
 ```
