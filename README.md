@@ -102,6 +102,16 @@ on the Pages project (Workers & Pages → usedglass → Custom domains).
 | `CLOUDFLARE_API_TOKEN` | Cloudflare → My Profile → API Tokens → custom token, *Account → Cloudflare Pages → Edit* | for usedglass.ca deploys |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account id | for usedglass.ca deploys |
 
+## Event submissions (/events/#submit)
+The form posts to the Pages Function `site/functions/api/event.js`, which verifies Cloudflare Turnstile on the server,
+rate-limits to 5 per hour per hashed IP, and stores each entry in the KV namespace `UG_EVENTS` under `pending:<time>:<id>`.
+Nothing is published automatically: copy approved events into `data/events.json` by hand, then delete the KV entry.
+Entries expire on their own 90 days after the event (privacy policy). Pages project bindings: `UG_EVENTS` (KV) and
+`TURNSTILE_SECRET` (encrypted). The Turnstile site key (public) is in `site/src/pages/events.astro`.
+
+Review: `scripts/events-pending.sh` lists pending entries; `scripts/events-pending.sh delete <key>` removes one
+(needs `npx wrangler login` or a `CLOUDFLARE_API_TOKEN` with Workers KV Storage edit).
+
 ## Newsletter (Kit)
 Footer and `/newsletter/` post straight to Kit form `10061701` (`https://app.kit.com/forms/10061701/subscriptions`,
 field `email_address`). Override with the repo variable `KIT_FORM_ID` (or `off`). Draft copy for the welcome
