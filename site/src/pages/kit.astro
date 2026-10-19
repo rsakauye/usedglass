@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+import { KIT_CSS } from '../lib/mykit-ui.js';
+---
+<Base title="Shared camera kit" description="A camera kit shared from UsedGlass.ca, with today's Canadian used and new prices.">
+  <style set:html={KIT_CSS} />
+  <p class="muted"><a href={u('my/')}>My kit</a> › Shared kit</p>
+  <h1 id="sk-title">Shared kit</h1>
+  <p class="muted" id="sk-sub">Loading…</p>
+  <div class="mk-bar" style="display:flex;flex-wrap:wrap;gap:.4rem;margin:.4rem 0 .8rem">
+    <button type="button" id="sk-copy" disabled>Copy to my lists</button>
+    <a href={u('my/')} style="align-self:center">Go to My kit</a>
+  </div>
+  <div id="sk-summary"></div>
+  <div id="sk-compat"></div>
+  <div id="sk-items"></div>
+  <p class="muted">This is a read-only copy. The list lives entirely in the link, so we don't store it. Prices are today's and change quickly, so always confirm on the dealer's site. Mount checks use simple rules.</p>
+  <script define:vars={{ base: u(''), dataUrl: u('kit-data.json'), myUrl: u('my/') }}>
+    window.__sk = { base, dataUrl, myUrl };
+  </script>
+  <script>
+    import * as K from '../lib/mykit-core.js';
+    import { itemsHtml, totalsHtml, compatHtml } from '../lib/mykit-ui.js';
+    const { base, dataUrl, myUrl } = (window as any).__sk;
+    const $ = (id: string) => document.getElementById(id) as any;
+    let kit: any = null, cat: any = K.indexCatalog([]);
+    function render() {
+      if (!kit) return;
+      const title = kit.handle ? `${kit.handle}'s ${kit.name}` : kit.name;
+      $('sk-title').textContent = title; document.title = `${title} · UsedGlass.ca`;
+      $('sk-sub').textContent = `${kit.items.length} item${kit.items.length === 1 ? '' : 's'}, shared from UsedGlass.ca.`;
+      $('sk-summary').innerHTML = totalsHtml(kit.items, cat);
+      $('sk-compat').innerHTML = compatHtml(kit.items, cat);
+      $('sk-items').innerHTML = itemsHtml(kit.items, cat, { base });
+    }
+    async function load() {
+      try { kit = await K.decodeList(location.hash); $('sk-copy').disabled = false; render(); }
+      catch { kit = null; $('sk-title').textContent = 'Kit link not found'; $('sk-sub').innerHTML = `This link doesn't contain a kit, or it was cut off. Build your own on <a href="${myUrl}">My kit</a>.`; $('sk-items').innerHTML = ''; $('sk-summary').innerHTML = ''; $('sk-compat').innerHTML = ''; }
+    }
+    $('sk-copy').addEventListener('click', () => {
+      if (!kit) return;
+      const s = K.load();
+      if (s.lists.length >= K.MAX_LISTS) { alert('You have the maximum number of lists. Delete one on My kit first.'); return; }
+      const l = K.newList(K.uniqueName(s, kit.handle ? `${kit.name} (from ${kit.handle})` : kit.name), 'kit', kit.items);
+      s.lists.push(l); s.active = l.id; K.save(s);
+      location.href = myUrl;
+    });
+    window.addEventListener('hashchange', load);
+    load();
+    fetch(dataUrl).then((r) => r.json()).then((rows) => { cat = K.indexCatalog(rows); render(); }).catch(() => {});
+  </script>
+</Base>

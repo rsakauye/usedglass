@@ -1,0 +1,5 @@
+---
+// Heart button: toggles the model in the visitor's wish list (localStorage only; see lib/mykit-core.js).
+const { k, n = '', m = '', cat = '', label = false } = Astro.props;
+---
+{k && <button type="button" class:list={['ug-save', { 'ug-save-label': label }]} data-k={k} data-n={n} data-m={m || ''} data-cat={cat} aria-pressed="false" title="Save to your wish list" aria-label="Save to your wish list"><span class="ug-heart" aria-hidden="true"></span>{label && <span class="ug-save-txt">Save</span>}</button>}

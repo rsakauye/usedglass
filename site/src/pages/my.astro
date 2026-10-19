@@ -1,0 +1,213 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+import { CATEGORIES } from '../lib/mykit-core.js';
+import { KIT_CSS } from '../lib/mykit-ui.js';
+import { SIZES } from '../lib/mykit-card.js';
+const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Nikon Z', 'Sony E', 'Sony A', 'Fujifilm X', 'Fujifilm G', 'L-Mount', 'Micro Four Thirds', 'Four Thirds', 'Pentax K', 'Leica M', 'Leica R', 'M42', 'Minolta MD', 'Olympus OM', 'Contax/Yashica', 'Hasselblad V', 'Hasselblad XCD', 'Mamiya 645', 'Mamiya RB/RZ', 'Fixed Lens'];
+---
+<Base title="My kit: wish lists, kit builder and kit cards" description="Build camera kits and wish lists with current Canadian used and new prices, mount checks, share links and a My kit image for your email signature. Saved only in your browser.">
+  <style set:html={KIT_CSS + `
+    .mk-tabs { display:flex; flex-wrap:wrap; gap:.35rem; margin:.4rem 0 .6rem; }
+    .mk-tabs button { background:#fff; color:var(--fg); border-color:#c9ccd3; border-radius:99px; padding:.3rem .8rem; }
+    .mk-tabs button[aria-selected=true] { background:#14213d; color:#fff; border-color:#14213d; }
+    .mk-bar { display:flex; flex-wrap:wrap; gap:.4rem; align-items:center; margin:.4rem 0; }
+    .mk-add { display:flex; flex-wrap:wrap; gap:.5rem; align-items:end; margin:.8rem 0; }
+    .mk-add label { display:flex; flex-direction:column; font-size:.9rem; }
+    .mk-add .grow { flex:2 1 260px; } .mk-add .grow input { width:100%; }
+    .mk-gen { display:grid; grid-template-columns: 280px minmax(0,1fr); gap:1rem; align-items:start; }
+    .mk-gen canvas { width:100%; height:auto; border:1px solid var(--line); border-radius:6px; background:#f7f2e8; }
+    .mk-gen label { display:block; margin-bottom:.5rem; } .mk-gen input[type=text] { width:100%; }
+    #mk-snippet { width:100%; min-height:6rem; font:12px ui-monospace, Menlo, Consolas, monospace; }
+    #mk-share-out { width:100%; }
+    h2 { margin-top:1.6rem; }
+    @media (max-width:640px) { .mk-gen { grid-template-columns: 1fr; } .mk-add label { flex:1 1 45%; } .mk-add input, .mk-add select { width:100%; } }
+  `} />
+  <h1>My kit</h1>
+  <p class="muted">Build kits and wish lists like a parts list: every item shows today's cheapest Canadian used price, the dealer, its Deal Score and the new price where we track it. <b>Your lists are stored only in this browser</b>, so nothing is sent to us. Use Export to move them to another device.</p>
+
+  <div class="mk-tabs" id="mk-tabs" role="tablist" aria-label="Your lists"></div>
+  <div class="mk-bar">
+    <button type="button" id="mk-new">+ New list</button>
+    <button type="button" class="secondary" id="mk-rename">Rename</button>
+    <button type="button" class="secondary" id="mk-dup">Duplicate</button>
+    <button type="button" class="secondary" id="mk-del">Delete list</button>
+  </div>
+
+  <div id="mk-summary"></div>
+  <div id="mk-compat"></div>
+  <div id="mk-items"><p class="muted">Loading prices…</p></div>
+
+  <form class="card mk-add" id="mk-add" autocomplete="off">
+    <label class="grow">Add gear<input id="mk-q" list="mk-models" type="search" placeholder="Start typing a model, e.g. X-T5 or 24-70 f/2.8" /></label>
+    <label>Category<select id="mk-cat">{CATEGORIES.map(([k, v]) => <option value={k}>{v}</option>)}</select></label>
+    <label>Mount<select id="mk-mount"><option value="">Not set</option>{mounts.map((m) => <option>{m}</option>)}</select></label>
+    <label>Target $<input id="mk-t" type="number" min="0" step="1" inputmode="decimal" placeholder="optional" style="width:7rem" /></label>
+    <button type="submit">Add</button>
+    <datalist id="mk-models"></datalist>
+    <p class="muted" id="mk-hint" style="flex-basis:100%;margin:0">Pick a suggestion to get live prices. Anything else is saved as free text (handy for a tripod, a strap or a camera we don't track).</p>
+  </form>
+
+  <h2>Share this list</h2>
+  <p class="muted">The whole list is packed into the link itself, so no account or server is involved. Anyone with the link sees a read-only copy with today's prices and can copy it into their own lists.</p>
+  <div class="mk-bar"><button type="button" id="mk-share">Copy share link</button> <a id="mk-share-open" href="#" target="_blank" rel="noopener" hidden>Open it</a></div>
+  <input id="mk-share-out" type="text" readonly hidden aria-label="Share link" />
+
+  <h2>My kit card</h2>
+  <p class="muted">Make an image of this list for your email signature or a forum post. It's drawn in your browser, so nothing is uploaded.</p>
+  <div class="mk-gen card">
+    <div>
+      <label>Display name or handle (optional)<input type="text" id="mk-handle" maxlength="40" placeholder="e.g. Russ or @russshoots" /></label>
+      <label>Size<select id="mk-size">{Object.entries(SIZES).map(([k, s]) => <option value={k}>{s.label}</option>)}</select></label>
+      <div class="mk-bar"><button type="button" id="mk-dl">Download PNG</button><button type="button" class="secondary" id="mk-copy">Copy HTML signature</button></div>
+      <p class="muted" id="mk-gen-msg" style="font-size:.85rem">The email-signature image is saved at 2× so it stays sharp on high-resolution screens.</p>
+    </div>
+    <div><canvas id="mk-canvas" width="1200" height="630" aria-label="Preview of your kit card"></canvas></div>
+  </div>
+  <details style="margin-top:.6rem"><summary>HTML signature snippet</summary>
+    <p class="muted">Paste this into your email app's signature settings (Gmail: Settings › Signature). Email apps don't accept images from your computer inside pasted HTML, so the snippet is text with a link to your kit. To add the picture as well, insert the downloaded PNG with your email app's own image button.</p>
+    <textarea id="mk-snippet" readonly></textarea>
+  </details>
+
+  <h2>Back up or move your lists</h2>
+  <div class="mk-bar">
+    <button type="button" class="secondary" id="mk-export">Export all lists (JSON)</button>
+    <label class="secondary" style="cursor:pointer;border:1px solid #c9ccd3;border-radius:6px;padding:.4rem .6rem;background:#fff">Import JSON… <input type="file" id="mk-import" accept="application/json,.json" hidden /></label>
+  </div>
+  <p class="muted" id="mk-io-msg"></p>
+  <p class="muted">Prices refresh daily and change quickly, so always confirm on the dealer's site. Mount checks use simple rules and can't know about every adapter, crop-sensor coverage or firmware quirk.</p>
+
+  <script define:vars={{ base: u(''), dataUrl: u('kit-data.json'), kitUrl: new URL(u('kit/'), Astro.site).href }}>
+    window.__mk = { base, dataUrl, kitUrl };
+  </script>
+  <script>
+    import * as K from '../lib/mykit-core.js';
+    import { itemsHtml, totalsHtml, compatHtml, nameOf } from '../lib/mykit-ui.js';
+    import { renderCard, SIZES } from '../lib/mykit-card.js';
+    const { base, dataUrl, kitUrl } = (window as any).__mk;
+    const $ = (id: string) => document.getElementById(id) as any;
+    let s = K.load();
+    let cat: any = K.indexCatalog([]);
+    const cur = () => s.lists.find((l: any) => l.id === s.active) || s.lists[0];
+    const commit = () => { K.save(s); render(); };
+
+    function render() {
+      const l = cur(); s.active = l.id;
+      $('mk-tabs').innerHTML = s.lists.map((x: any) => `<button type="button" role="tab" data-id="${K.esc(x.id)}" aria-selected="${x.id === l.id}">${K.esc(x.name)} <span class="muted">${x.items.length}</span></button>`).join('');
+      $('mk-summary').innerHTML = K.kitTotals(l.items, cat).items ? totalsHtml(l.items, cat) : '';
+      $('mk-compat').innerHTML = compatHtml(l.items, cat);
+      $('mk-items').innerHTML = itemsHtml(l.items, cat, { base, editable: true, lists: s.lists, currentId: l.id });
+      $('mk-del').disabled = s.lists.length <= 1;
+      $('mk-share-out').hidden = true; $('mk-share-open').hidden = true;
+      drawCard(); snippet();
+    }
+    function drawCard() {
+      const l = cur();
+      const items = l.items.map((it: any) => ({ ...it, n: nameOf(cat, it) }));
+      renderCard($('mk-canvas'), { items, listName: l.name, handle: $('mk-handle').value.trim(), size: $('mk-size').value });
+    }
+    async function shareLink() { const l = cur(); return kitUrl + '#' + await K.encodeList(l, $('mk-handle').value.trim()); }
+    async function snippet() {
+      const l = cur(); const h = $('mk-handle').value.trim();
+      const names = l.items.map((it: any) => nameOf(cat, it));
+      const line = names.slice(0, 6).join(' · ') + (names.length > 6 ? ` +${names.length - 6} more` : '');
+      const link = await shareLink();
+      $('mk-snippet').value = `<table cellpadding="0" cellspacing="0" border="0" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:1.4;color:#14213d"><tr><td style="border-left:3px solid #f4a261;padding-left:8px">${h ? `<b>${K.esc(h)}</b> · ` : ''}<span style="color:#555">${K.esc(l.name)}:</span> ${K.esc(line || 'my camera kit')}<br><a href="${K.esc(link)}" style="color:#2a9df4;text-decoration:none">See my kit on UsedGlass.ca</a></td></tr></table>`;
+    }
+
+    $('mk-tabs').addEventListener('click', (e: any) => { const b = e.target.closest('button[data-id]'); if (b) { s.active = b.dataset.id; commit(); } });
+    $('mk-new').addEventListener('click', () => {
+      if (s.lists.length >= K.MAX_LISTS) return alert('You have the maximum number of lists.');
+      const name = prompt('Name your list (e.g. Wedding kit, Travel kit)', 'New kit'); if (!name) return;
+      const l = K.newList(K.uniqueName(s, name.trim()), 'kit'); s.lists.push(l); s.active = l.id; commit();
+    });
+    $('mk-rename').addEventListener('click', () => { const l = cur(); const n = prompt('Rename list', l.name); if (n && n.trim()) { l.name = n.trim().slice(0, 60); commit(); } });
+    $('mk-dup').addEventListener('click', () => { if (s.lists.length >= K.MAX_LISTS) return; const l = cur(); const c = K.newList(K.uniqueName(s, l.name + ' copy'), 'kit', l.items.map((i: any) => ({ ...i }))); s.lists.push(c); s.active = c.id; commit(); });
+    $('mk-del').addEventListener('click', () => { const l = cur(); if (s.lists.length > 1 && confirm(`Delete "${l.name}" and its ${l.items.length} items from this browser?`)) { s.lists = s.lists.filter((x: any) => x !== l); s.active = s.lists[0].id; commit(); } });
+
+    $('mk-items').addEventListener('change', (e: any) => {
+      const row = e.target.closest('.mk-item'); if (!row) return; const l = cur(); const it = l.items[+row.dataset.idx]; if (!it) return;
+      if (e.target.classList.contains('mk-target')) { const v = parseFloat(e.target.value); it.t = v > 0 ? Math.round(v * 100) / 100 : null; }
+      else if (e.target.classList.contains('mk-cat')) it.c = e.target.value;
+      else if (e.target.classList.contains('mk-move') && e.target.value) {
+        const to = s.lists.find((x: any) => x.id === e.target.value);
+        const keep = confirm(`Keep a copy in "${l.name}" too? OK = copy, Cancel = move.`);
+        if (to && !to.items.some((x: any) => x.k && x.k === it.k)) to.items.push({ ...it });
+        if (!keep) l.items.splice(+row.dataset.idx, 1);
+      }
+      commit();
+    });
+    $('mk-items').addEventListener('click', (e: any) => { if (e.target.classList.contains('mk-rm')) { const row = e.target.closest('.mk-item'); cur().items.splice(+row.dataset.idx, 1); commit(); } });
+
+    $('mk-q').addEventListener('input', () => {
+      const m = cat.byName.get($('mk-q').value.trim().toLowerCase());
+      if (m) { $('mk-cat').value = K.defaultCat(m.category, m.mount, m.key); $('mk-mount').value = m.mount || ''; $('mk-hint').textContent = `Tracked model: ${m.count} listing${m.count === 1 ? '' : 's'} today${m.used != null ? `, from ${K.money(m.used)}` : ''}.`; }
+    });
+    $('mk-add').addEventListener('submit', (e: any) => {
+      e.preventDefault();
+      const q = $('mk-q').value.trim(); if (!q) return;
+      const l = cur(); if (l.items.length >= K.MAX_ITEMS) return alert('This list is full.');
+      const m = cat.byName.get(q.toLowerCase());
+      const it = K.cleanItem(m ? { k: m.key, n: m.name, c: $('mk-cat').value, t: $('mk-t').value } : { n: q, c: $('mk-cat').value, m: $('mk-mount').value, t: $('mk-t').value });
+      if (it && m && l.items.some((x: any) => x.k === it.k)) { $('mk-hint').textContent = 'Already in this list.'; return; }
+      if (it) l.items.push(it);
+      $('mk-q').value = ''; $('mk-t').value = ''; $('mk-mount').value = '';
+      $('mk-hint').textContent = 'Added.'; commit();
+    });
+
+    $('mk-share').addEventListener('click', async () => {
+      const link = await shareLink();
+      $('mk-share-out').value = link; $('mk-share-out').hidden = false; $('mk-share-open').href = link; $('mk-share-open').hidden = false;
+      try { await navigator.clipboard.writeText(link); $('mk-share').textContent = 'Copied!'; } catch { $('mk-share-out').select(); }
+      setTimeout(() => ($('mk-share').textContent = 'Copy share link'), 2000);
+    });
+
+    s.profile = s.profile || { handle: '' };
+    $('mk-handle').value = s.profile.handle || '';
+    $('mk-handle').addEventListener('input', () => { s.profile.handle = $('mk-handle').value.trim().slice(0, 40); K.save(s); drawCard(); snippet(); });
+    $('mk-size').addEventListener('change', drawCard);
+    $('mk-dl').addEventListener('click', () => {
+      drawCard();
+      $('mk-canvas').toBlob((b: Blob) => {
+        const a = document.createElement('a'); a.href = URL.createObjectURL(b);
+        a.download = `usedglass-my-kit-${$('mk-size').value === 'sig' ? 'signature' : 'card'}.png`; a.click();
+        setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+      }, 'image/png');
+    });
+    $('mk-copy').addEventListener('click', async () => {
+      await snippet(); const html = $('mk-snippet').value;
+      try {
+        if ((window as any).ClipboardItem) await navigator.clipboard.write([new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }), 'text/plain': new Blob([html], { type: 'text/plain' }) })]);
+        else await navigator.clipboard.writeText(html);
+        $('mk-gen-msg').textContent = 'Signature copied. Paste it into your email signature settings.';
+      } catch { $('mk-snippet').closest('details').open = true; $('mk-snippet').select(); $('mk-gen-msg').textContent = 'Select the snippet below and copy it.'; }
+    });
+
+    $('mk-export').addEventListener('click', () => {
+      const blob = new Blob([JSON.stringify({ app: 'usedglass.ca', exported: new Date().toISOString(), ...K.cleanState(s) }, null, 2)], { type: 'application/json' });
+      const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = `usedglass-lists-${new Date().toISOString().slice(0, 10)}.json`; a.click();
+      setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+    });
+    $('mk-import').addEventListener('change', async (e: any) => {
+      const f = e.target.files[0]; if (!f) return;
+      try {
+        if (f.size > 1_000_000) throw new Error('too big');
+        const inc = K.cleanState(JSON.parse(await f.text()));
+        if (!inc.lists.length) throw new Error('no lists');
+        const replace = confirm(`Found ${inc.lists.length} list(s). OK = replace your lists in this browser, Cancel = add them alongside your current lists.`);
+        if (replace) s = { ...inc, profile: inc.profile.handle ? inc.profile : s.profile };
+        else for (const l of inc.lists) { if (s.lists.length >= K.MAX_LISTS) break; s.lists.push(K.newList(K.uniqueName(s, l.name), l.kind, l.items)); }
+        $('mk-io-msg').textContent = `Imported ${inc.lists.length} list(s).`; commit();
+      } catch { $('mk-io-msg').textContent = "That file doesn't look like a UsedGlass.ca lists export."; }
+      e.target.value = '';
+    });
+    window.addEventListener('storage', (e) => { if (e.key === K.STORE_KEY) { s = K.load(); render(); } });
+
+    render();
+    fetch(dataUrl).then((r) => r.json()).then((rows) => {
+      cat = K.indexCatalog(rows);
+      $('mk-models').innerHTML = rows.map((r: any) => `<option value="${K.esc(r[1])}"></option>`).join('');
+      render();
+    }).catch(() => { $('mk-hint').textContent = "Couldn't load today's prices. Your lists are still here."; });
+  </script>
+</Base>
