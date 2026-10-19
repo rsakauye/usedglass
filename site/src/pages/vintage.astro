@@ -1,0 +1,114 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Base from '../layouts/Base.astro';
+import ListingTable from '../components/ListingTable.astro';
+import { listings, byId, money, asOf, meta, u } from '../lib/data.js';
+import { GROUPS, vintageGroups } from '../lib/vintage.js';
+const groups = vintageGroups(listings);
+const total = Object.values(groups).reduce((n, g) => n + g.length, 0);
+let fow = null;
+try { fow = JSON.parse(fs.readFileSync(path.join(process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data'), 'find-of-week.json'), 'utf8')); } catch {}
+const live = fow ? (fow.listing_id && byId[fow.listing_id]) || (fow.listing_url && listings.find((l) => l.url === fow.listing_url)) || null : null;
+const showFow = fow && (live || fow.title);
+const SHOW = 12;
+---
+<Base title="Vintage & thrift finds: film cameras and manual lenses in Canada" description="Used film cameras, instant cameras, point-and-shoots and vintage manual-focus lenses from Canadian dealers, updated daily, plus an honest thrift-store camera checklist.">
+  <style>
+    .v-groups { display:flex; flex-wrap:wrap; gap:.35rem; margin:.4rem 0 1rem; }
+    .v-sort { display:flex; gap:.35rem; align-items:center; flex-wrap:wrap; margin:.2rem 0 1rem; }
+    .v-sort button { background:#fff; color:var(--fg); border-color:#c9ccd3; border-radius:99px; padding:.25rem .8rem; }
+    .v-sort button[aria-pressed=true] { background:#14213d; color:#fff; border-color:#14213d; }
+    .v-more { margin:.3rem 0 1.4rem; background:#fff; color:var(--accent); border-color:#c9ccd3; }
+    tr.v-hide { display:none !important; }
+    .fow { border-left:4px solid #f4a261; display:grid; grid-template-columns: minmax(0,1fr) auto; gap:1rem; align-items:start; max-width:820px; }
+    .fow img { width:220px; height:auto; border-radius:6px; display:block; }
+    .fow figcaption { font-size:.78rem; color:var(--muted); margin-top:.2rem; }
+    .check li { margin-bottom:.35rem; }
+    @media (max-width:640px) { .fow { grid-template-columns:1fr; } .fow img { width:100%; } }
+  </style>
+  <h1>Vintage &amp; thrift finds</h1>
+  <p>Film cameras, instant cameras, pocket point-and-shoots and old manual-focus glass from Canadian dealers, pulled from today's {listings.length.toLocaleString('en-CA')} listings and refreshed daily ({asOf(meta.run_at)}). It's real gear you can hold and real film you have to wait for.</p>
+  <p class="muted">We sort listings into these groups using the dealer's mount tag and keywords in the title. When a title could be a digital camera, we leave it out, so a few real film cameras will be missing. Check the listing before you buy.</p>
+
+  {showFow && (
+    <div class="card fow" style="margin:1rem 0 1.2rem">
+      <div>
+        <div class="muted"><b style="color:#9a3d00">Find of the week</b>{fow.week_of && <> · week of {fow.week_of}</>}{fow.editor && <> · picked by {fow.editor}</>}</div>
+        <div style="font-weight:700;font-size:1.15rem;margin:.2rem 0"><a href={(live && live.url) || fow.listing_url} rel="nofollow noopener" target="_blank">{(live && live.title) || fow.title}</a></div>
+        <div class="big">{money((live && live.price_cad) ?? fow.price_cad)}</div>
+        <div class="muted">{(live && live.dealer) || fow.dealer}{live && live.condition && <> · {live.condition}</>}{!live && <> · <span class="pill warn">may have sold</span></>}</div>
+        {fow.why && <p style="margin:.5rem 0 0">{fow.why}</p>}
+      </div>
+      {fow.photo && <figure style="margin:0"><img src={fow.photo} alt={fow.photo_alt || ''} loading="lazy" width="220" />{fow.photo_credit && <figcaption>Photo: {fow.photo_credit}</figcaption>}</figure>}
+    </div>
+  )}
+
+  <nav class="v-groups" aria-label="Jump to a group">
+    {GROUPS.map((g) => groups[g.id].length > 0 && <a class="pill" href={`#${g.id}`}>{g.name} ({groups[g.id].length})</a>)}
+    <a class="pill good" href="#checklist">Thrift-store checklist</a>
+  </nav>
+  <div class="v-sort" role="group" aria-label="Sort listings">
+    <span class="muted">Sort by</span>
+    <button type="button" data-sort="score" aria-pressed="true">Deal Score</button>
+    <button type="button" data-sort="price" aria-pressed="false">Lowest price</button>
+    <span class="muted">{total} listings</span>
+  </div>
+
+  {GROUPS.map((g) => groups[g.id].length > 0 && (
+    <section id={g.id} class="v-sec">
+      <h2>{g.name} <span class="muted" style="font-size:.9rem;font-weight:400">({groups[g.id].length})</span></h2>
+      <p class="muted" style="margin-top:-.4rem">{g.blurb}</p>
+      <ListingTable rows={groups[g.id]} hideAfter={SHOW} />
+      {groups[g.id].length > SHOW && <button type="button" class="v-more" data-total={groups[g.id].length}>Show all {groups[g.id].length}</button>}
+    </section>
+  ))}
+
+  <section id="checklist" class="card" style="margin-top:1.5rem;max-width:820px">
+    <h2 style="margin-top:0">Thrift-store camera checklist</h2>
+    <p class="muted">A two-minute check before you pay, whether it's a thrift shop, an estate sale or a dealer's "as is" shelf. Bring a small flashlight (or use your phone's).</p>
+    <ol class="check">
+      <li><b>Look through the lens with a light behind it.</b> Shine the light into the back of the lens and look through the front at an angle. Thin branching threads or spots that look like a spider web are <b>fungus</b>. An even milky fog is <b>haze</b>. A few specks of dust are normal and don't show in photos. Fungus can spread and costs real money to clean, so pass unless it's priced as a parts lens.</li>
+      <li><b>Check the aperture.</b> Turn the aperture ring and work the stop-down lever. The blades should snap open and closed. Shiny, oily blades or slow movement mean the lens needs servicing.</li>
+      <li><b>Turn the focus ring all the way.</b> It should be smooth with no grinding, gritty spots or loose wobble. On zooms, check the zoom doesn't slide down on its own when you point it at the floor.</li>
+      <li><b>Test the shutter with the back open (no film).</b> Point it at a light, set 1 second and fire. You should hear a clear pause before it closes. Then try a fast speed like 1/500 or 1/1000. You should see a quick full flash of light, not a sliver or nothing. Try a few speeds in between and listen for each one sounding different. If it sticks open, or the speeds all sound the same, it needs repair.</li>
+      <li><b>Look at the light seals.</b> Inside the back door and around the hinge there are strips of black foam. If they're sticky, crumbly or gone, the camera will leak light onto your film. Replacing them is a cheap DIY job, but factor it into the price.</li>
+      <li><b>Open the battery door.</b> Green or white crust means corrosion, which often kills the light meter. Also check which battery it takes: many 1960s–70s cameras were designed for mercury cells that aren't sold anymore, so you'll need an adapter or a substitute and the meter may read a bit off.</li>
+      <li><b>Check the film door and the advance.</b> The back should latch firmly and stay shut, and the pressure plate inside should be flat and clean. Wind the advance lever: it should move smoothly, cock the shutter and move the frame counter. Turn the rewind knob too.</li>
+      <li><b>Look through the viewfinder.</b> It should be clear, not foggy. On rangefinders, the focus patch should be visible and line up on a distant object at infinity. Some fading on old SLR mirrors is common and doesn't affect your photos.</li>
+      <li><b>Check the meter against your phone.</b> Use any free light-meter app and compare the readings. Within about a stop is fine for print film.</li>
+      <li><b>For instant cameras, make sure the film still exists.</b> New film is made for Polaroid SX-70, 600 and i-Type cameras and for Instax. Peel-apart pack film for older Land cameras isn't made anymore, so those are mostly display pieces. The rollers should be clean and spin freely.</li>
+      <li><b>Know what "as is" means.</b> It usually means untested or for parts, with no returns. If a dealer says "tested," ask what they tested and whether there's a return window. Then shoot a test roll right away while you can still return it.</li>
+    </ol>
+  </section>
+  <p class="muted" style="margin-top:1rem">See also: <a href={u('deals/')}>today's deals</a>, <a href={u('my/')}>save gear to My kit</a>, and <a href={u('currency/')}>the currency watch</a> for imported gear.</p>
+
+  <noscript><style>tr.v-hide{display:table-row !important} .v-more{display:none}</style></noscript>
+  <script is:inline>
+    (function () {
+      var SHOW = 12, mode = 'score';
+      function apply() {
+        document.querySelectorAll('.v-sec').forEach(function (sec) {
+          var tb = sec.querySelector('tbody'); if (!tb) return;
+          var rows = Array.prototype.slice.call(tb.rows);
+          rows.sort(function (a, b) {
+            var pa = +a.dataset.p, pb = +b.dataset.p, sa = +a.dataset.s, sb = +b.dataset.s;
+            return mode === 'price' ? pa - pb : (sb - sa) || (pa - pb);
+          });
+          var open = sec.dataset.open === '1';
+          rows.forEach(function (r, i) { tb.appendChild(r); r.classList.toggle('v-hide', !open && i >= SHOW); });
+          var btn = sec.querySelector('.v-more'); if (btn) btn.hidden = open;
+        });
+      }
+      document.querySelectorAll('.v-sort button').forEach(function (b) {
+        b.addEventListener('click', function () {
+          mode = b.dataset.sort;
+          document.querySelectorAll('.v-sort button').forEach(function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+          apply();
+        });
+      });
+      document.querySelectorAll('.v-more').forEach(function (b) { b.addEventListener('click', function () { b.closest('.v-sec').dataset.open = '1'; apply(); }); });
+      apply();
+    })();
+  </script>
+</Base>

@@ -1,0 +1,14 @@
+{
+  "_about": "Editor-picked 'Find of the week' for /vintage/. Fill in by hand. Set listing_id (from data/listings.json) or listing_url to show the live price; if the listing sells, the stored title/dealer/price below are shown with a 'may have sold' note. photo is optional: only a REAL photo you took yourself or have written permission to use (never AI-generated), saved under site/public/finds/ and referenced as '/finds/<file>.jpg', with photo_credit filled in. Leave everything null/empty to hide the slot.",
+  "week_of": null,
+  "listing_id": null,
+  "listing_url": null,
+  "title": "",
+  "dealer": "",
+  "price_cad": null,
+  "why": "",
+  "editor": "",
+  "photo": null,
+  "photo_alt": "",
+  "photo_credit": ""
+}
