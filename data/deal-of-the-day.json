@@ -21,28 +21,28 @@
  },
  {
   "type": "listing",
-  "id": "plotcamera-059e17404d",
+  "id": "gosselin-44291abd64",
   "title": "Canon EOS 5D Mark II",
-  "dealer": "Plot Camera",
-  "url": "https://www.plotcamera.com/products/70090040",
-  "price_cad": 349.9,
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
+  "price_cad": 299.0,
   "comp_median": 750.0,
   "comps": 3,
   "model_key": "camera-canon-5d-ii",
   "model_name": "Canon 5D II",
-  "condition": "Excellent",
+  "condition": "Good",
   "reasons": [
-   "53% below the median of 3 comparable listings"
+   "60% below the median of 3 comparable listings"
   ],
-  "score": 56.3,
+  "score": 63.1,
   "is_new": false,
   "deal_score": 100,
   "score_why": [
-   "53% below the median of 3 comparable listings",
+   "60% below the median of 3 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-19T05:56:58+00:00",
+  "fetched_at": "2026-10-19T05:59:20+00:00",
   "date": "2026-10-18"
  }
 ]
