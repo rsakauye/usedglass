@@ -33,7 +33,7 @@ const nDealers = dealers.length;
     <label>Sort<br /><select id="sort"><option value="new">Newest first</option><option value="pa">Price low → high</option><option value="pd">Price high → low</option><option value="t">A → Z</option></select></label>
   </form>
   <p id="count" class="muted">Loading listings…</p>
-  <table id="results">
+  <table id="results" class="ltable">
     <thead><tr><th>Item</th><th>Dealer</th><th>Condition</th><th class="price">Price (CAD)</th><th>As of</th></tr></thead>
     <tbody></tbody>
   </table>
@@ -45,6 +45,10 @@ const nDealers = dealers.length;
     const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
     const money = (v) => '$' + Number(v).toLocaleString('en-CA', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
     const asOf = (iso) => new Date(iso).toLocaleString('en-CA', { timeZone: 'America/Edmonton', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' MT';
+    const asOfFull = (iso) => new Date(iso).toLocaleString('en-CA', { timeZone: 'America/Edmonton', year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) + ' MT';
+    const scoreLabel = (s) => (s >= 80 ? 'Great' : s >= 65 ? 'Good' : s >= 45 ? 'Fair' : 'Weak');
+    const scoreCls = (s) => (s >= 65 ? 'good' : s >= 45 ? '' : 'warn');
+    const badge = (s) => s == null ? '' : ` <a class="pill score ${scoreCls(s)}" href="${base}about/deal-score/">Deal Score ${s} · ${scoreLabel(s)}</a>`;
     let rows = [], shown = 50;
     const params = new URLSearchParams(location.search);
     for (const k of ['q', 'cat', 'mount', 'brand', 'dealer', 'cond', 'min', 'max', 'sort']) if (params.get(k)) $(k).value = params.get(k);
@@ -66,11 +70,14 @@ const nDealers = dealers.length;
       out.sort(s === 'pa' ? (a, b) => a[6] - b[6] : s === 'pd' ? (a, b) => b[6] - a[6] : s === 't' ? (a, b) => a[0].localeCompare(b[0]) : (a, b) => (b[10] || '').localeCompare(a[10] || '') || a[6] - b[6]);
       $('count').textContent = out.length.toLocaleString('en-CA') + ' matching listings';
       $('results').tBodies[0].innerHTML = out.slice(0, shown).map((r) => `<tr>
-        <td><a href="${esc(r[7])}" rel="nofollow noopener" target="_blank">${esc(r[0])}</a><div>${r[3] ? `<span class="pill">${esc(r[3])}</span>` : ''}${r[8] ? `<a class="pill" href="${base}model/${esc(r[8])}/">Compare prices</a>` : ''}</div></td>
-        <td>${esc(r[1])}${r[12] ? `<div class="muted">${esc(r[12])}</div>` : ''}</td>
-        <td>${r[4] ? esc(r[4]) : '<span class="muted">Not graded</span>'}</td>
-        <td class="price">${money(r[6])}${r[11] > r[6] ? `<div class="muted"><s>${money(r[11])}</s></div>` : ''}</td>
-        <td class="muted">${asOf(r[9])}</td></tr>`).join('');
+        <td class="c-item"><a class="l-title" href="${esc(r[7])}" rel="nofollow noopener" target="_blank">${esc(r[0])}</a>
+          <div class="m-only l-mid"><span class="l-meta">${esc(r[1])}${r[12] ? ` (${esc(r[12])})` : ''} · ${r[4] ? esc(r[4]) : 'Not graded'}${badge(r[13])}</span><span class="l-price">${money(r[6])}${r[11] > r[6] ? `<s class="muted">${money(r[11])}</s>` : ''}</span></div>
+          <div class="l-tags">${r[3] ? `<span class="pill">${esc(r[3])}</span>` : ''}${r[8] ? `<a class="pill" href="${base}model/${esc(r[8])}/">Compare prices</a>` : ''}${r[13] != null ? `<span class="d-only">${badge(r[13])}</span>` : ''}${r[14] ? '<span class="pill warn m-only">older data</span>' : ''}<time class="m-only l-time" datetime="${esc(r[9])}" title="${esc(asOfFull(r[9]))}" data-rel>${esc(asOf(r[9]))}</time></div></td>
+        <td class="d-cell">${esc(r[1])}${r[12] ? `<div class="muted">${esc(r[12])}</div>` : ''}</td>
+        <td class="d-cell">${r[4] ? esc(r[4]) : '<span class="muted">Not graded</span>'}</td>
+        <td class="d-cell price">${money(r[6])}${r[11] > r[6] ? `<div class="muted"><s>${money(r[11])}</s></div>` : ''}</td>
+        <td class="d-cell muted">${asOf(r[9])}</td></tr>`).join('');
+      window.ugRel && window.ugRel($('results'));
       $('more').hidden = out.length <= shown;
       const p = new URLSearchParams();
       for (const k of ['q', 'cat', 'mount', 'brand', 'dealer', 'cond', 'min', 'max', 'sort']) if ($(k).value && !(k === 'sort' && $(k).value === 'new')) p.set(k, $(k).value);
