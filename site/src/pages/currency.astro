@@ -1,0 +1,76 @@
+---
+import Base from '../layouts/Base.astro';
+import { fx, currency, money, pct, modelUrl, asOf, u } from '../lib/data.js';
+const codes = ['USD', 'EUR', 'GBP', 'JPY'];
+const latest = fx.latest || {};
+const usd = latest.USD || {};
+const hist = ((fx.series || {}).USD || {}).history || [];
+const last90 = hist.slice(-66);
+// tiny inline SVG sparkline of USD/CAD
+const vals = last90.map((h) => h[1]);
+const lo = Math.min(...vals), hi = Math.max(...vals);
+const W = 600, H = 90;
+const pts = vals.map((v, i) => `${(i / Math.max(1, vals.length - 1)) * W},${H - ((v - lo) / Math.max(1e-9, hi - lo)) * (H - 10) - 5}`).join(' ');
+const gaps = currency.gaps || [];
+const flagged = gaps.filter((g) => g.flagged);
+const rm = currency.rate_moved || { items: [] };
+const rules = currency.gap_rules || {};
+const ebay = (currency.us_offer_sources || {}).ebay_us || {};
+const fmtRate = (code, v) => (v == null ? '—' : code === 'JPY' ? v.toFixed(5) : v.toFixed(4));
+---
+<Base title="Exchange rates and currency price gaps" description="Bank of Canada USD/CAD rate with 7- and 30-day changes, estimated landed cost of US-priced camera gear, and Canadian prices that may adjust after a currency move.">
+  <h1>Currency watch</h1>
+  <p class="muted">When the Canadian dollar moves, Canadian camera prices usually follow weeks later. This page tracks the official rate daily and points out where that lag may matter. Everything here is an <b>estimate</b>, not a promise that a price will change.</p>
+
+  <h2>Exchange rates (Bank of Canada)</h2>
+  <table>
+    <thead><tr><th>Currency</th><th class="price">CAD per 1 unit</th><th class="price">7-day change</th><th class="price">30-day change</th><th>Rate date</th></tr></thead>
+    <tbody>
+      {codes.filter((c) => latest[c]).map((c) => (
+        <tr><td>{c}/CAD</td><td class="price">{fmtRate(c, latest[c].rate)}</td><td class="price">{pct(latest[c].chg_7d)}</td><td class="price">{pct(latest[c].chg_30d)}</td><td class="muted">{latest[c].date}</td></tr>
+      ))}
+    </tbody>
+  </table>
+  {usd.text_30d && <p><b>{usd.text_30d}</b> {usd.text_7d}</p>}
+  <p class="muted">A higher number means a weaker Canadian dollar (imported gear gets more expensive). Source: <a href={fx.source_url || 'https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/'} rel="noopener">Bank of Canada daily exchange rates</a>, indicative averages published on business days. Your bank or card will charge more. Not endorsed by the Bank of Canada.{fx.error && ' Latest fetch failed, so these are the most recent rates we have.'}</p>
+  {vals.length > 5 && (
+    <figure class="card" style="max-width:640px">
+      <svg viewBox={`0 0 ${W} ${H}`} width="100%" height="90" role="img" aria-label="USD/CAD over the last 90 days">
+        <polyline fill="none" stroke="#0f6fde" stroke-width="2" points={pts} />
+      </svg>
+      <figcaption class="muted">USD/CAD, {last90[0][0]} to {last90[last90.length - 1][0]}: low {lo.toFixed(4)}, high {hi.toFixed(4)}</figcaption>
+    </figure>
+  )}
+
+  <h2 id="rate-moved">Rate moved, prices haven't</h2>
+  <p>{rm.status}</p>
+  {rm.items && rm.items.length > 0 && (
+    <table>
+      <thead><tr><th>Model (new)</th><th>Dealer</th><th class="price">Price (CAD)</th><th>Unchanged since</th></tr></thead>
+      <tbody>{rm.items.slice(0, 60).map((i) => (
+        <tr><td><a href={modelUrl(i.model_key)}>{i.model_name}</a></td><td><a href={i.url} rel="nofollow noopener" target="_blank">{i.dealer}</a></td><td class="price">{money(i.price)}</td><td class="muted">{i.unchanged_since}</td></tr>
+      ))}</tbody>
+    </table>
+  )}
+  <p class="muted">How it works: when the Canadian dollar moves more than {Math.round((rm.threshold || 0.025) * 1000) / 10}% against the US dollar over 30 days, we list Canadian new-gear prices (from {currency.new_price_models || 0} models we track at The Camera Store) that haven't changed in that time. They <i>may</i> adjust: dealers often reprice when new stock arrives at the new exchange rate, but many hold prices, and manufacturers set Canadian MAP prices on their own schedule. We need at least two weeks of our own price history before listing anything ({rm.tracked_days || 0} days so far).</p>
+
+  <h2 id="gap">US price gap (estimated landed cost)</h2>
+  {flagged.length > 0 ? (
+    <table>
+      <thead><tr><th>Model</th><th>US offer</th><th class="price">Est. landed (CAD)</th><th class="price">Cheapest in Canada</th><th class="price">Est. saving</th></tr></thead>
+      <tbody>{flagged.map((g) => (
+        <tr>
+          <td><a href={modelUrl(g.model_key)}>{g.model_name}</a> <span class="pill">{g.condition}</span></td>
+          <td><a href={g.url} rel="nofollow noopener" target="_blank">{g.seller}</a><div class="muted">US${g.price.toLocaleString('en-CA')} × {g.rate} + ship {money(g.ship_cad)} + brokerage {money(g.brokerage_cad)} + GST {money(g.tax_cad)}</div></td>
+          <td class="price">{money(g.landed_cad)}</td>
+          <td class="price"><a href={g.ca_url} rel="nofollow noopener" target="_blank">{money(g.ca_price)}</a><div class="muted">{g.ca_where}</div></td>
+          <td class="price">{money(g.saving_cad)} ({Math.round(g.saving_pct * 100)}%)</td>
+        </tr>
+      ))}</tbody>
+    </table>
+  ) : (
+    <p>No US-priced offers are being compared yet{gaps.length ? ' that beat Canadian prices by enough to flag' : ''}. We only use US prices we're allowed to use: an affiliate product feed or the official eBay API (currently: {ebay.status || 'not set up'}). We don't scrape stores that forbid it.</p>
+  )}
+  <p class="muted"><b>Estimate only.</b> Landed cost = US price × today's Bank of Canada rate + shipping (default estimate {money(rules.default_ship_cad)} if the seller doesn't say) + courier brokerage (estimate {money(rules.default_brokerage_cad)}) + {Math.round((rules.tax_rate || 0.05) * 100)}% GST. {rules.tax_note} {rules.duty_note} Card foreign-exchange fees (often 2.5%), US warranty coverage in Canada and return shipping are not included. Flagged only when the estimate is at least {Math.round((rules.min_pct || 0.05) * 100)}% and {money(rules.min_cad)} below the cheapest Canadian price.</p>
+  <p class="muted">Updated {asOf(currency.generated_at)}. See also <a href={u('deals/')}>Deals</a> and <a href={u('about/deal-score/')}>how the Deal Score works</a>.</p>
+</Base>

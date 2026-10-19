@@ -1,0 +1,10 @@
+---
+import { scoreLabel, scoreClass, u } from '../lib/data.js';
+const { score, why = [], basis = '', compact = false } = Astro.props;
+---
+{score != null && (
+  <span class="score-wrap">
+    <a class={`pill score ${scoreClass(score)}`} href={u('about/deal-score/')} title={(why || []).join('; ')}>Deal Score {score} · {scoreLabel(score)}</a>
+    {!compact && why && why.length > 0 && <span class="muted score-why">{why.join('; ')}.</span>}
+  </span>
+)}

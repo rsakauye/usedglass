@@ -1,0 +1,48 @@
+---
+import Base from '../../layouts/Base.astro';
+import { modelMeta, models, modelUrl, u } from '../../lib/data.js';
+const curated = Object.entries(modelMeta).sort((a, b) => a[1].name.localeCompare(b[1].name));
+---
+<Base title="How the Deal Score works" description="The UsedGlass.ca Deal Score (0-100): the exact formula, its inputs and its limits.">
+  <p class="muted"><a href={u('about/')}>About</a> › Deal Score</p>
+  <h1>How the Deal Score works</h1>
+  <p>Every used listing we can match to a model gets a Deal Score from 0 to 100 and a short reason. It's a simple formula, not AI, and it's written out in full below so you can check it. <b>80+</b> is Great, <b>65–79</b> Good, <b>45–64</b> Fair, below 45 Weak. A score is a starting point. Always check the condition, what's included and the version.</p>
+
+  <h2>The formula</h2>
+  <p>Each part below gives 0–100 points. The score is the weighted average of the parts we have data for, plus a small freshness adjustment.</p>
+  <table>
+    <thead><tr><th>Part</th><th>Weight</th><th>How it's scored</th></tr></thead>
+    <tbody>
+      <tr><td>Price vs our history</td><td>45%</td><td>Compared with the median of at least 3 comparable listings (same model, today plus the last 90 days): 50 + 200 × discount. So 25% below the median = 100, at the median = 50, 25% above = 0.</td></tr>
+      <tr><td>Lowest we've seen</td><td>10%</td><td>90 points when the price is at or below the lowest price we've recorded for the model in 90 days (needs 5+ observations).</td></tr>
+      <tr><td>Used vs new</td><td>25%</td><td>The used price as a share of the current Canadian new price (from The Camera Store's public catalogue), compared with typical used depreciation for the model's age: about 85% of new under 1 year old, 78% at 1–2 years, 70% at 2–4 years, 60% after that (75% if we don't know the age). Points = 50 + 250 × (typical share − actual share). Within 5% of the new price, the part is capped at 20, because new comes with a full warranty. At or above the new price it scores 0.</td></tr>
+      <tr><td>Successor effect</td><td>20%</td><td>Only when a newer model has replaced it. If the newer model costs no more than 15% more new, 15 points ("better value: the newer model costs only X% more"). At 55% or less of the newer model's price, 85 points ("great value: previous gen at Y% of the new price"). In between: 50 + 150 × (0.75 − share).</td></tr>
+      <tr><td>Freshness</td><td>adjustment</td><td>New models rarely get discounted, so when the price is below the median: +8 for a model announced in the last 12 months, +4 under 24 months, −4 if it's more than 5 years old.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Sale cycles</h2>
+  <p>We count the major sale windows a model has been on the market through since it was announced: Black Friday / Cyber Monday and Boxing Week (fixed dates), plus Prime Day and the spring and summer rebate windows (dates change every year, so these are approximate). Once our own price history covers a sale event, model pages compare today's new price with that event's low. If it's above that low, we suggest waiting ("wait for Black Friday"). We started tracking new prices in October 2026, so these comparisons start after Black Friday 2026.</p>
+
+  <h2>When we have less data</h2>
+  <ul>
+    <li><b>No model metadata:</b> most models don't have a release date or successor on file yet. Their score uses price history and the new-price comparison only, and it says "history only".</li>
+    <li><b>Kits and version mismatches:</b> a kit ("with 24-70mm") or a title whose version doesn't match the model group (for example a "Mk II" grouped with the original) is only compared with similar listings, not with a body-only new price.</li>
+    <li><b>No score:</b> listings we can't match to a model, "As Is" items, and models with fewer than 3 comparable listings and no new price don't get a score.</li>
+  </ul>
+
+  <h2>Model metadata we use</h2>
+  <p class="muted">Release dates and successors are added by hand only from manufacturer announcements or reputable reviews, and each one is cited. Launch MSRPs are US prices shown for context only and aren't used in the score. If you spot an error, email hello@usedglass.ca.</p>
+  <table>
+    <thead><tr><th>Model</th><th>Announced</th><th>Replaced by</th><th>Sources</th></tr></thead>
+    <tbody>{curated.map(([k, m]) => (
+      <tr>
+        <td>{models[k] ? <a href={modelUrl(k)}>{m.name}</a> : m.name}</td>
+        <td>{m.announced || '—'}</td>
+        <td>{m.successor ? (modelMeta[m.successor] || {}).name || m.successor : '—'}</td>
+        <td>{(m.sources || []).map((s, i) => <><a href={s} rel="nofollow noopener" target="_blank">[{i + 1}]</a> </>)}</td>
+      </tr>
+    ))}</tbody>
+  </table>
+  <p class="muted">The score never changes because of affiliate links or partnerships. The code is in <code>scraper/dealscore.py</code>.</p>
+</Base>

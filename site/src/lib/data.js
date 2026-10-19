@@ -18,6 +18,9 @@ export const changes = read('changes.json', { new_today: [], price_dropped: [] }
 export const deals = read('deals.json', { deals: [], deal_of_the_day: null });
 export const dotdHistory = read('deal-of-the-day.json', []);
 export const rebates = read('rebates.json', { items: [], manual_check: [] });
+export const fx = read('fx.json', { series: {}, latest: {} });
+export const currency = read('currency.json', { gaps: [], rate_moved: { items: [] }, fx_latest: {} });
+export const modelMeta = read('model-meta.json', { models: {} }).models || {};
 export const byId = Object.fromEntries(listings.map((l) => [l.id, l]));
 
 export const BASE = import.meta.env.BASE_URL.endsWith('/') ? import.meta.env.BASE_URL : import.meta.env.BASE_URL + '/';
@@ -36,3 +39,7 @@ export function asOf(iso) {
 
 export const modelUrl = (key) => u(`model/${key}/`);
 export const uniqSorted = (arr) => [...new Set(arr.filter(Boolean))].sort((a, b) => a.localeCompare(b));
+
+export const pct = (v, digits = 1) => (v == null ? '—' : (v > 0 ? '+' : '') + (v * 100).toFixed(digits) + '%');
+export const scoreLabel = (s) => (s >= 80 ? 'Great' : s >= 65 ? 'Good' : s >= 45 ? 'Fair' : 'Weak');
+export const scoreClass = (s) => (s >= 65 ? 'good' : s >= 45 ? '' : 'warn');
