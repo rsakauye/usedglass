@@ -19,6 +19,7 @@ const nDealers = dealers.length;
     <div><b>{(changes.price_dropped || []).length.toLocaleString('en-CA')}</b><span class="muted"><a href={u('drops/')}>price drops</a></span></div>
     <div><b>{(deals.deals || []).length}</b><span class="muted"><a href={u('deals/')}>flagged deals</a></span></div>
   </div>
+  <p class="muted" style="margin-top:-.4rem">Shooting film? Browse <a href={u('vintage/')}>vintage &amp; thrift finds</a>: film cameras, instant cameras and manual-focus lenses. Build a kit or wish list on <a href={u('my/')}>My kit</a>.</p>
   {deals.deal_of_the_day && <div style="max-width:620px;margin-bottom:1.2rem"><DealCard d={deals.deal_of_the_day} headline /></div>}
 
   <form id="f" class="card" style="display:flex;flex-wrap:wrap;gap:.5rem;align-items:end" onsubmit="return false">

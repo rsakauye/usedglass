@@ -4,13 +4,13 @@
 import { money, asOf, modelUrl, shortDate } from '../lib/data.js';
 import ScoreBadge from './ScoreBadge.astro';
 import SaveButton from './SaveButton.astro';
-const { rows = [], showModel = true, showScoreWhy = false } = Astro.props;
+const { rows = [], showModel = true, showScoreWhy = false, hideAfter = 0 } = Astro.props;
 ---
 <table class="ltable">
   <thead><tr><th>Item</th><th>Dealer</th><th>Condition</th><th class="price">Price (CAD)</th><th>As of</th></tr></thead>
   <tbody>
-    {rows.map((l) => (
-      <tr>
+    {rows.map((l, i) => (
+      <tr data-s={l.deal_score ?? -1} data-p={l.price_cad} class={hideAfter && i >= hideAfter ? 'v-hide' : undefined}>
         <td class="c-item">
           <a class="l-title" href={l.url} rel="nofollow noopener" target="_blank">{l.title}</a>
           <div class="m-only l-mid">

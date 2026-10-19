@@ -8,6 +8,7 @@ const r = deals.rules || {};
 <Base title="Deal of the day and steep used-gear discounts">
   <h1>Deals</h1>
   <p class="muted">Computed daily ({deals.date}). A listing is flagged when it is at least {Math.round((r.min_discount || 0.2) * 100)}% below the median price of {r.min_comps || 3}+ comparable listings (same matched model across dealers and the last 90 days), when its price drops {Math.round((r.min_drop || 0.1) * 100)}%+, or when a new manufacturer rebate appears. Flagged listings are sorted by <a href={u('about/deal-score/')}>Deal Score</a> (0–100). US price gaps from the <a href={u('currency/')}>currency watch</a> show up here as estimates. <a href={u('rss.xml')}>RSS feed</a></p>
+  <p class="muted">Into film? See <a href={u('vintage/')}>vintage &amp; thrift finds</a> for film cameras, instant cameras and manual-focus lenses, sorted by Deal Score.</p>
   {deals.deal_of_the_day && <div style="max-width:640px;margin:1rem 0"><DealCard d={deals.deal_of_the_day} headline /></div>}
   <h2>All flagged deals</h2>
   {rest.length ? <div class="grid">{rest.map((d) => <DealCard d={d} />)}</div> : <p>No other deals flagged today.</p>}
