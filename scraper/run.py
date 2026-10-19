@@ -15,6 +15,7 @@ import traceback
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
+from . import currency, dealscore, newprices
 from .dealers import ADAPTERS, DEALERS
 from .ebay import ebay
 from .rebates import rebates
@@ -47,7 +48,7 @@ def main(argv: list[str]) -> int:
     now_dt = dt.datetime.now(dt.timezone.utc)
     now = now_dt.isoformat(timespec="seconds")
     today = now_dt.astimezone(TZ).date().isoformat()
-    picks = argv or list(ADAPTERS) + ["ebay"]
+    picks = [k for k in argv if k != "newprices"] or list(ADAPTERS) + ["ebay"]
     prev_listings = {x["id"]: x for x in load(DATA / "listings.json", [])}
     prev_meta = load(DATA / "meta.json", {})
     state = load(DATA / "state.json", {})
@@ -140,6 +141,63 @@ def main(argv: list[str]) -> int:
         m["median_90d"] = round(statistics.median(hp), 2) if hp else None
         m["observations_90d"] = len(hp)
         m["dealers"] = sorted({by_id[i]["dealer_id"] for i in m["listing_ids"]})
+    # ---- Canadian new-gear reference prices (The Camera Store public catalogue), FX, Deal Score
+    feeds = {}
+    new_prices = load(DATA / "new-prices.json", {})
+    if not argv or "newprices" in argv:
+        t0 = time.time()
+        try:
+            tcs_urls = {x["url"] for x in listings if x["dealer_id"] == "thecamerastore"}
+            rows = newprices.fetch_new(now, tcs_urls)
+            if not rows:
+                raise RuntimeError("0 new-price rows parsed")
+            new_prices = newprices.update(new_prices, rows, today)
+            feeds["newprices"] = {"count": len(new_prices), "status": "ok", "seconds": round(time.time() - t0, 1)}
+        except Exception as e:
+            traceback.print_exc()
+            feeds["newprices"] = {"count": len(new_prices), "status": f"error - kept previous ({type(e).__name__}: {e})"}
+        save(DATA / "new-prices.json", new_prices, compact=True)
+    fx = currency.fx_update(load(DATA / "fx.json", {}), today, now)
+    feeds["fx"] = {"status": "ok" if not fx.get("error") else "error - kept previous: " + fx["error"],
+                   "latest": (fx["latest"].get("USD") or {}).get("date")}
+    save(DATA / "fx.json", fx)
+    model_meta = load(DATA / "model-meta.json", {}).get("models", {})
+
+    by_id_all = {x["id"]: x for x in listings}
+    obs90 = {}
+    since90 = (dt.date.fromisoformat(today) - dt.timedelta(days=90)).isoformat()
+    for lid, s_ in state.items():
+        if s_.get("mk") and s_.get("ls", "") >= since90:
+            obs90.setdefault(s_["mk"], []).extend(v for d, v in s_["p"] if d >= since90 or v == s_["p"][-1][1])
+    for x in listings:
+        mk = x.get("model_key")
+        if not mk or x.get("condition") == "As Is":
+            continue
+        comps = [by_id_all[i]["price_cad"] for i in models[mk]["listing_ids"]
+                 if i != x["id"] and by_id_all[i].get("condition") != "As Is"]
+        comps += [s_["p"][-1][1] for lid, s_ in state.items() if s_.get("mk") == mk and lid not in by_id_all
+                  and s_.get("ls", "") >= since90]
+        o = obs90.get(mk, [])
+        sc = dealscore.score_listing(x, comps, min(o) if o else None, len(o), new_prices, model_meta, today)
+        if sc:
+            x["deal_score"], x["score_why"], x["score_basis"] = sc["score"], sc["why"], sc["basis"]
+            x["score_parts"] = sc["parts"]
+    for mk, m in models.items():
+        scored = [by_id_all[i] for i in m["listing_ids"] if by_id_all[i].get("deal_score") is not None]
+        if scored:
+            best = max(scored, key=lambda y: y["deal_score"])
+            m["best_score"], m["best_score_id"] = best["deal_score"], best["id"]
+        np_ = new_prices.get(mk)
+        if np_:
+            m["new_price"], m["new_price_url"], m["new_price_dealer"] = np_["price"], np_["url"], np_["dealer"]
+            note = dealscore.score_new_price(mk, new_prices, model_meta, today)
+            if note:
+                m["new_price_notes"] = note["notes"]
+        if mk in model_meta:
+            mm = model_meta[mk]
+            m["meta"] = {k: mm.get(k) for k in ("announced", "successor", "predecessor", "msrp_usd", "sources")}
+            if mm.get("successor"):
+                m["meta"]["successor_name"] = (model_meta.get(mm["successor"]) or {}).get("name")
     save(DATA / "models.json", models, compact=True)
 
     # ---- deals
@@ -175,8 +233,10 @@ def main(argv: list[str]) -> int:
                       "price_cad": p, "comp_median": round(comp_median, 2) if comp_median else None, "comps": ncomp,
                       "model_key": mk, "model_name": x.get("model_name"), "condition": x.get("condition"),
                       "reasons": reasons, "score": round(score, 1), "is_new": x["id"] in new_ids,
-                      "fetched_at": x["fetched_at"]})
-    deals.sort(key=lambda d: -d["score"])
+                      "deal_score": x.get("deal_score"), "score_why": x.get("score_why"),
+                      "score_basis": x.get("score_basis"), "fetched_at": x["fetched_at"]})
+    # sorted by Deal Score (0-100, see scraper/dealscore.py); the older flag score breaks ties / covers unscored
+    deals.sort(key=lambda d: (-(d["deal_score"] if d.get("deal_score") is not None else -1), -d["score"]))
 
     # ---- rebates (new rebate pages become deals too)
     prev_reb = load(DATA / "rebates.json", {"items": []})
@@ -194,6 +254,35 @@ def main(argv: list[str]) -> int:
                              "score": 999, "is_new": True, "fetched_at": now})
     save(DATA / "rebates.json", reb)
 
+    # ---- currency signals (Bank of Canada rates); US offers come from data/us-offers.json + eBay US API if keys exist
+    us = [o for o in load(DATA / "us-offers.json", {}).get("items", [])
+          if (o.get("as_of") or today)[:10] >= (dt.date.fromisoformat(today) - dt.timedelta(days=7)).isoformat()]
+    n_manual = len(us)
+    try:
+        wanted = {k: (model_meta.get(k) or {}).get("name") or v["name"] for k, v in new_prices.items()
+                  if k in model_meta or v.get("category") == "camera"}
+        ebay_us = currency.ebay_us_offers(dict(sorted(wanted.items(), key=lambda kv: kv[0] not in model_meta)), now)
+        feeds["ebay_us"] = {"count": len(ebay_us), "status": "ok" if os.environ.get("EBAY_CLIENT_ID") else "skipped (no API keys)"}
+        us += ebay_us
+    except Exception as e:
+        feeds["ebay_us"] = {"count": 0, "status": f"error: {type(e).__name__}: {e}"}
+    gaps = currency.currency_gap(us, new_prices, models, by_id, fx)
+    moved = currency.rate_moved(new_prices, fx, today, "USD")
+    cur_out = {"date": today, "generated_at": now, "fx_latest": fx.get("latest"), "fx_source": fx.get("source"),
+               "fx_source_url": fx.get("source_url"), "fx_error": fx.get("error"),
+               "us_offer_sources": {"manual_or_feed": n_manual,
+                                    "ebay_us": feeds["ebay_us"]},
+               "gap_rules": {"min_pct": currency.GAP_MIN_PCT, "min_cad": currency.GAP_MIN_CAD,
+                             "default_ship_cad": currency.DEFAULT_SHIP_CAD, "default_brokerage_cad": currency.DEFAULT_BROKERAGE_CAD,
+                             "tax_rate": currency.GST, "tax_note": currency.TAX_NOTE, "duty_note": currency.DUTY_NOTE},
+               "gaps": gaps[:100], "rate_moved": moved, "new_price_models": len(new_prices)}
+    save(DATA / "currency.json", cur_out)
+    for g in reversed([g for g in gaps if g["flagged"]][:10]):
+        deals.insert(0, {"type": "currency_gap", "id": f"gap-{g['model_key']}-{g['seller']}", "title": f"{g['model_name']} from {g['seller']} (US)",
+                      "dealer": g["seller"], "url": g["url"], "price_cad": g["landed_cad"], "model_key": g["model_key"],
+                      "model_name": g["model_name"], "reasons": [f"estimated landed cost ${g['landed_cad']:,.0f} vs ${g['ca_price']:,.0f} at {g['ca_where']} (estimate: shipping, brokerage and GST included; HST provinces pay more)"],
+                      "score": 0, "deal_score": None, "is_new": False, "fetched_at": g.get("as_of") or now})
+
     # ---- deal of the day (prefer something new/dropped today, avoid repeats in last 14 days)
     dotd_hist = load(DATA / "deal-of-the-day.json", [])
     recent = {h["id"] for h in dotd_hist[-14:]}
@@ -209,12 +298,21 @@ def main(argv: list[str]) -> int:
 
     # ---- changes + listings + meta
     removed = [i for i in prev_listings if i not in current_ids]
+    fx_usd = (fx.get("latest") or {}).get("USD") or {}
+    save(DATA / "newsletter.json", {
+        "date": today, "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
+        "fx": {c: {k: v.get(k) for k in ("date", "rate", "chg_7d", "chg_30d", "text_30d")} for c, v in (fx.get("latest") or {}).items()},
+        "fx_headline": fx_usd.get("text_30d"), "rate_moved": {k: moved[k] for k in ("status", "direction")} | {"items": moved["items"][:5]},
+        "currency_gaps": [g for g in gaps if g["flagged"]][:5],
+        "top_scored_deals": [{k: d.get(k) for k in ("title", "dealer", "url", "price_cad", "deal_score", "score_why", "model_name")}
+                             for d in deals if d.get("deal_score") is not None][:10],
+    })
     save(DATA / "changes.json", {"date": today, "new_today": new_ids, "price_dropped": dropped, "removed": len(removed)})
     listings.sort(key=lambda x: (x["dealer_id"], x["title"]))
     save(DATA / "listings.json", listings, compact=True)
     save(DATA / "state.json", state, compact=True)
     meta.update({"total": len(listings), "models": len(models), "new_today": len(new_ids),
-                 "price_dropped": len(dropped), "deals": len(deals), "dealer_info": DEALERS})
+                 "price_dropped": len(dropped), "deals": len(deals), "dealer_info": DEALERS, "feeds": feeds})
     save(DATA / "meta.json", meta)
     print(json.dumps({k: meta[k] for k in ["total", "models", "new_today", "price_dropped", "deals"]}))
     ok = [k for k, v in meta["dealers"].items() if v["status"] == "ok"]
