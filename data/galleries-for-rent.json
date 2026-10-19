@@ -1,0 +1,253 @@
+{
+  "generated": "2026-10-18",
+  "note": "Alberta first. Many public/artist-run galleries do not rent; they book through juried calls (CONTACT and Capture also list self-organised shows if you secure a venue).",
+  "galleries": [
+    {
+      "name": "Studio C (Prospect Human Services) at cSPACE Marda Loop",
+      "city": "Calgary",
+      "province": "AB",
+      "kind": "rental gallery (230 sq ft, track lighting, gallery tech)",
+      "rates": {
+        "artist_or_nonprofit": "$500 per 3-week exhibition",
+        "private_corporate": "$800 per 3-week exhibition"
+      },
+      "how_to_book": null,
+      "url": "https://www.studiocprospect.ca/galleryrental",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "cSPACE Hallway Galleries",
+      "city": "Calgary",
+      "province": "AB",
+      "kind": "hallway gallery by floor",
+      "rates": {
+        "artist": "$300/week, $550/2 weeks, $850/month per floor",
+        "corporate": "$600/week, $1,000/2 weeks, $1,600/month per floor"
+      },
+      "how_to_book": null,
+      "url": "https://cspaceprojects.com/wp-content/uploads/2023/07/2023-24-gallery-brochure.pdf",
+      "rates_verified_on": null,
+      "rates_status": "unverified - confirm with venue",
+      "notes": "Rates from the 2023-24 brochure PDF; likely changed."
+    },
+    {
+      "name": "Grasby Art Cellar",
+      "city": "Calgary",
+      "province": "AB",
+      "kind": "event/gallery space (2,400 sq ft, movable walls, 50-100+ guests)",
+      "rates": {
+        "multi_day_exhibition": "$1,200-$2,000 + GST (custom packages)"
+      },
+      "how_to_book": null,
+      "url": "https://grasbyartstudio.com/products/corporate-artspace-event",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "The GRAND - Lobby & Mezzanine",
+      "city": "Calgary",
+      "province": "AB",
+      "kind": "heritage theatre lobby/mezzanine for art shows and receptions",
+      "rates": {
+        "arts_or_charity": "$1,000/day",
+        "standard": "$2,000/day"
+      },
+      "how_to_book": null,
+      "url": "https://www.thegrandyyc.ca/the-lobby-and-mezzanine",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": "Best for a one-night opening rather than a multi-week show."
+    },
+    {
+      "name": "City Arts Centre (City of Edmonton)",
+      "city": "Edmonton",
+      "province": "AB",
+      "kind": "studios/halls by the hour (pop-up show, print sale, workshop)",
+      "rates": {
+        "hall_up_to_100": "$68/hour",
+        "art_studio_up_to_20": "$35/hour",
+        "creative_arts_studio_up_to_30": "$52/hour"
+      },
+      "how_to_book": null,
+      "url": "https://www.edmonton.ca/activities_parks_recreation/city_arts_centre/rentals-bookings",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": "Not a gallery; good for a one-day pop-up or zine/print fair."
+    },
+    {
+      "name": "Peerspace - Edmonton art-show spaces (marketplace)",
+      "city": "Edmonton",
+      "province": "AB",
+      "kind": "marketplace of hourly spaces",
+      "rates": {
+        "examples": "about $125-$250/hour (per search snapshot)"
+      },
+      "how_to_book": null,
+      "url": "https://www.peerspace.com/ca/venues/ca/edmonton--ab/art-show",
+      "rates_verified_on": null,
+      "rates_status": "unverified - confirm with venue",
+      "notes": "Edmonton has few published dedicated rental galleries; most public galleries book by juried call."
+    },
+    {
+      "name": "Red Deer Arts Council Community Gallery",
+      "city": "Red Deer",
+      "province": "AB",
+      "kind": "un-juried community gallery, 1-2 month shows",
+      "rates": {
+        "rate": "not published - inquire"
+      },
+      "how_to_book": "Proposal by Dec 5, 2026 for 2027 slots",
+      "url": "https://www.reddeerartscouncil.ca/about-red-deer-arts-council/visual-arts/community-gallery",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": "Open to all levels, including emerging photographers."
+    },
+    {
+      "name": "Casa (Allied Arts Council) - facility rentals & artist kiosks",
+      "city": "Lethbridge",
+      "province": "AB",
+      "kind": "room rentals; Rotary Square artist kiosks for pop-up shows; main gallery by annual call",
+      "rates": {
+        "rooms": "$25 (arts bookings) to $90/hour"
+      },
+      "how_to_book": "Kiosks: https://casalethbridge.ca/artist-opportunities/artist-kiosks-at-casa/ ; gallery calls: https://casalethbridge.ca/the-gallery-at-casa/calls-for-submission/",
+      "url": "https://casalethbridge.ca/facility-rentals/",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "artsPlace",
+      "city": "Canmore",
+      "province": "AB",
+      "kind": "community arts centre - gallery, theatre, studios rentable",
+      "rates": {
+        "rate": "quote on request"
+      },
+      "how_to_book": "Bow Valley artists can also apply to the annual Community Exhibitions call (HUB Gallery).",
+      "url": "https://artsplacecanmore.com/get-involved/rent-facility",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "VisualSpace Gallery",
+      "city": "Vancouver",
+      "province": "BC",
+      "kind": "rental gallery (main + downstairs)",
+      "rates": {
+        "one_day": "$950 + GST",
+        "five_day_min_exhibition": "$3,000 + GST",
+        "one_week": "$3,500 + GST"
+      },
+      "how_to_book": null,
+      "url": "https://www.visualspace.ca/gallery-rental",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "Akin Remote Gallery, 568 Richmond St W",
+      "city": "Toronto",
+      "province": "ON",
+      "kind": "rental gallery",
+      "rates": {
+        "artists_nonprofits": "$242/day, $1,271/week",
+        "akin_members": "$194/day, $1,017/week"
+      },
+      "how_to_book": null,
+      "url": "https://www.akincollective.com/remote",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": "Commercial rates higher; maintenance fee may apply."
+    },
+    {
+      "name": "Beaver Hall Gallery",
+      "city": "Toronto",
+      "province": "ON",
+      "kind": "rental gallery (Queen W area)",
+      "rates": {
+        "week": "$850/week (per search snapshot)"
+      },
+      "how_to_book": null,
+      "url": "https://beaverhallgallery.ca/rentals",
+      "rates_verified_on": null,
+      "rates_status": "unverified - confirm with venue",
+      "notes": null
+    },
+    {
+      "name": "Twist Gallery",
+      "city": "Toronto",
+      "province": "ON",
+      "kind": "gallery/event space (Queen W)",
+      "rates": {
+        "rate": "not published"
+      },
+      "how_to_book": null,
+      "url": "https://www.twistgallery.ca/events-space",
+      "rates_verified_on": null,
+      "rates_status": "unverified - confirm with venue",
+      "notes": null
+    },
+    {
+      "name": "Studio M",
+      "city": "Montréal",
+      "province": "QC",
+      "kind": "street-front gallery (application required)",
+      "rates": {
+        "six_days_tue_sun": "$975 + taxes"
+      },
+      "how_to_book": null,
+      "url": "https://www.studiomstudio.com/exposez",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "Ada X",
+      "city": "Montréal",
+      "province": "QC",
+      "kind": "artist-run centre gallery rental",
+      "rates": {
+        "members": "$545/day, $1,635/week + tax",
+        "non_members": "$665/day, $1,995/week + tax"
+      },
+      "how_to_book": null,
+      "url": "https://www.ada-x.org/en/rent/space-rental/",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "Galerie POPOP (Belgo building)",
+      "city": "Montréal",
+      "province": "QC",
+      "kind": "weekly rental gallery",
+      "rates": {
+        "rate": "by week; see calendar"
+      },
+      "how_to_book": null,
+      "url": "https://galeriepopopgallery.com/louer-popop-2/",
+      "rates_verified_on": "2026-10-18",
+      "rates_status": "verified on venue page",
+      "notes": null
+    },
+    {
+      "name": "Galerie ESPACE",
+      "city": "Montréal",
+      "province": "QC",
+      "kind": "rental gallery (boul. Saint-Laurent)",
+      "rates": {
+        "week": "$1,177/week (per search snapshot)"
+      },
+      "how_to_book": null,
+      "url": "https://galerie-espace.ca/",
+      "rates_verified_on": null,
+      "rates_status": "unverified - confirm with venue",
+      "notes": null
+    }
+  ]
+}

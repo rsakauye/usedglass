@@ -1,0 +1,1078 @@
+{
+  "generated": "2026-10-18",
+  "timezone": "America/Edmonton",
+  "window": "2026-11-01..2027-06-30",
+  "notes": "Only dates seen on the organizer's own page (or the organizer's own Eventbrite listing) are marked verified. Club dates marked 'computed' follow the club's published recurrence.",
+  "events": [
+    {
+      "name": "Wild Encounters: Hands-On Zoo Photography Experience",
+      "type": "store_event",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "Calgary Zoo (hosted by The Camera Store)",
+      "dates": [
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-01"
+        }
+      ],
+      "recurrence": "occasional",
+      "url": "https://thecamerastore.com/collections/events",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$99",
+      "tags": [
+        "wildlife",
+        "sony"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Intro to Photography Seminar",
+      "type": "store_event",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "The Camera Store, 802 11 Ave SW",
+      "dates": [
+        {
+          "start": "2026-11-12",
+          "end": "2026-11-12"
+        },
+        {
+          "start": "2027-01-12",
+          "end": "2027-01-12"
+        },
+        {
+          "start": "2027-01-21",
+          "end": "2027-01-21"
+        }
+      ],
+      "recurrence": "monthly-ish seminar",
+      "url": "https://thecamerastore.com/collections/events",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$49.95",
+      "tags": [
+        "beginner"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "The Hybrid Wildlife Shooter: Adding Video to Your Nature Photo Toolkit",
+      "type": "store_event",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "The Camera Store, 802 11 Ave SW",
+      "dates": [
+        {
+          "start": "2026-12-10",
+          "end": "2026-12-10"
+        }
+      ],
+      "recurrence": "one-off",
+      "url": "https://thecamerastore.com/collections/events",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "wildlife",
+        "video"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "KEH used-gear buying event at The Camera Store",
+      "type": "store_event",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "The Camera Store, 802 11 Ave SW",
+      "dates": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-21"
+        },
+        {
+          "start": "2027-02-18",
+          "end": "2027-02-20"
+        }
+      ],
+      "recurrence": "roughly quarterly (Feb, May, Aug, Nov)",
+      "url": "https://www.eventbrite.com/e/sell-your-camera-gear-free-event-no-ticket-needed-at-the-camera-store-tickets-1976653797719",
+      "source": "organizer (KEH Eventbrite listing)",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free, walk-in",
+      "tags": [
+        "sell gear",
+        "trade-in"
+      ],
+      "notes": "Feb 2027 listing: https://www.eventbrite.com/e/sell-your-camera-gear-free-event-no-ticket-needed-at-the-camera-store-tickets-2003086969046 . Buys gear; not a swap meet.",
+      "in_window": true
+    },
+    {
+      "name": "Beyond the Frame: Real-World Filmmaking with Justin Brunelle",
+      "type": "store_event",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "McBain Camera classroom (also live-streamed)",
+      "dates": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        }
+      ],
+      "recurrence": "one-off",
+      "url": "https://www.mcbaincamera.com/workshops.php",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "talk",
+        "video"
+      ],
+      "notes": "Eventbrite: https://www.eventbrite.ca/e/beyond-the-frame-real-world-filmmaking-with-justin-brunelle-tickets-2002762017106 (start time differs between McBain page and Eventbrite; confirm before publishing).",
+      "in_window": true,
+      "confirm_time": true
+    },
+    {
+      "name": "Canon Pro Printer Demo Day",
+      "type": "store_event",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "McBain Camera classroom",
+      "dates": [
+        {
+          "start": "2026-11-21",
+          "end": "2026-11-21"
+        }
+      ],
+      "recurrence": "one-off",
+      "url": "https://www.mcbaincamera.com/workshops.php",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "printing",
+        "canon"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Edmonton Photographic Historical Society monthly meeting: Favourite Woman Photographer",
+      "type": "talk",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "EPL Abbottsfield - Penny McKee Branch, #160, 3210 118 Ave NW",
+      "dates": [
+        {
+          "start": "2026-11-18",
+          "end": "2026-11-18"
+        }
+      ],
+      "recurrence": "monthly, 3rd Wednesday-ish, 7:30-9 pm",
+      "url": "https://www.edmphotosociety.ca/events",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "historical",
+        "film",
+        "collectors"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Edmonton Photographic Historical Society Christmas dinner meeting",
+      "type": "club_meeting",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "TBA",
+      "dates": [
+        {
+          "start": "2026-12-16",
+          "end": "2026-12-16"
+        }
+      ],
+      "recurrence": "annual (December)",
+      "url": "https://www.edmphotosociety.ca/events",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Edmonton Photo Fair & Swap Meet (EPHS)",
+      "type": "swap_meet",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "Ritchie Community League Hall, 7727 98 St NW (2026 venue)",
+      "dates": [],
+      "recurrence": "annual, spring (last held Sun May 3, 2026; 2027 date not yet announced)",
+      "url": "https://www.edmphotosociety.ca/",
+      "source": "organizer + venue page https://www.ritchie-league.com/events/photo-fair-2026",
+      "verified_on": null,
+      "date_status": "unverified",
+      "cost": "free admission; tables $20-$30 (2026)",
+      "tags": [
+        "swap",
+        "vintage",
+        "film"
+      ],
+      "notes": "Watch edmphotosociety.ca from Feb 2027 for the date.",
+      "in_window": false
+    },
+    {
+      "name": "Images Alberta Camera Club meetings",
+      "type": "club_meeting",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "Duggan Community Hall, 3728 106 St NW (+ online)",
+      "dates": [
+        {
+          "start": "2026-11-02",
+          "end": "2026-11-02"
+        },
+        {
+          "start": "2026-11-16",
+          "end": "2026-11-16"
+        }
+      ],
+      "recurrence": "1st Monday (guest speaker) & 3rd Monday, 7 pm, Sep-May; 4th Monday online members' night",
+      "url": "https://www.imagesalberta.ca/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Nov dates computed from the club's published recurrence.",
+      "in_window": true
+    },
+    {
+      "name": "Foothills Camera Club: Wayne Simpson - Photography and mental health (Zoom)",
+      "type": "talk",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "Online (Zoom)",
+      "dates": [
+        {
+          "start": "2026-11-03",
+          "end": "2026-11-03"
+        }
+      ],
+      "recurrence": "monthly speaker series 2026-27",
+      "url": "https://www.fcc-yyc.ca/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Foothills Camera Club: Krisztina Beothy - Family portraits using natural light",
+      "type": "talk",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "Loose Moose (club's usual venue)",
+      "dates": [
+        {
+          "start": "2026-12-15",
+          "end": "2026-12-15"
+        }
+      ],
+      "recurrence": "monthly speaker series 2026-27",
+      "url": "https://www.fcc-yyc.ca/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "portraits",
+        "family"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Calgary Camera Club meetings",
+      "type": "club_meeting",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "Kingsland Community Hall (per directory)",
+      "dates": [],
+      "recurrence": "1st & 3rd Wednesday, Sep-May; awards in June",
+      "url": "https://calgarycameraclub.ca/",
+      "source": "Vistek community directory https://www.vistek.ca/community/directory/listing/1170/calgary-camera-club",
+      "verified_on": null,
+      "date_status": "unverified",
+      "notes": "Club site is JS-only; confirm schedule before publishing.",
+      "in_window": false
+    },
+    {
+      "name": "Central Alberta Photographic Society (CAPS) meetings",
+      "type": "club_meeting",
+      "city": "Red Deer",
+      "province": "AB",
+      "venue": "Red Deer Polytechnic, Room 2602",
+      "dates": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-11"
+        },
+        {
+          "start": "2026-11-25",
+          "end": "2026-11-25"
+        }
+      ],
+      "recurrence": "2nd & 4th Wednesday, Sep-Nov and Jan-Apr; doors 6:30 pm",
+      "url": "https://www.capsphotoclub.com/club-calendar.html",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Dates computed from published recurrence; club publishes a public Google Calendar.",
+      "in_window": true
+    },
+    {
+      "name": "Lethbridge Photography Club meetings",
+      "type": "club_meeting",
+      "city": "Lethbridge",
+      "province": "AB",
+      "venue": "Casa, 230 8 St S",
+      "dates": [
+        {
+          "start": "2026-11-19",
+          "end": "2026-11-19"
+        }
+      ],
+      "recurrence": "3rd Thursday, 7 pm, Sep-Jun",
+      "url": "https://lethbridgephoto.wordpress.com/membership-info/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Date computed from published recurrence.",
+      "in_window": true
+    },
+    {
+      "name": "Canmore Camera Club monthly meeting",
+      "type": "club_meeting",
+      "city": "Canmore",
+      "province": "AB",
+      "venue": "Library Meeting Room, Elevation Place",
+      "dates": [
+        {
+          "start": "2026-11-19",
+          "end": "2026-11-19"
+        }
+      ],
+      "recurrence": "monthly (Thursday, 5:30 pm)",
+      "url": "https://canmorecameraclub.com/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "Bow Valley"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Banff Centre Mountain Film and Book Festival - Festival Exhibit (photo/2D exhibits)",
+      "type": "festival",
+      "city": "Banff",
+      "province": "AB",
+      "venue": "Banff Centre for Arts and Creativity",
+      "dates": [
+        {
+          "start": "2026-10-31",
+          "end": "2026-11-08"
+        }
+      ],
+      "recurrence": "annual (late Oct-early Nov)",
+      "url": "https://www.banffcentre.ca/festival-exhibit-call",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "mountain",
+        "outdoor"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Photo Rodeo (free photographer storytelling night)",
+      "type": "talk",
+      "city": "Banff",
+      "province": "AB",
+      "venue": "Rab Stage, Festival Marketplace, Banff Centre",
+      "dates": [
+        {
+          "start": "2026-11-07",
+          "end": "2026-11-07"
+        }
+      ],
+      "recurrence": "annual during Banff festival",
+      "url": "https://www.banffcentre.ca/2026-banff-centre-mountain-film-and-book-festival-photo-rodeo",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free",
+      "in_window": true
+    },
+    {
+      "name": "Casa November Gallery Crawl",
+      "type": "gallery_show",
+      "city": "Lethbridge",
+      "province": "AB",
+      "venue": "Casa, 230 8 St S (and downtown galleries)",
+      "dates": [
+        {
+          "start": "2026-11-07",
+          "end": "2026-11-07"
+        }
+      ],
+      "recurrence": "recurring gallery crawl",
+      "url": "https://casalethbridge.ca/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free",
+      "in_window": true
+    },
+    {
+      "name": "Wenda Salomons: gesture (digital pinhole photographs)",
+      "type": "gallery_show",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "Harcourt House Main Gallery",
+      "dates": [
+        {
+          "start": "2026-10-09",
+          "end": "2026-11-21"
+        }
+      ],
+      "recurrence": "exhibition",
+      "url": "https://harcourthouse.ab.ca/gesture-wenda-salomons/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free",
+      "tags": [
+        "pinhole",
+        "analog-adjacent"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Deep Rust - photography by Pamela Anthony and Darrin Hagen",
+      "type": "gallery_show",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "Gallery at Milner, Stanley A. Milner Library",
+      "dates": [
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-30"
+        }
+      ],
+      "recurrence": "exhibition",
+      "url": "https://www2.epl.ca/artgallery/EPLArtGalleryAnthonyAndHagen.cfm",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free",
+      "in_window": true
+    },
+    {
+      "name": "Nahanni McKay: Spirit",
+      "type": "gallery_show",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "Art Gallery of Alberta",
+      "dates": [
+        {
+          "start": "2026-03-28",
+          "end": "2027-05-02"
+        }
+      ],
+      "recurrence": "exhibition",
+      "url": "https://www.youraga.ca/whats-on/current-exhibitions/nahanni-mckay-spirit",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "AGA admission",
+      "in_window": true
+    },
+    {
+      "name": "Exposure Photography Festival 2027 - open-call exhibitions (International Open Call + North West Showcase)",
+      "type": "festival",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "TRUCK Contemporary Art (open-call shows); partner venues across Alberta",
+      "dates": [
+        {
+          "start": "2027-02-01",
+          "end": "2027-02-28"
+        }
+      ],
+      "recurrence": "annual, every February, province-wide",
+      "url": "https://www.exposurephotofestival.com/international-open-call-2027",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Full 2027 programme (talks, partner shows) not yet announced; homepage https://www.exposurephotofestival.com/ says 'held annually in February'.",
+      "in_window": true
+    },
+    {
+      "name": "Canadian Imaging Conference & Expo 2027 (PPOC) + World Photographic Cup",
+      "type": "industry_show",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "Grey Eagle Resort and Casino, 3777 Grey Eagle Dr",
+      "dates": [
+        {
+          "start": "2027-04-23",
+          "end": "2027-04-25"
+        }
+      ],
+      "recurrence": "annual, city rotates",
+      "url": "https://ppoc.ca/canadian-imaging-conference-expo/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Tradeshow day April 24, 2027. Early-bird pricing to Jan 31, 2027.",
+      "in_window": true
+    },
+    {
+      "name": "OddBird Art & Craft Fair (winter)",
+      "type": "art_market",
+      "city": "Edmonton",
+      "province": "AB",
+      "venue": "Old Strathcona Performing Arts Centre, 8426 Gateway Blvd NW",
+      "dates": [
+        {
+          "start": "2026-11-27",
+          "end": "2026-11-29"
+        },
+        {
+          "start": "2026-12-04",
+          "end": "2026-12-06"
+        }
+      ],
+      "recurrence": "twice yearly",
+      "url": "https://www.oddbirdfair.ca/upcomingfair",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "selling prints",
+        "guide tie-in"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Market Collective Holiday Series",
+      "type": "art_market",
+      "city": "Calgary",
+      "province": "AB",
+      "venue": "BMO Centre, Hall D",
+      "dates": [
+        {
+          "start": "2026-12-04",
+          "end": "2026-12-06"
+        },
+        {
+          "start": "2026-12-11",
+          "end": "2026-12-13"
+        }
+      ],
+      "recurrence": "seasonal",
+      "url": "https://marketcollective.ca/events/mc-holiday-series-december-4-6/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "tags": [
+        "selling prints",
+        "guide tie-in"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Vancouver Camera Show",
+      "type": "swap_meet",
+      "city": "Burnaby",
+      "province": "BC",
+      "venue": "Nikkei National Museum & Cultural Centre, 6688 Southoaks Cres",
+      "dates": [
+        {
+          "start": "2027-04-11",
+          "end": "2027-04-11"
+        }
+      ],
+      "recurrence": "twice yearly (spring & fall)",
+      "url": "https://www.vancouvercamerashow.com/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$5",
+      "tags": [
+        "swap",
+        "vintage",
+        "film"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "Richmond Camera Show & Swap Meet",
+      "type": "swap_meet",
+      "city": "Richmond",
+      "province": "BC",
+      "venue": "South Arm United Church, 11051 No. 3 Rd",
+      "dates": [],
+      "recurrence": "annual, spring (2027 date TBA)",
+      "url": "https://richmondcamerashow.wordpress.com/",
+      "source": "organizer",
+      "verified_on": null,
+      "date_status": "unverified",
+      "cost": "$5 ($10 early bird)",
+      "in_window": false
+    },
+    {
+      "name": "Capture Photography Festival 2027",
+      "type": "festival",
+      "city": "Vancouver",
+      "province": "BC",
+      "venue": "Venues across Metro Vancouver",
+      "dates": [
+        {
+          "start": "2027-04-01",
+          "end": "2027-04-30"
+        }
+      ],
+      "recurrence": "annual, every April",
+      "url": "https://capturephotofest.com/faq/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Traces - Catherine Blackburn and Jeneen Frei Njootli",
+      "type": "gallery_show",
+      "city": "North Vancouver",
+      "province": "BC",
+      "venue": "The Polygon Gallery",
+      "dates": [
+        {
+          "start": "2026-09-25",
+          "end": "2027-03-14"
+        }
+      ],
+      "recurrence": "exhibition",
+      "url": "https://thepolygon.ca/news/the-polygon-gallery-announces-2026-exhibition-schedule/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "The Lind Biennial (Philip B. Lind Emerging Artist Prize finalists)",
+      "type": "gallery_show",
+      "city": "North Vancouver",
+      "province": "BC",
+      "venue": "The Polygon Gallery",
+      "dates": [
+        {
+          "start": "2026-12-04",
+          "end": "2027-02-07"
+        }
+      ],
+      "recurrence": "biennial",
+      "url": "https://thepolygon.ca/news/the-polygon-gallery-announces-2026-exhibition-schedule/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Beau Photo ongoing workshops (B&W film developing, large format, pinhole, printing)",
+      "type": "store_event",
+      "city": "Vancouver",
+      "province": "BC",
+      "venue": "Beau Photo Supplies",
+      "dates": [],
+      "recurrence": "by appointment / ongoing",
+      "url": "https://www.beauphoto.com/workshops-at-beau/",
+      "source": "organizer",
+      "verified_on": null,
+      "date_status": "unverified",
+      "tags": [
+        "film",
+        "darkroom"
+      ],
+      "in_window": false
+    },
+    {
+      "name": "ProFusion Expo 2026 (Vistek)",
+      "type": "industry_show",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Metro Toronto Convention Centre",
+      "dates": [
+        {
+          "start": "2026-11-11",
+          "end": "2026-11-12"
+        }
+      ],
+      "recurrence": "annual, November",
+      "url": "https://www.vistek.ca/events",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Includes Vistek buy & trade-in booth and show-only deals.",
+      "in_window": true
+    },
+    {
+      "name": "CAMERAMA camera show",
+      "type": "swap_meet",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Japanese Canadian Cultural Centre, 6 Sakura Way",
+      "dates": [
+        {
+          "start": "2027-02-28",
+          "end": "2027-02-28"
+        },
+        {
+          "start": "2027-05-09",
+          "end": "2027-05-09"
+        }
+      ],
+      "recurrence": "three times a year (Feb, May, Sep)",
+      "url": "https://cameramashow.wordpress.com/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$10 ($8 students)",
+      "tags": [
+        "swap",
+        "vintage",
+        "film"
+      ],
+      "notes": "Sept 26, 2027 also announced.",
+      "in_window": true
+    },
+    {
+      "name": "PHSC Spring Photographica Fair",
+      "type": "swap_meet",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Trident Hall, 145 Evans Ave, Etobicoke (recent venue)",
+      "dates": [],
+      "recurrence": "annual spring fair (Sunday the week after Victoria Day) + fall fair in October",
+      "url": "https://phsc.ca/camera/fair/",
+      "source": "organizer",
+      "verified_on": null,
+      "date_status": "unverified",
+      "tags": [
+        "swap",
+        "vintage",
+        "collectors"
+      ],
+      "notes": "2027 date not yet posted. Oldest show of its kind in Canada (since 1974).",
+      "in_window": false
+    },
+    {
+      "name": "Toronto Camera Club - Talking Photography Lecture Series",
+      "type": "talk",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Toronto Camera Club clubhouse",
+      "dates": [
+        {
+          "start": "2026-11-05",
+          "end": "2026-11-05"
+        },
+        {
+          "start": "2026-11-12",
+          "end": "2026-11-12"
+        },
+        {
+          "start": "2026-11-19",
+          "end": "2026-11-19"
+        },
+        {
+          "start": "2027-03-04",
+          "end": "2027-03-04"
+        },
+        {
+          "start": "2027-03-11",
+          "end": "2027-03-11"
+        }
+      ],
+      "recurrence": "weekly Thursdays in season, 7:30 pm",
+      "url": "https://torontocameraclub.com/dp-calendar/talking-photography-lecture-series",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Toronto Camera Club - Powell Gallery exhibitions",
+      "type": "gallery_show",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Powell Gallery, Toronto Camera Club",
+      "dates": [
+        {
+          "start": "2026-11-01",
+          "end": "2026-11-09"
+        },
+        {
+          "start": "2026-11-15",
+          "end": "2026-11-23"
+        },
+        {
+          "start": "2026-11-29",
+          "end": "2026-12-14"
+        },
+        {
+          "start": "2027-01-11",
+          "end": "2027-01-25"
+        },
+        {
+          "start": "2027-03-01",
+          "end": "2027-03-15"
+        },
+        {
+          "start": "2027-03-22",
+          "end": "2027-04-05"
+        },
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-31"
+        }
+      ],
+      "recurrence": "10 shows per season",
+      "url": "https://torontocameraclub.com/program/powell-gallery",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Themes: Nature Unbound; Creative Imagery; On the Street; Alternative Printing; Minimalism; Architecture; CONTACT/Open Doors.",
+      "in_window": true
+    },
+    {
+      "name": "Richard Avedon Immortal: Portraits of Aging, 1951-2004",
+      "type": "gallery_show",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "The Image Centre (TMU)",
+      "dates": [
+        {
+          "start": "2026-09-09",
+          "end": "2026-12-05"
+        }
+      ],
+      "recurrence": "exhibition",
+      "url": "https://theimagecentre.ca/gallery/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Donna Gottschalk: We Others / Lee Shulman & Omar Victor Diop: Being There",
+      "type": "gallery_show",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "The Image Centre (TMU)",
+      "dates": [
+        {
+          "start": "2027-01-20",
+          "end": "2027-04-03"
+        }
+      ],
+      "recurrence": "exhibitions",
+      "url": "https://theimagecentre.ca/gallery/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "CONTACT Photography Festival 2027 (31st edition)",
+      "type": "festival",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Venues across the GTA",
+      "dates": [
+        {
+          "start": "2027-05-01",
+          "end": "2027-05-31"
+        }
+      ],
+      "recurrence": "annual, every May",
+      "url": "https://contactphoto.com/festival/open-exhibitions",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "notes": "Free Open Call registration Oct 19, 2026 - Jan 18, 2027 (needs a confirmed GTA venue).",
+      "in_window": true
+    },
+    {
+      "name": "Henry's Camera Quickstart (Camera School)",
+      "type": "store_event",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Henry's Toronto",
+      "dates": [
+        {
+          "start": "2026-11-07",
+          "end": "2026-11-07"
+        }
+      ],
+      "recurrence": "recurring",
+      "url": "https://www.henrys.com/in-store-seminars",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$129",
+      "in_window": true
+    },
+    {
+      "name": "Henry's Photo 101 four-week course (Wednesdays)",
+      "type": "store_event",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Henry's Toronto",
+      "dates": [
+        {
+          "start": "2026-11-04",
+          "end": "2026-11-25"
+        }
+      ],
+      "recurrence": "recurring",
+      "url": "https://www.henrys.com/in-store-seminars",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$269",
+      "in_window": true
+    },
+    {
+      "name": "Henry's Business Headshot Event",
+      "type": "store_event",
+      "city": "Toronto (Scarborough)",
+      "province": "ON",
+      "venue": "Henry's Scarborough",
+      "dates": [
+        {
+          "start": "2026-11-15",
+          "end": "2026-11-15"
+        }
+      ],
+      "recurrence": "seasonal",
+      "url": "https://www.henrys.com/in-store-seminars",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Henry's Holiday Portrait Photo Booth",
+      "type": "store_event",
+      "city": "Newmarket",
+      "province": "ON",
+      "venue": "Henry's Newmarket",
+      "dates": [
+        {
+          "start": "2026-11-22",
+          "end": "2026-11-22"
+        },
+        {
+          "start": "2026-12-06",
+          "end": "2026-12-06"
+        }
+      ],
+      "recurrence": "seasonal",
+      "url": "https://www.henrys.com/in-store-seminars",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "in_window": true
+    },
+    {
+      "name": "Complete Lighting and Shooting Workshop (Henry's Camera School)",
+      "type": "store_event",
+      "city": "Toronto",
+      "province": "ON",
+      "venue": "Studio 311, 9 Davies Ave",
+      "dates": [
+        {
+          "start": "2026-11-28",
+          "end": "2026-11-28"
+        }
+      ],
+      "recurrence": "occasional",
+      "url": "https://www.henrys.com/in-store-seminars",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "$399",
+      "in_window": true
+    },
+    {
+      "name": "SPAO Creative Opportunities Conference",
+      "type": "talk",
+      "city": "Ottawa",
+      "province": "ON",
+      "venue": "Ottawa Art Gallery, Alma Duncan Salon",
+      "dates": [
+        {
+          "start": "2026-11-08",
+          "end": "2026-11-08"
+        }
+      ],
+      "recurrence": "annual",
+      "url": "https://spao.ca/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free",
+      "in_window": true
+    },
+    {
+      "name": "Expozine 2026 - independent publishing/zine fair",
+      "type": "publishing_fair",
+      "city": "Montréal",
+      "province": "QC",
+      "venue": "TBA",
+      "dates": [
+        {
+          "start": "2026-11-14",
+          "end": "2026-11-15"
+        }
+      ],
+      "recurrence": "annual, November (festival Nov 7-15)",
+      "url": "https://arcmtl.org/en/expozine-2026/",
+      "source": "organizer",
+      "verified_on": "2026-10-18",
+      "date_status": "verified",
+      "cost": "free",
+      "tags": [
+        "zines",
+        "photobooks",
+        "guide tie-in"
+      ],
+      "in_window": true
+    },
+    {
+      "name": "MOMENTA Biennale de l'image 2027",
+      "type": "festival",
+      "city": "Montréal",
+      "province": "QC",
+      "venue": "Venues across Montréal",
+      "dates": [],
+      "recurrence": "biennial (2027 edition; dates TBC, expected autumn)",
+      "url": "https://momentabiennale.com/en/",
+      "source": "organizer",
+      "verified_on": null,
+      "date_status": "unverified",
+      "in_window": false
+    }
+  ]
+}

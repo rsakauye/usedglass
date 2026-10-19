@@ -1,0 +1,146 @@
+---
+import fs from 'node:fs';
+import path from 'node:path';
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+const DIR = process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data');
+const read = (f, fb) => { try { return JSON.parse(fs.readFileSync(path.join(DIR, f), 'utf8')); } catch { return fb; } };
+const evData = read('events.json', { events: [] });
+const clubsData = read('clubs.json', { clubs: [], meetup_search_links: [] });
+const galData = read('galleries-for-rent.json', { galleries: [] });
+
+// Build-time rules: drop past dates, hide events whose last check is over 60 days old, "date TBA" when no dates.
+const today = new Date().toLocaleDateString('en-CA', { timeZone: 'America/Edmonton' });
+const daysSince = (d) => (d ? (Date.parse(today) - Date.parse(d)) / 864e5 : Infinity);
+const TYPE = { swap_meet: 'Swap meet', industry_show: 'Industry show', store_event: 'Store event', talk: 'Talk', gallery_show: 'Gallery show', festival: 'Festival', art_market: 'Art market', publishing_fair: 'Zine / publishing fair', club_meeting: 'Club meeting' };
+const PROV = { AB: 'Alberta', BC: 'British Columbia', ON: 'Ontario', QC: 'Quebec', SK: 'Saskatchewan', MB: 'Manitoba', NS: 'Nova Scotia', NB: 'New Brunswick', NL: 'Newfoundland and Labrador', PE: 'PEI', YT: 'Yukon', NT: 'NWT', NU: 'Nunavut' };
+const fmt = (iso) => new Date(iso + 'T12:00:00').toLocaleDateString('en-CA', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+const range = (d) => (d.start < today && d.end ? `On now until ${fmt(d.end)}` : d.end && d.end !== d.start ? `${fmt(d.start)} – ${fmt(d.end)}` : fmt(d.start));
+const upcoming = [], tba = [];
+for (const e of evData.events || []) {
+  const future = (e.dates || []).filter((d) => (d.end || d.start) >= today);
+  if ((e.dates || []).length === 0) { tba.push(e); continue; }
+  if (!future.length) continue; // past: hidden at build time
+  if (e.date_status === 'verified' && daysSince(e.verified_on) > 60) continue; // stale: re-check before showing
+  upcoming.push({ ...e, future, next: future[0].start });
+}
+upcoming.sort((a, b) => a.next.localeCompare(b.next) || a.name.localeCompare(b.name));
+const all = [...upcoming, ...tba];
+const provs = [...new Set(all.map((e) => e.province))].sort();
+const cities = [...new Set(all.map((e) => e.city))].sort((a, b) => a.localeCompare(b));
+const types = [...new Set(all.map((e) => e.type))].sort();
+const clubs = (clubsData.clubs || []).filter((c) => c.url).sort((a, b) => (a.province + a.city + a.name).localeCompare(b.province + b.city + b.name));
+const clubProvs = [...new Set(clubs.map((c) => c.province))].sort((a, b) => (a === 'AB' ? -1 : b === 'AB' ? 1 : a.localeCompare(b)));
+const gals = (galData.galleries || []).slice().sort((a, b) => (a.province === 'AB' ? -1 : 0) - (b.province === 'AB' ? -1 : 0) || a.city.localeCompare(b.city));
+const jsonld = upcoming.filter((e) => e.date_status === 'verified').map((e) => ({
+  '@context': 'https://schema.org', '@type': 'Event', name: e.name, startDate: e.next, endDate: e.future[0].end || e.next,
+  eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  location: { '@type': 'Place', name: e.venue, address: { '@type': 'PostalAddress', addressLocality: e.city, addressRegion: e.province, addressCountry: 'CA' } },
+  url: e.url,
+}));
+---
+<Base title="Photography events, camera swaps, clubs and galleries in Canada" description="Upcoming camera swap meets, store workshops, talks, photo festivals and gallery shows across Canada, plus camera clubs and gallery spaces you can rent. Alberta first.">
+  <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
+  <style>
+    .ev-filters { display:flex; flex-wrap:wrap; gap:.5rem; align-items:end; margin:.6rem 0 1rem; }
+    .ev-filters label { display:flex; flex-direction:column; font-size:.9rem; }
+    .ev-list { display:grid; gap:.6rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+    .ev { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:.75rem .85rem; }
+    .ev h3 { font-size:1.02rem; margin:.1rem 0 .3rem; line-height:1.3; }
+    .ev .when { font-weight:600; }
+    .ev .meta { font-size:.9rem; color:var(--muted); margin:.2rem 0; overflow-wrap:anywhere; }
+    .ev .chk { font-size:.8rem; color:var(--muted); }
+    .clubs h3 { margin:1rem 0 .3rem; font-size:1rem; }
+    .clubs ul { columns: 2 280px; margin:0; padding-left:1.1rem; }
+    .clubs li { break-inside: avoid; margin-bottom:.2rem; }
+    [hidden] { display:none !important; }
+    @media (max-width:640px) { .ev-filters label { flex:1 1 45%; } .ev-filters select { width:100%; } }
+  </style>
+  <h1>Out there: photography events in Canada</h1>
+  <p>Camera swap meets, store workshops, talks, festivals and gallery shows, so you can get out and shoot with real people. Every listing links to the organizer's own page, and dates are only marked confirmed when we've seen them there. Always check with the organizer before you go.</p>
+  <p class="muted"><b>Know an event?</b> Email <a href="mailto:hello@usedglass.ca?subject=Event%20for%20UsedGlass">hello@usedglass.ca</a> with the name, date, venue and a link to the organizer's page.</p>
+
+  <div class="ev-filters card" role="group" aria-label="Filter events">
+    <label>Province<select id="f-prov"><option value="">All</option>{provs.map((p) => <option value={p}>{PROV[p] || p}</option>)}</select></label>
+    <label>City<select id="f-city"><option value="">All</option>{cities.map((c) => <option>{c}</option>)}</select></label>
+    <label>Type<select id="f-type"><option value="">All</option>{types.map((t) => <option value={t}>{TYPE[t] || t}</option>)}</select></label>
+    <span class="muted" id="f-count" aria-live="polite"></span>
+  </div>
+
+  <h2 id="upcoming">Upcoming</h2>
+  <div class="ev-list">
+    {upcoming.map((e) => (
+      <article class="ev" data-prov={e.province} data-city={e.city} data-type={e.type}>
+        <div class="when">{range(e.future[0])}{e.future.length > 1 && <span class="muted" style="font-weight:400"> · +{e.future.length - 1} more date{e.future.length > 2 ? 's' : ''}</span>}</div>
+        <h3><a href={e.url} rel="noopener" target="_blank">{e.name}</a></h3>
+        <div><span class="pill">{TYPE[e.type] || e.type}</span>{e.cost && <span class="pill">{e.cost}</span>}{e.date_status !== 'verified' && <span class="pill warn">date not confirmed</span>}{e.confirm_time && <span class="pill warn">Confirm time with organizer</span>}</div>
+        <div class="meta">{e.venue} · {e.city}, {e.province}</div>
+        {e.future.length > 1 && <div class="meta">Also: {e.future.slice(1, 4).map((d) => range(d)).join('; ')}{e.future.length > 4 && '…'}</div>}
+        {e.confirm_time && <div class="meta">The start time differs between the organizer's pages, so check before you go.</div>}
+        <div class="chk">{e.date_status === 'verified' ? <>Checked on organizer's page {e.verified_on}</> : <>Not yet confirmed on the organizer's page</>} · <a href={e.url} rel="noopener" target="_blank">Organizer page</a></div>
+      </article>
+    ))}
+  </div>
+  <p class="muted" id="none" hidden>No upcoming events match those filters.</p>
+
+  {tba.length > 0 && (<>
+    <h2 id="tba">Date TBA</h2>
+    <p class="muted">Recurring events whose next date hasn't been announced yet. Here's when they usually happen.</p>
+    <div class="ev-list">
+      {tba.map((e) => (
+        <article class="ev" data-prov={e.province} data-city={e.city} data-type={e.type}>
+          <div class="when">Date TBA</div>
+          <h3><a href={e.url} rel="noopener" target="_blank">{e.name}</a></h3>
+          <div><span class="pill">{TYPE[e.type] || e.type}</span>{e.cost && <span class="pill">{e.cost}</span>}</div>
+          <div class="meta">{e.venue} · {e.city}, {e.province}</div>
+          {e.recurrence && <div class="meta">Usually: {e.recurrence}</div>}
+          <div class="chk">{e.verified_on ? <>Checked {e.verified_on}</> : <>Not yet confirmed</>} · <a href={e.url} rel="noopener" target="_blank">Organizer page</a></div>
+        </article>
+      ))}
+    </div>
+  </>)}
+
+  <h2 id="clubs">Camera clubs</h2>
+  <p class="muted">Club names and their public websites only. Many clubs welcome visitors, so check the club's site for meeting details.</p>
+  <div class="clubs">
+    {clubProvs.map((p) => (
+      <section>
+        <h3>{PROV[p] || p}</h3>
+        <ul>{clubs.filter((c) => c.province === p).map((c) => <li><a href={c.url} rel="noopener" target="_blank">{c.name}</a> <span class="muted">({c.city})</span></li>)}</ul>
+      </section>
+    ))}
+  </div>
+  {(clubsData.meetup_search_links || []).length > 0 && <p class="muted">Photo walks on Meetup (search links): {clubsData.meetup_search_links.map((m, i) => <>{i > 0 && ' · '}<a href={m.url} rel="noopener" target="_blank">{m.city}</a></>)}</p>}
+
+  <h2 id="galleries">Gallery spaces you can rent</h2>
+  <p class="muted">{galData.note}</p>
+  <div class="ev-list">
+    {gals.map((g) => (
+      <article class="ev">
+        <h3><a href={g.url} rel="noopener" target="_blank">{g.name}</a></h3>
+        <div class="meta">{g.city}, {g.province}{g.kind && <> · {g.kind}</>}</div>
+        {g.rates && <ul style="margin:.3rem 0 .3rem 1.1rem;padding:0;font-size:.92rem">{Object.entries(g.rates).map(([k, v]) => <li><span class="muted">{k.replace(/_/g, ' ')}:</span> {v}</li>)}</ul>}
+        <div>{/^verified/.test(g.rates_status || '') ? <span class="pill good">Rates checked {g.rates_verified_on}</span> : <span class="pill warn">Unverified rates: confirm with the venue</span>}</div>
+        {g.notes && <div class="meta">{g.notes}</div>}
+      </article>
+    ))}
+  </div>
+  <p class="muted" style="margin-top:1rem">We're not affiliated with these organizers, clubs or venues. Listings are free and we don't take payment for them. Spot a mistake? Email <a href="mailto:hello@usedglass.ca">hello@usedglass.ca</a>.</p>
+
+  <script is:inline>
+    (function () {
+      var ids = ['f-prov', 'f-city', 'f-type'];
+      function run() {
+        var p = document.getElementById('f-prov').value, c = document.getElementById('f-city').value, t = document.getElementById('f-type').value, n = 0, up = 0;
+        document.querySelectorAll('article.ev[data-prov]').forEach(function (a) {
+          var ok = (!p || a.dataset.prov === p) && (!c || a.dataset.city === c) && (!t || a.dataset.type === t);
+          a.hidden = !ok; if (ok) { n++; if (a.closest('.ev-list') === document.querySelector('.ev-list')) up++; }
+        });
+        document.getElementById('f-count').textContent = n + ' events';
+        document.getElementById('none').hidden = up > 0;
+      }
+      ids.forEach(function (id) { document.getElementById(id).addEventListener('change', run); });
+      run();
+    })();
+  </script>
+</Base>
