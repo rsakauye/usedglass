@@ -1,13 +1,17 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ListingTable from '../../components/ListingTable.astro';
-import { models, byId, money, u } from '../../lib/data.js';
+import { models, byId, money, u, modelUrl, currency } from '../../lib/data.js';
+import ScoreBadge from '../../components/ScoreBadge.astro';
 import { amazonSearchUrl, SPONSORED_REL } from '../../lib/affiliate.js';
 export function getStaticPaths() {
   return Object.values(models).map((m) => ({ params: { key: m.key }, props: { m } }));
 }
 const { m } = Astro.props;
 const amazonUrl = amazonSearchUrl(m.name);
+const best = m.best_score_id ? byId[m.best_score_id] : null;
+const meta = m.meta || null;
+const gaps = (currency.gaps || []).filter((g) => g.model_key === m.key);
 const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => a.price_cad - b.price_cad);
 ---
 <Base title={`${m.name}: used prices in Canada`} description={`Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
@@ -18,8 +22,18 @@ const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => 
     <div><b>{money(m.median_price)}</b><span class="muted">median today</span></div>
     <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">median, last 90 days ({m.observations_90d} listings seen)</span></div>
     <div><b>{rows.length}</b><span class="muted">listings at {m.dealers.length} {m.dealers.length === 1 ? 'seller' : 'sellers'}</span></div>
+    {m.new_price && <div><b>{money(m.new_price)}</b><span class="muted">new at <a href={m.new_price_url} rel="nofollow noopener" target="_blank">{m.new_price_dealer}</a></span></div>}
+    {m.best_score != null && <div><b>{m.best_score}</b><span class="muted">best <a href={u('about/deal-score/')}>Deal Score</a></span></div>}
   </div>
+  {best && <p><ScoreBadge score={best.deal_score} why={best.score_why} basis={best.score_basis} /> <span class="muted">Best-scoring listing: {best.dealer}, {money(best.price_cad)}.</span></p>}
+  {(meta || m.new_price_notes) && (
+    <div class="card" style="margin:.6rem 0 1rem">
+      {meta && <div>Announced {meta.announced || 'date not on file'}{meta.successor && <> · replaced by {models[meta.successor] ? <a href={modelUrl(meta.successor)}>{meta.successor_name || meta.successor}</a> : (meta.successor_name || meta.successor)}</>}{meta.predecessor && models[meta.predecessor] && <> · previous model: <a href={modelUrl(meta.predecessor)}>{models[meta.predecessor].name}</a></>} <span class="muted">({(meta.sources || []).map((s, i) => <a href={s} rel="nofollow noopener" target="_blank">source {i + 1} </a>)})</span></div>}
+      {m.new_price_notes && <div class="muted">New price: {m.new_price_notes.join('; ')}.</div>}
+    </div>
+  )}
+  {gaps.length > 0 && <p class="muted">US price check: {gaps.map((g) => `${g.seller} US$${g.price} ≈ ${money(g.landed_cad)} landed (estimate)`).join('; ')}. <a href={u('currency/')}>How we estimate</a></p>}
   <p class="amazon-cta"><a href={amazonUrl} rel={SPONSORED_REL} target="_blank">Check new price on Amazon.ca</a> <span class="muted">(affiliate link)</span></p>
-  <ListingTable rows={rows} showModel={false} />
+  <ListingTable rows={rows} showModel={false} showScoreWhy={true} />
   <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
 </Base>
