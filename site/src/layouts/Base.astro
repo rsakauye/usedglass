@@ -15,6 +15,17 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
   <meta name="fo-verify" content="80e91ecb-ef5e-4e35-9def-f6aecc44206b" />
   <link rel="alternate" type="application/rss+xml" title="UsedGlass.ca deals" href={u('rss.xml')} />
   <link rel="icon" href={u('favicon.svg')} type="image/svg+xml" />
+  <script is:inline>
+    // "2h ago" for <time data-rel datetime=...>; the full timestamp stays in the title attribute.
+    window.ugRel = function (root) {
+      (root || document).querySelectorAll('time[data-rel]').forEach(function (t) {
+        var s = (Date.now() - Date.parse(t.getAttribute('datetime'))) / 1000;
+        if (!isFinite(s) || s < 0) return;
+        t.textContent = s < 3600 ? Math.max(1, Math.round(s / 60)) + 'm ago' : s < 86400 ? Math.round(s / 3600) + 'h ago' : Math.round(s / 86400) + 'd ago';
+      });
+    };
+    document.addEventListener('DOMContentLoaded', function () { window.ugRel(document); });
+  </script>
   <style is:global>
     :root { --fg:#16181d; --muted:#5b6170; --bg:#fafafa; --card:#fff; --line:#e4e6eb; --accent:#0f6fde; --good:#0a7d38; --warn:#b54708; }
     * { box-sizing: border-box; }
@@ -50,6 +61,32 @@ const fullTitle = title === 'UsedGlass.ca' ? 'UsedGlass.ca: used camera & lens p
     .stats div b { display:block; font-size:1.3rem; }
     .pill.score { text-decoration:none; font-weight:600; }
     .score-why { display:block; font-size:.82rem; margin-top:.15rem; }
+    .m-only { display:none; }
+    .l-title { overflow-wrap:anywhere; }
+    img, svg, video { max-width:100%; }
+    @media (max-width: 640px) {
+      .wrap { padding-left:.75rem; padding-right:.75rem; }
+      h1 { font-size:1.6rem; }
+      td, th { overflow-wrap:anywhere; }
+      /* other tables scroll inside themselves instead of widening the page */
+      table:not(.ltable) { display:block; overflow-x:auto; max-width:100%; }
+      /* listing tables become stacked cards */
+      .ltable, .ltable tbody { display:block; background:none; }
+      .ltable thead, .ltable .d-cell, .ltable .d-only { display:none; }
+      .ltable tr { display:block; background:var(--card); border:1px solid var(--line); border-radius:10px; padding:.65rem .75rem; margin-bottom:.6rem; }
+      .ltable td.c-item { display:block; border:0; padding:0; }
+      .ltable .l-title { display:block; font-weight:600; line-height:1.3; }
+      .ltable .m-only { display:inline; }
+      .ltable .l-mid { display:flex; justify-content:space-between; align-items:baseline; gap:.6rem; margin:.3rem 0 .25rem; }
+      .ltable .l-meta { font-size:.88rem; color:var(--muted); min-width:0; }
+      .ltable .l-price { font-size:1.25rem; font-weight:700; white-space:nowrap; font-variant-numeric:tabular-nums; text-align:right; }
+      .ltable .l-price s { display:block; font-size:.8rem; font-weight:400; }
+      .ltable .l-tags { display:flex; flex-wrap:wrap; gap:.25rem; align-items:center; }
+      .ltable .l-time { margin-left:auto; font-size:.8rem; color:var(--muted); white-space:nowrap; }
+      .ltable .l-why { display:block; font-size:.8rem; margin-top:.3rem; }
+      form.card label { flex:1 1 45%; }
+      form.card input, form.card select { width:100%; }
+    }
   </style>
 </head>
 <body>

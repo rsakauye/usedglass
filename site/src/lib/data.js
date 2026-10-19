@@ -37,6 +37,8 @@ export function asOf(iso) {
   }) + ' MT';
 }
 
+export const shortDate = (iso) => (iso ? new Date(iso).toLocaleDateString('en-CA', { timeZone: 'America/Edmonton', month: 'short', day: 'numeric' }) : '');
+
 export const modelUrl = (key) => u(`model/${key}/`);
 export const uniqSorted = (arr) => [...new Set(arr.filter(Boolean))].sort((a, b) => a.localeCompare(b));
 
