@@ -1,0 +1,343 @@
+{
+ "_about": "Lens mount registers (flange focal distance) and throat diameters used by /adapt/. Flange values: Wikipedia 'Flange focal distance' table; throat values from each mount's Wikipedia article (null where not published there). Checked 2026-10-19. A lens can adapt to a body with infinity focus only if the lens mount's flange distance is longer than the body's by enough room for an adapter (about 1 mm or more), unless the adapter has a corrective glass element.",
+ "checked": "2026-10-19",
+ "mounts": {
+  "Canon EF": {
+   "flange_mm": 44.0,
+   "throat_mm": 54,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Canon_EF_lens_mount"
+   ]
+  },
+  "Canon RF": {
+   "flange_mm": 20.0,
+   "throat_mm": 54,
+   "type": "mirrorless",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Canon_RF_lens_mount"
+   ]
+  },
+  "Canon EF-M": {
+   "flange_mm": 18.0,
+   "throat_mm": 47,
+   "type": "mirrorless",
+   "format": "apsc",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Canon_EF-M_lens_mount"
+   ]
+  },
+  "Canon FD": {
+   "flange_mm": 42.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Nikon F": {
+   "flange_mm": 46.5,
+   "throat_mm": 44,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "mixed",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Nikon_F-mount"
+   ],
+   "note": "G and E-type lenses have no aperture ring (G uses a lever; E is electronic)."
+  },
+  "Nikon Z": {
+   "flange_mm": 16.0,
+   "throat_mm": 55,
+   "type": "mirrorless",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Nikon_Z-mount"
+   ]
+  },
+  "Sony E": {
+   "flange_mm": 18.0,
+   "throat_mm": 46.1,
+   "type": "mirrorless",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Sony_E-mount"
+   ]
+  },
+  "Sony A": {
+   "flange_mm": 44.5,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ],
+   "note": "Also Minolta/Konica Minolta A-mount (Maxxum/Dynax)."
+  },
+  "Fujifilm X": {
+   "flange_mm": 17.7,
+   "throat_mm": 44,
+   "type": "mirrorless",
+   "format": "apsc",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Fujifilm_X-mount"
+   ]
+  },
+  "Fujifilm G": {
+   "flange_mm": 26.7,
+   "throat_mm": 65,
+   "type": "mirrorless",
+   "format": "mf",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Fujifilm_G-mount"
+   ]
+  },
+  "L-Mount": {
+   "flange_mm": 20.0,
+   "throat_mm": 51.6,
+   "type": "mirrorless",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Leica_L-Mount"
+   ]
+  },
+  "Micro Four Thirds": {
+   "flange_mm": 19.25,
+   "throat_mm": 38,
+   "type": "mirrorless",
+   "format": "mft",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance",
+    "https://en.wikipedia.org/wiki/Micro_Four_Thirds_system"
+   ]
+  },
+  "Four Thirds": {
+   "flange_mm": 38.67,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "mft",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Pentax K": {
+   "flange_mm": 45.46,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "mixed",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ],
+   "note": "Same flange as M42, so M42 lenses use Pentax's thin bayonet adapter. Newer DA/D FA lenses have no aperture ring."
+  },
+  "Leica M": {
+   "flange_mm": 27.8,
+   "throat_mm": null,
+   "type": "rangefinder",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ],
+   "note": "Flange 27.8 mm (inner rails) to 27.95 mm (outer rails)."
+  },
+  "Leica R": {
+   "flange_mm": 47.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "M42": {
+   "flange_mm": 45.46,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Minolta MD": {
+   "flange_mm": 43.5,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ],
+   "note": "Minolta SR/MC/MD bayonet."
+  },
+  "Olympus OM": {
+   "flange_mm": 46.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Contax/Yashica": {
+   "flange_mm": 45.5,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Hasselblad V": {
+   "flange_mm": 74.9,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "mf",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Hasselblad XCD": {
+   "flange_mm": 18.14,
+   "throat_mm": null,
+   "type": "mirrorless",
+   "format": "mf",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Mamiya 645": {
+   "flange_mm": 63.3,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "mf",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Konica AR": {
+   "flange_mm": 40.5,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Contax N": {
+   "flange_mm": 48.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "ff",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Hasselblad XPan": {
+   "flange_mm": 34.27,
+   "throat_mm": null,
+   "type": "rangefinder",
+   "format": "ff",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Pentax 645": {
+   "flange_mm": 70.87,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "mf",
+   "aperture": "mixed",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Hasselblad H": {
+   "flange_mm": 61.63,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "mf",
+   "aperture": "electronic",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Mamiya 7": {
+   "flange_mm": 59.0,
+   "throat_mm": null,
+   "type": "rangefinder",
+   "format": "6x7",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ],
+   "note": "Rangefinder; flange figure may not be precise per the source table."
+  },
+  "Bronica SQ": {
+   "flange_mm": 85.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "mf",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Bronica GS": {
+   "flange_mm": 85.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "6x7",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ]
+  },
+  "Mamiya RB/RZ": {
+   "flange_mm": 105.0,
+   "throat_mm": null,
+   "type": "slr",
+   "format": "6x7",
+   "aperture": "ring",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Flange_focal_distance"
+   ],
+   "note": "RZ67 is 105.0 mm; RB67 is 112.0 mm. Both adapt to mirrorless bodies; RB lenses need a slightly longer adapter."
+  }
+ }
+}

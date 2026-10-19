@@ -35,6 +35,7 @@ const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => 
     </div>
   )}
   {gaps.length > 0 && <p class="muted">US price check: {gaps.map((g) => `${g.seller} US$${g.price} ≈ ${money(g.landed_cad)} landed (estimate)`).join('; ')}. <a href={u('currency/')}>How we estimate</a></p>}
+  {m.mount && m.mount !== 'Fixed Lens' && (m.category === 'lens' || m.category === 'camera') && <p><a href={u(`adapt/?${m.category === 'camera' ? 'body' : 'lens'}=${encodeURIComponent(m.mount)}`)}>{m.category === 'camera' ? 'Which lenses can I adapt to this camera?' : 'Will this fit my camera?'}</a> <span class="muted">Mount adapter checker for {m.mount}.</span></p>}
   <p class="amazon-cta"><a href={amazonUrl} rel={SPONSORED_REL} target="_blank">Check new price on Amazon.ca</a> <span class="muted">(affiliate link)</span></p>
   <ListingTable rows={rows} showModel={false} showScoreWhy={true} />
   <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
