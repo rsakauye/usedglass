@@ -54,7 +54,23 @@ function sprockets(ctx, w, y, hole = 10) {
   for (let x = hole; x < w; x += hole * 2.6) { ctx.beginPath(); ctx.roundRect(x, y + hole * 0.6, hole * 1.3, hole * 1.2, 2); ctx.fill(); }
 }
 
-export function renderCard(canvas, { items, listName = '', handle = '', size = 'forum', url = 'usedglass.ca' }) {
+// Retro class badge: navy code block + label in a bordered tag with an offset orange shadow. Returns the width used.
+function badge(ctx, x, y, code, label, px) {
+  ctx.save(); ctx.textBaseline = 'middle'; ctx.textAlign = 'left';
+  ctx.font = `700 ${px}px ${MONO}`;
+  const cw = ctx.measureText(code).width + px * 0.8, lw = ctx.measureText(label.toUpperCase()).width;
+  const h = px * 1.9, w = cw + lw + px * 1.1;
+  ctx.fillStyle = C.orange; ctx.fillRect(x + px * 0.3, y + px * 0.3, w, h);
+  ctx.fillStyle = C.paper; ctx.fillRect(x, y, w, h);
+  ctx.strokeStyle = C.navy; ctx.lineWidth = Math.max(1.5, px / 7); ctx.strokeRect(x, y, w, h);
+  ctx.fillStyle = C.navy; ctx.fillRect(x + px * 0.25, y + px * 0.25, cw, h - px * 0.5);
+  ctx.fillStyle = C.orange; ctx.fillText(code, x + px * 0.65, y + h / 2 + 0.5);
+  ctx.fillStyle = C.navy; ctx.fillText(label.toUpperCase(), x + cw + px * 0.65, y + h / 2 + 0.5);
+  ctx.restore();
+  return w + px * 0.9;
+}
+
+export function renderCard(canvas, { items, listName = '', handle = '', size = 'forum', url = 'usedglass.ca', classes = [] }) {
   const S = SIZES[size] || SIZES.forum;
   canvas.width = S.w * S.scale; canvas.height = S.h * S.scale;
   const ctx = canvas.getContext('2d');
@@ -78,10 +94,11 @@ export function renderCard(canvas, { items, listName = '', handle = '', size = '
       const lab = (CAT_PLURAL[c] || 'Other').toUpperCase();
       ctx.fillText(lab, 82, y);
       ctx.fillStyle = C.ink; ctx.font = `13px ${MONO}`;
-      ctx.fillText(fit(ctx, its.map((x) => x.n).join(' · ') + more, w - 82 - 92 - 20), 82 + 92, y);
+      ctx.fillText(fit(ctx, its.map((x) => x.n).join(' · ') + more, w - 82 - 92 - 20 - (classes.length ? 120 : 0)), 82 + 92, y);
       y += 21;
     });
     wordmark(ctx, w - 14, 30, 13, 'right');
+    if (classes.length) { ctx.font = `700 9px ${MONO}`; let by = 44; for (const [code, label] of classes.slice(0, 3)) { const tw = ctx.measureText(code).width + ctx.measureText(label.toUpperCase()).width + 9 * 2.4; badge(ctx, w - 16 - tw, by, code, label, 9); by += 22; } }
     return canvas;
   }
 
@@ -93,8 +110,9 @@ export function renderCard(canvas, { items, listName = '', handle = '', size = '
   ctx.fillText(fit(ctx, title, w - pad * 2 - 120 - 260), pad + 116, 104);
   ctx.fillStyle = C.soft; ctx.font = `20px ${SANS}`;
   const sub = [handle && listName ? listName : '', `${items.length} item${items.length === 1 ? '' : 's'}`].filter(Boolean).join(' · ');
-  ctx.fillText(fit(ctx, sub, 560), pad + 118, 136);
+  ctx.fillText(fit(ctx, sub, classes.length ? 380 : 560), pad + 118, 136);
   wordmark(ctx, w - pad, 100, 30, 'right');
+  if (classes.length) { ctx.font = `700 14px ${MONO}`; let tot = 0; const ws = classes.slice(0, 3).map(([c, l]) => ctx.measureText(c).width + ctx.measureText(l.toUpperCase()).width + 14 * 2.8); tot = ws.reduce((a, b) => a + b, 0); let bx = w - pad - tot; classes.slice(0, 3).forEach(([c, l], i) => { badge(ctx, bx, 120, c, l, 14); bx += ws[i]; }); }
   ctx.strokeStyle = C.navy; ctx.lineWidth = 2; ctx.beginPath(); ctx.moveTo(pad, 174); ctx.lineTo(w - pad, 174); ctx.stroke();
 
   // Two columns of category groups, each item on its own line; overflow becomes "+N more".

@@ -4,10 +4,22 @@ import { u } from '../lib/data.js';
 import { CATEGORIES } from '../lib/mykit-core.js';
 import { KIT_CSS } from '../lib/mykit-ui.js';
 import { SIZES } from '../lib/mykit-card.js';
+import { CLASSES, CLASS_CSS, MAX_CLASSES } from '../lib/classes.js';
 const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Nikon Z', 'Sony E', 'Sony A', 'Fujifilm X', 'Fujifilm G', 'L-Mount', 'Micro Four Thirds', 'Four Thirds', 'Pentax K', 'Leica M', 'Leica R', 'M42', 'Minolta MD', 'Olympus OM', 'Contax/Yashica', 'Hasselblad V', 'Hasselblad XCD', 'Mamiya 645', 'Mamiya RB/RZ', 'Fixed Lens'];
 ---
 <Base title="My kit: wish lists, kit builder and kit cards" description="Build camera kits and wish lists with current Canadian used and new prices, mount checks, share links and a My kit image for your email signature. Saved only in your browser.">
-  <style set:html={KIT_CSS + `
+  <style set:html={KIT_CSS + CLASS_CSS + `
+    .cls-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:.45rem; margin:.6rem 0 .3rem; }
+    .cls-grid button { text-align:left; background:var(--card); color:var(--fg); border:1px solid #c9ccd3; border-radius:6px; padding:.45rem .55rem; font-weight:600; }
+    .cls-grid button small { display:block; font-weight:400; color:var(--muted); font-size:.75rem; margin-top:.1rem; }
+    .cls-grid button code { font-weight:700; color:#b54708; margin-right:.3rem; }
+    .cls-grid button[aria-pressed=true] { background:#14213d; color:#fff; border-color:#14213d; box-shadow:3px 3px 0 #f4a261; }
+    .cls-grid button[aria-pressed=true] small { color:#d6dae3; } .cls-grid button[aria-pressed=true] code { color:#f4a261; }
+    .cls-grid button:disabled { opacity:.6; }
+    html[data-theme=dark] .cls-grid button { background:#1b1a17; color:var(--fg); border:2px solid; border-color:#3b362f #191714 #191714 #3b362f; box-shadow:none; }
+    html[data-theme=dark] .cls-grid button code { color:#ffad5c; }
+    html[data-theme=dark] .cls-grid button[aria-pressed=true] { background:#33231a; border-color:#ffad5c; box-shadow:3px 3px 0 #b3261e; }
+    #cls-badges { min-height:1.8rem; margin-top:.4rem; }
     .mk-tabs { display:flex; flex-wrap:wrap; gap:.35rem; margin:.4rem 0 .6rem; }
     .mk-tabs button { background:#fff; color:var(--fg); border-color:#c9ccd3; border-radius:99px; padding:.3rem .8rem; }
     .mk-tabs button[aria-selected=true] { background:#14213d; color:#fff; border-color:#14213d; }
@@ -25,6 +37,14 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
   `} />
   <h1>My kit</h1>
   <p class="muted">Build kits and wish lists like a parts list: every item shows today's cheapest Canadian used price, the dealer, its Deal Score and the new price where we track it. <b>Your lists are stored only in this browser</b>, so nothing is sent to us. Use Export to move them to another device.</p>
+
+  <section class="card" id="classes" style="margin:.4rem 0 1rem">
+    <h2 style="margin:0">Your photographer class</h2>
+    <p class="muted" style="margin:.2rem 0 0">Pick up to {MAX_CLASSES} classes for how you shoot. They show as badges here and on your kit card, and <a href={u('compare/')}>Compare</a> highlights the stats that matter for them. Saved only in this browser.</p>
+    <div id="cls-badges" aria-live="polite"></div>
+    <div class="cls-grid" id="cls-grid" role="group" aria-label="Photographer classes">{CLASSES.map((c) => <button type="button" data-cls={c[0]} aria-pressed="false"><code>{c[2]}</code>{c[1]}<small>{c[4]}</small></button>)}</div>
+    <p class="muted" id="cls-msg" style="margin:.2rem 0 0;font-size:.85rem"></p>
+  </section>
 
   <div class="mk-tabs" id="mk-tabs" role="tablist" aria-label="Your lists"></div>
   <div class="mk-bar">
@@ -84,6 +104,13 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
     import * as K from '../lib/mykit-core.js';
     import { itemsHtml, totalsHtml, compatHtml, nameOf } from '../lib/mykit-ui.js';
     import { renderCard, SIZES } from '../lib/mykit-card.js';
+    import { loadClasses, saveClasses, badgeHtml, MAX_CLASSES, CLASS_KEY, CLASS_BY_ID } from '../lib/classes.js';
+    let cls: string[] = loadClasses();
+    function renderClasses() {
+      $('cls-badges').innerHTML = cls.length ? cls.map(badgeHtml).join('') : '<span class="muted">No class picked yet.</span>';
+      document.querySelectorAll('#cls-grid button').forEach((b: any) => { const on = cls.includes(b.dataset.cls); b.setAttribute('aria-pressed', String(on)); b.disabled = !on && cls.length >= MAX_CLASSES; });
+      $('cls-msg').textContent = cls.length >= MAX_CLASSES ? `That's ${MAX_CLASSES}, the most you can pick. Tap one to swap it out.` : '';
+    }
     const { base, dataUrl, kitUrl } = (window as any).__mk;
     const $ = (id: string) => document.getElementById(id) as any;
     let s = K.load();
@@ -104,7 +131,7 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
     function drawCard() {
       const l = cur();
       const items = l.items.map((it: any) => ({ ...it, n: nameOf(cat, it) }));
-      renderCard($('mk-canvas'), { items, listName: l.name, handle: $('mk-handle').value.trim(), size: $('mk-size').value });
+      renderCard($('mk-canvas'), { items, classes: cls.map((id) => CLASS_BY_ID[id]).filter(Boolean).map((c) => [c[2], c[1]]), listName: l.name, handle: $('mk-handle').value.trim(), size: $('mk-size').value });
     }
     async function shareLink() { const l = cur(); return kitUrl + '#' + await K.encodeList(l, $('mk-handle').value.trim()); }
     async function snippet() {
@@ -201,7 +228,13 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
       } catch { $('mk-io-msg').textContent = "That file doesn't look like a UsedGlass.ca lists export."; }
       e.target.value = '';
     });
-    window.addEventListener('storage', (e) => { if (e.key === K.STORE_KEY) { s = K.load(); render(); } });
+    $('cls-grid').addEventListener('click', (e: any) => {
+      const b = e.target.closest('button[data-cls]'); if (!b) return; const id = b.dataset.cls;
+      cls = cls.includes(id) ? cls.filter((x) => x !== id) : cls.length < MAX_CLASSES ? [...cls, id] : cls;
+      saveClasses(cls); renderClasses(); drawCard();
+    });
+    window.addEventListener('storage', (e) => { if (e.key === K.STORE_KEY) { s = K.load(); render(); } if (e.key === CLASS_KEY) { cls = loadClasses(); renderClasses(); drawCard(); } });
+    renderClasses();
 
     render();
     fetch(dataUrl).then((r) => r.json()).then((rows) => {
