@@ -1,36 +1,36 @@
 {
  "date": "2026-10-18",
- "generated_at": "2026-10-19T00:57:13+00:00",
+ "generated_at": "2026-10-19T05:27:06+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "plotcamera-059e17404d",
+  "id": "gosselin-44291abd64",
   "title": "Canon EOS 5D Mark II",
-  "dealer": "Plot Camera",
-  "url": "https://www.plotcamera.com/products/70090040",
-  "price_cad": 349.9,
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
+  "price_cad": 299.0,
   "comp_median": 750.0,
   "comps": 3,
   "model_key": "camera-canon-5d-ii",
   "model_name": "Canon 5D II",
-  "condition": "Excellent",
+  "condition": "Good",
   "reasons": [
-   "53% below the median of 3 comparable listings"
+   "60% below the median of 3 comparable listings"
   ],
-  "score": 56.3,
+  "score": 63.1,
   "is_new": false,
   "deal_score": 100,
   "score_why": [
-   "53% below the median of 3 comparable listings",
+   "60% below the median of 3 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-19T00:57:13+00:00"
+  "fetched_at": "2026-10-19T05:27:06+00:00"
  },
  "deals": [
   {
    "type": "listing",
    "id": "gosselin-44291abd64",
-   "title": "USAGE (8) - Canon EOS 5D Mark II",
+   "title": "Canon EOS 5D Mark II",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
    "price_cad": 299.0,
@@ -50,7 +50,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -75,7 +75,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -100,7 +100,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -126,7 +126,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -151,7 +151,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -176,7 +176,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -201,12 +201,12 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-7f3f474306",
-   "title": "USAGE (8) - Fujifilm XF 23mm f/1.4 R LM WR",
+   "title": "Fujifilm XF 23mm f/1.4 R LM WR",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/fujifilm-usage-8-fujifilm-xf-23mm-f-14-r-lm-wr-u107005",
    "price_cad": 599.0,
@@ -227,12 +227,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-8e1b2fa8f6",
-   "title": "USAGE (7) - Tamron 24-70mm f/2.8 DI VC USD nikon af",
+   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
    "price_cad": 499.0,
@@ -252,7 +252,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -277,12 +277,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-44929e51ff",
-   "title": "USAGE (8) - Canon RF-S 14-30mm f/4-6.3 IS STM PZ",
+   "title": "Canon RF-S 14-30mm f/4-6.3 IS STM PZ",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-rf-s-14-30mm-f-4-63-is-stm-pz-u106823",
    "price_cad": 249.0,
@@ -302,7 +302,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -327,7 +327,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -352,7 +352,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -377,7 +377,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -402,12 +402,12 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-a519f8f7bc",
-   "title": "USAGE (8) - Nikon AF-S NIKKOR 50mm f/1.8G",
+   "title": "Nikon AF-S NIKKOR 50mm f/1.8G",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-af-s-nikkor-50mm-f-18g-u107162",
    "price_cad": 125.0,
@@ -429,7 +429,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -455,7 +455,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -481,12 +481,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-6a5d22efee",
-   "title": "USAGE (8) - Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
+   "title": "Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
    "price_cad": 429.0,
@@ -507,12 +507,12 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-8c0f34a022",
-   "title": "USAGE (8) - Tamron SP 24-70mm f/2.8 DI VC USD Nikon",
+   "title": "Tamron SP 24-70mm f/2.8 DI VC USD Nikon",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/tamron-usage-8-tamron-sp-24-70mm-f-28-di-vc-usd-nikon-u107326",
    "price_cad": 399.0,
@@ -533,7 +533,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -559,7 +559,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -585,12 +585,12 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-b909aa2f2e",
-   "title": "USAGE (8) - SIGMA 30MM F1.4 DC DN Monture L",
+   "title": "SIGMA 30MM F1.4 DC DN Monture L",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
    "price_cad": 229.0,
@@ -611,7 +611,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -637,7 +637,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -663,12 +663,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-e58d9aafb3",
-   "title": "USAGE (7) - Fujifilm x-t2 + vpb-xt2",
+   "title": "Fujifilm x-t2 + vpb-xt2",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-x-t2-vpb-xt2-u104408",
    "price_cad": 699.0,
@@ -689,7 +689,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -714,7 +714,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -741,12 +741,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-c9669efab6",
-   "title": "USAGE (8) - Fujifilm GF 100-200mm F/5.6 R LM OIS WR",
+   "title": "Fujifilm GF 100-200mm F/5.6 R LM OIS WR",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/fujifilm-usage-8-fujifilm-gf-100-200mm-f-56-r-lm-ois-wr-u100661",
    "price_cad": 1599.0,
@@ -767,7 +767,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -792,7 +792,7 @@
     "announced 2021-09: on sale through 5 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -817,7 +817,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -843,7 +843,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -869,12 +869,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-a18ca95aa0",
-   "title": "USAGE (8) - Nikon Z 24-70mm f/4 S",
+   "title": "Nikon Z 24-70mm f/4 S",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z-24-70mm-f-4-s-u107259",
    "price_cad": 599.0,
@@ -895,7 +895,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -920,7 +920,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -945,7 +945,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -970,7 +970,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -995,7 +995,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -1020,12 +1020,12 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-a067338af6",
-   "title": "USAGE (8) - Nikon Z50",
+   "title": "Nikon Z50",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107293",
    "price_cad": 499.0,
@@ -1047,12 +1047,12 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-d904dd1229",
-   "title": "USAGE (8) - Nikon Z50",
+   "title": "Nikon Z50",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z50-u107036",
    "price_cad": 549.0,
@@ -1073,12 +1073,12 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-2070e43232",
-   "title": "USAGE (8) - Sony Cyber-shot DSC-RX10 IV",
+   "title": "Sony Cyber-shot DSC-RX10 IV",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/sony-usage-8-sony-cyber-shot-dsc-rx10-iv-u107233",
    "price_cad": 1599.0,
@@ -1099,7 +1099,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -1127,7 +1127,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   },
   {
    "type": "listing",
@@ -1154,7 +1154,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T00:57:13+00:00"
+   "fetched_at": "2026-10-19T05:27:06+00:00"
   }
  ],
  "rules": {
