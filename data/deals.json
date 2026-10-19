@@ -1,32 +1,35 @@
 {
  "date": "2026-10-19",
- "generated_at": "2026-10-19T06:01:42+00:00",
+ "generated_at": "2026-10-19T17:51:46+00:00",
  "deal_of_the_day": {
-  "type": "listing",
-  "id": "gosselin-44291abd64",
-  "title": "Canon EOS 5D Mark II",
-  "dealer": "Gosselin Photo",
-  "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5d-mark-ii-u107336",
-  "price_cad": 299.0,
-  "comp_median": 750.0,
-  "comps": 3,
-  "model_key": "camera-canon-5d-ii",
-  "model_name": "Canon 5D II",
-  "condition": "Good",
+  "type": "rebate",
+  "id": "rebate-https://www.fujifilm-x.com/en-ca/save-244-on-fujifilm-x-half/",
+  "title": "New Fujifilm rebate: SAVE $244 on FUJIFILM X half™",
+  "url": "https://www.fujifilm-x.com/en-ca/save-244-on-fujifilm-x-half/",
+  "dealer": "Fujifilm",
+  "price_cad": null,
   "reasons": [
-   "60% below the median of 3 comparable listings"
+   "up to $244"
   ],
-  "score": 63.1,
-  "is_new": false,
-  "deal_score": 100,
-  "score_why": [
-   "60% below the median of 3 comparable listings",
-   "no release-date or successor data for this model yet, so the score uses price history only"
-  ],
-  "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-19T06:01:42+00:00"
+  "score": 999,
+  "is_new": true,
+  "fetched_at": "2026-10-19T17:51:46+00:00"
  },
  "deals": [
+  {
+   "type": "rebate",
+   "id": "rebate-https://www.fujifilm-x.com/en-ca/save-244-on-fujifilm-x-half/",
+   "title": "New Fujifilm rebate: SAVE $244 on FUJIFILM X half™",
+   "url": "https://www.fujifilm-x.com/en-ca/save-244-on-fujifilm-x-half/",
+   "dealer": "Fujifilm",
+   "price_cad": null,
+   "reasons": [
+    "up to $244"
+   ],
+   "score": 999,
+   "is_new": true,
+   "fetched_at": "2026-10-19T17:51:46+00:00"
+  },
   {
    "type": "listing",
    "id": "gosselin-44291abd64",
@@ -50,7 +53,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -75,7 +78,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -100,7 +103,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -126,7 +129,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -151,7 +154,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -176,7 +179,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -201,7 +204,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -227,7 +230,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -252,7 +255,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -277,7 +280,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -302,7 +305,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -327,7 +330,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -352,7 +355,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -377,7 +380,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -402,7 +405,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -429,7 +432,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -455,7 +458,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -481,7 +484,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -507,7 +510,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -533,7 +536,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -559,7 +562,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -585,14 +588,14 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
    "id": "gosselin-b909aa2f2e",
    "title": "SIGMA 30MM F1.4 DC DN Monture L",
    "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
+   "url": "https://gosselinphoto.ca/products/sigma-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
    "price_cad": 229.0,
    "comp_median": 360.0,
    "comps": 4,
@@ -611,7 +614,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -637,7 +640,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -663,33 +666,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-e58d9aafb3",
-   "title": "Fujifilm x-t2 + vpb-xt2",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-x-t2-vpb-xt2-u104408",
-   "price_cad": 699.0,
-   "comp_median": 947.5,
-   "comps": 4,
-   "model_key": "camera-fujifilm-xt2",
-   "model_name": "Fujifilm XT2",
-   "condition": "Fair",
-   "reasons": [
-    "26% below the median of 4 comparable listings"
-   ],
-   "score": 30.2,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "26% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -714,7 +691,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -741,7 +718,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -767,7 +744,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -792,7 +769,7 @@
     "announced 2021-09: on sale through 5 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -817,7 +794,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -843,7 +820,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -869,7 +846,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -895,7 +872,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -920,7 +897,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -945,7 +922,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -970,7 +947,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -995,7 +972,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -1020,7 +997,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -1047,7 +1024,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -1073,7 +1050,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -1099,7 +1076,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -1127,7 +1104,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   },
   {
    "type": "listing",
@@ -1154,7 +1131,54 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-19T06:01:42+00:00"
+   "fetched_at": "2026-10-19T17:51:46+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-f4fde604f6",
+   "title": "Sony DSC-RX10IV (EX+) used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907653",
+   "price_cad": 2399.99,
+   "comp_median": 1999.0,
+   "comps": 5,
+   "model_key": "camera-sony-rx10-iv",
+   "model_name": "Sony RX10 IV",
+   "condition": "Excellent",
+   "reasons": [
+    "price dropped 33% (was $3,560)"
+   ],
+   "score": 19.6,
+   "is_new": false,
+   "deal_score": 10,
+   "score_why": [
+    "20% above the median of 5 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-10-19T17:51:46+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameracanada-1dd7512938",
+   "title": "Canon EOS R50 V with RF-S 14-30mm F4-6.3 IS STM PZ \\Bonus Battery OPEN BOX",
+   "dealer": "Camera Canada",
+   "url": "https://www.cameracanada.com/products/productDetail.aspx?pid=6895C012_OBD_UR",
+   "price_cad": 989.0,
+   "comp_median": null,
+   "comps": 2,
+   "model_key": "camera-canon-r50",
+   "model_name": "Canon R50",
+   "condition": "Like New",
+   "reasons": [
+    "price dropped 14% (was $1,149)"
+   ],
+   "score": 8.3,
+   "is_new": false,
+   "deal_score": null,
+   "score_why": null,
+   "score_basis": null,
+   "fetched_at": "2026-10-19T17:51:46+00:00"
   }
  ],
  "rules": {
