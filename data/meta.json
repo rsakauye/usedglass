@@ -1,26 +1,26 @@
 {
- "run_at": "2026-10-20T06:29:49+00:00",
+ "run_at": "2026-10-20T06:33:19+00:00",
  "date": "2026-10-20",
  "dealers": {
   "mcbain": {
    "count": 989,
    "status": "ok",
-   "seconds": 1.8
+   "seconds": 2.2
   },
   "downtowncamera": {
    "count": 830,
    "status": "ok",
-   "seconds": 0.6
+   "seconds": 0.7
   },
   "gosselin": {
    "count": 440,
    "status": "ok",
-   "seconds": 3.1
+   "seconds": 3.5
   },
   "beauphoto": {
    "count": 387,
    "status": "ok",
-   "seconds": 12.8
+   "seconds": 13.0
   },
   "thecamerastore": {
    "count": 87,
@@ -35,12 +35,12 @@
   "plotcamera": {
    "count": 43,
    "status": "ok",
-   "seconds": 0.6
+   "seconds": 0.5
   },
   "cameratraders": {
    "count": 657,
    "status": "ok",
-   "seconds": 7.5
+   "seconds": 8.3
   },
   "maplecamera": {
    "count": 93,
@@ -50,7 +50,7 @@
   "cameratrading": {
    "count": 57,
    "status": "ok",
-   "seconds": 0.9
+   "seconds": 0.5
   },
   "cameracanada": {
    "count": 180,
@@ -134,7 +134,7 @@
   "newprices": {
    "count": 839,
    "status": "ok",
-   "seconds": 16.8
+   "seconds": 15.7
   },
   "fx": {
    "status": "ok",
