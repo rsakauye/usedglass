@@ -1,25 +1,6 @@
 {
  "date": "2026-10-20",
  "new_today": [],
- "price_dropped": [
-  {
-   "id": "cameracanada-fcd8a4f486",
-   "old": 829.0,
-   "new": 799.0,
-   "pct": 0.036
-  },
-  {
-   "id": "cameracanada-8a2dd1be32",
-   "old": 739.0,
-   "new": 589.0,
-   "pct": 0.203
-  },
-  {
-   "id": "cameracanada-8270f46eff",
-   "old": 599.0,
-   "new": 529.0,
-   "pct": 0.117
-  }
- ],
- "removed": 10
+ "price_dropped": [],
+ "removed": 15
 }

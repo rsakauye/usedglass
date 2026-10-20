@@ -73,25 +73,28 @@
  },
  {
   "type": "listing",
-  "id": "cameracanada-8a2dd1be32",
-  "title": "Canon Open Box EOS R100 Mirrorless Camera 18-45mm Lens",
-  "dealer": "Camera Canada",
-  "url": "https://www.cameracanada.com/products/productDetail.aspx?pid=6052C012OBD",
-  "price_cad": 589.0,
-  "comp_median": null,
-  "comps": 0,
-  "model_key": "lens-canon-18-45mm-f",
-  "model_name": "Canon 18-45mm",
-  "condition": "Like New",
+  "id": "plotcamera-059e17404d",
+  "title": "Canon EOS 5D Mark II",
+  "dealer": "Plot Camera",
+  "url": "https://www.plotcamera.com/products/70090040",
+  "price_cad": 349.9,
+  "comp_median": 750.0,
+  "comps": 3,
+  "model_key": "camera-canon-5d-ii",
+  "model_name": "Canon 5D II",
+  "condition": "Excellent",
   "reasons": [
-   "price dropped 20% (was $739)"
+   "53% below the median of 3 comparable listings"
   ],
-  "score": 12.2,
+  "score": 56.3,
   "is_new": false,
-  "deal_score": null,
-  "score_why": null,
-  "score_basis": null,
-  "fetched_at": "2026-10-20T15:56:00+00:00",
+  "deal_score": 100,
+  "score_why": [
+   "53% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-20T16:30:10+00:00",
   "date": "2026-10-20"
  }
 ]
