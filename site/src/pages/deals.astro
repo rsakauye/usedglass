@@ -5,7 +5,7 @@ import { deals, dotdHistory, u } from '../lib/data.js';
 const rest = (deals.deals || []).filter((d) => !deals.deal_of_the_day || d.id !== deals.deal_of_the_day.id);
 const r = deals.rules || {};
 ---
-<Base title="Deal of the day and steep used-gear discounts">
+<Base title="Deal of the day and steep used-gear discounts" description="Today's deal of the day and the steepest used camera and lens discounts at Canadian dealers, ranked by our transparent Deal Score.">
   <h1>Deals</h1>
   <p class="muted">Computed daily ({deals.date}). A listing is flagged when it is at least {Math.round((r.min_discount || 0.2) * 100)}% below the median price of {r.min_comps || 3}+ comparable listings (same matched model across dealers and the last 90 days), when its price drops {Math.round((r.min_drop || 0.1) * 100)}%+, or when a new manufacturer rebate appears. Flagged listings are sorted by <a href={u('about/deal-score/')}>Deal Score</a> (0–100). US price gaps from the <a href={u('currency/')}>currency watch</a> show up here as estimates. <a href={u('rss.xml')}>RSS feed</a></p>
   <p class="muted">Into film? See <a href={u('vintage/')}>vintage &amp; thrift finds</a> for film cameras, instant cameras and manual-focus lenses, sorted by Deal Score.</p>

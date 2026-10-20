@@ -4,7 +4,7 @@ import { meta, u } from '../lib/data.js';
 const info = meta.dealer_info || {};
 const rows = Object.entries(meta.dealers || {}).map(([id, d]) => ({ id, ...d, ...(info[id] || {}) }));
 ---
-<Base title="Canadian used camera dealers we track">
+<Base title="Canadian used camera dealers we track" description="The Canadian camera stores whose used camera and lens listings UsedGlass.ca tracks daily, with listing counts and links to each dealer.">
   <h1>Dealers</h1>
   <p class="muted">Used inventory we check every day. Want your store listed or removed? See <a href={u('about/#dealers')}>dealer info</a>.</p>
   <table>
