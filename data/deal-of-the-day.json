@@ -47,28 +47,28 @@
  },
  {
   "type": "listing",
-  "id": "downtowncamera-f39dd88c12",
-  "title": "LEICA 90F2 SUMMICRON CND",
-  "dealer": "Downtown Camera",
-  "url": "https://downtowncamera.com/used-equipment",
-  "price_cad": 850.0,
-  "comp_median": 1750.0,
+  "id": "plotcamera-059e17404d",
+  "title": "Canon EOS 5D Mark II",
+  "dealer": "Plot Camera",
+  "url": "https://www.plotcamera.com/products/70090040",
+  "price_cad": 349.9,
+  "comp_median": 750.0,
   "comps": 3,
-  "model_key": "lens-leica-leica-m-90mm-f2",
-  "model_name": "Leica 90mm f/2 (Leica M)",
-  "condition": null,
+  "model_key": "camera-canon-5d-ii",
+  "model_name": "Canon 5D II",
+  "condition": "Excellent",
   "reasons": [
-   "51% below the median of 3 comparable listings"
+   "53% below the median of 3 comparable listings"
   ],
-  "score": 54.4,
+  "score": 56.3,
   "is_new": false,
   "deal_score": 100,
   "score_why": [
-   "51% below the median of 3 comparable listings",
+   "53% below the median of 3 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-19T20:12:59+00:00",
+  "fetched_at": "2026-10-20T01:27:41+00:00",
   "date": "2026-10-19"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-19T20:12:59+00:00",
+ "fetched_at": "2026-10-20T01:27:41+00:00",
  "items": [
   {
    "brand": "Canon",
@@ -8,7 +8,7 @@
    "starts": "September 4",
    "ends": "October 29, 2026",
    "max_amount_cad": 500,
-   "fetched_at": "2026-10-19T20:12:59+00:00",
+   "fetched_at": "2026-10-20T01:27:41+00:00",
    "first_seen": "2026-10-17"
   },
   {
@@ -18,7 +18,7 @@
    "starts": "Sept 15",
    "ends": "Oct 31, 2026",
    "max_amount_cad": 500,
-   "fetched_at": "2026-10-19T20:12:59+00:00",
+   "fetched_at": "2026-10-20T01:27:41+00:00",
    "first_seen": "2026-10-17"
   },
   {
@@ -28,18 +28,8 @@
    "starts": "October 05, 2026",
    "ends": "January 3, 2027",
    "max_amount_cad": 244,
-   "fetched_at": "2026-10-19T20:12:59+00:00",
+   "fetched_at": "2026-10-20T01:27:41+00:00",
    "first_seen": "2026-10-19"
-  },
-  {
-   "brand": "Fujifilm",
-   "url": "https://www.fujifilm-x.com/en-ca/travel-lens-promotion/",
-   "title": "Travel Lens Promotion",
-   "starts": "June 8, 2026",
-   "ends": "Aug 2, 2026",
-   "max_amount_cad": 105,
-   "fetched_at": "2026-10-19T20:12:59+00:00",
-   "first_seen": "2026-10-17"
   },
   {
    "brand": "Nikon",
@@ -48,7 +38,7 @@
    "starts": null,
    "ends": null,
    "max_amount_cad": null,
-   "fetched_at": "2026-10-19T20:12:59+00:00",
+   "fetched_at": "2026-10-20T01:27:41+00:00",
    "first_seen": "2026-10-17"
   }
  ],
@@ -64,5 +54,10 @@
    "note": "JS-rendered instant savings list"
   }
  ],
- "errors": []
+ "errors": [
+  {
+   "brand": "Fujifilm",
+   "error": "HTTPError: HTTP Error 404: Not Found"
+  }
+ ]
 }
