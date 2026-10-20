@@ -16,7 +16,14 @@ function reply(request, status, body) {
   return Response.redirect(new URL('/events/?' + q + '#submit', request.url).href, 303);
 }
 
-export async function onRequestPost({ request, env }) {
+// Any unexpected failure (e.g. the free KV daily write quota is used up during a traffic spike) gets a friendly
+// message instead of a raw 500, so the form tells people to email us.
+export async function onRequestPost(ctx) {
+  try { return await handle(ctx); }
+  catch { return reply(ctx.request, 503, { ok: false, error: 'Submissions are busy right now. Please try again later or email hello@usedglass.ca.' }); }
+}
+
+async function handle({ request, env }) {
   if (!env.UG_EVENTS || !env.TURNSTILE_SECRET) return reply(request, 503, { ok: false, error: 'Submissions are switched off right now. Please email hello@usedglass.ca.' });
   let f;
   try {
