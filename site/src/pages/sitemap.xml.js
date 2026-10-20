@@ -3,6 +3,7 @@
 // so search engines and the IndexNow ping (scripts/indexnow.mjs) only see genuine updates.
 import { models } from '../lib/data.js';
 import { gitDate, modelLastmod, maxDate } from '../lib/lastmod.js';
+import { sitemapEntries } from '../lib/reports.js';
 const P = (f) => `site/src/pages/${f}`;
 const D = (f) => `data/${f}`;
 // path -> source + data files whose changes change what the page shows.
@@ -27,7 +28,7 @@ const STATIC = {
   'privacy/': [P('privacy.astro')],
   'terms/': [P('terms.astro')],
 };
-const extra = [];
+const extra = sitemapEntries();
 export function GET() {
   const site = 'https://usedglass.ca/';
   const modelEntries = Object.values(models).map((m) => [`model/${m.key}/`, modelLastmod(m.key)]);
