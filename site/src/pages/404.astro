@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';
+import { u } from '../lib/data.js';
+---
+<Base title="Page not found" description="That page isn't on UsedGlass.ca. Search used camera and lens prices from Canadian dealers instead." noindex={true}>
+  <h1>Out of focus: page not found</h1>
+  <p>We couldn't find that page. It may be a model that's no longer listed by any Canadian dealer.</p>
+  <p>Try the <a href={u('')}>used gear search</a>, today's <a href={u('deals/')}>deals</a>, <a href={u('new/')}>new listings</a> or <a href={u('drops/')}>price drops</a>.</p>
+</Base>
