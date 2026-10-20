@@ -1,31 +1,30 @@
 {
  "date": "2026-10-20",
- "generated_at": "2026-10-20T17:24:06+00:00",
+ "generated_at": "2026-10-20T17:50:05+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "camtec-6aa2b4ac79",
-  "title": "Sony ZEISS Sonnar FE 55mm f/1.8 ZA T* - *A*",
-  "dealer": "Camtec Photo",
-  "url": "https://www.camtecphoto.com/en/product/sony-zeiss-sonnar-fe-55mm-f18-za-t-a-4",
-  "price_cad": 445.0,
-  "comp_median": 895.0,
+  "id": "mcbain-7bbeb876f4",
+  "title": "Canon 6D II DSLR Camera Body - Used",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+  "price_cad": 449.99,
+  "comp_median": 999.0,
   "comps": 3,
-  "model_key": "lens-zeiss-sony-e-55mm-f1_8",
-  "model_name": "Zeiss 55mm f/1.8 (Sony E)",
-  "condition": "Excellent",
+  "model_key": "camera-canon-6d-ii",
+  "model_name": "Canon 6D II",
+  "condition": null,
   "reasons": [
-   "50% below the median of 3 comparable listings"
+   "55% below the median of 3 comparable listings"
   ],
-  "score": 53.3,
+  "score": 58.0,
   "is_new": false,
   "deal_score": 100,
   "score_why": [
-   "50% below the median of 3 comparable listings",
-   "36% of the new price ($1,249); used ones this age typically sell around 75%",
+   "55% below the median of 3 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-20T17:24:06+00:00"
+  "fetched_at": "2026-10-20T17:50:05+00:00"
  },
  "deals": [
   {
@@ -51,7 +50,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-7bbeb876f4",
+   "title": "Canon 6D II DSLR Camera Body - Used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+   "price_cad": 449.99,
+   "comp_median": 999.0,
+   "comps": 3,
+   "model_key": "camera-canon-6d-ii",
+   "model_name": "Canon 6D II",
+   "condition": null,
+   "reasons": [
+    "55% below the median of 3 comparable listings"
+   ],
+   "score": 58.0,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "55% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -76,7 +100,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -101,7 +125,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -127,7 +151,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -152,7 +176,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-b909aa2f2e",
+   "title": "SIGMA 30MM F1.4 DC DN Monture L",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/sigma-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
+   "price_cad": 229.0,
+   "comp_median": 375.0,
+   "comps": 3,
+   "model_key": "lens-sigma-sony-e-30mm-f1_4",
+   "model_name": "Sigma 30mm f/1.4 (Sony E)",
+   "condition": "Good",
+   "reasons": [
+    "39% below the median of 3 comparable listings"
+   ],
+   "score": 41.9,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "39% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -177,7 +226,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -203,7 +252,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -228,7 +277,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -253,7 +302,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -278,7 +327,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -303,7 +352,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -328,7 +377,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -353,7 +402,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -380,7 +429,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -406,7 +455,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -432,7 +481,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -458,7 +507,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -484,7 +533,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -510,33 +559,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-b909aa2f2e",
-   "title": "SIGMA 30MM F1.4 DC DN Monture L",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/sigma-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
-   "price_cad": 229.0,
-   "comp_median": 360.0,
-   "comps": 4,
-   "model_key": "lens-sigma-sony-e-30mm-f1_4",
-   "model_name": "Sigma 30mm f/1.4 (Sony E)",
-   "condition": "Good",
-   "reasons": [
-    "36% below the median of 4 comparable listings"
-   ],
-   "score": 40.4,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "36% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -562,7 +585,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -588,7 +611,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "maplecamera-2a7ca7ea90",
+   "title": "Fujifilm X-T30 Camera Body Only - Near Mint Minus",
+   "dealer": "Maple Camera Co.",
+   "url": "https://maplecameraco.com/products/fujifilm-x-t30-camera-body-only-near-mint-minus-j22364-01",
+   "price_cad": 919.0,
+   "comp_median": 1199.99,
+   "comps": 3,
+   "model_key": "camera-fujifilm-xt30",
+   "model_name": "Fujifilm XT30",
+   "condition": "Like New",
+   "reasons": [
+    "23% below the median of 3 comparable listings"
+   ],
+   "score": 26.4,
+   "is_new": false,
+   "deal_score": 97,
+   "score_why": [
+    "23% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -613,7 +661,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -640,7 +688,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -666,7 +714,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -691,7 +739,7 @@
     "announced 2021-09: on sale through 5 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -716,33 +764,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "maplecamera-2a7ca7ea90",
-   "title": "Fujifilm X-T30 Camera Body Only - Near Mint Minus",
-   "dealer": "Maple Camera Co.",
-   "url": "https://maplecameraco.com/products/fujifilm-x-t30-camera-body-only-near-mint-minus-j22364-01",
-   "price_cad": 919.0,
-   "comp_median": 1199.99,
-   "comps": 4,
-   "model_key": "camera-fujifilm-xt30",
-   "model_name": "Fujifilm XT30",
-   "condition": "Like New",
-   "reasons": [
-    "23% below the median of 4 comparable listings"
-   ],
-   "score": 27.4,
-   "is_new": false,
-   "deal_score": 96,
-   "score_why": [
-    "23% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -768,7 +790,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -793,7 +815,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -818,7 +840,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -843,7 +865,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -868,7 +890,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -893,7 +915,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -918,7 +940,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -945,7 +967,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -971,7 +993,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -997,7 +1019,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -1023,7 +1045,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -1032,26 +1054,26 @@
    "dealer": "McBain Camera",
    "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905468",
    "price_cad": 2100.0,
-   "comp_median": 2997.0,
-   "comps": 6,
+   "comp_median": 2995.0,
+   "comps": 5,
    "model_key": "camera-canon-r5",
    "model_name": "Canon R5",
    "condition": null,
    "reasons": [
-    "30% below the median of 6 comparable listings"
+    "30% below the median of 5 comparable listings"
    ],
-   "score": 35.9,
+   "score": 34.9,
    "is_new": false,
    "deal_score": 77,
    "score_why": [
-    "30% below the median of 6 comparable listings",
+    "30% below the median of 5 comparable listings",
     "the lowest price we've recorded for this model in 90 days",
     "64% of the new price ($3,299); used ones this age typically sell around 60%",
     "great value: previous generation at 39% of the newer Canon EOS R5 Mark II's price",
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   },
   {
    "type": "listing",
@@ -1060,25 +1082,25 @@
    "dealer": "McBain Camera",
    "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905467",
    "price_cad": 2199.99,
-   "comp_median": 2997.0,
-   "comps": 6,
+   "comp_median": 2995.0,
+   "comps": 5,
    "model_key": "camera-canon-r5",
    "model_name": "Canon R5",
    "condition": null,
    "reasons": [
-    "27% below the median of 6 comparable listings"
+    "27% below the median of 5 comparable listings"
    ],
-   "score": 32.6,
+   "score": 31.5,
    "is_new": false,
    "deal_score": 74,
    "score_why": [
-    "27% below the median of 6 comparable listings",
+    "27% below the median of 5 comparable listings",
     "67% of the new price ($3,299); used ones this age typically sell around 60%",
     "great value: previous generation at 41% of the newer Canon EOS R5 Mark II's price",
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T17:24:06+00:00"
+   "fetched_at": "2026-10-20T17:50:05+00:00"
   }
  ],
  "rules": {

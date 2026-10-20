@@ -52,6 +52,18 @@
    "model_name": "Canon 5D II"
   },
   {
+   "title": "Canon 6D II DSLR Camera Body - Used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+   "price_cad": 449.99,
+   "deal_score": 100,
+   "score_why": [
+    "55% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Canon 6D II"
+  },
+  {
    "title": "Canon EOS 5D Mark II",
    "dealer": "Plot Camera",
    "url": "https://www.plotcamera.com/products/70090040",
@@ -101,6 +113,18 @@
    "model_name": "Leica 90mm f/2 (Leica M)"
   },
   {
+   "title": "SIGMA 30MM F1.4 DC DN Monture L",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/sigma-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
+   "price_cad": 229.0,
+   "deal_score": 100,
+   "score_why": [
+    "39% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Sigma 30mm f/1.4 (Sony E)"
+  },
+  {
    "title": "Canon AE-1 35mm SLR Camera with New FD 50mm f/1.8 Lens",
    "dealer": "Camera Trading Company",
    "url": "https://cameratradingcompany.com/products/canon-ae-1-35mm-slr-with-50mm-new-fd-50-1-8-serviced",
@@ -136,30 +160,6 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)"
-  },
-  {
-   "title": "Canon RF-S 14-30mm f/4-6.3 IS STM PZ",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-rf-s-14-30mm-f-4-63-is-stm-pz-u106823",
-   "price_cad": 249.0,
-   "deal_score": 100,
-   "score_why": [
-    "33% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon 14-30mm f/4-6.3 STAB STM (Canon RF)"
-  },
-  {
-   "title": "Canon 18-45mm f4.5-6.3 IS STM (EX) RF used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907810",
-   "price_cad": 94.99,
-   "deal_score": 100,
-   "score_why": [
-    "29% below the median of 6 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)"
   }
  ]
 }

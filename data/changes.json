@@ -1,6 +1,13 @@
 {
  "date": "2026-10-20",
  "new_today": [],
- "price_dropped": [],
- "removed": 1
+ "price_dropped": [
+  {
+   "id": "gosselin-7e2168dd69",
+   "old": 959.0,
+   "new": 899.0,
+   "pct": 0.063
+  }
+ ],
+ "removed": 0
 }
