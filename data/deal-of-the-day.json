@@ -70,5 +70,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-20T05:34:29+00:00",
   "date": "2026-10-19"
+ },
+ {
+  "type": "listing",
+  "id": "plotcamera-059e17404d",
+  "title": "Canon EOS 5D Mark II",
+  "dealer": "Plot Camera",
+  "url": "https://www.plotcamera.com/products/70090040",
+  "price_cad": 349.9,
+  "comp_median": 750.0,
+  "comps": 3,
+  "model_key": "camera-canon-5d-ii",
+  "model_name": "Canon 5D II",
+  "condition": "Excellent",
+  "reasons": [
+   "53% below the median of 3 comparable listings"
+  ],
+  "score": 56.3,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "53% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-20T06:16:36+00:00",
+  "date": "2026-10-20"
  }
 ]

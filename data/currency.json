@@ -1,6 +1,6 @@
 {
- "date": "2026-10-19",
- "generated_at": "2026-10-20T05:34:29+00:00",
+ "date": "2026-10-20",
+ "generated_at": "2026-10-20T06:16:36+00:00",
  "fx_latest": {
   "USD": {
    "date": "2026-10-19",
@@ -69,7 +69,7 @@
   "threshold": 0.025,
   "direction": null,
   "items": [],
-  "tracked_days": 1,
+  "tracked_days": 2,
   "status": "CAD moved 0.7% against the USD over 30 days, under the 2.5% threshold, so no price flags today."
  },
  "new_price_models": 839
