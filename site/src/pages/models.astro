@@ -1,0 +1,34 @@
+---
+// Crawlable A–Z index of every camera and lens we track, so each model page is one click from a hub.
+import Base from '../layouts/Base.astro';
+import { models, money, u, modelUrl } from '../lib/data.js';
+const all = Object.values(models);
+const groups = ['camera', 'lens'].map((cat) => {
+  const ms = all.filter((m) => m.category === cat);
+  const brands = [...new Set(ms.map((m) => m.brand || 'Other'))].sort((a, b) => a.localeCompare(b));
+  return { cat, label: cat === 'camera' ? 'Cameras' : 'Lenses', count: ms.length, brands: brands.map((b) => ({ b, id: `${cat}-${b.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`, ms: ms.filter((m) => (m.brand || 'Other') === b).sort((x, y) => x.name.localeCompare(y.name)) })) };
+});
+---
+<Base title="All used cameras and lenses we track, A–Z" description={`Browse all ${all.length} camera and lens models with used listings at Canadian dealers, by brand, with today's lowest used price in CAD.`}>
+  <h1>Every camera &amp; lens we track</h1>
+  <p class="muted">{all.length} models with used listings at Canadian dealers today. Each page shows every listing, the 90-day median and the best Deal Score. Prefer filters? Use the <a href={u('')}>search</a>.</p>
+  {groups.map((g) => (
+    <section>
+      <h2 id={g.cat}>{g.label} ({g.count})</h2>
+      <p class="brand-jump">{g.brands.map((x) => <a href={`#${x.id}`}>{x.b}</a>)}</p>
+      {g.brands.map((x) => (
+        <div class="card brand-card">
+          <h3 id={x.id}>{x.b} {g.cat === 'camera' ? 'cameras' : 'lenses'}</h3>
+          <ul class="mlist">{x.ms.map((m) => <li><a href={modelUrl(m.key)}>{m.name}</a> <span class="muted">from {money(m.min_price)}</span></li>)}</ul>
+        </div>
+      ))}
+    </section>
+  ))}
+</Base>
+<style>
+  .brand-jump a { display:inline-block; margin:0 .6rem .3rem 0; white-space:nowrap; }
+  .brand-card { margin:.8rem 0; }
+  .brand-card h3 { margin:.1rem 0 .5rem; }
+  .mlist { margin:0; padding-left:1.1rem; columns:3 260px; column-gap:1.5rem; }
+  .mlist li { break-inside:avoid; margin-bottom:.15rem; }
+</style>
