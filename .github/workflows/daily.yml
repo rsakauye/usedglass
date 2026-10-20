@@ -25,6 +25,10 @@ jobs:
       CF_DEPLOY: ${{ secrets.CLOUDFLARE_API_TOKEN != '' && secrets.CLOUDFLARE_ACCOUNT_ID != '' }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Full history (trees only, blobs on demand) so the sitemap can use real git last-modified dates.
+          fetch-depth: 0
+          filter: blob:none
 
       - uses: actions/setup-python@v5
         with:
@@ -105,6 +109,11 @@ jobs:
           PUBLIC_KIT_FORM_ID: ${{ vars.KIT_FORM_ID }}
           PUBLIC_AMAZON_TAG: ${{ vars.AMAZON_TAG || 'usedglass-20' }}
         run: npm run build
+
+      - name: IndexNow snapshot of the live sitemap (before deploy)
+        if: env.CF_DEPLOY == 'true'
+        continue-on-error: true
+        run: node scripts/indexnow.mjs --snapshot
 
       - name: Deploy to Cloudflare Pages
         if: env.CF_DEPLOY == 'true'
