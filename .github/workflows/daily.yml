@@ -116,3 +116,8 @@ jobs:
           # Creates the project on first run (no-op error if it already exists), then uploads dist/.
           npx --yes wrangler@4 pages project create usedglass --production-branch=main || true
           npx --yes wrangler@4 pages deploy dist --project-name=usedglass --branch=main --commit-dirty=true
+
+      - name: IndexNow ping (changed URLs only)
+        if: success() && env.CF_DEPLOY == 'true'
+        continue-on-error: true
+        run: node scripts/indexnow.mjs
