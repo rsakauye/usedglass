@@ -125,7 +125,7 @@ def main(argv: list[str]) -> int:
             by_mk.setdefault(x["model_key"], []).append(x)
     for xs in by_mk.values():
         for x in xs:
-            others = [o["price_cad"] for o in xs if o is not x]
+            others = [o["price_cad"] for o in xs if o is not x and not o.get("bundle")]
             if others and x["price_cad"] < 0.2 * statistics.median(others):
                 x["model_key"], x["model_name"], x["category"] = None, None, "accessory"
                 if x["id"] in state:
@@ -147,10 +147,13 @@ def main(argv: list[str]) -> int:
             hist_by_model.setdefault(s["mk"], []).append(s["p"][-1][1])
     by_id = {x["id"]: x for x in listings}
     for mk, m in models.items():
+        # Camera + lens bundles skew a body's typical price: the median uses body-only listings when there are any.
+        # The minimum keeps bundles, since a kit is sometimes the cheapest way to get the body.
         prices = sorted(by_id[i]["price_cad"] for i in m["listing_ids"])
+        solo = sorted(by_id[i]["price_cad"] for i in m["listing_ids"] if not by_id[i].get("bundle")) or prices
         m["count"] = len(prices)
         m["min_price"] = prices[0]
-        m["median_price"] = round(statistics.median(prices), 2)
+        m["median_price"] = round(statistics.median(solo), 2)
         hp = hist_by_model.get(mk, [])
         m["median_90d"] = round(statistics.median(hp), 2) if hp else None
         m["observations_90d"] = len(hp)

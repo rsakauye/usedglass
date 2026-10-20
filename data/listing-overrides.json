@@ -1,0 +1,127 @@
+{
+ "_about": "Hand-checked fixes the title matcher gets wrong, keyed by stable listing id. Proposed by a one-off local model pass over all listings (every value backed by a title quote), then verified by hand. Fields: category, model_key (null = keep off model pages), bundle.",
+ "listings": {
+  "beauphoto-5d83145187": {
+   "category": "camera",
+   "bundle": true,
+   "note": "Nikon V1 kit with four lenses"
+  },
+  "beauphoto-63e213ed4a": {
+   "category": "camera",
+   "note": "Canon EOS 850 is a film body"
+  },
+  "beauphoto-715bde9a43": {
+   "category": "lens",
+   "note": "Nikon AF Fisheye 10.5mm f2.8 G ED DX is a lens, was on the Nikon F2 page"
+  },
+  "beauphoto-a14d2760c7": {
+   "category": "accessory",
+   "note": "Nisi 150mm filter system starter kit"
+  },
+  "cameratraders-3c36e39b81": {
+   "category": "flash/lighting",
+   "note": "Fujifilm EF-X20 flash, was on the X20 page"
+  },
+  "cameratraders-59a4a90ad3": {
+   "category": "accessory",
+   "note": "Nikon MS-D200 battery holder, was on the D200 page"
+  },
+  "cameratraders-77fbe83498": {
+   "category": "accessory",
+   "note": "Minolta lens shade"
+  },
+  "cameratraders-842960b5a8": {
+   "category": "accessory",
+   "note": "Pentax 67 focus handle, was on the Pentax 67 page"
+  },
+  "camtec-3ded7966ea": {
+   "category": "accessory",
+   "note": "Nikon ME-D10 microphone"
+  },
+  "camtec-3fddbf8613": {
+   "category": "accessory",
+   "note": "Sony 21mm wide converter for the FE 28mm, not a 21mm lens"
+  },
+  "camtec-9f7019d115": {
+   "category": "accessory",
+   "note": "Sony 21mm wide converter for the FE 28mm, not a 21mm lens"
+  },
+  "camtec-f5aa2ae5bd": {
+   "category": "accessory",
+   "note": "Mamiya 645 Pro power grip, was on the body page"
+  },
+  "downtowncamera-0ca51ab647": {
+   "category": "accessory",
+   "note": "Fujifilm TLC-X100 tele converter, was on the X100 page"
+  },
+  "downtowncamera-74b523d519": {
+   "category": "camera",
+   "note": "Kiev 30 subminiature camera, not a 30mm lens"
+  },
+  "downtowncamera-c3954b32ca": {
+   "category": "camera",
+   "bundle": true,
+   "note": "Rolleiflex SLX with three lenses"
+  },
+  "downtowncamera-dc2eaf98f4": {
+   "category": "camera",
+   "note": "Nikon Coolpix A compact, not an 18.5mm lens"
+  },
+  "gosselin-08be67406d": {
+   "category": "accessory",
+   "note": "Nisi ND filter kit"
+  },
+  "gosselin-ded42e01d9": {
+   "category": "accessory",
+   "note": "PolarPro 77mm filter"
+  },
+  "mcbain-1a2e62cedc": {
+   "category": "accessory",
+   "note": "Nikon BR-2 reversing ring"
+  },
+  "mcbain-20f4d58e22": {
+   "category": "accessory",
+   "note": "Mamiya 645 lens hood"
+  },
+  "mcbain-28580422dc": {
+   "category": "accessory",
+   "note": "Canon 52mm lens cap"
+  },
+  "mcbain-2e152d90ed": {
+   "category": "accessory",
+   "note": "Pentax lens hood"
+  },
+  "mcbain-403e8031bb": {
+   "category": "accessory",
+   "note": "Hasselblad lens shade"
+  },
+  "mcbain-4ad46f4198": {
+   "category": "accessory",
+   "note": "Hasselblad H 1.7x converter, was on the H1 body page"
+  },
+  "mcbain-7eebee1495": {
+   "category": "accessory",
+   "note": "Fujinon 62mm protector filter"
+  },
+  "mcbain-86bb34ee4a": {
+   "category": "accessory",
+   "note": "Fujifilm 8mm video cassettes"
+  },
+  "mcbain-951a191e46": {
+   "category": "accessory",
+   "note": "Manfrotto caster set"
+  },
+  "mcbain-a4bb8c8f83": {
+   "category": "accessory",
+   "note": "Olympus accessory shoe, was on the OM-1 page"
+  },
+  "mcbain-c8dfbd8744": {
+   "category": "accessory",
+   "note": "Fujica lens shade"
+  },
+  "thecamerastore-db6240eefa": {
+   "model_key": null,
+   "note": "Panasonic 1.4x teleconverter, was on a 200mm lens page"
+  }
+ }
+}

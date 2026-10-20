@@ -103,6 +103,36 @@ class NormalizeTests(unittest.TestCase):
         self.assertEqual(L("Nikon D3200", condition_hint="Some cosmetic wear, scuffs on the screen")["condition"], "Good")
 
 
+    def test_camera_kits_and_film_format(self):
+        for t in ("Canon Open Box EOS R100 Mirrorless Camera 18-45mm Lens", "Used Nikon F55 w/ 28-80mm f3.5",
+                  "Used Linhof Technika w/ Xenar 105mm f3.5", "Pentax ES 35mm Film SLR Camera Body (AS IS - Parts) Used",
+                  "Canon Rebel Ti Used 35mm SLR"):
+            self.assertEqual(L(t)["category"], "camera", t)
+        self.assertTrue(L("NIKON FE2 W/50F1.8 Ai NIKKOR").get("bundle"))
+        self.assertTrue(L("Used Nikon F55 w/ 28-80mm f3.5").get("bundle"))
+        self.assertFalse(L("Nikon F2AS 35mm Film SLR Camera Body (BGN) Used").get("bundle"))
+        self.assertNotEqual(L("Used Nikon F55 w/ 28-80mm f3.5")["model_key"], "camera-nikon-f3")  # f3.5 is an aperture
+        self.assertIsNone(L("Canon TX 35mm Film SLR Camera with 50mm F1.8 Lens - Used")["model_key"])
+        for t in ("Nikon BR-2 reversing ring with 52mm thread.", "Schneider B+W 138mm UV-410 Haze", "Used Slr Magic Cine 18mm f/2.8"):
+            self.assertNotEqual(L(t)["category"], "camera", t)
+        for t in ("Used Sigma APO 70-200mm f/2.8 II w/ 2X Tele converter", "Nikon TC-14E III 1.4X F-mount Teleconverter"):
+            self.assertEqual(L(t)["category"], "lens", t)
+
+    def test_accessories_that_mention_a_focal_or_body(self):
+        for t in ("Nikon Focusing Screens for F3", "Nikon 22mm Eyepieces", "Used Nisi 150mm holder system for Sigma 14mm f1.8 lens",
+                  "Kodak Carousel 35mm Slide Trays", "Canon C-8 Tele Converter 1.6X (48mm)", "The ExpoDisc (67mm)"):
+            self.assertEqual(L(t)["category"], "accessory", t)
+            self.assertIsNone(L(t)["model_key"], t)
+
+    def test_overrides_file_entries_are_well_formed(self):
+        from scraper.normalize import listing_overrides
+        o = listing_overrides()
+        self.assertTrue(o)
+        for lid, v in o.items():
+            self.assertLessEqual(set(v), {"category", "model_key", "bundle", "note"}, lid)
+            self.assertIn(v.get("category", "lens"), {"lens", "camera", "accessory", "flash/lighting"}, lid)
+
+
 class DisplayTitleTests(unittest.TestCase):
     def test_gosselin_prefix_and_pour(self):
         x = make_listing("gosselin", "Gosselin Photo", "USAGE (7) - Image 28mm f/2.8 pour Canon FD", "99", "u",

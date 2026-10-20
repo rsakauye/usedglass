@@ -208,7 +208,21 @@ TELECONV_RX = r"\b(teleconverter|extender|tc-?\d|ef ?\d\.\dx|\d\.\dx)\b"
 # Paper, packaging and drive accessories that mention a camera/lens model but are not one ("Leica M5 Instruction Manual")
 STRONG_ACCESSORY_RX = (r"\b(instruction|instructions|manual|manuals|brochure|booklet|book|guide|catalogu?e|poster|"
                        r"empty box|box only|original box|winder|motor ?drive|power ?winder|data ?back|film back|film magazine|"
-                       r"lens board|focusing rail|selfie stick|cage)\b")
+                       r"lens board|focusing rail|selfie stick|cage|focusing screens?|eyepieces?|filter holder|holder system|"
+                       r"holder kit|slide trays?|expodisc|tc-dc\d+\w*|(tele|wide)[- ]converter\b.{0,20}\(\d{2}mm\))(?!\w)")
+
+
+FILM_CAMERA_RX = (r"\b(film|slr|bridge|instant|rangefinder|point[- ]and[- ]shoot) camera\b|\b35 ?mm (used )?(film )?slr\b|"
+                  r"\bcamera body\b")
+BUNDLE_JOIN_RX = r"(?<!\S)\+|\bw/|\bwith\b|\bavec\b|\bkit\b"
+
+
+def is_bundle(text: str, category: str) -> bool:
+    """A camera sold with a lens ("Nikon FE2 w/50F1.8", "Z fc with 16-50mm Lens"). Its price is not the body's price."""
+    if category != "camera":
+        return False
+    t = text.lower()
+    return any(find_focal(t[m.end():])[0] is not None for m in re.finditer(BUNDLE_JOIN_RX, t))
 
 
 def detect_category(text: str, hint: str = "") -> str:
@@ -225,10 +239,20 @@ def detect_category(text: str, hint: str = "") -> str:
     if am and (not has_focal or am.start() < fpos or not re.search(APERTURE_RX, t) and not re.search(FOCAL_SHORT_RX, t)):
         # "Lens Hood HB-78 (for 70-200mm f2.8)" -> accessory; "50mm f1.8 with hood" -> lens
         return "accessory"
+    if re.search(FILM_CAMERA_RX, t) and not re.search(r"\b(for|pour|fits)\b", t):
+        return "camera"  # "Pentax ES 35mm Film SLR Camera Body": 35mm is the film format, not a focal length
     if has_focal or re.search(r"\blens\b|\bobjectif\b|\bnikkor\b|\bzuiko\b", t):
         if re.search(CAMERA_RX, t) and re.search(r"\b(kit|w/|with|avec)\b", t):
             return "camera"  # camera kit
         prefix = t[:fpos] if fpos > 0 else ""
+        if prefix and re.search(r"\b(camera|cam[eé]ra|mirrorless|dslr|body|bo[iî]tier|rangefinder)\b", prefix) \
+                and not re.search(r"\b(for|pour|lens|objectif)\b", prefix):
+            return "camera"  # "Canon EOS R100 Mirrorless Camera 18-45mm Lens" is a camera kit
+        jm = re.search(r"((?<!\S)\+|\bw/|\bwith\b|\bavec\b)(\s*[\w.-]+){0,2}\s*$", prefix)
+        if jm and re.search(r"[a-z]", prefix[:jm.start()].replace("used", "")) \
+                and not re.search(r"\b(lens|objectif|for|pour|adapter|nikkor|zuiko|summicron|elmarit|takumar|rokkor|hexanon|planar|sonnar|"
+                                  r"helios|jupiter|lensbaby|ring|filter|teleconverter|extender|tc-?\d|\d\.\dx)\b", prefix[:jm.start()]):
+            return "camera"  # "Nikon F55 w/ 28-80mm", "Linhof Technika w/ Xenar 105mm": body + lens kit
         if prefix and re.search(r"\+|\bw/|\bwith\b|\bavec\b|\bkit\b", prefix) and camera_model(prefix, detect_brand(prefix, lens_boost=False)):
             return "camera"  # "Nikon Z30 + 16-50mm", "PANASONIC G85 W/12-35"
         return "lens"
@@ -525,6 +549,8 @@ def lens_key(text: str, brand: str | None, mount: str | None) -> tuple[str | Non
 
 def camera_model(text: str, brand: str | None) -> tuple[str, str] | None:
     t = html.unescape(text).lower()
+    # Drop apertures so "Nikon F55 w/ 28-80mm f3.5" or "Nikon Df + 50mm f1.8" do not read as an F3 / F1 body
+    t = re.sub(r"(?<![a-z])f/?\s?\d{1,2}\.\d+|(?<=\d)f/?\d{1,2}(?:\.\d+)?", " ", t)
     pats = {
         "Canon": r"(?<![-/\w])(?:eos\s?)?(r\d{1,3}[a-z]?|(?<=eos )r|rp|\d{1,4}d[sxr]{0,2}|rebel\s?[a-z]{1,2}\d*i?|m\d{0,3}|g\d{1,2}x?|powershot\s?\w+|ae-?1(?:\s?program)?|at-?1|av-?1|al-?1|a-?1|t(?:50|60|70|80|90)|f-?1n?|ftb\w?|elan\s?\w+)"
                  r"(?:\s?(?:mark|mk|m)\s?(ii|iii|iv|2|3|4))?\b",
@@ -627,8 +653,11 @@ def make_listing(dealer_id: str, dealer: str, title: str, price, url: str, *, sk
                  fetched_at: str, source: str = "dealer", image: str | None = None, location: str | None = None,
                  mount_hint: str = "") -> dict:
     title = clean_title(title)
+    ident = sku or url or title
+    lid = f"{dealer_id}-" + hashlib.sha1(f"{ident}|{title if not sku else ''}".encode()).hexdigest()[:10]
+    override = listing_overrides().get(lid, {})
     brand = detect_brand(title, brand_hint)
-    category = detect_category(title, category_hint)
+    category = override.get("category") or detect_category(title, category_hint)
     if category == "camera":  # "Sony A7 III + Sigma 35mm" is a Sony camera, not a Sigma
         brand = detect_brand(title, brand_hint, lens_boost=False)
     mount = (MOUNT_ALIASES.get(mount_hint.strip().lower()) if mount_hint else None) \
@@ -640,12 +669,33 @@ def make_listing(dealer_id: str, dealer: str, title: str, price, url: str, *, sk
         model_key, model_name = camera_key(title, brand)
     else:
         model_key, model_name = None, None
-    ident = sku or url or title
-    lid = f"{dealer_id}-" + hashlib.sha1(f"{ident}|{title if not sku else ''}".encode()).hexdigest()[:10]
-    return {
+    if "model_key" in override and override["model_key"] is None:
+        model_key, model_name = None, None
+    out = {
         "id": lid, "dealer_id": dealer_id, "dealer": dealer, "source": source, "title": display_title(title),
         "title_raw": title,
         "brand": brand, "mount": mount, "category": category, "condition": condition,
         "model_key": model_key, "model_name": model_name, "price_cad": parse_price(price), "url": url,
         "in_stock": bool(in_stock), "image": image, "location": location, "fetched_at": fetched_at,
     }
+    if override.get("bundle", is_bundle(title, category)):
+        out["bundle"] = True
+    return out
+
+
+_OVERRIDES: dict | None = None
+
+
+def listing_overrides() -> dict:
+    """Hand-checked per-listing fixes (data/listing-overrides.json), keyed by stable listing id.
+    Each entry may set "category", "model_key": null (keep off model pages) and/or "bundle"."""
+    global _OVERRIDES
+    if _OVERRIDES is None:
+        import json
+        from pathlib import Path
+        p = Path(__file__).resolve().parent.parent / "data" / "listing-overrides.json"
+        try:
+            _OVERRIDES = json.loads(p.read_text()).get("listings", {})
+        except (OSError, ValueError):
+            _OVERRIDES = {}
+    return _OVERRIDES
