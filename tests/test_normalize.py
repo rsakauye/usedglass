@@ -1,6 +1,6 @@
 import unittest
 
-from scraper.normalize import display_title, make_listing
+from scraper.normalize import display_title, explicit_mount, make_listing
 
 
 def L(title, **kw):
@@ -144,6 +144,70 @@ class DisplayTitleTests(unittest.TestCase):
         self.assertEqual(x["condition"], "Fair")  # Gosselin grade 7 = 70-79% of original condition
         self.assertEqual(display_title("USAGE (8) - Takumar 135mm pour monture M42"), "Takumar 135mm for M42 mount")
         self.assertEqual(display_title("USAGE (8) - boule de crystal pour photographie"), "boule de crystal pour photographie")
+
+
+class VariantAndMountTests(unittest.TestCase):
+    """Real Oct 20, 2026 dealer titles. First drafted by qwen2.5-coder, reviewed and corrected by hand."""
+
+    def test_suffix_variant_beats_base_model(self):
+        cases = [
+            ("Canon EOS R50 V with RF-S 14-30mm F4-6.3 IS STM PZ \\Bonus Battery OPEN BOX", "camera-canon-r50-v"),
+            ("OM System Open Box OM-1 Mark II Mirrorless Camera Body", "camera-om-system-om1-ii"),
+            ("Canon EOS R5 II (Body) - *A*", "camera-canon-r5-ii"),
+            ("NIKON Z6 MK2 >112K", "camera-nikon-z6-ii"),
+            ("Canon 5D III Used DSLR Camera", "camera-canon-5d-iii"),
+            ("Canon 6D II DSLR Camera Body - Used", "camera-canon-6d-ii"),
+            ("Fujifilm X-T30 III Used Mirrorless Camera Body", "camera-fujifilm-xt30-iii"),
+            ("Pentax K-1 Mark II body", "camera-pentax-k1-ii"),
+            ("Canon EOS 5D Mark IV", "camera-canon-5d-iv"),
+        ]
+        for title, key in cases:
+            with self.subTest(title=title):
+                x = L(title)
+                self.assertEqual((x["category"], x["model_key"]), ("camera", key), title)
+
+    def test_kit_lens_version_does_not_attach_to_body(self):
+        cases = [
+            ("Canon EOS Rebel T3 + 18-55mm F3.5-5.6 III (B-EX, L-BGN) Used", "camera-canon-rebelt3"),
+            ("Nikon D3300 + 18-55mm f3.3-5.6 VR II (EX+) used", "camera-nikon-d3300"),
+            ("Canon EOS R100 Mirrorless Camera 18-45mm Lens OPEN BOX", "camera-canon-r100"),
+        ]
+        for title, key in cases:
+            with self.subTest(title=title):
+                self.assertEqual(L(title)["model_key"], key, title)
+
+    def test_stated_mount_beats_marker_guess(self):
+        cases = [
+            ("Tamron Demo 18-300mm f/3.5-6.3 Di III-A VC VXD FUJI X", "Fujifilm X"),
+            ("Sigma 16mm F1.4 DC DN (EX+) Used Lens For Fujifilm X Mount", "Fujifilm X"),
+            ("Sigma Open Box 24-70mm f2.8 DG DN II Art Lens L mount", "L-Mount"),
+            ("SIGMA 60F2.8 DN M4/3", "Micro Four Thirds"),
+            ("USAGE (8) - Sigma 30mm f/1.4 DC DN Contemporary pour Micro 4/3", "Micro Four Thirds"),
+            ("Sony FE 28-135mm f4 SSM PZ *Used", "Sony E"),
+            ("Sigma 18-50mm F2.8 DC DN Contemporary Sony E", "Sony E"),
+            ("Tamron 28-75mm F2.8 Di III RXD", "Sony E"),  # no mount stated: the Di III marker still decides
+        ]
+        for title, mount in cases:
+            with self.subTest(title=title):
+                x = L(title)
+                self.assertEqual((x["category"], x["mount"]), ("lens", mount), title)
+
+    def test_micro_four_thirds_is_not_macro(self):
+        self.assertNotIn("macro", L("USAGE (8) - Sigma 16mm f/1.4 DC DN micro 4/3")["model_key"])
+        self.assertIn("macro", L("Nikon AF Micro-Nikkor 60mm f/2.8D")["model_key"])
+
+    def test_explicit_mount_needs_exactly_one(self):
+        self.assertIsNone(explicit_mount("Metabones Canon EF to Sony E-mount adapter"))
+        self.assertEqual(explicit_mount("Viltrox 23mm f/1.4 for Nikon Z"), "Nikon Z")
+        self.assertIsNone(explicit_mount("Fujifilm X-T3 body"))
+        self.assertIsNone(explicit_mount("Sigma 35mm f/1.4 DG HSM Art"))
+
+
+def load_tests(loader, tests, pattern):
+    # tests/test_builders.py rides along so the existing Actions step runs it too
+    from tests import test_builders
+    tests.addTests(loader.loadTestsFromModule(test_builders))
+    return tests
 
 
 if __name__ == "__main__":

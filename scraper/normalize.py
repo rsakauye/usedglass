@@ -376,6 +376,31 @@ CAMERA_MOUNT_RULES: list[tuple[str | None, str, str]] = [
 ]
 
 
+# A mount stated outright in a lens title ("... Di III-A VC VXD FUJI X", "for Nikon Z", "X-mount") beats shorthand
+# markers like "Di III" (Sony E) and brand defaults. Used only when exactly one mount is stated, so adapter
+# titles naming two mounts fall through to the normal rules.
+EXPLICIT_MOUNT_RULES = [
+    ("Fujifilm X", r"\bx[- ]mount\b|\bfor fuji(film)? x\b|\bfuji(film)? x\b(?![-\w])"),
+    ("Fujifilm G", r"\bg[- ]mount\b|\bfor (fujifilm )?gfx\b"),
+    ("Sony E", r"\b(sony )?e[- ]mount\b|\bfor sony e\b|\bsony fe\b|\bfor sony fe\b"),
+    ("Sony A", r"\b(sony )?a[- ]mount\b|\bfor sony a\b(?![-\w])"),
+    ("Nikon Z", r"\bz[- ]mount\b|\bfor nikon z\b|\bnikon z\b(?![-\w])"),
+    ("Nikon F", r"\bf[- ]mount\b|\bfor nikon f\b(?![-\w])"),
+    ("Canon RF", r"\brf[- ]mount\b|\bfor canon rf\b|\bcanon rf\b(?![-\w])"),
+    ("Canon EF", r"\bef[- ]mount\b|\b(for )?canon ef\b(?![-\w])"),
+    ("L-Mount", r"\bl[- ]mount\b"),
+    ("Micro Four Thirds", r"\bmicro (four thirds|4/3)\b|\bm4/3\b|\bmft\b"),
+    ("Pentax K", r"\bk[- ]mount\b|\bpentax k\b(?![-\w])"),
+    ("Leica M", r"\bm[- ]mount\b|\bleica m\b(?![-\w])"),
+]
+
+
+def explicit_mount(text: str) -> str | None:
+    t = text.lower()
+    hits = {m for m, rx in EXPLICIT_MOUNT_RULES if re.search(rx, t)}
+    return hits.pop() if len(hits) == 1 else None
+
+
 def detect_mount(text: str, brand: str | None, category: str, hint: str = "") -> str | None:
     t = f"{text} {hint}".lower()
     if category == "camera":
@@ -385,6 +410,8 @@ def detect_mount(text: str, brand: str | None, category: str, hint: str = "") ->
         return None
     if category not in {"lens", "accessory", "flash/lighting"}:
         return None
+    if category == "lens" and (em := explicit_mount(text)):
+        return em
     for mount, rx in LENS_MOUNT_RULES:
         if re.search(rx, t):
             # guard brand-specific shorthand against mismatched brands
@@ -491,7 +518,7 @@ DESIGNATORS = [
     (r"(?<=\d)l\b|\bl\b(?= ?(is|usm|ii|iii)\b)|\bl-series\b|\b\d+(\.\d)?l\b", "L"),
     (r"(?<![-\w])s\b(?!-)", "S"),
     (r"\bart\b", "ART"), (r"\bcontemporary\b|\b\| ?c\b", "C"), (r"\bsports?\b(?! photo)", "SPORT"),
-    (r"\bmacro\b|\bmicro\b(?! four)", "MACRO"), (r"\bfisheye\b|\bfish-?eye\b", "FISHEYE"),
+    (r"\bmacro\b|\bmicro\b(?! ?(four|4/3))", "MACRO"), (r"\bfisheye\b|\bfish-?eye\b", "FISHEYE"),
     (r"\btilt|\bshift\b|\bts-e\b|\bpc-e\b", "TS"), (r"\bdx\b", "DX"), (r"\bpro\b", "PRO"),
     (r"\blimited\b|\bltd\b", "LTD"), (r"\bplena\b", "PLENA"), (r"\bnoct\b", "NOCT"),
     (r"\bstm\b", "STM"), (r"\bvcm\b", "VCM"),
@@ -554,15 +581,15 @@ def camera_model(text: str, brand: str | None) -> tuple[str, str] | None:
     t = re.sub(r"(?<![a-z])f/?\s?\d{1,2}\.\d+|(?<=\d)f/?\d{1,2}(?:\.\d+)?", " ", t)
     pats = {
         "Canon": r"(?<![-/\w])(?:eos\s?)?(r\d{1,3}[a-z]?|(?<=eos )r|rp|\d{1,4}d[sxr]{0,2}|rebel\s?[a-z]{1,2}\d*i?|m\d{0,3}|g\d{1,2}x?|powershot\s?\w+|ae-?1(?:\s?program)?|at-?1|av-?1|al-?1|a-?1|t(?:50|60|70|80|90)|f-?1n?|ftb\w?|elan\s?\w+)"
-                 r"(?:\s?(?:mark|mk|m)\s?(ii|iii|iv|2|3|4))?\b",
-        "Nikon": r"\b(z\s?\d{1,2}|zf|zfc|z\s?fc|d\d{1,4}[a-z]?|f\d|fm\d?|fe\d?|coolpix\s?\w+)\s?(ii|iii)?\b",
+                 r"(?:\s?(?:mark|mk|m)\.?\s?(ii|iii|iv|2|3|4)|\s(ii|iii|iv)|(?<=\d) (v)(?![\w-]))?\b",  # "EOS R50 V" is its own model
+        "Nikon": r"\b(z\s?\d{1,2}|zf|zfc|z\s?fc|d\d{1,4}[a-z]?|f\d|fm\d?|fe\d?|coolpix\s?\w+)(?:\s?(?:mark|mk)\.?\s?(ii|iii|2|3)|\s?(ii|iii))?\b",
         "Sony": r"\b(?:alpha|a|α|ilce-?)\s?(7|9|1|7c|7r|7s|7cr|6\d{3}|99|77|68)\s?(?:(ii|iii|iv|v)|m(\d))?\b|\b(rx\d{1,3})\s?(?:(ii|iii|iv|v|vi|vii)|m(\d))?\b|\b(zv-?e\d{1,2}|fx\d{1,2})\b",
-        "Fujifilm": r"\b(x-?(?:t|s|e|h|pro|a|m)\s?\d{1,3}[a-z]?|x100\s?[a-z]{0,2}|gfx\s?\d{2,3}[a-z]{0,2}|x-?\d{2}|xf\d{2})\s?(ii)?\b",
+        "Fujifilm": r"\b(x-?(?:t|s|e|h|pro|a|m)\s?\d{1,3}[a-z]?|x100\s?[a-z]{0,2}|gfx\s?\d{2,3}[a-z]{0,2}|x-?\d{2}|xf\d{2})\s?(?:(?:mark|mk)\.?\s?)?(ii|iii)?\b",
         "Panasonic": r"\b(?:dc-|dmc-)?(gh\d[a-z]?|g\d{1,3}|gx\d{1,3}|s\d[a-z]{0,2}|lx\d{1,3})\s?(ii)?\b",
         "Olympus": r"\b(e-?m\d{1,2})\s?(?:mark|mk)?\s?(ii|iii|iv)?\b|\b(om-?\d|pen-?f|e-?p\d)\b",
-        "OM System": r"\b(om-?\d)\s?(ii)?\b",
+        "OM System": r"\b(om-?\d)\s?(?:(?:mark|mk)\.?\s?)?(ii|iii|2|3)?\b",
         "Leica": r"\b(m\d{1,2}[a-z-]*|q\d?|sl\d?|cl|tl\d?)\b",
-        "Pentax": r"\b(k-?\d{1,4}[a-z]{0,2}|kp|k1000|me super|spotmatic|67)\s?(ii)?\b",
+        "Pentax": r"\b(k-?\d{1,4}[a-z]{0,2}|kp|k1000|me super|spotmatic|67)\s?(?:(?:mark|mk)\.?\s?)?(ii|iii|2|3)?\b",
         "Ricoh": r"\b(gr\s?(?:iii|iv|ii)x?|gr\d?)\b",
         "Minolta": r"\b(x-?\d{3}|xd-?\d{0,2}|xe-?\d?|xg-?\w+|srt-?\s?\d{3}|maxxum \d{4}\w*|dynax \d+\w*|[2-9]000i?|\d{3}si)\b",
         "Hasselblad": r"\b(500\s?c/?m|500\s?c|501\s?cm?|503\s?cw|503\s?cx|x1d\s?ii|x1d|x2d|907x|h\d[a-z]{0,2})\b",

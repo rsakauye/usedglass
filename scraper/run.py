@@ -44,6 +44,30 @@ def save(path: Path, obj, compact: bool = False):
     path.write_text(txt + "\n")
 
 
+def floor_cheap_cameras(listings: list[dict], state: dict) -> None:
+    """A "camera" under 20% of the median of the same model's other body-only listings is an accessory the title
+    matcher mistook for the body (a case, a grip): keep it searchable, just off the model page."""
+    by_mk: dict[str, list[dict]] = {}
+    for x in listings:
+        if x.get("model_key") and x.get("category") == "camera" and x.get("price_cad"):
+            by_mk.setdefault(x["model_key"], []).append(x)
+    for xs in by_mk.values():
+        for x in xs:
+            others = [o["price_cad"] for o in xs if o is not x and not o.get("bundle")]
+            if others and x["price_cad"] < 0.2 * statistics.median(others):
+                x["model_key"], x["model_name"], x["category"] = None, None, "accessory"
+                if x["id"] in state:
+                    state[x["id"]]["mk"] = None
+
+
+def price_stats(xs: list[dict]) -> dict:
+    """count, min_price (bundles included: a kit is sometimes the cheapest way to get the body) and median_price
+    (body-only listings when there are any, since camera + lens bundles skew a body's typical price)."""
+    prices = sorted(x["price_cad"] for x in xs)
+    solo = sorted(x["price_cad"] for x in xs if not x.get("bundle")) or prices
+    return {"count": len(prices), "min_price": prices[0], "median_price": round(statistics.median(solo), 2)}
+
+
 def main(argv: list[str]) -> int:
     now_dt = dt.datetime.now(dt.timezone.utc)
     now = now_dt.isoformat(timespec="seconds")
@@ -119,17 +143,7 @@ def main(argv: list[str]) -> int:
     # Price sanity: a "camera" listed under 20% of the median of the same model's other listings is an accessory
     # the title matcher mistook for the body (a case, a grip). Keep it searchable, just off the model page.
     # Lenses are not floored: cheap third-party or worn copies are real and are often the best deals.
-    by_mk: dict[str, list[dict]] = {}
-    for x in listings:
-        if x.get("model_key") and x.get("category") == "camera" and x.get("price_cad"):
-            by_mk.setdefault(x["model_key"], []).append(x)
-    for xs in by_mk.values():
-        for x in xs:
-            others = [o["price_cad"] for o in xs if o is not x and not o.get("bundle")]
-            if others and x["price_cad"] < 0.2 * statistics.median(others):
-                x["model_key"], x["model_name"], x["category"] = None, None, "accessory"
-                if x["id"] in state:
-                    state[x["id"]]["mk"] = None
+    floor_cheap_cameras(listings, state)
     current_ids = {x["id"] for x in listings}
     models: dict[str, dict] = {}
     for x in listings:
@@ -149,11 +163,7 @@ def main(argv: list[str]) -> int:
     for mk, m in models.items():
         # Camera + lens bundles skew a body's typical price: the median uses body-only listings when there are any.
         # The minimum keeps bundles, since a kit is sometimes the cheapest way to get the body.
-        prices = sorted(by_id[i]["price_cad"] for i in m["listing_ids"])
-        solo = sorted(by_id[i]["price_cad"] for i in m["listing_ids"] if not by_id[i].get("bundle")) or prices
-        m["count"] = len(prices)
-        m["min_price"] = prices[0]
-        m["median_price"] = round(statistics.median(solo), 2)
+        m.update(price_stats([by_id[i] for i in m["listing_ids"]]))
         hp = hist_by_model.get(mk, [])
         m["median_90d"] = round(statistics.median(hp), 2) if hp else None
         m["observations_90d"] = len(hp)
