@@ -1,31 +1,30 @@
 {
  "date": "2026-10-20",
- "generated_at": "2026-10-20T06:42:25+00:00",
+ "generated_at": "2026-10-20T14:31:54+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "camtec-6aa2b4ac79",
-  "title": "Sony ZEISS Sonnar FE 55mm f/1.8 ZA T* - *A*",
-  "dealer": "Camtec Photo",
-  "url": "https://www.camtecphoto.com/en/product/sony-zeiss-sonnar-fe-55mm-f18-za-t-a-4",
-  "price_cad": 445.0,
-  "comp_median": 895.0,
+  "id": "gosselin-5ed6169a53",
+  "title": "Nikon EM + 50mm f/1.8",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-em-50mm-f-18-u107358",
+  "price_cad": 119.0,
+  "comp_median": 179.99,
   "comps": 3,
-  "model_key": "lens-zeiss-sony-e-55mm-f1_8",
-  "model_name": "Zeiss 55mm f/1.8 (Sony E)",
-  "condition": "Excellent",
+  "model_key": "lens-nikon-nikon-f-50mm-f1_8",
+  "model_name": "Nikon 50mm f/1.8 (Nikon F)",
+  "condition": "Good",
   "reasons": [
-   "50% below the median of 3 comparable listings"
+   "34% below the median of 3 comparable listings"
   ],
-  "score": 53.3,
-  "is_new": false,
+  "score": 44.9,
+  "is_new": true,
   "deal_score": 100,
   "score_why": [
-   "50% below the median of 3 comparable listings",
-   "36% of the new price ($1,249); used ones this age typically sell around 75%",
+   "34% below the median of 3 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-20T06:42:25+00:00"
+  "fetched_at": "2026-10-20T14:31:54+00:00"
  },
  "deals": [
   {
@@ -51,7 +50,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -76,7 +75,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -101,7 +100,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -127,7 +126,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "thecamerastore-3a35017255",
+   "title": "Nikkor 50mm AF f1.8 *USED",
+   "dealer": "The Camera Store",
+   "url": "https://thecamerastore.com/products/nikkor-50mm-af-s-f1-8-used-copy",
+   "price_cad": 100.0,
+   "comp_median": 179.99,
+   "comps": 3,
+   "model_key": "lens-nikon-nikon-f-50mm-f1_8",
+   "model_name": "Nikon 50mm f/1.8 (Nikon F)",
+   "condition": null,
+   "reasons": [
+    "44% below the median of 3 comparable listings"
+   ],
+   "score": 47.4,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "44% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -152,7 +176,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-5ed6169a53",
+   "title": "Nikon EM + 50mm f/1.8",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-em-50mm-f-18-u107358",
+   "price_cad": 119.0,
+   "comp_median": 179.99,
+   "comps": 3,
+   "model_key": "lens-nikon-nikon-f-50mm-f1_8",
+   "model_name": "Nikon 50mm f/1.8 (Nikon F)",
+   "condition": "Good",
+   "reasons": [
+    "34% below the median of 3 comparable listings"
+   ],
+   "score": 44.9,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "34% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -177,7 +226,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -202,7 +251,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -228,7 +277,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -253,7 +302,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -278,7 +327,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -303,7 +352,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -328,7 +377,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -353,7 +402,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -378,7 +427,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -403,7 +452,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -430,7 +479,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -456,7 +505,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -482,7 +531,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -508,7 +557,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -534,7 +583,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -560,7 +609,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -586,7 +635,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -612,7 +661,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -638,7 +687,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -664,7 +713,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -689,7 +738,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -716,7 +765,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -742,7 +791,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -767,7 +816,7 @@
     "announced 2021-09: on sale through 5 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -792,7 +841,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -818,7 +867,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -844,33 +893,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-a18ca95aa0",
-   "title": "Nikon Z 24-70mm f/4 S",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-z-24-70mm-f-4-s-u107259",
-   "price_cad": 599.0,
-   "comp_median": 749.99,
-   "comps": 6,
-   "model_key": "lens-nikon-nikon-z-24-70mm-f4-s",
-   "model_name": "Nikon 24-70mm f/4 S (Nikon Z)",
-   "condition": "Good",
-   "reasons": [
-    "20% below the median of 6 comparable listings"
-   ],
-   "score": 26.1,
-   "is_new": false,
-   "deal_score": 94,
-   "score_why": [
-    "20% below the median of 6 comparable listings",
-    "46% of the new price ($1,299); used ones this age typically sell around 75%",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -895,7 +918,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -920,7 +943,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -945,7 +968,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -970,7 +993,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -995,7 +1018,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -1022,7 +1045,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -1048,7 +1071,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -1074,7 +1097,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -1102,7 +1125,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   },
   {
    "type": "listing",
@@ -1129,7 +1152,29 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-20T06:42:25+00:00"
+   "fetched_at": "2026-10-20T14:31:54+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "cameracanada-0511df8340",
+   "title": "OM System Open Box OM-1 Mark II Mirrorless Camera Body",
+   "dealer": "Camera Canada",
+   "url": "https://www.cameracanada.com/products/productDetail.aspx?pid=V210040BU000OBD",
+   "price_cad": 2679.0,
+   "comp_median": null,
+   "comps": 1,
+   "model_key": "camera-om-system-om1",
+   "model_name": "OM System OM1",
+   "condition": "Like New",
+   "reasons": [
+    "price dropped 11% (was $2,999)"
+   ],
+   "score": 6.4,
+   "is_new": false,
+   "deal_score": null,
+   "score_why": null,
+   "score_basis": null,
+   "fetched_at": "2026-10-20T14:31:54+00:00"
   }
  ],
  "rules": {

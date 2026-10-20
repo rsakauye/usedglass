@@ -3,7 +3,7 @@
  "source_url": "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/",
  "terms_url": "https://www.bankofcanada.ca/terms/",
  "note": "Indicative daily average rates, published around 4:30 p.m. ET on business days. Banks and card issuers charge more.",
- "fetched_at": "2026-10-20T06:42:25+00:00",
+ "fetched_at": "2026-10-20T14:31:54+00:00",
  "series": {
   "USD": {
    "series": "FXUSDCAD",
