@@ -12,6 +12,12 @@ export function getStaticPaths() {
   return Object.values(models).map((m) => ({ params: { key: m.key }, props: { m } }));
 }
 const { m } = Astro.props;
+// Latest firmware from the manufacturer's official page (data/firmware.json, refreshed with scripts/firmware.py).
+// Models without an entry (film bodies, manual lenses, brands not covered yet) show nothing.
+let FW = {};
+try { FW = JSON.parse(fs.readFileSync(path.join(process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data'), 'firmware.json'), 'utf8')).models || {}; } catch {}
+const fw = FW[m.key] || null;
+const fwDate = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
 const amazonUrl = amazonSearchUrl(m.name);
 const best = m.best_score_id ? byId[m.best_score_id] : null;
 const meta = m.meta || null;
@@ -48,6 +54,17 @@ const productLd = inStock.length ? {
       {m.new_price_notes && <div class="muted">New price: {m.new_price_notes.join('; ')}.</div>}
     </div>
   )}
+  {fw && (
+    <div class="fw">
+      {fw.attention && <div class="fw-attn" role="note"><b>⚠️ Attention:</b> {fw.attention}{fw.attention_source && <> <a href={fw.attention_source} rel="nofollow noopener" target="_blank">Source</a></>}</div>}
+      <div class="card fw-card">
+        <span><b>Firmware</b> Ver. {fw.version}</span>
+        <span class="muted">Released {fwDate(fw.released)}</span>
+        <a href={fw.url} rel="nofollow noopener" target="_blank">Official download ↗</a>
+        <span class="muted fw-checked">Checked {fwDate(fw.checked)}</span>
+      </div>
+    </div>
+  )}
   {gaps.length > 0 && <p class="muted">US price check: {gaps.map((g) => `${g.seller} US$${g.price} ≈ ${money(g.landed_cad)} landed (estimate)`).join('; ')}. <a href={u('currency/')}>How we estimate</a></p>}
   {m.mount && m.mount !== 'Fixed Lens' && (m.category === 'lens' || m.category === 'camera') && <p><a href={u(`adapt/?${m.category === 'camera' ? 'body' : 'lens'}=${encodeURIComponent(m.mount)}`)}>{m.category === 'camera' ? 'Which lenses can I adapt to this camera?' : 'Will this fit my camera?'}</a> <span class="muted">Mount adapter checker for {m.mount}.</span></p>}
   {CMP.includes(m.key) && <p><a href={u(`compare/?b=${m.key}`)}>Compare {m.name} stats RPG-style</a> <span class="muted">Radar chart, buffs and known issues vs {CMP.length - 1} other bodies.</span></p>}
@@ -57,3 +74,12 @@ const productLd = inStock.length ? {
   {related.length > 0 && <section><h2 style="font-size:1.15rem">More used {m.brand} {m.category === 'lens' ? 'lenses' : m.category === 'camera' ? 'cameras' : 'gear'}</h2><ul>{related.map((x) => <li><a href={modelUrl(x.key)}>{x.name}</a> <span class="muted">from {money(x.min_price)}</span></li>)}</ul><p class="muted"><a href={u(`models/#${m.category}-${(m.brand || 'Other').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`)}>All {m.brand} {m.category === 'lens' ? 'lenses' : 'cameras'}</a> · <a href={u('models/')}>Every model A–Z</a></p></section>}
   <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
 </Base>
+
+<style>
+  .fw { margin:.6rem 0 1rem; max-width:720px; }
+  .fw-card { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; align-items:baseline; padding:.6rem .9rem; }
+  .fw-checked { font-size:.85rem; }
+  .fw-attn { background:#fff6e0; border:1px solid #e8c873; border-left:4px solid #d9a21b; border-radius:8px; padding:.55rem .8rem; margin-bottom:.5rem; }
+  html[data-theme=dark] .fw-attn { background:#2c2414; border-color:#6b5420; }
+  @media (max-width:640px) { .fw-card { flex-direction:column; gap:.25rem; } }
+</style>

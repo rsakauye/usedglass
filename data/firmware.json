@@ -1,0 +1,702 @@
+{
+ "_about": "Latest firmware per model from manufacturers' official pages. Refresh: python3 scripts/firmware.py",
+ "updated": "2026-10-20",
+ "models": {
+  "camera-fujifilm-gfx100rf": {
+   "version": "1.13",
+   "released": "2026-06-30",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/gfx100rf/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-x100v": {
+   "version": "3.01",
+   "released": "2023-07-04",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x100v/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xa5": {
+   "version": "2.03",
+   "released": "2022-07-27",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-a5/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xe1": {
+   "version": "2.71",
+   "released": "2020-02-13",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xe3": {
+   "version": "1.32",
+   "released": "2026-06-23",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-e3/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xe5": {
+   "version": "1.12",
+   "released": "2026-06-04",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-e5/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xh1": {
+   "version": "2.15",
+   "released": "2026-06-23",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h1/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xh2": {
+   "version": "5.30",
+   "released": "2025-12-02",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xh2s": {
+   "version": "7.30",
+   "released": "2025-12-02",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2s/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xpro1": {
+   "version": "3.82",
+   "released": "2020-09-17",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-pro1/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xpro2": {
+   "version": "5.11",
+   "released": "2024-11-28",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-pro2/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt1": {
+   "version": "5.52",
+   "released": "2020-09-17",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t1/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt100": {
+   "version": "2.03",
+   "released": "2022-07-27",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t100/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt2": {
+   "version": "4.41",
+   "released": "2024-11-28",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t2/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt200": {
+   "version": "1.16",
+   "released": "2022-07-27",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t200/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt3": {
+   "version": "5.11",
+   "released": "2024-03-28",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t3/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt30": {
+   "version": "2.01",
+   "released": "2023-07-04",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t30/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt30-ii": {
+   "version": "2.04",
+   "released": "2024-03-28",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t30-ii/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt5": {
+   "version": "4.31",
+   "released": "2025-07-26",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t5/",
+   "checked": "2026-10-20"
+  },
+  "camera-fujifilm-xt50": {
+   "version": "1.32",
+   "released": "2026-01-15",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t50/",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-coolpixp1000": {
+   "version": "1.9",
+   "released": "2026-08-18",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/604.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-coolpixp1100": {
+   "version": "1.1",
+   "released": "2026-09-03",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/600.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-coolpixs33": {
+   "version": "1.1",
+   "released": "2016-07-14",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/193.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d3200": {
+   "version": "1.04",
+   "released": "2015-06-02",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/148.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d3300": {
+   "version": "1.02",
+   "released": "2017-09-06",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/249.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d3s": {
+   "version": "1.03",
+   "released": "2016-07-13",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/192.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d4": {
+   "version": "1.11",
+   "released": "2018-02-27",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/261.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d4s": {
+   "version": "1.33",
+   "released": "2018-02-27",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/258.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d5200": {
+   "version": "1.03",
+   "released": "2015-09-15",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/153.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d5300": {
+   "version": "1.03",
+   "released": "2018-06-07",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/285.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d600": {
+   "version": "1.04",
+   "released": "2019-02-21",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/316.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d7100": {
+   "version": "1.05",
+   "released": "2022-07-26",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/455.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d7200": {
+   "version": "1.04",
+   "released": "2018-06-07",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/287.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d750": {
+   "version": "1.15",
+   "released": "2019-08-27",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/318.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d7500": {
+   "version": "1.12",
+   "released": "2024-04-25",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/528.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d800e": {
+   "version": "1.11",
+   "released": "2018-02-27",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/265.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-d850": {
+   "version": "1.31",
+   "released": "2024-04-25",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/529.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z30": {
+   "version": "1.20",
+   "released": "2025-05-07",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/556.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z5": {
+   "version": "1.50",
+   "released": "2025-06-10",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/562.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z5-ii": {
+   "version": "1.20",
+   "released": "2026-08-18",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/601.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z50": {
+   "version": "2.60",
+   "released": "2025-04-23",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/555.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z6": {
+   "version": "3.80",
+   "released": "2025-05-13",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/557.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z6-ii": {
+   "version": "1.70",
+   "released": "2025-06-03",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/560.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z7": {
+   "version": "3.80",
+   "released": "2025-05-13",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/558.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z7-ii": {
+   "version": "1.70",
+   "released": "2025-06-04",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/561.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-z9": {
+   "version": "5.33",
+   "released": "2026-10-20",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/607.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-zf": {
+   "version": "3.01",
+   "released": "2026-03-31",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/586.html",
+   "checked": "2026-10-20"
+  },
+  "camera-nikon-zfc": {
+   "version": "1.81",
+   "released": "2026-06-02",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/593.html",
+   "checked": "2026-10-20"
+  },
+  "camera-olympus-em1": {
+   "version": "4.6",
+   "released": "2019-02-14",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-olympus-em5": {
+   "version": "2.3",
+   "released": "2018-12-18",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-olympus-em5-ii": {
+   "version": "4.1",
+   "released": "2019-01-24",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-olympus-ep1": {
+   "version": "1.4",
+   "released": "2010-04-22",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-om-system-om1": {
+   "version": "1.9",
+   "released": "2025-11-04",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-om-system-om3": {
+   "version": "1.1",
+   "released": "2025-07-01",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-om-system-om5": {
+   "version": "1.2",
+   "released": "2024-04-11",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-g1": {
+   "version": "1.5",
+   "released": "2010-05-10",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-g9": {
+   "version": "2.7",
+   "released": "2022-04-25",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-gh5": {
+   "version": "2.8",
+   "released": "2022-04-25",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-gx7": {
+   "version": "1.3",
+   "released": "2014-05-22",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-gx9": {
+   "version": "1.5",
+   "released": "2020-07-21",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-s1": {
+   "version": "2.4",
+   "released": "2025-01-23",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index4.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-s5": {
+   "version": "2.9",
+   "released": "2025-07-29",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index4.html",
+   "checked": "2026-10-20"
+  },
+  "camera-panasonic-s5-ii": {
+   "version": "3.7",
+   "released": "2026-03-10",
+   "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index4.html",
+   "checked": "2026-10-20"
+  },
+  "camera-pentax-k1": {
+   "version": "2.51",
+   "released": "2025-12-05",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/k1.html",
+   "checked": "2026-10-20"
+  },
+  "camera-pentax-k5-ii": {
+   "version": "1.07",
+   "released": "2014-03-06",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/k-5_2_s.html",
+   "checked": "2026-10-20"
+  },
+  "camera-pentax-k7": {
+   "version": "1.13",
+   "released": "2014-03-06",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/k-7_s.html",
+   "checked": "2026-10-20"
+  },
+  "camera-ricoh-gr": {
+   "version": "5.01",
+   "released": "2016-06-23",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr_s.html",
+   "checked": "2026-10-20"
+  },
+  "camera-ricoh-griii": {
+   "version": "2.10",
+   "released": "2025-10-23",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr3_s.html",
+   "checked": "2026-10-20"
+  },
+  "camera-ricoh-griiix": {
+   "version": "1.60",
+   "released": "2025-10-23",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr3x_s.html",
+   "checked": "2026-10-20"
+  },
+  "camera-ricoh-griv": {
+   "version": "1.11",
+   "released": "2026-02-13",
+   "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr4_s.html",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-g-500mm-f5_6-lm_stab": {
+   "version": "1.03",
+   "released": "2026-02-03",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/gf500mmf56-r-lm-ois-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-10-24mm-f4-stab": {
+   "version": "1.13",
+   "released": "2020-06-10",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf10-24mmf4-r-ois/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-13-33mm-f3_5-6_3": {
+   "version": "1.01",
+   "released": "2026-04-06",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xc13-33mmf35-63-ois/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-15-45mm-f3_5-5_6-stab": {
+   "version": "1.12",
+   "released": "2024-11-15",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xc15-45mmf35-56-ois-pz/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-16-55mm-f2_8-lm": {
+   "version": "1.33",
+   "released": "2024-08-15",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf16-55mmf28-r-lm-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-16-80mm-f4-stab": {
+   "version": "1.21",
+   "released": "2024-08-15",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf16-80mmf4-r-ois-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-18-135mm-f3_5-5_6-lm_stab": {
+   "version": "1.12",
+   "released": "2020-06-10",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf18-135mmf35-56-r-lm-ois-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-500mm-f5_6-lm_stab": {
+   "version": "1.02",
+   "released": "2026-02-03",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf500mmf56-r-lm-ois-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-56mm-f1_2": {
+   "version": "1.01",
+   "released": "2022-09-29",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf56mmf12-r-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-fujifilm-fujifilm-x-8-16mm-f2_8-lm": {
+   "version": "1.01",
+   "released": "2020-02-13",
+   "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf8-16mmf28-r-lm-wr/",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-100-400mm-f4_5-5_6-s_stab": {
+   "version": "1.10",
+   "released": "2022-04-26",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/448.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-105mm-f2_8-macro_s_stab": {
+   "version": "1.10",
+   "released": "2022-08-02",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/457.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-105mm-f2_8-s_stab": {
+   "version": "1.10",
+   "released": "2022-08-02",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/457.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-12-28mm-f3_5-5_6-dx_s": {
+   "version": "1.10",
+   "released": "2025-12-18",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/576.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-16-50mm-f3_5-6_3-dx": {
+   "version": "1.02",
+   "released": "2024-11-26",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/547.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-16-50mm-f3_5-6_3-dx_stab": {
+   "version": "1.02",
+   "released": "2024-11-26",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/547.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-18-140mm-f3_5-6_3-dx_stab": {
+   "version": "1.01",
+   "released": "2024-02-07",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/510.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-20mm-f1_8-s": {
+   "version": "1.10",
+   "released": "2022-12-20",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/474.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-24-50mm-f4-6_3": {
+   "version": "1.02",
+   "released": "2026-04-07",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/588.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-24-70mm-f2_8-s": {
+   "version": "1.20",
+   "released": "2022-08-02",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/458.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-24mm-f1_8-s": {
+   "version": "1.10",
+   "released": "2022-12-20",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/475.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-28-75mm-f2_8": {
+   "version": "1.10",
+   "released": "2024-11-21",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/522.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-28mm-f2_8": {
+   "version": "1.10",
+   "released": "2024-08-20",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/537.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-35mm-f1_4": {
+   "version": "1.01",
+   "released": "2026-07-01",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/596.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-400mm-f2_8-s_stab": {
+   "version": "1.10",
+   "released": "2023-01-17",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/481.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-40mm-f2": {
+   "version": "1.10",
+   "released": "2024-08-20",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/539.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-50mm-f1_4": {
+   "version": "1.01",
+   "released": "2026-07-01",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/597.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-70-200mm-f2_8-s": {
+   "version": "1.01",
+   "released": "2020-04-14",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/357.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-70-200mm-f2_8-s_stab": {
+   "version": "1.01",
+   "released": "2020-04-14",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/357.html",
+   "checked": "2026-10-20"
+  },
+  "lens-nikon-nikon-z-85mm-f1_8-s": {
+   "version": "1.10",
+   "released": "2022-12-20",
+   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/478.html",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-12-200mm-f3_5-6_3": {
+   "version": "1.1",
+   "released": "2024-02-20",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-12-50mm-f3_5-6_3": {
+   "version": "1.4",
+   "released": "2016-11-01",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-20mm-f1_4": {
+   "version": "1.1",
+   "released": "2023-06-08",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-25mm-f1_8": {
+   "version": "1.1",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-40-150mm-f2_8-pro": {
+   "version": "1.3",
+   "released": "2019-06-19",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-45mm-f1_2-pro": {
+   "version": "1.1",
+   "released": "2019-01-24",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-45mm-f1_8": {
+   "version": "1.2",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-60mm-f2_8": {
+   "version": "1.2",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-60mm-f2_8-macro": {
+   "version": "1.2",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-7-14mm-f2_8-pro": {
+   "version": "1.1",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-75mm-f1_8": {
+   "version": "1.2",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-olympus-micro-four-thirds-8mm-f1_8-fisheye_pro": {
+   "version": "1.2",
+   "released": "2019-01-24",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-om-system-micro-four-thirds-25mm-f1_2-pro": {
+   "version": "1.2",
+   "released": "2025-10-23",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-om-system-micro-four-thirds-45mm-f1_8": {
+   "version": "1.2",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-om-system-micro-four-thirds-7-14mm-f2_8": {
+   "version": "1.1",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  },
+  "lens-om-system-micro-four-thirds-75mm-f1_8": {
+   "version": "1.2",
+   "released": "2015-11-26",
+   "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
+   "checked": "2026-10-20"
+  }
+ }
+}
