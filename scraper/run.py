@@ -116,6 +116,20 @@ def main(argv: list[str]) -> int:
     save(DATA / "history" / f"{today}.json", {"date": today, "run_at": now, "prices": hist}, compact=True)
 
     # ---- models
+    # Price sanity: a "camera" listed under 20% of the median of the same model's other listings is an accessory
+    # the title matcher mistook for the body (a case, a grip). Keep it searchable, just off the model page.
+    # Lenses are not floored: cheap third-party or worn copies are real and are often the best deals.
+    by_mk: dict[str, list[dict]] = {}
+    for x in listings:
+        if x.get("model_key") and x.get("category") == "camera" and x.get("price_cad"):
+            by_mk.setdefault(x["model_key"], []).append(x)
+    for xs in by_mk.values():
+        for x in xs:
+            others = [o["price_cad"] for o in xs if o is not x]
+            if others and x["price_cad"] < 0.2 * statistics.median(others):
+                x["model_key"], x["model_name"], x["category"] = None, None, "accessory"
+                if x["id"] in state:
+                    state[x["id"]]["mk"] = None
     current_ids = {x["id"] for x in listings}
     models: dict[str, dict] = {}
     for x in listings:

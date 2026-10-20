@@ -181,13 +181,13 @@ def detect_brand(text: str, hint: str = "", lens_boost: bool = True) -> str | No
 
 
 # ---------------------------------------------------------------- category
-ACCESSORY_RX = (r"\b(bg-?\w+|mb-?d?\d+|vg-?\w+|hdmi|xlr|power bank|battery pack|hood|cap|caps|filter|battery|batteries|charger|grip|strap|bag|case|backpack|tripod|monopod|head|"
+ACCESSORY_RX = (r"\b(bg-?\w+|blc-?\w+|mhg-?\w+|handgrip|hand grip|np-\w+|bc-\w+|mb-?[dn]?\d+|vg-?\w+|hdmi|xlr|power bank|battery pack|hood|cap|caps|filter|battery|batteries|charger|grip|strap|bag|case|backpack|tripod|monopod|head|"
                 r"plate|cable|cord|remote|release|adapter|adaptor|bague|tube|tubes|extension|eyecup|viewfinder|finder|"
                 r"loupe|screen|focusing screen|bellows|close-?up|diopter|bracket|mount adapter|card|reader|"
                 r"pouch|cover|sunshade|step-?up|lens hood|pare-soleil|bouchon|chargeur|batterie|sac|courroie)\b")
 FLASH_RX = r"\b(flash|speedlite|speedlight|strobe|softbox|light stand|monolight|monohead|led panel|ring light|trigger|transmitter|ttl|st-e\d\S*|\d{3}ex\S*|sb-?\d{3}|hvl-\S+)\b"
 CAMERA_RX = r"\b(body|bo[iî]tier|camera|cam[eé]ra|dslr|slr|mirrorless|rangefinder|point\s?&\s?shoot|compact|camcorder)\b"
-FOCAL_RX = r"(?<![\d.])(\d{1,4}(?:[-–]\d{1,4})?)\s?mm\b"
+FOCAL_RX = r"(?<![\d.])(\d{1,4}(?:[-–]\d{1,4})?)\s?mm(?:\b|(?=f\s?/?\d))"  # "XF18-135mmF3.5" has no gap
 # Downtown Camera style shorthand: "16F1.4", "50-250F4.5-6.3", "7.5F3.5"
 FOCAL_SHORT_RX = r"(?<![\w.])(\d{1,4}(?:\.\d)?(?:-\d{1,4})?)\s?f\s?/?(\d{1,2}(?:\.\d)?(?:-\d{1,2}(?:\.\d)?)?)\b"
 
@@ -201,7 +201,7 @@ def find_focal(t: str):
     if m and not re.match(r"\d{4}$", m.group(1)):
         return m.group(1), m.group(2), m.start()
     return None, None, -1
-APERTURE_RX = r"(?:\bf|\bF|1:|ƒ)\s?/?\s?(\d{1,2}(?:\.\d)?)(?:\s?[-–]\s?(\d{1,2}(?:\.\d)?))?"
+APERTURE_RX = r"(?:\bf|(?<=mm)[fF]|\bF|1:|ƒ)\s?/?\s?(\d{1,2}(?:\.\d)?)(?:\s?[-–]\s?(\d{1,2}(?:\.\d)?))?"
 TELECONV_RX = r"\b(teleconverter|extender|tc-?\d|ef ?\d\.\dx|\d\.\dx)\b"
 
 

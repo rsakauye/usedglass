@@ -8,6 +8,19 @@ def L(title, **kw):
 
 
 class NormalizeTests(unittest.TestCase):
+    def test_glued_focal_is_lens_not_body(self):
+        x = L("Fujifilm XF16-55mmF2.8 R LM WR")
+        self.assertEqual(x["category"], "lens")
+        self.assertEqual(x["model_key"], "lens-fujifilm-fujifilm-x-16-55mm-f2_8-lm")
+        self.assertEqual(L("Fujifilm Open Box FUJINON XF18-135mmF3.5-5.6 R LM OIS WR")["category"], "lens")
+
+    def test_part_number_accessories_not_bodies(self):
+        for t in ("Fujifilm BLC-XT10", "Fujifilm MHG-GFX S Metal Handgrip for GFX 100S - *A+*", "Nikon MB-N10 For Nikon Z6 and Z7 - *A*"):
+            self.assertEqual(L(t)["category"], "accessory", t)
+            self.assertIsNone(L(t)["model_key"], t)
+        x = L("FUJI X-T10 W/16-50 SILVER")
+        self.assertEqual((x["category"], x["model_key"]), ("camera", "camera-fujifilm-xt10"))
+
     def test_lens_basic(self):
         x = L("Nikon NIKKOR Z 24-70mm f/4 S Used Lens")
         self.assertEqual((x["category"], x["brand"], x["mount"]), ("lens", "Nikon", "Nikon Z"))
