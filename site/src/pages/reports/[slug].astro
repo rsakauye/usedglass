@@ -1,0 +1,77 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u, money, modelUrl, meta } from '../../lib/data.js';
+import { getReports } from '../../lib/reports.js';
+export function getStaticPaths() {
+  return getReports().map((r) => ({ params: { slug: r.slug }, props: { r } }));
+}
+const { r } = Astro.props;
+const top = r.rows.filter((x) => x.listings >= 2).slice(0, 3);
+const pct = (v) => Math.round(v * -100) + '%';
+const dealerSites = Object.values(meta.dealer_info || {}).filter((d) => r.dealers.includes(d.name));
+---
+<Base title={r.title} crumb={`${r.topic.brand} ${r.month}`} breadcrumbs={[['Price reports', 'reports/']]} ogType="article"
+  description={`What used ${r.topic.noun} cost at Canadian dealers in ${r.month}: median, low and high prices for ${r.totals.models} models across ${r.totals.listings} listings, plus the biggest price drops.`}>
+  <p class="muted kicker"><a href={u('reports/')}>Price reports</a> › {r.month}</p>
+  <h1>{r.title}</h1>
+  <p class="lede">We tracked <b>{r.totals.listings}</b> used {r.topic.noun} across <b>{r.totals.models}</b> models at <b>{r.totals.dealers}</b> Canadian dealers between {r.fromLabel} and {r.toLabel}. {r.totals.onSaleNow} were still for sale on {r.toLabel}.</p>
+  {!r.complete && <p class="card note">📅 <b>Month in progress.</b> This report updates every day until the end of {r.month}. It covers {r.daysCount} day{r.daysCount === 1 ? '' : 's'} of tracking so far, so treat early numbers as a snapshot rather than a trend.</p>}
+
+  {top.length > 0 && (
+    <>
+      <h2>At a glance</h2>
+      <ul class="glance">
+        {top.map((x) => <li><b>{x.name}</b>: median {money(x.median)} across {x.listings} listings (low {money(x.low)}, high {money(x.high)})</li>)}
+        {r.drops[0] && <li><b>Biggest drop</b>: a {r.drops[0].name} at {r.drops[0].dealer}, down {pct(r.drops[0].pct)} from {money(r.drops[0].from)} to {money(r.drops[0].to)}</li>}
+      </ul>
+    </>
+  )}
+
+  <h2>Prices by model</h2>
+  <p class="muted">Median is the middle of each listing's latest price. Low and high are the lowest and highest prices any listing showed during the month. Condition varies, so check each listing.</p>
+  <div class="rgrid">
+    {r.rows.map((x) => (
+      <article class="card mrow">
+        <h3>{x.hasPage ? <a href={modelUrl(x.key)}>{x.name}</a> : x.name}</h3>
+        <dl>
+          <div><dt>Median</dt><dd>{money(x.median)}</dd></div>
+          <div><dt>Low</dt><dd>{money(x.low)}</dd></div>
+          <div><dt>High</dt><dd>{money(x.high)}</dd></div>
+          <div><dt>Listings</dt><dd>{x.listings}{x.onSaleNow !== x.listings ? ` (${x.onSaleNow} still for sale)` : ''}</dd></div>
+        </dl>
+        {x.hasPage && x.onSaleNow > 0 && <p class="mlink"><a href={modelUrl(x.key)}>See today's listings →</a></p>}
+      </article>
+    ))}
+  </div>
+
+  <h2 id="drops">Notable price drops</h2>
+  {r.drops.length ? (
+    <ul class="drops">
+      {r.drops.map((d) => <li>{d.hasPage ? <a href={modelUrl(d.key)}>{d.name}</a> : d.name} at {d.dealer}: {money(d.from)} → <b>{money(d.to)}</b> (down {pct(d.pct)}){d.onSale ? '' : ', since sold or removed'}</li>)}
+    </ul>
+  ) : <p class="muted">No price drops yet this month. Dealers usually trim prices on listings that sit for a few weeks.</p>}
+
+  <h2>How we made this report</h2>
+  <ul class="method">
+    <li>Data window: {r.fromLabel} to {r.toLabel} ({r.daysCount} daily check{r.daysCount === 1 ? '' : 's'}).</li>
+    <li>Sources: the used listings on each dealer's own website, checked once a day: {r.dealers.join(', ')}.</li>
+    <li>Prices are in Canadian dollars, before tax and shipping, as the dealer listed them.</li>
+    <li>Bodies only. Kits with a lens are included under the body model, which can raise the high price.</li>
+    <li>We leave out listings that look mismatched: lenses or accessories filed under a body name, anything under $150, and anything under 30% of the model's median.</li>
+    <li>We started tracking on October 17, 2026, so there's no month-over-month comparison yet.</li>
+  </ul>
+  <p class="muted">Prices change daily, so always confirm on the dealer's site. Shopping for a body? Check the <a href={u('deals/')}>flagged deals</a>, the <a href={u('drops/')}>latest price drops</a> or <a href={u('compare/')}>compare bodies</a>.</p>
+</Base>
+<style>
+  .kicker { margin:0; }
+  .lede { font-size:1.08rem; }
+  .note { background:#fff8e6; border-color:#f0dca8; }
+  html[data-theme=dark] .note { background:#2a2416; border-color:#5a4a22; }
+  .glance li, .drops li, .method li { margin:.3rem 0; }
+  .rgrid { display:grid; gap:.8rem; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); }
+  .mrow h3 { font-size:1.02rem; margin:0 0 .5rem; }
+  .mrow dl { display:grid; grid-template-columns:1fr 1fr; gap:.3rem .8rem; margin:0; }
+  .mrow dt { font-size:.78rem; text-transform:uppercase; letter-spacing:.03em; opacity:.7; }
+  .mrow dd { margin:0; font-weight:600; }
+  .mlink { margin:.6rem 0 0; font-size:.92rem; }
+</style>

@@ -1,0 +1,28 @@
+---
+import Base from '../../layouts/Base.astro';
+import { u } from '../../lib/data.js';
+import { getReports } from '../../lib/reports.js';
+const reports = getReports();
+---
+<Base title="Monthly used camera price reports for Canada" crumb="Price reports" description="Monthly reports on what used cameras actually cost at Canadian dealers: median, low and high prices, listing counts and the biggest price drops, from our own daily price tracking.">
+  <h1>Monthly price reports</h1>
+  <p class="muted">What used gear really sells for at Canadian dealers, month by month. Every number comes from our own daily check of each dealer's used listings, in CAD. No estimates and no guesses.</p>
+  {reports.length ? (
+    <div class="rgrid">
+      {reports.map((r) => (
+        <a class="card rcard" href={u(`reports/${r.slug}/`)}>
+          <h2>{r.title}</h2>
+          <p class="muted">{r.totals.listings} listings · {r.totals.models} models · {r.totals.dealers} dealers</p>
+          <p class="muted">Data: {r.fromLabel} to {r.toLabel}{r.complete ? '' : ' (month in progress, updated daily)'}</p>
+        </a>
+      ))}
+    </div>
+  ) : <p>The first report is on its way.</p>}
+  <p class="muted">Want a report on a brand or lens? Email <a href="mailto:hello@usedglass.ca">hello@usedglass.ca</a>. You can also browse <a href={u('models/')}>every camera and lens we track</a>.</p>
+</Base>
+<style>
+  .rgrid { display:grid; gap:1rem; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); }
+  .rcard { text-decoration:none; color:inherit; }
+  .rcard h2 { font-size:1.1rem; margin:.1rem 0 .4rem; }
+  .rcard p { margin:.2rem 0; }
+</style>
