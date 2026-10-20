@@ -113,18 +113,6 @@
    "model_name": "Leica 90mm f/2 (Leica M)"
   },
   {
-   "title": "Nikon EM + 50mm f/1.8",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-em-50mm-f-18-u107358",
-   "price_cad": 119.0,
-   "deal_score": 100,
-   "score_why": [
-    "34% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Nikon 50mm f/1.8 (Nikon F)"
-  },
-  {
    "title": "Pentax-M 50mm F2 (BGN) Used Lens",
    "dealer": "McBain Camera",
    "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907079",
@@ -160,6 +148,18 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)"
+  },
+  {
+   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
+   "price_cad": 499.0,
+   "deal_score": 100,
+   "score_why": [
+    "33% below the median of 5 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)"
   }
  ]
 }

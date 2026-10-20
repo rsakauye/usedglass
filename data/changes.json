@@ -1,43 +1,25 @@
 {
  "date": "2026-10-20",
- "new_today": [
-  "gosselin-5ed6169a53",
-  "gosselin-79f006ff1f",
-  "gosselin-4d010882c0",
-  "gosselin-778c9addec",
-  "gosselin-b99264eead",
-  "gosselin-095f9cee4e",
-  "gosselin-e630920d04",
-  "gosselin-83af4406cb",
-  "gosselin-d18a3c5c21",
-  "gosselin-eaf9e035ba",
-  "gosselin-ae78dbcd61",
-  "gosselin-c06ea590b4",
-  "gosselin-11b56f2eb3",
-  "gosselin-0bccc2dae9",
-  "gosselin-bf8fe1f86e",
-  "gosselin-67319f2a05",
-  "gosselin-5c09205bfc",
-  "gosselin-508a4ab7fe",
-  "gosselin-13bd249d24",
-  "gosselin-c31fad0177",
-  "gosselin-506693bb5b",
-  "gosselin-7e2168dd69",
-  "gosselin-4440eaccd8"
- ],
+ "new_today": [],
  "price_dropped": [
   {
-   "id": "cameracanada-0511df8340",
-   "old": 2999.0,
-   "new": 2679.0,
-   "pct": 0.107
+   "id": "cameracanada-fcd8a4f486",
+   "old": 829.0,
+   "new": 799.0,
+   "pct": 0.036
   },
   {
-   "id": "cameracanada-9ce3acea6c",
-   "old": 1229.0,
-   "new": 1199.0,
-   "pct": 0.024
+   "id": "cameracanada-8a2dd1be32",
+   "old": 739.0,
+   "new": 589.0,
+   "pct": 0.203
+  },
+  {
+   "id": "cameracanada-8270f46eff",
+   "old": 599.0,
+   "new": 529.0,
+   "pct": 0.117
   }
  ],
- "removed": 15
+ "removed": 10
 }
