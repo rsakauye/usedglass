@@ -209,7 +209,8 @@ TELECONV_RX = r"\b(teleconverter|extender|tc-?\d|ef ?\d\.\dx|\d\.\dx)\b"
 STRONG_ACCESSORY_RX = (r"\b(instruction|instructions|manual|manuals|brochure|booklet|book|guide|catalogu?e|poster|"
                        r"empty box|box only|original box|winder|motor ?drive|power ?winder|data ?back|film back|film magazine|"
                        r"lens board|focusing rail|selfie stick|cage|focusing screens?|eyepieces?|filter holder|holder system|"
-                       r"holder kit|slide trays?|expodisc|tc-dc\d+\w*|(tele|wide)[- ]converter\b.{0,20}\(\d{2}mm\))(?!\w)")
+                       r"holder kit|slide trays?|expodisc|lens hoods|clip-on lens hoods?|auto-?ext ring\w*|macro auto ring|mounting ring|"
+                       r"lens mount converter|lens adapa?ter|attachable lens mount|film reel|lenskirt|^used filters|film jaune|tc-dc\d+\w*|(tele|wide)[- ]converter\b.{0,20}\(\d{2}mm\))(?!\w)")
 
 
 FILM_CAMERA_RX = (r"\b(film|slr|bridge|instant|rangefinder|point[- ]and[- ]shoot) camera\b|\b35 ?mm (used )?(film )?slr\b|"

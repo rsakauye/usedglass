@@ -1,0 +1,1419 @@
+{
+ "_about": "Short factual summaries for model pages. The spec sentences were drafted by a local model (gemma4:12b) from the verified spec fields listed in source_fields (data/compare-specs.json and the maker-sourced body roster; sources cited per model), rule-checked so every number pairs with its spec, and hand-reviewed. Price wording is not stored here: the model page builds it at build time from today's listings (count, sellers, lowest, median, bundle share, 90-day trend). Models without enough verified specs (all lenses for now) have no entry on purpose.",
+ "generated": "2026-10-20",
+ "models": {
+  "camera-canon-5d-iv": {
+   "name": "Canon EOS 5D Mark IV",
+   "text": "The Canon EOS 5D Mark IV has 30.4 megapixels, shoots up to 7 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 900 shots per charge.",
+   "source_fields": {
+    "mp": 30.4,
+    "burst_fps": 7,
+    "video_4k_fps": 30,
+    "battery_cipa": 900
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-5d-mark-iv/specifications/"
+   ]
+  },
+  "camera-canon-6d-ii": {
+   "name": "Canon EOS 6D Mark II",
+   "text": "The Canon EOS 6D Mark II has 26.2 megapixels, shoots up to 6.5 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 1200 shots per charge.",
+   "source_fields": {
+    "mp": 26.2,
+    "burst_fps": 6.5,
+    "video_4k_fps": 30,
+    "battery_cipa": 1200
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-6d-mark-ii/specifications/"
+   ]
+  },
+  "camera-canon-77d": {
+   "name": "Canon EOS 77D",
+   "text": "The Canon EOS 77D has 24.2 megapixels, shoots up to 6 frames per second, and records video up to Full HD (no 4K). It has a CIPA battery rating of about 600 shots per charge and weighs 540 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 6,
+    "video_4k_fps": 2,
+    "battery_cipa": 600,
+    "weight_g": 540
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-77d/specifications/"
+   ]
+  },
+  "camera-canon-90d": {
+   "name": "Canon EOS 90D",
+   "text": "The Canon EOS 90D has 32.5 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 1300 shots per charge and weighs 701 g with battery and card.",
+   "source_fields": {
+    "mp": 32.5,
+    "burst_fps": 10,
+    "video_4k_fps": 30,
+    "battery_cipa": 1300,
+    "weight_g": 701
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-90d/specifications/"
+   ]
+  },
+  "camera-canon-m200": {
+   "name": "Canon EOS M200",
+   "text": "The Canon EOS M200 has 24.1 megapixels, shoots up to 6.1 frames per second, and records 4K video at up to 25 fps. It has a CIPA battery rating of about 315 shots per charge.",
+   "source_fields": {
+    "mp": 24.1,
+    "burst_fps": 6.1,
+    "video_4k_fps": 25,
+    "battery_cipa": 315
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-m200/specifications/"
+   ]
+  },
+  "camera-canon-m5": {
+   "name": "Canon EOS M5",
+   "text": "The Canon EOS M5 has 24.2 megapixels, shoots up to 7 frames per second, and records video up to Full HD (no 4K). It has a CIPA battery rating of about 295 shots per charge.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 7,
+    "video_4k_fps": 2,
+    "battery_cipa": 295
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-m5/specifications/"
+   ]
+  },
+  "camera-canon-m6-ii": {
+   "name": "Canon EOS M6 Mark II",
+   "text": "The Canon EOS M6 Mark II has 32.5 megapixels, shoots up to 14 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 305 shots per charge and weighs 408 g with battery and card.",
+   "source_fields": {
+    "mp": 32.5,
+    "burst_fps": 14,
+    "video_4k_fps": 30,
+    "battery_cipa": 305,
+    "weight_g": 408
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-m6-mark-ii/specifications/"
+   ]
+  },
+  "camera-canon-r": {
+   "name": "Canon EOS R",
+   "text": "The Canon EOS R has 30.3 megapixels, shoots up to 8 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 370 shots per charge and weighs 660 g with battery and card.",
+   "source_fields": {
+    "mp": 30.3,
+    "burst_fps": 8,
+    "video_4k_fps": 30,
+    "battery_cipa": 370,
+    "weight_g": 660
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r/specifications/"
+   ]
+  },
+  "camera-canon-r1": {
+   "name": "Canon EOS R1",
+   "text": "The Canon EOS R1 has 24.2 megapixels, shoots up to 40 frames per second, and records video up to 6K, with 4K at up to 120 fps. It weighs 1115 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 40,
+    "video_max_k": 6,
+    "video_4k_fps": 120,
+    "weight_g": 1115
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r1/specifications/"
+   ]
+  },
+  "camera-canon-r10": {
+   "name": "Canon EOS R10",
+   "text": "The Canon EOS R10 has 24.2 megapixels, shoots up to 15 frames per second, and records 4K video at up to 60 fps. It has a CIPA battery rating of about 430 shots per charge and weighs 429 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 15,
+    "video_4k_fps": 60,
+    "battery_cipa": 430,
+    "weight_g": 429
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r10/specifications/"
+   ]
+  },
+  "camera-canon-r100": {
+   "name": "Canon EOS R100",
+   "text": "The Canon EOS R100 has 24.1 megapixels and shoots up to 6.5 frames per second. It records 4K video at up to 25 fps and has a CIPA battery rating of about 430 shots per charge.",
+   "source_fields": {
+    "mp": 24.1,
+    "burst_fps": 6.5,
+    "video_4k_fps": 25,
+    "battery_cipa": 430
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r100/specifications/"
+   ]
+  },
+  "camera-canon-r3": {
+   "name": "Canon EOS R3",
+   "text": "The Canon EOS R3 has 24.1 megapixels and records video up to 6K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 8 stops and weighs 1015 g with battery and card.",
+   "source_fields": {
+    "mp": 24.1,
+    "video_max_k": 6,
+    "video_4k_fps": 120,
+    "stab_stops": 8,
+    "weight_g": 1015
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r3/specifications/"
+   ]
+  },
+  "camera-canon-r5": {
+   "name": "Canon EOS R5",
+   "text": "The Canon EOS R5 has a 45-megapixel full-frame sensor, shoots up to 20 frames per second, and records video up to 8K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 490 shots per charge, weighs 738 g with battery and card, and includes two card slots (CFexpress B + SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 45,
+    "burst_fps": 20,
+    "video_max_k": 8,
+    "video_4k_fps": 120,
+    "stab_stops": 8,
+    "battery_cipa": 490,
+    "weight_g": 738,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r5/specifications/"
+   ]
+  },
+  "camera-canon-r5-ii": {
+   "name": "Canon EOS R5 Mark II",
+   "text": "The Canon EOS R5 Mark II has a 45-megapixel full-frame sensor, shoots up to 30 frames per second, and records video up to 8K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 8.5 stops, a CIPA battery rating of about 630 shots per charge, weighs 746 g with battery and card, and includes two card slots (CFexpress B + SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 45,
+    "burst_fps": 30,
+    "video_max_k": 8,
+    "video_4k_fps": 120,
+    "stab_stops": 8.5,
+    "battery_cipa": 630,
+    "weight_g": 746,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r5-mark-ii/specifications/"
+   ]
+  },
+  "camera-canon-r50": {
+   "name": "Canon EOS R50",
+   "text": "The Canon EOS R50 has 24.2 megapixels and shoots up to 15 frames per second. It records 4K video at up to 30 fps, has a CIPA battery rating of about 440 shots per charge, and weighs 375 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 15,
+    "video_4k_fps": 30,
+    "battery_cipa": 440,
+    "weight_g": 375
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r50/specifications/"
+   ]
+  },
+  "camera-canon-r6": {
+   "name": "Canon EOS R6",
+   "text": "The Canon EOS R6 has a 20.1-megapixel full-frame sensor, shoots up to 20 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 510 shots per charge, weighs 680 g with battery and card, and includes two card slots (2x SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 20.1,
+    "burst_fps": 20,
+    "video_4k_fps": 60,
+    "stab_stops": 8,
+    "battery_cipa": 510,
+    "weight_g": 680,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r6/specifications/"
+   ]
+  },
+  "camera-canon-r6-ii": {
+   "name": "Canon EOS R6 Mark II",
+   "text": "The Canon EOS R6 Mark II has a 24.2-megapixel full-frame sensor, shoots up to 40 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 760 shots per charge, weighs 670 g with battery and card, and includes two card slots (2x SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 24.2,
+    "burst_fps": 40,
+    "video_4k_fps": 60,
+    "stab_stops": 8,
+    "battery_cipa": 760,
+    "weight_g": 670,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r6-mark-ii/specifications/"
+   ]
+  },
+  "camera-canon-r6-iii": {
+   "name": "Canon EOS R6 Mark III",
+   "text": "The Canon EOS R6 Mark III has a 32.5-megapixel full-frame sensor, shoots up to 40 frames per second, and records video up to 7K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 8.5 stops, a CIPA battery rating of about 620 shots per charge, weighs 699 g with battery and card, and includes two card slots (CFexpress B + SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 32.5,
+    "burst_fps": 40,
+    "video_max_k": 7,
+    "video_4k_fps": 120,
+    "stab_stops": 8.5,
+    "battery_cipa": 620,
+    "weight_g": 699,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r6-mark-iii/specifications/"
+   ]
+  },
+  "camera-canon-r7": {
+   "name": "Canon EOS R7",
+   "text": "The Canon EOS R7 has 32.5 megapixels and shoots up to 30 frames per second. It records 4K video at up to 60 fps, has a CIPA battery rating of about 770 shots per charge, and weighs 612 g with battery and card.",
+   "source_fields": {
+    "mp": 32.5,
+    "burst_fps": 30,
+    "video_4k_fps": 60,
+    "battery_cipa": 770,
+    "weight_g": 612
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r7/specifications/"
+   ]
+  },
+  "camera-canon-r8": {
+   "name": "Canon EOS R8",
+   "text": "The Canon EOS R8 has 24.2 megapixels and shoots up to 40 frames per second. It records 4K video at up to 60 fps, has a CIPA battery rating of about 370 shots per charge, and weighs 461 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 40,
+    "video_4k_fps": 60,
+    "battery_cipa": 370,
+    "weight_g": 461
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-r8/specifications/"
+   ]
+  },
+  "camera-canon-rebelt7i": {
+   "name": "Canon EOS Rebel T7i (800D)",
+   "text": "The Canon EOS Rebel T7i (800D) has 24.2 megapixels, shoots up to 6 frames per second, and records video up to Full HD (no 4K). It has a CIPA battery rating of about 270 shots per charge and weighs 532 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 6,
+    "video_4k_fps": 2,
+    "battery_cipa": 270,
+    "weight_g": 532
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-800d/specifications/"
+   ]
+  },
+  "camera-canon-rebelt8i": {
+   "name": "Canon EOS Rebel T8i (850D)",
+   "text": "The Canon EOS Rebel T8i (850D) has 24.1 megapixels, shoots up to 7.5 frames per second, and records 4K video at up to 25 fps. It has a CIPA battery rating of about 310 shots per charge.",
+   "source_fields": {
+    "mp": 24.1,
+    "burst_fps": 7.5,
+    "video_4k_fps": 25,
+    "battery_cipa": 310
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-850d/specifications/"
+   ]
+  },
+  "camera-canon-rp": {
+   "name": "Canon EOS RP",
+   "text": "The Canon EOS RP has 26.2 megapixels, shoots up to 5 frames per second, and records 4K video at up to 25 fps. It has a CIPA battery rating of about 250 shots per charge and weighs 485 g with battery and card.",
+   "source_fields": {
+    "mp": 26.2,
+    "burst_fps": 5,
+    "video_4k_fps": 25,
+    "battery_cipa": 250,
+    "weight_g": 485
+   },
+   "sources": [
+    "https://www.canon-europe.com/cameras/eos-rp/specifications/"
+   ]
+  },
+  "camera-fujifilm-gfx100": {
+   "name": "Fujifilm GFX100",
+   "text": "The Fujifilm GFX100 has 102 megapixels, shoots up to 5 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5.5 stops and a CIPA battery rating of about 800 shots per charge.",
+   "source_fields": {
+    "mp": 102.0,
+    "burst_fps": 5.0,
+    "video_4k_fps": 30,
+    "stab_stops": 5.5,
+    "battery_cipa": 800
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/gfx100/specifications/"
+   ]
+  },
+  "camera-fujifilm-gfx100-ii": {
+   "name": "Fujifilm GFX100 II",
+   "text": "The Fujifilm GFX100 II has 102 megapixels, shoots up to 8.7 frames per second, and records video up to 8K, with 4K at up to 60 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 540 shots per charge, and weighs 948 g with battery and card.",
+   "source_fields": {
+    "mp": 102,
+    "burst_fps": 8.7,
+    "video_max_k": 8,
+    "video_4k_fps": 60,
+    "stab_stops": 8.0,
+    "battery_cipa": 540,
+    "weight_g": 948
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/gfx100-ii/specifications/"
+   ]
+  },
+  "camera-fujifilm-gfx100rf": {
+   "name": "Fujifilm GFX100RF",
+   "text": "The Fujifilm GFX100RF has 102 megapixels, shoots up to 6 frames per second, and records 4K video at up to 60 fps. It has a CIPA battery rating of about 820 shots per charge and weighs 735 g with battery and card.",
+   "source_fields": {
+    "mp": 102.0,
+    "burst_fps": 6.0,
+    "video_4k_fps": 60,
+    "battery_cipa": 820,
+    "weight_g": 735
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/gfx100rf/specifications/"
+   ]
+  },
+  "camera-fujifilm-gfx100s": {
+   "name": "Fujifilm GFX100S",
+   "text": "The Fujifilm GFX100S has 102 megapixels, shoots up to 5 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 6 stops, a CIPA battery rating of about 460 shots per charge, and weighs 900 g with battery and card.",
+   "source_fields": {
+    "mp": 102,
+    "burst_fps": 5,
+    "video_4k_fps": 30,
+    "stab_stops": 6,
+    "battery_cipa": 460,
+    "weight_g": 900
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/gfx100s/specifications/"
+   ]
+  },
+  "camera-fujifilm-gfx100s-ii": {
+   "name": "Fujifilm GFX100S II",
+   "text": "The Fujifilm GFX100S II has 102 megapixels, shoots up to 7 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 530 shots per charge, and weighs 883 g with battery and card.",
+   "source_fields": {
+    "mp": 102.0,
+    "burst_fps": 7.0,
+    "video_4k_fps": 60,
+    "stab_stops": 8.0,
+    "battery_cipa": 530,
+    "weight_g": 883
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/gfx100s-ii/specifications/"
+   ]
+  },
+  "camera-fujifilm-gfx50s-ii": {
+   "name": "Fujifilm GFX50S II",
+   "text": "The Fujifilm GFX50S II has 51.4 megapixels, shoots up to 3 frames per second, and records video up to Full HD (no 4K). It has in-body image stabilization rated up to 6.5 stops, a CIPA battery rating of about 455 shots per charge, and weighs 900 g with battery and card.",
+   "source_fields": {
+    "mp": 51.4,
+    "burst_fps": 3.0,
+    "video_4k_fps": 0,
+    "stab_stops": 6.5,
+    "battery_cipa": 455,
+    "weight_g": 900
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/gfx50s-ii/specifications/"
+   ]
+  },
+  "camera-fujifilm-x100v": {
+   "name": "Fujifilm X100V",
+   "text": "The Fujifilm X100V has 26.1 megapixels, shoots up to 20 frames per second, and has a CIPA battery rating of about 420 shots per charge. It weighs 478 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "burst_fps": 20,
+    "battery_cipa": 420,
+    "weight_g": 478
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x100v/specifications/"
+   ]
+  },
+  "camera-fujifilm-x100vi": {
+   "name": "Fujifilm X100VI",
+   "text": "The Fujifilm X100VI has 40.2 megapixels and records video up to 6.2K, with 4K at up to 60 fps. It has in-body image stabilization rated up to 6 stops, a CIPA battery rating of about 310 shots per charge, and weighs 521 g with battery and card.",
+   "source_fields": {
+    "mp": 40.2,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "stab_stops": 6.0,
+    "battery_cipa": 310,
+    "weight_g": 521
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x100vi/specifications/"
+   ]
+  },
+  "camera-fujifilm-xa5": {
+   "name": "Fujifilm X-A5",
+   "text": "The Fujifilm X-A5 has 24.2 megapixels and shoots up to 6 frames per second. It has a CIPA battery rating of about 450 shots per charge and weighs 361 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 6.0,
+    "battery_cipa": 450,
+    "weight_g": 361
+   },
+   "sources": [
+    "https://fujifilm-dsc.com/en/manual/x-a5/technical_notes/spec/index.html"
+   ]
+  },
+  "camera-fujifilm-xe3": {
+   "name": "Fujifilm X-E3",
+   "text": "The Fujifilm X-E3 has 24.3 megapixels, shoots up to 14 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 350 shots per charge and weighs 337 g with battery and card.",
+   "source_fields": {
+    "mp": 24.3,
+    "burst_fps": 14,
+    "video_4k_fps": 30,
+    "battery_cipa": 350,
+    "weight_g": 337
+   },
+   "sources": [
+    "https://fujifilm-dsc.com/en/manual/x-e3/technical_notes/spec/index.html"
+   ]
+  },
+  "camera-fujifilm-xe4": {
+   "name": "Fujifilm X-E4",
+   "text": "The Fujifilm X-E4 has 26.1 megapixels, shoots up to 8 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 460 shots per charge and weighs 364 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "burst_fps": 8,
+    "video_4k_fps": 30,
+    "battery_cipa": 460,
+    "weight_g": 364
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-e4/specifications/"
+   ]
+  },
+  "camera-fujifilm-xe5": {
+   "name": "Fujifilm X-E5",
+   "text": "The Fujifilm X-E5 has 40.2 megapixels and records video up to 6.2K, with 4K at up to 60 fps. It has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 310 shots per charge, and weighs 445 g with battery and card.",
+   "source_fields": {
+    "mp": 40.2,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "stab_stops": 7,
+    "battery_cipa": 310,
+    "weight_g": 445
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-e5/specifications/"
+   ]
+  },
+  "camera-fujifilm-xh1": {
+   "name": "Fujifilm X-H1",
+   "text": "The Fujifilm X-H1 has 24.3 megapixels, shoots up to 14 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 310 shots per charge, and weighs 673 g with battery and card.",
+   "source_fields": {
+    "mp": 24.3,
+    "burst_fps": 14,
+    "video_4k_fps": 30,
+    "stab_stops": 5.5,
+    "battery_cipa": 310,
+    "weight_g": 673
+   },
+   "sources": [
+    "https://fujifilm-dsc.com/en/manual/x-h1/technical_notes/spec/index.html"
+   ]
+  },
+  "camera-fujifilm-xh2": {
+   "name": "Fujifilm X-H2",
+   "text": "The Fujifilm X-H2 has 40.2 megapixels, shoots up to 15 frames per second, and records video up to 8K. It records 4K video at up to 60 fps, has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 540 shots per charge, and weighs 660 g with battery and card.",
+   "source_fields": {
+    "mp": 40.2,
+    "burst_fps": 15,
+    "video_max_k": 8,
+    "video_4k_fps": 60,
+    "stab_stops": 7.0,
+    "battery_cipa": 540,
+    "weight_g": 660
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-h2/specifications/"
+   ]
+  },
+  "camera-fujifilm-xh2s": {
+   "name": "Fujifilm X-H2S",
+   "text": "The Fujifilm X-H2S has 26.16 megapixels and records video up to 6.2K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 580 shots per charge, and weighs 660 g with battery and card.",
+   "source_fields": {
+    "mp": 26.16,
+    "video_max_k": 6.2,
+    "video_4k_fps": 120,
+    "stab_stops": 7.0,
+    "battery_cipa": 580,
+    "weight_g": 660
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-h2s/specifications/"
+   ]
+  },
+  "camera-fujifilm-xm5": {
+   "name": "Fujifilm X-M5",
+   "text": "The Fujifilm X-M5 has 26.1 megapixels and records video up to 6.2K, with 4K at up to 60 fps. It has a CIPA battery rating of about 330 shots per charge and weighs 355 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "battery_cipa": 330,
+    "weight_g": 355
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-m5/specifications/"
+   ]
+  },
+  "camera-fujifilm-xpro3": {
+   "name": "Fujifilm X-Pro3",
+   "text": "The Fujifilm X-Pro3 has 26.1 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It weighs 497 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "weight_g": 497
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-pro3/specifications/"
+   ]
+  },
+  "camera-fujifilm-xs20": {
+   "name": "Fujifilm X-S20",
+   "text": "The Fujifilm X-S20 has 26.1 megapixels and records video up to 6.2K, with 4K at up to 60 fps. It has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 750 shots per charge, and weighs 491 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "stab_stops": 7.0,
+    "battery_cipa": 750,
+    "weight_g": 491
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-s20/specifications/"
+   ]
+  },
+  "camera-fujifilm-xt100": {
+   "name": "Fujifilm X-T100",
+   "text": "The Fujifilm X-T100 has 24.2 megapixels and shoots up to 6 frames per second. It has a CIPA battery rating of about 430 shots per charge and weighs 448 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 6.0,
+    "battery_cipa": 430,
+    "weight_g": 448
+   },
+   "sources": [
+    "https://fujifilm-dsc.com/en/manual/x-t100/technical_notes/spec/index.html"
+   ]
+  },
+  "camera-fujifilm-xt2": {
+   "name": "Fujifilm X-T2",
+   "text": "The Fujifilm X-T2 has 24.3 megapixels, shoots up to 14 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 340 shots per charge and weighs 507 g with battery and card.",
+   "source_fields": {
+    "mp": 24.3,
+    "burst_fps": 14.0,
+    "video_4k_fps": 30,
+    "battery_cipa": 340,
+    "weight_g": 507
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t2/specifications/"
+   ]
+  },
+  "camera-fujifilm-xt20": {
+   "name": "Fujifilm X-T20",
+   "text": "The Fujifilm X-T20 has 24.3 megapixels, shoots up to 14 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 350 shots per charge and weighs 383 g with battery and card.",
+   "source_fields": {
+    "mp": 24.3,
+    "burst_fps": 14.0,
+    "video_4k_fps": 30,
+    "battery_cipa": 350,
+    "weight_g": 383
+   },
+   "sources": [
+    "https://fujifilm-dsc.com/en/manual/x-t20/technical_notes/spec/index.html"
+   ]
+  },
+  "camera-fujifilm-xt200": {
+   "name": "Fujifilm X-T200",
+   "text": "The Fujifilm X-T200 has 24.2 megapixels, shoots up to 8 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 270 shots per charge and weighs 370 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 8.0,
+    "video_4k_fps": 30,
+    "battery_cipa": 270,
+    "weight_g": 370
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t200/specifications/"
+   ]
+  },
+  "camera-fujifilm-xt30-ii": {
+   "name": "Fujifilm X-T30 II",
+   "text": "The Fujifilm X-T30 II has an APS-C sensor with 26.1 megapixels, shoots up to 20 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 390 shots per charge, weighs 378 g with battery and card, has one card slot (1x SD UHS-I), and a tilting rear screen.",
+   "source_fields": {
+    "sensor": "APS-C",
+    "mp": 26.1,
+    "burst_fps": 20,
+    "video_4k_fps": 30,
+    "battery_cipa": 390,
+    "weight_g": 378,
+    "card_slots": 1,
+    "screen": "Tilting"
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t30-ii/specifications/",
+    "https://www.fujifilm-x.com/en-us/products/cameras/x-t30-ii/"
+   ]
+  },
+  "camera-fujifilm-xt30-iii": {
+   "name": "Fujifilm X-T30 III",
+   "text": "The Fujifilm X-T30 III has 26.1 megapixels and records video up to 6.2K, with 4K at up to 60 fps. It has a CIPA battery rating of about 315 shots per charge and weighs 378 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "battery_cipa": 315,
+    "weight_g": 378
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t30-iii/specifications/"
+   ]
+  },
+  "camera-fujifilm-xt4": {
+   "name": "Fujifilm X-T4",
+   "text": "The Fujifilm X-T4 has an APS-C sensor with 26.1 megapixels, shoots up to 20 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 6.5 stops, a CIPA battery rating of about 500 shots per charge, weighs 607 g with battery and card, has two card slots (2x SD UHS-II), and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "APS-C",
+    "mp": 26.1,
+    "burst_fps": 20,
+    "video_4k_fps": 60,
+    "stab_stops": 6.5,
+    "battery_cipa": 500,
+    "weight_g": 607,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t4/specifications/",
+    "https://fujifilm-dsc.com/en/manual/x-t4/technical_notes/spec/index.html"
+   ]
+  },
+  "camera-fujifilm-xt5": {
+   "name": "Fujifilm X-T5",
+   "text": "The Fujifilm X-T5 has an APS-C sensor with 40.2 megapixels, shoots up to 15 frames per second, and records video up to 6.2K. It records 4K video at up to 60 fps, has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 580 shots per charge, weighs 557 g with battery and card, has two card slots (2x SD UHS-II), and a 3-way tilt rear screen.",
+   "source_fields": {
+    "sensor": "APS-C",
+    "mp": 40.2,
+    "burst_fps": 15,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "stab_stops": 7,
+    "battery_cipa": 580,
+    "weight_g": 557,
+    "card_slots": 2,
+    "screen": "3-way tilt"
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t5/specifications/",
+    "https://www.fujifilm-x.com/en-us/products/cameras/x-t5/"
+   ]
+  },
+  "camera-fujifilm-xt50": {
+   "name": "Fujifilm X-T50",
+   "text": "The Fujifilm X-T50 has 40.2 megapixels and records video up to 6.2K, with 4K at up to 60 fps. It has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 305 shots per charge, and weighs 438 g with battery and card.",
+   "source_fields": {
+    "mp": 40.2,
+    "video_max_k": 6.2,
+    "video_4k_fps": 60,
+    "stab_stops": 7.0,
+    "battery_cipa": 305,
+    "weight_g": 438
+   },
+   "sources": [
+    "https://www.fujifilm-x.com/global/products/cameras/x-t50/specifications/"
+   ]
+  },
+  "camera-nikon-d3500": {
+   "name": "Nikon D3500",
+   "text": "The Nikon D3500 has 24.2 megapixels, shoots up to 5 frames per second, and records video up to Full HD (no 4K). It has a CIPA battery rating of about 1550 shots per charge and weighs 415 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 5,
+    "video_4k_fps": 0,
+    "battery_cipa": 1550,
+    "weight_g": 415
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/dslr/d3500/"
+   ]
+  },
+  "camera-nikon-d500": {
+   "name": "Nikon D500",
+   "text": "The Nikon D500 has 20.9 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It weighs 860 g with battery and card.",
+   "source_fields": {
+    "mp": 20.9,
+    "burst_fps": 10,
+    "video_4k_fps": 30,
+    "weight_g": 860
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/dslr/d500/"
+   ]
+  },
+  "camera-nikon-d7500": {
+   "name": "Nikon D7500",
+   "text": "The Nikon D7500 has 20.9 megapixels, shoots up to 8 frames per second, and records 4K video at up to 30 fps. It weighs 720 g with battery and card.",
+   "source_fields": {
+    "mp": 20.9,
+    "burst_fps": 8,
+    "video_4k_fps": 30,
+    "weight_g": 720
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/dslr/d7500/"
+   ]
+  },
+  "camera-nikon-d780": {
+   "name": "Nikon D780",
+   "text": "The Nikon D780 shoots up to 7 frames per second and records 4K video at up to 30 fps. It has a CIPA battery rating of about 2260 shots per charge and weighs 840 g with battery and card.",
+   "source_fields": {
+    "burst_fps": 7,
+    "video_4k_fps": 30,
+    "battery_cipa": 2260,
+    "weight_g": 840
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/dslr/d780/"
+   ]
+  },
+  "camera-nikon-d850": {
+   "name": "Nikon D850",
+   "text": "The Nikon D850 has 45.7 megapixels, shoots up to 7 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 1840 shots per charge and weighs 1005 g with battery and card.",
+   "source_fields": {
+    "mp": 45.7,
+    "burst_fps": 7,
+    "video_4k_fps": 30,
+    "battery_cipa": 1840,
+    "weight_g": 1005
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/dslr/d850/"
+   ]
+  },
+  "camera-nikon-z30": {
+   "name": "Nikon Z30",
+   "text": "The Nikon Z30 has 20.9 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It weighs 405 g with battery and card.",
+   "source_fields": {
+    "mp": 20.9,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "weight_g": 405
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_30/"
+   ]
+  },
+  "camera-nikon-z5": {
+   "name": "Nikon Z5",
+   "text": "The Nikon Z5 shoots up to 4.5 frames per second, records 4K video at up to 30 fps, and has in-body image stabilization rated up to 5 stops. It weighs 675 g with battery and card.",
+   "source_fields": {
+    "burst_fps": 4.5,
+    "video_4k_fps": 30,
+    "stab_stops": 5,
+    "weight_g": 675
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_5/"
+   ]
+  },
+  "camera-nikon-z5-ii": {
+   "name": "Nikon Z5II",
+   "text": "The Nikon Z5II has 24.5 megapixels, records 4K video at up to 60 fps, and has in-body image stabilization rated up to 7.5 stops. It weighs 700 g with battery and card.",
+   "source_fields": {
+    "mp": 24.5,
+    "video_4k_fps": 60,
+    "stab_stops": 7.5,
+    "weight_g": 700
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z5_2/"
+   ]
+  },
+  "camera-nikon-z50": {
+   "name": "Nikon Z50",
+   "text": "The Nikon Z50 has an APS-C sensor with 20.9 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 320 shots per charge, weighs 450 g with battery and card, has one card slot (1x SD UHS-I), and a tilting (flips down 180°) rear screen.",
+   "source_fields": {
+    "sensor": "APS-C",
+    "mp": 20.9,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "battery_cipa": 320,
+    "weight_g": 450,
+    "card_slots": 1,
+    "screen": "Tilting (flips down 180°)"
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_50/",
+    "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   ]
+  },
+  "camera-nikon-z50-ii": {
+   "name": "Nikon Z50II",
+   "text": "The Nikon Z50II has an APS-C sensor with 20.9 megapixels, shoots up to 15 frames per second, and records 4K video at up to 60 fps. It has a CIPA battery rating of about 230 shots per charge, weighs 550 g with battery and card, has one card slot (1x SD UHS-II), and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "APS-C",
+    "mp": 20.9,
+    "burst_fps": 15,
+    "video_4k_fps": 60,
+    "battery_cipa": 230,
+    "weight_g": 550,
+    "card_slots": 1,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z50_2/",
+    "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   ]
+  },
+  "camera-nikon-z6": {
+   "name": "Nikon Z6",
+   "text": "The Nikon Z6 has a 24.5-megapixel full-frame sensor, shoots up to 12 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 380 shots per charge, and weighs 675 g with battery and card. It includes one card slot (1x XQD/CFexpress B) and a tilting rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 24.5,
+    "burst_fps": 12,
+    "video_4k_fps": 30,
+    "stab_stops": 5,
+    "battery_cipa": 380,
+    "weight_g": 675,
+    "card_slots": 1,
+    "screen": "Tilting"
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_6/",
+    "https://nij.nikon.com/support/faq/products/article?articleNo=000056354"
+   ]
+  },
+  "camera-nikon-z6-ii": {
+   "name": "Nikon Z6 II",
+   "text": "The Nikon Z6 II has a 24.5-megapixel full-frame sensor, shoots up to 14 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 410 shots per charge, and weighs 705 g with battery and card. It includes two card slots (CFexpress B/XQD + SD UHS-II) and a tilting rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 24.5,
+    "burst_fps": 14,
+    "video_4k_fps": 60,
+    "stab_stops": 5,
+    "battery_cipa": 410,
+    "weight_g": 705,
+    "card_slots": 2,
+    "screen": "Tilting"
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_6_2/",
+    "https://onlinemanual.nikonimglib.com/z7II_z6II/en/15_technical_notes_08.html",
+    "https://onlinemanual.nikonimglib.com/z7II_z6II/en/15_technical_notes_12.html"
+   ]
+  },
+  "camera-nikon-z6-iii": {
+   "name": "Nikon Z6III",
+   "text": "The Nikon Z6III has a 24.5-megapixel full-frame sensor, shoots up to 20 frames per second, and records video up to 6K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 390 shots per charge, and weighs 760 g with battery and card. It includes two card slots (CFexpress B/XQD + SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 24.5,
+    "burst_fps": 20,
+    "video_max_k": 6,
+    "video_4k_fps": 120,
+    "stab_stops": 8,
+    "battery_cipa": 390,
+    "weight_g": 760,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z6_3/",
+    "https://nij.nikon.com/support/faq/products/article?articleNo=000056354",
+    "https://www.nikon.com/company/news/2024/0617_imaging_01/"
+   ]
+  },
+  "camera-nikon-z7": {
+   "name": "Nikon Z7",
+   "text": "The Nikon Z7 shoots up to 9 frames per second, records 4K video at up to 30 fps, and has in-body image stabilization rated up to 5 stops. It weighs 675 g with battery and card.",
+   "source_fields": {
+    "burst_fps": 9,
+    "video_4k_fps": 30,
+    "stab_stops": 5,
+    "weight_g": 675
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_7/"
+   ]
+  },
+  "camera-nikon-z7-ii": {
+   "name": "Nikon Z7II",
+   "text": "The Nikon Z7II has 45.7 megapixels, shoots up to 10 frames per second, and records 4K video at up to 60 fps. It weighs 705 g with battery and card.",
+   "source_fields": {
+    "mp": 45.7,
+    "burst_fps": 10,
+    "video_4k_fps": 60,
+    "weight_g": 705
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_7_2/"
+   ]
+  },
+  "camera-nikon-z8": {
+   "name": "Nikon Z8",
+   "text": "The Nikon Z8 has 45.7 megapixels and records video up to 8K, with 4K at up to 120 fps. It weighs 910 g with battery and card.",
+   "source_fields": {
+    "mp": 45.7,
+    "video_max_k": 8,
+    "video_4k_fps": 120,
+    "weight_g": 910
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_8/"
+   ]
+  },
+  "camera-nikon-zf": {
+   "name": "Nikon Zf",
+   "text": "The Nikon Zf has 24.5 megapixels, records 4K video at up to 60 fps, and has in-body image stabilization rated up to 8 stops. It weighs 710 g with battery and card.",
+   "source_fields": {
+    "mp": 24.5,
+    "video_4k_fps": 60,
+    "stab_stops": 8.0,
+    "weight_g": 710
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_f/"
+   ]
+  },
+  "camera-nikon-zfc": {
+   "name": "Nikon Z fc",
+   "text": "The Nikon Z fc has 20.9 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It weighs 445 g with battery and card.",
+   "source_fields": {
+    "mp": 20.9,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "weight_g": 445
+   },
+   "sources": [
+    "https://imaging.nikon.com/imaging/lineup/mirrorless/z_fc/"
+   ]
+  },
+  "camera-sony-a1": {
+   "name": "Sony Alpha 1",
+   "text": "The Sony Alpha 1 has 50.1 megapixels, shoots up to 30 frames per second, and records video up to 8K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 530 shots per charge, and weighs 737 g with battery and card.",
+   "source_fields": {
+    "mp": 50.1,
+    "burst_fps": 30,
+    "video_max_k": 8,
+    "video_4k_fps": 120,
+    "stab_stops": 5.5,
+    "battery_cipa": 530,
+    "weight_g": 737
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-1/specifications"
+   ]
+  },
+  "camera-sony-a6000": {
+   "name": "Sony Alpha 6000",
+   "text": "The Sony Alpha 6000 has 24.3 megapixels, shoots up to 11 frames per second, and records video up to Full HD (no 4K). It has a CIPA battery rating of about 360 shots per charge.",
+   "source_fields": {
+    "mp": 24.3,
+    "burst_fps": 11,
+    "video_4k_fps": 0,
+    "battery_cipa": 360
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6000/specifications"
+   ]
+  },
+  "camera-sony-a6100": {
+   "name": "Sony Alpha 6100",
+   "text": "The Sony Alpha 6100 has 24.2 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 420 shots per charge and weighs 396 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "battery_cipa": 420,
+    "weight_g": 396
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6100/specifications"
+   ]
+  },
+  "camera-sony-a6300": {
+   "name": "Sony Alpha 6300",
+   "text": "The Sony Alpha 6300 has 24.2 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 400 shots per charge.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "battery_cipa": 400
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6300/specifications"
+   ]
+  },
+  "camera-sony-a6400": {
+   "name": "Sony Alpha 6400",
+   "text": "The Sony Alpha 6400 has 24.2 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 410 shots per charge and weighs 403 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "battery_cipa": 410,
+    "weight_g": 403
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6400/specifications"
+   ]
+  },
+  "camera-sony-a6500": {
+   "name": "Sony Alpha 6500",
+   "text": "The Sony Alpha 6500 has 24.2 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 350 shots per charge, and weighs 453 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "stab_stops": 5.0,
+    "battery_cipa": 350,
+    "weight_g": 453
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6500/specifications"
+   ]
+  },
+  "camera-sony-a6600": {
+   "name": "Sony Alpha 6600",
+   "text": "The Sony Alpha 6600 has 24.2 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 810 shots per charge, and weighs 503 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "stab_stops": 5.0,
+    "battery_cipa": 810,
+    "weight_g": 503
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6600/specifications"
+   ]
+  },
+  "camera-sony-a6700": {
+   "name": "Sony Alpha 6700",
+   "text": "The Sony Alpha 6700 has 26 megapixels, shoots up to 11 frames per second, and records 4K video at up to 120 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 570 shots per charge, and weighs 493 g with battery and card.",
+   "source_fields": {
+    "mp": 26.0,
+    "burst_fps": 11,
+    "video_4k_fps": 120,
+    "stab_stops": 5.0,
+    "battery_cipa": 570,
+    "weight_g": 493
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-6700/specifications"
+   ]
+  },
+  "camera-sony-a7-ii": {
+   "name": "Sony Alpha 7 II",
+   "text": "The Sony Alpha 7 II has 24.3 megapixels, shoots up to 5 frames per second, and records video up to Full HD (no 4K). It has in-body image stabilization rated up to 4.5 stops and a CIPA battery rating of about 350 shots per charge.",
+   "source_fields": {
+    "mp": 24.3,
+    "burst_fps": 5,
+    "video_4k_fps": 2,
+    "stab_stops": 4.5,
+    "battery_cipa": 350
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7m2/specifications"
+   ]
+  },
+  "camera-sony-a7-iii": {
+   "name": "Sony A7 III",
+   "text": "The Sony A7 III has a 24.2-megapixel full-frame sensor, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 710 shots per charge, weighs 650 g with battery and card, and includes two card slots (SD UHS-II + SD UHS-I/Memory Stick) and a tilting rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 24.2,
+    "burst_fps": 10,
+    "video_4k_fps": 30,
+    "stab_stops": 5,
+    "battery_cipa": 710,
+    "weight_g": 650,
+    "card_slots": 2,
+    "screen": "Tilting"
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m3/specifications"
+   ]
+  },
+  "camera-sony-a7-iv": {
+   "name": "Sony A7 IV",
+   "text": "The Sony A7 IV has a 33-megapixel full-frame sensor, shoots up to 10 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 580 shots per charge, weighs 658 g with battery and card, and includes two card slots (CFexpress A/SD UHS-II + SD UHS-II) and a vari-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 33,
+    "burst_fps": 10,
+    "video_4k_fps": 60,
+    "stab_stops": 5.5,
+    "battery_cipa": 580,
+    "weight_g": 658,
+    "card_slots": 2,
+    "screen": "Vari-angle"
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7m4/specifications",
+    "https://helpguide.sony.net/ilc/2110/v1/en/contents/TP1000640154.html",
+    "https://electronics.sony.com/imaging/interchangeable-lens-cameras/full-frame/p/ilce7m4-b"
+   ]
+  },
+  "camera-sony-a7-v": {
+   "name": "Sony A7 V",
+   "text": "The Sony A7 V has a 33-megapixel full-frame sensor, shoots up to 30 frames per second, and records 4K video at up to 120 fps. It has in-body image stabilization rated up to 7.5 stops, a CIPA battery rating of about 750 shots per charge, weighs 695 g with battery and card, and includes two card slots (CFexpress A/SD UHS-II + SD UHS-II) and a multi-angle rear screen.",
+   "source_fields": {
+    "sensor": "Full frame",
+    "mp": 33,
+    "burst_fps": 30,
+    "video_4k_fps": 120,
+    "stab_stops": 7.5,
+    "battery_cipa": 750,
+    "weight_g": 695,
+    "card_slots": 2,
+    "screen": "Multi-angle"
+   },
+   "sources": [
+    "https://www.sony.co.uk/electronics/interchangeable-lens-cameras/ilce-7m5/specifications"
+   ]
+  },
+  "camera-sony-a7c": {
+   "name": "Sony Alpha 7C",
+   "text": "The Sony Alpha 7C has 24.2 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 740 shots per charge and weighs 509 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 10,
+    "video_4k_fps": 30,
+    "battery_cipa": 740,
+    "weight_g": 509
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7c/specifications"
+   ]
+  },
+  "camera-sony-a7c-ii": {
+   "name": "Sony Alpha 7C II",
+   "text": "The Sony Alpha 7C II has 33 megapixels, shoots up to 10 frames per second, and records 4K video at up to 60 fps. It includes in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 560 shots per charge, and weighs 514 g with battery and card.",
+   "source_fields": {
+    "mp": 33.0,
+    "burst_fps": 10,
+    "video_4k_fps": 60,
+    "stab_stops": 7.0,
+    "battery_cipa": 560,
+    "weight_g": 514
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7cm2/specifications"
+   ]
+  },
+  "camera-sony-a7cr": {
+   "name": "Sony Alpha 7CR",
+   "text": "The Sony Alpha 7CR has 61 megapixels, shoots up to 8 frames per second, and records 4K video at up to 60 fps. It includes in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 530 shots per charge, and weighs 515 g with battery and card.",
+   "source_fields": {
+    "mp": 61.0,
+    "burst_fps": 8.0,
+    "video_4k_fps": 60,
+    "stab_stops": 7.0,
+    "battery_cipa": 530,
+    "weight_g": 515
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7cr/specifications"
+   ]
+  },
+  "camera-sony-a7r-ii": {
+   "name": "Sony Alpha 7R II",
+   "text": "The Sony Alpha 7R II has 42.4 megapixels, shoots up to 5 frames per second, and records 4K video at up to 30 fps. It includes in-body image stabilization rated up to 4.5 stops and a CIPA battery rating of about 340 shots per charge.",
+   "source_fields": {
+    "mp": 42.4,
+    "burst_fps": 5,
+    "video_4k_fps": 30,
+    "stab_stops": 4.5,
+    "battery_cipa": 340
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7rm2/specifications"
+   ]
+  },
+  "camera-sony-a7r-iii": {
+   "name": "Sony Alpha 7R III",
+   "text": "The Sony Alpha 7R III has 42.4 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It includes in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 650 shots per charge, and weighs 657 g with battery and card.",
+   "source_fields": {
+    "mp": 42.4,
+    "burst_fps": 10,
+    "video_4k_fps": 30,
+    "stab_stops": 5.5,
+    "battery_cipa": 650,
+    "weight_g": 657
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7rm3/specifications"
+   ]
+  },
+  "camera-sony-a7r-iv": {
+   "name": "Sony Alpha 7R IV",
+   "text": "The Sony Alpha 7R IV has 61 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It includes in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 670 shots per charge, and weighs 665 g with battery and card.",
+   "source_fields": {
+    "mp": 61.0,
+    "burst_fps": 10,
+    "video_4k_fps": 30,
+    "stab_stops": 5.5,
+    "battery_cipa": 670,
+    "weight_g": 665
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7rm4/specifications"
+   ]
+  },
+  "camera-sony-a7r-v": {
+   "name": "Sony Alpha 7R V",
+   "text": "The Sony Alpha 7R V has 61 megapixels, shoots up to 10 frames per second, and records video up to 8K, with 4K at up to 60 fps. It includes in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 530 shots per charge, and weighs 723 g with battery and card.",
+   "source_fields": {
+    "mp": 61.0,
+    "burst_fps": 10,
+    "video_max_k": 8,
+    "video_4k_fps": 60,
+    "stab_stops": 8.0,
+    "battery_cipa": 530,
+    "weight_g": 723
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7rm5/specifications"
+   ]
+  },
+  "camera-sony-a7s-iii": {
+   "name": "Sony Alpha 7S III",
+   "text": "The Sony Alpha 7S III has 12.1 megapixels, shoots up to 10 frames per second, and records 4K video at up to 120 fps. It includes in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 600 shots per charge, and weighs 699 g with battery and card.",
+   "source_fields": {
+    "mp": 12.1,
+    "burst_fps": 10,
+    "video_4k_fps": 120,
+    "stab_stops": 5.5,
+    "battery_cipa": 600,
+    "weight_g": 699
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7sm3/specifications"
+   ]
+  },
+  "camera-sony-a9": {
+   "name": "Sony Alpha 9",
+   "text": "The Sony Alpha 9 has 24.2 megapixels, shoots up to 20 frames per second, and records 4K video at up to 30 fps. It includes in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 650 shots per charge, and weighs 588 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 20,
+    "video_4k_fps": 30,
+    "stab_stops": 5.0,
+    "battery_cipa": 650,
+    "weight_g": 588
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-9/specifications"
+   ]
+  },
+  "camera-sony-a9-ii": {
+   "name": "Sony Alpha 9 II",
+   "text": "The Sony Alpha 9 II has 24.2 megapixels, shoots up to 20 frames per second, and records 4K video at up to 30 fps. It includes in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 690 shots per charge, and weighs 678 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 20,
+    "video_4k_fps": 30,
+    "stab_stops": 5.5,
+    "battery_cipa": 690,
+    "weight_g": 678
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-9m2/specifications"
+   ]
+  },
+  "camera-sony-a9-iii": {
+   "name": "Sony Alpha 9 III",
+   "text": "The Sony Alpha 9 III has 24.6 megapixels and records 4K video at up to 120 fps. It has in-body image stabilization rated up to 8 stops, a CIPA battery rating of about 530 shots per charge, and weighs 702 g with battery and card.",
+   "source_fields": {
+    "mp": 24.6,
+    "video_4k_fps": 120,
+    "stab_stops": 8.0,
+    "battery_cipa": 530,
+    "weight_g": 702
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-9m3/specifications"
+   ]
+  },
+  "camera-sony-fx3": {
+   "name": "Sony FX3",
+   "text": "The Sony FX3 has 12.1 megapixels, shoots up to 10 frames per second, and records 4K video at up to 120 fps. It has in-body image stabilization rated up to 5.5 stops, a CIPA battery rating of about 580 shots per charge, and weighs 715 g with battery and card.",
+   "source_fields": {
+    "mp": 12.1,
+    "burst_fps": 10,
+    "video_4k_fps": 120,
+    "stab_stops": 5.5,
+    "battery_cipa": 580,
+    "weight_g": 715
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilme-fx3/specifications"
+   ]
+  },
+  "camera-sony-fx30": {
+   "name": "Sony FX30",
+   "text": "The Sony FX30 has 26 megapixels and records 4K video at up to 120 fps. It has in-body image stabilization rated up to 5.5 stops and a CIPA battery rating of about 570 shots per charge.",
+   "source_fields": {
+    "mp": 26.0,
+    "video_4k_fps": 120,
+    "stab_stops": 5.5,
+    "battery_cipa": 570
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/ilme-fx30/specifications"
+   ]
+  },
+  "camera-sony-zve1": {
+   "name": "Sony ZV-E1",
+   "text": "The Sony ZV-E1 has 12.1 megapixels, shoots up to 10 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 570 shots per charge, and weighs 483 g with battery and card.",
+   "source_fields": {
+    "mp": 12.1,
+    "burst_fps": 10,
+    "video_4k_fps": 60,
+    "stab_stops": 5.0,
+    "battery_cipa": 570,
+    "weight_g": 483
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/zv-e1/specifications"
+   ]
+  },
+  "camera-sony-zve10": {
+   "name": "Sony ZV-E10",
+   "text": "The Sony ZV-E10 has 24.2 megapixels, shoots up to 11 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 440 shots per charge and weighs 343 g with battery and card.",
+   "source_fields": {
+    "mp": 24.2,
+    "burst_fps": 11,
+    "video_4k_fps": 30,
+    "battery_cipa": 440,
+    "weight_g": 343
+   },
+   "sources": [
+    "https://www.sony.com/electronics/support/e-mount-body/zv-e10/specifications"
+   ]
+  }
+ }
+}

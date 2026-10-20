@@ -18,12 +18,30 @@ let FW = {};
 try { FW = JSON.parse(fs.readFileSync(path.join(process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data'), 'firmware.json'), 'utf8')).models || {}; } catch {}
 const fw = FW[m.key] || null;
 const fwDate = (d) => new Date(d + 'T12:00:00Z').toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' });
+// Spec summary (data/model-summaries.json, hand-reviewed). The price sentence is built here from today's numbers so it never goes stale.
+let SUM = {};
+try { SUM = JSON.parse(fs.readFileSync(path.join(process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data'), 'model-summaries.json'), 'utf8')).models || {}; } catch {}
+const sum = SUM[m.key] || null;
+const site = (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return 'source'; } };
 const amazonUrl = amazonSearchUrl(m.name);
 const best = m.best_score_id ? byId[m.best_score_id] : null;
 const meta = m.meta || null;
 const gaps = (currency.gaps || []).filter((g) => g.model_key === m.key);
 const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => a.price_cad - b.price_cad);
 const ORIGIN = 'https://usedglass.ca';
+let priceLine = '';
+if (sum && rows.length) {
+  const n = rows.length, sellers = m.dealers.length, kits = rows.filter((r) => r.bundle).length;
+  priceLine = `${n} used ${n === 1 ? 'listing' : 'listings'} at ${sellers} ${sellers === 1 ? 'seller' : 'sellers'} today, ${n === 1 ? 'at' : 'from'} ${money(m.min_price)}` + (n > 1 ? ` (${kits && kits < n ? 'body-only median' : 'median'} ${money(m.median_price)}).` : '.');
+  if (kits) priceLine += n === 1 ? ' It comes with a lens.' : ` ${kits} of ${n} ${kits === 1 ? 'comes' : 'come'} with a lens.`;
+  if (n > 1 && m.median_90d && m.observations_90d >= 5) {
+    // The 90-day figure mixes kits and bodies, so compare it with today's median across all listings
+    const ps = rows.map((r) => r.price_cad).sort((a, b) => a - b), h = ps.length >> 1;
+    const all = ps.length % 2 ? ps[h] : (ps[h - 1] + ps[h]) / 2;
+    const pct = Math.round(((all - m.median_90d) / m.median_90d) * 100);
+    priceLine += ` Today's median across all listings (${money(all)}) is ` + (Math.abs(pct) < 5 ? `close to the 90-day median of ${money(m.median_90d)}.` : `${Math.abs(pct)}% ${pct < 0 ? 'below' : 'above'} the 90-day median of ${money(m.median_90d)}.`);
+  }
+}
 // Product + AggregateOffer from today's real listings only (no ratings/reviews).
 // Related: other models of the same brand and category (crawlable links between model pages).
 const related = Object.values(models).filter((x) => x.key !== m.key && x.brand === m.brand && x.category === m.category).sort((a, b) => (a.mount === m.mount ? -1 : 0) - (b.mount === m.mount ? -1 : 0) || (b.count || 0) - (a.count || 0)).slice(0, 8);
@@ -39,6 +57,7 @@ const productLd = inStock.length ? {
   <p class="muted"><a href={u('')}>Search</a> › <a href={u('models/')}>All models</a> › {m.brand} › {m.category}</p>
   <h1>{m.name} <SaveButton k={m.key} n={m.name} m={m.mount} cat={m.category} label={true} /></h1>
   <p class="muted" style="margin-top:-.3rem">Save it to your <a href={u('my/')}>wish list or a kit</a> to track it alongside the rest of your gear.</p>
+  {sum && <p class="msum">{sum.text + (priceLine ? ' ' + priceLine : '') + ' '}<span class="muted">Specs: {sum.sources.map((s, i) => <>{i > 0 && ', '}<a href={s} rel="nofollow noopener" target="_blank">{site(s)}{sum.sources.slice(0, i).some((x) => site(x) === site(s)) && ` (page ${i + 1})`}</a></>)}.</span></p>}
   <div class="stats">
     <div><b>{money(m.min_price)}</b><span class="muted">lowest today</span></div>
     <div><b>{money(m.median_price)}</b><span class="muted">median today</span></div>
@@ -76,6 +95,7 @@ const productLd = inStock.length ? {
 </Base>
 
 <style>
+  .msum { max-width:720px; line-height:1.55; margin:.4rem 0 .9rem; }
   .fw { margin:.6rem 0 1rem; max-width:720px; }
   .fw-card { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; align-items:baseline; padding:.6rem .9rem; }
   .fw-checked { font-size:.85rem; }

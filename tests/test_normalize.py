@@ -120,7 +120,9 @@ class NormalizeTests(unittest.TestCase):
 
     def test_accessories_that_mention_a_focal_or_body(self):
         for t in ("Nikon Focusing Screens for F3", "Nikon 22mm Eyepieces", "Used Nisi 150mm holder system for Sigma 14mm f1.8 lens",
-                  "Kodak Carousel 35mm Slide Trays", "Canon C-8 Tele Converter 1.6X (48mm)", "The ExpoDisc (67mm)"):
+                  "Kodak Carousel 35mm Slide Trays", "Canon C-8 Tele Converter 1.6X (48mm)", "The ExpoDisc (67mm)",
+                  "Nikon HN-12 lens hoods", "Minolta clip-on lens hoods", "Mamiya Auto-Ext Ring No.2", "Used 35mm stainless steel film reel",
+                  "Used Filters - 62mm Assorted - From $10", "Fotga M42-NEX/Sony E Lens Adapater - Used"):
             self.assertEqual(L(t)["category"], "accessory", t)
             self.assertIsNone(L(t)["model_key"], t)
 
