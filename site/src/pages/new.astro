@@ -6,7 +6,7 @@ const all = (changes.new_today || []).map((id) => byId[id]).filter(Boolean).sort
 const firstRun = all.length > 0 && all.length === Object.keys(byId).length;
 const rows = firstRun ? all.slice(0, 200) : all;
 ---
-<Base title="New used listings today">
+<Base title="New used listings today" description="Used cameras, lenses and accessories that Canadian dealers listed today, newest first. Updated daily.">
   <h1>New today</h1>
   <p class="muted">Used items that appeared at a dealer since the previous daily check ({changes.date}).</p>
   {firstRun && <p class="card">This is the first day of tracking, so every listing counts as new. Starting tomorrow this page shows only genuinely new arrivals. Showing the 200 most expensive for now.</p>}

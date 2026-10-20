@@ -3,7 +3,7 @@ import Base from '../layouts/Base.astro';
 import { u } from '../lib/data.js';
 import { KIT_CSS } from '../lib/mykit-ui.js';
 ---
-<Base title="Shared camera kit" description="A camera kit shared from UsedGlass.ca, with today's Canadian used and new prices.">
+<Base noindex={true} title="Shared camera kit" description="A camera kit shared from UsedGlass.ca, with today's Canadian used and new prices.">
   <style set:html={KIT_CSS} />
   <p class="muted"><a href={u('my/')}>My kit</a> › Shared kit</p>
   <h1 id="sk-title">Shared kit</h1>
