@@ -547,9 +547,10 @@
   },
   "camera-fujifilm-xh2s": {
    "name": "Fujifilm X-H2S",
-   "text": "The Fujifilm X-H2S has 26.16 megapixels and records video up to 6.2K, with 4K at up to 120 fps. It has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 580 shots per charge, and weighs 660 g with battery and card.",
+   "text": "The Fujifilm X-H2S has 26.16 megapixels, shoots up to 40 frames per second, and records video up to 6.2K. It records 4K video at up to 120 fps, has in-body image stabilization rated up to 7 stops, a CIPA battery rating of about 580 shots per charge, and weighs 660 g with battery and card.",
    "source_fields": {
     "mp": 26.16,
+    "burst_fps": 40,
     "video_max_k": 6.2,
     "video_4k_fps": 120,
     "stab_stops": 7.0,
@@ -1197,16 +1198,18 @@
   },
   "camera-sony-a7c": {
    "name": "Sony Alpha 7C",
-   "text": "The Sony Alpha 7C has 24.2 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It has a CIPA battery rating of about 740 shots per charge and weighs 509 g with battery and card.",
+   "text": "The Sony Alpha 7C has 24.2 megapixels, shoots up to 10 frames per second, and records 4K video at up to 30 fps. It has in-body image stabilization rated up to 5 stops, a CIPA battery rating of about 740 shots per charge, and weighs 509 g with battery and card.",
    "source_fields": {
     "mp": 24.2,
     "burst_fps": 10,
     "video_4k_fps": 30,
+    "stab_stops": 5,
     "battery_cipa": 740,
     "weight_g": 509
    },
    "sources": [
-    "https://www.sony.com/electronics/support/e-mount-body/ilce-7c/specifications"
+    "https://www.sony.com/electronics/support/e-mount-body/ilce-7c/specifications",
+    "https://www.sony.com/electronics/support/e-mount-body-ilce-7-series/ilce-7c/specifications"
    ]
   },
   "camera-sony-a7c-ii": {
@@ -1375,15 +1378,17 @@
   },
   "camera-sony-fx30": {
    "name": "Sony FX30",
-   "text": "The Sony FX30 has 26 megapixels and records 4K video at up to 120 fps. It has in-body image stabilization rated up to 5.5 stops and a CIPA battery rating of about 570 shots per charge.",
+   "text": "The Sony FX30 has 26 megapixels, records 4K video at up to 120 fps, and has in-body image stabilization rated up to 5.5 stops. It has a CIPA battery rating of about 570 shots per charge and weighs 646 g with battery and card.",
    "source_fields": {
     "mp": 26.0,
     "video_4k_fps": 120,
     "stab_stops": 5.5,
-    "battery_cipa": 570
+    "battery_cipa": 570,
+    "weight_g": 646
    },
    "sources": [
-    "https://www.sony.com/electronics/support/e-mount-body/ilme-fx30/specifications"
+    "https://www.sony.com/electronics/support/e-mount-body/ilme-fx30/specifications",
+    "https://www.sony.com/electronics/support/camcorders-and-video-cameras-interchangeable-lens-camcorders/ilme-fx30/specifications"
    ]
   },
   "camera-sony-zve1": {
@@ -1413,6 +1418,21 @@
    },
    "sources": [
     "https://www.sony.com/electronics/support/e-mount-body/zv-e10/specifications"
+   ]
+  },
+  "camera-fujifilm-xs10": {
+   "name": "Fujifilm X-S10",
+   "text": "The Fujifilm X-S10 has 26.1 megapixels, shoots up to 20 frames per second, and records 4K video at up to 60 fps. It has in-body image stabilization rated up to 6 stops and weighs 465 g with battery and card.",
+   "source_fields": {
+    "mp": 26.1,
+    "burst_fps": 20,
+    "video_4k_fps": 60,
+    "stab_stops": 6,
+    "weight_g": 465
+   },
+   "sources": [
+    "https://fujifilm-dsc.com/en/manual/x-s10/technical_notes/spec/index.html",
+    "https://www.fujifilm-x.com/en-us/products/cameras/x-s10/specifications/"
    ]
   }
  }

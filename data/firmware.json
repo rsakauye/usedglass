@@ -1,5 +1,5 @@
 {
- "_about": "Latest firmware per model from manufacturers' official pages. Refresh: python3 scripts/firmware.py",
+ "_about": "Latest firmware per model from manufacturers' official pages. Refresh: python3 scripts/firmware.py notes = a plain summary of the latest version's official release notes (drafted by a local model, every claim checked against the quoted text in notes_quotes and hand-reviewed); notes_source is the release-notes page when it differs from url.",
  "updated": "2026-10-20",
  "models": {
   "camera-fujifilm-gfx100rf": {
@@ -12,151 +12,258 @@
    "version": "3.01",
    "released": "2023-07-04",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x100v/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes lens stopping at \"Near-end\" position; fixes \"Pairing Registration\" screen freeze and loop.",
+   "notes_quotes": [
+    "The firmware bug is fixed that the lens always stops at the “Near-end” position when the camera is turned on after Ver.3.00 update.",
+    "The bug is fixed that the “Pairing Registration” screen in the “FUJIFILM Camera Remote” is displayed in rare cases when turning on the camera right after Ver.3.00 update and then the camera freezes when the “OK” button is pressed, or “Pairing Registration” screen keeps appearing when “BACK” button is pressed."
+   ]
   },
   "camera-fujifilm-xa5": {
    "version": "2.03",
    "released": "2022-07-27",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-a5/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes hunting issues with TAMRON 18-300mm F/3.5-6.3 lens.",
+   "notes_quotes": [
+    "When zooming from the T end to the W end, the “hunting” occurs in the pre-view screen, which affects movies as well as still photos recorded in this condition using TAMRON：18-300mm F/3.5-6.3 Di III-A VC VXD (Model B061)"
+   ]
   },
   "camera-fujifilm-xe1": {
    "version": "2.71",
    "released": "2020-02-13",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes white vignetting with XF16-80mmF4 R lens.",
+   "notes_quotes": [
+    "The phenomenon is fixed that white vignetting in the four corners could occur when used with XF16-80mmF4 R."
+   ]
   },
   "camera-fujifilm-xe3": {
    "version": "1.32",
    "released": "2026-06-23",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-e3/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes Bluetooth pairing with Android 16.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the pairing registration fails when connecting via Bluetooth to an Android 16 smartphone equipped with “FUJIFILM Camera Remote”."
+   ]
   },
   "camera-fujifilm-xe5": {
    "version": "1.12",
    "released": "2026-06-04",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-e5/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes minor bugs.",
+   "notes_quotes": [
+    "Minor bugs have been fixed."
+   ]
   },
   "camera-fujifilm-xh1": {
    "version": "2.15",
    "released": "2026-06-23",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes Bluetooth pairing with Android 16.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the pairing registration fails when connecting via Bluetooth to an Android 16 smartphone equipped with “FUJIFILM Camera Remote”."
+   ]
   },
   "camera-fujifilm-xh2": {
    "version": "5.30",
    "released": "2025-12-02",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Enhances wireless communication security; removes wireless communication menu options.",
+   "notes_quotes": [
+    "The wireless communication security is enhanced while camera is connecting with a smartphone application or external device wirelessly.",
+    "“WIRELESS COMMUNICATION” option in the “SHOOTING SETTING”, “MOVIE SETTING”, and “PLAY BACK MENU” are removed."
+   ]
   },
   "camera-fujifilm-xh2s": {
    "version": "7.30",
    "released": "2025-12-02",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2s/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Enhances wireless communication security; removes wireless communication menu options.",
+   "notes_quotes": [
+    "The wireless communication security is enhanced while camera is connecting with a smartphone application or external device wirelessly.",
+    "“WIRELESS COMMUNICATION” option in the “SHOOTING SETTING”, “MOVIE SETTING”, and “PLAY BACK MENU” are removed."
+   ]
   },
   "camera-fujifilm-xpro1": {
    "version": "3.82",
    "released": "2020-09-17",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-pro1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes under-exposure at F1.2 or wider.",
+   "notes_quotes": [
+    "The phenomenon is fixed that when shooting with the aperture of F1.2 or wider, under-exposure can occur."
+   ]
   },
   "camera-fujifilm-xpro2": {
    "version": "5.11",
    "released": "2024-11-28",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-pro2/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing when connecting to FUJIFILM Camera Remote.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the camera freezes when connecting to FUJIFILM Camera Remote installed on smartphones and tablets."
+   ]
   },
   "camera-fujifilm-xt1": {
    "version": "5.52",
    "released": "2020-09-17",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes under-exposure at F1.2 or wider; fixes EF-X500 flash firing issues.",
+   "notes_quotes": [
+    "The phenomenon is fixed that when shooting with the aperture of F1.2 or wider, under-exposure can occur.",
+    "The phenomenon is fixed that in a multiple-flash shooting where the EF-X500 is used as a commander, flashes in some groups sometimes don’t fire correctly."
+   ]
   },
   "camera-fujifilm-xt100": {
    "version": "2.03",
    "released": "2022-07-27",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t100/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes other minor bugs.",
+   "notes_quotes": [
+    "Other minor bugs have been fixed."
+   ]
   },
   "camera-fujifilm-xt2": {
    "version": "4.41",
    "released": "2024-11-28",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t2/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing when connecting to FUJIFILM Camera Remote.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the camera freezes when connecting to FUJIFILM Camera Remote installed on smartphones and tablets."
+   ]
   },
   "camera-fujifilm-xt200": {
    "version": "1.16",
    "released": "2022-07-27",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t200/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes hunting issues with TAMRON 18-300mm F/3.5-6.3 lens.",
+   "notes_quotes": [
+    "When zooming from the T end to the W end, the “hunting” occurs in the pre-view screen, which affects movies as well as still photos recorded in this condition using TAMRON：18-300mm F/3.5-6.3 Di III-A VC VXD (Model B061)"
+   ]
   },
   "camera-fujifilm-xt3": {
    "version": "5.11",
    "released": "2024-03-28",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t3/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes exposure mismatch with XF50mmF1.0 R WR; fixes images not saving to memory card with AUTO IMAGE TRANSFER ORDER.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the exposure of the preview image and the recorded image are different from each other when shooting manually with the XF50mmF1.0 R WR",
+    "A firmware bug is fixed that the images taken were not saved to the memory card in the camera in case that the image transfer setting to “FUJIFILM XApp” or “FUJIFILM Camera Remote” is set to “AUTO IMAGE TRANSFER ORDER”."
+   ]
   },
   "camera-fujifilm-xt30": {
    "version": "2.01",
    "released": "2023-07-04",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t30/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes abnormal sample images in SCENE POSITION selection.",
+   "notes_quotes": [
+    "The firmware bug is fixed that the sample images in the “SCENE POSITION” selection screen are displayed abnormally after Ver.2.00 update."
+   ]
   },
   "camera-fujifilm-xt30-ii": {
    "version": "2.04",
    "released": "2024-03-28",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t30-ii/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes minor bugs.",
+   "notes_quotes": [
+    "Other minor bugs have been fixed."
+   ]
   },
   "camera-fujifilm-xt5": {
    "version": "4.31",
    "released": "2025-07-26",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t5/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes minor bugs.",
+   "notes_quotes": [
+    "Minor bug have been fixed."
+   ]
   },
   "camera-fujifilm-xt50": {
    "version": "1.32",
    "released": "2026-01-15",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-t50/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes menu cursor movement.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the cursor movement on the menu screen occasionally failed to follow when quickly rotating the “Rear command dial” during operation settings."
+   ]
   },
   "camera-nikon-coolpixp1000": {
    "version": "1.9",
    "released": "2026-08-18",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/604.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing during zoom adjustment in burst mode.",
+   "notes_quotes": [
+    "Fixed an issue where, in rare circumstances, the camera would stop responding when adjusting zoom during burst photography."
+   ]
   },
   "camera-nikon-coolpixp1100": {
    "version": "1.1",
    "released": "2026-09-03",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/600.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing during burst zoom; fixes video metadata timestamp errors.",
+   "notes_quotes": [
+    "In rare circumstances, the camera would stop responding when adjusting zoom during burst photography.",
+    "Some timestamps in the metadata of video files would differ from the actual date and time of recording."
+   ]
   },
   "camera-nikon-coolpixs33": {
    "version": "1.1",
    "released": "2016-07-14",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/193.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes radio interference when using EH-73P/EH-73PCH charging AC adapter.",
+   "notes_quotes": [
+    "Fixed an issue that resulted in the camera interfering with nearby radios and other devices, possibly producing audible noise, when connected to the EH-73P/EH-73PCH charging AC adapter via USB with the battery inserted and the power off."
+   ]
   },
   "camera-nikon-d3200": {
    "version": "1.04",
    "released": "2015-06-02",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/148.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes memory card access errors.",
+   "notes_quotes": [
+    "Addressed an issue that caused the memory card access lamp to light longer than normal or the message “This memory card cannot be used. Card may be damaged. Insert another card” to be displayed while the memory card was accessed."
+   ]
   },
   "camera-nikon-d3300": {
    "version": "1.02",
    "released": "2017-09-06",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/249.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes incorrect exposure in live view.",
+   "notes_quotes": [
+    "Fixed an issue that sometimes resulted in incorrect exposure for the first photo taken in live view."
+   ]
   },
   "camera-nikon-d3s": {
    "version": "1.03",
    "released": "2016-07-13",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/192.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes battery level indicator flashing; fixes duplicate file numbers on dual cards.",
+   "notes_quotes": [
+    "The battery level indicator would on rare occasions flash if the camera was turned on with Clean at shutdown or Clean at startup & shutdown selected",
+    "Two different pictures with the same file number would on rare occasions be recorded to both memory cards if two cards were inserted with Overflow selected"
+   ]
   },
   "camera-nikon-d4": {
    "version": "1.11",
@@ -168,49 +275,85 @@
    "version": "1.33",
    "released": "2018-02-27",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/258.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes focus position shift after standby timer expires; adds flashing focus indicator for focus limits.",
+   "notes_quotes": [
+    "If the standby timer expires after focusing, the focus position will no longer change when the timer is reactivated.",
+    "the focus indicator in the viewfinder (and in live view, the focus point in the monitor) now flash to indicate when infinity or the minimum focus distance is reached."
+   ]
   },
   "camera-nikon-d5200": {
    "version": "1.03",
    "released": "2015-09-15",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/153.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing with Clean image sensor.",
+   "notes_quotes": [
+    "Fixed an issue with the camera freezing when the Clean image sensor option was used."
+   ]
   },
   "camera-nikon-d5300": {
    "version": "1.03",
    "released": "2018-06-07",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/285.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves time zone display.",
+   "notes_quotes": [
+    "The SETUP MENU > Time zone and date > Time zone display now shows only the names of major cities in the currently selected zone."
+   ]
   },
   "camera-nikon-d600": {
    "version": "1.04",
    "released": "2019-02-21",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/316.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves time zone display; fixes distortion control issue.",
+   "notes_quotes": [
+    "The SETUP MENU > Time zone and date > Time zone display now shows only the names of major cities in the currently selected zone.",
+    "Fixed an issue that resulted in over-application of distortion control in pictures taken with an AF-P DX NIKKOR 10-20mm f/4.5-5.6G VR lens"
+   ]
   },
   "camera-nikon-d7100": {
    "version": "1.05",
    "released": "2022-07-26",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/455.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes live view timeout in Camera Control Pro 2.",
+   "notes_quotes": [
+    "Fixed an issue that resulted in live view ending about 10 minutes after being started in Camera Control Pro 2"
+   ]
   },
   "camera-nikon-d7200": {
    "version": "1.04",
    "released": "2018-06-07",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/287.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves time zone display.",
+   "notes_quotes": [
+    "The SETUP MENU > Time zone and date > Time zone display now shows only the names of major cities in the currently selected zone."
+   ]
   },
   "camera-nikon-d750": {
    "version": "1.15",
    "released": "2019-08-27",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/318.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes over-application of distortion control with AF-P DX NIKKOR 10-20mm f/4.5-5.6G VR lens; fixes overexposure with non-CPU lenses.",
+   "notes_quotes": [
+    "Fixed an issue that resulted in over-application of distortion control in pictures taken with an AF-P DX NIKKOR 10-20mm f/4.5-5.6G VR lens",
+    "Fixed an issue that resulted in photos shot with non-CPU lenses being overexposed"
+   ]
   },
   "camera-nikon-d7500": {
    "version": "1.12",
    "released": "2024-04-25",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/528.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Changes the default Wi-Fi password shown after a settings reset; fixes reversed sound level indicators.",
+   "notes_quotes": [
+    "Changed the default password displayed on the connection menu after all the camera's settings were reset.",
+    "Fixed a phenomenon in which the L and R sound level indicators on both the camera monitor and the external HDMI recorder are reversed while images are output to the HDMI recorder in movie live view."
+   ]
   },
   "camera-nikon-d800e": {
    "version": "1.11",
@@ -222,109 +365,194 @@
    "version": "1.31",
    "released": "2024-04-25",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/529.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Changes the default Wi-Fi password shown after a settings reset.",
+   "notes_quotes": [
+    "Changed the default password displayed on the connection menu after all the camera's settings were reset."
+   ]
   },
   "camera-nikon-z30": {
    "version": "1.20",
    "released": "2025-05-07",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/556.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing during Bluetooth or Wi-Fi setup.",
+   "notes_quotes": [
+    "Fixed an issue where, in rare circumstances, the camera would stop responding when the camera was turned on together with the monitor opened from its storage position with the screen facing inward while [ Pairing (Bluetooth) ] or [ Wi-Fi connection ] under [ SETUP MENU ] > [ Connect to smart device ] was set to ON."
+   ]
   },
   "camera-nikon-z5": {
    "version": "1.50",
    "released": "2025-06-10",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/562.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds support for power zoom lenses; fixes i-TTL flash control issue.",
+   "notes_quotes": [
+    "Added support for the power zoom feature on power zoom lenses.",
+    "When an SB-500 flash unit was mounted, changing from spot metering to another metering mode did not change the i-TTL flash control from standard i-TTL fill-flash to i-TTL balanced fill-flash."
+   ]
   },
   "camera-nikon-z5-ii": {
    "version": "1.20",
    "released": "2026-08-18",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/601.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds an option to keep the focus position when saving user settings; adds Automatic monitor display switch.",
+   "notes_quotes": [
+    "Added [ On saving user settings ] to [ Save focus position ] in the [ SETUP MENU ].",
+    "Added [ Automatic monitor display switch ] to the [ SETUP MENU ]."
+   ]
   },
   "camera-nikon-z50": {
    "version": "2.60",
    "released": "2025-04-23",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/555.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes browsing issue after zoom gesture.",
+   "notes_quotes": [
+    "Fixed an issue where browsing other pictures would not function as expected after using a stretch gesture to zoom in on a picture taken in portrait orientation."
+   ]
   },
   "camera-nikon-z6": {
    "version": "3.80",
    "released": "2025-05-13",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/557.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes incorrect shutter speed Exif data for long exposures.",
+   "notes_quotes": [
+    "Shutter speed values were sometimes recorded incorrectly in Exif data when a shutter speed setting of “bulb” or “time” was selected for long time-exposures."
+   ]
   },
   "camera-nikon-z6-ii": {
    "version": "1.70",
    "released": "2025-06-03",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/560.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds support for power zoom lenses; fixes shutter release and frame advance issues with Touch AF.",
+   "notes_quotes": [
+    "Added support for the power zoom feature on power zoom lenses.",
+    "Shutter release would sometimes be disabled or the frame advance rate would drop after the focus point was moved using [ Touch AF ]."
+   ]
   },
   "camera-nikon-z7": {
    "version": "3.80",
    "released": "2025-05-13",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/558.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes incorrect shutter speed Exif data for long exposures.",
+   "notes_quotes": [
+    "Shutter speed values were sometimes recorded incorrectly in Exif data when a shutter speed setting of “bulb” or “time” was selected for long time-exposures."
+   ]
   },
   "camera-nikon-z7-ii": {
    "version": "1.70",
    "released": "2025-06-04",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/561.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds support for power zoom lenses; fixes shutter release and frame advance issues.",
+   "notes_quotes": [
+    "Added support for the power zoom feature on power zoom lenses.",
+    "Shutter release would sometimes be disabled or the frame advance rate would drop after the focus point was moved using [ Touch AF ]."
+   ]
   },
   "camera-nikon-z9": {
    "version": "5.33",
    "released": "2026-10-20",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/607.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes camera freezing with some lenses.",
+   "notes_quotes": [
+    "Fixed an issue that would cause the camera to stop responding with some lenses."
+   ]
   },
   "camera-nikon-zf": {
    "version": "3.01",
    "released": "2026-03-31",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/586.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Changes how the aperture is set when the standby timer expires; fixes \"i\" menu touch control in viewfinder monitor modes.",
+   "notes_quotes": [
+    "Changed the way the aperture was adjusted on a lens when the standby timer expired.",
+    "Fixed an issue where the “i” menu touch control would sometimes not be available in the [ Prioritize viewfinder (1) ] and [ Prioritize viewfinder (2) ] monitor modes."
+   ]
   },
   "camera-nikon-zfc": {
    "version": "1.81",
    "released": "2026-06-02",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/593.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes blank monitor issue.",
+   "notes_quotes": [
+    "Fixed an issue where certain operations would cause the monitor to remain blank when [ Prioritize viewfinder ] is selected for monitor mode."
+   ]
   },
   "camera-olympus-em1": {
    "version": "4.6",
    "released": "2019-02-14",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes operation error at slow shutter speeds.",
+   "notes_quotes": [
+    "The operation error while shooting at slow shutter speeds in firmware version 4.5 has been corrected."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0001/1090/index46a.html"
   },
   "camera-olympus-em5": {
    "version": "2.3",
    "released": "2018-12-18",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes autofocus with Panasonic lenses.",
+   "notes_quotes": [
+    "Corrected issue of autofocus (AF) function not operating correctly when using the \"H-ES200\" and \"H-ES50200\" interchangeable lens produced by Panasonic."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0001/0970/index23a.html"
   },
   "camera-olympus-em5-ii": {
    "version": "4.1",
    "released": "2019-01-24",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports Wireless radiowave commander FC-WR; improves SD card (UHS-II) stability.",
+   "notes_quotes": [
+    "Wireless radiowave commander FC-WR is now supported.",
+    "Stability of operation when using SD card (UHS-II) has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0001/1180/index41a.html"
   },
   "camera-olympus-ep1": {
    "version": "1.4",
    "released": "2010-04-22",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves auto focus speed; improves C-AF tracking with specific lenses during movie recording.",
+   "notes_quotes": [
+    "Improved auto focus speed.",
+    "Improved tracking of C-AF (continuous AF) when recording movies while using M.ZUIKO DIGITAL ED 9-18mm F4.0-5.6 or M.ZUIKO DIGITAL ED 14-150mm F4.0-5.6."
+   ],
+   "notes_source": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/ep1.html"
   },
   "camera-om-system-om1": {
    "version": "1.9",
    "released": "2025-11-04",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes live view display issues.",
+   "notes_quotes": [
+    "The issue in version 1.8 where the live view images were occasionally not displaying properly has been resolved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/dslr/1430/v1900/ENU/index09a.html"
   },
   "camera-om-system-om3": {
    "version": "1.1",
    "released": "2025-07-01",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves touch panel stability during playback.",
+   "notes_quotes": [
+    "Stability of touch panel operation during playback was improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/dslr/1470/v1100/ENU/index01a.html"
   },
   "camera-om-system-om5": {
    "version": "1.2",
@@ -342,19 +570,35 @@
    "version": "2.7",
    "released": "2022-04-25",
    "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes shooting mode registration in custom mode.",
+   "notes_quotes": [
+    "When Save/Restore Camera Setting, the shooting mode registered in custom mode was not reflected. This bug has been fixed."
+   ],
+   "notes_source": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/g9.html"
   },
   "camera-panasonic-gh5": {
    "version": "2.8",
    "released": "2022-04-25",
    "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes shooting mode registration in custom mode.",
+   "notes_quotes": [
+    "When Save/Restore Camera Setting, the shooting mode registered in custom mode was not reflected. This bug has been fixed."
+   ],
+   "notes_source": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/gh5.html"
   },
   "camera-panasonic-gx7": {
    "version": "1.3",
    "released": "2014-05-22",
    "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes Wi-Fi connection with Apple iOS devices; improves startup stability with UHS-I SD cards.",
+   "notes_quotes": [
+    "Connection problem with Apple iOS devices via Wi-Fi is fixed.",
+    "Improved stability of startup process in the use of UHS-I compliant SD memory card."
+   ],
+   "notes_source": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/fts/dl/gx7.html"
   },
   "camera-panasonic-gx9": {
    "version": "1.5",
@@ -366,37 +610,64 @@
    "version": "2.4",
    "released": "2025-01-23",
    "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index4.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds a pop-up message for Panasonic collapsible lenses.",
+   "notes_quotes": [
+    "Added a pop-up message when using a Panasonic collapsible lens."
+   ],
+   "notes_source": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/ff/dl/s1.html"
   },
   "camera-panasonic-s5": {
    "version": "2.9",
    "released": "2025-07-29",
    "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index4.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Enhances product security.",
+   "notes_quotes": [
+    "Enhanced the security of products."
+   ],
+   "notes_source": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/ff/dl/s5.html"
   },
   "camera-panasonic-s5-ii": {
    "version": "3.7",
    "released": "2026-03-10",
    "url": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/index4.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports Panasonic microphone DMW-DMS1.",
+   "notes_quotes": [
+    "Support for the Panasonic microphone DMW-DMS1."
+   ],
+   "notes_source": "https://av.jpn.support.panasonic.com/support/global/cs/dsc/download/ff/dl/s5m2.html"
   },
   "camera-pentax-k1": {
    "version": "2.51",
    "released": "2025-12-05",
    "url": "https://www.ricoh-imaging.co.jp/english/support/digital/k1.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves star-tracking accuracy.",
+   "notes_quotes": [
+    "Improved accuracy of the star-tracking for Astrotracer shooting when “2 Type 2” is selected under Menu Item C, “6. Bulb（B）Mode Options."
+   ]
   },
   "camera-pentax-k5-ii": {
    "version": "1.07",
    "released": "2014-03-06",
    "url": "https://www.ricoh-imaging.co.jp/english/support/digital/k-5_2_s.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves general performance stability.",
+   "notes_quotes": [
+    "Improved stability for general performance"
+   ]
   },
   "camera-pentax-k7": {
    "version": "1.13",
    "released": "2014-03-06",
    "url": "https://www.ricoh-imaging.co.jp/english/support/digital/k-7_s.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves general performance stability.",
+   "notes_quotes": [
+    "Improved stability for general performance"
+   ]
   },
   "camera-ricoh-gr": {
    "version": "5.01",
@@ -408,295 +679,493 @@
    "version": "2.10",
    "released": "2025-10-23",
    "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr3_s.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds GF-2 Flash Mode.",
+   "notes_quotes": [
+    "A new exposure mode [GF-2 Flash Mode] has been added, which automatically adjusts the camera's exposure settings when the external flash GF-2 is attached and used for flash photography."
+   ]
   },
   "camera-ricoh-griiix": {
    "version": "1.60",
    "released": "2025-10-23",
    "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr3x_s.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds GF-2 Flash Mode.",
+   "notes_quotes": [
+    "A new exposure mode [GF-2 Flash Mode] has been added, which automatically adjusts the camera's exposure settings when the external flash GF-2 is attached and used for flash photography."
+   ]
   },
   "camera-ricoh-griv": {
    "version": "1.11",
    "released": "2026-02-13",
    "url": "https://www.ricoh-imaging.co.jp/english/support/digital/gr4_s.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds electronic shutter function.",
+   "notes_quotes": [
+    "The electronic shutter function introduced in the GR IV HDF has been added to the GR IV."
+   ]
   },
   "lens-fujifilm-fujifilm-g-500mm-f5_6-lm_stab": {
    "version": "1.03",
    "released": "2026-02-03",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/gf500mmf56-r-lm-ois-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes image stabilization activation issue.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the [image stabilization] function occasionally fails to activate immediately after turning on the camera (or immediately after resuming from the camera’s auto power-off)."
+   ]
   },
   "lens-fujifilm-fujifilm-x-10-24mm-f4-stab": {
    "version": "1.13",
    "released": "2020-06-10",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf10-24mmf4-r-ois/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes minor bug.",
+   "notes_quotes": [
+    "Fix of minor bug."
+   ]
   },
   "lens-fujifilm-fujifilm-x-13-33mm-f3_5-6_3": {
    "version": "1.01",
    "released": "2026-04-06",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xc13-33mmf35-63-ois/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves image stabilization.",
+   "notes_quotes": [
+    "The image stabilization feature is enhanced to address the issue that images appear blurry in rare cases."
+   ]
   },
   "lens-fujifilm-fujifilm-x-15-45mm-f3_5-5_6-stab": {
    "version": "1.12",
    "released": "2024-11-15",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xc15-45mmf35-56-ois-pz/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes lens initialization and retraction issues on X-T50 and X-M5 cameras.",
+   "notes_quotes": [
+    "The lens initializes itself unintentionally and automatically retracts once and back to the original position frequently when using the latest X-T50 and X-M5 cameras."
+   ]
   },
   "lens-fujifilm-fujifilm-x-16-55mm-f2_8-lm": {
    "version": "1.33",
    "released": "2024-08-15",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf16-55mmf28-r-lm-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes a minor bug.",
+   "notes_quotes": [
+    "A minor bug is fixed."
+   ]
   },
   "lens-fujifilm-fujifilm-x-16-80mm-f4-stab": {
    "version": "1.21",
    "released": "2024-08-15",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf16-80mmf4-r-ois-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes noise during zoom.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the noise occurs during zoom operation in the rare cases."
+   ]
   },
   "lens-fujifilm-fujifilm-x-18-135mm-f3_5-5_6-lm_stab": {
    "version": "1.12",
    "released": "2020-06-10",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf18-135mmf35-56-r-lm-ois-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes minor bug.",
+   "notes_quotes": [
+    "Fix of minor bug."
+   ]
   },
   "lens-fujifilm-fujifilm-x-500mm-f5_6-lm_stab": {
    "version": "1.02",
    "released": "2026-02-03",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf500mmf56-r-lm-ois-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes image stabilization activation issue.",
+   "notes_quotes": [
+    "A firmware bug is fixed that the [image stabilization] function occasionally fails to activate immediately after turning on the camera (or immediately after resuming from the camera’s auto power-off)."
+   ]
   },
   "lens-fujifilm-fujifilm-x-56mm-f1_2": {
    "version": "1.01",
    "released": "2022-09-29",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf56mmf12-r-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes interval timer shooting bug.",
+   "notes_quotes": [
+    "The minor bug at using the “INTERVAL TIMER SHOOTING” has been fixed."
+   ]
   },
   "lens-fujifilm-fujifilm-x-8-16mm-f2_8-lm": {
    "version": "1.01",
    "released": "2020-02-13",
    "url": "https://www.fujifilm-x.com/global/support/download/firmware/lenses/xf8-16mmf28-r-lm-wr/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes minor bugs.",
+   "notes_quotes": [
+    "Fix of minor bugs."
+   ]
   },
   "lens-nikon-nikon-z-100-400mm-f4_5-5_6-s_stab": {
    "version": "1.10",
    "released": "2022-04-26",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/448.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear focus ring rotation option; adds the Switch focus/control ring roles setting.",
+   "notes_quotes": [
+    "The lens now supports options for Focus ring rotation range * in the camera CUSTOM SETTINGS MENU in addition to Non-linear",
+    "Added support for the Switch focus/control ring roles * feature in the camera CUSTOM SETTINGS MENU"
+   ]
   },
   "lens-nikon-nikon-z-105mm-f2_8-macro_s_stab": {
    "version": "1.10",
    "released": "2022-08-02",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/457.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear focus ring rotation; adds the Switch focus/control ring roles setting.",
+   "notes_quotes": [
+    "Added support for linear focus ring rotation during manual focus",
+    "Added support for [ Switch focus/control ring roles ] * in the camera [ CUSTOM SETTINGS MENU ]."
+   ]
   },
   "lens-nikon-nikon-z-105mm-f2_8-s_stab": {
    "version": "1.10",
    "released": "2022-08-02",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/457.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear focus ring rotation; adds the Switch focus/control ring roles setting.",
+   "notes_quotes": [
+    "Added support for linear focus ring rotation during manual focus",
+    "Added support for [ Switch focus/control ring roles ] * in the camera [ CUSTOM SETTINGS MENU ]."
+   ]
   },
   "lens-nikon-nikon-z-12-28mm-f3_5-5_6-dx_s": {
    "version": "1.10",
    "released": "2025-12-18",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/576.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds support for zoom operations using the zoom control; adds support for zoom position and rotation settings.",
+   "notes_quotes": [
+    "Added support for zoom operations using the zoom control on compatible cameras.",
+    "Added support for [ Save and load power zoom position ], [ Reverse zoom ring rotation ], [ Zoom ring rotation range ], and [ Power/Hi-Res Zoom collab ]."
+   ]
   },
   "lens-nikon-nikon-z-16-50mm-f3_5-6_3-dx": {
    "version": "1.02",
    "released": "2024-11-26",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/547.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes aperture error messages.",
+   "notes_quotes": [
+    "Addressed an issue that, in extremely rare cases, error messages like the following would be displayed while the aperture was being adjusted: Error. Press shutter-release button to reset."
+   ]
   },
   "lens-nikon-nikon-z-16-50mm-f3_5-6_3-dx_stab": {
    "version": "1.02",
    "released": "2024-11-26",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/547.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes aperture error messages.",
+   "notes_quotes": [
+    "Addressed an issue that, in extremely rare cases, error messages like the following would be displayed while the aperture was being adjusted: Error. Press shutter-release button to reset."
+   ]
   },
   "lens-nikon-nikon-z-18-140mm-f3_5-6_3-dx_stab": {
    "version": "1.01",
    "released": "2024-02-07",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/510.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes video recording interruption when operating the zoom ring.",
+   "notes_quotes": [
+    "Fixed an issue that in rare circumstances would cause interruption of video recording with a message “Recording interrupted” displayed on the camera when the lens zoom ring is operated during recording."
+   ]
   },
   "lens-nikon-nikon-z-20mm-f1_8-s": {
    "version": "1.10",
    "released": "2022-12-20",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/474.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear manual focus control via the lens control ring.",
+   "notes_quotes": [
+    "Added support for linear manual focus control via the lens control ring."
+   ]
   },
   "lens-nikon-nikon-z-24-50mm-f4-6_3": {
    "version": "1.02",
    "released": "2026-04-07",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/588.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Fixes focus peaking display issue.",
+   "notes_quotes": [
+    "Fixed an issue where the focus peaking display remained on without any manual focus operation after enabling focus peaking and turning the camera off and on."
+   ]
   },
   "lens-nikon-nikon-z-24-70mm-f2_8-s": {
    "version": "1.20",
    "released": "2022-08-02",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/458.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear focus ring rotation; adds the Switch focus/control ring roles setting.",
+   "notes_quotes": [
+    "Added support for linear focus ring rotation during manual focus",
+    "Added support for [ Switch focus/control ring roles ] * in the camera [ CUSTOM SETTINGS MENU ]."
+   ]
   },
   "lens-nikon-nikon-z-24mm-f1_8-s": {
    "version": "1.10",
    "released": "2022-12-20",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/475.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear manual focus control.",
+   "notes_quotes": [
+    "Added support for linear manual focus control via the lens control ring."
+   ]
   },
   "lens-nikon-nikon-z-28-75mm-f2_8": {
    "version": "1.10",
    "released": "2024-11-21",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/522.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds focus ring rotation range options.",
+   "notes_quotes": [
+    "The lens now supports options for [ Focus ring rotation range ] * in the camera [ CUSTOM SETTINGS MENU ] in addition to [ Non-linear ]."
+   ]
   },
   "lens-nikon-nikon-z-28mm-f2_8": {
    "version": "1.10",
    "released": "2024-08-20",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/537.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds focus ring rotation range options.",
+   "notes_quotes": [
+    "The lens now supports options for [ Focus ring rotation range ] * in the camera [ CUSTOM SETTINGS MENU ] in addition to [ Non-linear ]."
+   ]
   },
   "lens-nikon-nikon-z-35mm-f1_4": {
    "version": "1.01",
    "released": "2026-07-01",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/596.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves startup reliability.",
+   "notes_quotes": [
+    "Changed the position of focusing lenses when the camera is turned off to improve startup reliability."
+   ]
   },
   "lens-nikon-nikon-z-400mm-f2_8-s_stab": {
    "version": "1.10",
    "released": "2023-01-17",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/481.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds focus ring rotation range options; adds the Switch focus/control ring roles setting.",
+   "notes_quotes": [
+    "The lens now supports options for [ Focus ring rotation range ] * in the camera [ CUSTOM SETTINGS MENU ] in addition to [ Non-linear ].",
+    "Added support for the [ Switch focus/control ring roles ] * feature in the camera [ CUSTOM SETTINGS MENU ]."
+   ]
   },
   "lens-nikon-nikon-z-40mm-f2": {
    "version": "1.10",
    "released": "2024-08-20",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/539.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds focus ring rotation range options.",
+   "notes_quotes": [
+    "The lens now supports options for [ Focus ring rotation range ] * in the camera [ CUSTOM SETTINGS MENU ] in addition to [ Non-linear ]."
+   ]
   },
   "lens-nikon-nikon-z-50mm-f1_4": {
    "version": "1.01",
    "released": "2026-07-01",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/597.html",
-   "checked": "2026-10-20"
-  },
-  "lens-nikon-nikon-z-70-200mm-f2_8-s": {
-   "version": "1.01",
-   "released": "2020-04-14",
-   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/357.html",
-   "checked": "2026-10-20"
-  },
-  "lens-nikon-nikon-z-70-200mm-f2_8-s_stab": {
-   "version": "1.01",
-   "released": "2020-04-14",
-   "url": "https://downloadcenter.nikonimglib.com/en/download/fw/357.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves startup reliability.",
+   "notes_quotes": [
+    "improve startup reliability"
+   ]
   },
   "lens-nikon-nikon-z-85mm-f1_8-s": {
    "version": "1.10",
    "released": "2022-12-20",
    "url": "https://downloadcenter.nikonimglib.com/en/download/fw/478.html",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Adds linear manual focus control.",
+   "notes_quotes": [
+    "Added support for linear manual focus control via the lens control ring."
+   ]
   },
   "lens-olympus-micro-four-thirds-12-200mm-f3_5-6_3": {
    "version": "1.1",
    "released": "2024-02-20",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves C-AF stability during high-speed sequential shooting.",
+   "notes_quotes": [
+    "Improved stability of C-AF operation for High-speed sequential shooting with SH2."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/lens/1032/v1100/ENU/index01a.html"
   },
   "lens-olympus-micro-four-thirds-12-50mm-f3_5-6_3": {
    "version": "1.4",
    "released": "2016-11-01",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1010/index04a.html"
   },
   "lens-olympus-micro-four-thirds-20mm-f1_4": {
    "version": "1.1",
    "released": "2023-06-08",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves MF shooting operations.",
+   "notes_quotes": [
+    "MF shooting operations have been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1038/index01a.html"
   },
   "lens-olympus-micro-four-thirds-25mm-f1_8": {
    "version": "1.1",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1022/index01a.html"
   },
   "lens-olympus-micro-four-thirds-40-150mm-f2_8-pro": {
    "version": "1.3",
    "released": "2019-06-19",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports M.Zuiko Digital 2x Teleconverter MC-20.",
+   "notes_quotes": [
+    "M.Zuiko Digital 2x Teleconverter MC-20 is supported."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1020/index03a.html"
   },
   "lens-olympus-micro-four-thirds-45mm-f1_2-pro": {
    "version": "1.1",
    "released": "2019-01-24",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports C-AF+MF function for E-M1X.",
+   "notes_quotes": [
+    "C-AF+MF function for E-M1X is now supported."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1030/index01a.html"
   },
   "lens-olympus-micro-four-thirds-45mm-f1_8": {
    "version": "1.2",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1011/index02a.html"
   },
   "lens-olympus-micro-four-thirds-60mm-f2_8": {
    "version": "1.2",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1012/index02a.html"
   },
   "lens-olympus-micro-four-thirds-60mm-f2_8-macro": {
    "version": "1.2",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1012/index02a.html"
   },
   "lens-olympus-micro-four-thirds-7-14mm-f2_8-pro": {
    "version": "1.1",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports MF clutch disabled settings.",
+   "notes_quotes": [
+    "Supports MF clutch (Snapshot Focus) disabled settings in camera settings."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1023/index01a.html"
   },
   "lens-olympus-micro-four-thirds-75mm-f1_8": {
    "version": "1.2",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video recording.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1015/index02a.html"
   },
   "lens-olympus-micro-four-thirds-8mm-f1_8-fisheye_pro": {
    "version": "1.2",
    "released": "2019-01-24",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports C-AF+MF function for E-M1X.",
+   "notes_quotes": [
+    "C-AF+MF function for E-M1X is now supported."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1025/index02a.html"
   },
   "lens-om-system-micro-four-thirds-25mm-f1_2-pro": {
    "version": "1.2",
    "released": "2025-10-23",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens stability.",
+   "notes_quotes": [
+    "Improved lens stability."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/lens/1028/v1200/ENU/index02a.html"
   },
   "lens-om-system-micro-four-thirds-45mm-f1_8": {
    "version": "1.2",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1011/index02a.html"
   },
   "lens-om-system-micro-four-thirds-7-14mm-f2_8": {
    "version": "1.1",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Supports MF clutch disabled settings.",
+   "notes_quotes": [
+    "Supports MF clutch (Snapshot Focus) disabled settings in camera settings."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1023/index01a.html"
   },
   "lens-om-system-micro-four-thirds-75mm-f1_8": {
    "version": "1.2",
    "released": "2015-11-26",
    "url": "https://support.jp.omsystem.com/en/support/imsg/digicamera/download/software/firm/e1/",
-   "checked": "2026-10-20"
+   "checked": "2026-10-20",
+   "notes": "Improves lens aperture stability during video shooting.",
+   "notes_quotes": [
+    "Stability of lens aperture when shooting videos has been improved."
+   ],
+   "notes_source": "https://dl01.om-digitalsolutions.net/ww/ud2/ENU/0004/1015/index02a.html"
   }
  }
 }

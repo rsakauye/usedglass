@@ -13,7 +13,9 @@ Sources (official only, a few index pages, not one page per model where avoidabl
   Ricoh      ricoh-imaging.co.jp download index, then each model's page for version + YYYY/MM/DD date
 A model is left out unless both version and date were read from the official page. Never guessed.
 Attention notes are curated by hand in data/firmware.json ("attention", "attention_source"); this script keeps them
-only while the latest version is unchanged, so a note never sticks to a newer release.
+only while the latest version is unchanged, so a note never sticks to a newer release. The same goes for the
+plain-English release-note summary ("notes", "notes_quotes", "notes_source"), written from the official notes and
+checked against them by hand.
 Not covered yet: Canon, Sony, Leica, Hasselblad, Sigma, Tamron (official pages block scripted fetches or have no index).
 """
 import datetime as dt, html, json, re, sys, urllib.error, urllib.request
@@ -139,7 +141,7 @@ def nikon(models):
                     rel[p] = (d, m[2], "https://downloadcenter.nikonimglib.com" + href, m[1])
     lens_c = []
     for p, (d, v, u, title) in rel.items():
-        if "nikkor" in p:
+        if "nikkorz" in p:  # Z lenses only: "AF-S NIKKOR 70-200mm f/2.8E" must not match the Z 70-200mm f/2.8
             s = lens_sig(title.replace(" f/", "mm f/") if "mm" not in title else title)
             if s:
                 lens_c.append((s[0], s[1], s[2], {"d": d, "v": v, "u": u}))
@@ -245,6 +247,10 @@ def main():
             o = old.get(k, {})
             if o.get("attention") and o.get("version") == e["version"]:  # keep a curated note only for the same release
                 e["attention"], e["attention_source"] = o["attention"], o.get("attention_source")
+            if o.get("notes") and o.get("version") == e["version"]:  # release-note summary is tied to its version
+                for f in ("notes", "notes_quotes", "notes_source"):
+                    if f in o:
+                        e[f] = o[f]
             new[k] = e
     for k, o in old.items():  # keep models no longer in today's models.json (pages may come back)
         new.setdefault(k, o)
