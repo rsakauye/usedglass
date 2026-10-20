@@ -89,7 +89,7 @@ const pmoney = Object.fromEntries(bodies.filter((b) => b.p != null).map((b) => [
     <div class="cmp-cls" id="cmp-cls" aria-live="polite"></div>
   </div>
   <div class="cmp-top">
-    <div class="card cmp-radar"><svg id="cmp-svg" viewBox="0 0 320 300" role="img" aria-label="Stat radar comparing the chosen cameras"></svg><ul class="cmp-legend" id="cmp-legend"></ul></div>
+    <div class="card cmp-radar"><svg id="cmp-svg" viewBox="0 0 320 300" role="img" aria-label="Stat radar comparing the chosen cameras. The same scores are in the table that follows."></svg><ul class="cmp-legend" id="cmp-legend"></ul><div id="cmp-tbl" class="a11y-table"></div></div>
     <div>
       <h2 style="margin-top:0">What the stats mean</h2>
       <ul id="cmp-axes">
@@ -130,6 +130,7 @@ const pmoney = Object.fromEntries(bodies.filter((b) => b.p != null).map((b) => [
         h += ps.map((p: any) => `<circle cx="${p[0]}" cy="${p[1]}" r="3" fill="${COL[ci]}"/>`).join('');
       });
       $('cmp-svg').innerHTML = h;
+      $('cmp-tbl').innerHTML = sel.length ? `<table><caption>Radar scores (0 to 100, 100 = best body in this list)</caption><thead><tr><th scope="col">Stat</th>${sel.map(([b]: any) => `<th scope="col">${esc(b.n)}</th>`).join('')}</tr></thead><tbody>${ax.map((a: any, i: number) => `<tr><th scope="row">${esc(a[1])}</th>${sel.map(([b]: any) => `<td>${b.st[i][0]}</td>`).join('')}</tr>`).join('')}</tbody></table>` : '';
       $('cmp-legend').innerHTML = sel.map(([b, ci]: any) => `<li><span class="sw" style="display:inline-block;width:.8rem;height:.8rem;border-radius:2px;margin-right:.35rem;background:${COL[ci]}"></span>${esc(b.n)}</li>`).join('');
     }
     function card(b: any, ci: number) {
@@ -137,9 +138,9 @@ const pmoney = Object.fromEntries(bodies.filter((b) => b.p != null).map((b) => [
       let h = `<section class="card cmp-card" style="border-top:5px solid ${COL[ci]}"><h2>${esc(b.n)}</h2><p class="cls muted">${esc(b.s)} · ${esc(b.scr)} screen · power ${tot}/600</p>`;
       h += b.st.map((s: any, i: number) => `<div class="cmp-stat${hot[ax[i][0]] ? ' hot' : ''}"><b title="${esc(ax[i][1])}">${ax[i][0]}</b><div class="cmp-bar" role="img" aria-label="${esc(ax[i][1])} ${s[0]} of 100"><i style="width:${s[0]}%;background:${COL[ci]}"></i></div><span class="muted">${esc(ax[i][1])}: ${esc(s[1])} (${s[0]})${hot[ax[i][0]] ? ` <span class="why">· key for ${esc(hot[ax[i][0]].join(', '))}</span>` : ''}</span></div>`).join('');
       const t = [...b.t].sort((x: any, y: any) => (x.t === y.t ? 0 : x.t === '+' ? -1 : 1));
-      h += `<ul class="cmp-tr">${t.map((x: any) => `<li class="${x.t === '+' ? 'buff' : 'debuff'}"><b aria-label="${x.t === '+' ? 'buff' : 'debuff'}">${x.t === '+' ? '+' : '−'}</b>${esc(x.text)} <a href="${esc(x.src)}" rel="nofollow noopener" target="_blank">source</a></li>`).join('')}</ul>`;
+      h += `<ul class="cmp-tr">${t.map((x: any) => `<li class="${x.t === '+' ? 'buff' : 'debuff'}"><b aria-hidden="true">${x.t === '+' ? '+' : '−'}</b><span class="sr-only">${x.t === '+' ? 'Buff: ' : 'Debuff: '}</span>${esc(x.text)} <a href="${esc(x.src)}" rel="nofollow noopener" target="_blank">source</a></li>`).join('')}</ul>`;
       h += `<p style="margin:.6rem 0 0">${b.url ? `<a href="${b.url}">${b.c} used listing${b.c === 1 ? '' : 's'}${pmoney[b.k] ? `, from ${pmoney[b.k]}` : ''}</a>` : '<span class="muted">No used listings tracked right now.</span>'}</p>`;
-      h += `<p class="muted" style="margin:.3rem 0 0;font-size:.8rem">Specs: ${b.src.map((s: string, i: number) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${i + 1}</a>`).join(' ')}</p></section>`;
+      h += `<p class="muted" style="margin:.3rem 0 0;font-size:.8rem">Specs: ${b.src.map((s: string, i: number) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${i + 1}<span class="sr-only"> (spec source ${i + 1} for ${esc(b.n)}, opens in a new tab)</span></a>`).join(' ')}</p></section>`;
       return h;
     }
     function renderCls() {

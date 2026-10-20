@@ -76,6 +76,10 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
       if (mq && mq.addEventListener) mq.addEventListener('change', function (e) { var s2 = null; try { s2 = localStorage.getItem('ug.theme'); } catch (x) {} if (!s2) window.ugSetTheme(e.matches, false); });
     })();
   </script>
+  <script is:inline define:vars={{ FONT: u('fonts/atkinson.css') }}>
+    // Accessibility settings before first paint (saved choice, else the OS preference): no flash.
+    (function(){var d=document.documentElement,s={};try{s=JSON.parse(localStorage.getItem('a11y')||'{}')||{}}catch(e){}function m(q){return!!(window.matchMedia&&matchMedia(q).matches)}d.setAttribute('data-a11y-size',s.size||'m');d.setAttribute('data-a11y-contrast',s.contrast||(m('(prefers-contrast: more)')?'high':'normal'));d.setAttribute('data-a11y-motion',s.motion||(m('(prefers-reduced-motion: reduce)')?'reduce':'full'));['font','cb','space','links','tables'].forEach(function(k){if(s[k]&&s[k]!=='default')d.setAttribute('data-a11y-'+k,s[k])});if(s.font==='readable'){var l=document.createElement('link');l.id='a11y-font';l.rel='stylesheet';l.href=FONT;document.head.appendChild(l)}})();
+  </script>
   <script is:inline>
     // "2h ago" for <time data-rel datetime=...>; the full timestamp stays in the title attribute.
     window.ugRel = function (root) {
@@ -88,9 +92,9 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
     document.addEventListener('DOMContentLoaded', function () { window.ugRel(document); });
   </script>
   <style is:global>
-    :root { --fg:#16181d; --muted:#5b6170; --bg:#fafafa; --card:#fff; --line:#e4e6eb; --accent:#0f6fde; --good:#0a7d38; --warn:#b54708; }
+    :root { --fg:#16181d; --muted:#5b6170; --bg:#fafafa; --card:#fff; --line:#e4e6eb; --accent:#0f6fde; --good:#0a7d38; --warn:#b54708; --focus:#0b57d0; --focus-halo:#fff; }
     * { box-sizing: border-box; }
-    body { margin:0; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--fg); background:var(--bg); }
+    body { margin:0; font: 1rem/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color:var(--fg); background:var(--bg); }
     a { color: var(--accent); }
     header.site { background:#111; color:#fff; }
     header.site .wrap { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; justify-content:space-between; }
@@ -205,9 +209,48 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
       font-family:'UG Seg14', ui-monospace, Menlo, Consolas, monospace; font-weight:700; color:var(--seg); text-shadow:0 0 5px rgba(255,140,40,.4); font-size:.72rem; letter-spacing:.03em; text-transform:uppercase; }
     html[data-theme=dark] td.price s, html[data-theme=dark] .l-price s { color:var(--muted); text-shadow:none; }
     html[data-theme=dark] ::selection { background:#7a3a12; color:#fff; }
+    /* ---------- Accessibility (WCAG 2.2 AA) + settings menu (public/a11y.js). Choices live in localStorage only. ---------- */
+    .skip { position:absolute; left:.5rem; top:.5rem; transform:translateY(-200%); z-index:100; background:#fff; color:#000; padding:.6rem 1rem; border:3px solid #000; border-radius:6px; font-weight:700; text-decoration:underline; }
+    .skip:focus { transform:none; }
+    :focus-visible { outline:3px solid var(--focus); outline-offset:2px; box-shadow:0 0 0 5px var(--focus-halo); }
+    main:focus { outline:none; box-shadow:none; }
+    html[data-a11y-size=s] { font-size:87.5%; } html[data-a11y-size=l] { font-size:118.75%; } html[data-a11y-size=xl] { font-size:137.5%; }
+    html[data-a11y-motion=reduce] *, html[data-a11y-motion=reduce] *::before, html[data-a11y-motion=reduce] *::after { animation:none !important; transition:none !important; scroll-behavior:auto !important; }
+    html[data-a11y-links=on] a { text-decoration:underline !important; text-underline-offset:.15em; }
+    html[data-a11y-space=on] body { line-height:1.8; letter-spacing:.03em; word-spacing:.1em; }
+    html[data-a11y-space=on] p { margin-bottom:1.3em; }
+    html[data-a11y-space=on] button, html[data-a11y-space=on] .btn, html[data-a11y-space=on] input, html[data-a11y-space=on] select { min-height:48px; padding:.65rem 1rem; }
+    html[data-a11y-space=on] nav a, html[data-a11y-space=on] footer a, html[data-a11y-space=on] .a11y-link { display:inline-block; padding:.55rem .2rem; }
+    html[data-a11y-font=readable] body, html[data-a11y-font=readable] body * { font-family:'Atkinson Hyperlegible', system-ui, sans-serif !important; }
+    .a11y-table { position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+    html[data-a11y-tables=on] .a11y-table { position:static; width:auto; height:auto; overflow:visible; clip:auto; white-space:normal; margin-top:.8rem; }
+    .a11y-link { background:none; border:0; padding:0; color:inherit; text-decoration:underline; font:inherit; cursor:pointer; border-radius:0; }
+    html[data-theme=dark] { --focus:#ffad5c; --focus-halo:#000; }
+    html[data-a11y-contrast=high] { --fg:#000; --muted:#1f1f1f; --bg:#fff; --card:#fff; --line:#000; --accent:#0039a6; --good:#00602b; --warn:#8a3200; }
+    html[data-a11y-contrast=high] .card, html[data-a11y-contrast=high] th, html[data-a11y-contrast=high] td { border-color:#000; }
+    html[data-a11y-contrast=high] .card { border-width:2px; }
+    html[data-a11y-contrast=high] th { background:#e8e8e8; }
+    html[data-a11y-contrast=high] a { text-decoration:underline; }
+    html[data-a11y-contrast=high] header.site nav a { opacity:1; }
+    html[data-theme=dark][data-a11y-contrast=high] { --fg:#fff; --muted:#ececec; --bg:#000; --card:#000; --line:#fff; --accent:#ffc266; --good:#8dffb0; --warn:#ffc48f; --seg:#ffc266; }
+    html[data-theme=dark][data-a11y-contrast=high] body::before, html[data-theme=dark][data-a11y-contrast=high] body::after { display:none; }
+    html[data-theme=dark][data-a11y-contrast=high] th { background:#1a1a1a; }
+    html[data-a11y-cb=on] { --good:#0062a3; --warn:#a64200; }
+    html[data-theme=dark][data-a11y-cb=on] { --good:#56b4e9; --warn:#e69f00; }
+    html[data-a11y-cb=on] .pill.good::before { content:'\2713\00a0'; }
+    html[data-a11y-cb=on] .pill.warn::before, html[data-a11y-cb=on] .pill.mk-warn::before { content:'!\00a0'; }
+    html[data-a11y-cb=on] .deal { border-left-style:double; border-left-width:6px; }
+    /* menu skin: light = clean console settings card; dark = darkroom panel */
+    #a11y-dlg { --a11y-bg:#fff; --a11y-fg:#16181d; --a11y-muted:#4a5060; --a11y-line:#d5d8de; --a11y-ctl:#5b6170; --a11y-on:#0b57d0; --a11y-on-fg:#fff; --a11y-focus:#0b57d0; --a11y-border:3px solid #111; }
+    #a11y-dlg h2 { text-transform:uppercase; letter-spacing:.08em; border-bottom:3px solid #f4a261; padding-bottom:.35rem; }
+    html[data-theme=dark] #a11y-dlg { --a11y-bg:#1b1a17; --a11y-fg:#ece4d6; --a11y-muted:#c9bfae; --a11y-line:#3b362f; --a11y-ctl:#8a7f6e; --a11y-ctl-bg:#24211d; --a11y-on:#ffad5c; --a11y-on-fg:#000; --a11y-focus:#ffad5c; --a11y-border:2px solid #4d463d; --a11y-radius:4px; --a11y-ctl-radius:3px; }
+    html[data-theme=dark] #a11y-dlg h2 { border-bottom-color:var(--safelight); }
+    html[data-a11y-contrast=high] #a11y-dlg { --a11y-muted:#000; --a11y-line:#000; --a11y-ctl:#000; }
+    html[data-theme=dark][data-a11y-contrast=high] #a11y-dlg { --a11y-bg:#000; --a11y-fg:#fff; --a11y-muted:#fff; --a11y-line:#fff; --a11y-ctl:#fff; }
   </style>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to main content</a>
   <header class="site">
     <div class="wrap">
       <a class="logo" href={u('')} aria-label="UsedGlass.ca home">
@@ -226,7 +269,7 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
           <path d="M23.5 29a5.5 5.5 0 0 1 4.5-3" stroke="#fff" stroke-width="2.2" fill="none" stroke-linecap="round"/>
         </svg>
       </a>
-      <nav>
+      <nav aria-label="Main">
         <a href={u('')}>Search</a>
         <a href={u('deals/')}>Deals</a>
         <a href={u('new/')}>New today</a>
@@ -239,7 +282,7 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
       </nav>
     </div>
   </header>
-  <main class="wrap"><slot /></main>
+  <main class="wrap" id="main" tabindex="-1"><slot /></main>
   <footer class="site">
     <div class="wrap">
       <div>
@@ -248,9 +291,9 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
       </div>
       <div class="muted">
         Data refreshed daily from dealer websites. Last update: {asOf(meta.run_at)}.<br />
-        Prices and availability change; always confirm on the dealer's site. <a href={u('models/')}>All cameras &amp; lenses A–Z</a> · <a href={u('vintage/')}>Vintage &amp; film</a> · <a href={u('events/')}>Events &amp; clubs</a> · <a href={u('adapt/')}>Adapter checker</a> · <a href={u('compare/')}>Compare bodies</a> · <a href={u('reports/')}>Price reports</a> · <a href={u('about/')}>Disclaimer &amp; dealer opt-out</a> · <a href={u('rss.xml')}>RSS</a> · <a href={u('privacy/')}>Privacy</a> · <a href={u('terms/')}>Terms</a><br />
+        Prices and availability change; always confirm on the dealer's site. <a href={u('models/')}>All cameras &amp; lenses A–Z</a> · <a href={u('vintage/')}>Vintage &amp; film</a> · <a href={u('events/')}>Events &amp; clubs</a> · <a href={u('adapt/')}>Adapter checker</a> · <a href={u('compare/')}>Compare bodies</a> · <a href={u('reports/')}>Price reports</a> · <a href={u('about/')}>Disclaimer &amp; dealer opt-out</a> · <a href={u('rss.xml')}>RSS</a> · <a href={u('privacy/')}>Privacy</a> · <a href={u('terms/')}>Terms</a> · <button type="button" class="a11y-link" data-a11y-open aria-haspopup="dialog">Accessibility</button><br />
         <span class="affiliate-disclosure">Some links are affiliate links, so we may earn a commission at no extra cost to you. {AMAZON_DISCLOSURE} <a href={u('about/#affiliates')}>Learn more</a></span>
-        <br /><span class="ug-theme-wrap"><button type="button" id="ug-theme" class="ug-lever" title="Advance the lever: switch to dark (retro film) mode" aria-label="Advance the lever: switch to dark (retro film) mode" aria-pressed="false" aria-describedby="ug-theme-help"><svg viewBox="0 0 22 14" aria-hidden="true"><circle cx="4" cy="7" r="3.2" fill="currentColor"/><rect x="4" y="5.6" width="17" height="2.8" rx="1.4" fill="currentColor"/><rect x="17.5" y="3.5" width="3.5" height="7" rx="1.5" fill="currentColor"/></svg><span class="ug-frame" aria-hidden="true">00</span></button><span id="ug-theme-help" class="ug-theme-help">Advance the lever: switch to dark (retro film) mode</span></span>
+        <br /><span class="ug-theme-wrap"><button type="button" id="ug-theme" class="ug-lever" title="Advance the lever: switch to dark (retro film) mode" aria-pressed="false"><span class="sr-only" id="ug-theme-name">Dark (retro film) mode</span><svg viewBox="0 0 22 14" aria-hidden="true"><circle cx="4" cy="7" r="3.2" fill="currentColor"/><rect x="4" y="5.6" width="17" height="2.8" rx="1.4" fill="currentColor"/><rect x="17.5" y="3.5" width="3.5" height="7" rx="1.5" fill="currentColor"/></svg><span class="ug-frame" aria-hidden="true">00</span></button><span id="ug-theme-help" class="ug-theme-help" aria-hidden="true">Advance the lever: switch to dark (retro film) mode</span></span>
       </div>
     </div>
   </footer>
@@ -259,12 +302,13 @@ const ldJson = JSON.stringify(ld.length === 1 ? ld[0] : ld).replace(/</g, '\\u00
       var b = document.getElementById('ug-theme'); if (!b) return;
       var f = b.querySelector('.ug-frame');
       var hlp = document.getElementById('ug-theme-help');
-      function paint() { var dk = document.documentElement.getAttribute('data-theme') === 'dark'; var t = dk ? 'Wind back: light mode' : 'Advance the lever: switch to dark (retro film) mode'; b.setAttribute('aria-pressed', dk ? 'true' : 'false'); f.textContent = dk ? '24' : '00'; b.title = t; b.setAttribute('aria-label', t); if (hlp) hlp.textContent = t; }
+      function paint() { var dk = document.documentElement.getAttribute('data-theme') === 'dark'; var t = dk ? 'Wind back: light mode' : 'Advance the lever: switch to dark (retro film) mode'; b.setAttribute('aria-pressed', dk ? 'true' : 'false'); f.textContent = dk ? '24' : '00'; b.title = t; if (hlp) hlp.textContent = t; }
       paint();
       b.addEventListener('click', function () { window.ugSetTheme(document.documentElement.getAttribute('data-theme') !== 'dark', true); paint(); });
       new MutationObserver(paint).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
     })();
   </script>
+  <script is:inline src={u('a11y.js')} data-font={u('fonts/atkinson.css')} defer></script>
   <script>
     import { initSaveButtons } from '../lib/mykit-core.js';
     initSaveButtons(import.meta.env.BASE_URL.replace(/\/?$/, '/') + 'my/');
