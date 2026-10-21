@@ -3,37 +3,37 @@
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
-   "date": "2026-10-20",
-   "rate": 1.4054,
-   "chg_7d": -0.0118,
-   "chg_30d": 0.0037,
-   "text_30d": "The Canadian dollar weakened 0.4% against the USD over 30 days."
+   "date": "2026-10-21",
+   "rate": 1.4057,
+   "chg_7d": -0.0144,
+   "chg_30d": 0.0026,
+   "text_30d": "The Canadian dollar weakened 0.3% against the USD over 30 days."
   },
   "EUR": {
-   "date": "2026-10-20",
-   "rate": 1.5786,
-   "chg_7d": -0.0084,
-   "chg_30d": -0.0172,
-   "text_30d": "The Canadian dollar strengthened 1.7% against the EUR over 30 days."
+   "date": "2026-10-21",
+   "rate": 1.5785,
+   "chg_7d": -0.0062,
+   "chg_30d": -0.0187,
+   "text_30d": "The Canadian dollar strengthened 1.9% against the EUR over 30 days."
   },
   "GBP": {
-   "date": "2026-10-20",
-   "rate": 1.8802,
-   "chg_7d": -0.0021,
-   "chg_30d": 0.0043,
+   "date": "2026-10-21",
+   "rate": 1.8826,
+   "chg_7d": 0.0016,
+   "chg_30d": 0.0038,
    "text_30d": "The Canadian dollar weakened 0.4% against the GBP over 30 days."
   },
   "JPY": {
-   "date": "2026-10-20",
+   "date": "2026-10-21",
    "rate": 0.00889,
-   "chg_7d": -0.01,
+   "chg_7d": -0.0111,
    "chg_30d": -0.0022,
    "text_30d": "The Canadian dollar strengthened 0.2% against the JPY over 30 days."
   }
  },
- "fx_headline": "The Canadian dollar weakened 0.4% against the USD over 30 days.",
+ "fx_headline": "The Canadian dollar weakened 0.3% against the USD over 30 days.",
  "rate_moved": {
-  "status": "CAD moved 0.4% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
+  "status": "CAD moved 0.3% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
   "direction": null,
   "items": []
  },
@@ -150,16 +150,16 @@
    "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)"
   },
   {
-   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
+   "title": "Canon RF-S 14-30mm f/4-6.3 IS STM PZ",
    "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
-   "price_cad": 499.0,
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-rf-s-14-30mm-f-4-63-is-stm-pz-u106823",
+   "price_cad": 249.0,
    "deal_score": 100,
    "score_why": [
-    "33% below the median of 5 comparable listings",
+    "33% below the median of 3 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)"
+   "model_name": "Canon 14-30mm f/4-6.3 STAB STM (Canon RF)"
   }
  ]
 }

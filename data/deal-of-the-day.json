@@ -99,28 +99,25 @@
  },
  {
   "type": "listing",
-  "id": "plotcamera-4f2dd68428",
-  "title": "Canon EF 85mm f/1.8 USM",
-  "dealer": "Plot Camera",
-  "url": "https://www.plotcamera.com/products/61539718",
-  "price_cad": 299.9,
-  "comp_median": 395.0,
-  "comps": 3,
-  "model_key": "lens-canon-canon-ef-85mm-f1_8",
-  "model_name": "Canon 85mm f/1.8 (Canon EF)",
+  "id": "beauphoto-2def93f882",
+  "title": "Used Moment M-TW Tote Camera Bag W/ Camera cube",
+  "dealer": "Beau Photo",
+  "url": "https://www.beauphoto.com/product/used-moment-m-tw-tote-camera-bag-w-camera-cube/",
+  "price_cad": 200.0,
+  "comp_median": null,
+  "comps": 0,
+  "model_key": null,
+  "model_name": null,
   "condition": "Excellent",
   "reasons": [
-   "24% below the median of 3 comparable listings"
+   "price dropped 20% (was $250)"
   ],
-  "score": 35.1,
-  "is_new": true,
-  "deal_score": 98,
-  "score_why": [
-   "24% below the median of 3 comparable listings",
-   "no release-date or successor data for this model yet, so the score uses price history only"
-  ],
-  "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-21T16:12:47+00:00",
+  "score": 12.0,
+  "is_new": false,
+  "deal_score": null,
+  "score_why": null,
+  "score_basis": null,
+  "fetched_at": "2026-10-21T20:21:42+00:00",
   "date": "2026-10-21"
  }
 ]

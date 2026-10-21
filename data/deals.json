@@ -1,30 +1,27 @@
 {
  "date": "2026-10-21",
- "generated_at": "2026-10-21T16:12:47+00:00",
+ "generated_at": "2026-10-21T20:21:42+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "plotcamera-4f2dd68428",
-  "title": "Canon EF 85mm f/1.8 USM",
-  "dealer": "Plot Camera",
-  "url": "https://www.plotcamera.com/products/61539718",
-  "price_cad": 299.9,
-  "comp_median": 395.0,
-  "comps": 3,
-  "model_key": "lens-canon-canon-ef-85mm-f1_8",
-  "model_name": "Canon 85mm f/1.8 (Canon EF)",
+  "id": "beauphoto-2def93f882",
+  "title": "Used Moment M-TW Tote Camera Bag W/ Camera cube",
+  "dealer": "Beau Photo",
+  "url": "https://www.beauphoto.com/product/used-moment-m-tw-tote-camera-bag-w-camera-cube/",
+  "price_cad": 200.0,
+  "comp_median": null,
+  "comps": 0,
+  "model_key": null,
+  "model_name": null,
   "condition": "Excellent",
   "reasons": [
-   "24% below the median of 3 comparable listings"
+   "price dropped 20% (was $250)"
   ],
-  "score": 35.1,
-  "is_new": true,
-  "deal_score": 98,
-  "score_why": [
-   "24% below the median of 3 comparable listings",
-   "no release-date or successor data for this model yet, so the score uses price history only"
-  ],
-  "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-21T16:12:47+00:00"
+  "score": 12.0,
+  "is_new": false,
+  "deal_score": null,
+  "score_why": null,
+  "score_basis": null,
+  "fetched_at": "2026-10-21T20:21:42+00:00"
  },
  "deals": [
   {
@@ -50,7 +47,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -75,7 +72,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -100,7 +97,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -125,7 +122,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -151,7 +148,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -176,7 +173,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -201,7 +198,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -226,7 +223,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -252,32 +249,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-8e1b2fa8f6",
-   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
-   "price_cad": 499.0,
-   "comp_median": 749.0,
-   "comps": 5,
-   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
-   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
-   "condition": "Fair",
-   "reasons": [
-    "33% below the median of 5 comparable listings"
-   ],
-   "score": 38.4,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "33% below the median of 5 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -302,7 +274,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -327,7 +299,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-8e1b2fa8f6",
+   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
+   "price_cad": 499.0,
+   "comp_median": 684.5,
+   "comps": 6,
+   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
+   "condition": "Fair",
+   "reasons": [
+    "27% below the median of 6 comparable listings"
+   ],
+   "score": 33.1,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "27% below the median of 6 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -352,7 +349,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -377,7 +374,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -402,7 +399,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -429,7 +426,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -455,7 +452,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -481,33 +478,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-8c0f34a022",
-   "title": "Tamron SP 24-70mm f/2.8 DI VC USD Nikon",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/tamron-usage-8-tamron-sp-24-70mm-f-28-di-vc-usd-nikon-u107326",
-   "price_cad": 399.0,
-   "comp_median": 749.0,
-   "comps": 5,
-   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
-   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
-   "condition": "Good",
-   "reasons": [
-    "47% below the median of 5 comparable listings"
-   ],
-   "score": 51.7,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "47% below the median of 5 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -533,7 +504,33 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-8c0f34a022",
+   "title": "Tamron SP 24-70mm f/2.8 DI VC USD Nikon",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-8-tamron-sp-24-70mm-f-28-di-vc-usd-nikon-u107326",
+   "price_cad": 399.0,
+   "comp_median": 684.5,
+   "comps": 6,
+   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
+   "condition": "Good",
+   "reasons": [
+    "42% below the median of 6 comparable listings"
+   ],
+   "score": 47.7,
+   "is_new": false,
+   "deal_score": 98,
+   "score_why": [
+    "42% below the median of 6 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -559,7 +556,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -585,7 +582,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -602,15 +599,15 @@
    "reasons": [
     "24% below the median of 3 comparable listings"
    ],
-   "score": 35.1,
-   "is_new": true,
+   "score": 27.1,
+   "is_new": false,
    "deal_score": 98,
    "score_why": [
     "24% below the median of 3 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -635,7 +632,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -660,7 +657,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -687,7 +684,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -713,7 +710,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -738,7 +735,7 @@
     "announced 2021-09: on sale through 5 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -763,7 +760,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -789,7 +786,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -814,7 +811,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -839,7 +836,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -864,7 +861,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -889,7 +886,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -914,7 +911,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -939,7 +936,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -966,7 +963,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -992,7 +989,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -1018,32 +1015,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "plotcamera-b707280c92",
-   "title": "Nikon Z30 DX 16-50 Kit",
-   "dealer": "Plot Camera",
-   "url": "https://www.plotcamera.com/products/74581343",
-   "price_cad": 639.9,
-   "comp_median": 799.99,
-   "comps": 3,
-   "model_key": "camera-nikon-z30",
-   "model_name": "Nikon Z30",
-   "condition": "Like New",
-   "reasons": [
-    "20% below the median of 3 comparable listings"
-   ],
-   "score": 31.0,
-   "is_new": true,
-   "deal_score": 90,
-   "score_why": [
-    "20% below the median of 3 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -1069,7 +1041,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "plotcamera-b707280c92",
+   "title": "Nikon Z30 DX 16-50 Kit",
+   "dealer": "Plot Camera",
+   "url": "https://www.plotcamera.com/products/74581343",
+   "price_cad": 639.9,
+   "comp_median": 799.99,
+   "comps": 3,
+   "model_key": "camera-nikon-z30",
+   "model_name": "Nikon Z30",
+   "condition": "Like New",
+   "reasons": [
+    "20% below the median of 3 comparable listings"
+   ],
+   "score": 23.0,
+   "is_new": false,
+   "deal_score": 90,
+   "score_why": [
+    "20% below the median of 3 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -1095,7 +1092,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -1123,7 +1120,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   },
   {
    "type": "listing",
@@ -1150,7 +1147,29 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-21T16:12:47+00:00"
+   "fetched_at": "2026-10-21T20:21:42+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "beauphoto-2def93f882",
+   "title": "Used Moment M-TW Tote Camera Bag W/ Camera cube",
+   "dealer": "Beau Photo",
+   "url": "https://www.beauphoto.com/product/used-moment-m-tw-tote-camera-bag-w-camera-cube/",
+   "price_cad": 200.0,
+   "comp_median": null,
+   "comps": 0,
+   "model_key": null,
+   "model_name": null,
+   "condition": "Excellent",
+   "reasons": [
+    "price dropped 20% (was $250)"
+   ],
+   "score": 12.0,
+   "is_new": false,
+   "deal_score": null,
+   "score_why": null,
+   "score_basis": null,
+   "fetched_at": "2026-10-21T20:21:42+00:00"
   }
  ],
  "rules": {
