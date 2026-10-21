@@ -56,6 +56,11 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
 
   <div id="mk-summary"></div>
   <div id="mk-compat"></div>
+  <fieldset class="mk-show" id="mk-show"><legend>Show:</legend>
+    <label><input type="radio" name="mk-show" value="all" checked /> All</label>
+    <label><input type="radio" name="mk-show" value="owned" /> Owned</label>
+    <label><input type="radio" name="mk-show" value="wish" /> Wishlist (not owned)</label>
+  </fieldset>
   <div id="mk-items"><p class="muted">Loading prices…</p></div>
 
   <form class="card mk-add" id="mk-add" autocomplete="off">
@@ -117,13 +122,22 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
     let cat: any = K.indexCatalog([]);
     const cur = () => s.lists.find((l: any) => l.id === s.active) || s.lists[0];
     const commit = () => { K.save(s); render(); };
+    // The radios are the source of truth, so a restored choice can't drift from the list.
+    function currentShow() {
+      const v = $('mk-show').querySelector('input:checked')?.value;
+      return v === 'owned' || v === 'wish' ? v : 'all';
+    }
+    function paintItems() {
+      const l = cur();
+      $('mk-items').innerHTML = itemsHtml(l.items, cat, { base, editable: true, lists: s.lists, currentId: l.id, show: currentShow() });
+    }
 
     function render() {
       const l = cur(); s.active = l.id;
       $('mk-tabs').innerHTML = s.lists.map((x: any) => `<button type="button" role="tab" data-id="${K.esc(x.id)}" aria-selected="${x.id === l.id}">${K.esc(x.name)} <span class="muted">${x.items.length}</span></button>`).join('');
       $('mk-summary').innerHTML = K.kitTotals(l.items, cat).items ? totalsHtml(l.items, cat) : '';
       $('mk-compat').innerHTML = compatHtml(l.items, cat);
-      $('mk-items').innerHTML = itemsHtml(l.items, cat, { base, editable: true, lists: s.lists, currentId: l.id });
+      paintItems();
       $('mk-del').disabled = s.lists.length <= 1;
       $('mk-share-out').hidden = true; $('mk-share-open').hidden = true;
       drawCard(); snippet();
@@ -156,6 +170,14 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
       const row = e.target.closest('.mk-item'); if (!row) return; const l = cur(); const it = l.items[+row.dataset.idx]; if (!it) return;
       if (e.target.classList.contains('mk-target')) { const v = parseFloat(e.target.value); it.t = v > 0 ? Math.round(v * 100) / 100 : null; }
       else if (e.target.classList.contains('mk-cat')) it.c = e.target.value;
+      else if (e.target.classList.contains('mk-owned')) {
+        it.owned = e.target.checked; commit();
+        // Keep keyboard focus on the same checkbox (or the filter, if the item is now filtered out).
+        const next = $('mk-items').querySelector(`.mk-item[data-idx="${row.dataset.idx}"] .mk-owned`);
+        if (next) next.focus({ preventScroll: true });
+        else $('mk-show').querySelector('input:checked')?.focus();
+        return;
+      }
       else if (e.target.classList.contains('mk-move') && e.target.value) {
         const to = s.lists.find((x: any) => x.id === e.target.value);
         const keep = confirm(`Keep a copy in "${l.name}" too? OK = copy, Cancel = move.`);
@@ -164,6 +186,7 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
       }
       commit();
     });
+    $('mk-show').addEventListener('change', (e: any) => { if (e.target?.name === 'mk-show') paintItems(); });
     $('mk-items').addEventListener('click', (e: any) => { if (e.target.classList.contains('mk-rm')) { const row = e.target.closest('.mk-item'); cur().items.splice(+row.dataset.idx, 1); commit(); } });
 
     $('mk-q').addEventListener('input', () => {
