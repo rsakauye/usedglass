@@ -41,7 +41,8 @@ export function cleanItem(it) {
   const n = str(it.n, 160);
   if (!k && !n) return null;
   const c = CAT_LABEL[it.c] ? it.c : defaultCat('', '', k);
-  return { k: k || null, n: n || k, c, m: str(it.m, 40) || null, t: num(it.t) };
+  // owned: optional per-item flag (older saved data has none, so it reads as false).
+  return { k: k || null, n: n || k, c, m: str(it.m, 40) || null, t: num(it.t), owned: it.owned === true };
 }
 export function cleanList(l) {
   if (!l || typeof l !== 'object') return null;
@@ -93,13 +94,13 @@ const unb64u = (t) => { const s = atob(t.replace(/-/g, '+').replace(/_/g, '/'));
 async function pipe(bytes, stream) { return new Uint8Array(await new Response(new Blob([bytes]).stream().pipeThrough(stream)).arrayBuffer()); }
 
 export function packList(list, handle = '') {
-  const o = { v: 1, n: list.name, i: list.items.map((it) => [it.k || '', it.k ? '' : it.n, it.c, it.m && !it.k ? it.m : '', it.t || 0]) };
+  const o = { v: 1, n: list.name, i: list.items.map((it) => [it.k || '', it.k ? '' : it.n, it.c, it.m && !it.k ? it.m : '', it.t || 0, it.owned === true ? 1 : 0]) };
   if (handle) o.h = handle;
   return o;
 }
 export function unpackList(o) {
   if (!o || typeof o !== 'object' || !Array.isArray(o.i)) throw new Error('bad kit');
-  const items = o.i.slice(0, MAX_ITEMS).map((a) => cleanItem(Array.isArray(a) ? { k: a[0], n: a[1] || a[0], c: a[2], m: a[3], t: a[4] } : null)).filter(Boolean);
+  const items = o.i.slice(0, MAX_ITEMS).map((a) => cleanItem(Array.isArray(a) ? { k: a[0], n: a[1] || a[0], c: a[2], m: a[3], t: a[4], owned: a[5] === 1 } : null)).filter(Boolean);
   return { name: str(o.n, 60) || 'Shared kit', handle: str(o.h, 40), items };
 }
 export async function encodeList(list, handle = '') {

@@ -2,6 +2,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import * as K from '../site/src/lib/mykit-core.js';
+import { itemsHtml, totalsHtml, KIT_CSS } from '../site/src/lib/mykit-ui.js';
 
 test('mount rules: native, adapters and no-fit', () => {
   assert.equal(K.mountCompat('Sony E', 'Sony E').status, 'ok');
@@ -66,4 +67,67 @@ test('default categories from model data', () => {
   assert.equal(K.defaultCat('camera', 'Canon FD'), 'film');
   assert.equal(K.defaultCat('camera', 'Sony E'), 'body');
   assert.equal(K.defaultCat('', '', 'lens-foo'), 'lens');
+});
+
+test('owned flag: defaults to false for old data and survives share links', async () => {
+  assert.equal(K.cleanItem({ k: 'camera-sony-a7-iii', n: 'A7 III', c: 'body' }).owned, false);
+  assert.equal(K.cleanItem({ n: 'Tripod', owned: true }).owned, true);
+  assert.equal(K.cleanItem({ n: 'Tripod', owned: 'yes' }).owned, false);
+  assert.equal(K.cleanItem({ n: 'Tripod', owned: 1 }).owned, false);
+  const old = K.unpackList({ v: 1, n: 'Old', i: [['camera-sony-a7-iii', '', 'body', '', 0]] });
+  assert.equal(old.items[0].owned, false);
+  assert.equal(K.unpackList({ v: 1, n: 'X', i: [['', 'A', 'other', '', 0, true]] }).items[0].owned, false);
+  assert.equal(K.unpackList({ v: 1, n: 'X', i: [['', 'A', 'other', '', 0, '1']] }).items[0].owned, false);
+  assert.equal(K.unpackList({ v: 1, n: 'X', i: [['', 'A', 'other', '', 0, 1]] }).items[0].owned, true);
+  const list = { name: 'Mine', items: [K.cleanItem({ n: 'Tripod', c: 'support', owned: true }), K.cleanItem({ n: 'Strap', c: 'bag' })] };
+  assert.deepEqual(K.packList(list).i.map((row) => row[5]), [1, 0]);
+  const back = await K.decodeList(await K.encodeList(list));
+  assert.deepEqual(back.items.map((i) => i.owned), [true, false]);
+  const saved = K.cleanState(JSON.parse(JSON.stringify({ lists: [{ id: 'a', name: 'Kit', items: [{ n: 'Old' }, { n: 'Mine', owned: true }, { n: 'Num', owned: 1 }] }] })));
+  assert.deepEqual(saved.lists[0].items.map((i) => i.owned), [false, true, false]);
+});
+
+test('owned badge, checkbox, filter and totals', () => {
+  const items = [
+    K.cleanItem({ n: 'Tripod', c: 'support', owned: true }),
+    K.cleanItem({ n: 'A "strap" <x>', c: 'bag' }),
+  ];
+  const all = itemsHtml(items, null, { editable: true });
+  const boxes = all.match(/<input type="checkbox" class="mk-owned"[^>]*>/g);
+  assert.equal(boxes.length, 2);
+  assert.match(boxes[0], /aria-label="Owned: Tripod"/);
+  assert.match(boxes[0], /checked/);
+  assert.match(boxes[1], /aria-label="Owned: A &quot;strap&quot; &lt;x&gt;"/);
+  assert.doesNotMatch(boxes[1], /checked/);
+  assert.doesNotMatch(all, /<x>/);
+  assert.match(all, /data-idx="0"/);
+  assert.match(all, /data-idx="1"/);
+  assert.match(all, /mk-own-pill">Owned/);
+
+  const ownedOnly = itemsHtml(items, null, { editable: true, show: 'owned' });
+  assert.match(ownedOnly, /data-idx="0"/);
+  assert.doesNotMatch(ownedOnly, /data-idx="1"/);
+  const wish = itemsHtml(items, null, { show: 'wish' });
+  assert.match(wish, /data-idx="1"/);
+  assert.doesNotMatch(wish, /data-idx="0"/);
+  assert.doesNotMatch(wish, /mk-own-pill/);
+  assert.doesNotMatch(wish, /mk-owned/);
+
+  assert.match(itemsHtml([items[1]], null, { show: 'owned' }), /Nothing in this list is marked Owned yet/);
+  assert.match(itemsHtml([items[0]], null, { show: 'wish' }), /Everything in this list is marked Owned/);
+  assert.match(itemsHtml([], null, { editable: true, show: 'owned' }), /Nothing here yet/);
+  assert.match(itemsHtml(items, null, { show: 'nope' }), /Tripod/);
+  assert.match(itemsHtml(items, null, { show: 'nope' }), /strap/);
+
+  const readOnly = itemsHtml(items, null, {});
+  assert.match(readOnly, /mk-own-pill">Owned/);
+  assert.doesNotMatch(readOnly, /mk-owned/);
+
+  assert.match(totalsHtml(items, null), />1<\/b><span class="muted">owned · 1 on the wishlist/);
+  assert.match(totalsHtml([items[0]], null), />1<\/b><span class="muted">owned</);
+  assert.doesNotMatch(totalsHtml([items[0]], null), /wishlist/);
+  assert.doesNotMatch(totalsHtml([{ n: 'A', c: 'other', owned: 1 }], null), /owned/);
+  assert.match(KIT_CSS, /min-height:44px/);
+  assert.match(KIT_CSS, /min-inline-size:0/);
+  assert.match(KIT_CSS, /html\[data-theme=dark\] \.pill\.mk-own-pill/);
 });
