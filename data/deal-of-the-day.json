@@ -96,5 +96,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-21T00:11:15+00:00",
   "date": "2026-10-20"
+ },
+ {
+  "type": "listing",
+  "id": "plotcamera-4f2dd68428",
+  "title": "Canon EF 85mm f/1.8 USM",
+  "dealer": "Plot Camera",
+  "url": "https://www.plotcamera.com/products/61539718",
+  "price_cad": 299.9,
+  "comp_median": 395.0,
+  "comps": 3,
+  "model_key": "lens-canon-canon-ef-85mm-f1_8",
+  "model_name": "Canon 85mm f/1.8 (Canon EF)",
+  "condition": "Excellent",
+  "reasons": [
+   "24% below the median of 3 comparable listings"
+  ],
+  "score": 35.1,
+  "is_new": true,
+  "deal_score": 98,
+  "score_why": [
+   "24% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-21T16:12:47+00:00",
+  "date": "2026-10-21"
  }
 ]
