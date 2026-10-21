@@ -1,35 +1,6 @@
 {
  "date": "2026-10-21",
- "new_today": [
-  "mcbain-86ec69c9e2",
-  "mcbain-809861f952",
-  "mcbain-314ef45a03",
-  "mcbain-a3fe1432a3",
-  "mcbain-284bd5beeb",
-  "mcbain-58a350fe96",
-  "mcbain-d506f8f648",
-  "mcbain-e91aec3b0f",
-  "gosselin-f47616c1a7"
- ],
- "price_dropped": [
-  {
-   "id": "beauphoto-016b842385",
-   "old": 165.0,
-   "new": 150.0,
-   "pct": 0.091
-  },
-  {
-   "id": "beauphoto-46b95cd2f8",
-   "old": 550.0,
-   "new": 500.0,
-   "pct": 0.091
-  },
-  {
-   "id": "beauphoto-2def93f882",
-   "old": 250.0,
-   "new": 200.0,
-   "pct": 0.2
-  }
- ],
- "removed": 7
+ "new_today": [],
+ "price_dropped": [],
+ "removed": 1
 }

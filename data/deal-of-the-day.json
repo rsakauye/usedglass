@@ -99,25 +99,28 @@
  },
  {
   "type": "listing",
-  "id": "beauphoto-2def93f882",
-  "title": "Used Moment M-TW Tote Camera Bag W/ Camera cube",
-  "dealer": "Beau Photo",
-  "url": "https://www.beauphoto.com/product/used-moment-m-tw-tote-camera-bag-w-camera-cube/",
-  "price_cad": 200.0,
-  "comp_median": null,
-  "comps": 0,
-  "model_key": null,
-  "model_name": null,
-  "condition": "Excellent",
+  "id": "mcbain-7bbeb876f4",
+  "title": "Canon 6D II DSLR Camera Body - Used",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+  "price_cad": 449.99,
+  "comp_median": 999.0,
+  "comps": 3,
+  "model_key": "camera-canon-6d-ii",
+  "model_name": "Canon 6D II",
+  "condition": null,
   "reasons": [
-   "price dropped 20% (was $250)"
+   "55% below the median of 3 comparable listings"
   ],
-  "score": 12.0,
+  "score": 58.0,
   "is_new": false,
-  "deal_score": null,
-  "score_why": null,
-  "score_basis": null,
-  "fetched_at": "2026-10-21T20:21:42+00:00",
+  "deal_score": 100,
+  "score_why": [
+   "55% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-21T21:06:13+00:00",
   "date": "2026-10-21"
  }
 ]
