@@ -34,15 +34,14 @@ const clubProvs = [...new Set(clubs.map((c) => c.province))].sort((a, b) => (a =
 const gals = (galData.galleries || []).slice().sort((a, b) => (a.province === 'AB' ? -1 : 0) - (b.province === 'AB' ? -1 : 0) || a.city.localeCompare(b.city));
 const TURNSTILE_SITEKEY = '0x4AAAAAAFb6D7mRI5tlTmLV'; // public site key (usedglass.ca only)
 const minDate = today;
-const jsonld = upcoming.filter((e) => e.date_status === 'verified').map((e) => ({
-  '@context': 'https://schema.org', '@type': 'Event', name: e.name, startDate: e.next, endDate: e.future[0].end || e.next,
-  eventStatus: 'https://schema.org/EventScheduled', eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
-  location: { '@type': 'Place', name: e.venue, address: { '@type': 'PostalAddress', addressLocality: e.city, addressRegion: e.province, addressCountry: 'CA' } },
-  url: e.url,
-}));
+// These listings are real events, but this page is a directory, not a leaf page per event.
+// Google's Event rich results require a unique URL per event plus organizer, offers, image,
+// description, and performer. data/events.json has none of those as structured fields
+// (cost is free text on some rows; notes are internal). Emitting Event here is what Search
+// Console flags. BreadcrumbList still comes from the layout. Do not add Event JSON-LD back
+// unless each event has its own page and those fields from the organizer.
 ---
 <Base title="Photography events, camera swaps, clubs and galleries in Canada" description="Upcoming camera swap meets, store workshops, talks, photo festivals and gallery shows across Canada, plus camera clubs and gallery spaces you can rent. Alberta first.">
-  <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />
   <style>
     .ev-filters { display:flex; flex-wrap:wrap; gap:.5rem; align-items:end; margin:.6rem 0 1rem; }
     .ev-filters label { display:flex; flex-direction:column; font-size:.9rem; }
