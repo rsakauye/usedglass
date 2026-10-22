@@ -42,7 +42,14 @@ if (sum && rows.length) {
     priceLine += ` Today's median across all listings (${money(all)}) is ` + (Math.abs(pct) < 5 ? `close to the 90-day median of ${money(m.median_90d)}.` : `${Math.abs(pct)}% ${pct < 0 ? 'below' : 'above'} the 90-day median of ${money(m.median_90d)}.`);
   }
 }
-// Product + AggregateOffer from today's real listings only (no ratings/reviews).
+// Product + AggregateOffer from today's in-stock listings only: CAD low/high, offer count,
+// UsedCondition, InStock. No review or aggregateRating. We have no customer or editorial
+// reviews, and Deal Score is a price heuristic, not a rating. Google's Product snippets
+// report still warns that review and aggregateRating are missing when offers are present
+// without them; that warning cannot be cleared honestly. Do not invent either field.
+// AggregateOffer is the right type: one model, many dealers, and the shopper buys on the
+// dealer's site. Merchant-listing Offer markup does not apply, because UsedGlass is not
+// the seller. https://developers.google.com/search/docs/appearance/structured-data/product-snippet
 // Related: other models of the same brand and category (crawlable links between model pages).
 const related = Object.values(models).filter((x) => x.key !== m.key && x.brand === m.brand && x.category === m.category).sort((a, b) => (a.mount === m.mount ? -1 : 0) - (b.mount === m.mount ? -1 : 0) || (b.count || 0) - (a.count || 0)).slice(0, 8);
 const inStock = rows.filter((r) => r.in_stock !== false);
