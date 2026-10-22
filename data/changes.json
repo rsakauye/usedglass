@@ -1,58 +1,6 @@
 {
  "date": "2026-10-22",
- "new_today": [
-  "downtowncamera-d80a0282f6",
-  "downtowncamera-d3466e60b5",
-  "downtowncamera-da3192e8e9",
-  "downtowncamera-7f9a0c486d",
-  "downtowncamera-07aa3fd05f",
-  "downtowncamera-bf7955a962",
-  "downtowncamera-827f2f29aa",
-  "downtowncamera-b91d4f6fc1",
-  "downtowncamera-3ecd4b019e",
-  "downtowncamera-c34fb10646",
-  "downtowncamera-6768c745c4",
-  "downtowncamera-8e21037900",
-  "downtowncamera-ebeb59e425",
-  "downtowncamera-830fdc8104",
-  "downtowncamera-c3cf775f70",
-  "downtowncamera-43b6a03212",
-  "downtowncamera-2f80dfe2a6",
-  "downtowncamera-498e277134",
-  "downtowncamera-c5fd253500",
-  "downtowncamera-6b0e291939",
-  "downtowncamera-ef179cfa15",
-  "downtowncamera-38d66ed327",
-  "downtowncamera-8129a435d9",
-  "downtowncamera-5e1a3ffe85",
-  "gosselin-c68c7bc813",
-  "gosselin-d68800a557",
-  "gosselin-b554c2488a",
-  "gosselin-84762bbfd8",
-  "gosselin-4d6363dcb0",
-  "gosselin-099268a123",
-  "gosselin-dc03d4c108",
-  "gosselin-26181da487",
-  "gosselin-ea2869bf51",
-  "gosselin-6ecdafe0bc",
-  "gosselin-012b242424",
-  "beauphoto-a4dc0eee9c",
-  "beauphoto-2688d2ba29",
-  "beauphoto-ee518b03de"
- ],
- "price_dropped": [
-  {
-   "id": "downtowncamera-004b540c34",
-   "old": 425.0,
-   "new": 375.0,
-   "pct": 0.118
-  },
-  {
-   "id": "downtowncamera-039d923bfa",
-   "old": 695.0,
-   "new": 595.0,
-   "pct": 0.144
-  }
- ],
- "removed": 34
+ "new_today": [],
+ "price_dropped": [],
+ "removed": 3
 }

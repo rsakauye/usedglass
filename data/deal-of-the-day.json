@@ -125,18 +125,29 @@
   "date": "2026-10-21"
  },
  {
-  "type": "rebate",
-  "id": "rebate-https://www.fujifilm-x.com/en-ca/save-190-on-fujifilm-x-t5-kit/",
-  "title": "New Fujifilm rebate: SAVE $190 on FUJIFILM X-T5 Kit",
-  "url": "https://www.fujifilm-x.com/en-ca/save-190-on-fujifilm-x-t5-kit/",
-  "dealer": "Fujifilm",
-  "price_cad": null,
+  "type": "listing",
+  "id": "mcbain-7bbeb876f4",
+  "title": "Canon 6D II DSLR Camera Body - Used",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+  "price_cad": 449.99,
+  "comp_median": 999.0,
+  "comps": 3,
+  "model_key": "camera-canon-6d-ii",
+  "model_name": "Canon 6D II",
+  "condition": null,
   "reasons": [
-   "up to $190"
+   "55% below the median of 3 comparable listings"
   ],
-  "score": 999,
-  "is_new": true,
-  "fetched_at": "2026-10-22T14:08:14+00:00",
+  "score": 58.0,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "55% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-22T14:12:20+00:00",
   "date": "2026-10-22"
  }
 ]
