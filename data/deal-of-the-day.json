@@ -149,5 +149,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-22T16:11:03+00:00",
   "date": "2026-10-22"
+ },
+ {
+  "type": "listing",
+  "id": "mcbain-7bbeb876f4",
+  "title": "Canon 6D II DSLR Camera Body - Used",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+  "price_cad": 449.99,
+  "comp_median": 999.0,
+  "comps": 3,
+  "model_key": "camera-canon-6d-ii",
+  "model_name": "Canon 6D II",
+  "condition": null,
+  "reasons": [
+   "55% below the median of 3 comparable listings"
+  ],
+  "score": 58.0,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "55% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-23T16:01:11+00:00",
+  "date": "2026-10-23"
  }
 ]

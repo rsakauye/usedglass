@@ -1,30 +1,30 @@
 {
- "date": "2026-10-22",
- "generated_at": "2026-10-22T16:11:03+00:00",
+ "date": "2026-10-23",
+ "generated_at": "2026-10-23T16:01:11+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "beauphoto-42952155b0",
-  "title": "Used Leitz Leica Canada Summicron-M 90mm f2",
-  "dealer": "Beau Photo",
-  "url": "https://www.beauphoto.com/product/used-leitz-leica-canada-summicron-m-90mm-f2/",
-  "price_cad": 1000.0,
-  "comp_median": 1750.0,
+  "id": "mcbain-7bbeb876f4",
+  "title": "Canon 6D II DSLR Camera Body - Used",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
+  "price_cad": 449.99,
+  "comp_median": 999.0,
   "comps": 3,
-  "model_key": "lens-leica-leica-m-90mm-f2",
-  "model_name": "Leica 90mm f/2 (Leica M)",
-  "condition": "Good",
+  "model_key": "camera-canon-6d-ii",
+  "model_name": "Canon 6D II",
+  "condition": null,
   "reasons": [
-   "43% below the median of 3 comparable listings"
+   "55% below the median of 3 comparable listings"
   ],
-  "score": 45.9,
+  "score": 58.0,
   "is_new": false,
   "deal_score": 100,
   "score_why": [
-   "43% below the median of 3 comparable listings",
+   "55% below the median of 3 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-22T16:11:03+00:00"
+  "fetched_at": "2026-10-23T16:01:11+00:00"
  },
  "deals": [
   {
@@ -50,7 +50,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -75,7 +75,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -100,7 +100,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -125,7 +125,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -151,7 +151,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -176,7 +176,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -201,7 +201,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -226,7 +226,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -252,7 +252,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -277,7 +277,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -302,7 +302,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -327,7 +327,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -352,7 +352,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -377,7 +377,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -402,34 +402,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-b554c2488a",
-   "title": "Nikon AF-S NIKKOR 50mm f/1.8G",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-af-s-nikkor-50mm-f-18g-u107401",
-   "price_cad": 99.0,
-   "comp_median": 159.5,
-   "comps": 8,
-   "model_key": "lens-nikon-nikon-f-50mm-f1_8-afs",
-   "model_name": "Nikon 50mm f/1.8 AFS (Nikon F)",
-   "condition": "Good",
-   "reasons": [
-    "38% below the median of 8 comparable listings"
-   ],
-   "score": 45.9,
-   "is_new": false,
-   "deal_score": 99,
-   "score_why": [
-    "38% below the median of 8 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "41% of the new price ($239); used ones this age typically sell around 75%",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -455,33 +428,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-d68800a557",
-   "title": "Nikon F2 Noir + Photomic DP-1",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-f2-noir-photomic-dp-1-u107410",
-   "price_cad": 299.0,
-   "comp_median": 895.0,
-   "comps": 4,
-   "model_key": "camera-nikon-f2",
-   "model_name": "Nikon F2",
-   "condition": "Good",
-   "reasons": [
-    "67% below the median of 4 comparable listings"
-   ],
-   "score": 70.6,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "67% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -507,7 +454,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -533,7 +480,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -559,7 +506,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -585,7 +532,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -610,7 +557,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -635,7 +582,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -660,7 +607,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -687,7 +634,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -713,7 +660,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -738,7 +685,7 @@
     "announced 2021-09: on sale through 5 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -763,7 +710,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -789,7 +736,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -814,7 +761,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -839,7 +786,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -864,7 +811,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -889,7 +836,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -914,7 +861,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -939,7 +886,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -966,7 +913,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -992,7 +939,7 @@
     "announced 2019-10: on sale through 7 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -1018,7 +965,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -1044,7 +991,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -1069,7 +1016,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -1095,7 +1042,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -1123,7 +1070,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   },
   {
    "type": "listing",
@@ -1150,7 +1097,7 @@
     "announced 2020-07: on sale through 6 Black Fridays so far"
    ],
    "score_basis": "full",
-   "fetched_at": "2026-10-22T16:11:03+00:00"
+   "fetched_at": "2026-10-23T16:01:11+00:00"
   }
  ],
  "rules": {
