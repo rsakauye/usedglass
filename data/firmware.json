@@ -78,7 +78,11 @@
    "notes_quotes": [
     "The wireless communication security is enhanced while camera is connecting with a smartphone application or external device wirelessly.",
     "“WIRELESS COMMUNICATION” option in the “SHOOTING SETTING”, “MOVIE SETTING”, and “PLAY BACK MENU” are removed."
-   ]
+   ],
+   "footnote": {
+    "text": "After this update, use the FUJIFILM XApp. The older Camera Remote app won't connect (iOS 13+ required; Android pairing needs Bluetooth 4.2+).",
+    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2/"
+   }
   },
   "camera-fujifilm-xh2s": {
    "version": "7.30",
@@ -89,7 +93,11 @@
    "notes_quotes": [
     "The wireless communication security is enhanced while camera is connecting with a smartphone application or external device wirelessly.",
     "“WIRELESS COMMUNICATION” option in the “SHOOTING SETTING”, “MOVIE SETTING”, and “PLAY BACK MENU” are removed."
-   ]
+   ],
+   "footnote": {
+    "text": "After this update, use the FUJIFILM XApp. The older Camera Remote app won't connect (iOS 13+ required; Android pairing needs Bluetooth 4.2+).",
+    "url": "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2s/"
+   }
   },
   "camera-fujifilm-xpro1": {
    "version": "3.82",

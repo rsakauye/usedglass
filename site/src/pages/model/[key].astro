@@ -90,6 +90,7 @@ const productLd = inStock.length ? {
         <span class="muted fw-checked">Checked {fwDate(fw.checked)}</span>
         {fw.notes && <p class="fw-notes"><b>What's new:</b> {fw.notes} <a href={fw.notes_source || fw.url} rel="nofollow noopener" target="_blank">Ver. {fw.version} release notes<span class="sr-only"> (opens in a new tab)</span></a></p>}
       </div>
+      {fw.footnote?.text && <p class="fw-foot muted">{fw.footnote.text}{fw.footnote.url && <> <a href={fw.footnote.url} rel="nofollow noopener" target="_blank">Official notes<span class="sr-only"> (opens in a new tab)</span></a></>}</p>}
     </div>
   )}
   {gaps.length > 0 && <p class="muted">US price check: {gaps.map((g) => `${g.seller} US$${g.price} ≈ ${money(g.landed_cad)} landed (estimate)`).join('; ')}. <a href={u('currency/')}>How we estimate</a></p>}
@@ -108,6 +109,7 @@ const productLd = inStock.length ? {
   .fw-card { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; align-items:baseline; padding:.6rem .9rem; }
   .fw-checked { font-size:.85rem; }
   .fw-notes { flex-basis:100%; margin:.15rem 0 0; line-height:1.5; }
+  .fw-foot { font-size:.8rem; margin:.4rem .15rem 0; line-height:1.45; }
   .fw-attn { background:#fff6e0; border:1px solid #e8c873; border-left:4px solid #d9a21b; border-radius:8px; padding:.55rem .8rem; margin-bottom:.5rem; }
   html[data-theme=dark] .fw-attn { background:#2c2414; border-color:#6b5420; }
   @media (max-width:640px) { .fw-card { flex-direction:column; gap:.25rem; } }
