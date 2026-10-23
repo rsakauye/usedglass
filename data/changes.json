@@ -1,39 +1,22 @@
 {
  "date": "2026-10-23",
  "new_today": [
-  "mcbain-b2e0f0c2ab",
-  "mcbain-0ae6305a2a",
-  "mcbain-4a5da44501",
-  "mcbain-ed8969319b",
-  "mcbain-1e37343e71",
-  "mcbain-e09bd28928",
-  "mcbain-27296bfc5c",
-  "mcbain-4f7e894f59",
-  "mcbain-347ee7bf01",
-  "mcbain-7555008f05",
-  "mcbain-2a97d03af0",
-  "mcbain-5c8f339070",
-  "mcbain-44ecbbd524",
-  "mcbain-f5f4db222c",
-  "mcbain-43e18c8850",
-  "mcbain-e4788f8304",
-  "mcbain-fb35896677",
-  "mcbain-15fc60d746",
-  "mcbain-2454322b4a",
-  "gosselin-3a78431b0c",
-  "beauphoto-48839afefd",
-  "beauphoto-fdac149c9f",
-  "beauphoto-cb81425e8f",
-  "camtec-b302d82745",
-  "cameracanada-3b0bc77709"
+  "mcbain-48ec4741fc",
+  "mcbain-68d8c771bc",
+  "mcbain-c412135727",
+  "mcbain-f2453fa07a",
+  "mcbain-2f22b7a2b8",
+  "mcbain-2130ec517a",
+  "mcbain-969660e738",
+  "mcbain-5a387cfd83",
+  "mcbain-e19b3393ed",
+  "mcbain-a0355c1cc4",
+  "mcbain-4f31413a45",
+  "mcbain-5079390ec2",
+  "cameratraders-41caa33c20",
+  "cameratraders-78ebed5a29",
+  "cameratrading-f280d7bbaa"
  ],
- "price_dropped": [
-  {
-   "id": "plotcamera-0fba806809",
-   "old": 630.0,
-   "new": 590.0,
-   "pct": 0.063
-  }
- ],
- "removed": 30
+ "price_dropped": [],
+ "removed": 14
 }
