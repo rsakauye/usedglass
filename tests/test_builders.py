@@ -45,6 +45,39 @@ class FirmwareHelperTests(unittest.TestCase):
         self.assertEqual(rows["om1"][:2], ("1.9", "2025-11-04"))
         self.assertEqual(rows["om1markii"][:2], ("1.9", "2025-11-04"))
 
+    def test_carry_curated_keeps_footnote_for_same_version(self):
+        old = {"version": "5.30", "footnote": {"text": "Use the FUJIFILM XApp.", "url": "https://example.com/x-h2/"}}
+        new = {"version": "5.30", "released": "2025-12-02", "url": "https://example.com/x-h2/"}
+        fw.carry_curated(old, new)
+        self.assertEqual(new["footnote"], {"text": "Use the FUJIFILM XApp.", "url": "https://example.com/x-h2/"})
+
+    def test_carry_curated_drops_hand_notes_when_version_changes(self):
+        old = {"version": "5.30", "attention": "Pulled.", "attention_source": "https://example.com/a",
+               "notes": "Old.", "notes_quotes": ["q"], "notes_source": "https://example.com/n",
+               "footnote": {"text": "Use the FUJIFILM XApp.", "url": "https://example.com/x-h2/"}}
+        new = {"version": "5.31", "url": "https://example.com/x-h2/"}
+        fw.carry_curated(old, new)
+        self.assertNotIn("footnote", new)
+        self.assertNotIn("attention", new)
+        self.assertNotIn("notes", new)
+
+    def test_carry_curated_keeps_attention_and_notes(self):
+        old = {"version": "1.0", "attention": "Bricking.", "attention_source": "https://example.com/a",
+               "notes": "Fixes a bug.", "notes_quotes": ["quote"], "notes_source": "https://example.com/n"}
+        new = {"version": "1.0"}
+        fw.carry_curated(old, new)
+        self.assertEqual((new["attention"], new["attention_source"]), ("Bricking.", "https://example.com/a"))
+        self.assertEqual(new["notes"], "Fixes a bug.")
+        self.assertEqual(new["notes_quotes"], ["quote"])
+        self.assertEqual(new["notes_source"], "https://example.com/n")
+        self.assertNotIn("footnote", new)
+
+    def test_carry_curated_ignores_a_footnote_without_text(self):
+        new = {"version": "1.0"}
+        fw.carry_curated({"version": "1.0", "footnote": {"url": "https://example.com/"}}, new)
+        fw.carry_curated({"version": "1.0", "footnote": "plain string"}, new)
+        self.assertNotIn("footnote", new)
+
 
 class PriceStatsTests(unittest.TestCase):
     def test_median_ignores_bundles_min_keeps_them(self):
@@ -86,6 +119,20 @@ class SiteDataShapeTests(unittest.TestCase):
                     self.assertTrue(e.get("notes_quotes"), "every note needs its supporting quotes")
                     self.assertTrue(e["notes"].endswith("."))
                     self.assertLessEqual(len(e["notes"]), 220)
+                foot = e.get("footnote")
+                if foot:
+                    self.assertIsInstance(foot, dict)
+                    self.assertTrue(foot.get("text", "").endswith("."))
+                    self.assertLessEqual(len(foot["text"]), 280)
+                    self.assertTrue(foot.get("url", "").startswith("https://"))
+                    self.assertNotIn("⚠️", foot["text"])
+        xh2, xh2s = doc["models"]["camera-fujifilm-xh2"], doc["models"]["camera-fujifilm-xh2s"]
+        self.assertEqual((xh2["version"], xh2s["version"]), ("5.30", "7.30"))
+        self.assertIn("FUJIFILM XApp", xh2["footnote"]["text"])
+        self.assertEqual(xh2["footnote"]["text"], xh2s["footnote"]["text"])
+        self.assertEqual(xh2["footnote"]["url"], "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2/")
+        self.assertEqual(xh2s["footnote"]["url"], "https://www.fujifilm-x.com/global/support/download/firmware/cameras/x-h2s/")
+        self.assertNotIn("footnote", doc["models"]["camera-fujifilm-xh1"])
 
     def test_model_summaries_are_sourced(self):
         doc = json.loads((ROOT / "data" / "model-summaries.json").read_text())

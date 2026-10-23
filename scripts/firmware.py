@@ -15,7 +15,8 @@ A model is left out unless both version and date were read from the official pag
 Attention notes are curated by hand in data/firmware.json ("attention", "attention_source"); this script keeps them
 only while the latest version is unchanged, so a note never sticks to a newer release. The same goes for the
 plain-English release-note summary ("notes", "notes_quotes", "notes_source"), written from the official notes and
-checked against them by hand.
+checked against them by hand, and for a neutral footnote ("footnote": {"text", "url"}). A footnote is ordinary
+small print under the card, not an attention warning, and it drops if the version changes.
 Not covered yet: Canon, Sony, Leica, Hasselblad, Sigma, Tamron (official pages block scripted fetches or have no index).
 """
 import datetime as dt, html, json, re, sys, urllib.error, urllib.request
@@ -234,6 +235,29 @@ def ricoh(models):
     return out
 
 
+def carry_curated(old, new):
+    """Copy hand-written fields onto a scraped entry only while the version is unchanged.
+
+    Attention warnings, release-note summaries and neutral footnotes are written by hand. A newer
+    version must not inherit them.
+    """
+    if old.get("version") != new.get("version"):
+        return new
+    if old.get("attention"):  # keep a curated warning only for the same release
+        new["attention"], new["attention_source"] = old["attention"], old.get("attention_source")
+    if old.get("notes"):  # release-note summary is tied to its version
+        for f in ("notes", "notes_quotes", "notes_source"):
+            if f in old:
+                new[f] = old[f]
+    foot = old.get("footnote")
+    if isinstance(foot, dict) and foot.get("text"):
+        kept = {"text": foot["text"]}
+        if foot.get("url"):
+            kept["url"] = foot["url"]
+        new["footnote"] = kept
+    return new
+
+
 def main():
     models = json.loads((ROOT / "data" / "models.json").read_text())
     old = json.loads(OUT.read_text()).get("models", {}) if OUT.exists() else {}
@@ -244,13 +268,7 @@ def main():
         print(f"{name}: {len(got)}")
         for k, e in got.items():
             e["checked"] = today
-            o = old.get(k, {})
-            if o.get("attention") and o.get("version") == e["version"]:  # keep a curated note only for the same release
-                e["attention"], e["attention_source"] = o["attention"], o.get("attention_source")
-            if o.get("notes") and o.get("version") == e["version"]:  # release-note summary is tied to its version
-                for f in ("notes", "notes_quotes", "notes_source"):
-                    if f in o:
-                        e[f] = o[f]
+            carry_curated(old.get(k, {}), e)
             new[k] = e
     for k, o in old.items():  # keep models no longer in today's models.json (pages may come back)
         new.setdefault(k, o)
