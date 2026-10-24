@@ -152,28 +152,28 @@
  },
  {
   "type": "listing",
-  "id": "gosselin-b909aa2f2e",
-  "title": "SIGMA 30MM F1.4 DC DN Monture L",
-  "dealer": "Gosselin Photo",
-  "url": "https://gosselinphoto.ca/products/sigma-usage-8-sigma-30mm-f14-dc-dn-monture-l-u106057",
-  "price_cad": 229.0,
-  "comp_median": 375.0,
-  "comps": 3,
-  "model_key": "lens-sigma-sony-e-30mm-f1_4",
-  "model_name": "Sigma 30mm f/1.4 (Sony E)",
-  "condition": "Good",
+  "id": "ebay-62504d9e47",
+  "title": "Canon AE-1 35mm SLR camera body only/ All Functions Work",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/820050794335?hash=itembeeed6175f:g:-QYAAeSwgW9qjx81",
+  "price_cad": 98.6,
+  "comp_median": 315.15,
+  "comps": 25,
+  "model_key": "camera-canon-ae1",
+  "model_name": "Canon AE1",
+  "condition": null,
   "reasons": [
-   "39% below the median of 3 comparable listings"
+   "69% below the median of 25 comparable listings"
   ],
-  "score": 41.9,
-  "is_new": false,
+  "score": 86.7,
+  "is_new": true,
   "deal_score": 100,
   "score_why": [
-   "39% below the median of 3 comparable listings",
+   "69% below the median of 25 comparable listings",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-10-23T21:29:29+00:00",
+  "fetched_at": "2026-10-24T00:49:46+00:00",
   "date": "2026-10-23"
  }
 ]
