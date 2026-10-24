@@ -175,5 +175,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-24T00:49:46+00:00",
   "date": "2026-10-23"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-de01b16364",
+  "title": "Laowa 12mm f/2.8 Zero-D Ultra Wide Angle Lens for Sony FE / E-Mount Full Frame",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/257808020293?hash=item3c068e3345:g:oe8AAeSwEaFq17nq",
+  "price_cad": 459.0,
+  "comp_median": null,
+  "comps": 0,
+  "model_key": "lens-laowa-sony-e-12mm-f2_8",
+  "model_name": "Laowa 12mm f/2.8 (Sony E)",
+  "condition": null,
+  "reasons": [
+   "price dropped 16% (was $549)"
+  ],
+  "score": 9.8,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "47% of the new price ($979); used ones this age typically sell around 75%",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-24T14:57:51+00:00",
+  "date": "2026-10-24"
  }
 ]
