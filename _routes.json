@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "Only /api/* runs Pages Functions (counts against the Workers free tier). Every page and asset is served as static files, free and unmetered.",
+  "include": ["/api/*"],
+  "exclude": []
+}
