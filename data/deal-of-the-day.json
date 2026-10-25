@@ -201,5 +201,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-24T14:57:51+00:00",
   "date": "2026-10-24"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-53c4168391",
+  "title": "Nikon AF-S NIKKOR 200-500mm f/5.6E ED VR cosmetic defect",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/147650471740?hash=item2260a7673c%3Ag%3ASYsAAeSwSMRq3RKa&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 850.0,
+  "comp_median": 1399.0,
+  "comps": 3,
+  "model_key": "lens-nikon-nikon-f-200-500mm-f5_6-afs_stab",
+  "model_name": "Nikon 200-500mm f/5.6 AFS STAB (Nikon F)",
+  "condition": null,
+  "reasons": [
+   "39% below the median of 3 comparable listings"
+  ],
+  "score": 50.2,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "39% below the median of 3 comparable listings",
+   "55% of the new price ($1,559); used ones this age typically sell around 75%",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-25T15:08:55+00:00",
+  "date": "2026-10-25"
  }
 ]

@@ -1,74 +1,74 @@
 {
- "run_at": "2026-10-24T14:57:51+00:00",
- "date": "2026-10-24",
+ "run_at": "2026-10-25T15:08:55+00:00",
+ "date": "2026-10-25",
  "dealers": {
   "mcbain": {
-   "count": 994,
+   "count": 1003,
    "status": "ok",
-   "seconds": 22.2
+   "seconds": 1.9
   },
   "downtowncamera": {
    "count": 849,
    "status": "ok",
-   "seconds": 0.8
+   "seconds": 1.2
   },
   "gosselin": {
-   "count": 445,
+   "count": 431,
    "status": "ok",
    "seconds": 3.5
   },
   "beauphoto": {
    "count": 387,
    "status": "ok",
-   "seconds": 19.1
+   "seconds": 17.6
   },
   "thecamerastore": {
    "count": 86,
    "status": "ok",
-   "seconds": 0.6
+   "seconds": 0.7
   },
   "camtec": {
    "count": 117,
    "status": "ok",
-   "seconds": 2.3
+   "seconds": 2.9
   },
   "plotcamera": {
    "count": 49,
    "status": "ok",
-   "seconds": 0.6
-  },
-  "cameratraders": {
-   "count": 644,
-   "status": "ok",
-   "seconds": 8.1
-  },
-  "maplecamera": {
-   "count": 90,
-   "status": "ok",
    "seconds": 0.5
   },
+  "cameratraders": {
+   "count": 659,
+   "status": "ok",
+   "seconds": 7.4
+  },
+  "maplecamera": {
+   "count": 89,
+   "status": "ok",
+   "seconds": 0.7
+  },
   "cameratrading": {
-   "count": 58,
+   "count": 60,
    "status": "ok",
    "seconds": 0.8
   },
   "cameracanada": {
    "count": 177,
    "status": "ok",
-   "seconds": 31.3
+   "seconds": 39.0
   },
   "ebay": {
    "count": 3000,
    "status": "ok",
-   "seconds": 40.5
+   "seconds": 43.1
   }
  },
  "errors": {},
- "total": 6861,
- "models": 2006,
- "new_today": 65,
- "price_dropped": 18,
- "deals": 179,
+ "total": 6873,
+ "models": 1998,
+ "new_today": 130,
+ "price_dropped": 39,
+ "deals": 184,
  "dealer_info": {
   "thecamerastore": {
    "name": "The Camera Store",
@@ -135,14 +135,14 @@
   "newprices": {
    "count": 880,
    "status": "ok",
-   "seconds": 20.2
+   "seconds": 15.7
   },
   "fx": {
    "status": "ok",
    "latest": "2026-10-23"
   },
   "ebay_us": {
-   "count": 29,
+   "count": 30,
    "status": "ok"
   }
  }
