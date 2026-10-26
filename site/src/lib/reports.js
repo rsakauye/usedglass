@@ -4,7 +4,7 @@
 // The current month refreshes with each daily build; past months keep their numbers while the history exists.
 import fs from 'node:fs';
 import path from 'node:path';
-import { models, listings, meta } from './data.js';
+import { modelByKey, listings, meta } from './data.js';
 
 const DATA_DIR = process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data');
 const HIST = path.join(DATA_DIR, 'history');
@@ -69,7 +69,7 @@ function build(ym, topic) {
     if (!keep.length) continue;
     const last = keep.map((l) => l.prices.at(-1)[1]);
     const all = keep.flatMap((l) => l.prices.map((p) => p[1]));
-    const m = models[key];
+    const m = modelByKey[key];
     const name = m?.name || byId[keep[0].id]?.model_name || key.slice(prefix.length).replace(/-/g, ' ');
     for (const l of keep) {
       const dealer = byId[l.id]?.dealer || meta.dealer_info?.[l.id.split('-')[0]]?.name || l.id.split('-')[0];

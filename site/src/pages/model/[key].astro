@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import ListingTable from '../../components/ListingTable.astro';
-import { models, byId, money, u, modelUrl, currency } from '../../lib/data.js';
+import { models, modelPages, modelByKey, byId, money, u, modelUrl, currency, modelMeta, meta as siteMeta } from '../../lib/data.js';
 import ScoreBadge from '../../components/ScoreBadge.astro';
 import SaveButton from '../../components/SaveButton.astro';
 import { amazonSearchUrl, SPONSORED_REL } from '../../lib/affiliate.js';
@@ -9,9 +9,10 @@ import fs from 'node:fs';
 import path from 'node:path';
 const CMP = Object.keys(JSON.parse(fs.readFileSync(path.join(process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data'), 'compare-specs.json'), 'utf8')).bodies);
 export function getStaticPaths() {
-  return Object.values(models).map((m) => ({ params: { key: m.key }, props: { m } }));
+  return modelPages.map((m) => ({ params: { key: m.key }, props: { m } }));
 }
 const { m } = Astro.props;
+const seenLabel = (d) => (d ? new Date(d + 'T12:00:00Z').toLocaleDateString('en-CA', { year: 'numeric', month: 'short', day: 'numeric', timeZone: 'UTC' }) : '');
 // Latest firmware from the manufacturer's official page (data/firmware.json, refreshed with scripts/firmware.py).
 // Models without an entry (film bodies, manual lenses, brands not covered yet) show nothing.
 let FW = {};
@@ -25,9 +26,18 @@ const sum = SUM[m.key] || null;
 const site = (s) => { try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return 'source'; } };
 const amazonUrl = amazonSearchUrl(m.name);
 const best = m.best_score_id ? byId[m.best_score_id] : null;
-const meta = m.meta || null;
+const rawMeta = m.meta || modelMeta[m.key] || null;
+const meta = rawMeta ? { ...rawMeta, successor_name: rawMeta.successor_name || (rawMeta.successor && (modelMeta[rawMeta.successor] || {}).name) || null } : null;
 const gaps = (currency.gaps || []).filter((g) => g.model_key === m.key);
-const rows = m.listing_ids.map((id) => byId[id]).filter(Boolean).sort((a, b) => a.price_cad - b.price_cad);
+const rows = (m.listing_ids || []).map((id) => byId[id]).filter(Boolean).sort((a, b) => a.price_cad - b.price_cad);
+const quiet = rows.length === 0;
+const medianAsOf = m.median_90d_as_of && m.median_90d_as_of !== siteMeta.date ? m.median_90d_as_of : null;
+const nSeen = m.observations_90d === 1 ? '1 listing' : `${m.observations_90d} listings`;
+const medianCaption = m.median_90d
+  ? (medianAsOf
+      ? `median, 90 days up to ${seenLabel(medianAsOf)} (${nSeen})`
+      : `median, last 90 days (${nSeen} seen)`)
+  : 'median, last 90 days';
 const ORIGIN = 'https://usedglass.ca';
 let priceLine = '';
 if (sum && rows.length) {
@@ -51,7 +61,7 @@ if (sum && rows.length) {
 // dealer's site. Merchant-listing Offer markup does not apply, because UsedGlass is not
 // the seller. https://developers.google.com/search/docs/appearance/structured-data/product-snippet
 // Related: other models of the same brand and category (crawlable links between model pages).
-const related = Object.values(models).filter((x) => x.key !== m.key && x.brand === m.brand && x.category === m.category).sort((a, b) => (a.mount === m.mount ? -1 : 0) - (b.mount === m.mount ? -1 : 0) || (b.count || 0) - (a.count || 0)).slice(0, 8);
+const related = Object.values(models).filter((x) => x.key !== m.key && x.count && x.brand === m.brand && x.category === m.category).sort((a, b) => (a.mount === m.mount ? -1 : 0) - (b.mount === m.mount ? -1 : 0) || (b.count || 0) - (a.count || 0)).slice(0, 8);
 const inStock = rows.filter((r) => r.in_stock !== false);
 const productLd = inStock.length ? {
   '@context': 'https://schema.org', '@type': 'Product', name: m.name, category: m.category,
@@ -60,23 +70,45 @@ const productLd = inStock.length ? {
   offers: { '@type': 'AggregateOffer', priceCurrency: 'CAD', lowPrice: Math.min(...inStock.map((r) => r.price_cad)).toFixed(2), highPrice: Math.max(...inStock.map((r) => r.price_cad)).toFixed(2), offerCount: inStock.length, itemCondition: 'https://schema.org/UsedCondition', availability: 'https://schema.org/InStock' },
 } : null;
 ---
-<Base title={`${m.name}: used prices in Canada`} jsonld={productLd} crumb={m.name} description={`Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
+<Base title={`${m.name}: used prices in Canada`} jsonld={productLd} crumb={m.name} description={quiet
+  ? (m.last_seen && m.last_price != null
+      ? `No current used listings for the ${m.name} at Canadian dealers. Last seen ${seenLabel(m.last_seen)} at ${money(m.last_price)} CAD.`
+      : `No current used listings for the ${m.name} at Canadian dealers.`)
+  : `Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
   <p class="muted"><a href={u('')}>Search</a> › <a href={u('models/')}>All models</a> › {m.brand} › {m.category}</p>
   <h1>{m.name} <SaveButton k={m.key} n={m.name} m={m.mount} cat={m.category} label={true} /></h1>
   <p class="muted" style="margin-top:-.3rem">Save it to your <a href={u('my/')}>wish list or a kit</a> to track it alongside the rest of your gear.</p>
   {sum && <p class="msum">{sum.text + (priceLine ? ' ' + priceLine : '') + ' '}<span class="muted">Specs: {sum.sources.map((s, i) => <>{i > 0 && ', '}<a href={s} rel="nofollow noopener" target="_blank">{site(s)}{sum.sources.slice(0, i).some((x) => site(x) === site(s)) && ` (page ${i + 1})`}</a></>)}.</span></p>}
+  {quiet && (
+    <div class="card gone" role="status">
+      <p><b>No current listings.</b> None of the Canadian dealers we track have a used {m.name} listed today.</p>
+      {m.last_seen && m.last_price != null && <p>The last price we saw was <b>{money(m.last_price)}</b> on {seenLabel(m.last_seen)}.</p>}
+      {m.last_seen && m.last_price == null && <p>We last saw a listing on {seenLabel(m.last_seen)}. No price from that day is on file.</p>}
+    </div>
+  )}
   <div class="stats">
-    <div><b>{money(m.min_price)}</b><span class="muted">lowest today</span></div>
-    <div><b>{money(m.median_price)}</b><span class="muted">median today</span></div>
-    <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">median, last 90 days ({m.observations_90d} listings seen)</span></div>
-    <div><b>{rows.length}</b><span class="muted">listings at {m.dealers.length} {m.dealers.length === 1 ? 'seller' : 'sellers'}</span></div>
+    {quiet ? (
+      <>
+        <div><b>{money(m.last_price)}</b><span class="muted">last seen price</span></div>
+        <div><b>{m.last_seen ? seenLabel(m.last_seen) : '—'}</b><span class="muted">last seen</span></div>
+        <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">{medianCaption}</span></div>
+        <div><b>0</b><span class="muted">listings today</span></div>
+      </>
+    ) : (
+      <>
+        <div><b>{money(m.min_price)}</b><span class="muted">lowest today</span></div>
+        <div><b>{money(m.median_price)}</b><span class="muted">median today</span></div>
+        <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">median, last 90 days ({m.observations_90d} listings seen)</span></div>
+        <div><b>{rows.length}</b><span class="muted">listings at {m.dealers.length} {m.dealers.length === 1 ? 'seller' : 'sellers'}</span></div>
+      </>
+    )}
     {m.new_price && <div><b>{money(m.new_price)}</b><span class="muted">new at <a href={m.new_price_url} rel="nofollow noopener" target="_blank">{m.new_price_dealer}</a></span></div>}
     {m.best_score != null && <div><b>{m.best_score}</b><span class="muted">best <a href={u('about/deal-score/')}>Deal Score</a></span></div>}
   </div>
   {best && <p><ScoreBadge score={best.deal_score} why={best.score_why} basis={best.score_basis} /> <span class="muted">Best-scoring listing: {best.dealer}, {money(best.price_cad)}.</span></p>}
   {(meta || m.new_price_notes) && (
     <div class="card" style="margin:.6rem 0 1rem">
-      {meta && <div>Announced {meta.announced || 'date not on file'}{meta.successor && <> · replaced by {models[meta.successor] ? <a href={modelUrl(meta.successor)}>{meta.successor_name || meta.successor}</a> : (meta.successor_name || meta.successor)}</>}{meta.predecessor && models[meta.predecessor] && <> · previous model: <a href={modelUrl(meta.predecessor)}>{models[meta.predecessor].name}</a></>} <span class="muted">({(meta.sources || []).map((s, i) => <a href={s} rel="nofollow noopener" target="_blank">source {i + 1} </a>)})</span></div>}
+      {meta && <div>Announced {meta.announced || 'date not on file'}{meta.successor && <> · replaced by {modelByKey[meta.successor] ? <a href={modelUrl(meta.successor)}>{meta.successor_name || modelByKey[meta.successor].name}</a> : (meta.successor_name || meta.successor)}</>}{meta.predecessor && modelByKey[meta.predecessor] && <> · previous model: <a href={modelUrl(meta.predecessor)}>{modelByKey[meta.predecessor].name}</a></>} <span class="muted">({(meta.sources || []).map((s, i) => <a href={s} rel="nofollow noopener" target="_blank">source {i + 1} </a>)})</span></div>}
       {m.new_price_notes && <div class="muted">New price: {m.new_price_notes.join('; ')}.</div>}
     </div>
   )}
@@ -93,17 +125,19 @@ const productLd = inStock.length ? {
       {fw.footnote?.text && <p class="fw-foot muted">{fw.footnote.text}{fw.footnote.url && <> <a href={fw.footnote.url} rel="nofollow noopener" target="_blank">Official notes<span class="sr-only"> (opens in a new tab)</span></a></>}</p>}
     </div>
   )}
-  {gaps.length > 0 && <p class="muted">US price check: {gaps.map((g) => `${g.seller} US$${g.price} ≈ ${money(g.landed_cad)} landed (estimate)`).join('; ')}. <a href={u('currency/')}>How we estimate</a></p>}
+  {!quiet && gaps.length > 0 && <p class="muted">US price check: {gaps.map((g) => `${g.seller} US$${g.price} ≈ ${money(g.landed_cad)} landed (estimate)`).join('; ')}. <a href={u('currency/')}>How we estimate</a></p>}
   {m.mount && m.mount !== 'Fixed Lens' && (m.category === 'lens' || m.category === 'camera') && <p><a href={u(`adapt/?${m.category === 'camera' ? 'body' : 'lens'}=${encodeURIComponent(m.mount)}`)}>{m.category === 'camera' ? 'Which lenses can I adapt to this camera?' : 'Will this fit my camera?'}</a> <span class="muted">Mount adapter checker for {m.mount}.</span></p>}
   {CMP.includes(m.key) && <p><a href={u(`compare/?b=${m.key}`)}>Compare {m.name} stats RPG-style</a> <span class="muted">Radar chart, buffs and known issues vs {CMP.length - 1} other bodies.</span></p>}
   {!CMP.includes(m.key) && m.category === 'camera' && <p class="muted"><a href={u('compare/')}>Compare popular mirrorless bodies</a> on a stat radar.</p>}
-  <p class="amazon-cta"><a href={amazonUrl} rel={SPONSORED_REL} target="_blank">Check new price on Amazon.ca</a> <span class="muted">(affiliate link)</span></p>
-  <ListingTable rows={rows} showModel={false} showScoreWhy={true} />
+  {!quiet && <p class="amazon-cta"><a href={amazonUrl} rel={SPONSORED_REL} target="_blank">Check new price on Amazon.ca</a> <span class="muted">(affiliate link)</span></p>}
+  {!quiet && <ListingTable rows={rows} showModel={false} showScoreWhy={true} />}
   {related.length > 0 && <section><h2 style="font-size:1.15rem">More used {m.brand} {m.category === 'lens' ? 'lenses' : m.category === 'camera' ? 'cameras' : 'gear'}</h2><ul>{related.map((x) => <li><a href={modelUrl(x.key)}>{x.name}</a> <span class="muted">from {money(x.min_price)}</span></li>)}</ul><p class="muted"><a href={u(`models/#${m.category}-${(m.brand || 'Other').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`)}>All {m.brand} {m.category === 'lens' ? 'lenses' : 'cameras'}</a> · <a href={u('models/')}>Every model A–Z</a></p></section>}
   <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
 </Base>
 
 <style>
+  .gone { max-width:720px; margin:.2rem 0 1rem; }
+  .gone p { margin:.35rem 0; }
   .msum { max-width:720px; line-height:1.55; margin:.4rem 0 .9rem; }
   .fw { margin:.6rem 0 1rem; max-width:720px; }
   .fw-card { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; align-items:baseline; padding:.6rem .9rem; }

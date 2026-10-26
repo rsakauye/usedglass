@@ -1,7 +1,7 @@
 // Sitemap of every indexable page (static pages + one page per tracked model). No extra dependency.
 // <lastmod> is the date the page's content really changed (see lib/lastmod.js), or omitted when unknown,
 // so search engines and the IndexNow ping (scripts/indexnow.mjs) only see genuine updates.
-import { models } from '../lib/data.js';
+import { modelPages } from '../lib/data.js';
 import { gitDate, modelLastmod, maxDate } from '../lib/lastmod.js';
 import { sitemapEntries } from '../lib/reports.js';
 const P = (f) => `site/src/pages/${f}`;
@@ -31,7 +31,9 @@ const STATIC = {
 const extra = sitemapEntries();
 export function GET() {
   const site = 'https://usedglass.ca/';
-  const modelEntries = Object.values(models).map((m) => [`model/${m.key}/`, modelLastmod(m.key)]);
+  // Live models plus ones last seen within the retain window (modelPages). A key with no state
+  // row (reclassified, or only known from an older catalog) uses its recorded last_seen day.
+  const modelEntries = modelPages.map((m) => [`model/${m.key}/`, modelLastmod(m.key) || m.last_seen || null]);
   const newestModel = maxDate(modelEntries.map((e) => e[1]));
   const staticEntries = Object.entries(STATIC)
     .filter(([p]) => p !== 'reports/' || extra.length)

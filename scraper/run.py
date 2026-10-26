@@ -1,5 +1,11 @@
 """Daily pipeline: scrape -> normalize -> history/state -> models -> changes -> deals -> rebates.
 
+Model pages are not only today's listings. data/model-seen.json remembers each model we have
+actually matched, with the last day and price, so the site can keep that page for RETAIN_DAYS
+after the listings disappear. Past that, the page is dropped and (once Pages' asset cache
+expires) returns 404. Cloudflare Pages _redirects cannot answer 404 (status 404 is an
+unsupported rewrite), so no redirect is written.
+
 Usage: python -m scraper.run [dealer ...]   (default: all dealers + eBay if keys present)
 All outputs land in data/. Dates are America/Edmonton calendar days.
 """
@@ -27,6 +33,7 @@ DEAL_MIN_COMPS = 3
 DROP_MIN = 0.10
 DEAL_MAX_DISCOUNT = 0.70
 HISTORY_DAYS = 120
+RETAIN_DAYS = 90            # keep a model page this many days after its last matched listing
 DROP_ALERT_RATIO = 0.4      # warn when a dealer returns <40% of yesterday's listings (partial layout break)
 DROP_ALERT_MIN_PREV = 25
 
@@ -66,6 +73,144 @@ def price_stats(xs: list[dict]) -> dict:
     prices = sorted(x["price_cad"] for x in xs)
     solo = sorted(x["price_cad"] for x in xs if not x.get("bundle")) or prices
     return {"count": len(prices), "min_price": prices[0], "median_price": round(statistics.median(solo), 2)}
+
+
+def iso_minus(day: str, days: int) -> str:
+    return (dt.date.fromisoformat(day) - dt.timedelta(days=days)).isoformat()
+
+
+def model_key_ok(key) -> bool:
+    """Model keys become URL paths (/model/<key>/). Reject anything that is not a plain slug."""
+    if not isinstance(key, str) or not 1 <= len(key) <= 120 or key != key.lower() or not key[0].isalnum():
+        return False
+    return all(c.isalnum() or c in "-_" for c in key)
+
+
+def _iso_date(value) -> str | None:
+    if not isinstance(value, str) or len(value) != 10:
+        return None
+    try:
+        dt.date.fromisoformat(value)
+    except ValueError:
+        return None
+    return value
+
+
+def _price(value):
+    """A real positive price. Booleans are ints in Python and are not prices."""
+    if isinstance(value, bool) or not isinstance(value, (int, float)) or not value > 0:
+        return None
+    return round(float(value), 2)
+
+
+def state_model_stats(state: dict, today: str, retain_days: int = RETAIN_DAYS) -> dict:
+    """Per model key still tagged on a listing seen within retain_days: last day, the prices that day, and the
+    last price of each such listing (the same 90-day inputs models.json uses for median_90d)."""
+    since = iso_minus(today, retain_days)
+    out: dict[str, dict] = {}
+    for s in state.values():
+        mk = s.get("mk")
+        points = s.get("p") or []
+        if not model_key_ok(mk) or not points:
+            continue
+        ls = _iso_date(s.get("ls") or points[-1][0])
+        price = _price(points[-1][1])
+        if not ls or ls < since or price is None:
+            continue
+        a = out.setdefault(mk, {"last_seen": "", "last_prices": [], "obs": []})
+        a["obs"].append(price)
+        if ls > a["last_seen"]:
+            a["last_seen"] = ls
+            a["last_prices"] = [price]
+        elif ls == a["last_seen"]:
+            a["last_prices"].append(price)
+    return out
+
+
+def _seen_row(name: str, category, brand, mount) -> dict:
+    return {
+        "name": name,
+        "category": category or None,
+        "brand": brand or None,
+        "mount": mount or None,
+        "last_seen": None,
+        "last_price": None,
+        "median_90d": None,
+        "observations_90d": 0,
+        "median_90d_as_of": None,
+    }
+
+
+def update_model_seen(prev: dict, models: dict, state: dict, today: str, retain_days: int = RETAIN_DAYS,
+                      new_prices: dict | None = None) -> dict:
+    """Registry of models we have actually matched.
+
+    Identity (name, category, brand, mount) is copied from a current listing group or from a previous row.
+    last_seen / last_price / median_90d come from today's models or from listing state. A row with no name,
+    or last seen more than retain_days ago, is dropped. Nothing is invented: a model key that appears only
+    in state, with no previous name, is skipped.
+    """
+    if not _iso_date(today):
+        raise ValueError(f"bad today: {today!r}")
+    cutoff = iso_minus(today, retain_days)
+    stats = state_model_stats(state, today, retain_days)
+    reg: dict[str, dict] = {}
+    for mk, e in (prev or {}).items():
+        if not model_key_ok(mk) or not isinstance(e, dict):
+            continue
+        name = e.get("name")
+        last = _iso_date(e.get("last_seen"))
+        if not isinstance(name, str) or not name.strip() or not last:
+            continue
+        if last < cutoff and mk not in models:
+            continue
+        row = _seen_row(name.strip(), e.get("category"), e.get("brand"), e.get("mount"))
+        row["last_seen"] = last
+        row["last_price"] = _price(e.get("last_price"))
+        row["median_90d"] = _price(e.get("median_90d"))
+        obs = e.get("observations_90d")
+        row["observations_90d"] = int(obs) if isinstance(obs, int) and not isinstance(obs, bool) and obs > 0 else 0
+        row["median_90d_as_of"] = _iso_date(e.get("median_90d_as_of")) or last
+        reg[mk] = row
+    for mk, m in models.items():
+        if not model_key_ok(mk) or not isinstance(m, dict):
+            continue
+        name = m.get("name")
+        if not isinstance(name, str) or not name.strip():
+            continue
+        row = reg.get(mk) or _seen_row(name.strip(), m.get("category"), m.get("brand"), m.get("mount"))
+        row["name"] = name.strip()
+        row["category"] = m.get("category") or None
+        row["brand"] = m.get("brand") or None
+        row["mount"] = m.get("mount") or None
+        row["last_seen"] = today
+        row["last_price"] = _price(m.get("min_price"))
+        row["median_90d"] = _price(m.get("median_90d"))
+        obs = m.get("observations_90d")
+        row["observations_90d"] = int(obs) if isinstance(obs, int) and not isinstance(obs, bool) and obs > 0 else 0
+        row["median_90d_as_of"] = today
+        reg[mk] = row
+    for mk, a in stats.items():
+        if mk in models or mk not in reg:
+            continue
+        row = reg[mk]
+        if a["last_seen"] >= (row.get("last_seen") or ""):
+            row["last_seen"] = a["last_seen"]
+            if a["last_prices"]:
+                row["last_price"] = min(a["last_prices"])
+        if a["obs"]:
+            row["median_90d"] = round(statistics.median(a["obs"]), 2)
+            row["observations_90d"] = len(a["obs"])
+            row["median_90d_as_of"] = today
+    if new_prices is not None:
+        for mk, row in reg.items():
+            np = new_prices.get(mk) or {}
+            price, url = _price(np.get("price")), np.get("url")
+            if price and isinstance(url, str) and url.startswith("http"):
+                row["new_price"] = price
+                row["new_price_url"] = url
+                row["new_price_dealer"] = np.get("dealer") or None
+    return {k: reg[k] for k in sorted(reg) if reg[k].get("last_seen") and reg[k]["last_seen"] >= cutoff and reg[k].get("name")}
 
 
 def main(argv: list[str]) -> int:
@@ -226,6 +371,22 @@ def main(argv: list[str]) -> int:
             if mm.get("successor"):
                 m["meta"]["successor_name"] = (model_meta.get(mm["successor"]) or {}).get("name")
     save(DATA / "models.json", models, compact=True)
+    # Remember every model we matched so a page can outlive a gap in listings. Rows older than RETAIN_DAYS
+    # are dropped here; the site also refuses to build a page past that cutoff. No name is guessed from the key.
+    seen_prev = load(DATA / "model-seen.json", {})
+    seen_models_prev = seen_prev.get("models") if isinstance(seen_prev, dict) else {}
+    seen_models = update_model_seen(
+        seen_models_prev if isinstance(seen_models_prev, dict) else {},
+        models, state, today, new_prices=new_prices,
+    )
+    save(DATA / "model-seen.json", {
+        "_about": "Models actually matched to a dealer listing, with the last day and price we saw. "
+                  "The site keeps an indexable /model/<key>/ page for retain_days after last_seen, then drops it. "
+                  "Written by scraper/run.py. Prices are copied from listings or listing state, never estimated.",
+        "retain_days": RETAIN_DAYS,
+        "updated": today,
+        "models": seen_models,
+    }, compact=True)
 
     # ---- deals
     deals = []

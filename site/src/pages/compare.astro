@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import fs from 'node:fs';
 import path from 'node:path';
-import { models, u, money, modelUrl } from '../lib/data.js';
+import { models, modelByKey, u, money, modelUrl } from '../lib/data.js';
 import { CLASS_CSS } from '../lib/classes.js';
 
 const DATA_DIR = process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data');
@@ -24,11 +24,11 @@ const AX = [
   ['STB', 'Stabilisation', (b) => b.stab_stops / max('stab_stops'), (b) => (b.stab_stops ? `${b.stab_stops} stops` : 'none')],
 ];
 const bodies = keys.map((k) => {
-  const b = B[k], m = models[k];
+  const b = B[k], m = models[k], page = modelByKey[k];
   return { k, n: b.name, br: b.brand, s: b.sensor, src: b.sources,
     st: AX.map(([, , f, l]) => [Math.round(f(b) * 100), l(b)]),
     t: tr.traits[k] || [], cards: b.card_note, scr: b.screen,
-    p: m ? m.min_price : null, url: m ? modelUrl(k) : null, c: m ? m.count : 0 };
+    p: m ? m.min_price : null, url: page ? modelUrl(k) : null, c: m ? m.count : 0 };
 }).sort((a, b) => a.n.localeCompare(b.n));
 const ax = AX.map((a) => [a[0], a[1]]);
 const brands = [...new Set(bodies.map((b) => b.br))];
@@ -139,7 +139,7 @@ const pmoney = Object.fromEntries(bodies.filter((b) => b.p != null).map((b) => [
       h += b.st.map((s: any, i: number) => `<div class="cmp-stat${hot[ax[i][0]] ? ' hot' : ''}"><b title="${esc(ax[i][1])}">${ax[i][0]}</b><div class="cmp-bar" role="img" aria-label="${esc(ax[i][1])} ${s[0]} of 100"><i style="width:${s[0]}%;background:${COL[ci]}"></i></div><span class="muted">${esc(ax[i][1])}: ${esc(s[1])} (${s[0]})${hot[ax[i][0]] ? ` <span class="why">· key for ${esc(hot[ax[i][0]].join(', '))}</span>` : ''}</span></div>`).join('');
       const t = [...b.t].sort((x: any, y: any) => (x.t === y.t ? 0 : x.t === '+' ? -1 : 1));
       h += `<ul class="cmp-tr">${t.map((x: any) => `<li class="${x.t === '+' ? 'buff' : 'debuff'}"><b aria-hidden="true">${x.t === '+' ? '+' : '−'}</b><span class="sr-only">${x.t === '+' ? 'Buff: ' : 'Debuff: '}</span>${esc(x.text)} <a href="${esc(x.src)}" rel="nofollow noopener" target="_blank">source</a></li>`).join('')}</ul>`;
-      h += `<p style="margin:.6rem 0 0">${b.url ? `<a href="${b.url}">${b.c} used listing${b.c === 1 ? '' : 's'}${pmoney[b.k] ? `, from ${pmoney[b.k]}` : ''}</a>` : '<span class="muted">No used listings tracked right now.</span>'}</p>`;
+      h += `<p style="margin:.6rem 0 0">${b.url ? (b.c ? `<a href="${b.url}">${b.c} used listing${b.c === 1 ? '' : 's'}${pmoney[b.k] ? `, from ${pmoney[b.k]}` : ''}</a>` : `<a href="${b.url}">No current listings</a>`) : '<span class="muted">No used listings tracked right now.</span>'}</p>`;
       h += `<p class="muted" style="margin:.3rem 0 0;font-size:.8rem">Specs: ${b.src.map((s: string, i: number) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${i + 1}<span class="sr-only"> (spec source ${i + 1} for ${esc(b.n)}, opens in a new tab)</span></a>`).join(' ')}</p></section>`;
       return h;
     }

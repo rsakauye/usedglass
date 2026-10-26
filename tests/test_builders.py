@@ -7,7 +7,7 @@ import pathlib
 import re
 import unittest
 
-from scraper.run import floor_cheap_cameras, price_stats
+from scraper.run import floor_cheap_cameras, iso_minus, price_stats, update_model_seen
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 _s = importlib.util.spec_from_file_location("fw", ROOT / "scripts" / "firmware.py")
@@ -143,6 +143,100 @@ class SiteDataShapeTests(unittest.TestCase):
                 self.assertNotRegex(e["text"].lower(), r"\bno (in-body|ibis)\b")  # absence of a spec is never stated
                 for n in re.findall(r"\b\d{3,}\b", e["text"].replace(",", "")):
                     self.assertNotIn(n, {"2024", "2025", "2026"}, "no dates in summaries")
+
+
+class ModelSeenTests(unittest.TestCase):
+    TODAY = "2026-10-26"
+
+    def _live(self, **kw):
+        m = {"name": "Canon EOS R5", "category": "camera", "brand": "Canon", "mount": "Canon RF",
+             "min_price": 2800, "median_90d": 3000, "observations_90d": 4}
+        m.update(kw)
+        return m
+
+    def test_live_model_stamps_today_and_price(self):
+        out = update_model_seen({}, {"camera-canon-r5": self._live()}, {}, self.TODAY)
+        row = out["camera-canon-r5"]
+        self.assertEqual(row["last_seen"], self.TODAY)
+        self.assertEqual(row["last_price"], 2800)
+        self.assertEqual(row["median_90d"], 3000)
+        self.assertEqual(row["median_90d_as_of"], self.TODAY)
+        self.assertEqual((row["name"], row["brand"], row["mount"]), ("Canon EOS R5", "Canon", "Canon RF"))
+
+    def test_dropped_model_keeps_recorded_price_inside_window(self):
+        prev = {"lens-canon-35mm-f2_8": {
+            "name": "Canon 35mm f/2.8", "category": "lens", "brand": "Canon", "mount": None,
+            "last_seen": "2026-10-24", "last_price": 239.99, "median_90d": 239.99,
+            "observations_90d": 1, "median_90d_as_of": "2026-10-24",
+        }}
+        out = update_model_seen(prev, {}, {}, self.TODAY)
+        self.assertEqual(out["lens-canon-35mm-f2_8"]["last_price"], 239.99)
+        self.assertEqual(out["lens-canon-35mm-f2_8"]["last_seen"], "2026-10-24")
+        self.assertNotIn("camera-canon-r5", out)
+
+    def test_state_refreshes_last_price_without_inventing_a_name(self):
+        prev = {"lens-x": {"name": "X 50mm", "category": "lens", "brand": "X", "mount": None,
+                           "last_seen": "2026-10-20", "last_price": 100, "median_90d": 100,
+                           "observations_90d": 1, "median_90d_as_of": "2026-10-20"}}
+        state = {
+            "a": {"mk": "lens-x", "ls": "2026-10-22", "p": [["2026-10-20", 100], ["2026-10-22", 80]]},
+            "b": {"mk": "lens-x", "ls": "2026-10-22", "p": [["2026-10-22", 120]]},
+            "c": {"mk": "lens-unknown", "ls": "2026-10-22", "p": [["2026-10-22", 50]]},
+        }
+        out = update_model_seen(prev, {}, state, self.TODAY)
+        self.assertEqual(out["lens-x"]["last_seen"], "2026-10-22")
+        self.assertEqual(out["lens-x"]["last_price"], 80)  # cheapest copy on the last day
+        self.assertEqual(out["lens-x"]["median_90d"], 100)  # median of 80 and 120
+        self.assertEqual(out["lens-x"]["observations_90d"], 2)
+        self.assertEqual(out["lens-x"]["median_90d_as_of"], self.TODAY)
+        self.assertNotIn("lens-unknown", out)
+
+    def test_state_does_not_move_last_seen_backward(self):
+        prev = {"lens-x": {"name": "X", "category": "lens", "brand": "X", "mount": None,
+                           "last_seen": "2026-10-24", "last_price": 200, "median_90d": 200,
+                           "observations_90d": 1, "median_90d_as_of": "2026-10-24"}}
+        state = {"a": {"mk": "lens-x", "ls": "2026-10-20", "p": [["2026-10-20", 10]]}}
+        out = update_model_seen(prev, {}, state, self.TODAY)
+        self.assertEqual((out["lens-x"]["last_seen"], out["lens-x"]["last_price"]), ("2026-10-24", 200))
+
+    def test_keeps_day_90_and_drops_day_91(self):
+        old = iso_minus(self.TODAY, 91)
+        edge = iso_minus(self.TODAY, 90)
+        prev = {
+            "lens-old": {"name": "Old", "category": "lens", "brand": "Old", "mount": None,
+                         "last_seen": old, "last_price": 40, "observations_90d": 1, "median_90d_as_of": old},
+            "lens-edge": {"name": "Edge", "category": "lens", "brand": "Edge", "mount": None,
+                          "last_seen": edge, "last_price": 41, "observations_90d": 1, "median_90d_as_of": edge},
+        }
+        out = update_model_seen(prev, {}, {}, self.TODAY)
+        self.assertNotIn("lens-old", out)
+        self.assertEqual(out["lens-edge"]["last_price"], 41)
+
+    def test_listing_again_returns_the_page_to_today(self):
+        prev = {"camera-canon-r5": {"name": "Canon EOS R5", "category": "camera", "brand": "Canon", "mount": "Canon RF",
+                                    "last_seen": "2026-09-01", "last_price": 2500, "median_90d": 2600,
+                                    "observations_90d": 2, "median_90d_as_of": "2026-09-01"}}
+        out = update_model_seen(prev, {"camera-canon-r5": self._live(min_price=2700)}, {}, self.TODAY)
+        self.assertEqual(out["camera-canon-r5"]["last_seen"], self.TODAY)
+        self.assertEqual(out["camera-canon-r5"]["last_price"], 2700)
+
+    def test_rejects_unsafe_keys_and_missing_names(self):
+        prev = {
+            "../etc": {"name": "Nope", "last_seen": "2026-10-20", "last_price": 10},
+            "lens-ok": {"name": "   ", "last_seen": "2026-10-20", "last_price": 10},
+            "Lens-Bad": {"name": "Bad", "last_seen": "2026-10-20", "last_price": 10},
+        }
+        models = {"bad key": {"name": "Bad", "min_price": True, "category": "lens"}}
+        self.assertEqual(update_model_seen(prev, models, {}, self.TODAY), {})
+
+    def test_new_price_is_copied_only_when_given(self):
+        live = {"camera-canon-r5": self._live()}
+        prices = {"camera-canon-r5": {"price": 4299, "url": "https://example.com/r5", "dealer": "The Camera Store"}}
+        out = update_model_seen({}, live, {}, self.TODAY, new_prices=prices)
+        self.assertEqual(out["camera-canon-r5"]["new_price"], 4299)
+        self.assertEqual(out["camera-canon-r5"]["new_price_url"], "https://example.com/r5")
+        bare = update_model_seen(out, live, {}, self.TODAY)
+        self.assertNotIn("new_price", bare["camera-canon-r5"])
 
 
 if __name__ == "__main__":
