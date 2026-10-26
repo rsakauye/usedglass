@@ -150,6 +150,12 @@
  ],
  "price_dropped": [
   {
+   "id": "cameracanada-1dd7512938",
+   "old": 1149.0,
+   "new": 1049.0,
+   "pct": 0.087
+  },
+  {
    "id": "ebay-2521cdb3a6",
    "old": 420.0,
    "new": 400.0,
