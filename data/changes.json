@@ -1,13 +1,16 @@
 {
  "date": "2026-10-26",
- "new_today": [],
+ "new_today": [
+  "ebay-567ba19150",
+  "ebay-ec574e755a"
+ ],
  "price_dropped": [
   {
-   "id": "ebay-b583e03188",
-   "old": 2600.99,
-   "new": 2392.91,
-   "pct": 0.08
+   "id": "ebay-5cf9a129b2",
+   "old": 23104.95,
+   "new": 20997.5,
+   "pct": 0.091
   }
  ],
- "removed": 1
+ "removed": 5
 }
