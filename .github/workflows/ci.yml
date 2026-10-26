@@ -1,0 +1,63 @@
+name: PR checks
+
+# Read-only checks for pull requests into main. Does not deploy and does not read secrets.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pr-checks-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Every tests/test_*.py module, including tests.test_builders.
+      - name: Python tests
+        run: |
+          set -euo pipefail
+          mapfile -t mods < <(find tests -maxdepth 1 -name 'test_*.py' -printf '%f\n' | sed 's/\.py$//' | sort)
+          if [ "${#mods[@]}" -eq 0 ]; then
+            echo "No Python test modules found" >&2
+            exit 1
+          fi
+          python -m unittest -v "${mods[@]/#/tests.}"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.23.4"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      # Every tests/*.mjs file.
+      - name: JS tests
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          files=(tests/*.mjs)
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No JS tests found" >&2
+            exit 1
+          fi
+          node --test "${files[@]}"
+
+      - name: Build site
+        working-directory: site
+        env:
+          SITE_URL: https://usedglass.ca
+          BASE_PATH: /
+          PUBLIC_AMAZON_TAG: usedglass-20
+        run: |
+          npm ci
+          npm run build
