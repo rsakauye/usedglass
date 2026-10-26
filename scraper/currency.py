@@ -32,10 +32,30 @@ TAX_NOTE = ("Estimate uses 5% GST (AB, BC, MB, SK, QC, territories; BC/MB/SK/QC 
             "HST provinces pay 13% (ON) or 15% (NB, NL, NS, PE) instead.")
 DUTY_NOTE = ("Most cameras and lenses enter Canada duty-free, but check the item's tariff code; couriers usually add a "
              "brokerage fee, estimated here, unless the seller ships duty-paid (DDP).")
+# Public label for an eBay.com offer. Never an account username, user id, or eias token.
+EBAY_US_SELLER = "eBay US seller"
 
 
 def _pct(a: float, b: float) -> float:
     return round(a / b - 1, 4)
+
+
+def seller_label(seller):
+    """Label safe to store and show. A legacy ``eBay US: <username>`` value collapses to EBAY_US_SELLER."""
+    if isinstance(seller, str) and seller.startswith("eBay US:"):
+        return EBAY_US_SELLER
+    return seller
+
+
+def gap_deal(g: dict, now: str) -> dict:
+    """Deal row for a flagged currency gap. ``dealer`` is the public seller label, never an eBay username."""
+    seller = seller_label(g.get("seller"))
+    return {"type": "currency_gap", "id": f"gap-{g['model_key']}-{seller}",
+            "title": f"{g['model_name']} from {seller} (US)",
+            "dealer": seller, "url": g.get("url"), "price_cad": g["landed_cad"], "model_key": g["model_key"],
+            "model_name": g.get("model_name"),
+            "reasons": [f"estimated landed cost ${g['landed_cad']:,.0f} vs ${g['ca_price']:,.0f} at {g['ca_where']} (estimate: shipping, brokerage and GST included; HST provinces pay more)"],
+            "score": 0, "deal_score": None, "is_new": False, "fetched_at": g.get("as_of") or now}
 
 
 def _value_on_or_before(hist: list[list], day: str):
@@ -144,7 +164,7 @@ def currency_gap(us_offers: list[dict], new_prices: dict, models: dict, listings
         saving = ca_price - est["landed_cad"]
         flagged = saving >= GAP_MIN_CAD and saving >= ca_price * GAP_MIN_PCT
         name = (new_prices.get(mk) or {}).get("name") or (models.get(mk) or {}).get("name") or mk
-        out.append({"model_key": mk, "model_name": name, "condition": cond, "seller": o.get("seller"), "url": o.get("url"),
+        out.append({"model_key": mk, "model_name": name, "condition": cond, "seller": seller_label(o.get("seller")), "url": o.get("url"),
                     "price": o["price"], "currency": cur, "as_of": o.get("as_of"), **est,
                     "ca_price": ca_price, "ca_where": ca_where, "ca_url": ca_url, "saving_cad": round(saving, 2),
                     "saving_pct": round(saving / ca_price, 3), "flagged": flagged,
@@ -197,7 +217,8 @@ def rate_moved(new_prices: dict, fx: dict, today: str, currency: str = "USD") ->
 # ------------------------------------------------------------------ optional eBay US offers (official API)
 def ebay_us_offers(model_names: dict[str, str], now: str, max_models: int = 40) -> list[dict]:
     """New-condition, fixed-price eBay.com listings from US sellers that ship to Canada, for a short list of models.
-    Runs only when EBAY_CLIENT_ID/EBAY_CLIENT_SECRET exist and EBAY_US_GAP != "0". Returns [] otherwise."""
+    Runs only when EBAY_CLIENT_ID/EBAY_CLIENT_SECRET exist and EBAY_US_GAP != "0". Returns [] otherwise.
+    ``seller`` is always EBAY_US_SELLER. The account username is not read and is not stored."""
     if os.environ.get("EBAY_US_GAP") == "0" or not os.environ.get("EBAY_CLIENT_ID") or not os.environ.get("EBAY_CLIENT_SECRET"):
         return []
     from .ebay import SEARCH_URL, _token
@@ -225,8 +246,9 @@ def ebay_us_offers(model_names: dict[str, str], now: str, max_models: int = 40) 
                 c = (so.get("shippingCost") or {})
                 if c.get("currency") == "USD" and c.get("value") is not None:
                     ship = float(c["value"])  # converted to CAD by the caller
+            # Do not read it["seller"] (username or otherwise). The public label is fixed.
             out.append({"model_key": mk, "price": float(p["value"]), "currency": "USD", "condition": "new",
-                        "seller": "eBay US: " + ((it.get("seller") or {}).get("username") or "seller"),
+                        "seller": EBAY_US_SELLER,
                         "url": it.get("itemAffiliateWebUrl") or it.get("itemWebUrl"), "ship_usd": ship, "as_of": now})
             break  # results are sorted by price; first exact model match is enough
     return out

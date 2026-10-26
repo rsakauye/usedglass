@@ -35,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Unit tests
-        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency
+        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders
 
       - name: Scrape dealers (+ eBay if keys are set) and compute deals
         id: scrape
@@ -73,7 +73,7 @@ jobs:
           cache-dependency-path: site/package-lock.json
 
       - name: JS unit tests (kit builder, vintage classifier)
-        run: node --test tests/test_mykit.mjs tests/test_vintage.mjs
+        run: node --test tests/test_mykit.mjs tests/test_vintage.mjs tests/test_ebay_account_deletion.mjs
 
       - name: Build site (GitHub Pages preview base path)
         working-directory: site
