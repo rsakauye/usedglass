@@ -228,5 +228,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-25T15:08:55+00:00",
   "date": "2026-10-25"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-0313919122",
+  "title": "Tamron SP 150-600mm f/5-6.3 Di VC USD (A011) - F-mount (for Nikon) - Good",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/800837741812?hash=itemba75a62cf4%3Ag%3A8KsAAeSwG7pqvYKS&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 679.0,
+  "comp_median": 1339.49,
+  "comps": 4,
+  "model_key": "lens-tamron-nikon-f-150-600mm-f5-6_3-stab",
+  "model_name": "Tamron 150-600mm f/5-6.3 STAB (Nikon F)",
+  "condition": "Good",
+  "reasons": [
+   "49% below the median of 4 comparable listings"
+  ],
+  "score": 61.3,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "49% below the median of 4 comparable listings",
+   "36% of the new price ($1,899); used ones this age typically sell around 75%",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-26T14:23:22+00:00",
+  "date": "2026-10-26"
  }
 ]
