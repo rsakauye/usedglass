@@ -14,7 +14,7 @@ GitHub Actions (daily 12:00 UTC ≈ 6 a.m. Mountain)
        ├─ eBay Browse API (scraper/ebay.py)      → skipped unless keys are set
        ├─ normalize.py: brand, mount, category, condition grade, model key (heuristic, no AI)
        ├─ history/state: data/history/YYYY-MM-DD.json, data/state.json (first seen, price changes)
-       ├─ models.json (grouped models, medians), changes.json (new today, price drops)
+       ├─ models.json (grouped models, medians), model-seen.json (last price/date; page stays 90 days after listings stop), changes.json (new today, price drops)
        ├─ deals.json + deal-of-the-day.json (steep discounts vs comparable median, drops, new rebates)
        ├─ rebates.json (Canon / Fujifilm / Nikon Canada promo pages)
        ├─ new-prices.json (Canadian NEW prices, The Camera Store public catalogue: scraper/newprices.py)
