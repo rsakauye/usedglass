@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-10-26T14:28:30+00:00",
+   "as_of": "2026-10-26T14:34:59+00:00",
    "rate": 1.3993,
    "goods_cad": 42.69,
    "ship_cad": 9.03,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/398359011886?_skw=Nikon+Z9&hash=item5cc00c222e:g:12kAAeSwhVlqmt~g",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-10-26T14:28:30+00:00",
+   "as_of": "2026-10-26T14:34:59+00:00",
    "rate": 1.3993,
    "goods_cad": 35.25,
    "ship_cad": 9.03,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366740379268?_skw=Canon+EOS+R5+Mark+II&hash=item55636e1684:g:lvUAAeSw9Ptq02by",
    "price": 33.18,
    "currency": "USD",
-   "as_of": "2026-10-26T14:28:30+00:00",
+   "as_of": "2026-10-26T14:34:59+00:00",
    "rate": 1.3993,
    "goods_cad": 46.43,
    "ship_cad": 7.49,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-10-26T14:28:30+00:00",
+   "as_of": "2026-10-26T14:34:59+00:00",
    "rate": 1.3993,
    "goods_cad": 15.39,
    "ship_cad": 0.0,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-10-26T14:28:30+00:00",
+   "as_of": "2026-10-26T14:34:59+00:00",
    "rate": 1.3993,
    "goods_cad": 53.17,
    "ship_cad": 15.29,
@@ -195,31 +195,6 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Pentax 50mm f/1.4 (M42)"
-  },
-  {
-   "title": "Tamron SP 150-600mm f/5-6.3 Di VC USD (A011) - F-mount (for Nikon) - Good",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/800837741812?hash=itemba75a62cf4%3Ag%3A8KsAAeSwG7pqvYKS&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 679.0,
-   "deal_score": 100,
-   "score_why": [
-    "49% below the median of 4 comparable listings",
-    "36% of the new price ($1,899); used ones this age typically sell around 75%",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Tamron 150-600mm f/5-6.3 STAB (Nikon F)"
-  },
-  {
-   "title": "Sony Alpha a7R II 42.4MP Digital Camera - Black (READ)",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/900041824118?hash=itemd18eac5776%3Ag%3AJScAAeSwoJtq03zF&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 400.0,
-   "deal_score": 100,
-   "score_why": [
-    "50% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Sony A7R II"
   },
   {
    "title": "Nikkor 50mm AF f1.8 *USED",
@@ -280,6 +255,30 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Canon AE1PROGRAM"
+  },
+  {
+   "title": "Leica Summicron-M 50mm f/2 - Leica M-mount",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/366713300889?hash=item5561d0e799%3Ag%3Avf4AAeSwa0hqxAML&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 1399.99,
+   "deal_score": 100,
+   "score_why": [
+    "53% below the median of 4 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Leica 50mm f/2 (Leica M)"
+  },
+  {
+   "title": "Canon AE-1 35MM Film Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/206515457076?hash=item301547cc34%3Ag%3AN0QAAeSwGGJqjhBc&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 170.99,
+   "deal_score": 100,
+   "score_why": [
+    "46% below the median of 25 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Canon AE1"
   }
  ]
 }
