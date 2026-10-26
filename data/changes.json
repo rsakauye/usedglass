@@ -1,9 +1,58 @@
 {
  "date": "2026-10-26",
  "new_today": [
-  "ebay-d8668b638a",
-  "ebay-f12b5e645f"
+  "beauphoto-5218851ac1",
+  "cameracanada-8f46555688",
+  "cameracanada-372e339991",
+  "ebay-340ad0fb24",
+  "ebay-c3d4da4078",
+  "ebay-01dfb4b460",
+  "ebay-554fea0052",
+  "ebay-91ea76bfac",
+  "ebay-b455556ec8",
+  "ebay-7d77bb9216",
+  "ebay-6b3c41963d",
+  "ebay-2865138cd1",
+  "ebay-b2bfd1951f",
+  "ebay-7606c5ca60",
+  "ebay-08537857a2",
+  "ebay-9b694bf6e2",
+  "ebay-4bd705ed80",
+  "ebay-eb2b4c6242",
+  "ebay-4726ef0b53",
+  "ebay-fd5693b551",
+  "ebay-5d011044f8",
+  "ebay-2d052f1f85",
+  "ebay-d6e1767f7e",
+  "ebay-0b2db62d09",
+  "ebay-9971efe3fe",
+  "ebay-fd1cd01dfc",
+  "ebay-02824e5fa2",
+  "ebay-853a4c3a48",
+  "ebay-a1e512dc38",
+  "ebay-20bac39f4d",
+  "ebay-7a40d59a49",
+  "ebay-110950ad08"
  ],
- "price_dropped": [],
- "removed": 4
+ "price_dropped": [
+  {
+   "id": "ebay-45ebd10089",
+   "old": 119.19,
+   "new": 90.19,
+   "pct": 0.243
+  },
+  {
+   "id": "ebay-c5b18b7053",
+   "old": 1699.99,
+   "new": 1649.99,
+   "pct": 0.029
+  },
+  {
+   "id": "ebay-2218a83c52",
+   "old": 149.0,
+   "new": 139.0,
+   "pct": 0.067
+  }
+ ],
+ "removed": 31
 }

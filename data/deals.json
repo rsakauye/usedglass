@@ -1,22 +1,31 @@
 {
  "date": "2026-10-26",
- "generated_at": "2026-10-26T15:15:51+00:00",
+ "generated_at": "2026-10-26T17:46:13+00:00",
  "deal_of_the_day": {
-  "type": "currency_gap",
-  "id": "gap-camera-nikon-z9-eBay US seller",
-  "title": "Nikon Z9 from eBay US seller (US)",
-  "dealer": "eBay US seller",
-  "url": "https://www.ebay.com/itm/398359011886?_skw=Nikon+Z9&hash=item5cc00c222e:g:12kAAeSwhVlqmt~g",
-  "price_cad": 71.49,
-  "model_key": "camera-nikon-z9",
-  "model_name": "Nikon Z9",
+  "type": "listing",
+  "id": "ebay-d6e1767f7e",
+  "title": "Used Leica Q2 Digital Camera",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/920076622634?hash=itemd638d71b2a%3Ag%3AdaYAAeSwZe5q33gQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 3899.0,
+  "comp_median": 5995.0,
+  "comps": 5,
+  "model_key": "camera-leica-q2",
+  "model_name": "Leica Q2",
+  "condition": null,
   "reasons": [
-   "estimated landed cost $71 vs $6,999 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+   "35% below the median of 5 comparable listings"
   ],
-  "score": 0,
-  "deal_score": null,
-  "is_new": false,
-  "fetched_at": "2026-10-26T15:15:51+00:00"
+  "score": 48.0,
+  "is_new": true,
+  "deal_score": 98,
+  "score_why": [
+   "35% below the median of 5 comparable listings",
+   "the lowest price we've recorded for this model in 90 days",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-26T17:46:13+00:00"
  },
  "deals": [
   {
@@ -34,7 +43,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -51,7 +60,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -68,7 +77,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -85,7 +94,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -102,7 +111,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -119,7 +128,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -136,7 +145,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -153,7 +162,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -170,7 +179,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "currency_gap",
@@ -187,7 +196,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -212,7 +221,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -237,7 +246,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -262,7 +271,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -287,7 +296,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -312,7 +321,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -337,7 +346,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -362,7 +371,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -387,7 +396,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -412,7 +421,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -437,7 +446,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -462,7 +471,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -487,7 +496,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -513,7 +522,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -538,7 +547,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -563,7 +572,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -589,7 +598,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -614,7 +623,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -639,32 +648,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-aa54c613ee",
-   "title": "Canon EOS Rebel T6 18.0MP Digital SLR DSLR Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/206629273795?hash=item301c1080c3%3Ag%3ANxQAAeSwEV9q0S%7Eb&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 219.99,
-   "comp_median": 399.99,
-   "comps": 4,
-   "model_key": "camera-canon-rebelt6",
-   "model_name": "Canon REBELT6",
-   "condition": null,
-   "reasons": [
-    "45% below the median of 4 comparable listings"
-   ],
-   "score": 49.0,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "45% below the median of 4 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -689,7 +673,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -714,7 +698,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -739,7 +723,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -764,7 +748,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -789,7 +773,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -814,7 +798,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -839,7 +823,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -864,7 +848,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -889,7 +873,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -914,7 +898,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -939,7 +923,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -964,7 +948,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -989,7 +973,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1015,7 +999,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1040,7 +1024,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1065,7 +1049,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1090,7 +1074,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1115,7 +1099,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1140,7 +1124,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1165,7 +1149,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1190,7 +1174,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1215,57 +1199,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "mcbain-785c5929d1",
-   "title": "Canon 55-250mm f4-5.6 IS (EX) EF used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907986",
-   "price_cad": 115.99,
-   "comp_median": 184.4,
-   "comps": 3,
-   "model_key": "lens-canon-canon-ef-55-250mm-f4-5_6-stab",
-   "model_name": "Canon 55-250mm f/4-5.6 STAB (Canon EF)",
-   "condition": "Excellent",
-   "reasons": [
-    "37% below the median of 3 comparable listings"
-   ],
-   "score": 40.1,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "37% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-ffb79daf0a",
-   "title": "Canon AE-1 Program 35mm Film Camera Bundle + Canon FD 50mm f/1.8 Lens - Tested",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/198688311039?hash=item2e42bf06ff%3Ag%3An8YAAeSwU9tqwrrV&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 199.99,
-   "comp_median": 289.79,
-   "comps": 9,
-   "model_key": "camera-canon-ae1program",
-   "model_name": "Canon AE1PROGRAM",
-   "condition": null,
-   "reasons": [
-    "31% below the median of 9 comparable listings"
-   ],
-   "score": 40.0,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "31% below the median of 9 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1290,7 +1224,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1315,7 +1249,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-494419d856",
+   "title": "Canon 50mm f1.8 (BGN) FD used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907784",
+   "price_cad": 49.99,
+   "comp_median": 72.5,
+   "comps": 8,
+   "model_key": "lens-canon-canon-fd-50mm-f1_8",
+   "model_name": "Canon 50mm f/1.8 (Canon FD)",
+   "condition": "Fair",
+   "reasons": [
+    "31% below the median of 8 comparable listings"
+   ],
+   "score": 39.0,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "31% below the median of 8 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1340,7 +1299,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1365,7 +1324,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1390,7 +1349,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1399,23 +1358,23 @@
    "dealer": "Camera Traders",
    "url": "https://www.camera-traders.com/products/canon-ef-s-55-250mm-f4-5-6-is-9",
    "price_cad": 119.0,
-   "comp_median": 184.4,
-   "comps": 3,
+   "comp_median": 181.62,
+   "comps": 4,
    "model_key": "lens-canon-canon-ef-55-250mm-f4-5_6-stab",
    "model_name": "Canon 55-250mm f/4-5.6 STAB (Canon EF)",
    "condition": "Excellent",
    "reasons": [
-    "35% below the median of 3 comparable listings"
+    "34% below the median of 4 comparable listings"
    ],
    "score": 38.5,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "35% below the median of 3 comparable listings",
+    "34% below the median of 4 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1440,7 +1399,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1465,7 +1424,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1490,7 +1449,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1515,7 +1474,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1540,7 +1499,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1565,32 +1524,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-4e81a40cb9",
-   "title": "Canon Sure Shot Prima 60 Zoom 35mm Point & Shoot Camera Tested Working",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/168700153479?hash=item2747500e87%3Ag%3AVQUAAeSwnsxqrn6N&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 90.0,
-   "comp_median": 125.0,
-   "comps": 8,
-   "model_key": "lens-canon-35mm-f",
-   "model_name": "Canon 35mm",
-   "condition": null,
-   "reasons": [
-    "28% below the median of 8 comparable listings"
-   ],
-   "score": 36.0,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "28% below the median of 8 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1615,32 +1549,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "mcbain-494419d856",
-   "title": "Canon 50mm f1.8 (BGN) FD used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907784",
-   "price_cad": 49.99,
-   "comp_median": 69.99,
-   "comps": 7,
-   "model_key": "lens-canon-canon-fd-50mm-f1_8",
-   "model_name": "Canon 50mm f/1.8 (Canon FD)",
-   "condition": "Fair",
-   "reasons": [
-    "29% below the median of 7 comparable listings"
-   ],
-   "score": 35.6,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "29% below the median of 7 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1665,7 +1574,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1690,7 +1599,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1715,7 +1624,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1740,7 +1649,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1765,7 +1674,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1790,7 +1699,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1815,7 +1724,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1840,7 +1749,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1865,7 +1774,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1890,7 +1799,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-aa54c613ee",
+   "title": "Canon EOS Rebel T6 18.0MP Digital SLR DSLR Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/206629273795?hash=item301c1080c3%3Ag%3ANxQAAeSwEV9q0S%7Eb&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 219.99,
+   "comp_median": 300.0,
+   "comps": 5,
+   "model_key": "camera-canon-rebelt6",
+   "model_name": "Canon REBELT6",
+   "condition": null,
+   "reasons": [
+    "27% below the median of 5 comparable listings"
+   ],
+   "score": 31.7,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "27% below the median of 5 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1915,7 +1849,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1940,7 +1874,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1965,7 +1899,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -1990,7 +1924,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2015,7 +1949,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2040,7 +1974,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2067,7 +2001,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2094,7 +2028,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2121,7 +2055,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2147,7 +2081,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2174,7 +2108,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2200,7 +2134,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2226,7 +2160,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2252,7 +2186,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2278,7 +2212,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2304,7 +2238,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2330,33 +2264,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-08afe87886",
-   "title": "Canon Snappy S Red 35MM Film Cameras Fully Automatic P&S TESTED WORKING GREAT!!!",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/128123516994?hash=item1dd4c1b842%3Ag%3AuDsAAeSwCXxqyBo8&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 60.0,
-   "comp_median": 125.0,
-   "comps": 8,
-   "model_key": "lens-canon-35mm-f",
-   "model_name": "Canon 35mm",
-   "condition": null,
-   "reasons": [
-    "52% below the median of 8 comparable listings"
-   ],
-   "score": 60.0,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "52% below the median of 8 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2382,33 +2290,33 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-02ff15c2f5",
-   "title": "Canon EOS Rebel T6 18.0MP Compact Digital Camera",
+   "id": "ebay-08afe87886",
+   "title": "Canon Snappy S Red 35MM Film Cameras Fully Automatic P&S TESTED WORKING GREAT!!!",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/137852185467?hash=item2018a16b7b%3Ag%3AuZUAAeSwZEpq08kk&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 202.49,
-   "comp_median": 399.99,
-   "comps": 4,
-   "model_key": "camera-canon-rebelt6",
-   "model_name": "Canon REBELT6",
+   "url": "https://www.ebay.ca/itm/128123516994?hash=item1dd4c1b842%3Ag%3AuDsAAeSwCXxqyBo8&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 60.0,
+   "comp_median": 110.0,
+   "comps": 9,
+   "model_key": "lens-canon-35mm-f",
+   "model_name": "Canon 35mm",
    "condition": null,
    "reasons": [
-    "49% below the median of 4 comparable listings"
+    "45% below the median of 9 comparable listings"
    ],
-   "score": 53.4,
+   "score": 54.5,
    "is_new": false,
    "deal_score": 98,
    "score_why": [
-    "49% below the median of 4 comparable listings",
+    "45% below the median of 9 comparable listings",
     "the lowest price we've recorded for this model in 90 days",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2434,7 +2342,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   },
   {
    "type": "listing",
@@ -2460,7 +2368,111 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-10-26T15:15:51+00:00"
+   "fetched_at": "2026-10-26T17:46:13+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-4ab841cf1a",
+   "title": "Canon PowerShot A720 IS 8.0MP Digital Camera 6x Opt Zoom Silver Tested",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/227580778580?hash=item34fcdf1854%3Ag%3ABCEAAeSwn1dq0Ewe&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 62.31,
+   "comp_median": 120.02,
+   "comps": 4,
+   "model_key": "camera-canon-powershota720",
+   "model_name": "Canon POWERSHOTA720",
+   "condition": null,
+   "reasons": [
+    "48% below the median of 4 comparable listings"
+   ],
+   "score": 52.1,
+   "is_new": false,
+   "deal_score": 98,
+   "score_why": [
+    "48% below the median of 4 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-26T17:46:13+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-8cf6dc09f9",
+   "title": "LEICA LEITZ M3 DS 10150 IGEMO CHROME CAMERA BODY TRANSITIONAL #854554 SERVICED!",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/287633521652?hash=item42f84b3bf4%3Ag%3A4YwAAeSw7VBqQscx&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 1953.42,
+   "comp_median": 3500.0,
+   "comps": 7,
+   "model_key": "camera-leica-m3",
+   "model_name": "Leica M3",
+   "condition": null,
+   "reasons": [
+    "44% below the median of 7 comparable listings"
+   ],
+   "score": 51.2,
+   "is_new": false,
+   "deal_score": 98,
+   "score_why": [
+    "44% below the median of 7 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-26T17:46:13+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-d6e1767f7e",
+   "title": "Used Leica Q2 Digital Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/920076622634?hash=itemd638d71b2a%3Ag%3AdaYAAeSwZe5q33gQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 3899.0,
+   "comp_median": 5995.0,
+   "comps": 5,
+   "model_key": "camera-leica-q2",
+   "model_name": "Leica Q2",
+   "condition": null,
+   "reasons": [
+    "35% below the median of 5 comparable listings"
+   ],
+   "score": 48.0,
+   "is_new": true,
+   "deal_score": 98,
+   "score_why": [
+    "35% below the median of 5 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-26T17:46:13+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-8c0f34a022",
+   "title": "Tamron SP 24-70mm f/2.8 DI VC USD Nikon",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-8-tamron-sp-24-70mm-f-28-di-vc-usd-nikon-u107326",
+   "price_cad": 399.0,
+   "comp_median": 684.5,
+   "comps": 6,
+   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
+   "condition": "Good",
+   "reasons": [
+    "42% below the median of 6 comparable listings"
+   ],
+   "score": 47.7,
+   "is_new": false,
+   "deal_score": 98,
+   "score_why": [
+    "42% below the median of 6 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-10-26T17:46:13+00:00"
   }
  ],
  "rules": {
