@@ -71,9 +71,11 @@ const productLd = inStock.length ? {
 } : null;
 ---
 <Base title={`${m.name}: used prices in Canada`} jsonld={productLd} crumb={m.name} description={quiet
-  ? (m.last_seen && m.last_price != null
-      ? `No current used listings for the ${m.name} at Canadian dealers. Last seen ${seenLabel(m.last_seen)} at ${money(m.last_price)} CAD.`
-      : `No current used listings for the ${m.name} at Canadian dealers.`)
+  ? (m.last_price != null
+      ? `No current used listings for the ${m.name} at Canadian dealers. Last seen ${seenLabel(m.last_price_on || m.last_seen)} at ${money(m.last_price)} CAD.`
+      : m.median_90d != null
+        ? `No current used listings for the ${m.name} at Canadian dealers. 90-day median ${money(m.median_90d)} CAD${m.median_90d_as_of ? ` as of ${seenLabel(m.median_90d_as_of)}` : ''}.`
+        : `No current used listings for the ${m.name} at Canadian dealers.${m.last_seen ? ` Last seen ${seenLabel(m.last_seen)}.` : ''}`)
   : `Compare ${rows.length} used ${m.name} listings from Canadian dealers. Lowest ${money(m.min_price)} CAD.`}>
   <p class="muted"><a href={u('')}>Search</a> › <a href={u('models/')}>All models</a> › {m.brand} › {m.category}</p>
   <h1>{m.name} <SaveButton k={m.key} n={m.name} m={m.mount} cat={m.category} label={true} /></h1>
@@ -82,16 +84,18 @@ const productLd = inStock.length ? {
   {quiet && (
     <div class="card gone" role="status">
       <p><b>No current listings.</b> None of the Canadian dealers we track have a used {m.name} listed today.</p>
-      {m.last_seen && m.last_price != null && <p>The last price we saw was <b>{money(m.last_price)}</b> on {seenLabel(m.last_seen)}.</p>}
-      {m.last_seen && m.last_price == null && <p>We last saw a listing on {seenLabel(m.last_seen)}. No price from that day is on file.</p>}
+      {m.last_price != null && <p>The last price we saw was <b>{money(m.last_price)}</b> on {seenLabel(m.last_price_on || m.last_seen)}.</p>}
+      {m.last_price == null && m.median_90d != null && <p>The 90-day median was <b>{money(m.median_90d)}</b>{m.median_90d_as_of ? <> as of {seenLabel(m.median_90d_as_of)}</> : ''}.</p>}
+      {m.last_price == null && m.median_90d == null && m.last_seen && <p>Last seen {seenLabel(m.last_seen)}.</p>}
     </div>
   )}
   <div class="stats">
     {quiet ? (
       <>
-        <div><b>{money(m.last_price)}</b><span class="muted">last seen price</span></div>
+        {m.last_price != null && <div><b>{money(m.last_price)}</b><span class="muted">last seen price</span></div>}
+        {m.last_price == null && m.median_90d != null && <div><b>{money(m.median_90d)}</b><span class="muted">{medianCaption}</span></div>}
         <div><b>{m.last_seen ? seenLabel(m.last_seen) : '—'}</b><span class="muted">last seen</span></div>
-        <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">{medianCaption}</span></div>
+        {m.last_price != null && <div><b>{m.median_90d ? money(m.median_90d) : '—'}</b><span class="muted">{medianCaption}</span></div>}
         <div><b>0</b><span class="muted">listings today</span></div>
       </>
     ) : (

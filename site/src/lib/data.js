@@ -37,7 +37,9 @@ function dormantFromSeen(key, e) {
     listing_ids: [], dealers: [], count: 0, min_price: null, median_price: null,
     median_90d: typeof e.median_90d === 'number' && e.median_90d > 0 ? e.median_90d : null,
     observations_90d: Number.isInteger(e.observations_90d) && e.observations_90d > 0 ? e.observations_90d : 0,
-    median_90d_as_of: e.median_90d_as_of || e.last_seen, last_seen: e.last_seen, last_price: lastPrice, dormant: true,
+    median_90d_as_of: e.median_90d_as_of || e.last_seen, last_seen: e.last_seen, last_price: lastPrice,
+    last_price_on: lastPrice && typeof e.last_price_on === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(e.last_price_on) ? e.last_price_on : null,
+    dormant: true,
   };
   if (typeof e.new_price === 'number' && e.new_price > 0 && typeof e.new_price_url === 'string') {
     row.new_price = e.new_price;
