@@ -231,20 +231,20 @@
  },
  {
   "type": "currency_gap",
-  "id": "gap-camera-leica-q3-eBay US seller",
-  "title": "Leica Q3 from eBay US seller (US)",
+  "id": "gap-camera-nikon-z9-eBay US seller",
+  "title": "Nikon Z9 from eBay US seller (US)",
   "dealer": "eBay US seller",
-  "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
-  "price_cad": 79.3,
-  "model_key": "camera-leica-q3",
-  "model_name": "Leica Q3",
+  "url": "https://www.ebay.com/itm/398359011886?_skw=Nikon+Z9&hash=item5cc00c222e:g:12kAAeSwhVlqmt~g",
+  "price_cad": 71.49,
+  "model_key": "camera-nikon-z9",
+  "model_name": "Nikon Z9",
   "reasons": [
-   "estimated landed cost $79 vs $10,365 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+   "estimated landed cost $71 vs $6,999 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
   ],
   "score": 0,
   "deal_score": null,
   "is_new": false,
-  "fetched_at": "2026-10-26T14:49:57+00:00",
+  "fetched_at": "2026-10-26T15:09:41+00:00",
   "date": "2026-10-26"
  }
 ]
