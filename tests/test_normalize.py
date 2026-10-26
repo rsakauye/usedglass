@@ -203,12 +203,5 @@ class VariantAndMountTests(unittest.TestCase):
         self.assertIsNone(explicit_mount("Sigma 35mm f/1.4 DG HSM Art"))
 
 
-def load_tests(loader, tests, pattern):
-    # tests/test_builders.py rides along so the existing Actions step runs it too
-    from tests import test_builders
-    tests.addTests(loader.loadTestsFromModule(test_builders))
-    return tests
-
-
 if __name__ == "__main__":
     unittest.main()

@@ -305,10 +305,7 @@ def main(argv: list[str]) -> int:
                "gaps": gaps[:100], "rate_moved": moved, "new_price_models": len(new_prices)}
     save(DATA / "currency.json", cur_out)
     for g in reversed([g for g in gaps if g["flagged"]][:10]):
-        deals.insert(0, {"type": "currency_gap", "id": f"gap-{g['model_key']}-{g['seller']}", "title": f"{g['model_name']} from {g['seller']} (US)",
-                      "dealer": g["seller"], "url": g["url"], "price_cad": g["landed_cad"], "model_key": g["model_key"],
-                      "model_name": g["model_name"], "reasons": [f"estimated landed cost ${g['landed_cad']:,.0f} vs ${g['ca_price']:,.0f} at {g['ca_where']} (estimate: shipping, brokerage and GST included; HST provinces pay more)"],
-                      "score": 0, "deal_score": None, "is_new": False, "fetched_at": g.get("as_of") or now})
+        deals.insert(0, currency.gap_deal(g, now))
 
     # ---- deal of the day (prefer something new/dropped today, avoid repeats in last 14 days)
     dotd_hist = load(DATA / "deal-of-the-day.json", [])

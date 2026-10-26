@@ -1,4 +1,7 @@
+import json
+import os
 import unittest
+from unittest import mock
 
 from scraper import currency, dealscore
 
@@ -40,6 +43,64 @@ class CurrencyTests(unittest.TestCase):
         self.assertIn("may rise", r["status"])
         small = {"latest": {"USD": {"rate": 1.4, "chg_30d": 0.01}}}
         self.assertEqual(currency.rate_moved(np, small, "2026-10-18")["items"], [])
+
+    def test_currency_gap_records_never_contain_a_username(self):
+        """Browse API offers, gap rows, and the deal built from them keep a fixed label."""
+        fixture = "ZZ-NOT-A-REAL-ACCOUNT"
+        import inspect
+        src = inspect.getsource(currency.ebay_us_offers)
+        for access in ('["username"]', "['username']", '.get("username")', ".get('username')"):
+            self.assertNotIn(access, src)
+        item = {
+            "title": "Sony A7 III Body (EX)",
+            "price": {"value": "999.00", "currency": "USD"},
+            "itemWebUrl": "https://www.ebay.com/itm/100",
+            "seller": {"username": fixture, "feedbackScore": 10},
+            "shippingOptions": [{"shippingCost": {"value": "12.50", "currency": "USD"}}],
+        }
+        payload = json.dumps({"itemSummaries": [item]}).encode()
+
+        def fake_fetch(url, headers=None, check_robots=True):
+            self.assertNotIn(fixture, url)
+            self.assertFalse(check_robots)
+            return payload
+
+        env = {"EBAY_CLIENT_ID": "app-id", "EBAY_CLIENT_SECRET": "app-secret", "EBAY_US_GAP": "1"}
+        with mock.patch.dict(os.environ, env), mock.patch("scraper.ebay._token", return_value="tok"), \
+                mock.patch("scraper.currency.fetch", side_effect=fake_fetch):
+            offers = currency.ebay_us_offers({"camera-sony-a7-iii": "Sony A7 III"}, "2026-10-26T00:00:00Z")
+        self.assertEqual(len(offers), 1)
+        self.assertEqual(offers[0]["seller"], currency.EBAY_US_SELLER)
+        self.assertEqual(offers[0]["ship_usd"], 12.5)
+        self.assertNotIn(fixture, json.dumps(offers))
+        self.assertNotIn("username", json.dumps(offers))
+
+        np = {"camera-sony-a7-iii": {"name": "Sony A7 III", "price": 2000, "dealer": "D", "url": "https://example.invalid/ca"}}
+        gaps = currency.currency_gap(offers, np, {}, {}, FX)
+        self.assertEqual(gaps[0]["seller"], "eBay US seller")
+        self.assertNotIn(fixture, json.dumps(gaps))
+        deal = currency.gap_deal(gaps[0], "2026-10-26T00:00:00Z")
+        self.assertEqual(deal["dealer"], "eBay US seller")
+        self.assertNotIn(fixture, json.dumps(deal))
+        self.assertNotIn("eBay US:", json.dumps(deal))
+
+        legacy = [{"model_key": "camera-x", "price": 1000, "currency": "USD", "condition": "new",
+                   "seller": "eBay US: " + fixture, "url": "https://example.invalid/item"}]
+        rewritten = currency.currency_gap(legacy, {"camera-x": {"name": "X", "price": 2000, "dealer": "D", "url": "u"}}, {}, {}, FX)
+        self.assertEqual(rewritten[0]["seller"], "eBay US seller")
+        blob = json.dumps(rewritten) + json.dumps(currency.gap_deal(rewritten[0], "2026-10-26T00:00:00Z"))
+        self.assertNotIn(fixture, blob)
+        self.assertNotIn("eBay US:", blob)
+        raw = dict(rewritten[0], seller="eBay US: " + fixture)
+        raw_deal = currency.gap_deal(raw, "2026-10-26T00:00:00Z")
+        self.assertEqual(raw_deal["dealer"], "eBay US seller")
+        self.assertNotIn(fixture, json.dumps(raw_deal))
+
+    def test_shop_seller_names_are_kept(self):
+        offers = [{"model_key": "camera-x", "price": 1000, "currency": "USD", "seller": "Example Shop", "url": "v"}]
+        g = currency.currency_gap(offers, {"camera-x": {"name": "X", "price": 2000, "dealer": "D", "url": "u"}}, {}, {}, FX)
+        self.assertEqual(g[0]["seller"], "Example Shop")
+        self.assertEqual(currency.gap_deal(g[0], "2026-10-26T00:00:00Z")["dealer"], "Example Shop")
 
 
 class DealScoreTests(unittest.TestCase):

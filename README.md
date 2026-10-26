@@ -66,7 +66,8 @@ A listing is a deal when it is ≥20% (and ≤70%, to filter mismatches) below t
   (HST provinces pay 13–15%; most cameras/lenses are duty-free). Flagged when ≥5% and ≥$50 under the cheapest
   Canadian price. US offers come from `data/us-offers.json` (hand-checked prices or an affiliate product feed) and,
   automatically, from the eBay Browse API (`EBAY_US` marketplace, new, ships to CA) once `EBAY_CLIENT_ID/SECRET` exist
-  (`EBAY_US_GAP=0` turns it off). B&H is not scraped: robots.txt disallows its search/catalogue paths and it sits
+  (`EBAY_US_GAP=0` turns it off). eBay offers are labeled **eBay US seller**. The seller username is not read or stored.
+  B&H is not scraped: robots.txt disallows its search/catalogue paths and it sits
   behind a bot challenge; use its affiliate data feed once approved.
 
 ### Deal Score
@@ -78,7 +79,8 @@ Models without metadata use history only and say so. Deals are sorted by Deal Sc
 ## Local development
 
 ```bash
-python -m unittest tests.test_normalize tests.test_alert tests.test_currency
+python -m unittest tests.test_normalize tests.test_alert tests.test_currency tests.test_builders
+node --test tests/test_mykit.mjs tests/test_vintage.mjs tests/test_ebay_account_deletion.mjs
 python -m scraper.run                 # all dealers; or: python -m scraper.run mcbain camtec
 cd site && npm ci && npm run dev      # reads ../data
 ```
@@ -101,6 +103,41 @@ on the Pages project (Workers & Pages → usedglass → Custom domains).
 | `EBAY_CAMPAIGN_ID` | eBay Partner Network campaign | optional, adds affiliate tracking |
 | `CLOUDFLARE_API_TOKEN` | Cloudflare → My Profile → API Tokens → custom token, *Account → Cloudflare Pages → Edit* | for usedglass.ca deploys |
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare account id | for usedglass.ca deploys |
+
+## eBay Marketplace Account Deletion
+
+Pages Function `site/functions/ebay/account-deletion.js` serves `https://usedglass.ca/ebay/account-deletion`
+(route included in `site/public/_routes.json`). eBay's docs: [Marketplace Account Deletion](https://developer.ebay.com/marketplace-account-deletion).
+
+GET with `?challenge_code=` returns `200` and `{"challengeResponse":"<sha256 hex>"}`. The hash is SHA-256 of
+`challengeCode + verificationToken + endpoint` in that order. POST is answered with `204` immediately. Signature
+checks run afterwards (`x-ebay-signature`, Notification API `getPublicKey`, application token from client
+credentials). Nothing is deleted: currency gaps are not keyed by an eBay account (the label is `eBay US seller`).
+
+Set these on the **Cloudflare Pages project** `usedglass` (production), as encrypted variables. This repo does not
+create them.
+
+| Name | Value |
+|---|---|
+| `EBAY_VERIFICATION_TOKEN` | 32–80 characters, only `A–Z`, `a–z`, `0–9`, `_`, and `-`. The same string you save in the eBay portal. |
+| `EBAY_ENDPOINT_URL` | `https://usedglass.ca/ebay/account-deletion` exactly (no trailing slash). It is part of the challenge hash. |
+| `EBAY_CLIENT_ID` | Production App ID. **Same name and same value** as the GitHub Actions secret the daily scraper already uses (`scraper/ebay.py`, `.github/workflows/daily.yml`). |
+| `EBAY_CLIENT_SECRET` | Production cert ID. **Same name and same value** as the Actions secret. |
+
+Actions secrets are not visible to Pages Functions, so the client id and secret have to be entered in both places.
+Do not invent a second pair of names. `EBAY_VERIFICATION_TOKEN` and `EBAY_ENDPOINT_URL` are only used by this function.
+
+After the variables are saved and this branch is merged (the daily workflow deploys `site/` on push to `main`):
+
+1. Set the four Pages secrets above.
+2. Merge.
+3. Verify the challenge endpoint returns JSON (a JSON `500` means a secret is missing or the token does not match the pattern; an HTML `404` means the function is not deployed):
+
+   ```bash
+   curl -sS -D - "https://usedglass.ca/ebay/account-deletion?challenge_code=test" -o -
+   ```
+
+4. On [developer.ebay.com](https://developer.ebay.com) go to **Application Keys → Notifications** (production App ID) → **Alerts & Notifications → Marketplace Account Deletion**. Enter the alert email, endpoint URL `https://usedglass.ca/ebay/account-deletion`, and the verification token (the same value as `EBAY_VERIFICATION_TOKEN`). **Save** (eBay sends the GET challenge), then **Send Test Notification**.
 
 ## Event submissions (/events/#submit)
 The form posts to the Pages Function `site/functions/api/event.js`, which verifies Cloudflare Turnstile on the server,

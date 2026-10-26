@@ -1,6 +1,6 @@
 """Firmware builder helpers (scripts/firmware.py), model price stats (scraper/run.py) and the shape of the
-hand-checked data the site renders (firmware notes, model summaries). Loaded via tests/test_normalize.load_tests.
-First drafted by qwen2.5-coder; most expectations were wrong and were rewritten by hand."""
+hand-checked data the site renders (firmware notes, model summaries). Run by the daily workflow as
+tests.test_builders. First drafted by qwen2.5-coder; most expectations were wrong and were rewritten by hand."""
 import importlib.util
 import json
 import pathlib
