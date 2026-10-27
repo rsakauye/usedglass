@@ -255,5 +255,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-26T17:46:13+00:00",
   "date": "2026-10-26"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-d18827e4f3",
+  "title": "Canon AE-1 35mm SLR Film Camera w/ Canon FD 50mm f/1.8 S.C. Lens",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/128158031604?hash=item1dd6d05ef4%3Ag%3A%7EN4AAeSwlyRqxErj&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 215.99,
+  "comp_median": 311.73,
+  "comps": 26,
+  "model_key": "camera-canon-ae1",
+  "model_name": "Canon AE1",
+  "condition": null,
+  "reasons": [
+   "31% below the median of 26 comparable listings"
+  ],
+  "score": 48.7,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "31% below the median of 26 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-10-27T16:56:36+00:00",
+  "date": "2026-10-27"
  }
 ]
