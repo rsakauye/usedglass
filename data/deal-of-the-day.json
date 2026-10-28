@@ -281,5 +281,31 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-10-27T16:56:36+00:00",
   "date": "2026-10-27"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-134404c33a",
+  "title": "Leica Summicron-M 50mm f/2 - Leica M-mount",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/366767073521?hash=item55650568f1%3Ag%3A4Q8AAeSwVZVq4iEx&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 1399.99,
+  "comp_median": 2650.0,
+  "comps": 5,
+  "model_key": "lens-leica-leica-m-50mm-f2",
+  "model_name": "Leica 50mm f/2 (Leica M)",
+  "condition": null,
+  "reasons": [
+   "47% below the median of 5 comparable listings"
+  ],
+  "score": 60.2,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "47% below the median of 5 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-28T17:30:34+00:00",
+  "date": "2026-10-28"
  }
 ]
