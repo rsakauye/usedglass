@@ -307,5 +307,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-28T17:30:34+00:00",
   "date": "2026-10-28"
+ },
+ {
+  "type": "listing",
+  "id": "gosselin-bce139cd48",
+  "title": "Nikon D600",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-d600-u107444",
+  "price_cad": 229.0,
+  "comp_median": 695.0,
+  "comps": 3,
+  "model_key": "camera-nikon-d600",
+  "model_name": "Nikon D600",
+  "condition": "Good",
+  "reasons": [
+   "67% below the median of 3 comparable listings"
+  ],
+  "score": 78.1,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "67% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-29T17:41:27+00:00",
+  "date": "2026-10-29"
  }
 ]
