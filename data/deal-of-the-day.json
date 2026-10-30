@@ -333,5 +333,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-29T17:41:27+00:00",
   "date": "2026-10-29"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-574cf6840c",
+  "title": "Light lens lab 50mm F2 Elcan Black paint Leica M3 M6 M240 M9 M11 M240p",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/227589287578?hash=item34fd60ee9a%3Ag%3AKwQAAeSwBVtq498k&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 1000.0,
+  "comp_median": 2024.99,
+  "comps": 6,
+  "model_key": "lens-leica-leica-m-50mm-f2",
+  "model_name": "Leica 50mm f/2 (Leica M)",
+  "condition": null,
+  "reasons": [
+   "51% below the median of 6 comparable listings"
+  ],
+  "score": 64.6,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "51% below the median of 6 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-10-30T17:21:17+00:00",
+  "date": "2026-10-30"
  }
 ]

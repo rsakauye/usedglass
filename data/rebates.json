@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-29T17:41:27+00:00",
+ "fetched_at": "2026-10-30T17:21:17+00:00",
  "items": [
   {
    "brand": "Canon",
@@ -8,7 +8,7 @@
    "starts": "September 4",
    "ends": "October 29, 2026",
    "max_amount_cad": 500,
-   "fetched_at": "2026-10-29T17:41:27+00:00",
+   "fetched_at": "2026-10-30T17:21:17+00:00",
    "first_seen": "2026-10-17"
   },
   {
@@ -18,7 +18,7 @@
    "starts": "Sept 15",
    "ends": "Oct 31, 2026",
    "max_amount_cad": 500,
-   "fetched_at": "2026-10-29T17:41:27+00:00",
+   "fetched_at": "2026-10-30T17:21:17+00:00",
    "first_seen": "2026-10-17"
   },
   {
@@ -28,7 +28,7 @@
    "starts": "October 05",
    "ends": "November 30, 2026",
    "max_amount_cad": 190,
-   "fetched_at": "2026-10-29T17:41:27+00:00",
+   "fetched_at": "2026-10-30T17:21:17+00:00",
    "first_seen": "2026-10-22"
   },
   {
@@ -38,7 +38,7 @@
    "starts": "October 05, 2026",
    "ends": "January 3, 2027",
    "max_amount_cad": 244,
-   "fetched_at": "2026-10-29T17:41:27+00:00",
+   "fetched_at": "2026-10-30T17:21:17+00:00",
    "first_seen": "2026-10-19"
   },
   {
@@ -48,7 +48,7 @@
    "starts": null,
    "ends": null,
    "max_amount_cad": null,
-   "fetched_at": "2026-10-29T17:41:27+00:00",
+   "fetched_at": "2026-10-30T17:21:17+00:00",
    "first_seen": "2026-10-17"
   }
  ],

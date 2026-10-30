@@ -1,39 +1,39 @@
 {
- "date": "2026-10-29",
+ "date": "2026-10-30",
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
-   "date": "2026-10-28",
-   "rate": 1.4036,
-   "chg_7d": -0.0015,
-   "chg_30d": -0.0093,
-   "text_30d": "The Canadian dollar strengthened 0.9% against the USD over 30 days."
+   "date": "2026-10-29",
+   "rate": 1.3985,
+   "chg_7d": -0.0026,
+   "chg_30d": -0.0143,
+   "text_30d": "The Canadian dollar strengthened 1.4% against the USD over 30 days."
   },
   "EUR": {
-   "date": "2026-10-28",
-   "rate": 1.5636,
-   "chg_7d": -0.0094,
-   "chg_30d": -0.0294,
-   "text_30d": "The Canadian dollar strengthened 2.9% against the EUR over 30 days."
+   "date": "2026-10-29",
+   "rate": 1.5601,
+   "chg_7d": -0.0075,
+   "chg_30d": -0.03,
+   "text_30d": "The Canadian dollar strengthened 3.0% against the EUR over 30 days."
   },
   "GBP": {
-   "date": "2026-10-28",
-   "rate": 1.8673,
-   "chg_7d": -0.0081,
-   "chg_30d": -0.0061,
-   "text_30d": "The Canadian dollar strengthened 0.6% against the GBP over 30 days."
+   "date": "2026-10-29",
+   "rate": 1.8676,
+   "chg_7d": -0.0049,
+   "chg_30d": -0.0044,
+   "text_30d": "The Canadian dollar strengthened 0.4% against the GBP over 30 days."
   },
   "JPY": {
-   "date": "2026-10-28",
-   "rate": 0.00888,
-   "chg_7d": -0.0011,
-   "chg_30d": -0.0144,
-   "text_30d": "The Canadian dollar strengthened 1.4% against the JPY over 30 days."
+   "date": "2026-10-29",
+   "rate": 0.00886,
+   "chg_7d": -0.0078,
+   "chg_30d": -0.0166,
+   "text_30d": "The Canadian dollar strengthened 1.7% against the JPY over 30 days."
   }
  },
- "fx_headline": "The Canadian dollar strengthened 0.9% against the USD over 30 days.",
+ "fx_headline": "The Canadian dollar strengthened 1.4% against the USD over 30 days.",
  "rate_moved": {
-  "status": "CAD moved 0.9% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
+  "status": "CAD moved 1.4% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
   "direction": null,
   "items": []
  },
@@ -46,18 +46,18 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-10-29T17:41:27+00:00",
-   "rate": 1.4036,
-   "goods_cad": 42.82,
-   "ship_cad": 9.05,
+   "as_of": "2026-10-30T17:21:17+00:00",
+   "rate": 1.3985,
+   "goods_cad": 42.67,
+   "ship_cad": 9.02,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.59,
-   "landed_cad": 79.47,
+   "tax_cad": 2.58,
+   "landed_cad": 79.27,
    "tax_rate": 0.05,
    "ca_price": 10365.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/leica-q3",
-   "saving_cad": 10285.53,
+   "saving_cad": 10285.73,
    "saving_pct": 0.992,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -70,18 +70,18 @@
    "url": "https://www.ebay.com/itm/398359011886?_skw=Nikon+Z9&hash=item5cc00c222e:g:12kAAeSwhVlqmt~g",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-10-29T17:41:27+00:00",
-   "rate": 1.4036,
-   "goods_cad": 35.36,
-   "ship_cad": 9.05,
+   "as_of": "2026-10-30T17:21:17+00:00",
+   "rate": 1.3985,
+   "goods_cad": 35.23,
+   "ship_cad": 9.02,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.22,
-   "landed_cad": 71.63,
+   "tax_cad": 2.21,
+   "landed_cad": 71.46,
    "tax_rate": 0.05,
    "ca_price": 6999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z9-body",
-   "saving_cad": 6927.37,
+   "saving_cad": 6927.54,
    "saving_pct": 0.99,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -94,19 +94,19 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-10-29T17:41:27+00:00",
-   "rate": 1.4036,
-   "goods_cad": 37.14,
-   "ship_cad": 9.05,
+   "as_of": "2026-10-30T17:21:17+00:00",
+   "rate": 1.3985,
+   "goods_cad": 37.0,
+   "ship_cad": 9.02,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.31,
-   "landed_cad": 73.5,
+   "tax_cad": 2.3,
+   "landed_cad": 73.33,
    "tax_rate": 0.05,
-   "ca_price": 5399.0,
+   "ca_price": 5899.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r5-mark-ii",
-   "saving_cad": 5325.5,
-   "saving_pct": 0.986,
+   "saving_cad": 5825.67,
+   "saving_pct": 0.988,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
   },
@@ -118,18 +118,18 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-10-29T17:41:27+00:00",
-   "rate": 1.4036,
-   "goods_cad": 15.44,
+   "as_of": "2026-10-30T17:21:17+00:00",
+   "rate": 1.3985,
+   "goods_cad": 15.38,
    "ship_cad": 0.0,
    "brokerage_cad": 25.0,
    "tax_cad": 0.77,
-   "landed_cad": 41.21,
+   "landed_cad": 41.15,
    "tax_rate": 0.05,
    "ca_price": 4799.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7s-iii",
-   "saving_cad": 4757.79,
+   "saving_cad": 4757.85,
    "saving_pct": 0.991,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -142,36 +142,24 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-10-29T17:41:27+00:00",
-   "rate": 1.4036,
-   "goods_cad": 53.34,
-   "ship_cad": 15.34,
+   "as_of": "2026-10-30T17:21:17+00:00",
+   "rate": 1.3985,
+   "goods_cad": 53.14,
+   "ship_cad": 15.29,
    "brokerage_cad": 25.0,
-   "tax_cad": 3.43,
-   "landed_cad": 97.11,
+   "tax_cad": 3.42,
+   "landed_cad": 96.85,
    "tax_rate": 0.05,
    "ca_price": 4699.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7r-v",
-   "saving_cad": 4601.89,
+   "saving_cad": 4602.15,
    "saving_pct": 0.979,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
   }
  ],
  "top_scored_deals": [
-  {
-   "title": "Nikon D600",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-d600-u107444",
-   "price_cad": 229.0,
-   "deal_score": 100,
-   "score_why": [
-    "67% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Nikon D600"
-  },
   {
    "title": "Canon AE-1 35mm SLR camera body only/ All Functions Work",
    "dealer": "eBay (Canadian sellers)",
@@ -185,16 +173,16 @@
    "model_name": "Canon AE1"
   },
   {
-   "title": "Canon EOS 5D mark II + poignée d'alimentation",
+   "title": "Nikon D600",
    "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-7-canon-eos-5d-mark-ii-poignee-dalimentation-u108032",
-   "price_cad": 149.0,
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-d600-u107444",
+   "price_cad": 229.0,
    "deal_score": 100,
    "score_why": [
-    "57% below the median of 7 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
+    "67% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Canon 5D II"
+   "model_name": "Nikon D600"
   },
   {
    "title": "Nikon D90",
@@ -203,22 +191,34 @@
    "price_cad": 129.0,
    "deal_score": 100,
    "score_why": [
-    "57% below the median of 6 comparable listings",
+    "61% below the median of 7 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Nikon D90"
   },
   {
-   "title": "Nikon FE2 Argent + 50mm f/1.8 Series E",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-series-e-u108022",
-   "price_cad": 399.0,
+   "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/237078403796?hash=item3732f95ad4%3Ag%3ArPEAAeSwZBRqrtOB&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 75.0,
    "deal_score": 100,
    "score_why": [
-    "55% below the median of 7 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
+    "56% below the median of 12 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Nikon FE2"
+   "model_name": "Pentax SPOTMATIC"
+  },
+  {
+   "title": "Light lens lab 50mm F2 Elcan Black paint Leica M3 M6 M240 M9 M11 M240p",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/227589287578?hash=item34fd60ee9a%3Ag%3AKwQAAeSwBVtq498k&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 1000.0,
+   "deal_score": 100,
+   "score_why": [
+    "51% below the median of 6 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Leica 50mm f/2 (Leica M)"
   },
   {
    "title": "Pentax Super-Takumar 50mm F1.4 For M42 Mount - w/Caps & Filter. See Description.",
@@ -233,28 +233,16 @@
    "model_name": "Pentax 50mm f/1.4 (M42)"
   },
   {
-   "title": "Nikon 28mm f/2.8 Series E",
+   "title": "Nikon FE2 Argent + 50mm f/1.8 Series E",
    "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-28mm-f-28-series-e-u107478",
-   "price_cad": 99.0,
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-series-e-u108022",
+   "price_cad": 399.0,
    "deal_score": 100,
    "score_why": [
-    "50% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Nikon 28mm f/2.8 (Nikon F)"
-  },
-  {
-   "title": "Nikon D90 + 18-105mm f/3.5-5.6",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-7-nikon-d90-18-105mm-f-35-56-u107634",
-   "price_cad": 159.0,
-   "deal_score": 100,
-   "score_why": [
-    "47% below the median of 6 comparable listings",
+    "55% below the median of 7 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Nikon D90"
+   "model_name": "Nikon FE2"
   },
   {
    "title": "Pentax K1000 SE 35mm SLR Film Camera + 50mm f/1.7 And 80-200mm f/4.5 Lenses READ",
@@ -279,6 +267,18 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Nikon FE2"
+  },
+  {
+   "title": "Nikon D90 + 18-105mm f/3.5-5.6",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-7-nikon-d90-18-105mm-f-35-56-u107634",
+   "price_cad": 159.0,
+   "deal_score": 100,
+   "score_why": [
+    "52% below the median of 7 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Nikon D90"
   }
  ]
 }
