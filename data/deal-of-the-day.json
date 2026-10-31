@@ -359,5 +359,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-10-30T17:21:17+00:00",
   "date": "2026-10-30"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-c570d295eb",
+  "title": "Pentax K1000 SE 35mm SLR Film Camera + 50mm f/1.7 And 80-200mm f/4.5 Lenses READ",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/398391311672?hash=item5cc1f8fd38%3Ag%3ATg8AAeSwK7pqpupq&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 89.99,
+  "comp_median": 199.0,
+  "comps": 21,
+  "model_key": "camera-pentax-k1000",
+  "model_name": "Pentax K1000",
+  "condition": null,
+  "reasons": [
+   "55% below the median of 21 comparable listings",
+   "price dropped 10% (was $100)"
+  ],
+  "score": 70.8,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "55% below the median of 21 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-10-31T16:25:10+00:00",
+  "date": "2026-10-31"
  }
 ]
