@@ -1,5 +1,5 @@
 {
- "date": "2026-11-01",
+ "date": "2026-11-02",
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-01T17:19:36+00:00",
+   "as_of": "2026-11-02T20:57:07+00:00",
    "rate": 1.396,
    "goods_cad": 42.59,
    "ship_cad": 9.0,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/398359011886?_skw=Nikon+Z9&hash=item5cc00c222e:g:12kAAeSwhVlqmt~g",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-01T17:19:36+00:00",
+   "as_of": "2026-11-02T20:57:07+00:00",
    "rate": 1.396,
    "goods_cad": 35.17,
    "ship_cad": 9.0,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-01T17:19:36+00:00",
+   "as_of": "2026-11-02T20:57:07+00:00",
    "rate": 1.396,
    "goods_cad": 36.94,
    "ship_cad": 9.0,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-01T17:19:36+00:00",
+   "as_of": "2026-11-02T20:57:07+00:00",
    "rate": 1.396,
    "goods_cad": 15.36,
    "ship_cad": 0.0,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-01T17:19:36+00:00",
+   "as_of": "2026-11-02T20:57:07+00:00",
    "rate": 1.396,
    "goods_cad": 53.05,
    "ship_cad": 15.26,
@@ -185,37 +185,13 @@
    "model_name": "Nikon D90"
   },
   {
-   "title": "CANON AE-1 PROGRAM 35MM SLR FILM CAMERA FD 50MM 1:1.8 LENS - BATTERY TESTED",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/800860036234?hash=itemba76fa5c8a%3Ag%3A92MAAeSwRMlqrdzQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 149.75,
-   "deal_score": 100,
-   "score_why": [
-    "50% below the median of 11 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon AE1PROGRAM"
-  },
-  {
-   "title": "Pentax Spotmatic SP F (Asahi) M42 Mount 35mm Camera Body Tested Chrome",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/800860726910?hash=itemba7704e67e%3Ag%3ADgAAAeSwc8Nq5m9w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 79.99,
-   "deal_score": 100,
-   "score_why": [
-    "49% below the median of 14 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Pentax SPOTMATIC"
-  },
-  {
    "title": "Pentax K1000 SE 35mm SLR Film Camera + 50mm f/1.7 And 80-200mm f/4.5 Lenses READ",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/398391311672?hash=item5cc1f8fd38%3Ag%3ATg8AAeSwK7pqpupq&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 89.99,
    "deal_score": 100,
    "score_why": [
-    "55% below the median of 21 comparable listings",
+    "55% below the median of 22 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Pentax K1000"
@@ -239,10 +215,34 @@
    "price_cad": 75.0,
    "deal_score": 100,
    "score_why": [
-    "52% below the median of 14 comparable listings",
+    "52% below the median of 15 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Pentax SPOTMATIC"
+  },
+  {
+   "title": "Minolta X-370 35mm SLR Film Camera - Black with 50mm 1:2 lens - Works",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/307227654787?hash=item478831fa83%3Ag%3AQjIAAeSw3c5qzQ%7EE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 80.0,
+   "deal_score": 100,
+   "score_why": [
+    "57% below the median of 5 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Minolta X370"
+  },
+  {
+   "title": "CANON AE-1 PROGRAM 35MM SLR FILM CAMERA FD 50MM 1:1.8 LENS - BATTERY TESTED",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/800860036234?hash=itemba76fa5c8a%3Ag%3A92MAAeSwRMlqrdzQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 149.75,
+   "deal_score": 100,
+   "score_why": [
+    "50% below the median of 11 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Canon AE1PROGRAM"
   },
   {
    "title": "Canon AE-1 Program 35mm Film Camera (all black) from Japan",
@@ -257,16 +257,16 @@
    "model_name": "Canon AE1PROGRAM"
   },
   {
-   "title": "Nikon FE2 (argent) + 50mm f/1.8 Ai-S + Sac + Accessoires",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-fe2-argent-50mm-f-18-ai-s-sac-accessoires-u107087",
-   "price_cad": 429.0,
+   "title": "Pentax Spotmatic SP F (Asahi) M42 Mount 35mm Camera Body Tested Chrome",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/800860726910?hash=itemba7704e67e%3Ag%3ADgAAAeSwc8Nq5m9w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 79.99,
    "deal_score": 100,
    "score_why": [
-    "52% below the median of 7 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
+    "49% below the median of 15 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Nikon FE2"
+   "model_name": "Pentax SPOTMATIC"
   },
   {
    "title": "Canon AE-1 35MM Film Camera",
