@@ -1,50 +1,51 @@
 {
- "run_at": "2026-11-02T20:57:07+00:00",
- "date": "2026-11-02",
+ "run_at": "2026-11-03T18:44:19+00:00",
+ "date": "2026-11-03",
  "dealers": {
   "mcbain": {
-   "count": 1005,
+   "count": 963,
    "status": "ok",
-   "seconds": 1.9
+   "seconds": 2.2
   },
   "downtowncamera": {
-   "count": 844,
-   "status": "error - kept previous listings"
+   "count": 859,
+   "status": "ok",
+   "seconds": 0.7
   },
   "gosselin": {
-   "count": 753,
+   "count": 796,
    "status": "ok",
-   "seconds": 8.0
+   "seconds": 7.8
   },
   "beauphoto": {
    "count": 383,
    "status": "ok",
-   "seconds": 17.7
+   "seconds": 18.1
   },
   "thecamerastore": {
    "count": 82,
    "status": "ok",
-   "seconds": 0.7
+   "seconds": 0.8
   },
   "camtec": {
-   "count": 111,
+   "count": 110,
    "status": "ok",
-   "seconds": 2.7
+   "seconds": 2.5
   },
   "plotcamera": {
    "count": 58,
    "status": "ok",
-   "seconds": 0.5
+   "seconds": 0.8
   },
   "cameratraders": {
-   "count": 669,
+   "count": 663,
    "status": "ok",
-   "seconds": 5.7
+   "seconds": 9.7
   },
   "maplecamera": {
-   "count": 94,
+   "count": 92,
    "status": "ok",
-   "seconds": 0.6
+   "seconds": 0.8
   },
   "cameratrading": {
    "count": 60,
@@ -54,22 +55,20 @@
   "cameracanada": {
    "count": 190,
    "status": "ok",
-   "seconds": 43.4
+   "seconds": 40.3
   },
   "ebay": {
    "count": 3000,
    "status": "ok",
-   "seconds": 37.9
+   "seconds": 40.5
   }
  },
- "errors": {
-  "downtowncamera": "RuntimeError: 0 listings parsed (layout change?)"
- },
- "total": 7216,
- "models": 2041,
- "new_today": 152,
- "price_dropped": 47,
- "deals": 229,
+ "errors": {},
+ "total": 7222,
+ "models": 2044,
+ "new_today": 211,
+ "price_dropped": 64,
+ "deals": 244,
  "dealer_info": {
   "thecamerastore": {
    "name": "The Camera Store",
@@ -136,11 +135,11 @@
   "newprices": {
    "count": 881,
    "status": "ok",
-   "seconds": 15.2
+   "seconds": 17.2
   },
   "fx": {
    "status": "ok",
-   "latest": "2026-10-30"
+   "latest": "2026-11-02"
   },
   "ebay_us": {
    "count": 30,

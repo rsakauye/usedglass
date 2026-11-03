@@ -438,5 +438,20 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-02T20:57:07+00:00",
   "date": "2026-11-02"
+ },
+ {
+  "type": "rebate",
+  "id": "rebate-https://www.canoncreatorlab.ca/offers/eos-r50-v-bundle-promotion/",
+  "title": "New Canon rebate: EOS R50 V Bundle Promotion - Canon Creator Lab",
+  "url": "https://www.canoncreatorlab.ca/offers/eos-r50-v-bundle-promotion/",
+  "dealer": "Canon",
+  "price_cad": null,
+  "reasons": [
+   "new manufacturer offer"
+  ],
+  "score": 999,
+  "is_new": true,
+  "fetched_at": "2026-11-03T18:44:19+00:00",
+  "date": "2026-11-03"
  }
 ]
