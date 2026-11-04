@@ -453,5 +453,32 @@
   "is_new": true,
   "fetched_at": "2026-11-03T18:44:19+00:00",
   "date": "2026-11-03"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-061554a976",
+  "title": "Canon AE-1 35MM Film Camera",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/206515457076?hash=item301547cc34%3Ag%3AN0QAAeSwGGJqjhBc&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 129.99,
+  "comp_median": 322.16,
+  "comps": 29,
+  "model_key": "camera-canon-ae1",
+  "model_name": "Canon AE1",
+  "condition": null,
+  "reasons": [
+   "60% below the median of 29 comparable listings",
+   "price dropped 19% (was $160)"
+  ],
+  "score": 80.9,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "60% below the median of 29 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-04T18:57:23+00:00",
+  "date": "2026-11-04"
  }
 ]
