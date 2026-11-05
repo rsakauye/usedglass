@@ -480,5 +480,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-04T18:57:23+00:00",
   "date": "2026-11-04"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-5b6d6dc720",
+  "title": "Canon EOS Rebel XS Black EF-S 18-55mm IS Lens Kit - Black",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/860113798033?hash=itemc842c70391%3Ag%3AWgoAAeSwLCpq66Vu&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 70.0,
+  "comp_median": 214.83,
+  "comps": 8,
+  "model_key": "camera-canon-rebelxs",
+  "model_name": "Canon REBELXS",
+  "condition": null,
+  "reasons": [
+   "67% below the median of 8 comparable listings"
+  ],
+  "score": 83.4,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "67% below the median of 8 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-11-05T19:09:47+00:00",
+  "date": "2026-11-05"
  }
 ]
