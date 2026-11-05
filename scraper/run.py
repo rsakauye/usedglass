@@ -7,6 +7,8 @@ expires) returns 404. Cloudflare Pages _redirects cannot answer 404 (status 404 
 unsupported rewrite), so no redirect is written.
 
 Usage: python -m scraper.run [dealer ...]   (default: all dealers + eBay if keys present)
+Paused dealers (PAUSED_DEALERS) stay in that default set so the run records them, but their
+adapters are not called and the skip is not a scrape error.
 All outputs land in data/. Dates are America/Edmonton calendar days.
 """
 from __future__ import annotations
@@ -22,7 +24,7 @@ from pathlib import Path
 from zoneinfo import ZoneInfo
 
 from . import currency, dealscore, newprices
-from .dealers import ADAPTERS, DEALERS
+from .dealers import ADAPTERS, dealer_info, paused_meta
 from .ebay import ebay
 from .normalize import listing_overrides, make_listing
 from .rebates import rebates
@@ -400,11 +402,20 @@ def update_model_seen(prev: dict, models: dict, state: dict, today: str, retain_
     return {k: reg[k] for k in sorted(reg) if reg[k].get("last_seen") and reg[k]["last_seen"] >= cutoff and reg[k].get("name")}
 
 
+def scrape_picks(argv: list[str]) -> list[str]:
+    """Dealers for this run.
+
+    No dealer args means every adapter, including paused ones, plus eBay.
+    Paused ids stay in the list so the run can record them; the fetch itself is skipped.
+    """
+    return [k for k in argv if k != "newprices"] or list(ADAPTERS) + ["ebay"]
+
+
 def main(argv: list[str]) -> int:
     now_dt = dt.datetime.now(dt.timezone.utc)
     now = now_dt.isoformat(timespec="seconds")
     today = now_dt.astimezone(TZ).date().isoformat()
-    picks = [k for k in argv if k != "newprices"] or list(ADAPTERS) + ["ebay"]
+    picks = scrape_picks(argv)
     prev_listings = {x["id"]: x for x in load(DATA / "listings.json", [])}
     prev_meta = load(DATA / "meta.json", {})
     state = load(DATA / "state.json", {})
@@ -412,6 +423,12 @@ def main(argv: list[str]) -> int:
 
     listings: list[dict] = []
     for k in picks:
+        paused = paused_meta(k)
+        if paused is not None:
+            # Deliberate skip: do not fetch, do not keep yesterday's rows, do not fill errors.
+            meta["dealers"][k] = paused
+            print(k, paused, flush=True)
+            continue
         t0 = time.time()
         try:
             rows = ebay(now) if k == "ebay" else ADAPTERS[k](now)
@@ -686,7 +703,7 @@ def main(argv: list[str]) -> int:
     save(DATA / "listings.json", listings, compact=True)
     save(DATA / "state.json", state, compact=True)
     meta.update({"total": len(listings), "models": len(models), "new_today": len(new_ids),
-                 "price_dropped": len(dropped), "deals": len(deals), "dealer_info": DEALERS, "feeds": feeds})
+                 "price_dropped": len(dropped), "deals": len(deals), "dealer_info": dealer_info(), "feeds": feeds})
     save(DATA / "meta.json", meta)
     print(json.dumps({k: meta[k] for k in ["total", "models", "new_today", "price_dropped", "deals"]}))
     ok = [k for k, v in meta["dealers"].items() if v["status"] == "ok"]

@@ -35,14 +35,14 @@ GitHub Actions (daily 12:00 UTC ≈ 6 a.m. Mountain)
 | Beau Photo (Vancouver) | WooCommerce Store API | ~390 items |
 | Camtec (Montréal) | HTML, honours `Crawl-delay: 10` | ~130 items |
 | The Camera Store (Calgary) | Shopify `products.json` | ~90 items |
-| Camera Traders (Victoria) | Shopify `products.json` (`used-equipment`), brand/mount tags used as hints | ~640 items |
+| Camera Traders (Victoria) | Shopify `products.json` (`used-equipment`), brand/mount tags used as hints | **Paused** (ToS scrape ban). Adapter kept. |
 | Camera Canada (online, ON) | Server-rendered ASP.NET catalogue: used + open box | ~180 items |
-| Maple Camera Co. (Scarborough) | Shopify `products.json`, used only | ~95 items |
+| Maple Camera Co. (Scarborough) | Shopify `products.json`, used only | **Paused** (ToS scrape ban). Adapter kept. |
 | Camera Trading Company (Perth, ON) | Shopify `products.json`, used/consignment only (new film, chemistry and books skipped) | ~55 items |
-| Plot Camera (Vancouver) | Shopify `products.json`, used only, grade tags | ~45 items |
+| Plot Camera (Vancouver) | Shopify `products.json`, used only, grade tags | **Paused** (ToS scrape ban). Adapter kept. |
 | eBay (Canadian sellers) | Official Browse API | needs keys |
 
-Polite by design: robots.txt checked, ≥2 s between requests per host (or the site's crawl-delay), identifiable UA `UsedGlassBot`, one run per day, transient errors retried twice with backoff. If a dealer fails, yesterday's listings are kept and flagged stale.
+Polite by design: robots.txt checked, ≥2 s between requests per host (or the site's crawl-delay), identifiable UA `UsedGlassBot`, one run per day, transient errors retried twice with backoff. If a dealer fails, yesterday's listings are kept and flagged stale. Plot Camera, Camera Traders, and Maple Camera Co. are paused in `PAUSED_DEALERS` (`scraper/dealers.py`): the daily run records `paused (ToS: scrape ban)` and does not fetch them or treat that as an error. Their names stay in the dealer registry for older listings. Remove an id from that set to fetch it again. Source notes for every non-eBay dealer are in `docs/dealer-sources.md`. Downtown Camera's Google Sheet is fetched with the robots check on.
 
 Not scraped (checked Oct 2026): **Henry's** and **Kerrisdale Cameras** render used inventory client-side
 (Henry's Dynamics 365 Commerce, Kerrisdale's Dakis embed), so they would need a headless browser; **Vistek** and
@@ -79,7 +79,7 @@ Models without metadata use history only and say so. Deals are sorted by Deal Sc
 ## Local development
 
 ```bash
-python -m unittest tests.test_normalize tests.test_alert tests.test_currency tests.test_builders
+python -m unittest tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers
 node --test tests/test_mykit.mjs tests/test_vintage.mjs tests/test_ebay_account_deletion.mjs
 python -m scraper.run                 # all dealers; or: python -m scraper.run mcbain camtec
 cd site && npm ci && npm run dev      # reads ../data

@@ -24,6 +24,36 @@ DEALERS = {
     "cameracanada": {"name": "Camera Canada", "city": "Ontario (online)", "site": "https://www.cameracanada.com"},
     "ebay": {"name": "eBay (Canadian sellers)", "city": "Canada", "site": "https://www.ebay.ca"},
 }
+# Terms forbid scraping. Adapters and DEALERS entries stay: drop a line here to
+# resume the daily fetch, and historical listings still resolve a display name.
+# The status string is written to meta.json. It must start with "paused" so
+# scraper.alert does not treat the skip as a scrape failure.
+PAUSED_DEALERS = {
+    "plotcamera": "paused (ToS: scrape ban)",
+    "cameratraders": "paused (ToS: scrape ban)",
+    "maplecamera": "paused (ToS: scrape ban)",
+}
+
+
+def paused_meta(dealer_id: str) -> dict | None:
+    """Run meta for a dealer we deliberately do not fetch. None when it is active."""
+    status = PAUSED_DEALERS.get(dealer_id)
+    if status is None:
+        return None
+    return {"count": 0, "status": status}
+
+
+def dealer_info() -> dict:
+    """DEALERS plus a paused flag, for meta.json. Names stay for old listings."""
+    info = {}
+    for dealer_id, row in DEALERS.items():
+        out = dict(row)
+        if dealer_id in PAUSED_DEALERS:
+            out["paused"] = PAUSED_DEALERS[dealer_id]
+        info[dealer_id] = out
+    return info
+
+
 # Shopify "vendor" values that are the store itself, not the gear brand
 STORE_VENDORS = {"the camera store", "gosselin", "gosselin photo", "plotcamera", "plot camera", "camera trading company",
                  "camera traders", "maple camera co.", "maple camera company"}
@@ -164,9 +194,10 @@ def mcbain(now: str) -> list[dict]:
 
 
 def downtowncamera(now: str) -> list[dict]:
-    # Public Google Sheet linked from https://downtowncamera.com/used-equipment
-    sheet = ("https://docs.google.com/spreadsheets/d/1XQx3uaeR_puoGsZn1MZtmdp4uBaZwDjUMf1vzLMlGmo/export?format=csv")
-    rows = csv.DictReader(io.StringIO(fetch(sheet, check_robots=False).decode("utf-8", "ignore")))
+    # Public CSV export of the sheet linked from https://downtowncamera.com/used-equipment.
+    # fetch() checks robots.txt (docs.google.com allows /spreadsheet, which covers this path).
+    sheet = "https://docs.google.com/spreadsheets/d/1XQx3uaeR_puoGsZn1MZtmdp4uBaZwDjUMf1vzLMlGmo/export?format=csv"
+    rows = csv.DictReader(io.StringIO(fetch(sheet).decode("utf-8", "ignore")))
     out, seen = [], set()
     for r in rows:
         r = {(k or "").strip(): (v or "") for k, v in r.items()}

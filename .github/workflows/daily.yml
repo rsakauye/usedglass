@@ -35,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Unit tests
-        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders
+        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers
 
       - name: Scrape dealers (+ eBay if keys are set) and compute deals
         id: scrape
