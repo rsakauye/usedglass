@@ -1,74 +1,74 @@
 {
- "run_at": "2026-11-05T19:09:47+00:00",
- "date": "2026-11-05",
+ "run_at": "2026-11-06T15:05:31+00:00",
+ "date": "2026-11-06",
  "dealers": {
   "mcbain": {
-   "count": 973,
+   "count": 985,
    "status": "ok",
-   "seconds": 1.7
+   "seconds": 1.9
   },
   "downtowncamera": {
-   "count": 879,
+   "count": 882,
    "status": "ok",
-   "seconds": 0.7
+   "seconds": 0.8
   },
   "gosselin": {
-   "count": 803,
+   "count": 804,
    "status": "ok",
-   "seconds": 7.9
+   "seconds": 8.0
   },
   "beauphoto": {
    "count": 380,
    "status": "ok",
-   "seconds": 18.2
+   "seconds": 17.1
   },
   "thecamerastore": {
-   "count": 82,
+   "count": 83,
    "status": "ok",
-   "seconds": 0.7
+   "seconds": 0.9
   },
   "camtec": {
-   "count": 120,
+   "count": 123,
    "status": "ok",
-   "seconds": 2.9
+   "seconds": 3.0
   },
   "plotcamera": {
-   "count": 57,
+   "count": 65,
    "status": "ok",
-   "seconds": 0.7
+   "seconds": 0.9
   },
   "cameratraders": {
-   "count": 661,
+   "count": 663,
    "status": "ok",
-   "seconds": 7.5
+   "seconds": 7.3
   },
   "maplecamera": {
    "count": 91,
    "status": "ok",
-   "seconds": 0.5
+   "seconds": 0.7
   },
   "cameratrading": {
    "count": 60,
    "status": "ok",
-   "seconds": 0.8
+   "seconds": 1.0
   },
   "cameracanada": {
    "count": 190,
    "status": "ok",
-   "seconds": 40.9
+   "seconds": 41.4
   },
   "ebay": {
    "count": 3000,
    "status": "ok",
-   "seconds": 41.0
+   "seconds": 39.7
   }
  },
  "errors": {},
- "total": 7261,
- "models": 2073,
- "new_today": 276,
- "price_dropped": 347,
- "deals": 229,
+ "total": 7293,
+ "models": 2075,
+ "new_today": 166,
+ "price_dropped": 172,
+ "deals": 302,
  "dealer_info": {
   "thecamerastore": {
    "name": "The Camera Store",
@@ -135,14 +135,14 @@
   "newprices": {
    "count": 883,
    "status": "ok",
-   "seconds": 16.2
+   "seconds": 16.4
   },
   "fx": {
    "status": "ok",
-   "latest": "2026-11-04"
+   "latest": "2026-11-05"
   },
   "ebay_us": {
-   "count": 30,
+   "count": 29,
    "status": "ok"
   }
  }

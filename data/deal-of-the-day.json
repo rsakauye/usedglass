@@ -506,5 +506,31 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-05T19:09:47+00:00",
   "date": "2026-11-05"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-b0b66f7671",
+  "title": "Canon EOS Rebel XSi 450D DSLR Camera -EF-S 18-55mm PLUS 35 to 80mm Lens &Filters",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/327442355262?hash=item4c3d15d43e%3Ag%3A8LoAAeSwt15q7UWg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 88.65,
+  "comp_median": 164.0,
+  "comps": 6,
+  "model_key": "camera-canon-rebelxsi",
+  "model_name": "Canon REBELXSI",
+  "condition": null,
+  "reasons": [
+   "46% below the median of 6 comparable listings"
+  ],
+  "score": 59.9,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "46% below the median of 6 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-06T15:05:31+00:00",
+  "date": "2026-11-06"
  }
 ]
