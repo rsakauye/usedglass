@@ -20,11 +20,14 @@ TITLE = "Scraper alert: dealer feed failing"
 
 
 def problems(meta: dict) -> list[dict]:
-    """Dealers that errored, returned 0 listings, or collapsed vs. the previous run. Skipped feeds are ignored."""
+    """Dealers that errored, returned 0 listings, or collapsed vs. the previous run.
+
+    Skipped feeds (no API keys) and paused feeds (ToS) are not failures.
+    """
     out = []
     for k, d in (meta.get("dealers") or {}).items():
-        status = d.get("status", "")
-        if status.startswith("skipped"):
+        status = str(d.get("status") or "")
+        if status.startswith("skipped") or status.startswith("paused"):
             continue
         if status != "ok":
             out.append({"dealer": k, "problem": (meta.get("errors") or {}).get(k) or status,
@@ -41,6 +44,8 @@ def report(meta: dict, probs: list[dict]) -> str:
     run = os.environ.get("GITHUB_SERVER_URL", "https://github.com") + "/" + os.environ.get("GITHUB_REPOSITORY", "") \
         + "/actions/runs/" + os.environ.get("GITHUB_RUN_ID", "") if os.environ.get("GITHUB_RUN_ID") else ""
     lines = [f"**Run {meta.get('date')}** ({meta.get('run_at')} UTC){f' · [workflow log]({run})' if run else ''}", ""]
+    paused = [k for k, d in (meta.get("dealers") or {}).items()
+              if str(d.get("status") or "").startswith("paused")]
     if probs:
         lines += ["| Dealer | Problem |", "|---|---|"]
         for p in probs:
@@ -48,8 +53,12 @@ def report(meta: dict, probs: list[dict]) -> str:
             lines.append(f"| {name} (`{p['dealer']}`) | {p['problem'].replace('|', '/')[:300]} |")
         lines += ["", "Errored dealers keep yesterday's listings (marked stale) so the site stays up. "
                       "Check whether the store changed its layout, URL or robots.txt."]
+    elif paused:
+        lines.append("No scrape errors. Paused dealers are skipped on purpose and are not failures.")
     else:
         lines.append("All dealer feeds are healthy again.")
+    if paused:
+        lines += ["", "Paused (not scrape errors): " + ", ".join(paused) + "."]
     ok = sum(1 for d in (meta.get("dealers") or {}).values() if d.get("status") == "ok")
     lines += ["", f"{ok} feeds ok · {meta.get('total', '?')} listings total"]
     return "\n".join(lines)
