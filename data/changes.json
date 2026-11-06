@@ -1,1049 +1,648 @@
 {
  "date": "2026-11-06",
  "new_today": [
-  "mcbain-e07b113ccd",
-  "mcbain-7a1c0c9bd6",
-  "mcbain-3cb00ef81c",
-  "mcbain-a5c130e587",
-  "mcbain-7263b9821a",
-  "mcbain-c496fec480",
-  "mcbain-5d4393eef2",
-  "mcbain-d23734ce99",
-  "mcbain-88552c4105",
-  "mcbain-559700f555",
-  "mcbain-65a7d64bb5",
-  "mcbain-1f6386f47a",
-  "downtowncamera-4d1c489dac",
-  "downtowncamera-8ea9f45fb2",
-  "downtowncamera-a95bdfac06",
-  "downtowncamera-f1e97f8fb2",
-  "downtowncamera-fa54390745",
-  "downtowncamera-ae8c25a51a",
-  "downtowncamera-89e2d8fc8f",
-  "downtowncamera-bd96af06b3",
-  "downtowncamera-ad2393a505",
-  "downtowncamera-8c7e5a6f0a",
-  "downtowncamera-10d803e0f8",
-  "downtowncamera-ceb683f3e2",
-  "downtowncamera-ee9b22d426",
-  "gosselin-f8cd223911",
-  "gosselin-6837607fcc",
-  "gosselin-c7cd5215fb",
-  "gosselin-e37fce61fd",
-  "gosselin-69e66b2862",
-  "gosselin-68d118c089",
-  "gosselin-a7cafd964c",
-  "gosselin-0d5f4def7a",
-  "gosselin-92a2f7260a",
-  "gosselin-7313b0ad75",
-  "gosselin-c1708a8195",
-  "gosselin-5939f4603b",
-  "gosselin-cd6d27bdf5",
-  "gosselin-2ab949b238",
-  "gosselin-2df2b61d8d",
-  "gosselin-05e4b8b99d",
-  "gosselin-75f627c94b",
-  "gosselin-6c475c43b6",
-  "thecamerastore-c944ac5613",
-  "camtec-fbbfd50573",
-  "camtec-3baa14e34f",
-  "camtec-0ff10aa005",
-  "ebay-83825b43d7",
-  "ebay-d5d1a45f27",
-  "ebay-864b864504",
-  "ebay-19f27598c5",
-  "ebay-e5e6c4bd79",
-  "ebay-97f70b1dbc",
-  "ebay-fe9addcf03",
-  "ebay-d6be59c6b9",
-  "ebay-8cc4544f24",
-  "ebay-c7dd7ad707",
-  "ebay-b39932b52b",
-  "ebay-c9f6950217",
-  "ebay-0b9178c9ce",
-  "ebay-8902c625e7",
-  "ebay-966ba3a4e4",
-  "ebay-dd5be3191e",
-  "ebay-171dbb81b8",
-  "ebay-7da03789dd",
-  "ebay-21f0f1de71",
-  "ebay-b12c8e2d01",
-  "ebay-c4a80199a5",
-  "ebay-41389bc8d0",
-  "ebay-0962e42704",
-  "ebay-cfd8851166",
-  "ebay-a6604b465f",
-  "ebay-d89c7386b0",
-  "ebay-b25c8f88c4",
-  "ebay-d991699e43",
-  "ebay-505987633b",
-  "ebay-9e2b1fa80b",
-  "ebay-173d262455",
-  "ebay-21f58d6912",
-  "ebay-dc6024ea43",
-  "ebay-614d0a4964",
-  "ebay-e2b102733c",
-  "ebay-e7a2091ceb",
-  "ebay-486630a229",
-  "ebay-505cdbea87",
-  "ebay-28d89ceb12",
-  "ebay-77a3f33b6b",
-  "ebay-30c34cfefc",
-  "ebay-a0785a5106",
-  "ebay-a3f0fbad7a",
-  "ebay-b0b66f7671",
-  "ebay-30633753ee",
-  "ebay-31870cb2c6",
-  "ebay-ab177da705",
-  "ebay-72bedf8565",
-  "ebay-4f62e9e423",
-  "ebay-2ceb1a9c76",
-  "ebay-fb3869aa5b",
-  "ebay-ec4d303b5b",
-  "ebay-d54ab982e4",
-  "ebay-c9bd62f246",
-  "ebay-cac1e18c2a",
-  "ebay-2f41b4ab22",
-  "ebay-e3597c8682",
-  "ebay-4b8f8b9c05",
-  "ebay-f94a13f5b3",
-  "ebay-359da3b118",
-  "ebay-1ff0144431",
-  "ebay-a59c8972b6",
-  "ebay-05e64b9111",
-  "ebay-514b7133a5",
-  "ebay-81490cc282",
-  "ebay-96537b15aa",
-  "ebay-c75d11b774",
-  "ebay-0bdf128c5b",
-  "ebay-a210414f4d",
-  "ebay-57180a039d",
-  "ebay-e14cb6e444",
-  "ebay-23fb9bb872",
-  "ebay-64a4188591",
-  "ebay-aa836b22db",
-  "ebay-397398b993",
-  "ebay-3ef9f9ae5b",
-  "ebay-480ddfa9c8",
-  "ebay-3af6006e94",
-  "ebay-0471f3cb4f",
-  "ebay-023728c2c9",
-  "ebay-12e6b683e2",
-  "ebay-7fc8c213b0",
-  "ebay-172fe9b74d",
-  "ebay-d1c86d99d0",
-  "ebay-c515332144",
-  "ebay-2f0ed7de17",
-  "ebay-6d333bb4bf",
-  "ebay-cd06f767dc",
-  "ebay-18babaa6ce",
-  "ebay-869a53ab6c",
-  "ebay-39ae6f3f1c",
-  "ebay-0d592f5eb6",
-  "ebay-d2f04f007a",
-  "ebay-6365518c5c",
-  "ebay-cb1900e572",
-  "ebay-a86aa7f17a",
-  "ebay-29510e5922",
-  "ebay-9ef6a932a4",
-  "ebay-d0ef239f09",
-  "ebay-1b5ea9fc24",
-  "ebay-8956e222ff",
-  "ebay-d729db8360",
-  "ebay-0e27a58359",
-  "ebay-dd474f716a",
-  "ebay-5142d6e905",
-  "ebay-88e9bb0aaf"
+  "mcbain-c03e3af152",
+  "mcbain-24f920caff",
+  "mcbain-425ab75f0a",
+  "mcbain-1ea575a665",
+  "mcbain-e5d6b76a9f",
+  "mcbain-abc329b51f",
+  "mcbain-1ced0ad76c",
+  "mcbain-efa0af7520",
+  "ebay-2fb9ffa5a0",
+  "ebay-751a656822",
+  "ebay-8521ac7c69",
+  "ebay-a5656ce084",
+  "ebay-de71b67431",
+  "ebay-d9d7058ac8",
+  "ebay-0a140fe4a3",
+  "ebay-3b08065c19",
+  "ebay-ea688e6337",
+  "ebay-b22d18f8c0",
+  "ebay-8ca544284b",
+  "ebay-a6434837fa",
+  "ebay-3ea6411998",
+  "ebay-4b239e2486",
+  "ebay-989e081ea2",
+  "ebay-462917c6b2",
+  "ebay-37eccb850f",
+  "ebay-4762580238",
+  "ebay-88af8754c9",
+  "ebay-49397fff77",
+  "ebay-ecf9f64b2d",
+  "ebay-72f6bc6cc5",
+  "ebay-7db8c38b96",
+  "ebay-094349428c",
+  "ebay-04219fc54e",
+  "ebay-b2b8a3aab2",
+  "ebay-06c662fb30",
+  "ebay-849260a90c",
+  "ebay-695028004d",
+  "ebay-6dcf0eab06",
+  "ebay-284acb458f",
+  "ebay-4ccedbd052"
  ],
  "price_dropped": [
   {
-   "id": "camtec-0d7a65d071",
-   "old": 1185.0,
-   "new": 985.0,
-   "pct": 0.169
-  },
-  {
-   "id": "cameracanada-deacb85621",
-   "old": 7599.0,
-   "new": 6799.0,
-   "pct": 0.105
-  },
-  {
-   "id": "cameracanada-0a90a0f8bd",
-   "old": 2989.0,
-   "new": 2899.0,
-   "pct": 0.03
-  },
-  {
-   "id": "cameracanada-84f33cc5f1",
-   "old": 2689.0,
-   "new": 2498.0,
-   "pct": 0.071
-  },
-  {
-   "id": "cameracanada-816be198c3",
-   "old": 1769.0,
-   "new": 1599.0,
-   "pct": 0.096
-  },
-  {
-   "id": "cameracanada-98348f4aef",
-   "old": 1219.0,
-   "new": 1019.0,
-   "pct": 0.164
-  },
-  {
-   "id": "cameracanada-eff16ef144",
-   "old": 839.0,
-   "new": 799.0,
-   "pct": 0.048
-  },
-  {
-   "id": "cameracanada-ba53b837ae",
-   "old": 469.0,
-   "new": 438.0,
-   "pct": 0.066
-  },
-  {
-   "id": "cameracanada-c4588f053f",
-   "old": 319.0,
-   "new": 269.0,
-   "pct": 0.157
-  },
-  {
-   "id": "cameracanada-5e119fa9c8",
-   "old": 298.0,
-   "new": 269.0,
-   "pct": 0.097
-  },
-  {
-   "id": "cameracanada-2699eb512d",
-   "old": 265.0,
-   "new": 239.0,
-   "pct": 0.098
-  },
-  {
-   "id": "cameracanada-265d24160f",
-   "old": 220.0,
-   "new": 199.0,
-   "pct": 0.095
-  },
-  {
-   "id": "ebay-5dc6d3fada",
-   "old": 113.42,
-   "new": 110.0,
-   "pct": 0.03
-  },
-  {
-   "id": "ebay-d1454fd4e3",
-   "old": 475.0,
-   "new": 450.0,
-   "pct": 0.053
-  },
-  {
-   "id": "ebay-aae9abbcd7",
-   "old": 189.99,
-   "new": 179.99,
-   "pct": 0.053
-  },
-  {
-   "id": "ebay-bfb2d10741",
-   "old": 99.87,
-   "new": 70.68,
-   "pct": 0.292
-  },
-  {
-   "id": "ebay-65b78d948f",
-   "old": 88.99,
-   "new": 87.99,
-   "pct": 0.011
-  },
-  {
-   "id": "ebay-9fd1a89acc",
-   "old": 1044.94,
-   "new": 1034.94,
-   "pct": 0.01
-  },
-  {
-   "id": "ebay-a98846d29e",
-   "old": 330.0,
-   "new": 320.0,
-   "pct": 0.03
-  },
-  {
-   "id": "ebay-6f5a541b2f",
-   "old": 890.0,
-   "new": 790.0,
-   "pct": 0.112
-  },
-  {
-   "id": "ebay-4a7827a1b5",
-   "old": 900.0,
-   "new": 850.0,
-   "pct": 0.056
-  },
-  {
-   "id": "ebay-37ad9031bb",
-   "old": 850.0,
-   "new": 800.0,
-   "pct": 0.059
-  },
-  {
-   "id": "ebay-f94cb81587",
-   "old": 750.0,
-   "new": 700.0,
-   "pct": 0.067
-  },
-  {
-   "id": "ebay-416945f38b",
-   "old": 90.0,
-   "new": 60.0,
-   "pct": 0.333
-  },
-  {
-   "id": "ebay-b2bfd1951f",
-   "old": 1899.0,
-   "new": 1699.0,
-   "pct": 0.105
-  },
-  {
-   "id": "ebay-c5b18b7053",
-   "old": 1554.99,
-   "new": 1524.99,
-   "pct": 0.019
-  },
-  {
-   "id": "ebay-acb717d151",
-   "old": 79.99,
-   "new": 71.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-107f4083df",
-   "old": 1700.0,
-   "new": 1599.0,
-   "pct": 0.059
-  },
-  {
-   "id": "ebay-b96c956080",
-   "old": 75.0,
-   "new": 65.0,
-   "pct": 0.133
-  },
-  {
-   "id": "ebay-4cd4324d4b",
-   "old": 549.0,
-   "new": 529.0,
-   "pct": 0.036
-  },
-  {
-   "id": "ebay-60f3c700fa",
-   "old": 219.0,
-   "new": 209.0,
-   "pct": 0.046
-  },
-  {
-   "id": "ebay-e5f446a8ed",
-   "old": 79.99,
-   "new": 71.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-de0b21a934",
-   "old": 2380.0,
-   "new": 2370.0,
-   "pct": 0.004
-  },
-  {
-   "id": "ebay-4f2fd23a04",
-   "old": 87.99,
-   "new": 79.19,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-e3d4e4b58c",
-   "old": 289.0,
-   "new": 279.0,
-   "pct": 0.035
-  },
-  {
-   "id": "ebay-a98427d9d4",
-   "old": 369.0,
-   "new": 359.0,
-   "pct": 0.027
-  },
-  {
-   "id": "ebay-a773de4d58",
-   "old": 679.0,
-   "new": 659.0,
-   "pct": 0.029
-  },
-  {
-   "id": "ebay-698f6425ff",
-   "old": 889.0,
-   "new": 859.0,
-   "pct": 0.034
-  },
-  {
-   "id": "ebay-bd5e1323d5",
-   "old": 619.0,
-   "new": 599.0,
-   "pct": 0.032
-  },
-  {
-   "id": "ebay-61d4179059",
-   "old": 159.0,
-   "new": 149.0,
-   "pct": 0.063
-  },
-  {
-   "id": "ebay-384dbb4afc",
-   "old": 99.0,
-   "new": 89.0,
-   "pct": 0.101
-  },
-  {
-   "id": "ebay-bd52e0ac0f",
-   "old": 509.0,
-   "new": 489.0,
-   "pct": 0.039
-  },
-  {
-   "id": "ebay-99dd22b16a",
-   "old": 99.0,
-   "new": 89.0,
-   "pct": 0.101
-  },
-  {
-   "id": "ebay-d54ecf55d1",
-   "old": 839.0,
-   "new": 809.0,
-   "pct": 0.036
-  },
-  {
-   "id": "ebay-3779eaff6e",
-   "old": 849.0,
-   "new": 819.0,
-   "pct": 0.035
-  },
-  {
-   "id": "ebay-b2abeb828f",
-   "old": 1089.0,
-   "new": 1059.0,
-   "pct": 0.028
-  },
-  {
-   "id": "ebay-4b85fa1667",
-   "old": 879.0,
-   "new": 849.0,
-   "pct": 0.034
-  },
-  {
-   "id": "ebay-ec1ea3e2fa",
-   "old": 129.97,
-   "new": 119.97,
-   "pct": 0.077
-  },
-  {
-   "id": "ebay-6521c7401b",
-   "old": 129.99,
-   "new": 116.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-d3f3e2d90e",
-   "old": 118.99,
-   "new": 107.09,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-1fa4b1cb27",
-   "old": 199.99,
-   "new": 179.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-03bd5c86d7",
-   "old": 79.99,
-   "new": 71.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-f598148d80",
-   "old": 484.99,
-   "new": 436.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-4c8a357a33",
+   "id": "mcbain-2dc995ca89",
    "old": 499.99,
-   "new": 474.99,
-   "pct": 0.05
-  },
-  {
-   "id": "ebay-47d95431c9",
-   "old": 459.99,
-   "new": 419.99,
-   "pct": 0.087
-  },
-  {
-   "id": "ebay-156c255c5c",
-   "old": 199.99,
-   "new": 179.99,
+   "new": 449.99,
    "pct": 0.1
   },
   {
-   "id": "ebay-003edd5572",
-   "old": 650.7,
-   "new": 640.7,
-   "pct": 0.015
+   "id": "gosselin-c9669efab6",
+   "old": 1599.0,
+   "new": 1099.0,
+   "pct": 0.313
   },
   {
-   "id": "ebay-004a1de725",
-   "old": 989.99,
-   "new": 949.99,
-   "pct": 0.04
+   "id": "gosselin-93907ed178",
+   "old": 369.0,
+   "new": 199.0,
+   "pct": 0.461
   },
   {
-   "id": "ebay-2b932a08e4",
-   "old": 219.99,
-   "new": 189.99,
-   "pct": 0.136
+   "id": "gosselin-44d2168334",
+   "old": 299.0,
+   "new": 99.99,
+   "pct": 0.666
   },
   {
-   "id": "ebay-4b8c4084b9",
-   "old": 150.0,
-   "new": 115.0,
-   "pct": 0.233
+   "id": "gosselin-3ebe268217",
+   "old": 3499.0,
+   "new": 999.0,
+   "pct": 0.714
   },
   {
-   "id": "ebay-b3f8ae7098",
-   "old": 225.0,
-   "new": 195.0,
-   "pct": 0.133
+   "id": "gosselin-77d39fec76",
+   "old": 3599.0,
+   "new": 999.0,
+   "pct": 0.722
   },
   {
-   "id": "ebay-403035e19c",
-   "old": 265.0,
-   "new": 239.0,
-   "pct": 0.098
+   "id": "gosselin-58d1b0c3ba",
+   "old": 119.0,
+   "new": 99.99,
+   "pct": 0.16
   },
   {
-   "id": "ebay-abe69dde91",
-   "old": 950.0,
-   "new": 855.0,
-   "pct": 0.1
+   "id": "gosselin-1bce04ac0f",
+   "old": 499.0,
+   "new": 349.0,
+   "pct": 0.301
   },
   {
-   "id": "ebay-06b68cf738",
-   "old": 129.99,
-   "new": 116.99,
-   "pct": 0.1
+   "id": "gosselin-cc6ee4efd9",
+   "old": 359.0,
+   "new": 199.0,
+   "pct": 0.446
   },
   {
-   "id": "ebay-2707c4097d",
-   "old": 249.99,
-   "new": 224.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-a0683ce0c9",
-   "old": 257.95,
-   "new": 232.15,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-7c2136dd8c",
-   "old": 284.99,
-   "new": 256.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-612781bac1",
-   "old": 347.99,
-   "new": 313.19,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-818e846a81",
-   "old": 154.99,
-   "new": 139.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-d1819f5dab",
-   "old": 179.99,
-   "new": 161.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-eb434ff3a6",
-   "old": 99.99,
-   "new": 89.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-8b064075f7",
-   "old": 84.99,
-   "new": 76.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-52ad44d4de",
-   "old": 125.99,
-   "new": 113.39,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-8c4a33ad92",
-   "old": 72.99,
-   "new": 65.69,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-2889eacdb4",
-   "old": 134.99,
-   "new": 121.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-033c2cc463",
-   "old": 139.99,
-   "new": 125.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-1164d86833",
-   "old": 187.56,
-   "new": 140.0,
-   "pct": 0.254
-  },
-  {
-   "id": "ebay-48d0d7245a",
-   "old": 132.79,
-   "new": 124.77,
-   "pct": 0.06
-  },
-  {
-   "id": "ebay-a0b9107f16",
-   "old": 80.0,
-   "new": 64.0,
-   "pct": 0.2
-  },
-  {
-   "id": "ebay-3870b98b8e",
-   "old": 100.0,
-   "new": 80.0,
-   "pct": 0.2
-  },
-  {
-   "id": "ebay-3929140343",
-   "old": 109.99,
-   "new": 98.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-abb5c58d51",
-   "old": 98.8,
-   "new": 93.81,
-   "pct": 0.051
-  },
-  {
-   "id": "ebay-7e5dc3b64d",
-   "old": 79.99,
-   "new": 71.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-184ad90e42",
-   "old": 324.99,
-   "new": 292.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-84d7eed8cf",
-   "old": 199.87,
-   "new": 169.89,
-   "pct": 0.15
-  },
-  {
-   "id": "ebay-65afcefa62",
-   "old": 160.0,
-   "new": 130.0,
-   "pct": 0.188
-  },
-  {
-   "id": "ebay-917c0e3b00",
-   "old": 117.95,
-   "new": 106.16,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-076b6a996d",
-   "old": 90.0,
-   "new": 70.0,
-   "pct": 0.222
-  },
-  {
-   "id": "ebay-fafde062a0",
-   "old": 4850.0,
-   "new": 4800.0,
-   "pct": 0.01
-  },
-  {
-   "id": "ebay-74d026a5ab",
-   "old": 99.99,
-   "new": 94.99,
-   "pct": 0.05
-  },
-  {
-   "id": "ebay-1b85fef2f2",
-   "old": 359.99,
-   "new": 323.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-6a43e41313",
-   "old": 159.99,
-   "new": 143.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-c300c4680f",
-   "old": 149.99,
-   "new": 129.99,
-   "pct": 0.133
-  },
-  {
-   "id": "ebay-753369385d",
-   "old": 289.99,
-   "new": 260.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-c4bf59c494",
-   "old": 89.99,
-   "new": 80.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-9902a88b64",
-   "old": 299.99,
-   "new": 269.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-7111f904d9",
-   "old": 147.95,
-   "new": 133.16,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-aee6cc3c0a",
-   "old": 112.99,
-   "new": 101.69,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-70f1394e25",
-   "old": 214.99,
-   "new": 193.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-bc506649c4",
-   "old": 84.99,
-   "new": 76.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-b781810cb0",
-   "old": 99.0,
-   "new": 74.25,
-   "pct": 0.25
-  },
-  {
-   "id": "ebay-4d57b97b53",
-   "old": 310.0,
-   "new": 280.0,
-   "pct": 0.097
-  },
-  {
-   "id": "ebay-cadfa00c1d",
-   "old": 179.99,
-   "new": 161.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-6abf1842d3",
-   "old": 109.99,
-   "new": 98.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-3924e7a3cc",
-   "old": 149.99,
-   "new": 134.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-aeb60f25af",
-   "old": 157.95,
-   "new": 142.16,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-d2ca84ca1a",
-   "old": 174.99,
-   "new": 157.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-fdb2da4185",
-   "old": 89.49,
-   "new": 76.07,
-   "pct": 0.15
-  },
-  {
-   "id": "ebay-55e1eb6584",
-   "old": 174.89,
-   "new": 148.66,
-   "pct": 0.15
-  },
-  {
-   "id": "ebay-009ebcd080",
-   "old": 144.89,
-   "new": 123.16,
-   "pct": 0.15
-  },
-  {
-   "id": "ebay-4a179170dd",
-   "old": 164.89,
-   "new": 140.16,
-   "pct": 0.15
-  },
-  {
-   "id": "ebay-d96565a46a",
-   "old": 144.89,
-   "new": 123.16,
-   "pct": 0.15
-  },
-  {
-   "id": "ebay-74063a1b12",
-   "old": 184.99,
-   "new": 166.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-b29944d7ec",
-   "old": 179.99,
-   "new": 161.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-88512e490b",
-   "old": 179.99,
-   "new": 161.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-3b6d81831a",
-   "old": 124.99,
-   "new": 112.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-1f6cafd4a7",
-   "old": 247.99,
-   "new": 223.19,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-f046dfa7df",
-   "old": 149.99,
-   "new": 134.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-637136ecb7",
-   "old": 149.99,
-   "new": 134.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-a50d59fd03",
-   "old": 99.99,
-   "new": 89.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-74f8ed68fc",
-   "old": 67.99,
-   "new": 61.19,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-584c78010e",
-   "old": 89.99,
-   "new": 80.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-3e8bfbda26",
-   "old": 74.99,
-   "new": 67.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-16cbbd6c57",
-   "old": 217.99,
-   "new": 196.19,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-711f7a9a55",
-   "old": 199.99,
-   "new": 179.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-50ea3b1daa",
-   "old": 379.99,
-   "new": 341.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-f15c288533",
-   "old": 129.99,
-   "new": 116.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-7e8d1289c1",
-   "old": 249.99,
-   "new": 224.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-d95007218f",
-   "old": 74.99,
-   "new": 67.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-3866746774",
-   "old": 75.99,
-   "new": 68.39,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-13da564bd2",
-   "old": 154.99,
-   "new": 139.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-cd15153503",
-   "old": 179.99,
-   "new": 161.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-7de4d961a2",
-   "old": 249.99,
-   "new": 224.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-285309db2b",
-   "old": 274.99,
-   "new": 247.49,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-ebce61435a",
-   "old": 67.95,
-   "new": 61.16,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-369295b810",
-   "old": 199.99,
-   "new": 179.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-c0ac68e7ce",
-   "old": 199.99,
-   "new": 179.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-110afb6992",
-   "old": 99.99,
-   "new": 89.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-4300cbbabd",
-   "old": 199.99,
-   "new": 179.99,
-   "pct": 0.1
-  },
-  {
-   "id": "ebay-08109c37d9",
-   "old": 117.0,
-   "new": 104.0,
+   "id": "gosselin-2b23132f13",
+   "old": 899.0,
+   "new": 799.0,
    "pct": 0.111
   },
   {
-   "id": "ebay-6a2318a640",
-   "old": 89.99,
-   "new": 80.99,
+   "id": "gosselin-03c01644d3",
+   "old": 899.0,
+   "new": 799.0,
+   "pct": 0.111
+  },
+  {
+   "id": "gosselin-332852afff",
+   "old": 149.0,
+   "new": 49.99,
+   "pct": 0.664
+  },
+  {
+   "id": "gosselin-8e783a625c",
+   "old": 299.0,
+   "new": 199.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-4e1945848e",
+   "old": 299.0,
+   "new": 199.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-7f9f9c84c4",
+   "old": 2099.0,
+   "new": 999.0,
+   "pct": 0.524
+  },
+  {
+   "id": "gosselin-4807129576",
+   "old": 179.0,
+   "new": 49.99,
+   "pct": 0.721
+  },
+  {
+   "id": "gosselin-879fb9493d",
+   "old": 749.0,
+   "new": 499.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-7b56a5b3be",
+   "old": 59.0,
+   "new": 49.99,
+   "pct": 0.153
+  },
+  {
+   "id": "gosselin-8e39b64f95",
+   "old": 49.0,
+   "new": 29.99,
+   "pct": 0.388
+  },
+  {
+   "id": "gosselin-f8be87472b",
+   "old": 599.0,
+   "new": 299.0,
+   "pct": 0.501
+  },
+  {
+   "id": "gosselin-9e610871f8",
+   "old": 149.0,
+   "new": 99.99,
+   "pct": 0.329
+  },
+  {
+   "id": "gosselin-87729524c6",
+   "old": 299.0,
+   "new": 199.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-60c4ded01f",
+   "old": 1115.0,
+   "new": 899.0,
+   "pct": 0.194
+  },
+  {
+   "id": "gosselin-c75a581a10",
+   "old": 1299.0,
+   "new": 999.0,
+   "pct": 0.231
+  },
+  {
+   "id": "gosselin-e0e80c3348",
+   "old": 19.0,
+   "new": 14.99,
+   "pct": 0.211
+  },
+  {
+   "id": "gosselin-07efc923a8",
+   "old": 2299.0,
+   "new": 1999.0,
+   "pct": 0.13
+  },
+  {
+   "id": "gosselin-6963be3a18",
+   "old": 559.0,
+   "new": 399.0,
+   "pct": 0.286
+  },
+  {
+   "id": "gosselin-b198e03a00",
+   "old": 499.0,
+   "new": 399.0,
+   "pct": 0.2
+  },
+  {
+   "id": "gosselin-c8690a1c2c",
+   "old": 259.0,
+   "new": 199.0,
+   "pct": 0.232
+  },
+  {
+   "id": "gosselin-a90e256936",
+   "old": 2999.0,
+   "new": 2699.0,
    "pct": 0.1
   },
   {
-   "id": "ebay-9f28119bcd",
-   "old": 119.99,
-   "new": 107.99,
-   "pct": 0.1
+   "id": "gosselin-7bb6625cd6",
+   "old": 199.0,
+   "new": 149.0,
+   "pct": 0.251
   },
   {
-   "id": "ebay-2844c6b7a9",
-   "old": 254.99,
-   "new": 229.49,
-   "pct": 0.1
+   "id": "gosselin-4eb19e6835",
+   "old": 69.99,
+   "new": 19.99,
+   "pct": 0.714
   },
   {
-   "id": "ebay-85a047fcb9",
-   "old": 259.99,
-   "new": 233.99,
-   "pct": 0.1
+   "id": "gosselin-b8b88748c6",
+   "old": 59.99,
+   "new": 29.99,
+   "pct": 0.5
   },
   {
-   "id": "ebay-b6e17e2d1e",
-   "old": 249.99,
-   "new": 224.99,
-   "pct": 0.1
+   "id": "gosselin-8ccfc8e671",
+   "old": 89.0,
+   "new": 49.99,
+   "pct": 0.438
   },
   {
-   "id": "ebay-b850dcce09",
-   "old": 199.99,
-   "new": 179.99,
-   "pct": 0.1
+   "id": "gosselin-0403f3b1ed",
+   "old": 349.0,
+   "new": 299.0,
+   "pct": 0.143
   },
   {
-   "id": "ebay-2b22323b36",
-   "old": 109.0,
-   "new": 92.65,
+   "id": "gosselin-24d739105a",
+   "old": 899.0,
+   "new": 699.0,
+   "pct": 0.222
+  },
+  {
+   "id": "gosselin-0f21d197e1",
+   "old": 2999.0,
+   "new": 2499.0,
+   "pct": 0.167
+  },
+  {
+   "id": "gosselin-6fc86542d2",
+   "old": 5749.0,
+   "new": 4499.0,
+   "pct": 0.217
+  },
+  {
+   "id": "gosselin-a8195dba53",
+   "old": 369.0,
+   "new": 199.0,
+   "pct": 0.461
+  },
+  {
+   "id": "gosselin-d352e58530",
+   "old": 189.0,
+   "new": 99.99,
+   "pct": 0.471
+  },
+  {
+   "id": "gosselin-03f20ee315",
+   "old": 1199.0,
+   "new": 799.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-902b789e9e",
+   "old": 99.0,
+   "new": 49.99,
+   "pct": 0.495
+  },
+  {
+   "id": "gosselin-7198ffc5dc",
+   "old": 199.0,
+   "new": 169.0,
+   "pct": 0.151
+  },
+  {
+   "id": "gosselin-08be67406d",
+   "old": 449.0,
+   "new": 299.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-9b6c07d209",
+   "old": 489.0,
+   "new": 349.0,
+   "pct": 0.286
+  },
+  {
+   "id": "gosselin-8a56247e0c",
+   "old": 6999.0,
+   "new": 5999.0,
+   "pct": 0.143
+  },
+  {
+   "id": "gosselin-180af32dab",
+   "old": 1659.0,
+   "new": 1199.0,
+   "pct": 0.277
+  },
+  {
+   "id": "gosselin-214034839e",
+   "old": 129.0,
+   "new": 79.99,
+   "pct": 0.38
+  },
+  {
+   "id": "gosselin-25f5fbee1a",
+   "old": 2699.0,
+   "new": 1699.0,
+   "pct": 0.371
+  },
+  {
+   "id": "gosselin-61385c8649",
+   "old": 159.0,
+   "new": 99.99,
+   "pct": 0.371
+  },
+  {
+   "id": "gosselin-8acbeec6c4",
+   "old": 209.0,
+   "new": 169.0,
+   "pct": 0.191
+  },
+  {
+   "id": "gosselin-693d220975",
+   "old": 99.0,
+   "new": 69.99,
+   "pct": 0.293
+  },
+  {
+   "id": "gosselin-69edaf754a",
+   "old": 99.0,
+   "new": 49.99,
+   "pct": 0.495
+  },
+  {
+   "id": "gosselin-76af7c830c",
+   "old": 249.0,
+   "new": 179.0,
+   "pct": 0.281
+  },
+  {
+   "id": "gosselin-39db2599cd",
+   "old": 1099.0,
+   "new": 799.0,
+   "pct": 0.273
+  },
+  {
+   "id": "gosselin-7af52e0d9b",
+   "old": 1299.0,
+   "new": 799.0,
+   "pct": 0.385
+  },
+  {
+   "id": "gosselin-b29a6a71c9",
+   "old": 799.0,
+   "new": 599.0,
+   "pct": 0.25
+  },
+  {
+   "id": "gosselin-fe4f9cb72c",
+   "old": 899.0,
+   "new": 799.0,
+   "pct": 0.111
+  },
+  {
+   "id": "gosselin-e75c9e23d8",
+   "old": 79.99,
+   "new": 29.99,
+   "pct": 0.625
+  },
+  {
+   "id": "gosselin-b23e4cc77d",
+   "old": 89.0,
+   "new": 49.99,
+   "pct": 0.438
+  },
+  {
+   "id": "gosselin-c1c6213795",
+   "old": 69.0,
+   "new": 49.99,
+   "pct": 0.276
+  },
+  {
+   "id": "gosselin-c90a61802c",
+   "old": 1899.0,
+   "new": 1299.0,
+   "pct": 0.316
+  },
+  {
+   "id": "gosselin-04953b8c27",
+   "old": 39.0,
+   "new": 24.99,
+   "pct": 0.359
+  },
+  {
+   "id": "gosselin-cd260b4528",
+   "old": 349.0,
+   "new": 249.0,
+   "pct": 0.287
+  },
+  {
+   "id": "gosselin-e5ec0b3115",
+   "old": 749.0,
+   "new": 649.0,
+   "pct": 0.134
+  },
+  {
+   "id": "gosselin-ae006bdc53",
+   "old": 39.0,
+   "new": 24.99,
+   "pct": 0.359
+  },
+  {
+   "id": "gosselin-9949723a30",
+   "old": 39.0,
+   "new": 24.99,
+   "pct": 0.359
+  },
+  {
+   "id": "gosselin-958293e2a1",
+   "old": 299.0,
+   "new": 199.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-7419682d63",
+   "old": 179.0,
+   "new": 99.99,
+   "pct": 0.441
+  },
+  {
+   "id": "gosselin-b9397760bc",
+   "old": 1179.0,
+   "new": 899.0,
+   "pct": 0.237
+  },
+  {
+   "id": "gosselin-53f3b3ac70",
+   "old": 39.0,
+   "new": 24.99,
+   "pct": 0.359
+  },
+  {
+   "id": "gosselin-e0d4310d24",
+   "old": 799.0,
+   "new": 549.0,
+   "pct": 0.313
+  },
+  {
+   "id": "gosselin-cfdb67ca6d",
+   "old": 199.0,
+   "new": 129.0,
+   "pct": 0.352
+  },
+  {
+   "id": "gosselin-6b17706741",
+   "old": 499.0,
+   "new": 299.0,
+   "pct": 0.401
+  },
+  {
+   "id": "gosselin-5da9ac4773",
+   "old": 249.0,
+   "new": 169.0,
+   "pct": 0.321
+  },
+  {
+   "id": "gosselin-46bce61cee",
+   "old": 3499.0,
+   "new": 2499.0,
+   "pct": 0.286
+  },
+  {
+   "id": "gosselin-deffa05a66",
+   "old": 249.0,
+   "new": 199.0,
+   "pct": 0.201
+  },
+  {
+   "id": "gosselin-143a11f26b",
+   "old": 3999.0,
+   "new": 2999.0,
+   "pct": 0.25
+  },
+  {
+   "id": "gosselin-4f94ab802e",
+   "old": 79.0,
+   "new": 39.99,
+   "pct": 0.494
+  },
+  {
+   "id": "gosselin-07a1efc01c",
+   "old": 749.0,
+   "new": 599.0,
+   "pct": 0.2
+  },
+  {
+   "id": "gosselin-9bae723c91",
+   "old": 59.0,
+   "new": 19.99,
+   "pct": 0.661
+  },
+  {
+   "id": "gosselin-8e1b2fa8f6",
+   "old": 499.0,
+   "new": 269.0,
+   "pct": 0.461
+  },
+  {
+   "id": "gosselin-7bbe1d827d",
+   "old": 139.0,
+   "new": 99.99,
+   "pct": 0.281
+  },
+  {
+   "id": "gosselin-726cd00206",
+   "old": 1999.0,
+   "new": 1699.0,
    "pct": 0.15
   },
   {
-   "id": "ebay-0901fca470",
-   "old": 149.95,
-   "new": 127.46,
+   "id": "gosselin-c8f6a4588e",
+   "old": 299.0,
+   "new": 99.99,
+   "pct": 0.666
+  },
+  {
+   "id": "gosselin-2556b53979",
+   "old": 159.0,
+   "new": 99.99,
+   "pct": 0.371
+  },
+  {
+   "id": "gosselin-16b965062e",
+   "old": 299.0,
+   "new": 199.0,
+   "pct": 0.334
+  },
+  {
+   "id": "gosselin-34aa167df8",
+   "old": 59.99,
+   "new": 29.99,
+   "pct": 0.5
+  },
+  {
+   "id": "gosselin-6789bd225c",
+   "old": 279.0,
+   "new": 199.0,
+   "pct": 0.287
+  },
+  {
+   "id": "gosselin-a115e39814",
+   "old": 59.99,
+   "new": 29.99,
+   "pct": 0.5
+  },
+  {
+   "id": "gosselin-b06db8c7d8",
+   "old": 199.0,
+   "new": 49.99,
+   "pct": 0.749
+  },
+  {
+   "id": "ebay-0aa5262017",
+   "old": 295.0,
+   "new": 285.0,
+   "pct": 0.034
+  },
+  {
+   "id": "ebay-0471f3cb4f",
+   "old": 146.99,
+   "new": 143.99,
+   "pct": 0.02
+  },
+  {
+   "id": "ebay-3fc87deb7c",
+   "old": 159.99,
+   "new": 99.95,
+   "pct": 0.375
+  },
+  {
+   "id": "ebay-8227e4f897",
+   "old": 4240.75,
+   "new": 4204.3,
+   "pct": 0.009
+  },
+  {
+   "id": "ebay-7cd24891a8",
+   "old": 1200.0,
+   "new": 1100.0,
+   "pct": 0.083
+  },
+  {
+   "id": "ebay-cfd0fe23d9",
+   "old": 250.0,
+   "new": 212.5,
    "pct": 0.15
+  },
+  {
+   "id": "ebay-503b8cabd2",
+   "old": 350.0,
+   "new": 325.0,
+   "pct": 0.071
+  },
+  {
+   "id": "ebay-e54af06638",
+   "old": 169.99,
+   "new": 144.49,
+   "pct": 0.15
+  },
+  {
+   "id": "ebay-bcb851fa69",
+   "old": 499.95,
+   "new": 299.97,
+   "pct": 0.4
   }
  ],
- "removed": 957
+ "removed": 42
 }

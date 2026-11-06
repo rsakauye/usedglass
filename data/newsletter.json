@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-06T15:11:16+00:00",
+   "as_of": "2026-11-06T18:36:58+00:00",
    "rate": 1.3989,
    "goods_cad": 42.68,
    "ship_cad": 9.02,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-06T15:11:16+00:00",
+   "as_of": "2026-11-06T18:36:58+00:00",
    "rate": 1.3989,
    "goods_cad": 35.24,
    "ship_cad": 9.02,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-06T15:11:16+00:00",
+   "as_of": "2026-11-06T18:36:58+00:00",
    "rate": 1.3989,
    "goods_cad": 37.01,
    "ship_cad": 9.02,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-06T15:11:16+00:00",
+   "as_of": "2026-11-06T18:36:58+00:00",
    "rate": 1.3989,
    "goods_cad": 53.16,
    "ship_cad": 15.29,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-06T15:11:16+00:00",
+   "as_of": "2026-11-06T18:36:58+00:00",
    "rate": 1.3989,
    "goods_cad": 15.39,
    "ship_cad": 0.0,
@@ -215,10 +215,22 @@
    "price_cad": 89.99,
    "deal_score": 100,
    "score_why": [
-    "55% below the median of 23 comparable listings",
+    "55% below the median of 25 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Pentax K1000"
+  },
+  {
+   "title": "Nikon FE 3696599 Chrome 35mm SLR Film Camera w/ Lens Untested Made In Japan",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/237161578168?hash=item3737ee7eb8%3Ag%3AY2YAAeSwv%7EFq6io1&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 212.5,
+   "deal_score": 100,
+   "score_why": [
+    "47% below the median of 7 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Nikon FE"
   },
   {
    "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",
@@ -231,18 +243,6 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Pentax SPOTMATIC"
-  },
-  {
-   "title": "Canon EOS Rebel XSi 450D DSLR Camera -EF-S 18-55mm PLUS 35 to 80mm Lens &Filters",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/327442355262?hash=item4c3d15d43e%3Ag%3A8LoAAeSwt15q7UWg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 88.65,
-   "deal_score": 100,
-   "score_why": [
-    "46% below the median of 6 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon REBELXSI"
   },
   {
    "title": "Pentax Spotmatic SP F (Asahi) M42 Mount 35mm Camera Body Tested Chrome",

@@ -509,28 +509,29 @@
  },
  {
   "type": "listing",
-  "id": "ebay-b0b66f7671",
-  "title": "Canon EOS Rebel XSi 450D DSLR Camera -EF-S 18-55mm PLUS 35 to 80mm Lens &Filters",
+  "id": "ebay-cfd0fe23d9",
+  "title": "Nikon FE 3696599 Chrome 35mm SLR Film Camera w/ Lens Untested Made In Japan",
   "dealer": "eBay (Canadian sellers)",
-  "url": "https://www.ebay.ca/itm/327442355262?hash=item4c3d15d43e%3Ag%3A8LoAAeSwt15q7UWg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-  "price_cad": 88.65,
-  "comp_median": 164.0,
-  "comps": 6,
-  "model_key": "camera-canon-rebelxsi",
-  "model_name": "Canon REBELXSI",
+  "url": "https://www.ebay.ca/itm/237161578168?hash=item3737ee7eb8%3Ag%3AY2YAAeSwv%7EFq6io1&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 212.5,
+  "comp_median": 399.0,
+  "comps": 7,
+  "model_key": "camera-nikon-fe",
+  "model_name": "Nikon FE",
   "condition": null,
   "reasons": [
-   "46% below the median of 6 comparable listings"
+   "47% below the median of 7 comparable listings",
+   "price dropped 15% (was $250)"
   ],
-  "score": 59.9,
-  "is_new": true,
+  "score": 62.7,
+  "is_new": false,
   "deal_score": 100,
   "score_why": [
-   "46% below the median of 6 comparable listings",
-   "no release-date or successor data for this model yet, so the score uses price history only"
+   "47% below the median of 7 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
   ],
-  "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-11-06T15:11:16+00:00",
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-11-06T18:36:58+00:00",
   "date": "2026-11-06"
  }
 ]
