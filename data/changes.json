@@ -48,20 +48,6 @@
   "camtec-fbbfd50573",
   "camtec-3baa14e34f",
   "camtec-0ff10aa005",
-  "plotcamera-1172c08965",
-  "plotcamera-6f166cbf53",
-  "plotcamera-06a24dac59",
-  "plotcamera-46d4db877c",
-  "plotcamera-bf48f1ce3b",
-  "plotcamera-6237cf1f16",
-  "plotcamera-763310e364",
-  "plotcamera-2635f65630",
-  "plotcamera-05d9aaa857",
-  "cameratraders-e87bd84c81",
-  "cameratraders-fefce0dd0d",
-  "cameratraders-0b0f891c53",
-  "cameratraders-57125ba502",
-  "cameratraders-0c9b074966",
   "ebay-83825b43d7",
   "ebay-d5d1a45f27",
   "ebay-864b864504",
@@ -80,6 +66,7 @@
   "ebay-dd5be3191e",
   "ebay-171dbb81b8",
   "ebay-7da03789dd",
+  "ebay-21f0f1de71",
   "ebay-b12c8e2d01",
   "ebay-c4a80199a5",
   "ebay-41389bc8d0",
@@ -174,156 +161,6 @@
    "old": 1185.0,
    "new": 985.0,
    "pct": 0.169
-  },
-  {
-   "id": "maplecamera-5ad56c9ed8",
-   "old": 839.0,
-   "new": 809.0,
-   "pct": 0.036
-  },
-  {
-   "id": "maplecamera-9c45efb262",
-   "old": 889.0,
-   "new": 859.0,
-   "pct": 0.034
-  },
-  {
-   "id": "maplecamera-427abee167",
-   "old": 289.0,
-   "new": 279.0,
-   "pct": 0.035
-  },
-  {
-   "id": "maplecamera-95abcf40e0",
-   "old": 389.0,
-   "new": 369.0,
-   "pct": 0.051
-  },
-  {
-   "id": "maplecamera-42adafea65",
-   "old": 849.0,
-   "new": 819.0,
-   "pct": 0.035
-  },
-  {
-   "id": "maplecamera-d77e1bf758",
-   "old": 619.0,
-   "new": 599.0,
-   "pct": 0.032
-  },
-  {
-   "id": "maplecamera-5af26c543c",
-   "old": 99.0,
-   "new": 89.0,
-   "pct": 0.101
-  },
-  {
-   "id": "maplecamera-7550750190",
-   "old": 99.0,
-   "new": 89.0,
-   "pct": 0.101
-  },
-  {
-   "id": "maplecamera-2790f49c8a",
-   "old": 659.0,
-   "new": 639.0,
-   "pct": 0.03
-  },
-  {
-   "id": "maplecamera-ef16a61970",
-   "old": 589.0,
-   "new": 569.0,
-   "pct": 0.034
-  },
-  {
-   "id": "maplecamera-5f78984dfe",
-   "old": 2719.0,
-   "new": 2639.0,
-   "pct": 0.029
-  },
-  {
-   "id": "maplecamera-38d6a7c3e2",
-   "old": 549.0,
-   "new": 529.0,
-   "pct": 0.036
-  },
-  {
-   "id": "maplecamera-3e60f73444",
-   "old": 589.0,
-   "new": 569.0,
-   "pct": 0.034
-  },
-  {
-   "id": "maplecamera-46d4e7653b",
-   "old": 1529.0,
-   "new": 1479.0,
-   "pct": 0.033
-  },
-  {
-   "id": "maplecamera-fcb5829b9f",
-   "old": 779.0,
-   "new": 749.0,
-   "pct": 0.039
-  },
-  {
-   "id": "maplecamera-80304f6d5e",
-   "old": 679.0,
-   "new": 659.0,
-   "pct": 0.029
-  },
-  {
-   "id": "maplecamera-3fdc62e05f",
-   "old": 879.0,
-   "new": 849.0,
-   "pct": 0.034
-  },
-  {
-   "id": "maplecamera-371a891f2d",
-   "old": 369.0,
-   "new": 359.0,
-   "pct": 0.027
-  },
-  {
-   "id": "maplecamera-bb18f8c84a",
-   "old": 879.0,
-   "new": 849.0,
-   "pct": 0.034
-  },
-  {
-   "id": "maplecamera-eedb4dec12",
-   "old": 1649.0,
-   "new": 1599.0,
-   "pct": 0.03
-  },
-  {
-   "id": "maplecamera-f864975939",
-   "old": 219.0,
-   "new": 209.0,
-   "pct": 0.046
-  },
-  {
-   "id": "maplecamera-6dce1990d6",
-   "old": 509.0,
-   "new": 489.0,
-   "pct": 0.039
-  },
-  {
-   "id": "maplecamera-fc76c772a9",
-   "old": 159.0,
-   "new": 149.0,
-   "pct": 0.063
-  },
-  {
-   "id": "maplecamera-54e68c88b4",
-   "old": 489.0,
-   "new": 469.0,
-   "pct": 0.041
-  },
-  {
-   "id": "maplecamera-f58de48aaa",
-   "old": 1089.0,
-   "new": 1059.0,
-   "pct": 0.028
   },
   {
    "id": "cameracanada-deacb85621",
@@ -510,6 +347,12 @@
    "old": 79.99,
    "new": 71.99,
    "pct": 0.1
+  },
+  {
+   "id": "ebay-de0b21a934",
+   "old": 2380.0,
+   "new": 2370.0,
+   "pct": 0.004
   },
   {
    "id": "ebay-4f2fd23a04",
@@ -1202,5 +1045,5 @@
    "pct": 0.15
   }
  ],
- "removed": 173
+ "removed": 957
 }

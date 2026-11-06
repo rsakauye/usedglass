@@ -1,11 +1,11 @@
 {
- "run_at": "2026-11-06T15:05:31+00:00",
+ "run_at": "2026-11-06T15:11:16+00:00",
  "date": "2026-11-06",
  "dealers": {
   "mcbain": {
    "count": 985,
    "status": "ok",
-   "seconds": 1.9
+   "seconds": 1.5
   },
   "downtowncamera": {
    "count": 882,
@@ -15,60 +15,57 @@
   "gosselin": {
    "count": 804,
    "status": "ok",
-   "seconds": 8.0
+   "seconds": 7.8
   },
   "beauphoto": {
    "count": 380,
    "status": "ok",
-   "seconds": 17.1
+   "seconds": 18.1
   },
   "thecamerastore": {
    "count": 83,
    "status": "ok",
-   "seconds": 0.9
+   "seconds": 0.8
   },
   "camtec": {
    "count": 123,
    "status": "ok",
-   "seconds": 3.0
+   "seconds": 2.5
   },
   "plotcamera": {
-   "count": 65,
-   "status": "ok",
-   "seconds": 0.9
+   "count": 0,
+   "status": "paused (ToS: scrape ban)"
   },
   "cameratraders": {
-   "count": 663,
-   "status": "ok",
-   "seconds": 7.3
+   "count": 0,
+   "status": "paused (ToS: scrape ban)"
   },
   "maplecamera": {
-   "count": 91,
-   "status": "ok",
-   "seconds": 0.7
+   "count": 0,
+   "status": "paused (ToS: scrape ban)"
   },
   "cameratrading": {
    "count": 60,
    "status": "ok",
-   "seconds": 1.0
+   "seconds": 0.6
   },
   "cameracanada": {
    "count": 190,
    "status": "ok",
-   "seconds": 41.4
+   "seconds": 42.5
   },
   "ebay": {
    "count": 3000,
    "status": "ok",
-   "seconds": 39.7
+   "seconds": 40.2
   }
  },
  "errors": {},
- "total": 7293,
- "models": 2075,
- "new_today": 166,
- "price_dropped": 172,
- "deals": 302,
+ "total": 6495,
+ "models": 2005,
+ "new_today": 153,
+ "price_dropped": 148,
+ "deals": 292,
  "dealer_info": {
   "thecamerastore": {
    "name": "The Camera Store",
@@ -103,17 +100,20 @@
   "plotcamera": {
    "name": "Plot Camera",
    "city": "Vancouver, BC",
-   "site": "https://www.plotcamera.com"
+   "site": "https://www.plotcamera.com",
+   "paused": "paused (ToS: scrape ban)"
   },
   "cameratraders": {
    "name": "Camera Traders",
    "city": "Victoria, BC",
-   "site": "https://www.camera-traders.com"
+   "site": "https://www.camera-traders.com",
+   "paused": "paused (ToS: scrape ban)"
   },
   "maplecamera": {
    "name": "Maple Camera Co.",
    "city": "Scarborough, ON",
-   "site": "https://maplecameraco.com"
+   "site": "https://maplecameraco.com",
+   "paused": "paused (ToS: scrape ban)"
   },
   "cameratrading": {
    "name": "Camera Trading Company",
@@ -135,7 +135,7 @@
   "newprices": {
    "count": 883,
    "status": "ok",
-   "seconds": 16.4
+   "seconds": 16.1
   },
   "fx": {
    "status": "ok",
