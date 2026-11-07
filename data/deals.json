@@ -1,31 +1,30 @@
 {
- "date": "2026-11-06",
- "generated_at": "2026-11-06T18:36:58+00:00",
+ "date": "2026-11-07",
+ "generated_at": "2026-11-07T17:04:27+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "ebay-cfd0fe23d9",
-  "title": "Nikon FE 3696599 Chrome 35mm SLR Film Camera w/ Lens Untested Made In Japan",
-  "dealer": "eBay (Canadian sellers)",
-  "url": "https://www.ebay.ca/itm/237161578168?hash=item3737ee7eb8%3Ag%3AY2YAAeSwv%7EFq6io1&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-  "price_cad": 212.5,
-  "comp_median": 399.0,
-  "comps": 7,
-  "model_key": "camera-nikon-fe",
-  "model_name": "Nikon FE",
+  "id": "mcbain-79aa3d5fbc",
+  "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U9901161",
+  "price_cad": 50.0,
+  "comp_median": 136.97,
+  "comps": 6,
+  "model_key": "lens-pentax-pentax-k-28mm-f2_8",
+  "model_name": "Pentax 28mm f/2.8 (Pentax K)",
   "condition": null,
   "reasons": [
-   "47% below the median of 7 comparable listings",
-   "price dropped 15% (was $250)"
+   "63% below the median of 6 comparable listings"
   ],
-  "score": 62.7,
-  "is_new": false,
+  "score": 77.5,
+  "is_new": true,
   "deal_score": 100,
   "score_why": [
-   "47% below the median of 7 comparable listings",
-   "looks like a kit or a different version, so it is only compared with similar listings"
+   "63% below the median of 6 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
   ],
-  "score_basis": "history only (bundle or version mismatch)",
-  "fetched_at": "2026-11-06T18:36:58+00:00"
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-07T17:04:27+00:00"
  },
  "deals": [
   {
@@ -34,16 +33,16 @@
    "title": "Leica Q3 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
-   "price_cad": 79.29,
+   "price_cad": 79.77,
    "model_key": "camera-leica-q3",
    "model_name": "Leica Q3",
    "reasons": [
-    "estimated landed cost $79 vs $10,365 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $80 vs $10,365 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -51,16 +50,16 @@
    "title": "Nikon Z9 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
-   "price_cad": 71.47,
+   "price_cad": 71.89,
    "model_key": "camera-nikon-z9",
    "model_name": "Nikon Z9",
    "reasons": [
-    "estimated landed cost $71 vs $6,999 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $72 vs $6,999 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -68,16 +67,16 @@
    "title": "Canon R5 II from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
-   "price_cad": 73.34,
+   "price_cad": 73.77,
    "model_key": "camera-canon-r5-ii",
    "model_name": "Canon R5 II",
    "reasons": [
-    "estimated landed cost $73 vs $5,899 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $74 vs $5,899 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -85,16 +84,16 @@
    "title": "Sony A7R V from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
-   "price_cad": 96.87,
+   "price_cad": 97.51,
    "model_key": "camera-sony-a7r-v",
    "model_name": "Sony A7R V",
    "reasons": [
-    "estimated landed cost $97 vs $4,699 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $98 vs $4,699 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -102,7 +101,7 @@
    "title": "Sony A7S III from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
-   "price_cad": 41.16,
+   "price_cad": 41.3,
    "model_key": "camera-sony-a7s-iii",
    "model_name": "Sony A7S III",
    "reasons": [
@@ -111,7 +110,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -119,7 +118,7 @@
    "title": "Nikon Z8 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/145498152889?_skw=Nikon+Z8&hash=item21e05d9fb9:g:xyYAAOSwxltlenyu",
-   "price_cad": 87.23,
+   "price_cad": 87.41,
    "model_key": "camera-nikon-z8",
    "model_name": "Nikon Z8",
    "reasons": [
@@ -128,7 +127,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -136,7 +135,7 @@
    "title": "Sony A7 V from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/236825442622?_skw=Sony+a7+V&hash=item3723e5793e:g:Av8AAeSwU0pqCRrz",
-   "price_cad": 93.84,
+   "price_cad": 94.46,
    "model_key": "camera-sony-a7-v",
    "model_name": "Sony A7 V",
    "reasons": [
@@ -145,7 +144,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -153,16 +152,16 @@
    "title": "Canon R6 III from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800130777545?_skw=Canon+EOS+R6+Mark+III&hash=itemba4b82c1c9:g:3LMAAeSwy95qI7jY",
-   "price_cad": 78.29,
+   "price_cad": 78.76,
    "model_key": "camera-canon-r6-iii",
    "model_name": "Canon R6 III",
    "reasons": [
-    "estimated landed cost $78 vs $3,499 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $79 vs $3,499 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -170,7 +169,7 @@
    "title": "Canon R5 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/127620673358?_skw=Canon+EOS+R5&hash=item1db6c8ef4e:g:8bMAAOSwWZ1mC0Vr",
-   "price_cad": 69.71,
+   "price_cad": 70.11,
    "model_key": "camera-canon-r5",
    "model_name": "Canon R5",
    "reasons": [
@@ -179,7 +178,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "currency_gap",
@@ -187,7 +186,7 @@
    "title": "Canon R6 II from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800826710080?_skw=Canon+EOS+R6+Mark+II&hash=itemba74fdd840:g:AOEAAeSwg31q2nv~",
-   "price_cad": 70.86,
+   "price_cad": 71.26,
    "model_key": "camera-canon-r6-ii",
    "model_name": "Canon R6 II",
    "reasons": [
@@ -196,7 +195,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -205,7 +204,7 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/820050794335?hash=itembeeed6175f%3Ag%3A-QYAAeSwgW9qjx81&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 98.6,
-   "comp_median": 315.39,
+   "comp_median": 316.21,
    "comps": 32,
    "model_key": "camera-canon-ae1",
    "model_name": "Canon AE1",
@@ -213,7 +212,7 @@
    "reasons": [
     "69% below the median of 32 comparable listings"
    ],
-   "score": 78.7,
+   "score": 78.8,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -221,7 +220,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-79aa3d5fbc",
+   "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U9901161",
+   "price_cad": 50.0,
+   "comp_median": 136.97,
+   "comps": 6,
+   "model_key": "lens-pentax-pentax-k-28mm-f2_8",
+   "model_name": "Pentax 28mm f/2.8 (Pentax K)",
+   "condition": null,
+   "reasons": [
+    "63% below the median of 6 comparable listings"
+   ],
+   "score": 77.5,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "63% below the median of 6 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -230,23 +254,48 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/860113798033?hash=itemc842c70391%3Ag%3AWgoAAeSwLCpq66Vu&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 70.0,
-   "comp_median": 215.14,
+   "comp_median": 215.95,
    "comps": 8,
    "model_key": "camera-canon-rebelxs",
    "model_name": "Canon REBELXS",
    "condition": null,
    "reasons": [
-    "67% below the median of 8 comparable listings"
+    "68% below the median of 8 comparable listings"
    ],
-   "score": 75.5,
+   "score": 75.6,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "67% below the median of 8 comparable listings",
+    "68% below the median of 8 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-7e0bb14979",
+   "title": "Canon EF 50mm f/1.4",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-50mm-f-14-u108226",
+   "price_cad": 99.0,
+   "comp_median": 220.0,
+   "comps": 9,
+   "model_key": "lens-canon-canon-ef-50mm-f1_4",
+   "model_name": "Canon 50mm f/1.4 (Canon EF)",
+   "condition": "Good",
+   "reasons": [
+    "55% below the median of 9 comparable listings"
+   ],
+   "score": 72.0,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "55% below the median of 9 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -271,7 +320,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -280,7 +329,7 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/206515457076?hash=item301547cc34%3Ag%3AN0QAAeSwGGJqjhBc&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 129.99,
-   "comp_median": 315.39,
+   "comp_median": 316.21,
    "comps": 32,
    "model_key": "camera-canon-ae1",
    "model_name": "Canon AE1",
@@ -288,7 +337,7 @@
    "reasons": [
     "59% below the median of 32 comparable listings"
    ],
-   "score": 68.8,
+   "score": 68.9,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -296,7 +345,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-ecbf264fcc",
+   "title": "Nikon D7000",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-d7000-u107842",
+   "price_cad": 175.0,
+   "comp_median": 495.0,
+   "comps": 3,
+   "model_key": "camera-nikon-d7000",
+   "model_name": "Nikon D7000",
+   "condition": "Good",
+   "reasons": [
+    "65% below the median of 3 comparable listings"
+   ],
+   "score": 67.6,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "65% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -306,48 +380,22 @@
    "url": "https://www.ebay.ca/itm/398391311672?hash=item5cc1f8fd38%3Ag%3ATg8AAeSwK7pqpupq&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 89.99,
    "comp_median": 199.0,
-   "comps": 25,
+   "comps": 27,
    "model_key": "camera-pentax-k1000",
    "model_name": "Pentax K1000",
    "condition": null,
    "reasons": [
-    "55% below the median of 25 comparable listings"
+    "55% below the median of 27 comparable listings"
    ],
    "score": 64.8,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "55% below the median of 25 comparable listings",
+    "55% below the median of 27 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-cfd0fe23d9",
-   "title": "Nikon FE 3696599 Chrome 35mm SLR Film Camera w/ Lens Untested Made In Japan",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/237161578168?hash=item3737ee7eb8%3Ag%3AY2YAAeSwv%7EFq6io1&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 212.5,
-   "comp_median": 399.0,
-   "comps": 7,
-   "model_key": "camera-nikon-fe",
-   "model_name": "Nikon FE",
-   "condition": null,
-   "reasons": [
-    "47% below the median of 7 comparable listings",
-    "price dropped 15% (was $250)"
-   ],
-   "score": 62.7,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "47% below the median of 7 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -356,73 +404,23 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/237078403796?hash=item3732f95ad4%3Ag%3ArPEAAeSwZBRqrtOB&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 75.0,
-   "comp_median": 157.49,
+   "comp_median": 148.74,
    "comps": 15,
    "model_key": "camera-pentax-spotmatic",
    "model_name": "Pentax SPOTMATIC",
    "condition": null,
    "reasons": [
-    "52% below the median of 15 comparable listings"
+    "50% below the median of 15 comparable listings"
    ],
-   "score": 62.4,
+   "score": 59.6,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "52% below the median of 15 comparable listings",
+    "50% below the median of 15 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-1f890b106a",
-   "title": "Pentax Spotmatic SP F (Asahi) M42 Mount 35mm Camera Body Tested Chrome",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/800860726910?hash=itemba7704e67e%3Ag%3ADgAAAeSwc8Nq5m9w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 79.99,
-   "comp_median": 157.49,
-   "comps": 15,
-   "model_key": "camera-pentax-spotmatic",
-   "model_name": "Pentax SPOTMATIC",
-   "condition": null,
-   "reasons": [
-    "49% below the median of 15 comparable listings"
-   ],
-   "score": 59.2,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "49% below the median of 15 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-1267ab35af",
-   "title": "Nikon D90 12.3MP Digital SLR DSLR Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/227594662974?hash=item34fdb2f43e%3Ag%3A26gAAeSwxF9q6Qcs&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 140.19,
-   "comp_median": 274.0,
-   "comps": 10,
-   "model_key": "camera-nikon-d90",
-   "model_name": "Nikon D90",
-   "condition": null,
-   "reasons": [
-    "49% below the median of 10 comparable listings"
-   ],
-   "score": 58.8,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "49% below the median of 10 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -431,7 +429,7 @@
    "dealer": "Beau Photo",
    "url": "https://www.beauphoto.com/product/used-leitz-leica-canada-summicron-m-90mm-f2/",
    "price_cad": 1000.0,
-   "comp_median": 2203.3,
+   "comp_median": 2213.63,
    "comps": 4,
    "model_key": "lens-leica-leica-m-90mm-f2",
    "model_name": "Leica 90mm f/2 (Leica M)",
@@ -439,7 +437,7 @@
    "reasons": [
     "55% below the median of 4 comparable listings"
    ],
-   "score": 58.6,
+   "score": 58.8,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -447,7 +445,57 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-1267ab35af",
+   "title": "Nikon D90 12.3MP Digital SLR DSLR Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/227594662974?hash=item34fdb2f43e%3Ag%3A26gAAeSwxF9q6Qcs&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 141.28,
+   "comp_median": 274.0,
+   "comps": 10,
+   "model_key": "camera-nikon-d90",
+   "model_name": "Nikon D90",
+   "condition": null,
+   "reasons": [
+    "48% below the median of 10 comparable listings"
+   ],
+   "score": 58.4,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "48% below the median of 10 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-c59fa7356c",
+   "title": "Pentax K1000 35mm Film Camera - With 70-210mm Zoom Lens - Tested, Working",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/198762510905?hash=item2e472b3a39%3Ag%3Ah5wAAeSwvQ1q5jp7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 119.99,
+   "comp_median": 199.0,
+   "comps": 27,
+   "model_key": "camera-pentax-k1000",
+   "model_name": "Pentax K1000",
+   "condition": null,
+   "reasons": [
+    "40% below the median of 27 comparable listings"
+   ],
+   "score": 57.7,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "40% below the median of 27 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -472,32 +520,57 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-5bb3254e40",
-   "title": "Canon Digital Camera Powershot A720 IS 8.0MP Silver — TESTED AND WORKING See Pic",
+   "id": "ebay-1f890b106a",
+   "title": "Pentax Spotmatic SP F (Asahi) M42 Mount 35mm Camera Body Tested Chrome",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/940026648007?hash=itemdaddf455c7%3Ag%3AY6UAAeSwUTNq1qwl&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 75.0,
-   "comp_median": 144.29,
-   "comps": 8,
-   "model_key": "camera-canon-powershota720",
-   "model_name": "Canon POWERSHOTA720",
+   "url": "https://www.ebay.ca/itm/800860726910?hash=itemba7704e67e%3Ag%3ADgAAAeSwc8Nq5m9w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 79.99,
+   "comp_median": 148.74,
+   "comps": 15,
+   "model_key": "camera-pentax-spotmatic",
+   "model_name": "Pentax SPOTMATIC",
    "condition": null,
    "reasons": [
-    "48% below the median of 8 comparable listings"
+    "46% below the median of 15 comparable listings"
    ],
-   "score": 56.0,
+   "score": 56.2,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "48% below the median of 8 comparable listings",
+    "46% below the median of 15 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-6191180e37",
+   "title": "Nikon D7000 16.2MP Digital SLR DSLR Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/366790935965?hash=item556671859d%3Ag%3AICMAAeSwxeZq7jIQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 274.99,
+   "comp_median": 495.0,
+   "comps": 3,
+   "model_key": "camera-nikon-d7000",
+   "model_name": "Nikon D7000",
+   "condition": null,
+   "reasons": [
+    "44% below the median of 3 comparable listings"
+   ],
+   "score": 55.4,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "44% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -522,59 +595,83 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-c90a61802c",
-   "title": "Fujifilm GF 100-200MM F5.6R LM OIS WR",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/fujifilm-usage-9-fujifilm-gf-100-200mm-f56r-lm-ois-wr-u101503",
-   "price_cad": 1299.0,
-   "comp_median": 1832.5,
-   "comps": 6,
-   "model_key": "lens-fujifilm-fujifilm-g-100-200mm-f5_6-lm_stab",
-   "model_name": "Fujifilm 100-200mm f/5.6 LM STAB (Fujifilm G)",
-   "condition": "Excellent",
+   "id": "ebay-5bb3254e40",
+   "title": "Canon Digital Camera Powershot A720 IS 8.0MP Silver — TESTED AND WORKING See Pic",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/940026648007?hash=itemdaddf455c7%3Ag%3AY6UAAeSwUTNq1qwl&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 75.0,
+   "comp_median": 140.16,
+   "comps": 8,
+   "model_key": "camera-canon-powershota720",
+   "model_name": "Canon POWERSHOTA720",
+   "condition": null,
    "reasons": [
-    "29% below the median of 6 comparable listings",
-    "price dropped 32% (was $1,899)"
+    "46% below the median of 8 comparable listings"
    ],
-   "score": 54.1,
+   "score": 54.5,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "29% below the median of 6 comparable listings",
-    "48% of the new price ($2,700); used ones this age typically sell around 75%",
+    "46% below the median of 8 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-d258f992a0",
-   "title": "Asahi PENTAX Spotmatic SP SLR Camera With Takumar 50mm 1:2/55 Lens",
+   "id": "ebay-d18827e4f3",
+   "title": "Canon AE-1 35mm SLR Film Camera w/ Canon FD 50mm f/1.8 S.C. Lens",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/278389553830?hash=item40d14f7aa6%3Ag%3AqC8AAeSw7fFqrnRg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 89.99,
-   "comp_median": 157.49,
-   "comps": 15,
-   "model_key": "camera-pentax-spotmatic",
-   "model_name": "Pentax SPOTMATIC",
+   "url": "https://www.ebay.ca/itm/128158031604?hash=item1dd6d05ef4%3Ag%3A%7EN4AAeSwlyRqxErj&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 203.99,
+   "comp_median": 316.21,
+   "comps": 32,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
    "condition": null,
    "reasons": [
-    "43% below the median of 15 comparable listings"
+    "35% below the median of 32 comparable listings",
+    "price dropped 15% (was $240)"
    ],
-   "score": 52.9,
+   "score": 54.5,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "43% below the median of 15 comparable listings",
+    "35% below the median of 32 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-cfd0fe23d9",
+   "title": "Nikon FE 3696599 Chrome 35mm SLR Film Camera w/ Lens Untested Made In Japan",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/237161578168?hash=item3737ee7eb8%3Ag%3AY2YAAeSwv%7EFq6io1&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 212.5,
+   "comp_median": 399.0,
+   "comps": 7,
+   "model_key": "camera-nikon-fe",
+   "model_name": "Nikon FE",
+   "condition": null,
+   "reasons": [
+    "47% below the median of 7 comparable listings"
+   ],
+   "score": 53.7,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "47% below the median of 7 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -599,7 +696,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -624,7 +721,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -649,7 +746,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -674,7 +771,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -700,33 +797,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-989e081ea2",
-   "title": "Canon PowerShot ELPH 120 IS Blue",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/800885747697?hash=itemba7882aff1%3Ag%3AxzgAAeSw%7EBxq7hgs&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 199.98,
-   "comp_median": 299.99,
-   "comps": 37,
-   "model_key": "camera-canon-powershotelph",
-   "model_name": "Canon POWERSHOTELPH",
-   "condition": null,
-   "reasons": [
-    "33% below the median of 37 comparable listings"
-   ],
-   "score": 51.3,
-   "is_new": true,
-   "deal_score": 100,
-   "score_why": [
-    "33% below the median of 37 comparable listings",
-    "38% of the new price ($529); used ones this age typically sell around 75%",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -751,7 +822,57 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-55c907e378",
+   "title": "Canon EOS 5DS R",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-5ds-r-u108034",
+   "price_cad": 799.0,
+   "comp_median": 1500.0,
+   "comps": 3,
+   "model_key": "camera-canon-5ds",
+   "model_name": "Canon 5DS",
+   "condition": "Good",
+   "reasons": [
+    "47% below the median of 3 comparable listings"
+   ],
+   "score": 49.7,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "47% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-d258f992a0",
+   "title": "Asahi PENTAX Spotmatic SP SLR Camera With Takumar 50mm 1:2/55 Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/278389553830?hash=item40d14f7aa6%3Ag%3AqC8AAeSw7fFqrnRg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 89.99,
+   "comp_median": 148.74,
+   "comps": 15,
+   "model_key": "camera-pentax-spotmatic",
+   "model_name": "Pentax SPOTMATIC",
+   "condition": null,
+   "reasons": [
+    "39% below the median of 15 comparable listings"
+   ],
+   "score": 49.5,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "39% below the median of 15 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -776,7 +897,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-c6280abd34",
+   "title": "LEICA 90F2.8 R 3 CAM SER.7",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 595.0,
+   "comp_median": 1082.22,
+   "comps": 4,
+   "model_key": "lens-leica-leica-m-90mm-f2_8",
+   "model_name": "Leica 90mm f/2.8 (Leica M)",
+   "condition": null,
+   "reasons": [
+    "45% below the median of 4 comparable listings"
+   ],
+   "score": 49.0,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "45% below the median of 4 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -801,32 +947,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "downtowncamera-c6280abd34",
-   "title": "LEICA 90F2.8 R 3 CAM SER.7",
-   "dealer": "Downtown Camera",
-   "url": "https://downtowncamera.com/used-equipment",
-   "price_cad": 595.0,
-   "comp_median": 1077.35,
-   "comps": 4,
-   "model_key": "lens-leica-leica-m-90mm-f2_8",
-   "model_name": "Leica 90mm f/2.8 (Leica M)",
-   "condition": null,
-   "reasons": [
-    "45% below the median of 4 comparable listings"
-   ],
-   "score": 48.8,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "45% below the median of 4 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -851,7 +972,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -860,7 +981,7 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/137748452162?hash=item2012729342%3Ag%3AuMMAAeSwN55qrDTr&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 195.0,
-   "comp_median": 315.39,
+   "comp_median": 316.21,
    "comps": 32,
    "model_key": "camera-canon-ae1",
    "model_name": "Canon AE1",
@@ -868,7 +989,7 @@
    "reasons": [
     "38% below the median of 32 comparable listings"
    ],
-   "score": 48.2,
+   "score": 48.3,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -876,7 +997,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -901,7 +1022,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -926,7 +1047,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -935,7 +1056,7 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/920097692519?hash=itemd63a189b67%3Ag%3AnlYAAeSw2g5q6NIC&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 109.99,
-   "comp_median": 196.25,
+   "comp_median": 197.78,
    "comps": 3,
    "model_key": "camera-minolta-maxxum7000",
    "model_name": "Minolta MAXXUM7000",
@@ -943,7 +1064,7 @@
    "reasons": [
     "44% below the median of 3 comparable listings"
    ],
-   "score": 47.0,
+   "score": 47.4,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -951,57 +1072,33 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-3dd77beba7",
-   "title": "Pentax Spotmatic SP ASAHI 35mm SLR Film Camera - Body only",
+   "id": "ebay-9406a33654",
+   "title": "Canon EOS Digital Rebel XTi Black Digital SLR Camera",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/366681740079?hash=item555fef532f%3Ag%3ARcsAAeSwdo1qsKtG&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 100.0,
-   "comp_median": 157.49,
-   "comps": 15,
-   "model_key": "camera-pentax-spotmatic",
-   "model_name": "Pentax SPOTMATIC",
+   "url": "https://www.ebay.ca/itm/407314134881?hash=item5ed5d07761%3Ag%3ACWYAAeSwUdlq3S7t&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 80.0,
+   "comp_median": 119.0,
+   "comps": 7,
+   "model_key": "camera-canon-rebelxti",
+   "model_name": "Canon REBELXTI",
    "condition": null,
    "reasons": [
-    "37% below the median of 15 comparable listings"
-   ],
-   "score": 46.5,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "37% below the median of 15 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-5571d9dca8",
-   "title": "Nikon AF 50mm f/1.4 D",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-7-nikon-af-50mm-f-14-d-u108128",
-   "price_cad": 99.0,
-   "comp_median": 175.0,
-   "comps": 3,
-   "model_key": "lens-nikon-nikon-f-50mm-f1_4-afd",
-   "model_name": "Nikon 50mm f/1.4 AFD (Nikon F)",
-   "condition": "Fair",
-   "reasons": [
-    "43% below the median of 3 comparable listings"
+    "33% below the median of 7 comparable listings",
+    "price dropped 11% (was $90)"
    ],
    "score": 46.4,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "43% below the median of 3 comparable listings",
+    "33% below the median of 7 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1026,7 +1123,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1051,32 +1148,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-0572ae23c0",
-   "title": "Canon 50mm f1.8 (BGN) FDn used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907772",
-   "price_cad": 47.99,
-   "comp_median": 72.5,
-   "comps": 10,
-   "model_key": "lens-canon-canon-fd-50mm-f1_8",
-   "model_name": "Canon 50mm f/1.8 (Canon FD)",
-   "condition": "Fair",
+   "id": "ebay-08b1ea68e2",
+   "title": "Minolta MD Rokkor-X 1:1.4 f=50mm Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/800799943623?hash=itemba73656bc7%3Ag%3AtEIAAeSwu%7E1q0ZCf&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 60.0,
+   "comp_median": 98.88,
+   "comps": 5,
+   "model_key": "lens-minolta-minolta-md-50mm-f1_4",
+   "model_name": "Minolta 50mm f/1.4 (Minolta MD)",
+   "condition": null,
    "reasons": [
-    "34% below the median of 10 comparable listings"
+    "39% below the median of 5 comparable listings"
    ],
-   "score": 43.8,
+   "score": 44.3,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "34% below the median of 10 comparable listings",
+    "39% below the median of 5 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1101,32 +1198,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-f1e5a1cd2d",
-   "title": "Canon EF 75-300mm f/4-5.6 III",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-75-300mm-f-4-56-iii-u107815",
-   "price_cad": 69.0,
-   "comp_median": 103.66,
-   "comps": 19,
-   "model_key": "lens-canon-canon-ef-75-300mm-f4-5_6-iii",
-   "model_name": "Canon 75-300mm f/4-5.6 III (Canon EF)",
-   "condition": "Good",
+   "id": "ebay-3dd77beba7",
+   "title": "Pentax Spotmatic SP ASAHI 35mm SLR Film Camera - Body only",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/366681740079?hash=item555fef532f%3Ag%3ARcsAAeSwdo1qsKtG&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 100.0,
+   "comp_median": 148.74,
+   "comps": 15,
+   "model_key": "camera-pentax-spotmatic",
+   "model_name": "Pentax SPOTMATIC",
+   "condition": null,
    "reasons": [
-    "33% below the median of 19 comparable listings"
+    "33% below the median of 15 comparable listings"
    ],
-   "score": 43.4,
+   "score": 42.8,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "33% below the median of 19 comparable listings",
+    "33% below the median of 15 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1135,23 +1232,23 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/800860036234?hash=itemba76fa5c8a%3Ag%3A92MAAeSwRMlqrdzQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 149.75,
-   "comp_median": 224.99,
+   "comp_median": 220.0,
    "comps": 13,
    "model_key": "camera-canon-ae1program",
    "model_name": "Canon AE1PROGRAM",
    "condition": null,
    "reasons": [
-    "33% below the median of 13 comparable listings"
+    "32% below the median of 13 comparable listings"
    ],
-   "score": 43.4,
+   "score": 41.9,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "33% below the median of 13 comparable listings",
+    "32% below the median of 13 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1160,23 +1257,23 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/366681880841?hash=item555ff17909%3Ag%3ANrMAAeSwLB5qsMMI&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 149.99,
-   "comp_median": 224.99,
+   "comp_median": 220.0,
    "comps": 13,
    "model_key": "camera-canon-ae1program",
    "model_name": "Canon AE1PROGRAM",
    "condition": null,
    "reasons": [
-    "33% below the median of 13 comparable listings"
+    "32% below the median of 13 comparable listings"
    ],
-   "score": 43.3,
+   "score": 41.8,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "33% below the median of 13 comparable listings",
+    "32% below the median of 13 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1201,32 +1298,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-f05e7e6841",
-   "title": "Olympus Trip 100R 35mm Film Point & Shoot Camera 27mm Lens Tested Working",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/287659293619?hash=item42f9d47bb3%3Ag%3AHcEAAeSwSK9qKLmP&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 78.49,
-   "comp_median": 127.77,
-   "comps": 3,
-   "model_key": "lens-olympus-micro-four-thirds-35mm-f",
-   "model_name": "Olympus 35mm (Micro Four Thirds)",
-   "condition": null,
-   "reasons": [
-    "39% below the median of 3 comparable listings"
-   ],
-   "score": 41.6,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "39% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1252,74 +1324,49 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-ab7ae04681",
-   "title": "Asahi Pentax Super-Takumar 50mm f/1.4 M42 7-Element + Caps + 49mm Filter",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/298671432377?hash=item458a3462b9%3Ag%3ApjsAAeSwo-lqpubO&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 149.99,
-   "comp_median": 239.5,
-   "comps": 4,
-   "model_key": "lens-pentax-m42-50mm-f1_4",
-   "model_name": "Pentax 50mm f/1.4 (M42)",
-   "condition": null,
+   "id": "mcbain-0572ae23c0",
+   "title": "Canon 50mm f1.8 (BGN) FDn used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907772",
+   "price_cad": 47.99,
+   "comp_median": 69.99,
+   "comps": 11,
+   "model_key": "lens-canon-canon-fd-50mm-f1_8",
+   "model_name": "Canon 50mm f/1.8 (Canon FD)",
+   "condition": "Fair",
    "reasons": [
-    "37% below the median of 4 comparable listings"
+    "31% below the median of 11 comparable listings"
    ],
    "score": 41.4,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "37% below the median of 4 comparable listings",
+    "31% below the median of 11 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "mcbain-494419d856",
-   "title": "Canon 50mm f1.8 (BGN) FD used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907784",
-   "price_cad": 49.99,
-   "comp_median": 72.5,
-   "comps": 10,
-   "model_key": "lens-canon-canon-fd-50mm-f1_8",
-   "model_name": "Canon 50mm f/1.8 (Canon FD)",
-   "condition": "Fair",
-   "reasons": [
-    "31% below the median of 10 comparable listings"
-   ],
-   "score": 41.0,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "31% below the median of 10 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-df3522b7bd",
-   "title": "SMC Takumar 1:1.8/55mm Lens M42 Mount Used condition works well",
+   "id": "ebay-f05e7e6841",
+   "title": "Olympus Trip 100R 35mm Film Point & Shoot Camera 27mm Lens Tested Working",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/860113536030?hash=itemc842c3041e%3Ag%3AwjQAAeSwhENq64VW&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 70.0,
-   "comp_median": 112.14,
+   "url": "https://www.ebay.ca/itm/287659293619?hash=item42f9d47bb3%3Ag%3AHcEAAeSwSK9qKLmP&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 79.1,
+   "comp_median": 127.77,
    "comps": 3,
-   "model_key": "lens-pentax-pentax-k-55mm-f1_8",
-   "model_name": "Pentax 55mm f/1.8 (Pentax K)",
+   "model_key": "lens-olympus-micro-four-thirds-35mm-f",
+   "model_name": "Olympus 35mm (Micro Four Thirds)",
    "condition": null,
    "reasons": [
     "38% below the median of 3 comparable listings"
    ],
-   "score": 40.6,
+   "score": 41.1,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -1327,7 +1374,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1337,22 +1384,22 @@
    "url": "https://gosselinphoto.ca/products/sony-usage-7-sony-fe-28-70mm-f-35-56-oss-u107918",
    "price_cad": 139.0,
    "comp_median": 199.0,
-   "comps": 13,
+   "comps": 14,
    "model_key": "lens-sony-sony-e-28-70mm-f3_5-5_6-stab",
    "model_name": "Sony 28-70mm f/3.5-5.6 STAB (Sony E)",
    "condition": "Fair",
    "reasons": [
-    "30% below the median of 13 comparable listings"
+    "30% below the median of 14 comparable listings"
    ],
    "score": 40.2,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "30% below the median of 13 comparable listings",
+    "30% below the median of 14 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1377,7 +1424,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1402,32 +1449,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-527381ce06",
-   "title": "Canon EOS Rebel XTi 10.1MP Digital SLR DSLR Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/137846458578?hash=item20184a08d2%3Ag%3A0fIAAeSwP75q0RxL&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 79.99,
-   "comp_median": 119.0,
-   "comps": 7,
-   "model_key": "camera-canon-rebelxti",
-   "model_name": "Canon REBELXTI",
-   "condition": null,
-   "reasons": [
-    "33% below the median of 7 comparable listings"
-   ],
-   "score": 39.8,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "33% below the median of 7 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1437,22 +1459,22 @@
    "url": "https://www.ebay.ca/itm/820307151392?hash=itembefe1dca20%3Ag%3A6ZEAAeSwkVdq6Kwt&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 140.0,
    "comp_median": 199.0,
-   "comps": 25,
+   "comps": 27,
    "model_key": "camera-pentax-k1000",
    "model_name": "Pentax K1000",
    "condition": null,
    "reasons": [
-    "30% below the median of 25 comparable listings"
+    "30% below the median of 27 comparable listings"
    ],
    "score": 39.6,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
-    "30% below the median of 25 comparable listings",
+    "30% below the median of 27 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1477,57 +1499,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-045877cf25",
-   "title": "Canon AE-1 with the Canon FD 24mm f/2.8 \"No Tariffs\"",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/188984726385?hash=item2c005e1371%3Ag%3A-ysAAeSwoZtqtvG7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 224.3,
-   "comp_median": 315.39,
-   "comps": 32,
-   "model_key": "camera-canon-ae1",
-   "model_name": "Canon AE1",
-   "condition": null,
-   "reasons": [
-    "29% below the median of 32 comparable listings"
-   ],
-   "score": 38.9,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "29% below the median of 32 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-baa679e9da",
-   "title": "Asahi Pentax Spotmatic SP 35mm film Camera w/ 55mm f/2 Super Takumar lens CLA",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/327427829251?hash=item4c3c382e03%3Ag%3ABesAAeSwXUBqxa%7Em&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 112.14,
-   "comp_median": 157.49,
-   "comps": 15,
-   "model_key": "camera-pentax-spotmatic",
-   "model_name": "Pentax SPOTMATIC",
-   "condition": null,
-   "reasons": [
-    "29% below the median of 15 comparable listings"
-   ],
-   "score": 38.8,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "29% below the median of 15 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1536,7 +1508,7 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/820076669032?hash=itembef060e868%3Ag%3AYfAAAeSwQUJql5d7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 224.99,
-   "comp_median": 315.39,
+   "comp_median": 316.21,
    "comps": 32,
    "model_key": "camera-canon-ae1",
    "model_name": "Canon AE1",
@@ -1544,7 +1516,7 @@
    "reasons": [
     "29% below the median of 32 comparable listings"
    ],
-   "score": 38.7,
+   "score": 38.8,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -1552,7 +1524,57 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "mcbain-494419d856",
+   "title": "Canon 50mm f1.8 (BGN) FD used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8907784",
+   "price_cad": 49.99,
+   "comp_median": 69.99,
+   "comps": 11,
+   "model_key": "lens-canon-canon-fd-50mm-f1_8",
+   "model_name": "Canon 50mm f/1.8 (Canon FD)",
+   "condition": "Fair",
+   "reasons": [
+    "29% below the median of 11 comparable listings"
+   ],
+   "score": 38.6,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "29% below the median of 11 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-045877cf25",
+   "title": "Canon AE-1 with the Canon FD 24mm f/2.8 \"No Tariffs\"",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/188984726385?hash=item2c005e1371%3Ag%3A-ysAAeSwoZtqtvG7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 226.05,
+   "comp_median": 316.21,
+   "comps": 32,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
+   "condition": null,
+   "reasons": [
+    "29% below the median of 32 comparable listings"
+   ],
+   "score": 38.5,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "29% below the median of 32 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1561,7 +1583,7 @@
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/336864610006?hash=item4e6eb206d6%3Ag%3AmzkAAeSwMFJq39cM&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 150.28,
-   "comp_median": 215.14,
+   "comp_median": 215.95,
    "comps": 8,
    "model_key": "camera-canon-rebelxs",
    "model_name": "Canon REBELXS",
@@ -1569,7 +1591,7 @@
    "reasons": [
     "30% below the median of 8 comparable listings"
    ],
-   "score": 38.1,
+   "score": 38.4,
    "is_new": false,
    "deal_score": 100,
    "score_why": [
@@ -1577,7 +1599,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1602,7 +1624,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1627,7 +1649,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1652,7 +1674,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1677,7 +1699,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1702,7 +1724,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1727,7 +1749,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1752,7 +1774,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1777,7 +1799,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1802,7 +1824,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1827,7 +1849,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1852,7 +1874,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1877,7 +1899,32 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-4b16d4d1b4",
+   "title": "Canon EOS 5DS R Digital Camera - Black",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/336879510150?hash=item4e6f956286%3Ag%3AWj8AAeSwIstq61B%7E&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 1050.0,
+   "comp_median": 1500.0,
+   "comps": 3,
+   "model_key": "camera-canon-5ds",
+   "model_name": "Canon 5DS",
+   "condition": null,
+   "reasons": [
+    "30% below the median of 3 comparable listings"
+   ],
+   "score": 33.0,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "30% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1902,32 +1949,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-6afbe29661",
-   "title": "Canon EOS Rebel T3 12.2MP Digital SLR DSLR With EF 50mm 1:1.8 ii",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/920102137069?hash=itemd63a5c6ced%3Ag%3Afr8AAeSwok1q6mU9&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 150.0,
-   "comp_median": 199.5,
-   "comps": 8,
-   "model_key": "camera-canon-rebelt3",
-   "model_name": "Canon REBELT3",
-   "condition": null,
-   "reasons": [
-    "25% below the median of 8 comparable listings"
-   ],
-   "score": 32.8,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "25% below the median of 8 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1952,7 +1974,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -1977,7 +1999,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "downtowncamera-0c5226d509",
+   "title": "LEICA M3 DS W/35F3.5 SUMMARON",
+   "dealer": "Downtown Camera",
+   "url": "https://downtowncamera.com/used-equipment",
+   "price_cad": 3400.0,
+   "comp_median": 4572.07,
+   "comps": 6,
+   "model_key": "camera-leica-m3",
+   "model_name": "Leica M3",
+   "condition": null,
+   "reasons": [
+    "26% below the median of 6 comparable listings"
+   ],
+   "score": 31.6,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "26% below the median of 6 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2002,32 +2049,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "downtowncamera-0c5226d509",
-   "title": "LEICA M3 DS W/35F3.5 SUMMARON",
-   "dealer": "Downtown Camera",
-   "url": "https://downtowncamera.com/used-equipment",
-   "price_cad": 3400.0,
-   "comp_median": 4550.3,
-   "comps": 6,
-   "model_key": "camera-leica-m3",
-   "model_name": "Leica M3",
-   "condition": null,
-   "reasons": [
-    "25% below the median of 6 comparable listings"
-   ],
-   "score": 31.3,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "25% below the median of 6 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2053,7 +2075,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2078,7 +2100,32 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-864b864504",
+   "title": "NIKON AF-S DX NIKKOR 55-200mm F4-5.6 G ED VR II Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/407343878799?hash=item5ed796528f%3Ag%3Ay%7E0AAeSw2qZq7YAf&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 79.87,
+   "comp_median": 109.99,
+   "comps": 3,
+   "model_key": "lens-nikon-nikon-f-55-200mm-f4-5_6-afs_dx_ii_stab",
+   "model_name": "Nikon 55-200mm f/4-5.6 AFS DX II STAB (Nikon F)",
+   "condition": null,
+   "reasons": [
+    "27% below the median of 3 comparable listings"
+   ],
+   "score": 30.4,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "27% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2103,7 +2150,33 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-7223d80214",
+   "title": "Sony FE 28-70mm f/3.5-5.6 OSS E-Mount Optical Steady Shot SEL2870 Zoom Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/137846463134?hash=item20184a1a9e%3Ag%3AQmoAAeSwfGRq7rYT&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 149.99,
+   "comp_median": 199.0,
+   "comps": 14,
+   "model_key": "lens-sony-sony-e-28-70mm-f3_5-5_6-stab",
+   "model_name": "Sony 28-70mm f/3.5-5.6 STAB (Sony E)",
+   "condition": null,
+   "reasons": [
+    "25% below the median of 14 comparable listings",
+    "price dropped 33% (was $225)"
+   ],
+   "score": 54.6,
+   "is_new": false,
+   "deal_score": 99,
+   "score_why": [
+    "25% below the median of 14 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2118,10 +2191,9 @@
    "model_name": "Fujifilm 100-200mm f/5.6 LM STAB (Fujifilm G)",
    "condition": "Good",
    "reasons": [
-    "40% below the median of 6 comparable listings",
-    "price dropped 31% (was $1,599)"
+    "40% below the median of 6 comparable listings"
    ],
-   "score": 64.8,
+   "score": 46.0,
    "is_new": false,
    "deal_score": 99,
    "score_why": [
@@ -2131,34 +2203,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-9c4c4c187e",
-   "title": "CANON RF 24-105mm F/4-7.1 IS STM",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-rf-24-105mm-f-4-71-is-stm-u108179",
-   "price_cad": 275.0,
-   "comp_median": 429.9,
-   "comps": 11,
-   "model_key": "lens-canon-canon-rf-24-105mm-f4-7_1-stab_stm",
-   "model_name": "Canon 24-105mm f/4-7.1 STAB STM (Canon RF)",
-   "condition": "Good",
-   "reasons": [
-    "36% below the median of 11 comparable listings"
-   ],
-   "score": 46.0,
-   "is_new": false,
-   "deal_score": 99,
-   "score_why": [
-    "36% below the median of 11 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "47% of the new price ($579); used ones this age typically sell around 75%",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2185,34 +2230,34 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-51c3944ff5",
-   "title": "Canon EF-S 10-18mm f/4.5-5.6 IS STM",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-9-canon-ef-s-10-18mm-f-45-56-is-stm-u108080",
-   "price_cad": 139.0,
-   "comp_median": 199.5,
-   "comps": 6,
-   "model_key": "lens-canon-canon-ef-10-18mm-f4_5-5_6-stab_stm",
-   "model_name": "Canon 10-18mm f/4.5-5.6 STAB STM (Canon EF)",
-   "condition": "Excellent",
+   "id": "ebay-630129bf8a",
+   "title": "Fujifilm XF 10-24mm f/4 R OIS - X-mount - Like New",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/800878000056?hash=itemba780c77b8%3Ag%3AN6kAAeSwV0xq3k6p&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 429.0,
+   "comp_median": 627.41,
+   "comps": 8,
+   "model_key": "lens-fujifilm-fujifilm-x-10-24mm-f4-stab",
+   "model_name": "Fujifilm 10-24mm f/4 STAB (Fujifilm X)",
+   "condition": "Like New",
    "reasons": [
-    "30% below the median of 6 comparable listings"
+    "32% below the median of 8 comparable listings"
    ],
-   "score": 36.3,
+   "score": 39.6,
    "is_new": false,
    "deal_score": 99,
    "score_why": [
-    "30% below the median of 6 comparable listings",
+    "32% below the median of 8 comparable listings",
     "the lowest price we've recorded for this model in 90 days",
-    "35% of the new price ($399); used ones this age typically sell around 75%",
+    "32% of the new price ($1,349); used ones this age typically sell around 75%",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2239,7 +2284,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2266,86 +2311,109 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-9406a33654",
-   "title": "Canon EOS Digital Rebel XTi Black Digital SLR Camera",
+   "id": "ebay-6afbe29661",
+   "title": "Canon EOS Rebel T3 12.2MP Digital SLR DSLR With EF 50mm 1:1.8 ii",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/407314134881?hash=item5ed5d07761%3Ag%3ACWYAAeSwUdlq3S7t&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 90.0,
-   "comp_median": 119.0,
-   "comps": 7,
-   "model_key": "camera-canon-rebelxti",
-   "model_name": "Canon REBELXTI",
+   "url": "https://www.ebay.ca/itm/920102137069?hash=itemd63a5c6ced%3Ag%3Afr8AAeSwok1q6mU9&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 150.0,
+   "comp_median": 199.0,
+   "comps": 9,
+   "model_key": "camera-canon-rebelt3",
+   "model_name": "Canon REBELT3",
    "condition": null,
    "reasons": [
-    "24% below the median of 7 comparable listings"
+    "25% below the median of 9 comparable listings"
    ],
-   "score": 31.4,
+   "score": 33.6,
    "is_new": false,
    "deal_score": 99,
    "score_why": [
-    "24% below the median of 7 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
+    "25% below the median of 9 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "gosselin-c8f6a4588e",
-   "title": "Canon EF-M 55-200mm f/4.5-6.3 IS STM",
+   "id": "ebay-7918062796",
+   "title": "Canon PowerShot SD1300 IS ELPH 12.1MP Digital Camera Brown",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/168814872802?hash=item274e2688e2%3Ag%3AR5EAAeSwkU5q3YZ3&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 210.0,
+   "comp_median": 278.24,
+   "comps": 4,
+   "model_key": "camera-canon-powershotsd1300",
+   "model_name": "Canon POWERSHOTSD1300",
+   "condition": null,
+   "reasons": [
+    "25% below the median of 4 comparable listings"
+   ],
+   "score": 28.5,
+   "is_new": false,
+   "deal_score": 99,
+   "score_why": [
+    "25% below the median of 4 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-b3bc302379",
+   "title": "Canon EOS Rebel XS 35mm Film Camera with Sigma UC Zoom 70-210mm - TESTED",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/257810998972?hash=item3c06bba6bc%3Ag%3AA8QAAeSwmedq2YXv&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 69.99,
+   "comp_median": 215.95,
+   "comps": 8,
+   "model_key": "camera-canon-rebelxs",
+   "model_name": "Canon REBELXS",
+   "condition": null,
+   "reasons": [
+    "68% below the median of 8 comparable listings"
+   ],
+   "score": 75.6,
+   "is_new": false,
+   "deal_score": 98,
+   "score_why": [
+    "68% below the median of 8 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "gosselin-d46fb5b47e",
+   "title": "Canon EOS Rebel t3i + 18-55mm",
    "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-m-55-200mm-f-45-63-is-stm-u102491",
-   "price_cad": 99.99,
-   "comp_median": 279.0,
-   "comps": 3,
-   "model_key": "lens-canon-canon-ef-m-55-200mm-f4_5-6_3-stab_stm",
-   "model_name": "Canon 55-200mm f/4.5-6.3 STAB STM (Canon EF-M)",
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-rebel-t3i-18-55mm-u108240",
+   "price_cad": 125.0,
+   "comp_median": 306.4,
+   "comps": 7,
+   "model_key": "camera-canon-rebelt3i",
+   "model_name": "Canon REBELT3I",
    "condition": "Good",
    "reasons": [
-    "64% below the median of 3 comparable listings",
-    "price dropped 67% (was $299)"
+    "59% below the median of 7 comparable listings"
    ],
-   "score": 107.1,
-   "is_new": false,
+   "score": 74.2,
+   "is_new": true,
    "deal_score": 98,
    "score_why": [
-    "64% below the median of 3 comparable listings",
+    "59% below the median of 7 comparable listings",
     "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
+    "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-8e1b2fa8f6",
-   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
-   "price_cad": 269.0,
-   "comp_median": 659.5,
-   "comps": 8,
-   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
-   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
-   "condition": "Fair",
-   "reasons": [
-    "59% below the median of 8 comparable listings",
-    "price dropped 46% (was $499)"
-   ],
-   "score": 94.9,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "59% below the median of 8 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
@@ -2360,10 +2428,9 @@
    "model_name": "Leica 50mm f/2 (Leica M)",
    "condition": "Excellent",
    "reasons": [
-    "68% below the median of 6 comparable listings",
-    "price dropped 13% (was $749)"
+    "68% below the median of 6 comparable listings"
    ],
-   "score": 82.0,
+   "score": 74.0,
    "is_new": false,
    "deal_score": 98,
    "score_why": [
@@ -2372,111 +2439,33 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   },
   {
    "type": "listing",
-   "id": "ebay-b3bc302379",
-   "title": "Canon EOS Rebel XS 35mm Film Camera with Sigma UC Zoom 70-210mm - TESTED",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/257810998972?hash=item3c06bba6bc%3Ag%3AA8QAAeSwmedq2YXv&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 69.99,
-   "comp_median": 215.14,
-   "comps": 8,
-   "model_key": "camera-canon-rebelxs",
-   "model_name": "Canon REBELXS",
-   "condition": null,
-   "reasons": [
-    "67% below the median of 8 comparable listings"
-   ],
-   "score": 75.5,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "67% below the median of 8 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-a1ddf85f29",
-   "title": "Nikon D5000 + AF-S 18-55mm f/3.5-5.6G \"VR\"",
+   "id": "gosselin-8e1b2fa8f6",
+   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
    "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/nikon-usage-7-nikon-d5000-af-s-18-55mm-f-35-56g-vr-u108094",
-   "price_cad": 99.99,
-   "comp_median": 250.44,
-   "comps": 4,
-   "model_key": "camera-nikon-d5000",
-   "model_name": "Nikon D5000",
+   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
+   "price_cad": 269.0,
+   "comp_median": 659.5,
+   "comps": 8,
+   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
+   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
    "condition": "Fair",
    "reasons": [
-    "60% below the median of 4 comparable listings"
+    "59% below the median of 8 comparable listings"
    ],
-   "score": 64.1,
+   "score": 67.2,
    "is_new": false,
    "deal_score": 98,
    "score_why": [
-    "60% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-6837607fcc",
-   "title": "Canon EF 100-400mm f/4.5-5.6 L IS USM",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-100-400mm-f-45-56-l-is-usm-u108224",
-   "price_cad": 419.0,
-   "comp_median": 934.5,
-   "comps": 4,
-   "model_key": "lens-canon-canon-ef-100-400mm-f4_5-5_6-l_stab",
-   "model_name": "Canon 100-400mm f/4.5-5.6 L STAB (Canon EF)",
-   "condition": "Good",
-   "reasons": [
-    "55% below the median of 4 comparable listings"
-   ],
-   "score": 59.2,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "55% below the median of 4 comparable listings",
+    "59% below the median of 8 comparable listings",
     "the lowest price we've recorded for this model in 90 days",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "mcbain-7bbeb876f4",
-   "title": "Canon 6D II DSLR Camera Body - Used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905029",
-   "price_cad": 449.99,
-   "comp_median": 997.0,
-   "comps": 4,
-   "model_key": "camera-canon-6d-ii",
-   "model_name": "Canon 6D II",
-   "condition": null,
-   "reasons": [
-    "55% below the median of 4 comparable listings"
-   ],
-   "score": 58.9,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "55% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-06T18:36:58+00:00"
+   "fetched_at": "2026-11-07T17:04:27+00:00"
   }
  ],
  "rules": {

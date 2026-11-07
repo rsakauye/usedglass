@@ -533,5 +533,31 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-06T18:36:58+00:00",
   "date": "2026-11-06"
+ },
+ {
+  "type": "listing",
+  "id": "mcbain-79aa3d5fbc",
+  "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U9901161",
+  "price_cad": 50.0,
+  "comp_median": 136.97,
+  "comps": 6,
+  "model_key": "lens-pentax-pentax-k-28mm-f2_8",
+  "model_name": "Pentax 28mm f/2.8 (Pentax K)",
+  "condition": null,
+  "reasons": [
+   "63% below the median of 6 comparable listings"
+  ],
+  "score": 77.5,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "63% below the median of 6 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-07T17:04:27+00:00",
+  "date": "2026-11-07"
  }
 ]
