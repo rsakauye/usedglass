@@ -5,6 +5,7 @@ import { CATEGORIES } from '../lib/mykit-core.js';
 import { KIT_CSS } from '../lib/mykit-ui.js';
 import { SIZES } from '../lib/mykit-card.js';
 import { CLASSES, CLASS_CSS, MAX_CLASSES } from '../lib/classes.js';
+const kitUrl = new URL(u('kit/'), Astro.site).href;
 const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Nikon Z', 'Sony E', 'Sony A', 'Fujifilm X', 'Fujifilm G', 'L-Mount', 'Micro Four Thirds', 'Four Thirds', 'Pentax K', 'Leica M', 'Leica R', 'M42', 'Minolta MD', 'Olympus OM', 'Contax/Yashica', 'Hasselblad V', 'Hasselblad XCD', 'Mamiya 645', 'Mamiya RB/RZ', 'Fixed Lens'];
 ---
 <Base title="My kit: wish lists, kit builder and kit cards" description="Build camera kits and wish lists with current Canadian used and new prices, mount checks, share links and a My kit image for your email signature. Saved only in your browser.">
@@ -102,7 +103,7 @@ const mounts = ['Canon EF', 'Canon RF', 'Canon EF-M', 'Canon FD', 'Nikon F', 'Ni
   <p class="muted" id="mk-io-msg"></p>
   <p class="muted">Prices refresh daily and change quickly, so always confirm on the dealer's site. Mount checks use simple rules and can't know about every adapter, crop-sensor coverage or firmware quirk.</p>
 
-  <script define:vars={{ base: u(''), dataUrl: u('kit-data.json'), kitUrl: new URL(u('kit/'), Astro.site).href }}>
+  <script define:vars={{ base: u(''), dataUrl: u('kit-data.json'), kitUrl }}>
     window.__mk = { base, dataUrl, kitUrl };
   </script>
   <script>
