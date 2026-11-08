@@ -5,6 +5,7 @@ import path from 'node:path';
 import { listings, models, u } from '../lib/data.js';
 import { classifyAdapter, brandOf, conditionOf } from '../lib/adapt.js';
 import { AMAZON_TAG, SPONSORED_REL } from '../lib/affiliate.js';
+import { safeJson } from '../lib/safeJson.js';
 
 const DATA_DIR = process.env.DATA_DIR || path.resolve(process.cwd(), '..', 'data');
 const mdata = JSON.parse(fs.readFileSync(path.join(DATA_DIR, 'mounts.json'), 'utf8'));
@@ -57,12 +58,11 @@ const gear = Object.values(models).filter((m) => m.mount && (m.category === 'cam
   </details>
   <p class="muted">Simplified rules: they can't know every lens, firmware or adapter quirk. Always check the adapter maker's compatibility list before you buy. Amazon links are affiliate links.</p>
 
-  <script define:vars={{ mounts, adapters, gear, tag: AMAZON_TAG, rel: SPONSORED_REL, myUrl: u('my/') }}>
-    window.__ad = { mounts, adapters, gear, tag, rel, myUrl };
-  </script>
+  <!-- Dealer listing titles reach this page, so the data goes in as escaped JSON, not through define:vars. -->
+  <script is:inline type="application/json" id="ad-data" set:html={safeJson({ mounts, adapters, gear, tag: AMAZON_TAG, rel: SPONSORED_REL, myUrl: u('my/') })}></script>
   <script>
     import { verdict } from '../lib/adapt.js';
-    const { mounts, adapters, gear, tag, rel } = (window as any).__ad;
+    const { mounts, adapters, gear, tag, rel } = JSON.parse((document.getElementById('ad-data') as any).textContent);
     const $ = (id: string) => document.getElementById(id) as any;
     const esc = (s: any) => String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' } as any)[c]);
     const money = (v: number) => '$' + v.toLocaleString('en-CA', { minimumFractionDigits: v % 1 ? 2 : 0, maximumFractionDigits: 2 });
