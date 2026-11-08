@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-07T17:04:27+00:00",
+   "as_of": "2026-11-08T03:23:21+00:00",
    "rate": 1.4113,
    "goods_cad": 43.06,
    "ship_cad": 9.1,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-07T17:04:27+00:00",
+   "as_of": "2026-11-08T03:23:21+00:00",
    "rate": 1.4113,
    "goods_cad": 35.55,
    "ship_cad": 9.1,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-07T17:04:27+00:00",
+   "as_of": "2026-11-08T03:23:21+00:00",
    "rate": 1.4113,
    "goods_cad": 37.34,
    "ship_cad": 9.1,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-07T17:04:27+00:00",
+   "as_of": "2026-11-08T03:23:21+00:00",
    "rate": 1.4113,
    "goods_cad": 53.63,
    "ship_cad": 15.43,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-07T17:04:27+00:00",
+   "as_of": "2026-11-08T03:23:21+00:00",
    "rate": 1.4113,
    "goods_cad": 15.52,
    "ship_cad": 0.0,
@@ -167,22 +167,10 @@
    "price_cad": 98.6,
    "deal_score": 100,
    "score_why": [
-    "69% below the median of 32 comparable listings",
+    "67% below the median of 32 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Canon AE1"
-  },
-  {
-   "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U9901161",
-   "price_cad": 50.0,
-   "deal_score": 100,
-   "score_why": [
-    "63% below the median of 6 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Pentax 28mm f/2.8 (Pentax K)"
   },
   {
    "title": "Canon EOS Rebel XS Black EF-S 18-55mm IS Lens Kit - Black",
@@ -197,16 +185,16 @@
    "model_name": "Canon REBELXS"
   },
   {
-   "title": "Canon EF 50mm f/1.4",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-50mm-f-14-u108226",
-   "price_cad": 99.0,
+   "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U9901161",
+   "price_cad": 50.0,
    "deal_score": 100,
    "score_why": [
-    "55% below the median of 9 comparable listings",
+    "63% below the median of 6 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Canon 50mm f/1.4 (Canon EF)"
+   "model_name": "Pentax 28mm f/2.8 (Pentax K)"
   },
   {
    "title": "Canon 28mm f2.8 S.C.(BGN) FD used",
@@ -221,18 +209,6 @@
    "model_name": "Canon 28mm f/2.8 (Canon FD)"
   },
   {
-   "title": "Canon AE-1 35MM Film Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/206515457076?hash=item301547cc34%3Ag%3AN0QAAeSwGGJqjhBc&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 129.99,
-   "deal_score": 100,
-   "score_why": [
-    "59% below the median of 32 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon AE1"
-  },
-  {
    "title": "Nikon D7000",
    "dealer": "Gosselin Photo",
    "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-d7000-u107842",
@@ -245,6 +221,18 @@
    "model_name": "Nikon D7000"
   },
   {
+   "title": "Canon AE-1 35MM Film Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/206515457076?hash=item301547cc34%3Ag%3AN0QAAeSwGGJqjhBc&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 129.99,
+   "deal_score": 100,
+   "score_why": [
+    "56% below the median of 32 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Canon AE1"
+  },
+  {
    "title": "Pentax K1000 SE 35mm SLR Film Camera + 50mm f/1.7 And 80-200mm f/4.5 Lenses READ",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/398391311672?hash=item5cc1f8fd38%3Ag%3ATg8AAeSwK7pqpupq&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
@@ -255,6 +243,18 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Pentax K1000"
+  },
+  {
+   "title": "Canon EF 50mm f/1.4",
+   "dealer": "Gosselin Photo",
+   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-50mm-f-14-u108226",
+   "price_cad": 99.0,
+   "deal_score": 100,
+   "score_why": [
+    "55% below the median of 9 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Canon 50mm f/1.4 (Canon EF)"
   },
   {
    "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",

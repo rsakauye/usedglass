@@ -536,28 +536,29 @@
  },
  {
   "type": "listing",
-  "id": "mcbain-79aa3d5fbc",
-  "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
-  "dealer": "McBain Camera",
-  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U9901161",
-  "price_cad": 50.0,
-  "comp_median": 136.97,
-  "comps": 6,
-  "model_key": "lens-pentax-pentax-k-28mm-f2_8",
-  "model_name": "Pentax 28mm f/2.8 (Pentax K)",
+  "id": "ebay-3dc0189cd7",
+  "title": "Canon PowerShot ELPH 110 HS 16.1 MP CMOS Digital Camera, Black",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/237170084460?hash=item3738704a6c%3Ag%3AZ6YAAeSwQRBq73ZY&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 199.99,
+  "comp_median": 295.0,
+  "comps": 39,
+  "model_key": "camera-canon-powershotelph",
+  "model_name": "Canon POWERSHOTELPH",
   "condition": null,
   "reasons": [
-   "63% below the median of 6 comparable listings"
+   "32% below the median of 39 comparable listings"
   ],
-  "score": 77.5,
+  "score": 50.2,
   "is_new": true,
   "deal_score": 100,
   "score_why": [
-   "63% below the median of 6 comparable listings",
+   "32% below the median of 39 comparable listings",
+   "38% of the new price ($529); used ones this age typically sell around 75%",
    "no release-date or successor data for this model yet, so the score uses price history only"
   ],
   "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-11-07T17:04:27+00:00",
+  "fetched_at": "2026-11-08T03:23:21+00:00",
   "date": "2026-11-07"
  }
 ]
