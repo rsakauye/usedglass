@@ -234,3 +234,80 @@ test('POST with a bad signature does not delete and does not log account fields'
   assert.deepEqual(JSON.parse(lines[0]), { source: 'ebay-account-deletion', ok: false, notificationId: NOTIFICATION_ID });
   assertNoSecrets(lines.join('\n'));
 });
+
+function headerFor(kid) {
+  return Buffer.from(JSON.stringify({ alg: 'ECDSA', kid, signature: der.toString('base64'), digest: 'SHA1' })).toString('base64');
+}
+
+async function runPost(signature) {
+  let waited;
+  const res = await onRequestPost(postContext(payload, signature, (p) => { waited = p; }));
+  assert.equal(res.status, 204);
+  return waited;
+}
+
+test('a failed key lookup is remembered, so the same unknown key id does not call eBay again', async () => {
+  resetCachesForTests();
+  const origFetch = globalThis.fetch;
+  const origHook = accountDeletion.deleteStoredData;
+  let hookCalls = 0;
+  accountDeletion.deleteStoredData = async () => { hookCalls += 1; };
+  const keyFetches = [];
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('/oauth2/token')) return new Response(JSON.stringify({ access_token: 'app-token', expires_in: 7200 }), { status: 200 });
+    keyFetches.push(String(url));
+    return new Response('not found', { status: 404 });
+  };
+  try {
+    const first = await withLogs(() => runPost(headerFor('made-up-kid')));
+    assert.equal(JSON.parse(first.lines[0]).ok, false);
+    assert.equal(keyFetches.length, 1);
+
+    const again = await withLogs(() => runPost(headerFor('made-up-kid')));
+    assert.equal(JSON.parse(again.lines[0]).ok, false);
+    assert.equal(keyFetches.length, 1, 'same kid must not trigger a second eBay call');
+
+    await withLogs(() => runPost(headerFor('another-kid')));
+    assert.equal(keyFetches.length, 2, 'a different kid is still looked up');
+    assert.equal(hookCalls, 0);
+  } finally {
+    globalThis.fetch = origFetch;
+    accountDeletion.deleteStoredData = origHook;
+    resetCachesForTests();
+  }
+});
+
+test('the failure memory is bounded and a failure never blocks a later good key', async () => {
+  resetCachesForTests();
+  const origFetch = globalThis.fetch;
+  const origHook = accountDeletion.deleteStoredData;
+  accountDeletion.deleteStoredData = async () => {};
+  let keyFetches = 0;
+  let good = false;
+  globalThis.fetch = async (url) => {
+    if (String(url).includes('/oauth2/token')) return new Response(JSON.stringify({ access_token: 'app-token', expires_in: 7200 }), { status: 200 });
+    keyFetches += 1;
+    if (good) return new Response(JSON.stringify({ key: singleLineKey, algorithm: 'ECDSA', digest: 'SHA1' }), { status: 200 });
+    return new Response('nope', { status: 500 });
+  };
+  try {
+    await withLogs(async () => { for (let i = 0; i < 150; i += 1) await runPost(headerFor(`junk-${i}`)); });
+    assert.equal(keyFetches, 150);
+    // The oldest entries were dropped to stay within the limit, so junk-0 is looked up again.
+    await withLogs(() => runPost(headerFor('junk-0')));
+    assert.equal(keyFetches, 151);
+    // The newest entry is still remembered.
+    await withLogs(() => runPost(headerFor('junk-149')));
+    assert.equal(keyFetches, 151);
+
+    // Once the memory is cleared and eBay answers, a real key verifies and notifies.
+    expireCachesForTests();
+    good = true;
+    const ok = await withLogs(() => runPost(xEbaySignature));
+    assert.equal(JSON.parse(ok.lines[0]).ok, true);
+  } finally {
+    globalThis.fetch = origFetch;
+    accountDeletion.deleteStoredData = origHook;
+    resetCachesForTests();
+  }
+});
