@@ -560,5 +560,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-08T03:28:56+00:00",
   "date": "2026-11-07"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-0ecacc3b42",
+  "title": "Pentax K1000 35mm SLR Film Camera With 28mm Lens - Missing Rewind Knob -",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/198762510907?hash=item2e472b3a3b%3Ag%3AmXgAAeSwXYNq5jrD&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 79.99,
+  "comp_median": 191.47,
+  "comps": 28,
+  "model_key": "camera-pentax-k1000",
+  "model_name": "Pentax K1000",
+  "condition": null,
+  "reasons": [
+   "58% below the median of 28 comparable listings"
+  ],
+  "score": 76.2,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "58% below the median of 28 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-11-08T17:19:01+00:00",
+  "date": "2026-11-08"
  }
 ]
