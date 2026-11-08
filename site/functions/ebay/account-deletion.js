@@ -18,21 +18,28 @@ const PUBLIC_KEY_URL = 'https://api.ebay.com/commerce/notification/v1/public_key
 const OAUTH_SCOPE = 'https://api.ebay.com/oauth/api_scope';
 const TOKEN_RE = /^[A-Za-z0-9_-]{32,80}$/;
 const KEY_TTL_MS = 60 * 60 * 1000;
+const FAIL_TTL_MS = 2 * 60 * 1000;
+const FAIL_MAX = 100;
 const KEY_START = '-----BEGIN PUBLIC KEY-----';
 const KEY_END = '-----END PUBLIC KEY-----';
 const MAX_BODY = 262144;
 
 const keyCache = new Map();
+// Key ids whose lookup just failed. Anyone can POST a made-up kid, so a failure is remembered for a short
+// time and the same kid does not trigger another call to eBay. Bounded, oldest entry dropped first.
+const failCache = new Map();
 const tokenCache = { accessToken: null, exp: 0 };
 
 export function resetCachesForTests() {
   keyCache.clear();
+  failCache.clear();
   tokenCache.accessToken = null;
   tokenCache.exp = 0;
 }
 
 export function expireCachesForTests() {
   for (const hit of keyCache.values()) hit.exp = 0;
+  failCache.clear();
   tokenCache.exp = 0;
 }
 
@@ -181,14 +188,23 @@ async function getAppToken(env) {
 async function getPublicKey(kid, env) {
   const hit = keyCache.get(kid);
   if (hit && hit.exp > Date.now()) return hit.value;
-  const token = await getAppToken(env);
-  const res = await fetch(PUBLIC_KEY_URL + encodeURIComponent(kid), {
-    headers: { authorization: `Bearer ${token}`, accept: 'application/json' },
-    redirect: 'manual',
-  });
-  if (!res.ok) { await discard(res); throw new Error('public key request failed'); }
-  const body = await res.json();
-  if (!body || typeof body.key !== 'string') throw new Error('public key request failed');
-  keyCache.set(kid, { value: body, exp: Date.now() + KEY_TTL_MS });
-  return body;
+  const failed = failCache.get(kid);
+  if (failed && failed > Date.now()) throw new Error('public key lookup failed recently');
+  try {
+    const token = await getAppToken(env);
+    const res = await fetch(PUBLIC_KEY_URL + encodeURIComponent(kid), {
+      headers: { authorization: `Bearer ${token}`, accept: 'application/json' },
+      redirect: 'manual',
+    });
+    if (!res.ok) { await discard(res); throw new Error('public key request failed'); }
+    const body = await res.json();
+    if (!body || typeof body.key !== 'string') throw new Error('public key request failed');
+    keyCache.set(kid, { value: body, exp: Date.now() + KEY_TTL_MS });
+    failCache.delete(kid);
+    return body;
+  } catch (err) {
+    if (failCache.size >= FAIL_MAX) failCache.delete(failCache.keys().next().value);
+    failCache.set(kid, Date.now() + FAIL_TTL_MS);
+    throw err;
+  }
 }
