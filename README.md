@@ -1,5 +1,7 @@
 # UsedGlass.ca
 
+[![usedglass.ca](https://img.shields.io/badge/usedglass.ca-live-000000?style=flat-square)](https://usedglass.ca) [![Astro](https://img.shields.io/badge/Astro-FF5D01?style=flat-square&logo=astro&logoColor=white)](https://astro.build) [![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat-square&logo=cloudflare&logoColor=white)](https://www.cloudflare.com)
+
 Used camera & lens prices from Canadian dealers in one search, refreshed daily. Static site + daily data pipeline, built to run on its own.
 
 - **Preview (GitHub Pages):** https://rsakauye.github.io/usedglass/
