@@ -14,7 +14,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write
+  contents: write # push to the data and gh-pages branches (never main)
   issues: write   # scrape-failure alerts (scraper/alert.py)
 
 jobs:
@@ -35,7 +35,13 @@ jobs:
           python-version: "3.12"
 
       - name: Unit tests
-        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers
+        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers tests.test_databranch
+
+      # Every run (schedule, manual, push to main) starts from the last published scraper output on the
+      # `data` branch: the scraper needs yesterday's listings, state and price history. The copies on main
+      # are only a seed for the first run. Hand-edited files in data/ always come from main.
+      - name: Restore previous scraper output from the data branch
+        run: python -m scraper.databranch restore
 
       - name: Scrape dealers (+ eBay if keys are set) and compute deals
         id: scrape
@@ -54,17 +60,10 @@ jobs:
           SCRAPE_OUTCOME: ${{ steps.scrape.outcome }}
         run: python -m scraper.alert
 
-      - name: Commit data
-        run: |
-          git config user.name "usedglass-bot"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          if git diff --cached --quiet; then echo "No data changes"; exit 0; fi
-          git commit -m "data: daily update $(TZ=America/Edmonton date +%F)"
-          # Another run may have pushed data since checkout (e.g. back-to-back pushes). This run's data is the
-          # newest, so on a data/ conflict keep ours (-X theirs = the commit being replayed during rebase).
-          git pull --rebase -X theirs origin main
-          git push origin HEAD:main
+      # main is protected (changes need a pull request), so scraper output goes to the `data` branch.
+      # Skipped if the scrape failed, so a broken run never replaces good data. See scraper/databranch.py.
+      - name: Publish scraper output to the data branch
+        run: python -m scraper.databranch publish
 
       - uses: actions/setup-node@v4
         with:

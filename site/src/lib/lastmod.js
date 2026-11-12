@@ -2,8 +2,9 @@
 //  - Model pages: from data/state.json, the latest day one of the model's listings appeared, changed price or
 //    sold/was removed (the day after it was last seen).
 //  - Other pages: the last git commit that touched the page's source or the data it shows (needs full history;
-//    CI checks out with fetch-depth 0). On a shallow or missing git history we return null, and the sitemap
-//    omits <lastmod> rather than guessing.
+//    CI checks out with fetch-depth 0). Scraper output is committed to the `data` branch, not main
+//    (scraper/databranch.py), so both are searched. On a shallow or missing git history we return null, and
+//    the sitemap omits <lastmod> rather than guessing.
 import fs from 'node:fs';
 import path from 'node:path';
 import { execFileSync } from 'node:child_process';
@@ -26,11 +27,21 @@ function gitUsable() {
   }
   return gitOk;
 }
+// HEAD, plus the data branch when this checkout has it (the daily workflow fetches it; a local clone may not).
+const DATA_REF = process.env.DATA_REF || 'origin/data';
+let revs = null;
+function gitRevs() {
+  if (!revs) {
+    revs = ['HEAD'];
+    try { git(['rev-parse', '--verify', '--quiet', `${DATA_REF}^{commit}`]); revs.push(DATA_REF); } catch {}
+  }
+  return revs;
+}
 // Paths are relative to the repo root. Returns YYYY-MM-DD (America/Edmonton) or null.
 export function gitDate(paths) {
   if (!gitUsable()) return null;
   try {
-    const t = git(['log', '-1', '--format=%ct', '--', ...paths]);
+    const t = git(['log', '-1', '--format=%ct', ...gitRevs(), '--', ...paths]);
     return t ? ymd(Number(t) * 1000) : null;
   } catch { return null; }
 }
