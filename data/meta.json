@@ -1,0 +1,149 @@
+{
+ "run_at": "2026-11-12T15:41:18+00:00",
+ "date": "2026-11-12",
+ "dealers": {
+  "mcbain": {
+   "count": 1006,
+   "status": "ok",
+   "seconds": 2.3
+  },
+  "downtowncamera": {
+   "count": 887,
+   "status": "ok",
+   "seconds": 0.8
+  },
+  "gosselin": {
+   "count": 796,
+   "status": "ok",
+   "seconds": 7.8
+  },
+  "beauphoto": {
+   "count": 380,
+   "status": "ok",
+   "seconds": 19.7
+  },
+  "thecamerastore": {
+   "count": 83,
+   "status": "ok",
+   "seconds": 0.6
+  },
+  "camtec": {
+   "count": 125,
+   "status": "ok",
+   "seconds": 2.3
+  },
+  "plotcamera": {
+   "count": 0,
+   "status": "paused (ToS: scrape ban)"
+  },
+  "cameratraders": {
+   "count": 0,
+   "status": "paused (ToS: scrape ban)"
+  },
+  "maplecamera": {
+   "count": 0,
+   "status": "paused (ToS: scrape ban)"
+  },
+  "cameratrading": {
+   "count": 59,
+   "status": "ok",
+   "seconds": 0.6
+  },
+  "cameracanada": {
+   "count": 190,
+   "status": "ok",
+   "seconds": 35.9
+  },
+  "ebay": {
+   "count": 3000,
+   "status": "ok",
+   "seconds": 40.2
+  }
+ },
+ "errors": {},
+ "total": 6509,
+ "models": 1965,
+ "new_today": 673,
+ "price_dropped": 191,
+ "deals": 284,
+ "dealer_info": {
+  "thecamerastore": {
+   "name": "The Camera Store",
+   "city": "Calgary, AB",
+   "site": "https://thecamerastore.com"
+  },
+  "mcbain": {
+   "name": "McBain Camera",
+   "city": "Edmonton, AB",
+   "site": "https://www.mcbaincamera.com"
+  },
+  "beauphoto": {
+   "name": "Beau Photo",
+   "city": "Vancouver, BC",
+   "site": "https://www.beauphoto.com"
+  },
+  "downtowncamera": {
+   "name": "Downtown Camera",
+   "city": "Toronto, ON",
+   "site": "https://downtowncamera.com"
+  },
+  "gosselin": {
+   "name": "Gosselin Photo",
+   "city": "Quebec",
+   "site": "https://gosselinphoto.ca"
+  },
+  "camtec": {
+   "name": "Camtec Photo",
+   "city": "Montreal, QC",
+   "site": "https://www.camtecphoto.com"
+  },
+  "plotcamera": {
+   "name": "Plot Camera",
+   "city": "Vancouver, BC",
+   "site": "https://www.plotcamera.com",
+   "paused": "paused (ToS: scrape ban)"
+  },
+  "cameratraders": {
+   "name": "Camera Traders",
+   "city": "Victoria, BC",
+   "site": "https://www.camera-traders.com",
+   "paused": "paused (ToS: scrape ban)"
+  },
+  "maplecamera": {
+   "name": "Maple Camera Co.",
+   "city": "Scarborough, ON",
+   "site": "https://maplecameraco.com",
+   "paused": "paused (ToS: scrape ban)"
+  },
+  "cameratrading": {
+   "name": "Camera Trading Company",
+   "city": "Perth, ON",
+   "site": "https://cameratradingcompany.com"
+  },
+  "cameracanada": {
+   "name": "Camera Canada",
+   "city": "Ontario (online)",
+   "site": "https://www.cameracanada.com"
+  },
+  "ebay": {
+   "name": "eBay (Canadian sellers)",
+   "city": "Canada",
+   "site": "https://www.ebay.ca"
+  }
+ },
+ "feeds": {
+  "newprices": {
+   "count": 883,
+   "status": "ok",
+   "seconds": 15.3
+  },
+  "fx": {
+   "status": "ok",
+   "latest": "2026-11-10"
+  },
+  "ebay_us": {
+   "count": 30,
+   "status": "ok"
+  }
+ }
+}
