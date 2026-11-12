@@ -100,7 +100,7 @@ Models without metadata use history only and say so. Deals are sorted by Deal Sc
 ## Local development
 
 ```bash
-python -m unittest tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers
+python -m unittest tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers tests.test_dropsfeed
 node --test tests/test_mykit.mjs tests/test_vintage.mjs tests/test_ebay_account_deletion.mjs
 python -m scraper.run                 # all dealers; or: python -m scraper.run mcbain camtec
 cd site && npm ci && npm run dev      # reads ../data
@@ -178,3 +178,6 @@ email and the first weekly broadcast lives in `newsletter/`.
 ## Feeds
 - `/rss.xml`: deal of the day + flagged deals (for auto-posting to X/Bluesky later)
 - `/listings.json`: compact listing array used by the search page
+- `/feeds/biggest-drops.json` and `/feeds/biggest-drops.xml`: the 25 biggest price drops of the last 7 days
+  (at least 5% or $50, at most 70%, stale and As Is skipped), rebuilt daily by `scraper/dropsfeed.py` for the
+  Friday social posts. `/drops/` stays day-over-day

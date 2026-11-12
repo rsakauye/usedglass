@@ -28,6 +28,7 @@ BRANCH = "data"
 # that is missing here, because a file left out would be thrown away at the end of every run.
 GENERATED = [
     "history",
+    "biggest-drops.json",
     "changes.json",
     "currency.json",
     "deal-of-the-day.json",
