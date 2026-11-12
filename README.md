@@ -175,6 +175,10 @@ Footer and `/newsletter/` post straight to Kit form `10061701` (`https://app.kit
 field `email_address`). Override with the repo variable `KIT_FORM_ID` (or `off`). Draft copy for the welcome
 email and the first weekly broadcast lives in `newsletter/`.
 
+Every model page also has a "Price-drop alert on this lens / camera / model" card. It posts to the same form with
+hidden `fields[model_key]` and `fields[model_name]`, which Kit saves on the subscriber once custom fields with those
+keys exist in the Kit account. One model per subscriber (a later signup overwrites it). No alerts are sent yet.
+
 ## Feeds
 - `/rss.xml`: deal of the day + flagged deals (for auto-posting to X/Bluesky later)
 - `/listings.json`: compact listing array used by the search page

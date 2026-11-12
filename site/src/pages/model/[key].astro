@@ -4,6 +4,7 @@ import ListingTable from '../../components/ListingTable.astro';
 import { models, modelPages, modelByKey, byId, money, u, modelUrl, currency, modelMeta, meta as siteMeta } from '../../lib/data.js';
 import ScoreBadge from '../../components/ScoreBadge.astro';
 import SaveButton from '../../components/SaveButton.astro';
+import NewsletterForm from '../../components/NewsletterForm.astro';
 import { amazonSearchUrl, SPONSORED_REL } from '../../lib/affiliate.js';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -134,6 +135,7 @@ const productLd = inStock.length ? {
   {CMP.includes(m.key) && <p><a href={u(`compare/?b=${m.key}`)}>Compare {m.name} stats RPG-style</a> <span class="muted">Radar chart, buffs and known issues vs {CMP.length - 1} other bodies.</span></p>}
   {!CMP.includes(m.key) && m.category === 'camera' && <p class="muted"><a href={u('compare/')}>Compare popular mirrorless bodies</a> on a stat radar.</p>}
   {!quiet && <p class="amazon-cta"><a href={amazonUrl} rel={SPONSORED_REL} target="_blank">Check new price on Amazon.ca</a> <span class="muted">(affiliate link)</span></p>}
+  <NewsletterForm modelKey={m.key} modelName={m.name} category={m.category} />
   {!quiet && <ListingTable rows={rows} showModel={false} showScoreWhy={true} />}
   {related.length > 0 && <section><h2 style="font-size:1.15rem">More used {m.brand} {m.category === 'lens' ? 'lenses' : m.category === 'camera' ? 'cameras' : 'gear'}</h2><ul>{related.map((x) => <li><a href={modelUrl(x.key)}>{x.name}</a> <span class="muted">from {money(x.min_price)}</span></li>)}</ul><p class="muted"><a href={u(`models/#${m.category}-${(m.brand || 'Other').toLowerCase().replace(/[^a-z0-9]+/g, '-')}`)}>All {m.brand} {m.category === 'lens' ? 'lenses' : 'cameras'}</a> · <a href={u('models/')}>Every model A–Z</a></p></section>}
   <p class="muted">Listings are grouped automatically by brand, mount, focal length, aperture and version markers. Grouping can be wrong, so check the exact model on the dealer's page before buying.</p>
