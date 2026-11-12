@@ -589,28 +589,28 @@
  },
  {
   "type": "listing",
-  "id": "ebay-622255e81d",
-  "title": "Canon PowerShot G7 10.0MP Digital Camera Bundle Retro Digicam Vintage CCD IS",
+  "id": "ebay-9747a71c7e",
+  "title": "Canon PowerShot A720 IS 8MP Digital Camera 6x Zoom + 1GB SD - Tested & Works",
   "dealer": "eBay (Canadian sellers)",
-  "url": "https://www.ebay.ca/itm/307278504903?hash=item478b39e3c7%3Ag%3A07EAAeSwpU9q8fsA&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-  "price_cad": 499.99,
-  "comp_median": 999.0,
-  "comps": 7,
-  "model_key": "camera-canon-powershotg7",
-  "model_name": "Canon POWERSHOTG7",
+  "url": "https://www.ebay.ca/itm/840121661687?hash=itemc39b2738f7%3Ag%3AJtAAAeSwDrRq9etE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 77.99,
+  "comp_median": 144.29,
+  "comps": 10,
+  "model_key": "camera-canon-powershota720",
+  "model_name": "Canon POWERSHOTA720",
   "condition": null,
   "reasons": [
-   "50% below the median of 7 comparable listings"
+   "46% below the median of 10 comparable listings"
   ],
-  "score": 65.0,
+  "score": 63.9,
   "is_new": true,
   "deal_score": 100,
   "score_why": [
-   "50% below the median of 7 comparable listings",
+   "46% below the median of 10 comparable listings",
    "looks like a kit or a different version, so it is only compared with similar listings"
   ],
   "score_basis": "history only (bundle or version mismatch)",
-  "fetched_at": "2026-11-12T15:41:18+00:00",
+  "fetched_at": "2026-11-12T19:15:12+00:00",
   "date": "2026-11-12"
  }
 ]

@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-12T15:41:18+00:00",
+   "as_of": "2026-11-12T19:15:12+00:00",
    "rate": 1.4181,
    "goods_cad": 43.27,
    "ship_cad": 9.15,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-12T15:41:18+00:00",
+   "as_of": "2026-11-12T19:15:12+00:00",
    "rate": 1.4181,
    "goods_cad": 35.72,
    "ship_cad": 9.15,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-12T15:41:18+00:00",
+   "as_of": "2026-11-12T19:15:12+00:00",
    "rate": 1.4181,
    "goods_cad": 37.52,
    "ship_cad": 9.15,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-12T15:41:18+00:00",
+   "as_of": "2026-11-12T19:15:12+00:00",
    "rate": 1.4181,
    "goods_cad": 53.89,
    "ship_cad": 15.5,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-12T15:41:18+00:00",
+   "as_of": "2026-11-12T19:15:12+00:00",
    "rate": 1.4181,
    "goods_cad": 15.6,
    "ship_cad": 0.0,
@@ -209,16 +209,16 @@
    "model_name": "Pentax 28mm f/2.8 (Pentax K)"
   },
   {
-   "title": "Canon PowerShot G7 10.0MP Digital Camera Bundle Retro Digicam Vintage CCD IS",
+   "title": "Canon PowerShot A720 IS 8MP Digital Camera 6x Zoom + 1GB SD - Tested & Works",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/307278504903?hash=item478b39e3c7%3Ag%3A07EAAeSwpU9q8fsA&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 499.99,
+   "url": "https://www.ebay.ca/itm/840121661687?hash=itemc39b2738f7%3Ag%3AJtAAAeSwDrRq9etE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 77.99,
    "deal_score": 100,
    "score_why": [
-    "50% below the median of 7 comparable listings",
+    "46% below the median of 10 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Canon POWERSHOTG7"
+   "model_name": "Canon POWERSHOTA720"
   },
   {
    "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",
@@ -245,40 +245,40 @@
    "model_name": "Leica 90mm f/2 (Leica M)"
   },
   {
-   "title": "Canon EOS Rebel T3i 18.0MP Digital SLR DSLR Camera",
+   "title": "Nikon D90 12.3MP Digital SLR DSLR Camera",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/366797359562?hash=item5566d389ca%3Ag%3AgLIAAeSwgSpq8hlq&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 149.99,
+   "url": "https://www.ebay.ca/itm/227594662974?hash=item34fdb2f43e%3Ag%3A26gAAeSwxF9q6Qcs&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 142.52,
    "deal_score": 100,
    "score_why": [
-    "40% below the median of 11 comparable listings",
+    "48% below the median of 10 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Canon REBELT3I"
+   "model_name": "Nikon D90"
   },
   {
-   "title": "Canon EOS Rebel T3i 18.0MP Digital SLR DSLR Camera",
+   "title": "Canon PowerShot G7 10.0MP Digital Camera Bundle Retro Digicam Vintage CCD IS",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/366797348643?hash=item5566d35f23%3Ag%3Ax9AAAeSwNm9q8hfn&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 149.99,
+   "url": "https://www.ebay.ca/itm/307278504903?hash=item478b39e3c7%3Ag%3A07EAAeSwpU9q8fsA&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 499.99,
    "deal_score": 100,
    "score_why": [
-    "40% below the median of 11 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
+    "50% below the median of 7 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Canon REBELT3I"
+   "model_name": "Canon POWERSHOTG7"
   },
   {
-   "title": "Canon EOS Rebel T3i 18.0MP Digital SLR DSLR Camera",
+   "title": "Minolta X-370 35mm SLR Film Camera - Black with 50mm 1:2 lens - Works",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/366797330552?hash=item5566d31878%3Ag%3AvicAAeSws%7Ehq8hRX&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 149.99,
+   "url": "https://www.ebay.ca/itm/307227654787?hash=item478831fa83%3Ag%3AQjIAAeSw3c5qzQ%7EE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 80.0,
    "deal_score": 100,
    "score_why": [
-    "40% below the median of 11 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
+    "52% below the median of 5 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Canon REBELT3I"
+   "model_name": "Minolta X370"
   }
  ]
 }
