@@ -24,8 +24,27 @@ GitHub Actions (daily 12:00 UTC ≈ 6 a.m. Mountain)
        ├─ currency.json (US landed-cost gaps + "rate moved, prices haven't": scraper/currency.py)
        ├─ Deal Score 0-100 on listings/models/deals (scraper/dealscore.py, formula on /about/deal-score/)
        └─ newsletter.json (data hook for the weekly Kit broadcast: FX headline, currency flags, top-scored deals)
-  └─ commit data/ → build Astro site (site/) → publish preview to gh-pages
+  └─ publish scraper output to the `data` branch → build Astro site (site/) → publish preview to gh-pages
 ```
+
+### Where the data lives
+
+`main` is protected: every change needs a pull request, so the daily workflow cannot push there. Scraper output
+is kept on a separate `data` branch instead (`scraper/databranch.py`).
+
+- **Before scraping**, every run (scheduled, manual or a push to `main`) restores the last published output from
+  `data`. The scraper needs it: yesterday's listings for dealers that error, `state.json` and `data/history/`.
+- **After scraping**, the new output is committed to `data` as one snapshot. Nothing is pushed to `main`.
+- **The site is built from the runner's working tree**: code and hand-edited data from `main`, scraper output
+  from `data`. A merge to `main` therefore deploys with current listings.
+- **Hand-edited files** (`events.json`, `model-meta.json`, `listing-overrides.json`, `us-offers.json`,
+  `firmware.json` and the rest) are not on `data`. Change them on `main` through a pull request as before.
+- **The scraper's files on `main`** (`listings.json`, `state.json`, `history/` and the others listed in
+  `GENERATED` in `scraper/databranch.py`) are a seed. They start the `data` branch on the first run and are not
+  updated after that. For current data, read the `data` branch.
+
+To work with current data locally, run `python -m scraper.databranch restore`. It overwrites the seed files in
+your working tree, so leave them out of pull requests (`git checkout -- data` puts the seed back).
 
 ### Dealers
 
