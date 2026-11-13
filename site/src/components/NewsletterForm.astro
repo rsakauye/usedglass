@@ -1,9 +1,27 @@
 ---
 import { kitAction } from '../lib/newsletter.js';
 import { u } from '../lib/data.js';
-const { compact = false } = Astro.props;
+// Footer: compact. /newsletter/: no props. Model page: modelKey + modelName (+ category), which turns the form
+// into a "price-drop alert" card and records the model on the subscriber through Kit custom fields.
+const { compact = false, modelKey = '', modelName = '', category = '' } = Astro.props;
+const noun = category === 'lens' ? 'lens' : category === 'camera' ? 'camera' : 'model';
+const hook = `Price-drop alert on this ${noun}`;
 ---
-{kitAction ? (
+{modelKey ? (
+  kitAction && (
+    <section class="card nl-alert" style="max-width:720px;margin:.8rem 0 1rem">
+      <h2 style="font-size:1.05rem;margin:0 0 .5rem">{hook}</h2>
+      <form action={kitAction} method="post" class="nl-form" style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
+        <label for="nl-email-model" class="sr-only" style="position:absolute;left:-9999px">Email address</label>
+        <input id="nl-email-model" type="email" name="email_address" required placeholder="you@example.com" autocomplete="email" style="flex:1;min-width:200px" />
+        <input type="hidden" name="fields[model_key]" value={modelKey} />
+        <input type="hidden" name="fields[model_name]" value={modelName} />
+        <button type="submit">{hook}</button>
+        <p class="muted" style="flex-basis:100%;margin:.25rem 0 0">Free. You'll get the weekly deals now. Price-drop alerts for this {noun} are coming. Unsubscribe anytime. <a href={u('privacy/#newsletter')}>Privacy</a></p>
+      </form>
+    </section>
+  )
+) : kitAction ? (
   <form action={kitAction} method="post" class="nl-form" style="display:flex;gap:.5rem;flex-wrap:wrap;align-items:center">
     <label for={compact ? 'nl-email-footer' : 'nl-email'} class="sr-only" style="position:absolute;left:-9999px">Email address</label>
     <input id={compact ? 'nl-email-footer' : 'nl-email'} type="email" name="email_address" required placeholder="you@example.com" autocomplete="email" style="flex:1;min-width:200px" />
