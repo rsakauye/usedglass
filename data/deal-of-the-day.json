@@ -604,5 +604,20 @@
   "is_new": false,
   "fetched_at": "2026-11-13T01:13:48+00:00",
   "date": "2026-11-12"
+ },
+ {
+  "type": "rebate",
+  "id": "rebate-https://www.canoncreatorlab.ca/offers/level-up-sales-event/",
+  "title": "New Canon rebate: Level Up Sales Event - Canon Creator Lab",
+  "url": "https://www.canoncreatorlab.ca/offers/level-up-sales-event/",
+  "dealer": "Canon",
+  "price_cad": null,
+  "reasons": [
+   "up to $1,500"
+  ],
+  "score": 999,
+  "is_new": true,
+  "fetched_at": "2026-11-13T18:51:32+00:00",
+  "date": "2026-11-13"
  }
 ]
