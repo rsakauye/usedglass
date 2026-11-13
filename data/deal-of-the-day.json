@@ -588,30 +588,21 @@
   "date": "2026-11-08"
  },
  {
-  "type": "listing",
-  "id": "thecamerastore-dea2c616a1",
-  "title": "Leica Summicron-M 35mm f2 ASPH. *USED",
-  "dealer": "The Camera Store",
-  "url": "https://thecamerastore.com/products/leica-summicron-m-35mm-f2-asph-used",
-  "price_cad": 2150.0,
-  "comp_median": 4950.0,
-  "comps": 5,
-  "model_key": "lens-leica-leica-m-35mm-f2",
-  "model_name": "Leica 35mm f/2 (Leica M)",
-  "condition": null,
+  "type": "currency_gap",
+  "id": "gap-camera-leica-q3-eBay US seller",
+  "title": "Leica Q3 from eBay US seller (US)",
+  "dealer": "eBay US seller",
+  "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
+  "price_cad": 80.32,
+  "model_key": "camera-leica-q3",
+  "model_name": "Leica Q3",
   "reasons": [
-   "57% below the median of 5 comparable listings"
+   "estimated landed cost $80 vs $10,365 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
   ],
-  "score": 69.6,
-  "is_new": true,
-  "deal_score": 100,
-  "score_why": [
-   "57% below the median of 5 comparable listings",
-   "34% of the new price ($6,330); used ones this age typically sell around 75%",
-   "no release-date or successor data for this model yet, so the score uses price history only"
-  ],
-  "score_basis": "history only (no model metadata yet)",
-  "fetched_at": "2026-11-13T01:08:24+00:00",
+  "score": 0,
+  "deal_score": null,
+  "is_new": false,
+  "fetched_at": "2026-11-13T01:13:48+00:00",
   "date": "2026-11-12"
  }
 ]
