@@ -35,7 +35,7 @@ jobs:
           python-version: "3.12"
 
       - name: Unit tests
-        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers tests.test_databranch
+        run: python -m unittest -v tests.test_normalize tests.test_alert tests.test_currency tests.test_builders tests.test_dealers tests.test_databranch tests.test_dropsfeed
 
       # Every run (schedule, manual, push to main) starts from the last published scraper output on the
       # `data` branch: the scraper needs yesterday's listings, state and price history. The copies on main

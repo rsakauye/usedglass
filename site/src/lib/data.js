@@ -52,6 +52,8 @@ export const dormantModels = Object.entries(seenModels).map(([k, e]) => dormantF
 export const modelPages = [...Object.values(models), ...dormantModels];
 export const modelByKey = Object.fromEntries(modelPages.map((m) => [m.key, m]));
 export const changes = read('changes.json', { new_today: [], price_dropped: [] });
+// Weekly rollup written by scraper/dropsfeed.py. Missing file (first build after merge) = empty feed.
+export const biggestDrops = { week_start: null, week_end: null, generated_at: null, count: 0, items: [], ...read('biggest-drops.json', {}) };
 export const deals = read('deals.json', { deals: [], deal_of_the_day: null });
 export const dotdHistory = read('deal-of-the-day.json', []);
 export const rebates = read('rebates.json', { items: [], manual_check: [] });

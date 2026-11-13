@@ -23,7 +23,7 @@ import traceback
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from . import currency, dealscore, newprices
+from . import currency, dealscore, dropsfeed, newprices
 from .dealers import ADAPTERS, dealer_info, paused_meta
 from .ebay import ebay
 from .normalize import listing_overrides, make_listing
@@ -699,6 +699,8 @@ def main(argv: list[str]) -> int:
                              for d in deals if d.get("deal_score") is not None][:10],
     })
     save(DATA / "changes.json", {"date": today, "new_today": new_ids, "price_dropped": dropped, "removed": len(removed)})
+    # Weekly rollup for /feeds/biggest-drops.json and .xml (changes.json above is day-over-day only).
+    save(DATA / "biggest-drops.json", dropsfeed.build(listings, state, today, now, max_pct=DEAL_MAX_DISCOUNT))
     listings.sort(key=lambda x: (x["dealer_id"], x["title"]))
     save(DATA / "listings.json", listings, compact=True)
     save(DATA / "state.json", state, compact=True)
