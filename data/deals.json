@@ -1,30 +1,31 @@
 {
  "date": "2026-11-12",
- "generated_at": "2026-11-12T19:15:12+00:00",
+ "generated_at": "2026-11-13T01:08:24+00:00",
  "deal_of_the_day": {
   "type": "listing",
-  "id": "ebay-9747a71c7e",
-  "title": "Canon PowerShot A720 IS 8MP Digital Camera 6x Zoom + 1GB SD - Tested & Works",
-  "dealer": "eBay (Canadian sellers)",
-  "url": "https://www.ebay.ca/itm/840121661687?hash=itemc39b2738f7%3Ag%3AJtAAAeSwDrRq9etE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-  "price_cad": 77.99,
-  "comp_median": 144.29,
-  "comps": 10,
-  "model_key": "camera-canon-powershota720",
-  "model_name": "Canon POWERSHOTA720",
+  "id": "thecamerastore-dea2c616a1",
+  "title": "Leica Summicron-M 35mm f2 ASPH. *USED",
+  "dealer": "The Camera Store",
+  "url": "https://thecamerastore.com/products/leica-summicron-m-35mm-f2-asph-used",
+  "price_cad": 2150.0,
+  "comp_median": 4950.0,
+  "comps": 5,
+  "model_key": "lens-leica-leica-m-35mm-f2",
+  "model_name": "Leica 35mm f/2 (Leica M)",
   "condition": null,
   "reasons": [
-   "46% below the median of 10 comparable listings"
+   "57% below the median of 5 comparable listings"
   ],
-  "score": 63.9,
+  "score": 69.6,
   "is_new": true,
   "deal_score": 100,
   "score_why": [
-   "46% below the median of 10 comparable listings",
-   "looks like a kit or a different version, so it is only compared with similar listings"
+   "57% below the median of 5 comparable listings",
+   "34% of the new price ($6,330); used ones this age typically sell around 75%",
+   "no release-date or successor data for this model yet, so the score uses price history only"
   ],
-  "score_basis": "history only (bundle or version mismatch)",
-  "fetched_at": "2026-11-12T19:15:12+00:00"
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-13T01:08:24+00:00"
  },
  "deals": [
   {
@@ -33,7 +34,7 @@
    "title": "Leica Q3 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
-   "price_cad": 80.03,
+   "price_cad": 80.32,
    "model_key": "camera-leica-q3",
    "model_name": "Leica Q3",
    "reasons": [
@@ -42,7 +43,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -50,7 +51,7 @@
    "title": "Nikon Z9 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
-   "price_cad": 72.11,
+   "price_cad": 72.36,
    "model_key": "camera-nikon-z9",
    "model_name": "Nikon Z9",
    "reasons": [
@@ -59,7 +60,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -67,7 +68,7 @@
    "title": "Canon R5 II from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
-   "price_cad": 74.0,
+   "price_cad": 74.26,
    "model_key": "camera-canon-r5-ii",
    "model_name": "Canon R5 II",
    "reasons": [
@@ -76,7 +77,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -84,7 +85,7 @@
    "title": "Sony A7R V from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
-   "price_cad": 97.86,
+   "price_cad": 98.24,
    "model_key": "camera-sony-a7r-v",
    "model_name": "Sony A7R V",
    "reasons": [
@@ -93,7 +94,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -101,7 +102,7 @@
    "title": "Sony A7S III from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
-   "price_cad": 41.38,
+   "price_cad": 41.46,
    "model_key": "camera-sony-a7s-iii",
    "model_name": "Sony A7S III",
    "reasons": [
@@ -110,7 +111,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -118,7 +119,7 @@
    "title": "Nikon Z8 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/145498152889?_skw=Nikon+Z8&hash=item21e05d9fb9:g:xyYAAOSwxltlenyu",
-   "price_cad": 87.5,
+   "price_cad": 87.61,
    "model_key": "camera-nikon-z8",
    "model_name": "Nikon Z8",
    "reasons": [
@@ -127,7 +128,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -135,7 +136,7 @@
    "title": "Sony A7 V from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/820344289660?_skw=Sony+a7+V&hash=itembf0054797c:g:4cgAAeSwrhJq9OS9",
-   "price_cad": 89.94,
+   "price_cad": 90.27,
    "model_key": "camera-sony-a7-v",
    "model_name": "Sony A7 V",
    "reasons": [
@@ -144,7 +145,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -152,7 +153,7 @@
    "title": "Canon R6 III from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800130777545?_skw=Canon+EOS+R6+Mark+III&hash=itemba4b82c1c9:g:3LMAAeSwy95qI7jY",
-   "price_cad": 79.02,
+   "price_cad": 79.3,
    "model_key": "camera-canon-r6-iii",
    "model_name": "Canon R6 III",
    "reasons": [
@@ -161,7 +162,7 @@
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -169,16 +170,16 @@
    "title": "Canon R5 from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/127620673358?_skw=Canon+EOS+R5&hash=item1db6c8ef4e:g:8bMAAOSwWZ1mC0Vr",
-   "price_cad": 70.33,
+   "price_cad": 70.56,
    "model_key": "camera-canon-r5",
    "model_name": "Canon R5",
    "reasons": [
-    "estimated landed cost $70 vs $3,299 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $71 vs $3,299 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "currency_gap",
@@ -186,16 +187,16 @@
    "title": "Canon R6 II from eBay US seller (US)",
    "dealer": "eBay US seller",
    "url": "https://www.ebay.com/itm/800826710080?_skw=Canon+EOS+R6+Mark+II&hash=itemba74fdd840:g:AOEAAeSwg31q2nv~",
-   "price_cad": 71.49,
+   "price_cad": 71.73,
    "model_key": "camera-canon-r6-ii",
    "model_name": "Canon R6 II",
    "reasons": [
-    "estimated landed cost $71 vs $3,099 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
+    "estimated landed cost $72 vs $3,099 at The Camera Store (estimate: shipping, brokerage and GST included; HST provinces pay more)"
    ],
    "score": 0,
    "deal_score": null,
    "is_new": false,
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -220,7 +221,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -245,7 +246,33 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "thecamerastore-dea2c616a1",
+   "title": "Leica Summicron-M 35mm f2 ASPH. *USED",
+   "dealer": "The Camera Store",
+   "url": "https://thecamerastore.com/products/leica-summicron-m-35mm-f2-asph-used",
+   "price_cad": 2150.0,
+   "comp_median": 4950.0,
+   "comps": 5,
+   "model_key": "lens-leica-leica-m-35mm-f2",
+   "model_name": "Leica 35mm f/2 (Leica M)",
+   "condition": null,
+   "reasons": [
+    "57% below the median of 5 comparable listings"
+   ],
+   "score": 69.6,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "57% below the median of 5 comparable listings",
+    "34% of the new price ($6,330); used ones this age typically sell around 75%",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -270,7 +297,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -295,32 +322,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-9747a71c7e",
-   "title": "Canon PowerShot A720 IS 8MP Digital Camera 6x Zoom + 1GB SD - Tested & Works",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/840121661687?hash=itemc39b2738f7%3Ag%3AJtAAAeSwDrRq9etE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 77.99,
-   "comp_median": 144.29,
-   "comps": 10,
-   "model_key": "camera-canon-powershota720",
-   "model_name": "Canon POWERSHOTA720",
-   "condition": null,
-   "reasons": [
-    "46% below the median of 10 comparable listings"
-   ],
-   "score": 63.9,
-   "is_new": true,
-   "deal_score": 100,
-   "score_why": [
-    "46% below the median of 10 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -345,7 +347,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -370,7 +372,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -395,7 +397,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -420,7 +422,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -445,7 +447,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -470,7 +472,57 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-e5ecc3b450",
+   "title": "Canon AE-1 Program 35mm Film Camera (all black) from Japan",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/366681880841?hash=item555ff17909%3Ag%3ANrMAAeSwLB5qsMMI&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 149.99,
+   "comp_median": 277.99,
+   "comps": 17,
+   "model_key": "camera-canon-ae1program",
+   "model_name": "Canon AE1PROGRAM",
+   "condition": null,
+   "reasons": [
+    "46% below the median of 17 comparable listings"
+   ],
+   "score": 56.0,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "46% below the median of 17 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-9747a71c7e",
+   "title": "Canon PowerShot A720 IS 8MP Digital Camera 6x Zoom + 1GB SD - Tested & Works",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/840121661687?hash=itemc39b2738f7%3Ag%3AJtAAAeSwDrRq9etE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 77.99,
+   "comp_median": 144.29,
+   "comps": 10,
+   "model_key": "camera-canon-powershota720",
+   "model_name": "Canon POWERSHOTA720",
+   "condition": null,
+   "reasons": [
+    "46% below the median of 10 comparable listings"
+   ],
+   "score": 55.9,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "46% below the median of 10 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -495,7 +547,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -520,7 +572,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -545,7 +597,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -570,7 +622,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -595,7 +647,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -621,7 +673,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "thecamerastore-209fbe4ebb",
+   "title": "FUJIFILM X-T3 Body *USED",
+   "dealer": "The Camera Store",
+   "url": "https://thecamerastore.com/products/fujifilm-x-t3-body-used",
+   "price_cad": 900.0,
+   "comp_median": 1495.0,
+   "comps": 3,
+   "model_key": "camera-fujifilm-xt3",
+   "model_name": "Fujifilm XT3",
+   "condition": null,
+   "reasons": [
+    "40% below the median of 3 comparable listings"
+   ],
+   "score": 50.8,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "40% below the median of 3 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -646,7 +723,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -671,7 +748,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -696,7 +773,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -721,32 +798,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-8201068b9b",
-   "title": "Canon AE-1 35mm SLR Film Camera FD 50mm f/1.8 Lens Tested Working Japan",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/137748452162?hash=item2012729342%3Ag%3AuMMAAeSwN55qrDTr&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 195.0,
-   "comp_median": 323.99,
-   "comps": 39,
-   "model_key": "camera-canon-ae1",
-   "model_name": "Canon AE1",
-   "condition": null,
-   "reasons": [
-    "40% below the median of 39 comparable listings"
-   ],
-   "score": 49.8,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "40% below the median of 39 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -771,7 +823,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -796,7 +848,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -821,33 +873,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-d18827e4f3",
-   "title": "Canon AE-1 35mm SLR Film Camera w/ Canon FD 50mm f/1.8 S.C. Lens",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/128158031604?hash=item1dd6d05ef4%3Ag%3A%7EN4AAeSwlyRqxErj&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 215.99,
-   "comp_median": 323.99,
-   "comps": 39,
-   "model_key": "camera-canon-ae1",
-   "model_name": "Canon AE1",
-   "condition": null,
-   "reasons": [
-    "33% below the median of 39 comparable listings",
-    "price dropped 10% (was $240)"
-   ],
-   "score": 49.3,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "33% below the median of 39 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -872,7 +898,32 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-8201068b9b",
+   "title": "Canon AE-1 35mm SLR Film Camera FD 50mm f/1.8 Lens Tested Working Japan",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/137748452162?hash=item2012729342%3Ag%3AuMMAAeSwN55qrDTr&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 195.0,
+   "comp_median": 316.21,
+   "comps": 40,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
+   "condition": null,
+   "reasons": [
+    "38% below the median of 40 comparable listings"
+   ],
+   "score": 48.3,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "38% below the median of 40 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -897,7 +948,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -922,7 +973,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -947,7 +998,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -972,7 +1023,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -997,7 +1048,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1022,7 +1073,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1047,7 +1098,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1072,7 +1123,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1097,7 +1148,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1122,7 +1173,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-1ca2f088d3",
+   "title": "CANON PowerShot ELPH 100 HS Digital Camera - Like New With Box * Tested & Works",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/128191513232?hash=item1dd8cf4290%3Ag%3AiXEAAeSwa0dq9k0q&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 219.0,
+   "comp_median": 295.0,
+   "comps": 45,
+   "model_key": "camera-canon-powershotelph",
+   "model_name": "Canon POWERSHOTELPH",
+   "condition": "Like New",
+   "reasons": [
+    "26% below the median of 45 comparable listings"
+   ],
+   "score": 43.8,
+   "is_new": true,
+   "deal_score": 100,
+   "score_why": [
+    "26% below the median of 45 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1147,7 +1223,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1172,7 +1248,57 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-3dd77beba7",
+   "title": "Pentax Spotmatic SP ASAHI 35mm SLR Film Camera - Body only",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/366681740079?hash=item555fef532f%3Ag%3ARcsAAeSwdo1qsKtG&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 100.0,
+   "comp_median": 150.0,
+   "comps": 18,
+   "model_key": "camera-pentax-spotmatic",
+   "model_name": "Pentax SPOTMATIC",
+   "condition": null,
+   "reasons": [
+    "33% below the median of 18 comparable listings"
+   ],
+   "score": 43.3,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "33% below the median of 18 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-d18827e4f3",
+   "title": "Canon AE-1 35mm SLR Film Camera w/ Canon FD 50mm f/1.8 S.C. Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/128158031604?hash=item1dd6d05ef4%3Ag%3A%7EN4AAeSwlyRqxErj&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 215.99,
+   "comp_median": 316.21,
+   "comps": 40,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
+   "condition": null,
+   "reasons": [
+    "32% below the median of 40 comparable listings"
+   ],
+   "score": 41.7,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "32% below the median of 40 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1197,7 +1323,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1223,7 +1349,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1248,7 +1374,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1273,7 +1399,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1298,32 +1424,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-7de4d961a2",
-   "title": "Canon AE-1 35mm SLR Film Camera W/ FD 50mm f/1.8 Lens Tested READ DESC",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/820076669032?hash=itembef060e868%3Ag%3AYfAAAeSwQUJql5d7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 224.99,
-   "comp_median": 323.99,
-   "comps": 39,
-   "model_key": "camera-canon-ae1",
-   "model_name": "Canon AE1",
-   "condition": null,
-   "reasons": [
-    "31% below the median of 39 comparable listings"
-   ],
-   "score": 40.6,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "31% below the median of 39 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1348,7 +1449,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1373,32 +1474,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-045877cf25",
-   "title": "Canon AE-1 with the Canon FD 24mm f/2.8 \"No Tariffs\"",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/188984726385?hash=item2c005e1371%3Ag%3A-ysAAeSwoZtqtvG7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 228.03,
-   "comp_median": 323.99,
-   "comps": 39,
-   "model_key": "camera-canon-ae1",
-   "model_name": "Canon AE1",
-   "condition": null,
-   "reasons": [
-    "30% below the median of 39 comparable listings"
-   ],
-   "score": 39.6,
-   "is_new": false,
-   "deal_score": 100,
-   "score_why": [
-    "30% below the median of 39 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1423,7 +1499,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-7de4d961a2",
+   "title": "Canon AE-1 35mm SLR Film Camera W/ FD 50mm f/1.8 Lens Tested READ DESC",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/820076669032?hash=itembef060e868%3Ag%3AYfAAAeSwQUJql5d7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 224.99,
+   "comp_median": 316.21,
+   "comps": 40,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
+   "condition": null,
+   "reasons": [
+    "29% below the median of 40 comparable listings"
+   ],
+   "score": 38.8,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "29% below the median of 40 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1448,7 +1549,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1473,7 +1574,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1498,7 +1599,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1523,7 +1624,32 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-045877cf25",
+   "title": "Canon AE-1 with the Canon FD 24mm f/2.8 \"No Tariffs\"",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/188984726385?hash=item2c005e1371%3Ag%3A-ysAAeSwoZtqtvG7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 228.03,
+   "comp_median": 316.21,
+   "comps": 40,
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
+   "condition": null,
+   "reasons": [
+    "28% below the median of 40 comparable listings"
+   ],
+   "score": 37.9,
+   "is_new": false,
+   "deal_score": 100,
+   "score_why": [
+    "28% below the median of 40 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "score_basis": "history only (bundle or version mismatch)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1548,7 +1674,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1573,7 +1699,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1598,7 +1724,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1623,7 +1749,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1648,7 +1774,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1673,7 +1799,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1698,7 +1824,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1723,7 +1849,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1748,7 +1874,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1773,7 +1899,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1798,7 +1924,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1823,7 +1949,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1848,7 +1974,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1873,7 +1999,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1898,7 +2024,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1923,7 +2049,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1948,7 +2074,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1973,7 +2099,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -1998,7 +2124,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2023,7 +2149,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2048,7 +2174,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2073,7 +2199,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2098,7 +2224,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2123,7 +2249,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2148,7 +2274,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2173,7 +2299,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2198,7 +2324,34 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
+  },
+  {
+   "type": "listing",
+   "id": "ebay-c4648e19f8",
+   "title": "Fujifilm 50mm f/2 Teleconverter Lens for Fujinon",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/960188380168?hash=itemdf8faff408%3Ag%3ActYAAeSw9T9q9jNE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 210.0,
+   "comp_median": 465.5,
+   "comps": 4,
+   "model_key": "lens-fujifilm-fujifilm-x-50mm-f2",
+   "model_name": "Fujifilm 50mm f/2 (Fujifilm X)",
+   "condition": null,
+   "reasons": [
+    "55% below the median of 4 comparable listings"
+   ],
+   "score": 66.9,
+   "is_new": true,
+   "deal_score": 99,
+   "score_why": [
+    "55% below the median of 4 comparable listings",
+    "the lowest price we've recorded for this model in 90 days",
+    "35% of the new price ($599); used ones this age typically sell around 75%",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "score_basis": "history only (no model metadata yet)",
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2225,34 +2378,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "camtec-48b8d2610a",
-   "title": "Panasonic Lumix G X Vario 35-100mm f/2.8 ASPH. POWER O.I.S. - *A*",
-   "dealer": "Camtec Photo",
-   "url": "https://www.camtecphoto.com/en/product/panasonic-lumix-g-x-vario-35-100mm-f28-asph-power-ois-a",
-   "price_cad": 485.0,
-   "comp_median": 695.0,
-   "comps": 4,
-   "model_key": "lens-panasonic-micro-four-thirds-35-100mm-f2_8",
-   "model_name": "Panasonic 35-100mm f/2.8 (Micro Four Thirds)",
-   "condition": "Excellent",
-   "reasons": [
-    "30% below the median of 4 comparable listings"
-   ],
-   "score": 34.2,
-   "is_new": false,
-   "deal_score": 99,
-   "score_why": [
-    "30% below the median of 4 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "39% of the new price ($1,249); used ones this age typically sell around 75%",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2279,32 +2405,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-d1ec0c5302",
-   "title": "Nikon Nikkor AF-S 18-105mm 1:3.5-5.6 G ED DX VR Zoom Lens HB-32 Lens",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/398402429790?hash=item5cc2a2a35e%3Ag%3Ae8QAAeSwnkFqq0Uc&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 119.99,
-   "comp_median": 159.0,
-   "comps": 3,
-   "model_key": "lens-nikon-nikon-f-18-105mm-f3_5-5_6-afs_dx_stab",
-   "model_name": "Nikon 18-105mm f/3.5-5.6 AFS DX STAB (Nikon F)",
-   "condition": null,
-   "reasons": [
-    "25% below the median of 3 comparable listings"
-   ],
-   "score": 27.5,
-   "is_new": false,
-   "deal_score": 99,
-   "score_why": [
-    "25% below the median of 3 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2330,7 +2431,7 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   },
   {
    "type": "listing",
@@ -2356,111 +2457,7 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-416945f38b",
-   "title": "Super-Takumar 1:1.4/50mm Camera Lens",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/147643122414?hash=item22603742ee%3Ag%3AQtoAAeSwW09q1ntP&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 60.0,
-   "comp_median": 175.0,
-   "comps": 5,
-   "model_key": "lens-pentax-m42-50mm-f1_4",
-   "model_name": "Pentax 50mm f/1.4 (M42)",
-   "condition": null,
-   "reasons": [
-    "66% below the median of 5 comparable listings"
-   ],
-   "score": 70.7,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "66% below the median of 5 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-8e1b2fa8f6",
-   "title": "Tamron 24-70mm f/2.8 DI VC USD nikon af",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/tamron-usage-7-tamron-24-70mm-f-28-di-vc-usd-nikon-af-u103819",
-   "price_cad": 269.0,
-   "comp_median": 659.5,
-   "comps": 8,
-   "model_key": "lens-tamron-nikon-f-24-70mm-f2_8-stab",
-   "model_name": "Tamron 24-70mm f/2.8 STAB (Nikon F)",
-   "condition": "Fair",
-   "reasons": [
-    "59% below the median of 8 comparable listings"
-   ],
-   "score": 67.2,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "59% below the median of 8 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "ebay-d884f675fa",
-   "title": "Canon A-1 Black 35mm Film SLR Camera Body Only Tested Made In Japan",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/147638652954?hash=item225ff3101a%3Ag%3A-50AAeSwyeFq0kNY&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 92.34,
-   "comp_median": 212.5,
-   "comps": 6,
-   "model_key": "camera-canon-a1",
-   "model_name": "Canon A1",
-   "condition": null,
-   "reasons": [
-    "57% below the median of 6 comparable listings"
-   ],
-   "score": 62.5,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "57% below the median of 6 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "score_basis": "history only (no model metadata yet)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
-  },
-  {
-   "type": "listing",
-   "id": "gosselin-d46fb5b47e",
-   "title": "Canon EOS Rebel t3i + 18-55mm",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-eos-rebel-t3i-18-55mm-u108240",
-   "price_cad": 125.0,
-   "comp_median": 249.99,
-   "comps": 11,
-   "model_key": "camera-canon-rebelt3i",
-   "model_name": "Canon REBELT3I",
-   "condition": "Good",
-   "reasons": [
-    "50% below the median of 11 comparable listings"
-   ],
-   "score": 60.0,
-   "is_new": false,
-   "deal_score": 98,
-   "score_why": [
-    "50% below the median of 11 comparable listings",
-    "the lowest price we've recorded for this model in 90 days",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "score_basis": "history only (bundle or version mismatch)",
-   "fetched_at": "2026-11-12T19:15:12+00:00"
+   "fetched_at": "2026-11-13T01:08:24+00:00"
   }
  ],
  "rules": {
