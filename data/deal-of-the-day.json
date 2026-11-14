@@ -619,5 +619,31 @@
   "is_new": true,
   "fetched_at": "2026-11-13T18:51:32+00:00",
   "date": "2026-11-13"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-1d8ed36d2f",
+  "title": "Canon EF 70-300mm f/4-5.6 IS USM Lens Image Stabilizer TESTED WORKING",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/366808245201?hash=item556779a3d1%3Ag%3A0t0AAeSw7t5q94VC&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 209.0,
+  "comp_median": 299.0,
+  "comps": 3,
+  "model_key": "lens-canon-canon-ef-70-300mm-f4-5_6-stab",
+  "model_name": "Canon 70-300mm f/4-5.6 STAB (Canon EF)",
+  "condition": null,
+  "reasons": [
+   "30% below the median of 3 comparable listings"
+  ],
+  "score": 41.1,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "30% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-14T17:24:49+00:00",
+  "date": "2026-11-14"
  }
 ]
