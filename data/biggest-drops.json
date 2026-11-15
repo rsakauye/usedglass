@@ -1,7 +1,7 @@
 {
- "week_start": "2026-11-07",
- "week_end": "2026-11-14",
- "generated_at": "2026-11-14T17:24:49+00:00",
+ "week_start": "2026-11-08",
+ "week_end": "2026-11-15",
+ "generated_at": "2026-11-15T18:05:33+00:00",
  "count": 25,
  "items": [
   {
@@ -18,6 +18,36 @@
    "saved_cad": 80.2,
    "drop_date": "2026-11-12",
    "model_path": "/model/camera-canon-a1/"
+  },
+  {
+   "id": "ebay-bcd7045e7c",
+   "title": "Canon PowerShot G1 X – 14.3MP Advanced Compact Digital Camera",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/227594187348?hash=item34fdabb254%3Ag%3AfF8AAeSwkjhq6K3s&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "camera-canon-powershotg1",
+   "model_name": "Canon POWERSHOTG1",
+   "category": "camera",
+   "old_price": 499,
+   "new_price": 299,
+   "pct": 0.401,
+   "saved_cad": 200,
+   "drop_date": "2026-11-15",
+   "model_path": "/model/camera-canon-powershotg1/"
+  },
+  {
+   "id": "ebay-3d2ce80c15",
+   "title": "Goerz Dogmar Projection F4.5 8 1/4\"",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/880102525355?hash=itemccea32c9ab%3Ag%3A7lkAAeSwwmFq8zPJ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "lens",
+   "old_price": 250,
+   "new_price": 150,
+   "pct": 0.4,
+   "saved_cad": 100,
+   "drop_date": "2026-11-15",
+   "model_path": null
   },
   {
    "id": "ebay-adcdadb038",
@@ -47,6 +77,21 @@
    "pct": 0.35,
    "saved_cad": 140,
    "drop_date": "2026-11-13",
+   "model_path": null
+  },
+  {
+   "id": "ebay-ff8e81f2e4",
+   "title": "Nikon L35AF L35 AF Pikaichi 35mm Point & Shoot Film Camera Works w/ Case READ",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/227543154223?hash=item34faa0fe2f%3Ag%3Aqu0AAeSw9D9qunlo&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "accessory",
+   "old_price": 229.99,
+   "new_price": 157.25,
+   "pct": 0.316,
+   "saved_cad": 72.74,
+   "drop_date": "2026-11-15",
    "model_path": null
   },
   {
@@ -155,21 +200,6 @@
    "model_path": null
   },
   {
-   "id": "ebay-a351d92ce0",
-   "title": "Kern Paillard Switar 25mm f1.4 Cine Movie Camera Lens Fair #180462",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/267789351046?hash=item3e597d3886%3Ag%3As3wAAeSwAwdqraXj&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "lens",
-   "old_price": 199,
-   "new_price": 149,
-   "pct": 0.251,
-   "saved_cad": 50,
-   "drop_date": "2026-11-12",
-   "model_path": null
-  },
-  {
    "id": "ebay-007852ed8e",
    "title": "Vintage Canon MC Compact point and shoot 35mm Film Camera / Flash - Working",
    "dealer": "eBay (Canadian sellers)",
@@ -182,6 +212,21 @@
    "pct": 0.25,
    "saved_cad": 37.5,
    "drop_date": "2026-11-12",
+   "model_path": null
+  },
+  {
+   "id": "ebay-c1144cecd6",
+   "title": "Asahi Pentax K1000 35MM Film Camera with 50 Mm Lens & AF160 Flash W/leather Case",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/336893252196?hash=item4e70671264%3Ag%3AHpkAAeSwDF9q9TSn&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "flash/lighting",
+   "old_price": 120,
+   "new_price": 90,
+   "pct": 0.25,
+   "saved_cad": 30,
+   "drop_date": "2026-11-15",
    "model_path": null
   },
   {
@@ -245,21 +290,6 @@
    "model_path": "/model/lens-canon-canon-rf-14-30mm-f4-6_3-stab_stm/"
   },
   {
-   "id": "ebay-3d2ce80c15",
-   "title": "Goerz Dogmar Projection F4.5 8 1/4\"",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/880102525355?hash=itemccea32c9ab%3Ag%3A7lkAAeSwwmFq8zPJ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "lens",
-   "old_price": 250,
-   "new_price": 190,
-   "pct": 0.24,
-   "saved_cad": 60,
-   "drop_date": "2026-11-13",
-   "model_path": null
-  },
-  {
    "id": "ebay-0471f3cb4f",
    "title": "Canon PowerShot G6 7.1MP Digital Camera Bundle Silver - TESTED & WORKING",
    "dealer": "eBay (Canadian sellers)",
@@ -287,6 +317,21 @@
    "pct": 0.231,
    "saved_cad": 30,
    "drop_date": "2026-11-13",
+   "model_path": null
+  },
+  {
+   "id": "ebay-e7003ea5d6",
+   "title": "Canon EOS REBEL T4I Camera w/ Two Lenses, Strap, Two Batteries, and Charger",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/407362924814?hash=item5ed8b8f10e%3Ag%3A614AAeSwE49q-JLh&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "accessory",
+   "old_price": 453.54,
+   "new_price": 349.23,
+   "pct": 0.23,
+   "saved_cad": 104.31,
+   "drop_date": "2026-11-15",
    "model_path": null
   },
   {
@@ -333,51 +378,6 @@
    "saved_cad": 99,
    "drop_date": "2026-11-14",
    "model_path": null
-  },
-  {
-   "id": "ebay-14a195a81d",
-   "title": "Pentax PC35AF-M SEDate 35mm Film Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/117501090922?hash=item1b5b9c5c6a%3Ag%3APCcAAeSwmOtq4jiT&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 249.98,
-   "new_price": 197.79,
-   "pct": 0.209,
-   "saved_cad": 52.19,
-   "drop_date": "2026-11-12",
-   "model_path": null
-  },
-  {
-   "id": "camtec-ed8e88f26a",
-   "title": "Fujinon GF 23mm f/4 R LM WR - A+",
-   "dealer": "Camtec Photo",
-   "url": "https://www.camtecphoto.com/en/product/fujinon-gf-23mm-f4-r-lm-wr-a",
-   "model_key": "lens-fujifilm-fujifilm-g-23mm-f4-lm",
-   "model_name": "Fujifilm 23mm f/4 LM (Fujifilm G)",
-   "category": "lens",
-   "old_price": 2485,
-   "new_price": 1985,
-   "pct": 0.201,
-   "saved_cad": 500,
-   "drop_date": "2026-11-12",
-   "model_path": "/model/lens-fujifilm-fujifilm-g-23mm-f4-lm/"
-  },
-  {
-   "id": "cameracanada-cbc220a335",
-   "title": "Canon EOS RP Body with RF 24-105mm STM Lens Open Box",
-   "dealer": "Camera Canada",
-   "url": "https://www.cameracanada.com/products/productDetail.aspx?pid=3380C132_OBD_UR",
-   "model_key": "camera-canon-rp",
-   "model_name": "Canon RP",
-   "category": "camera",
-   "old_price": 1499,
-   "new_price": 1199,
-   "pct": 0.2,
-   "saved_cad": 300,
-   "drop_date": "2026-11-14",
-   "model_path": "/model/camera-canon-rp/"
   }
  ]
 }

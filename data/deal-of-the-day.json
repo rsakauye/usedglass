@@ -645,5 +645,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-14T17:24:49+00:00",
   "date": "2026-11-14"
+ },
+ {
+  "type": "listing",
+  "id": "gosselin-a7f9900861",
+  "title": "Nikon D3500",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/nikon-usage-8-nikon-d3500-u108426",
+  "price_cad": 249.0,
+  "comp_median": 415.0,
+  "comps": 12,
+  "model_key": "camera-nikon-d3500",
+  "model_name": "Nikon D3500",
+  "condition": "Good",
+  "reasons": [
+   "40% below the median of 12 comparable listings"
+  ],
+  "score": 58.0,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "40% below the median of 12 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-15T18:05:33+00:00",
+  "date": "2026-11-15"
  }
 ]
