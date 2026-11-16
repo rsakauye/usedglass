@@ -671,5 +671,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-15T18:05:33+00:00",
   "date": "2026-11-15"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-63427c0a99",
+  "title": "Lot of 2 Canon EOS Rebel XS & Rebel 35mm Film SLR Camera Bodies Tested Working",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/147682287318?hash=item22628cded6%3Ag%3AybQAAeSw%7EC5q-lFt&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 84.99,
+  "comp_median": 150.28,
+  "comps": 11,
+  "model_key": "camera-canon-rebelxs",
+  "model_name": "Canon REBELXS",
+  "condition": null,
+  "reasons": [
+   "43% below the median of 11 comparable listings"
+  ],
+  "score": 61.4,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "43% below the median of 11 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-16T21:20:40+00:00",
+  "date": "2026-11-16"
  }
 ]
