@@ -1,5 +1,5 @@
 {
- "date": "2026-11-16",
+ "date": "2026-11-17",
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-16T21:20:40+00:00",
+   "as_of": "2026-11-17T20:08:50+00:00",
    "rate": 1.4298,
    "goods_cad": 43.62,
    "ship_cad": 9.22,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-16T21:20:40+00:00",
+   "as_of": "2026-11-17T20:08:50+00:00",
    "rate": 1.4298,
    "goods_cad": 36.02,
    "ship_cad": 9.22,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-16T21:20:40+00:00",
+   "as_of": "2026-11-17T20:08:50+00:00",
    "rate": 1.4298,
    "goods_cad": 37.83,
    "ship_cad": 9.22,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-16T21:20:40+00:00",
+   "as_of": "2026-11-17T20:08:50+00:00",
    "rate": 1.4298,
    "goods_cad": 54.33,
    "ship_cad": 15.63,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-16T21:20:40+00:00",
+   "as_of": "2026-11-17T20:08:50+00:00",
    "rate": 1.4298,
    "goods_cad": 15.73,
    "ship_cad": 0.0,
@@ -234,18 +234,6 @@
    "model_name": "Leica 35mm f/2 (Leica M)"
   },
   {
-   "title": "Lot of 2 Canon EOS Rebel XS & Rebel 35mm Film SLR Camera Bodies Tested Working",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/147682287318?hash=item22628cded6%3Ag%3AybQAAeSw%7EC5q-lFt&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 84.99,
-   "deal_score": 100,
-   "score_why": [
-    "43% below the median of 11 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon REBELXS"
-  },
-  {
    "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/237078403796?hash=item3732f95ad4%3Ag%3ArPEAAeSwZBRqrtOB&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
@@ -268,6 +256,18 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Leica 90mm f/2 (Leica M)"
+  },
+  {
+   "title": "Pentax ME Super with Tokina 28mm F2.8 Used Film Camera",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U1905430",
+   "price_cad": 99.99,
+   "deal_score": 100,
+   "score_why": [
+    "49% below the median of 16 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Pentax MESUPER"
   },
   {
    "title": "Canon PowerShot G7 10.0MP Digital Camera Bundle Retro Digicam Vintage CCD IS",

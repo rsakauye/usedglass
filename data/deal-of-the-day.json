@@ -697,5 +697,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-16T21:20:40+00:00",
   "date": "2026-11-16"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-687b81c593",
+  "title": "Nikon D300 DSLR Camera Body",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/267845785965?hash=item3e5cda596d%3Ag%3AJooAAeSw5K5q-%7EBh&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 150.0,
+  "comp_median": 249.99,
+  "comps": 8,
+  "model_key": "camera-nikon-d300",
+  "model_name": "Nikon D300",
+  "condition": null,
+  "reasons": [
+   "40% below the median of 8 comparable listings"
+  ],
+  "score": 56.0,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "40% below the median of 8 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-17T20:08:50+00:00",
+  "date": "2026-11-17"
  }
 ]
