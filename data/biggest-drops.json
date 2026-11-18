@@ -1,7 +1,7 @@
 {
- "week_start": "2026-11-10",
- "week_end": "2026-11-17",
- "generated_at": "2026-11-17T20:08:50+00:00",
+ "week_start": "2026-11-11",
+ "week_end": "2026-11-18",
+ "generated_at": "2026-11-18T19:40:44+00:00",
  "count": 25,
  "items": [
   {
@@ -18,6 +18,21 @@
    "saved_cad": 80.2,
    "drop_date": "2026-11-12",
    "model_path": "/model/camera-canon-a1/"
+  },
+  {
+   "id": "ebay-42c91a362b",
+   "title": "Nikon DX AF-S Nikkor 18-105mm G ED VR CLEAN lens for D7200 D3400 D90 D5600 D7500",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/900093912042?hash=itemd191c723ea%3Ag%3AxoMAAeSwQr9q-e9V&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "lens-nikon-nikon-f-18-105mm-f-afs_dx_stab",
+   "model_name": "Nikon 18-105mm AFS DX STAB (Nikon F)",
+   "category": "lens",
+   "old_price": 140,
+   "new_price": 75,
+   "pct": 0.464,
+   "saved_cad": 65,
+   "drop_date": "2026-11-18",
+   "model_path": "/model/lens-nikon-nikon-f-18-105mm-f-afs_dx_stab/"
   },
   {
    "id": "ebay-bcd7045e7c",
@@ -73,10 +88,10 @@
    "model_name": "Nissin 60mm f/2 (Sony E)",
    "category": "lens",
    "old_price": 169.54,
-   "new_price": 102.95,
+   "new_price": 102.94,
    "pct": 0.393,
-   "saved_cad": 66.59,
-   "drop_date": "2026-11-17",
+   "saved_cad": 66.6,
+   "drop_date": "2026-11-18",
    "model_path": "/model/lens-nissin-sony-e-60mm-f2/"
   },
   {
@@ -155,21 +170,6 @@
    "model_path": null
   },
   {
-   "id": "gosselin-7026784574",
-   "title": "Fujifilm X-H1",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/fujifilm-usage-7-fujifilm-x-h1-u106908",
-   "model_key": "camera-fujifilm-xh1",
-   "model_name": "Fujifilm XH1",
-   "category": "camera",
-   "old_price": 999,
-   "new_price": 699,
-   "pct": 0.3,
-   "saved_cad": 300,
-   "drop_date": "2026-11-17",
-   "model_path": "/model/camera-fujifilm-xh1/"
-  },
-  {
    "id": "ebay-e92cc354cb",
    "title": "Canon PowerShot ELPH 180 20.0 MP Digital SLR Camera - Red",
    "dealer": "eBay (Canadian sellers)",
@@ -245,6 +245,21 @@
    "model_path": null
   },
   {
+   "id": "ebay-6125bd91b2",
+   "title": "Olympus Trip 35 Film Camera Black Silver Point Shoot 40mm f/2.8 Zuiko Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/336893277903?hash=item4e706776cf%3Ag%3AUIkAAeSwPJpq9Tpg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 100,
+   "new_price": 70,
+   "pct": 0.3,
+   "saved_cad": 30,
+   "drop_date": "2026-11-18",
+   "model_path": null
+  },
+  {
    "id": "mcbain-e6e7055361",
    "title": "Fujifilm X-M5 + 15-45mm f3.5-5.6 OIS PZ (LN-/EX) used",
    "dealer": "McBain Camera",
@@ -272,6 +287,51 @@
    "pct": 0.286,
    "saved_cad": 40,
    "drop_date": "2026-11-13",
+   "model_path": null
+  },
+  {
+   "id": "ebay-d392dc35d2",
+   "title": "Olympus VG-190 Digital Camera 16MP 5X Zoom Tested Black w/ 16GB SD Card Charger",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/840076207561?hash=itemc39871a5c9%3Ag%3A8TAAAeSwq8pq5QiH&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "accessory",
+   "old_price": 139.99,
+   "new_price": 99.99,
+   "pct": 0.286,
+   "saved_cad": 40,
+   "drop_date": "2026-11-18",
+   "model_path": null
+  },
+  {
+   "id": "ebay-f963662eed",
+   "title": "Canon PowerShot SX150 IS PC1677 14.1MP Digital Camera 12X 4GB SD w/ Canon Case",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/840076162921?hash=itemc39870f769%3Ag%3A9UQAAeSwYsZq5QSF&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "accessory",
+   "old_price": 139.99,
+   "new_price": 99.99,
+   "pct": 0.286,
+   "saved_cad": 40,
+   "drop_date": "2026-11-18",
+   "model_path": null
+  },
+  {
+   "id": "ebay-9ffc5f6c54",
+   "title": "Olympus Stylus Zoom 115 Camera Tested Working",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/820328571553?hash=itembeff64a2a1%3Ag%3Akk8AAeSwakhq73HL&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 179.99,
+   "new_price": 129.99,
+   "pct": 0.278,
+   "saved_cad": 50,
+   "drop_date": "2026-11-18",
    "model_path": null
   },
   {
@@ -317,66 +377,6 @@
    "pct": 0.25,
    "saved_cad": 25,
    "drop_date": "2026-11-16",
-   "model_path": null
-  },
-  {
-   "id": "ebay-df3522b7bd",
-   "title": "SMC Takumar 1:1.8/55mm Lens M42 Mount Used condition works well",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/860113536030?hash=itemc842c3041e%3Ag%3AwjQAAeSwhENq64VW&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "lens-pentax-pentax-k-55mm-f1_8",
-   "model_name": "Pentax 55mm f/1.8 (Pentax K)",
-   "category": "lens",
-   "old_price": 100,
-   "new_price": 75,
-   "pct": 0.25,
-   "saved_cad": 25,
-   "drop_date": "2026-11-12",
-   "model_path": "/model/lens-pentax-pentax-k-55mm-f1_8/"
-  },
-  {
-   "id": "ebay-e3dd966f2f",
-   "title": "Canon EOS 3000 35mm SLR Film Camera Bundle w/ 28-80mm Zoom Lens & Camera Bag",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/178470663071?hash=item298dae339f%3Ag%3AJqEAAeSwpfhqnE7a&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "accessory",
-   "old_price": 99.99,
-   "new_price": 74.99,
-   "pct": 0.25,
-   "saved_cad": 25,
-   "drop_date": "2026-11-17",
-   "model_path": null
-  },
-  {
-   "id": "ebay-e7a5e3e121",
-   "title": "Nikon AF Nikkor 70-300mm F/4-5.6 G Lens with Manual, 2 UV Filters, & HB-26 Hood",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/900044728274?hash=itemd18ed8a7d2%3Ag%3Ah0gAAeSwtQhpDTyY&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "accessory",
-   "old_price": 99.97,
-   "new_price": 74.98,
-   "pct": 0.25,
-   "saved_cad": 24.99,
-   "drop_date": "2026-11-17",
-   "model_path": null
-  },
-  {
-   "id": "ebay-45efbfaf42",
-   "title": "Canon PowerShot Digital ELPH S410 4.0MP Digital Camera In Box Need New Battery",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/287682242731?hash=item42fb32a8ab%3Ag%3AnEgAAeSw-Bdq36cP&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "accessory",
-   "old_price": 80,
-   "new_price": 60,
-   "pct": 0.25,
-   "saved_cad": 20,
-   "drop_date": "2026-11-13",
    "model_path": null
   }
  ]
