@@ -1,0 +1,4 @@
+# The UsedGlass scraper, its tests, and scripts/firmware.py use only the Python
+# standard library and local modules. There are no third-party packages to pin.
+# This file makes that set explicit. It was checked against all 21 .py files on
+# 2026-11-17. These are not pins from a previous environment; none were needed.
