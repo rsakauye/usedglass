@@ -1,39 +1,39 @@
 {
- "date": "2026-11-18",
+ "date": "2026-11-19",
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
-   "date": "2026-11-17",
-   "rate": 1.4291,
-   "chg_7d": 0.0078,
-   "chg_30d": 0.0097,
-   "text_30d": "The Canadian dollar weakened 1.0% against the USD over 30 days."
+   "date": "2026-11-18",
+   "rate": 1.4326,
+   "chg_7d": 0.0102,
+   "chg_30d": 0.0162,
+   "text_30d": "The Canadian dollar weakened 1.6% against the USD over 30 days."
   },
   "EUR": {
-   "date": "2026-11-17",
-   "rate": 1.5726,
-   "chg_7d": -0.0071,
-   "chg_30d": -0.0114,
-   "text_30d": "The Canadian dollar strengthened 1.1% against the EUR over 30 days."
+   "date": "2026-11-18",
+   "rate": 1.5717,
+   "chg_7d": -0.0077,
+   "chg_30d": -0.0059,
+   "text_30d": "The Canadian dollar strengthened 0.6% against the EUR over 30 days."
   },
   "GBP": {
-   "date": "2026-11-17",
-   "rate": 1.8876,
-   "chg_7d": -0.0033,
-   "chg_30d": 0.0003,
-   "text_30d": "The Canadian dollar is flat against the GBP over 30 days."
+   "date": "2026-11-18",
+   "rate": 1.8844,
+   "chg_7d": -0.005,
+   "chg_30d": 0.0041,
+   "text_30d": "The Canadian dollar weakened 0.4% against the GBP over 30 days."
   },
   "JPY": {
-   "date": "2026-11-17",
-   "rate": 0.00897,
-   "chg_7d": 0.0034,
-   "chg_30d": 0.0011,
-   "text_30d": "The Canadian dollar weakened 0.1% against the JPY over 30 days."
+   "date": "2026-11-18",
+   "rate": 0.00899,
+   "chg_7d": 0.0056,
+   "chg_30d": 0.0101,
+   "text_30d": "The Canadian dollar weakened 1.0% against the JPY over 30 days."
   }
  },
- "fx_headline": "The Canadian dollar weakened 1.0% against the USD over 30 days.",
+ "fx_headline": "The Canadian dollar weakened 1.6% against the USD over 30 days.",
  "rate_moved": {
-  "status": "CAD moved 1.0% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
+  "status": "CAD moved 1.6% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
   "direction": null,
   "items": []
  },
@@ -46,18 +46,18 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-18T19:40:44+00:00",
-   "rate": 1.4291,
-   "goods_cad": 43.6,
-   "ship_cad": 9.22,
+   "as_of": "2026-11-19T19:41:25+00:00",
+   "rate": 1.4326,
+   "goods_cad": 43.71,
+   "ship_cad": 9.24,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.64,
-   "landed_cad": 80.46,
+   "tax_cad": 2.65,
+   "landed_cad": 80.6,
    "tax_rate": 0.05,
    "ca_price": 10365.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/leica-q3",
-   "saving_cad": 10284.54,
+   "saving_cad": 10284.4,
    "saving_pct": 0.992,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -70,18 +70,18 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-18T19:40:44+00:00",
-   "rate": 1.4291,
-   "goods_cad": 36.0,
-   "ship_cad": 9.22,
+   "as_of": "2026-11-19T19:41:25+00:00",
+   "rate": 1.4326,
+   "goods_cad": 36.09,
+   "ship_cad": 9.24,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.26,
-   "landed_cad": 72.48,
+   "tax_cad": 2.27,
+   "landed_cad": 72.59,
    "tax_rate": 0.05,
    "ca_price": 6999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z9-body",
-   "saving_cad": 6926.52,
+   "saving_cad": 6926.41,
    "saving_pct": 0.99,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -94,18 +94,18 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-18T19:40:44+00:00",
-   "rate": 1.4291,
-   "goods_cad": 37.81,
-   "ship_cad": 9.22,
+   "as_of": "2026-11-19T19:41:25+00:00",
+   "rate": 1.4326,
+   "goods_cad": 37.91,
+   "ship_cad": 9.24,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.35,
-   "landed_cad": 74.38,
+   "tax_cad": 2.36,
+   "landed_cad": 74.5,
    "tax_rate": 0.05,
    "ca_price": 4999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r5-mark-ii",
-   "saving_cad": 4924.62,
+   "saving_cad": 4924.5,
    "saving_pct": 0.985,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -118,18 +118,18 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-18T19:40:44+00:00",
-   "rate": 1.4291,
-   "goods_cad": 54.31,
-   "ship_cad": 15.62,
+   "as_of": "2026-11-19T19:41:25+00:00",
+   "rate": 1.4326,
+   "goods_cad": 54.44,
+   "ship_cad": 15.66,
    "brokerage_cad": 25.0,
    "tax_cad": 3.5,
-   "landed_cad": 98.42,
+   "landed_cad": 98.6,
    "tax_rate": 0.05,
    "ca_price": 4699.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7r-v",
-   "saving_cad": 4600.58,
+   "saving_cad": 4600.4,
    "saving_pct": 0.979,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -142,18 +142,18 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-18T19:40:44+00:00",
-   "rate": 1.4291,
-   "goods_cad": 15.72,
+   "as_of": "2026-11-19T19:41:25+00:00",
+   "rate": 1.4326,
+   "goods_cad": 15.76,
    "ship_cad": 0.0,
    "brokerage_cad": 25.0,
    "tax_cad": 0.79,
-   "landed_cad": 41.51,
+   "landed_cad": 41.55,
    "tax_rate": 0.05,
    "ca_price": 4499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7s-iii",
-   "saving_cad": 4457.49,
+   "saving_cad": 4457.45,
    "saving_pct": 0.991,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -161,16 +161,28 @@
  ],
  "top_scored_deals": [
   {
-   "title": "Pentax K1000 35mm SLR Film Camera With 28mm Lens - Missing Rewind Knob -",
+   "title": "Pentax K1000 35mm SLR Film Camera w 50mm Rikenon Lens Shutter Fires UNTESTED!",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/198762510907?hash=item2e472b3a3b%3Ag%3AmXgAAeSwXYNq5jrD&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 79.99,
+   "url": "https://www.ebay.ca/itm/920158149512?hash=itemd63db31b88%3Ag%3AeiwAAeSwU9Bq%7EilL&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 69.99,
    "deal_score": 100,
    "score_why": [
-    "59% below the median of 30 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
+    "64% below the median of 31 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Pentax K1000"
+  },
+  {
+   "title": "Pentax Spotmatic SPII + SMC Takumar 55mm f1.8 (BGN) used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8908143",
+   "price_cad": 69.99,
+   "deal_score": 100,
+   "score_why": [
+    "53% below the median of 20 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Pentax SPOTMATIC"
   },
   {
    "title": "Canon 28mm f2.8 S.C.(BGN) FD used",
@@ -183,6 +195,18 @@
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Canon 28mm f/2.8 (Canon FD)"
+  },
+  {
+   "title": "Pentax K1000 35mm SLR Film Camera With 28mm Lens - Missing Rewind Knob -",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/198762510907?hash=item2e472b3a3b%3Ag%3AmXgAAeSwXYNq5jrD&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 79.99,
+   "deal_score": 100,
+   "score_why": [
+    "59% below the median of 31 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Pentax K1000"
   },
   {
    "title": "Minolta XG-M (EX)(New Seals) used",
@@ -234,52 +258,28 @@
    "model_name": "Leica 35mm f/2 (Leica M)"
   },
   {
-   "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",
+   "title": "Canon AE-1 35mm Film SLR Camera w/ 50mm F1.8 Lens + Case - TESTED - WORKING",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/237078403796?hash=item3732f95ad4%3Ag%3ArPEAAeSwZBRqrtOB&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 75.0,
+   "url": "https://www.ebay.ca/itm/940105981468?hash=itemdae2aede1c%3Ag%3AWOwAAeSw%7Erlq%7Ey3z&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 171.85,
    "deal_score": 100,
    "score_why": [
-    "50% below the median of 19 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Pentax SPOTMATIC"
-  },
-  {
-   "title": "Nikon FE 35mm Film SLR Camera with Nikkor 50mm f/1.8 Lens Untested Vintage",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/147672280568?hash=item2261f42df8%3Ag%3Auu0AAeSwm9Bq8OcL&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 172.34,
-   "deal_score": 100,
-   "score_why": [
-    "50% below the median of 12 comparable listings",
+    "42% below the median of 42 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Nikon FE"
+   "model_name": "Canon AE1"
   },
   {
-   "title": "Minolta X-370 35mm SLR Film Camera - Black with 50mm 1:2 lens - Works",
+   "title": "Canon PowerShot G7 10.0MP Digital Camera Bundle Retro Digicam Vintage CCD IS",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/307227654787?hash=item478831fa83%3Ag%3AQjIAAeSw3c5qzQ%7EE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 76.0,
+   "url": "https://www.ebay.ca/itm/307278504903?hash=item478b39e3c7%3Ag%3A07EAAeSwpU9q8fsA&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 499.99,
    "deal_score": 100,
    "score_why": [
-    "54% below the median of 5 comparable listings",
+    "50% below the median of 10 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Minolta X370"
-  },
-  {
-   "title": "Used Leitz Leica Canada Summicron-M 90mm f2",
-   "dealer": "Beau Photo",
-   "url": "https://www.beauphoto.com/product/used-leitz-leica-canada-summicron-m-90mm-f2/",
-   "price_cad": 1000.0,
-   "deal_score": 100,
-   "score_why": [
-    "55% below the median of 4 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Leica 90mm f/2 (Leica M)"
+   "model_name": "Canon POWERSHOTG7"
   }
  ]
 }

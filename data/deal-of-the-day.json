@@ -749,5 +749,31 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-18T19:40:44+00:00",
   "date": "2026-11-18"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-da7466458c",
+  "title": "Pentax K1000 35mm SLR Film Camera w 50mm Rikenon Lens Shutter Fires UNTESTED!",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/920158149512?hash=itemd63db31b88%3Ag%3AeiwAAeSwU9Bq%7EilL&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 69.99,
+  "comp_median": 193.49,
+  "comps": 31,
+  "model_key": "camera-pentax-k1000",
+  "model_name": "Pentax K1000",
+  "condition": null,
+  "reasons": [
+   "64% below the median of 31 comparable listings"
+  ],
+  "score": 81.8,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "64% below the median of 31 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-19T19:41:25+00:00",
+  "date": "2026-11-19"
  }
 ]
