@@ -775,5 +775,31 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-19T19:41:25+00:00",
   "date": "2026-11-19"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-e3fc549d95",
+  "title": "Canon PowerShot ELPH 170 IS 20MP 12x Optical Zoom Digital Camera Blue w/ Extras",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/920162005295?hash=itemd63dedf12f%3Ag%3A1zQAAeSwuQNq%7EJHZ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 199.99,
+  "comp_median": 293.75,
+  "comps": 50,
+  "model_key": "camera-canon-powershotelph",
+  "model_name": "Canon POWERSHOTELPH",
+  "condition": null,
+  "reasons": [
+   "32% below the median of 50 comparable listings"
+  ],
+  "score": 49.9,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "32% below the median of 50 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-11-20T19:19:57+00:00",
+  "date": "2026-11-20"
  }
 ]

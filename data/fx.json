@@ -3,7 +3,7 @@
  "source_url": "https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/",
  "terms_url": "https://www.bankofcanada.ca/terms/",
  "note": "Indicative daily average rates, published around 4:30 p.m. ET on business days. Banks and card issuers charge more.",
- "fetched_at": "2026-11-19T19:41:25+00:00",
+ "fetched_at": "2026-11-20T19:19:57+00:00",
  "series": {
   "USD": {
    "series": "FXUSDCAD",
@@ -417,6 +417,10 @@
     [
      "2026-11-18",
      1.4326
+    ],
+    [
+     "2026-11-19",
+     1.4317
     ]
    ]
   },
@@ -832,6 +836,10 @@
     [
      "2026-11-18",
      1.5717
+    ],
+    [
+     "2026-11-19",
+     1.5726
     ]
    ]
   },
@@ -1247,6 +1255,10 @@
     [
      "2026-11-18",
      1.8844
+    ],
+    [
+     "2026-11-19",
+     1.8783
     ]
    ]
   },
@@ -1662,50 +1674,54 @@
     [
      "2026-11-18",
      0.00899
+    ],
+    [
+     "2026-11-19",
+     0.00896
     ]
    ]
   }
  },
  "latest": {
   "USD": {
-   "date": "2026-11-18",
-   "rate": 1.4326,
-   "chg_7d": 0.0102,
-   "from_7d": 1.4181,
-   "chg_30d": 0.0162,
-   "from_30d": 1.4097,
-   "text_30d": "The Canadian dollar weakened 1.6% against the USD over 30 days.",
-   "text_7d": "The Canadian dollar weakened 1.0% against the USD over 7 days."
+   "date": "2026-11-19",
+   "rate": 1.4317,
+   "chg_7d": 0.0043,
+   "from_7d": 1.4255,
+   "chg_30d": 0.0187,
+   "from_30d": 1.4054,
+   "text_30d": "The Canadian dollar weakened 1.9% against the USD over 30 days.",
+   "text_7d": "The Canadian dollar weakened 0.4% against the USD over 7 days."
   },
   "EUR": {
-   "date": "2026-11-18",
-   "rate": 1.5717,
-   "chg_7d": -0.0077,
-   "from_7d": 1.5839,
-   "chg_30d": -0.0059,
-   "from_30d": 1.581,
-   "text_30d": "The Canadian dollar strengthened 0.6% against the EUR over 30 days.",
-   "text_7d": "The Canadian dollar strengthened 0.8% against the EUR over 7 days."
+   "date": "2026-11-19",
+   "rate": 1.5726,
+   "chg_7d": -0.0029,
+   "from_7d": 1.5771,
+   "chg_30d": -0.0038,
+   "from_30d": 1.5786,
+   "text_30d": "The Canadian dollar strengthened 0.4% against the EUR over 30 days.",
+   "text_7d": "The Canadian dollar strengthened 0.3% against the EUR over 7 days."
   },
   "GBP": {
-   "date": "2026-11-18",
-   "rate": 1.8844,
-   "chg_7d": -0.005,
-   "from_7d": 1.8939,
-   "chg_30d": 0.0041,
-   "from_30d": 1.8767,
-   "text_30d": "The Canadian dollar weakened 0.4% against the GBP over 30 days.",
+   "date": "2026-11-19",
+   "rate": 1.8783,
+   "chg_7d": -0.0048,
+   "from_7d": 1.8874,
+   "chg_30d": -0.001,
+   "from_30d": 1.8802,
+   "text_30d": "The Canadian dollar strengthened 0.1% against the GBP over 30 days.",
    "text_7d": "The Canadian dollar strengthened 0.5% against the GBP over 7 days."
   },
   "JPY": {
-   "date": "2026-11-18",
-   "rate": 0.00899,
-   "chg_7d": 0.0056,
-   "from_7d": 0.00894,
-   "chg_30d": 0.0101,
-   "from_30d": 0.0089,
-   "text_30d": "The Canadian dollar weakened 1.0% against the JPY over 30 days.",
-   "text_7d": "The Canadian dollar weakened 0.6% against the JPY over 7 days."
+   "date": "2026-11-19",
+   "rate": 0.00896,
+   "chg_7d": 0.0045,
+   "from_7d": 0.00892,
+   "chg_30d": 0.0079,
+   "from_30d": 0.00889,
+   "text_30d": "The Canadian dollar weakened 0.8% against the JPY over 30 days.",
+   "text_7d": "The Canadian dollar weakened 0.4% against the JPY over 7 days."
   }
  },
  "error": null

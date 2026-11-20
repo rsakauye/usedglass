@@ -1,36 +1,36 @@
 {
- "run_at": "2026-11-19T19:41:25+00:00",
- "date": "2026-11-19",
+ "run_at": "2026-11-20T19:19:57+00:00",
+ "date": "2026-11-20",
  "dealers": {
   "mcbain": {
-   "count": 1033,
+   "count": 1045,
    "status": "ok",
-   "seconds": 1.2
+   "seconds": 2.4
   },
   "downtowncamera": {
-   "count": 890,
+   "count": 895,
    "status": "ok",
-   "seconds": 0.8
+   "seconds": 0.9
   },
   "gosselin": {
-   "count": 751,
+   "count": 740,
    "status": "ok",
-   "seconds": 7.8
+   "seconds": 5.3
   },
   "beauphoto": {
-   "count": 379,
+   "count": 381,
    "status": "ok",
-   "seconds": 18.3
+   "seconds": 20.3
   },
   "thecamerastore": {
-   "count": 107,
+   "count": 60,
    "status": "ok",
-   "seconds": 0.7
+   "seconds": 0.6
   },
   "camtec": {
-   "count": 121,
+   "count": 120,
    "status": "ok",
-   "seconds": 2.8
+   "seconds": 2.2
   },
   "plotcamera": {
    "count": 0,
@@ -47,25 +47,25 @@
   "cameratrading": {
    "count": 60,
    "status": "ok",
-   "seconds": 0.7
+   "seconds": 0.6
   },
   "cameracanada": {
-   "count": 187,
+   "count": 177,
    "status": "ok",
-   "seconds": 42.3
+   "seconds": 32.3
   },
   "ebay": {
    "count": 3000,
    "status": "ok",
-   "seconds": 39.1
+   "seconds": 40.6
   }
  },
  "errors": {},
- "total": 6512,
- "models": 1975,
- "new_today": 195,
- "price_dropped": 57,
- "deals": 246,
+ "total": 6463,
+ "models": 1967,
+ "new_today": 208,
+ "price_dropped": 53,
+ "deals": 249,
  "dealer_info": {
   "thecamerastore": {
    "name": "The Camera Store",
@@ -133,13 +133,13 @@
  },
  "feeds": {
   "newprices": {
-   "count": 883,
+   "count": 889,
    "status": "ok",
-   "seconds": 15.1
+   "seconds": 15.6
   },
   "fx": {
    "status": "ok",
-   "latest": "2026-11-18"
+   "latest": "2026-11-19"
   },
   "ebay_us": {
    "count": 29,
