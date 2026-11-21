@@ -801,5 +801,31 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-20T19:19:57+00:00",
   "date": "2026-11-20"
+ },
+ {
+  "type": "listing",
+  "id": "mcbain-4d8f9e2c73",
+  "title": "Pentax-A 28mm f2.8 (BGN) P/K used",
+  "dealer": "McBain Camera",
+  "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8908153",
+  "price_cad": 59.99,
+  "comp_median": 110.0,
+  "comps": 9,
+  "model_key": "lens-pentax-pentax-k-28mm-f2_8",
+  "model_name": "Pentax 28mm f/2.8 (Pentax K)",
+  "condition": "Fair",
+  "reasons": [
+   "45% below the median of 9 comparable listings"
+  ],
+  "score": 62.5,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "45% below the median of 9 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-21T18:22:39+00:00",
+  "date": "2026-11-21"
  }
 ]
