@@ -1,7 +1,7 @@
 {
- "week_start": "2026-11-14",
- "week_end": "2026-11-21",
- "generated_at": "2026-11-21T18:22:39+00:00",
+ "week_start": "2026-11-15",
+ "week_end": "2026-11-22",
+ "generated_at": "2026-11-22T18:45:42+00:00",
  "count": 25,
  "items": [
   {
@@ -35,33 +35,33 @@
    "model_path": null
   },
   {
-   "id": "ebay-bcd7045e7c",
-   "title": "Canon PowerShot G1 X – 14.3MP Advanced Compact Digital Camera",
+   "id": "ebay-ca3e80e021",
+   "title": "Minolta Hi-Matic 7s Rangefinder Film Camera 45mm f/1.8",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/227594187348?hash=item34fdabb254%3Ag%3AfF8AAeSwkjhq6K3s&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "camera-canon-powershotg1",
-   "model_name": "Canon POWERSHOTG1",
-   "category": "camera",
-   "old_price": 499,
-   "new_price": 299,
-   "pct": 0.401,
-   "saved_cad": 200,
-   "drop_date": "2026-11-15",
-   "model_path": "/model/camera-canon-powershotg1/"
-  },
-  {
-   "id": "ebay-1bdd96fdb9",
-   "title": "Fujifilm FinePix T500 Digital Camera 16.0MP Original Box Battery Charger Tested",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/840107886711?hash=itemc39a550877%3Ag%3An4wAAeSwD5Vq8K6S&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "url": "https://www.ebay.ca/itm/287726069146?hash=item42fdcf659a%3Ag%3Ad64AAeSwJ%7E1q9pku&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "model_key": null,
    "model_name": null,
-   "category": "accessory",
-   "old_price": 124.99,
-   "new_price": 79.99,
-   "pct": 0.36,
-   "saved_cad": 45,
-   "drop_date": "2026-11-21",
+   "category": "camera",
+   "old_price": 150,
+   "new_price": 80,
+   "pct": 0.467,
+   "saved_cad": 70,
+   "drop_date": "2026-11-22",
+   "model_path": null
+  },
+  {
+   "id": "ebay-deda1a0e91",
+   "title": "Canon EOS 600D 18.0MP Digital SLR DSLR Camera (NO LENS)",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/287724929780?hash=item42fdbe02f4%3Ag%3AgU4AAeSwHERq9gha&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "lens",
+   "old_price": 200,
+   "new_price": 130,
+   "pct": 0.35,
+   "saved_cad": 70,
+   "drop_date": "2026-11-22",
    "model_path": null
   },
   {
@@ -80,21 +80,6 @@
    "model_path": "/model/lens-tamron-nikon-f-24-70mm-f2_8-stab/"
   },
   {
-   "id": "ebay-ca3e80e021",
-   "title": "Minolta Hi-Matic 7s Rangefinder Film Camera 45mm f/1.8",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/287726069146?hash=item42fdcf659a%3Ag%3Ad64AAeSwJ%7E1q9pku&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 150,
-   "new_price": 100,
-   "pct": 0.333,
-   "saved_cad": 50,
-   "drop_date": "2026-11-16",
-   "model_path": null
-  },
-  {
    "id": "ebay-d98963d019",
    "title": "Fujifilm FinePix F300EXR 15x Zoom Digital Camera Black Battery Charger",
    "dealer": "eBay (Canadian sellers)",
@@ -108,6 +93,21 @@
    "saved_cad": 55,
    "drop_date": "2026-11-19",
    "model_path": null
+  },
+  {
+   "id": "ebay-5b7169533a",
+   "title": "Nikon COOLPIX 8700 8.0MP Digital Camera 8x Optical Zoom",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/117525124243?hash=item1b5d0b1493%3Ag%3A%7EOMAAeSwhfxq-wfy&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "camera-nikon-coolpix8700",
+   "model_name": "Nikon COOLPIX8700",
+   "category": "camera",
+   "old_price": 575,
+   "new_price": 395,
+   "pct": 0.313,
+   "saved_cad": 180,
+   "drop_date": "2026-11-22",
+   "model_path": "/model/camera-nikon-coolpix8700/"
   },
   {
    "id": "gosselin-d12a2da229",
@@ -170,18 +170,18 @@
    "model_path": null
   },
   {
-   "id": "ebay-b781810cb0",
-   "title": "Fujifilm Clear Shot II 2 35mm Film Camera Fixed Focus 33mm f/8 Fujinon Lens RARE",
+   "id": "ebay-83e9d9ac33",
+   "title": "Nikon COOLPIX L21 Pink 8MP CCD Compact 3.6X Zoom Digital Camera Digicam Tested",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/227564933246?hash=item34fbed507e%3Ag%3AYUEAAeSw2epqzb0z&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "url": "https://www.ebay.ca/itm/377633629835?hash=item57ecb7e68b%3Ag%3AingAAeSwumxq8jZx&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "model_key": null,
    "model_name": null,
-   "category": "camera",
-   "old_price": 99,
-   "new_price": 69.3,
+   "category": "lens",
+   "old_price": 199.99,
+   "new_price": 139.99,
    "pct": 0.3,
-   "saved_cad": 29.7,
-   "drop_date": "2026-11-15",
+   "saved_cad": 60,
+   "drop_date": "2026-11-20",
    "model_path": null
   },
   {
@@ -200,19 +200,19 @@
    "model_path": null
   },
   {
-   "id": "ebay-3d2ce80c15",
-   "title": "Goerz Dogmar Projection F4.5 8 1/4\"",
+   "id": "ebay-3e37434e6e",
+   "title": "Olympus Zuiko Digital 40-150 mm 1:3.5-4.5 Lens",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/880102525355?hash=itemccea32c9ab%3Ag%3A7lkAAeSwwmFq8zPJ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
+   "url": "https://www.ebay.ca/itm/137799213224?hash=item20157920a8%3Ag%3AiuwAAeSwMwVomlWk&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "lens-olympus-four-thirds-40-150mm-f3_5-4_5",
+   "model_name": "Olympus 40-150mm f/3.5-4.5 (Four Thirds)",
    "category": "lens",
-   "old_price": 190,
-   "new_price": 135,
-   "pct": 0.289,
-   "saved_cad": 55,
-   "drop_date": "2026-11-20",
-   "model_path": null
+   "old_price": 89.49,
+   "new_price": 62.64,
+   "pct": 0.3,
+   "saved_cad": 26.85,
+   "drop_date": "2026-11-22",
+   "model_path": "/model/lens-olympus-four-thirds-40-150mm-f3_5-4_5/"
   },
   {
    "id": "cameracanada-a1627e1ae0",
@@ -275,6 +275,21 @@
    "model_path": null
   },
   {
+   "id": "ebay-da2d948c04",
+   "title": "Canon Rebel EOS 500D/T1i DSLR Camera + Sigma 18-250mm Lens w/ 2 Batteries",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/840139270294?hash=itemc39c33e896%3Ag%3AXlYAAeSwtKlq%7ELuP&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "accessory",
+   "old_price": 249.99,
+   "new_price": 179.99,
+   "pct": 0.28,
+   "saved_cad": 70,
+   "drop_date": "2026-11-22",
+   "model_path": null
+  },
+  {
    "id": "ebay-9ffc5f6c54",
    "title": "Olympus Stylus Zoom 115 Camera Tested Working",
    "dealer": "eBay (Canadian sellers)",
@@ -320,19 +335,19 @@
    "model_path": null
   },
   {
-   "id": "ebay-ce6deb6dab",
-   "title": "Nikon F65 35mm Film SLR Camera w/ 28-80mm & 70-300mm AF Nikkor Lenses Tested",
+   "id": "ebay-5e98ad14da",
+   "title": "Canon RF 16mm F2.8 STM Lens like new with C-PL & Lens Hood",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/178523974336?hash=item2990dbaac0%3Ag%3AdtoAAeSwpT5qtMZu&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 169.99,
-   "new_price": 125.99,
-   "pct": 0.259,
-   "saved_cad": 44,
-   "drop_date": "2026-11-15",
-   "model_path": null
+   "url": "https://www.ebay.ca/itm/820332394272?hash=itembeff9ef720%3Ag%3AxX8AAeSw67hq8Ol7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "lens-canon-canon-rf-16mm-f2_8-stm",
+   "model_name": "Canon 16mm f/2.8 STM (Canon RF)",
+   "category": "lens",
+   "old_price": 380,
+   "new_price": 280,
+   "pct": 0.263,
+   "saved_cad": 100,
+   "drop_date": "2026-11-22",
+   "model_path": "/model/lens-canon-canon-rf-16mm-f2_8-stm/"
   },
   {
    "id": "gosselin-090208f2d6",
@@ -363,21 +378,6 @@
    "saved_cad": 250,
    "drop_date": "2026-11-21",
    "model_path": "/model/camera-nikon-d750/"
-  },
-  {
-   "id": "ebay-e7a5e3e121",
-   "title": "Nikon AF Nikkor 70-300mm F/4-5.6 G Lens with Manual, 2 UV Filters, & HB-26 Hood",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/900044728274?hash=itemd18ed8a7d2%3Ag%3Ah0gAAeSwtQhpDTyY&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "accessory",
-   "old_price": 99.97,
-   "new_price": 74.98,
-   "pct": 0.25,
-   "saved_cad": 24.99,
-   "drop_date": "2026-11-17",
-   "model_path": null
   }
  ]
 }

@@ -827,5 +827,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-21T18:22:39+00:00",
   "date": "2026-11-21"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-38dde5843f",
+  "title": "Nikon AF Nikkor 80-200mm F2.8 D ED Zoom Lens w/Cap Mint",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/407380331269?hash=item5ed9c28b05%3Ag%3AJPQAAeSwnxxrAkoR&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 259.67,
+  "comp_median": 395.0,
+  "comps": 6,
+  "model_key": "lens-nikon-nikon-f-80-200mm-f2_8-afd",
+  "model_name": "Nikon 80-200mm f/2.8 AFD (Nikon F)",
+  "condition": "Like New",
+  "reasons": [
+   "34% below the median of 6 comparable listings"
+  ],
+  "score": 48.3,
+  "is_new": true,
+  "deal_score": 98,
+  "score_why": [
+   "34% below the median of 6 comparable listings",
+   "the lowest price we've recorded for this model in 90 days",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-22T18:45:42+00:00",
+  "date": "2026-11-22"
  }
 ]
