@@ -854,5 +854,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-22T18:45:42+00:00",
   "date": "2026-11-22"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-693fdd019c",
+  "title": "Nikon FE 35mm Film SLR Camera Silver w/ AF Nikkor 50mm f/1.8D Lens & Lowepro Bag",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/920139578969?hash=itemd63c97be59%3Ag%3ATi8AAeSwGGFq9y6w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 190.0,
+  "comp_median": 342.25,
+  "comps": 14,
+  "model_key": "camera-nikon-fe",
+  "model_name": "Nikon FE",
+  "condition": null,
+  "reasons": [
+   "44% below the median of 14 comparable listings",
+   "price dropped 24% (was $250)"
+  ],
+  "score": 68.9,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "44% below the median of 14 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-11-23T22:59:01+00:00",
+  "date": "2026-11-23"
  }
 ]

@@ -1,9 +1,24 @@
 {
- "week_start": "2026-11-15",
- "week_end": "2026-11-22",
- "generated_at": "2026-11-22T18:45:42+00:00",
+ "week_start": "2026-11-16",
+ "week_end": "2026-11-23",
+ "generated_at": "2026-11-23T22:59:01+00:00",
  "count": 25,
  "items": [
+  {
+   "id": "ebay-44bf8488fc",
+   "title": "tamron sp 60-300mm",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/237177500349?hash=item3738e172bd%3Ag%3AH%7EYAAeSwfTlrBHNq&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "lens-tamron-60-300mm-f",
+   "model_name": "Tamron 60-300mm",
+   "category": "lens",
+   "old_price": 200,
+   "new_price": 90,
+   "pct": 0.55,
+   "saved_cad": 110,
+   "drop_date": "2026-11-23",
+   "model_path": "/model/lens-tamron-60-300mm-f/"
+  },
   {
    "id": "ebay-42c91a362b",
    "title": "Nikon DX AF-S Nikkor 18-105mm G ED VR CLEAN lens for D7200 D3400 D90 D5600 D7500",
@@ -32,21 +47,6 @@
    "pct": 0.497,
    "saved_cad": 106.47,
    "drop_date": "2026-11-21",
-   "model_path": null
-  },
-  {
-   "id": "ebay-ca3e80e021",
-   "title": "Minolta Hi-Matic 7s Rangefinder Film Camera 45mm f/1.8",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/287726069146?hash=item42fdcf659a%3Ag%3Ad64AAeSwJ%7E1q9pku&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 150,
-   "new_price": 80,
-   "pct": 0.467,
-   "saved_cad": 70,
-   "drop_date": "2026-11-22",
    "model_path": null
   },
   {
@@ -80,6 +80,21 @@
    "model_path": "/model/lens-tamron-nikon-f-24-70mm-f2_8-stab/"
   },
   {
+   "id": "ebay-5c0d17490a",
+   "title": "Sony Cyber-shot 7.2 mega pixels model DSC-W35",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/960197693979?hash=itemdf903e121b%3Ag%3AS6MAAeSwx0lq-PY6&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 168.5,
+   "new_price": 114,
+   "pct": 0.323,
+   "saved_cad": 54.5,
+   "drop_date": "2026-11-23",
+   "model_path": null
+  },
+  {
    "id": "ebay-d98963d019",
    "title": "Fujifilm FinePix F300EXR 15x Zoom Digital Camera Black Battery Charger",
    "dealer": "eBay (Canadian sellers)",
@@ -110,6 +125,21 @@
    "model_path": "/model/camera-nikon-coolpix8700/"
   },
   {
+   "id": "ebay-d6ea332253",
+   "title": "Nikon D750 24.3MP DSLR + 50mm f/1.8G & 18-55mm VR Lenses, Battery,Charger,Cable",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/920161225998?hash=itemd63de20d0e%3Ag%3AxwEAAeSwIHBq%7Eyhb&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "camera-nikon-d750",
+   "model_name": "Nikon D750",
+   "category": "camera",
+   "old_price": 999.99,
+   "new_price": 699.99,
+   "pct": 0.3,
+   "saved_cad": 300,
+   "drop_date": "2026-11-23",
+   "model_path": "/model/camera-nikon-d750/"
+  },
+  {
    "id": "gosselin-d12a2da229",
    "title": "Sony 90mm f2.8 macro",
    "dealer": "Gosselin Photo",
@@ -123,51 +153,6 @@
    "saved_cad": 300,
    "drop_date": "2026-11-21",
    "model_path": "/model/lens-sony-sony-e-90mm-f2_8-macro/"
-  },
-  {
-   "id": "ebay-13e3f7a077",
-   "title": "Canon EOS 60D 18.0 MP Digital SLR Camera + Efs 18-55 Lens + Battery Extender",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/257849432951?hash=item3c09061b77%3Ag%3A-FcAAeSwvANq9hWT&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "lens",
-   "old_price": 399,
-   "new_price": 279.3,
-   "pct": 0.3,
-   "saved_cad": 119.7,
-   "drop_date": "2026-11-16",
-   "model_path": null
-  },
-  {
-   "id": "ebay-57180a039d",
-   "title": "Olympus PEN E-PL1 Mirrorless Camera W/M.ZUIKO 14-42mm Lens Kit: TESTED & WORKING",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/860116967513?hash=itemc842f76059%3Ag%3A7HYAAeSw9gtq7PLy&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 207.12,
-   "new_price": 144.98,
-   "pct": 0.3,
-   "saved_cad": 62.14,
-   "drop_date": "2026-11-16",
-   "model_path": null
-  },
-  {
-   "id": "ebay-6fd84b0e2a",
-   "title": "FUJIFILM FinePix XP30 White 14.2MP Compact Camera -Water/Shock/Dust/Freeze Proof",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/860122760525?hash=itemc8434fc54d%3Ag%3Aa-oAAeSw-rZq75KE&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 203.04,
-   "new_price": 142.13,
-   "pct": 0.3,
-   "saved_cad": 60.91,
-   "drop_date": "2026-11-16",
-   "model_path": null
   },
   {
    "id": "ebay-83e9d9ac33",
@@ -200,21 +185,6 @@
    "model_path": null
   },
   {
-   "id": "ebay-3e37434e6e",
-   "title": "Olympus Zuiko Digital 40-150 mm 1:3.5-4.5 Lens",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/137799213224?hash=item20157920a8%3Ag%3AiuwAAeSwMwVomlWk&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "lens-olympus-four-thirds-40-150mm-f3_5-4_5",
-   "model_name": "Olympus 40-150mm f/3.5-4.5 (Four Thirds)",
-   "category": "lens",
-   "old_price": 89.49,
-   "new_price": 62.64,
-   "pct": 0.3,
-   "saved_cad": 26.85,
-   "drop_date": "2026-11-22",
-   "model_path": "/model/lens-olympus-four-thirds-40-150mm-f3_5-4_5/"
-  },
-  {
    "id": "cameracanada-a1627e1ae0",
    "title": "Nikon DEMO WX 10x50 IF WP Roof Prism Binoculars Black",
    "dealer": "Camera Canada",
@@ -245,19 +215,19 @@
    "model_path": null
   },
   {
-   "id": "ebay-66c3be6817",
-   "title": "Meike 85mm f/1.4 AF Lens (Sony E)",
+   "id": "ebay-aea102ef4e",
+   "title": "Pentax-FA 80-320mm f4.5-5.6 Zoom Camera Lens plus a Pentax MZ-50 Camera",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/137846767466?hash=item20184ebf6a%3Ag%3A9DAAAeSwdF5q0T23&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "lens-meike-sony-e-85mm-f1_4",
-   "model_name": "Meike 85mm f/1.4 (Sony E)",
+   "url": "https://www.ebay.ca/itm/920094515424?hash=itemd639e820e0%3Ag%3Asx0AAeSwuM5q54A7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "lens-pentax-pentax-k-80-320mm-f4_5-5_6",
+   "model_name": "Pentax 80-320mm f/4.5-5.6 (Pentax K)",
    "category": "lens",
-   "old_price": 398.13,
-   "new_price": 285.73,
-   "pct": 0.282,
-   "saved_cad": 112.4,
-   "drop_date": "2026-11-21",
-   "model_path": "/model/lens-meike-sony-e-85mm-f1_4/"
+   "old_price": 175,
+   "new_price": 125,
+   "pct": 0.286,
+   "saved_cad": 50,
+   "drop_date": "2026-11-23",
+   "model_path": "/model/lens-pentax-pentax-k-80-320mm-f4_5-5_6/"
   },
   {
    "id": "ebay-a51ee978a9",
@@ -320,6 +290,21 @@
    "model_path": null
   },
   {
+   "id": "ebay-d0af769baa",
+   "title": "SONY CYBER-SHOT DSC-N2 10.1MP Y2K CCD DIGITAL CAMERA",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/206718080775?hash=item30215b9707%3Ag%3AgcYAAeSwfTlrAdqC&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 170,
+   "new_price": 125,
+   "pct": 0.265,
+   "saved_cad": 45,
+   "drop_date": "2026-11-23",
+   "model_path": null
+  },
+  {
    "id": "ebay-9f9f58dbc4",
    "title": "Canon AT-1 Macro Camera Kit - Angle Finder + Sima 100mm Soft Focus Lens + Extras",
    "dealer": "eBay (Canadian sellers)",
@@ -333,21 +318,6 @@
    "saved_cad": 70,
    "drop_date": "2026-11-20",
    "model_path": null
-  },
-  {
-   "id": "ebay-5e98ad14da",
-   "title": "Canon RF 16mm F2.8 STM Lens like new with C-PL & Lens Hood",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/820332394272?hash=itembeff9ef720%3Ag%3AxX8AAeSw67hq8Ol7&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "lens-canon-canon-rf-16mm-f2_8-stm",
-   "model_name": "Canon 16mm f/2.8 STM (Canon RF)",
-   "category": "lens",
-   "old_price": 380,
-   "new_price": 280,
-   "pct": 0.263,
-   "saved_cad": 100,
-   "drop_date": "2026-11-22",
-   "model_path": "/model/lens-canon-canon-rf-16mm-f2_8-stm/"
   },
   {
    "id": "gosselin-090208f2d6",
@@ -365,19 +335,49 @@
    "model_path": "/model/lens-sigma-micro-four-thirds-16mm-f1_4/"
   },
   {
-   "id": "ebay-d6ea332253",
-   "title": "Nikon D750 24.3MP DSLR + 50mm f/1.8G & 18-55mm VR Lenses, Battery,Charger,Cable",
+   "id": "ebay-3c9067bc9a",
+   "title": "Vintage Canon AE-1 35mm SLR Film Camera Bundle - Tested & Working!",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/920161225998?hash=itemd63de20d0e%3Ag%3AxwEAAeSwIHBq%7Eyhb&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "camera-nikon-d750",
-   "model_name": "Nikon D750",
+   "url": "https://www.ebay.ca/itm/377509071427?hash=item57e54b4a43%3Ag%3AD2gAAeSwnJNqrvdQ&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "camera-canon-ae1",
+   "model_name": "Canon AE1",
    "category": "camera",
-   "old_price": 999.99,
-   "new_price": 749.99,
+   "old_price": 380,
+   "new_price": 285,
    "pct": 0.25,
-   "saved_cad": 250,
-   "drop_date": "2026-11-21",
-   "model_path": "/model/camera-nikon-d750/"
+   "saved_cad": 95,
+   "drop_date": "2026-11-19",
+   "model_path": "/model/camera-canon-ae1/"
+  },
+  {
+   "id": "ebay-c33b817075",
+   "title": "VINTAGE RICOH XR-1S 35mm FILM CAMERA w 50mm Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/407373022101?hash=item5ed9530395%3Ag%3AKU4AAeSwWoZq%7Eh89&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 119.99,
+   "new_price": 89.99,
+   "pct": 0.25,
+   "saved_cad": 30,
+   "drop_date": "2026-11-23",
+   "model_path": null
+  },
+  {
+   "id": "ebay-6125bd91b2",
+   "title": "Olympus Trip 35 Film Camera Black Silver Point Shoot 40mm f/2.8 Zuiko Lens",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/336893277903?hash=item4e706776cf%3Ag%3AUIkAAeSwPJpq9Tpg&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 80,
+   "new_price": 60,
+   "pct": 0.25,
+   "saved_cad": 20,
+   "drop_date": "2026-11-22",
+   "model_path": null
   }
  ]
 }

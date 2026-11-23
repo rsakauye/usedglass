@@ -1,46 +1,46 @@
 {
- "date": "2026-11-22",
- "generated_at": "2026-11-22T18:45:42+00:00",
+ "date": "2026-11-23",
+ "generated_at": "2026-11-23T22:59:01+00:00",
  "fx_latest": {
   "USD": {
-   "date": "2026-11-20",
-   "rate": 1.4325,
-   "chg_7d": 0.0048,
-   "from_7d": 1.4257,
-   "chg_30d": 0.0191,
-   "from_30d": 1.4057,
-   "text_30d": "The Canadian dollar weakened 1.9% against the USD over 30 days.",
+   "date": "2026-11-23",
+   "rate": 1.4369,
+   "chg_7d": 0.005,
+   "from_7d": 1.4298,
+   "chg_30d": 0.0269,
+   "from_30d": 1.3993,
+   "text_30d": "The Canadian dollar weakened 2.7% against the USD over 30 days.",
    "text_7d": "The Canadian dollar weakened 0.5% against the USD over 7 days."
   },
   "EUR": {
-   "date": "2026-11-20",
-   "rate": 1.5727,
-   "chg_7d": -0.0004,
-   "from_7d": 1.5734,
-   "chg_30d": -0.0037,
-   "from_30d": 1.5785,
-   "text_30d": "The Canadian dollar strengthened 0.4% against the EUR over 30 days.",
-   "text_7d": "The Canadian dollar is flat against the EUR over 7 days."
+   "date": "2026-11-23",
+   "rate": 1.5672,
+   "chg_7d": -0.0041,
+   "from_7d": 1.5736,
+   "chg_30d": 0.0003,
+   "from_30d": 1.5667,
+   "text_30d": "The Canadian dollar is flat against the EUR over 30 days.",
+   "text_7d": "The Canadian dollar strengthened 0.4% against the EUR over 7 days."
   },
   "GBP": {
-   "date": "2026-11-20",
-   "rate": 1.8769,
-   "chg_7d": -0.0042,
-   "from_7d": 1.8848,
-   "chg_30d": -0.003,
-   "from_30d": 1.8826,
-   "text_30d": "The Canadian dollar strengthened 0.3% against the GBP over 30 days.",
-   "text_7d": "The Canadian dollar strengthened 0.4% against the GBP over 7 days."
+   "date": "2026-11-23",
+   "rate": 1.8734,
+   "chg_7d": -0.0067,
+   "from_7d": 1.886,
+   "chg_30d": 0.0011,
+   "from_30d": 1.8713,
+   "text_30d": "The Canadian dollar weakened 0.1% against the GBP over 30 days.",
+   "text_7d": "The Canadian dollar strengthened 0.7% against the GBP over 7 days."
   },
   "JPY": {
-   "date": "2026-11-20",
+   "date": "2026-11-23",
    "rate": 0.00903,
-   "chg_7d": 0.0123,
-   "from_7d": 0.00892,
-   "chg_30d": 0.0157,
-   "from_30d": 0.00889,
-   "text_30d": "The Canadian dollar weakened 1.6% against the JPY over 30 days.",
-   "text_7d": "The Canadian dollar weakened 1.2% against the JPY over 7 days."
+   "chg_7d": 0.0078,
+   "from_7d": 0.00896,
+   "chg_30d": 0.0123,
+   "from_30d": 0.00892,
+   "text_30d": "The Canadian dollar weakened 1.2% against the JPY over 30 days.",
+   "text_7d": "The Canadian dollar weakened 0.8% against the JPY over 7 days."
   }
  },
  "fx_source": "Bank of Canada daily exchange rates (Valet API)",
@@ -71,18 +71,18 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 43.71,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 43.84,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.65,
-   "landed_cad": 80.59,
+   "tax_cad": 2.66,
+   "landed_cad": 80.76,
    "tax_rate": 0.05,
    "ca_price": 10365.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/leica-q3",
-   "saving_cad": 10284.41,
+   "saving_cad": 10284.24,
    "saving_pct": 0.992,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -95,18 +95,18 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 36.08,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 36.2,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
    "tax_cad": 2.27,
-   "landed_cad": 72.59,
+   "landed_cad": 72.74,
    "tax_rate": 0.05,
    "ca_price": 6999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z9-body",
-   "saving_cad": 6926.41,
+   "saving_cad": 6926.26,
    "saving_pct": 0.99,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -119,18 +119,18 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 37.9,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 38.02,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
    "tax_cad": 2.36,
-   "landed_cad": 74.5,
+   "landed_cad": 74.65,
    "tax_rate": 0.05,
    "ca_price": 4999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r5-mark-ii",
-   "saving_cad": 4924.5,
+   "saving_cad": 4924.35,
    "saving_pct": 0.985,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -143,18 +143,18 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 15.76,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 15.81,
    "ship_cad": 0.0,
    "brokerage_cad": 25.0,
    "tax_cad": 0.79,
-   "landed_cad": 41.55,
+   "landed_cad": 41.6,
    "tax_rate": 0.05,
    "ca_price": 4499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7s-iii",
-   "saving_cad": 4457.45,
+   "saving_cad": 4457.4,
    "saving_pct": 0.991,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -167,18 +167,18 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 54.44,
-   "ship_cad": 15.66,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 54.6,
+   "ship_cad": 15.27,
    "brokerage_cad": 25.0,
-   "tax_cad": 3.5,
-   "landed_cad": 98.6,
+   "tax_cad": 3.49,
+   "landed_cad": 98.37,
    "tax_rate": 0.05,
    "ca_price": 4499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7r-v",
-   "saving_cad": 4400.4,
+   "saving_cad": 4400.63,
    "saving_pct": 0.978,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -191,18 +191,18 @@
    "url": "https://www.ebay.com/itm/145498152889?_skw=Nikon+Z8&hash=item21e05d9fb9:g:xyYAAOSwxltlenyu",
    "price": 13.77,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 19.73,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 19.79,
    "ship_cad": 40.0,
    "brokerage_cad": 25.0,
    "tax_cad": 2.99,
-   "landed_cad": 87.71,
+   "landed_cad": 87.78,
    "tax_rate": 0.05,
    "ca_price": 4399.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z-8-body",
-   "saving_cad": 4311.29,
+   "saving_cad": 4311.22,
    "saving_pct": 0.98,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -215,18 +215,18 @@
    "url": "https://www.ebay.com/itm/236825442622?_skw=Sony+a7+V&hash=item3723e5793e:g:Av8AAeSwU0pqCRrz",
    "price": 36.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 51.57,
-   "ship_cad": 15.57,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 51.73,
+   "ship_cad": 15.2,
    "brokerage_cad": 25.0,
-   "tax_cad": 3.36,
-   "landed_cad": 95.5,
+   "tax_cad": 3.35,
+   "landed_cad": 95.28,
    "tax_rate": 0.05,
    "ca_price": 3499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7-v-body",
-   "saving_cad": 3403.5,
+   "saving_cad": 3403.72,
    "saving_pct": 0.973,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -239,18 +239,18 @@
    "url": "https://www.ebay.com/itm/127620673358?_skw=Canon+EOS+R5&hash=item1db6c8ef4e:g:8bMAAOSwWZ1mC0Vr",
    "price": 20.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 28.65,
-   "ship_cad": 14.96,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 28.74,
+   "ship_cad": 14.58,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.18,
-   "landed_cad": 70.79,
+   "tax_cad": 2.17,
+   "landed_cad": 70.49,
    "tax_rate": 0.05,
    "ca_price": 3299.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r5",
-   "saving_cad": 3228.21,
+   "saving_cad": 3228.51,
    "saving_pct": 0.979,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -263,18 +263,18 @@
    "url": "https://www.ebay.com/itm/800130777545?_skw=Canon+EOS+R6+Mark+III&hash=itemba4b82c1c9:g:3LMAAeSwy95qI7jY",
    "price": 30.93,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 44.31,
-   "ship_cad": 7.66,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 44.44,
+   "ship_cad": 7.69,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.6,
-   "landed_cad": 79.57,
+   "tax_cad": 2.61,
+   "landed_cad": 79.74,
    "tax_rate": 0.05,
    "ca_price": 3199.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r6-mark-iii-body",
-   "saving_cad": 3119.43,
+   "saving_cad": 3119.26,
    "saving_pct": 0.975,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -287,18 +287,18 @@
    "url": "https://www.ebay.com/itm/800843591380?_skw=OM+System+OM1+II&hash=itemba75ff6ed4:g:a9IAAeSw4Qlq4GaM",
    "price": 34.91,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 50.01,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 50.16,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.96,
-   "landed_cad": 87.21,
+   "tax_cad": 2.97,
+   "landed_cad": 87.4,
    "tax_rate": 0.05,
    "ca_price": 2799.99,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/om-system-om-1-mark-ii-body",
-   "saving_cad": 2712.78,
+   "saving_cad": 2712.59,
    "saving_pct": 0.969,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -311,18 +311,18 @@
    "url": "https://www.ebay.com/itm/387899561796?_skw=Sony+a7+IV&hash=item5a509d9744:g:WC8AAeSwuzdqzUJX",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 15.76,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 15.81,
    "ship_cad": 0.0,
    "brokerage_cad": 25.0,
    "tax_cad": 0.79,
-   "landed_cad": 41.55,
+   "landed_cad": 41.6,
    "tax_rate": 0.05,
    "ca_price": 2699.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7-iv-body",
-   "saving_cad": 2657.45,
+   "saving_cad": 2657.4,
    "saving_pct": 0.985,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -335,18 +335,18 @@
    "url": "https://www.ebay.com/itm/188494122230?_skw=Nikon+ZF&hash=item2be3200cf6:g:YSwAAeSwRLhqKdAi",
    "price": 15.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 21.49,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 21.55,
    "ship_cad": 40.0,
    "brokerage_cad": 25.0,
-   "tax_cad": 3.07,
-   "landed_cad": 89.56,
+   "tax_cad": 3.08,
+   "landed_cad": 89.63,
    "tax_rate": 0.05,
    "ca_price": 2699.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z-f-body",
-   "saving_cad": 2609.44,
+   "saving_cad": 2609.37,
    "saving_pct": 0.967,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -359,18 +359,18 @@
    "url": "https://www.ebay.com/itm/256501718985?_skw=Fujifilm+X-T5&hash=item3bb8b19fc9:g:pDMAAOSwgOBmOAui",
    "price": 12.22,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 17.51,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 17.56,
    "ship_cad": 40.0,
    "brokerage_cad": 25.0,
    "tax_cad": 2.88,
-   "landed_cad": 85.38,
+   "landed_cad": 85.44,
    "tax_rate": 0.05,
    "ca_price": 2649.99,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/fujifilm-x-t5-with-xf-16-50mm-f2-8-4-8",
-   "saving_cad": 2564.61,
+   "saving_cad": 2564.55,
    "saving_pct": 0.968,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -383,18 +383,18 @@
    "url": "https://www.ebay.com/itm/800826710080?_skw=Canon+EOS+R6+Mark+II&hash=itemba74fdd840:g:AOEAAeSwg31q2nv~",
    "price": 25.87,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 37.06,
-   "ship_cad": 7.66,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 37.17,
+   "ship_cad": 7.69,
    "brokerage_cad": 25.0,
    "tax_cad": 2.24,
-   "landed_cad": 71.96,
+   "landed_cad": 72.1,
    "tax_rate": 0.05,
    "ca_price": 2599.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r6-mark-ii",
-   "saving_cad": 2527.04,
+   "saving_cad": 2526.9,
    "saving_pct": 0.972,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -407,18 +407,18 @@
    "url": "https://www.ebay.com/itm/366627500462?_skw=Nikon+D850&hash=item555cb3b1ae:g:14QAAeSwqlBqjWRo",
    "price": 27.73,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 39.72,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 39.85,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.45,
-   "landed_cad": 76.41,
+   "tax_cad": 2.46,
+   "landed_cad": 76.57,
    "tax_rate": 0.05,
    "ca_price": 2599.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikond850",
-   "saving_cad": 2522.59,
+   "saving_cad": 2522.43,
    "saving_pct": 0.971,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -431,18 +431,18 @@
    "url": "https://www.ebay.com/itm/800892668379?_skw=Sony+A7C+II&hash=itemba78ec49db:g:lqoAAeSwFgtq8H8F",
    "price": 19.99,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 28.64,
-   "ship_cad": 24.97,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 28.72,
+   "ship_cad": 24.63,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.68,
-   "landed_cad": 81.28,
+   "tax_cad": 2.67,
+   "landed_cad": 81.02,
    "tax_rate": 0.05,
    "ca_price": 2599.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7c-ii-body",
-   "saving_cad": 2517.72,
+   "saving_cad": 2517.98,
    "saving_pct": 0.969,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -455,18 +455,18 @@
    "url": "https://www.ebay.com/itm/800817993386?_skw=Nikon+Z6III&hash=itemba7478d6aa:g:cqEAAeSwCS1q16cy",
    "price": 27.73,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 39.72,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 39.85,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.45,
-   "landed_cad": 76.41,
+   "tax_cad": 2.46,
+   "landed_cad": 76.57,
    "tax_rate": 0.05,
    "ca_price": 2499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z6-iii-body",
-   "saving_cad": 2422.59,
+   "saving_cad": 2422.43,
    "saving_pct": 0.969,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -479,18 +479,18 @@
    "url": "https://www.ebay.com/itm/366511469821?_skw=Fujifilm+X100VI&hash=item5555c934fd:g:kaoAAeSwT3JqQuEc",
    "price": 31.52,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 45.15,
-   "ship_cad": 9.24,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 45.29,
+   "ship_cad": 9.27,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.72,
-   "landed_cad": 82.11,
+   "tax_cad": 2.73,
+   "landed_cad": 82.29,
    "tax_rate": 0.05,
    "ca_price": 2499.99,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/fujifilm-x100-vi",
-   "saving_cad": 2417.88,
+   "saving_cad": 2417.7,
    "saving_pct": 0.967,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -503,18 +503,18 @@
    "url": "https://www.ebay.com/itm/363610803407?_skw=Sony+A6700&hash=item54a8e48ccf:g:hVUAAOSwfddj3Iet",
    "price": 39.47,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 56.54,
-   "ship_cad": 15.71,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 56.71,
+   "ship_cad": 15.33,
    "brokerage_cad": 25.0,
-   "tax_cad": 3.61,
-   "landed_cad": 100.87,
+   "tax_cad": 3.6,
+   "landed_cad": 100.65,
    "tax_rate": 0.05,
    "ca_price": 1899.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a6700-body",
-   "saving_cad": 1798.13,
+   "saving_cad": 1798.35,
    "saving_pct": 0.947,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -527,18 +527,18 @@
    "url": "https://www.ebay.com/itm/407344847189?_skw=Fujifilm+XE5&hash=item5ed7a51955:g:o~oAAeSwgYNo0oHP",
    "price": 57.99,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 83.07,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 83.33,
    "ship_cad": 40.0,
    "brokerage_cad": 25.0,
-   "tax_cad": 6.15,
-   "landed_cad": 154.22,
+   "tax_cad": 6.17,
+   "landed_cad": 154.49,
    "tax_rate": 0.05,
    "ca_price": 1949.99,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/fujifilm-x-e5-body",
-   "saving_cad": 1795.77,
+   "saving_cad": 1795.5,
    "saving_pct": 0.921,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -551,18 +551,18 @@
    "url": "https://www.ebay.com/itm/235488598500?_skw=Sony+RX100+VII&hash=item36d436d9e4:g:U6MAAOSwAX1lARfW",
    "price": 74.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 106.01,
-   "ship_cad": 17.03,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 106.33,
+   "ship_cad": 16.65,
    "brokerage_cad": 25.0,
    "tax_cad": 6.15,
-   "landed_cad": 154.19,
+   "landed_cad": 154.13,
    "tax_rate": 0.05,
    "ca_price": 1799.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-cybershot-rx100-vii",
-   "saving_cad": 1644.81,
+   "saving_cad": 1644.87,
    "saving_pct": 0.914,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -575,18 +575,18 @@
    "url": "https://www.ebay.com/itm/125977670885?_skw=Canon+R7&hash=item1d54dab4e5:g:lBwAAOSwTw5Z4s3u",
    "price": 17.95,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 25.71,
-   "ship_cad": 20.27,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 25.79,
+   "ship_cad": 19.74,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.3,
-   "landed_cad": 73.28,
+   "tax_cad": 2.28,
+   "landed_cad": 72.81,
    "tax_rate": 0.05,
    "ca_price": 1599.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r7-body",
-   "saving_cad": 1525.72,
+   "saving_cad": 1526.19,
    "saving_pct": 0.954,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -599,18 +599,18 @@
    "url": "https://www.ebay.com/itm/800892384485?_skw=Nikon+Z50II&hash=itemba78e7f4e5:g:--MAAeSwmq1rAmWH",
    "price": 18.59,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 26.63,
-   "ship_cad": 13.09,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 26.71,
+   "ship_cad": 13.03,
    "brokerage_cad": 25.0,
    "tax_cad": 1.99,
-   "landed_cad": 66.71,
+   "landed_cad": 66.73,
    "tax_rate": 0.05,
    "ca_price": 1299.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z50-ii-body",
-   "saving_cad": 1232.29,
+   "saving_cad": 1232.27,
    "saving_pct": 0.949,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -623,18 +623,18 @@
    "url": "https://www.ebay.com/itm/137777774596?_skw=Canon+RP&hash=item2014320004:g:z54AAeSwRXhpWIo9",
    "price": 9.49,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 13.59,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 13.64,
    "ship_cad": 40.0,
    "brokerage_cad": 25.0,
    "tax_cad": 2.68,
-   "landed_cad": 81.27,
+   "landed_cad": 81.32,
    "tax_rate": 0.05,
    "ca_price": 1299.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-rp-with-rf-24-105mm-f4-7-1-stm",
-   "saving_cad": 1217.73,
+   "saving_cad": 1217.68,
    "saving_pct": 0.937,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -647,18 +647,18 @@
    "url": "https://www.ebay.com/itm/366494983074?_skw=Canon+R10&hash=item5554cda3a2:g:tvIAAeSw2bRqOAKl",
    "price": 27.19,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 38.95,
-   "ship_cad": 7.66,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 39.07,
+   "ship_cad": 7.69,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.33,
-   "landed_cad": 73.94,
+   "tax_cad": 2.34,
+   "landed_cad": 74.09,
    "tax_rate": 0.05,
    "ca_price": 1199.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r10-with-rf-s-18-45mm",
-   "saving_cad": 1125.06,
+   "saving_cad": 1124.91,
    "saving_pct": 0.938,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -671,18 +671,18 @@
    "url": "https://www.ebay.com/itm/133487801208?_skw=Sony+A6400&hash=item1f147e3378:g:IhIAAOSwi15fLd~U",
    "price": 13.45,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 19.27,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 19.33,
    "ship_cad": 40.0,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.96,
-   "landed_cad": 87.23,
+   "tax_cad": 2.97,
+   "landed_cad": 87.29,
    "tax_rate": 0.05,
    "ca_price": 1049.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a6400-mirrorless-body",
-   "saving_cad": 961.77,
+   "saving_cad": 961.71,
    "saving_pct": 0.917,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -695,18 +695,18 @@
    "url": "https://www.ebay.com/itm/388036604944?_skw=Nikon+D7500&hash=item5a58c8b410:g:jI0AAOSw6TdnukHn",
    "price": 18.0,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 25.79,
-   "ship_cad": 11.46,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 25.86,
+   "ship_cad": 11.5,
    "brokerage_cad": 25.0,
-   "tax_cad": 1.86,
-   "landed_cad": 64.11,
+   "tax_cad": 1.87,
+   "landed_cad": 64.23,
    "tax_rate": 0.05,
    "ca_price": 879.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-d7500-body",
-   "saving_cad": 814.89,
+   "saving_cad": 814.77,
    "saving_pct": 0.927,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -719,18 +719,18 @@
    "url": "https://www.ebay.com/itm/136235619092?_skw=Sony+ZVE10&hash=item1fb8469314:g:kmwAAeSwcldoiA14",
    "price": 45.3,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 64.89,
-   "ship_cad": 22.19,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 65.09,
+   "ship_cad": 21.64,
    "brokerage_cad": 25.0,
-   "tax_cad": 4.35,
-   "landed_cad": 116.44,
+   "tax_cad": 4.34,
+   "landed_cad": 116.07,
    "tax_rate": 0.05,
    "ca_price": 849.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-zv-e10-body",
-   "saving_cad": 732.56,
+   "saving_cad": 732.93,
    "saving_pct": 0.863,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -743,18 +743,18 @@
    "url": "https://www.ebay.com/itm/121516121803?_skw=Canon+POWERSHOTELPH&hash=item1c4aecdecb:g:y9UAAOSwuMFUixtB",
    "price": 20.45,
    "currency": "USD",
-   "as_of": "2026-11-22T18:45:42+00:00",
-   "rate": 1.4325,
-   "goods_cad": 29.29,
-   "ship_cad": 4.23,
+   "as_of": "2026-11-23T22:59:01+00:00",
+   "rate": 1.4369,
+   "goods_cad": 29.38,
+   "ship_cad": 4.24,
    "brokerage_cad": 25.0,
    "tax_cad": 1.68,
-   "landed_cad": 60.2,
+   "landed_cad": 60.3,
    "tax_rate": 0.05,
    "ca_price": 529.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-powershot-elph-360-hs-a",
-   "saving_cad": 468.8,
+   "saving_cad": 468.7,
    "saving_pct": 0.886,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -762,12 +762,3821 @@
  ],
  "rate_moved": {
   "currency": "USD",
-  "chg_30d": 0.0191,
+  "chg_30d": 0.0269,
   "threshold": 0.025,
-  "direction": null,
-  "items": [],
-  "tracked_days": 35,
-  "status": "CAD moved 1.9% against the USD over 30 days, under the 2.5% threshold, so no price flags today."
+  "direction": "cad_weaker",
+  "items": [
+   {
+    "model_key": "lens-canon-canon-rf-1200mm-f8-l_stab",
+    "model_name": "Canon 1200mm f/8 L STAB (Canon RF)",
+    "price": 28999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-rf-1200mm-f8-l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-rf-800mm-f5_6-l_stab",
+    "model_name": "Canon 800mm f/5.6 L STAB (Canon RF)",
+    "price": 24999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-rf-800mm-f5-6-l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-75mm-f1_2",
+    "model_name": "Leica 75mm f/1.2 (Leica M)",
+    "price": 22015.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-noctilux-m-75mm-f1-25-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-600mm-f4-s_stab",
+    "model_name": "Nikon 600mm f/4 S STAB (Nikon Z)",
+    "price": 20819.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-600mm-f4-tc-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-90mm-f1_5",
+    "model_name": "Leica 90mm f/1.5 (Leica M)",
+    "price": 20815.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summilux-m-90mm-f1-5-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-800mm-f5_6-afs_fl_stab",
+    "model_name": "Nikon 800mm f/5.6 AFS FL STAB (Nikon F)",
+    "price": 19999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-800mm-f5-6-e-fl-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-50mm-f0_9",
+    "model_name": "Leica 50mm f/0.9 (Leica M)",
+    "price": 19440.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-noctilux-m-50mm-f0-95",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-rf-600mm-f4-l_stab",
+    "model_name": "Canon 600mm f/4 L STAB (Canon RF)",
+    "price": 18999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-rf-600mm-f4l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-400mm-f2_8-s_stab",
+    "model_name": "Nikon 400mm f/2.8 S STAB (Nikon Z)",
+    "price": 18649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-400mm-f2-8-tc-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-rf-400mm-f2_8-l_stab",
+    "model_name": "Canon 400mm f/2.8 L STAB (Canon RF)",
+    "price": 17499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-rf-400mm-f2-8l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-600mm-f4-iii_stab",
+    "model_name": "Canon 600mm f/4 III STAB (Canon EF)",
+    "price": 16999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-600mm-f4-is-iii-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-600mm-f4-gm",
+    "model_name": "Sony 600mm f/4 GM (Sony E)",
+    "price": 16899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-600mm-f4-gm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-400mm-f2_8-gm_stab",
+    "model_name": "Sony 400mm f/2.8 GM STAB (Sony E)",
+    "price": 16249.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-400mm-f2-8-gm-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-600mm-f4-afs_fl_stab",
+    "model_name": "Nikon 600mm f/4 AFS FL STAB (Nikon F)",
+    "price": 15999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-600mm-f4-e-fl-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-m11d",
+    "model_name": "Leica M11D",
+    "price": 15440.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-m11-d",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-m11p",
+    "model_name": "Leica M11P",
+    "price": 15015.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-m11-p",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-180-400mm-f4-afs_stab",
+    "model_name": "Nikon 180-400mm f/4 AFS STAB (Nikon F)",
+    "price": 14999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-180-400mm-f-4e-tc1-4-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-m11",
+    "model_name": "Leica M11",
+    "price": 14665.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-m11-body-glossy-black",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-50mm-f2",
+    "model_name": "Leica 50mm f/2 (Leica M)",
+    "price": 14020.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-summicron-m-50mm-f2-0-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-rf-100-300mm-f2_8-l_stab",
+    "model_name": "Canon 100-300mm f/2.8 L STAB (Canon RF)",
+    "price": 13999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-rf-100-300mm-f2-8l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-400mm-f2_8-afs_fl_stab",
+    "model_name": "Nikon 400mm f/2.8 AFS FL STAB (Nikon F)",
+    "price": 13999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-400mm-f2-8e-fl-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-35mm-f1_2",
+    "model_name": "Leica 35mm f/1.2 (Leica M)",
+    "price": 13605.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-noctilux-m-35mm-f1-2-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-21mm-f1_4",
+    "model_name": "Leica 21mm f/1.4 (Leica M)",
+    "price": 13285.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summilux-m-21mm-f1-4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-500mm-f4-afs_fl_stab",
+    "model_name": "Nikon 500mm f/4 AFS FL STAB (Nikon F)",
+    "price": 12899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-500mm-f4-e-fl-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-50mm-f1_2",
+    "model_name": "Leica 50mm f/1.2 (Leica M)",
+    "price": 12335.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-noctilux-m-50mm-f1-2-asph-glossy-black",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-58mm-f0_9-noct",
+    "model_name": "Nikon 58mm f/0.9 NOCT (Nikon Z)",
+    "price": 11139.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-58mm-f0-95-noct",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-90-280mm-f2_8-4",
+    "model_name": "Leica 90-280mm f/2.8-4 (L-Mount)",
+    "price": 11005.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-vario-elmarit-sl-90-280mm-f2-8-4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-q3",
+    "model_name": "Leica Q3",
+    "price": 10365.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-q3",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-150-400mm-f4_5-pro_stab",
+    "model_name": "OM System 150-400mm f/4.5 PRO STAB (Micro Four Thirds)",
+    "price": 9999.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-150-400mm-f4-5-is-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-hasselblad-907x",
+    "model_name": "Hasselblad 907X",
+    "price": 9999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-907x-body-with-cfv-100c-digital-back",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-m6",
+    "model_name": "Leica M6",
+    "price": 9870.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-m6-2022-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-35mm-f1_4-ii",
+    "model_name": "Leica 35mm f/1.4 II (Leica M)",
+    "price": 9730.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summilux-m-35mm-f1-4-asph-fle-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-16-35mm-f3_5-4_5",
+    "model_name": "Leica 16-35mm f/3.5-4.5 (L-Mount)",
+    "price": 9650.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-super-vario-elmar-sl-16-35mm-f3-5-4-5-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-d6",
+    "model_name": "Nikon D6",
+    "price": 8999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-d6-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-24-90mm-f2_8-4",
+    "model_name": "Leica 24-90mm f/2.8-4 (L-Mount)",
+    "price": 8895.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-vario-elmarit-sl-24-90mm-f2-8-4-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-300-600mm-f4-sport_stab",
+    "model_name": "Sigma 300-600mm f/4 SPORT STAB (Sony E)",
+    "price": 8799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-sports-300-600mm-f4-dg-os-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-300-600mm-f4-sport_stab",
+    "model_name": "Sigma 300-600mm f/4 SPORT STAB (L-Mount)",
+    "price": 8799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-sports-300-600mm-f4-dg-os-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-90mm-f2",
+    "model_name": "Leica 90mm f/2 (L-Mount)",
+    "price": 8740.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-summicron-sl-90mm-f-2-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-200-400mm-f4-afs_ii_stab",
+    "model_name": "Nikon 200-400mm f/4 AFS II STAB (Nikon F)",
+    "price": 8599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-200-400mm-f-4g-ed-vr-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-28mm-f2-iii",
+    "model_name": "Leica 28mm f/2 III (Leica M)",
+    "price": 8460.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summicron-m-28mm-f2-asph-iii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-90mm-f2",
+    "model_name": "Leica 90mm f/2 (Leica M)",
+    "price": 8230.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-summicron-m-90mm-f2",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-50mm-f1_4-ii",
+    "model_name": "Leica 50mm f/1.4 II (Leica M)",
+    "price": 8180.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summilux-m-50mm-f1-4-asph-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-75mm-f2",
+    "model_name": "Leica 75mm f/2 (L-Mount)",
+    "price": 8145.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-summicron-sl-75mm-f-2-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-sl3",
+    "model_name": "Leica SL3",
+    "price": 7990.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-sl3-s-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-28mm-f2",
+    "model_name": "Leica 28mm f/2 (L-Mount)",
+    "price": 7965.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-summicron-sl-28-f2-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-800mm-f6_3-s_stab",
+    "model_name": "Nikon 800mm f/6.3 S STAB (Nikon Z)",
+    "price": 7949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-800mm-f-6-3-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-gfx100s-ii",
+    "model_name": "Fujifilm GFX100S II",
+    "price": 7599.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gfx100s-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-leica-sl2",
+    "model_name": "Leica SL2",
+    "price": 7349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-sl2-s-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z9",
+    "model_name": "Nikon Z9",
+    "price": 6999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z9-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-35mm-f1_4",
+    "model_name": "Leica 35mm f/1.4 (Leica M)",
+    "price": 6910.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summilux-m-35mm-f1-4-silver-1",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-600mm-f6_3-s_stab",
+    "model_name": "Nikon 600mm f/6.3 S STAB (Nikon Z)",
+    "price": 6899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-600mm-f6-3-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-300mm-f2_8-afs_ii_stab",
+    "model_name": "Nikon 300mm f/2.8 AFS II STAB (Nikon F)",
+    "price": 6899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-300mm-f2-8-vr-ii-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-xcd-135mm-f2_8",
+    "model_name": "Hasselblad 135mm f/2.8 (Hasselblad XCD)",
+    "price": 6721.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-xcd-135mm-f2-8-with-1-7x-teleconverter",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-50mm-f1_4",
+    "model_name": "Leica 50mm f/1.4 (Leica M)",
+    "price": 6485.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summilux-m-50mm-f1-4-silver",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-35mm-f2",
+    "model_name": "Leica 35mm f/2 (Leica M)",
+    "price": 6330.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summicron-m-35mm-f2-asph-2",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-xcd-35-100mm-f2_8-4",
+    "model_name": "Hasselblad 35-100mm f/2.8-4 (Hasselblad XCD)",
+    "price": 6299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-xcd-35-100mm-f2-8-4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-100-400mm-f4_5-gm_stab",
+    "model_name": "Sony 100-400mm f/4.5 GM STAB (Sony E)",
+    "price": 5599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-100-400mm-f4-5-gm-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-50-150mm-f2-gm",
+    "model_name": "Sony 50-150mm f/2 GM (Sony E)",
+    "price": 5499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-50-150mm-f2-gm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-21mm-f3_4",
+    "model_name": "Leica 21mm f/3.4 (Leica M)",
+    "price": 5400.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-super-elmar-m-21mm-f3-4-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-28mm-f5_6",
+    "model_name": "Leica 28mm f/5.6 (Leica M)",
+    "price": 5075.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summaron-m-28mm-f5-6",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-70-200mm-f2_8",
+    "model_name": "Leica 70-200mm f/2.8 (L-Mount)",
+    "price": 5005.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-vario-elmarit-sl-70-200mm-f2-8-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-600mm-f6_3-gm_stab",
+    "model_name": "Sony 600mm f/6.3 GM STAB (Sony E)",
+    "price": 4999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-600mm-f6-3-gm-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-xcd-35-75mm-f3_5-4_5",
+    "model_name": "Hasselblad 35-75mm f/3.5-4.5 (Hasselblad XCD)",
+    "price": 4999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-xcd-35-75mm-f3-5-4-5",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-500mm-f5_6-afs_stab",
+    "model_name": "Nikon 500mm f/5.6 AFS STAB (Nikon F)",
+    "price": 4749.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-500mm-f5-6e-pf-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-110mm-f5_6-ts",
+    "model_name": "Fujifilm 110mm f/5.6 TS (Fujifilm G)",
+    "price": 4725.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-110mm-f5-6-tilt-shift",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-500mm-f5_6-lm_stab",
+    "model_name": "Fujifilm 500mm f/5.6 LM STAB (Fujifilm G)",
+    "price": 4724.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujfilm-gf-500mm-f5-6-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-24-70mm-f2_8",
+    "model_name": "Leica 24-70mm f/2.8 (L-Mount)",
+    "price": 4520.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-vario-elmarit-24-70mm-f2-8-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-200mm-f2-sport_stab",
+    "model_name": "Sigma 200mm f/2 SPORT STAB (L-Mount)",
+    "price": 4499.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-sports-200mm-f2-dg-os-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-18-110mm-f4-stab",
+    "model_name": "Sony 18-110mm f/4 STAB (Sony E)",
+    "price": 4499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-e-pz-18-110mm-f4-g-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-250mm-f4-lm_stab",
+    "model_name": "Fujifilm 250mm f/4 LM STAB (Fujifilm G)",
+    "price": 4449.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-250mm-f4-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-xcd-90mm-f3_2",
+    "model_name": "Hasselblad 90mm f/3.2 (Hasselblad XCD)",
+    "price": 4433.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-90mm-f3-2-xcd",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-500mm-f5_6-sport_stab",
+    "model_name": "Sigma 500mm f/5.6 SPORT STAB (L-Mount)",
+    "price": 4399.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-500mm-f5-6-dg-dn-os-sport-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "camera-nikon-z8",
+    "model_name": "Nikon Z8",
+    "price": 4399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-8-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-28mm-f2_8",
+    "model_name": "Leica 28mm f/2.8 (Leica M)",
+    "price": 4370.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-elmarit-m-28mm-f2-8-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-400mm-f4_5-s_stab",
+    "model_name": "Nikon 400mm f/4.5 S STAB (Nikon Z)",
+    "price": 4319.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-400mm-f4-5-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-70-200mm-f2_8-ii_s_stab",
+    "model_name": "Nikon 70-200mm f/2.8 II S STAB (Nikon Z)",
+    "price": 4199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-70-200mm-f2-8-vr-s-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-400-800mm-f6_3-8-stab",
+    "model_name": "Sony 400-800mm f/6.3-8 STAB (Sony E)",
+    "price": 4099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-400-800mm-f6-3-8-g-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-500mm-f5_6-lm_stab",
+    "model_name": "Fujifilm 500mm f/5.6 LM STAB (Fujifilm X)",
+    "price": 4049.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-500mm-f5-6-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-11-24mm-f4-l",
+    "model_name": "Canon 11-24mm f/4 L (Canon EF)",
+    "price": 3999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-11-24mm-f4-l-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-28-70mm-f2-gm",
+    "model_name": "Sony 28-70mm f/2 GM (Sony E)",
+    "price": 3999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-28-70mm-f2-gm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-400mm-f4_5-lm_stab",
+    "model_name": "Fujifilm 400mm f/4.5 LM STAB (Fujifilm X)",
+    "price": 3899.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-400mm-f4-5-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-leica-m-100mm-f2_8-macro",
+    "model_name": "Leica 100mm f/2.8 MACRO (Leica M)",
+    "price": 3805.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-apo-macro-elmarit-sl-100mm-f-2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-300mm-f4-pro_stab",
+    "model_name": "OM System 300mm f/4 PRO STAB (Micro Four Thirds)",
+    "price": 3799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-300mm-f4-is-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-35mm-f2",
+    "model_name": "Leica 35mm f/2 (L-Mount)",
+    "price": 3795.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summicron-sl-35mm-f2-asph-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-85mm-f1_2-s",
+    "model_name": "Nikon 85mm f/1.2 S (Nikon Z)",
+    "price": 3739.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-85mm-f1-2-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-xcd-45mm-f3_5",
+    "model_name": "Hasselblad 45mm f/3.5 (Hasselblad XCD)",
+    "price": 3739.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-45mm-f3-5-xcd",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24-70mm-f2_8-ii_s",
+    "model_name": "Nikon 24-70mm f/2.8 II S (Nikon Z)",
+    "price": 3719.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-24-70mm-f2-8-s-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-100-400mm-f5-6_3",
+    "model_name": "Leica 100-400mm f/5-6.3 (L-Mount)",
+    "price": 3650.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-vario-elmar-sl-100-400mm-f5-6-3",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-120mm-f4-lm_macro_stab",
+    "model_name": "Fujifilm 120mm f/4 LM MACRO STAB (Fujifilm G)",
+    "price": 3649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-120mm-f4-r-lm-ois-wr-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-100-400mm-f4_5-5_6-s_stab",
+    "model_name": "Nikon 100-400mm f/4.5-5.6 S STAB (Nikon Z)",
+    "price": 3619.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-100-400mm-f4-5-5-6-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-400mm-f4_5-gm_stab",
+    "model_name": "Sony 400mm f/4.5 GM STAB (Sony E)",
+    "price": 3579.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-400mm-f4-5-gm-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-70-200mm-f2_8-s_stab",
+    "model_name": "Nikon 70-200mm f/2.8 S STAB (Nikon Z)",
+    "price": 3499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-70-200mm-f2-8-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-35mm-f1_2-s",
+    "model_name": "Nikon 35mm f/1.2 S (Nikon Z)",
+    "price": 3369.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-35mm-f1-2-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-50mm-f2",
+    "model_name": "Leica 50mm f/2 (L-Mount)",
+    "price": 3315.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-summicron-sl-50mm-f2-asph-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-canon-r5",
+    "model_name": "Canon R5",
+    "price": 3299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-eos-r5",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-135mm-f1_8-plena_s",
+    "model_name": "Nikon 135mm f/1.8 PLENA S (Nikon Z)",
+    "price": 3299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-135mm-f1-8-s-plena",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-28-135mm-f4",
+    "model_name": "Nikon 28-135mm f/4 (Nikon Z)",
+    "price": 3299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-28-135-f4-pz",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-xh2s",
+    "model_name": "Fujifilm XH2S",
+    "price": 3199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x-h2s-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-leica-l-mount-28-70mm-f2_8",
+    "model_name": "Leica 28-70mm f/2.8 (L-Mount)",
+    "price": 3090.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/leica-vario-elmarit-sl-24-70mm-f2-8-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-xcd-75mm-f3_4",
+    "model_name": "Hasselblad 75mm f/3.4 (Hasselblad XCD)",
+    "price": 3089.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-xcd-75mm-f3-4-p",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-100-400mm-f4_5-5_6-ii_l_stab",
+    "model_name": "Canon 100-400mm f/4.5-5.6 II L STAB (Canon EF)",
+    "price": 2999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-100-400mm-f4-5-5-6-l-is-ii-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-50mm-f1_4",
+    "model_name": "Panasonic 50mm f/1.4 (L-Mount)",
+    "price": 2999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-s-50mm-f1-4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-14-24mm-f2_8-s",
+    "model_name": "Nikon 14-24mm f/2.8 S (Nikon Z)",
+    "price": 2909.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-14-24mm-f2-8-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-15mm-f1_4-art_fisheye",
+    "model_name": "Sigma 15mm f/1.4 ART FISHEYE (L-Mount)",
+    "price": 2899.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-15mm-f1-4-dg-dn-diagonal-fisheye-art-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "camera-sony-rx10-v",
+    "model_name": "Sony RX10 V",
+    "price": 2899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-rx10-v",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-17mm-f4-l_ts",
+    "model_name": "Canon 17mm f/4 L TS",
+    "price": 2899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ts-e-17mm-f4l",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-90mm-f2_8-l_macro_ts",
+    "model_name": "Canon 90mm f/2.8 L MACRO TS",
+    "price": 2899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ts-e-90mm-f2-8l-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-50mm-f2_8-l_macro_ts",
+    "model_name": "Canon 50mm f/2.8 L MACRO TS",
+    "price": 2899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ts-e-50mm-f2-8l-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-45mm-f2_8-macro_ts",
+    "model_name": "Nikon 45mm f/2.8 MACRO TS (Nikon F)",
+    "price": 2879.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-pc-e-45-mm-f2-8-micro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-om-system-om1-ii",
+    "model_name": "OM System OM1 II",
+    "price": 2799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/om-system-om-1-mark-ii-body",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-50mm-f1_2-s",
+    "model_name": "Nikon 50mm f/1.2 S (Nikon Z)",
+    "price": 2769.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-50mm-f1-2-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-135mm-f1_4-art",
+    "model_name": "Sigma 135mm f/1.4 ART (Sony E)",
+    "price": 2699.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-135mm-f1-4-dg-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-135mm-f1_4-art",
+    "model_name": "Sigma 135mm f/1.4 ART (L-Mount)",
+    "price": 2699.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-135mm-f1-4-dg-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-sony-a7-iv",
+    "model_name": "Sony A7 IV",
+    "price": 2699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-a7-iv-body",
+    "unchanged_since": "2026-10-23"
+   },
+   {
+    "model_key": "camera-nikon-zf",
+    "model_name": "Nikon ZF",
+    "price": 2699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-f-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z7-ii",
+    "model_name": "Nikon Z7 II",
+    "price": 2699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z7-ii-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-70-200mm-f2_8-afs_fl_stab",
+    "model_name": "Nikon 70-200mm f/2.8 AFS FL STAB (Nikon F)",
+    "price": 2679.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-70-200mm-f2-8-e-fl-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-d850",
+    "model_name": "Nikon D850",
+    "price": 2599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikond850",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-300mm-f4-afs_stab",
+    "model_name": "Nikon 300mm f/4 AFS STAB (Nikon F)",
+    "price": 2599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-300mm-f4-e-pf-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-135mm-f1_8-gm",
+    "model_name": "Sony 135mm f/1.8 GM (Sony E)",
+    "price": 2599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-135mm-f1-8-gm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-105mm-f1_4-afs",
+    "model_name": "Nikon 105mm f/1.4 AFS (Nikon F)",
+    "price": 2599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-105mm-f1-4-e-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-28mm-f1_4-afs",
+    "model_name": "Nikon 28mm f/1.4 AFS (Nikon F)",
+    "price": 2599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-28mm-f1-4e-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-xh2",
+    "model_name": "Fujifilm XH2",
+    "price": 2549.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x-h2-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-x100vi",
+    "model_name": "Fujifilm X100VI",
+    "price": 2499.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x100-vi",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z6-iii",
+    "model_name": "Nikon Z6 III",
+    "price": 2499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z6-iii-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-panasonic-gh7",
+    "model_name": "Panasonic GH7",
+    "price": 2499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-gh7-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-canon-r8-ii",
+    "model_name": "Canon R8 II",
+    "price": 2499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-eos-r8-mark-ii-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-24mm-f3_5-ii_l_ts",
+    "model_name": "Canon 24mm f/3.5 II L TS",
+    "price": 2499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ts-e-24mm-f3-5l-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-24mm-f1_4-afs",
+    "model_name": "Nikon 24mm f/1.4 AFS (Nikon F)",
+    "price": 2499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-24mm-f1-4g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-70-200mm-f2_8-pro_stab",
+    "model_name": "Panasonic 70-200mm f/2.8 PRO STAB (L-Mount)",
+    "price": 2499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-pro-70-200mm-f2-8-ois",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-180-600mm-f5_6-6_3-stab",
+    "model_name": "Nikon 180-600mm f/5.6-6.3 STAB (Nikon Z)",
+    "price": 2469.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-180-600mm-f5-6-6-3-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-12-20mm-f2_8-iii",
+    "model_name": "Tamron 12-20mm f/2.8 III (Sony E)",
+    "price": 2399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-12-20mm-f2-8-di-iii-vxd-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-nikon-z-12-20mm-f2_8-iii",
+    "model_name": "Tamron 12-20mm f/2.8 III (Nikon Z)",
+    "price": 2399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-12-20mm-f2-8-di-iii-vxd-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-70-200mm-f4-ii_macro_stab",
+    "model_name": "Sony 70-200mm f/4 II MACRO STAB (Sony E)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-70-200mm-f4-macro-g-oss-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-12-24mm-f4",
+    "model_name": "Sony 12-24mm f/4 (Sony E)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-12-24mm-f4-g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-50mm-f1",
+    "model_name": "Voigtlander 50mm f/1 (Nikon Z)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-0-nokton-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-50mm-f1",
+    "model_name": "Voigtlander 50mm f/1 (Leica M)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-0-nokton-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-30mm-f3_5",
+    "model_name": "Fujifilm 30mm f/3.5 (Fujifilm G)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-30mm-f3-5-r-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-100-500mm-f5-7_1",
+    "model_name": "Panasonic 100-500mm f/5-7.1 (L-Mount)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-100-500mm-f5-7-1",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-canon-rf-50mm-f1",
+    "model_name": "Voigtlander 50mm f/1 (Canon RF)",
+    "price": 2299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-0-nokton-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-hasselblad-hasselblad-v-28mm-f4",
+    "model_name": "Hasselblad 28mm f/4 (Hasselblad V)",
+    "price": 2289.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/hasselblad-28mm-f4-p",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-24-70mm-f2_8-afs_stab",
+    "model_name": "Nikon 24-70mm f/2.8 AFS STAB (Nikon F)",
+    "price": 2259.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-24-70mm-f2-8-e-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z5-ii",
+    "model_name": "Nikon Z5 II",
+    "price": 2249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z5-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-85mm-f1_2-art",
+    "model_name": "Sigma 85mm f/1.2 ART (Sony E)",
+    "price": 2169.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-85mm-f1-2-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-85mm-f1_2-art",
+    "model_name": "Sigma 85mm f/1.2 ART (L-Mount)",
+    "price": 2169.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-85mm-f1-2-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-50-140mm-f2_8-lm_stab",
+    "model_name": "Fujifilm 50-140mm f/2.8 LM STAB (Fujifilm X)",
+    "price": 2159.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-50-140mm-f2-8-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-nikon-f-70-200mm-f2_8-sport_stab",
+    "model_name": "Sigma 70-200mm f/2.8 SPORT STAB (Nikon F)",
+    "price": 2099.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-70-200mm-f2-8-dg-os-hsm-sport-nikon-f",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-ef-70-200mm-f2_8-sport_stab",
+    "model_name": "Sigma 70-200mm f/2.8 SPORT STAB (Canon EF)",
+    "price": 2099.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-70-200mm-f2-8-dg-os-hsm-sport-canon-ef",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-35mm-f1_2-art_ii",
+    "model_name": "Sigma 35mm f/1.2 ART II (L-Mount)",
+    "price": 2099.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-35mm-f1-2-dg-ii-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-35mm-f1_2-art_ii",
+    "model_name": "Sigma 35mm f/1.2 ART II (Sony E)",
+    "price": 2099.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-35mm-f1-2-dg-ii-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-70-200mm-f2_8-sport_stab",
+    "model_name": "Sigma 70-200mm f/2.8 SPORT STAB",
+    "price": 2099.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-70-200mm-f2-8-dg-os-hsm-sport-sigma-sa",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-35mm-f1_4-afs",
+    "model_name": "Nikon 35mm f/1.4 AFS (Nikon F)",
+    "price": 2099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-35mm-f-1-4g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-85mm-f1_4-l_stab",
+    "model_name": "Canon 85mm f/1.4 L STAB (Canon EF)",
+    "price": 2099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-85mm-f1-4l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-d780",
+    "model_name": "Nikon D780",
+    "price": 2079.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-d780",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-xt50",
+    "model_name": "Fujifilm XT50",
+    "price": 2059.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x-t50-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z6-ii",
+    "model_name": "Nikon Z6 II",
+    "price": 2049.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z6-ii-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-panasonic-g9-ii",
+    "model_name": "Panasonic G9 II",
+    "price": 2049.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g9-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-63mm-f2_8",
+    "model_name": "Fujifilm 63mm f/2.8 (Fujifilm G)",
+    "price": 2019.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-63mm-f2-8-r-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-ricoh-griv",
+    "model_name": "Ricoh GRIV",
+    "price": 1999.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/ricoh-gr-iv",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-40-150mm-f2_8-pro",
+    "model_name": "OM System 40-150mm f/2.8 PRO (Micro Four Thirds)",
+    "price": 1999.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-40-150mm-f2-8-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-25-50mm-f1_7",
+    "model_name": "Panasonic 25-50mm f/1.7 (Micro Four Thirds)",
+    "price": 1999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-leica-dg-vario-summilux-25-50mm-f1-7-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-10-25mm-f1_7",
+    "model_name": "Panasonic 10-25mm f/1.7 (Micro Four Thirds)",
+    "price": 1999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-leica-dg-vario-summilux-10-25mm-f1-7",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-fujifilm-x-35mm-f0_9",
+    "model_name": "Voigtlander 35mm f/0.9 (Fujifilm X)",
+    "price": 1999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f0-9-nokton-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-24-70mm-f2_8",
+    "model_name": "Panasonic 24-70mm f/2.8 (L-Mount)",
+    "price": 1999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-s-24-70mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-8-14mm-f3_5-fisheye",
+    "model_name": "Sony 8-14mm f/3.5 FISHEYE (Sony E)",
+    "price": 1999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-8-14mm-f3-5-fisheye-g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-50mm-f1",
+    "model_name": "Voigtlander 50mm f/1 (Sony E)",
+    "price": 1999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-0-nokton-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-50mm-f1_2-art",
+    "model_name": "Sigma 50mm f/1.2 ART (L-Mount)",
+    "price": 1969.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-50mm-f1-2-dg-dn-art-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-50mm-f1_2-art",
+    "model_name": "Sigma 50mm f/1.2 ART (Sony E)",
+    "price": 1969.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-50mm-f1-2-dg-dn-art-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-85mm-f1_4-afs",
+    "model_name": "Nikon 85mm f/1.4 AFS (Nikon F)",
+    "price": 1949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-85mm-f-1-4g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-xs20",
+    "model_name": "Fujifilm XS20",
+    "price": 1924.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x-s20-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-ef-14-24mm-f2_8-art",
+    "model_name": "Sigma 14-24mm f/2.8 ART (Canon EF)",
+    "price": 1899.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-14-24mm-f2-8-dg-hsm-art-canon-ef",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-nikon-f-14-24mm-f2_8-art",
+    "model_name": "Sigma 14-24mm f/2.8 ART (Nikon F)",
+    "price": 1899.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-14-24mm-f2-8-dg-hsm-art-nikon-f",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-sony-a6700",
+    "model_name": "Sony A6700",
+    "price": 1899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-a6700-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-50-200mm-f2_8-4",
+    "model_name": "Panasonic 50-200mm f/2.8-4 (Micro Four Thirds)",
+    "price": 1899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-leica-50-200mm-f2-8-4-0-vario-elmarit",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-100-400mm-f4-6_3-ii",
+    "model_name": "Panasonic 100-400mm f/4-6.3 II (Micro Four Thirds)",
+    "price": 1899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-leica-dg-vario-elmar-100-400mm-f4-6-3-ii-asph-power-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-45mm-f2_8-ts",
+    "model_name": "Canon 45mm f/2.8 TS",
+    "price": 1889.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ts-e-45mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-17-55mm-f2_8-afs_dx",
+    "model_name": "Nikon 17-55mm f/2.8 AFS DX (Nikon F)",
+    "price": 1879.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-dx-17-55mm-f2-8g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-12-100mm-f4-pro_stab",
+    "model_name": "OM System 12-100mm f/4 PRO STAB (Micro Four Thirds)",
+    "price": 1799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-12-100mm-f4-is-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-25mm-f1_2-pro",
+    "model_name": "OM System 25mm f/1.2 PRO (Micro Four Thirds)",
+    "price": 1799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-25mm-f1-2-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-45mm-f1_2-pro",
+    "model_name": "OM System 45mm f/1.2 PRO (Micro Four Thirds)",
+    "price": 1799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-45mm-f1-2-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-17mm-f1_2-pro",
+    "model_name": "OM System 17mm f/1.2 PRO (Micro Four Thirds)",
+    "price": 1799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-17mm-f1-2-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-ef-24-70mm-f2_8-art_stab",
+    "model_name": "Sigma 24-70mm f/2.8 ART STAB (Canon EF)",
+    "price": 1799.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-24-70mm-f2-8-dg-os-hsm-art-canon-ef-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z5",
+    "model_name": "Nikon Z5",
+    "price": 1799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z5-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-58mm-f1_4-afs",
+    "model_name": "Nikon 58mm f/1.4 AFS (Nikon F)",
+    "price": 1799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-58mm-f1-4g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-100mm-f2_8-gm_macro_stab",
+    "model_name": "Sony 100mm f/2.8 GM MACRO STAB (Sony E)",
+    "price": 1799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-100mm-f2-8-macro-gm-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-24-105mm-f4-stab",
+    "model_name": "Sony 24-105mm f/4 STAB (Sony E)",
+    "price": 1749.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-24-105mm-f4-g-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-100mm-f2_8-l_macro_stab",
+    "model_name": "Canon 100mm f/2.8 L MACRO STAB (Canon EF)",
+    "price": 1699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-100mm-f2-8l-macro-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-16-35mm-f4-l_stab",
+    "model_name": "Canon 16-35mm f/4 L STAB (Canon EF)",
+    "price": 1699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-16-35mm-f4l-is-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-fujifilm-x-150-500mm-f5-6_7-iii_stab",
+    "model_name": "Tamron 150-500mm f/5-6.7 III STAB (Fujifilm X)",
+    "price": 1699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-150-500mm-f5-6-6-7-di-iii-vc-vxd-fujifilm-x",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-50mm-f1_2",
+    "model_name": "Voigtlander 50mm f/1.2 (Sony E)",
+    "price": 1659.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-nokton-m-50mm-f1-2-aspherical-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-7-14mm-f2_8-pro",
+    "model_name": "OM System 7-14mm f/2.8 PRO (Micro Four Thirds)",
+    "price": 1649.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-7-14mm-f2-8-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-14-30mm-f4-s",
+    "model_name": "Nikon 14-30mm f/4 S (Nikon Z)",
+    "price": 1609.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-14-30mm-f4-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-21mm-f1_4",
+    "model_name": "Voigtlander 21mm f/1.4 (Sony E)",
+    "price": 1599.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-nokton-21mm-f1-4-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-canon-ef-24-70mm-f2_8-stab",
+    "model_name": "Tamron 24-70mm f/2.8 STAB (Canon EF)",
+    "price": 1599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-sp-24-70mm-f2-8-di-vc-usd-g2-canon-ef-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-12mm-f1_4",
+    "model_name": "Panasonic 12mm f/1.4 (Micro Four Thirds)",
+    "price": 1599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-leica-dg-summilux-12mm-f1-4-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-200-500mm-f5_6-afs_stab",
+    "model_name": "Nikon 200-500mm f/5.6 AFS STAB (Nikon F)",
+    "price": 1559.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-200-500mm-f5-6-e-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-10mm-f5_6",
+    "model_name": "Voigtlander 10mm f/5.6 (Sony E)",
+    "price": 1549.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-10mm-f5-6-hyper-wide-heliar-sony-e-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-110mm-f2_5-macro",
+    "model_name": "Voigtlander 110mm f/2.5 MACRO",
+    "price": 1549.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-110mm-f2-5-macro-apo-lanthar",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-coolpixp1100",
+    "model_name": "Nikon COOLPIXP1100",
+    "price": 1539.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-coolpix-p1100",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-24-120mm-f4-afs_stab",
+    "model_name": "Nikon 24-120mm f/4 AFS STAB (Nikon F)",
+    "price": 1539.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-24-120mm-f-4g-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-70-180mm-f2_8",
+    "model_name": "Nikon 70-180mm f/2.8 (Nikon Z)",
+    "price": 1539.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-70-180mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-70-200mm-f4-stab",
+    "model_name": "Sony 70-200mm f/4 STAB (Sony E)",
+    "price": 1499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-70-200mm-f4-g-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-10mm-f5_6",
+    "model_name": "Voigtlander 10mm f/5.6 (Leica M)",
+    "price": 1499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-10mm-f5-6-hyper-wide-heliar-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-28-400mm-f4-8-stab",
+    "model_name": "Nikon 28-400mm f/4-8 STAB (Nikon Z)",
+    "price": 1469.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-28-400mm-f4-8-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24-120mm-f4-s",
+    "model_name": "Nikon 24-120mm f/4 S (Nikon Z)",
+    "price": 1449.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-24-120mm-f4-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-17-28mm-f2_8",
+    "model_name": "Nikon 17-28mm f/2.8 (Nikon Z)",
+    "price": 1449.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-17-28mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-8-18mm-f2_8-4",
+    "model_name": "Panasonic 8-18mm f/2.8-4 (Micro Four Thirds)",
+    "price": 1439.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-leica-dg-vario-elmarit-8-18mm-f2-8-4-0-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-21mm-f1_4",
+    "model_name": "Voigtlander 21mm f/1.4 (Leica M)",
+    "price": 1429.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-nokton-21mm-f1-4-nokton-asph-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f1_2-ii",
+    "model_name": "Voigtlander 35mm f/1.2 II (Leica M)",
+    "price": 1399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-2-nokton-ii-m-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-40mm-f1_2",
+    "model_name": "Voigtlander 40mm f/1.2 (Sony E)",
+    "price": 1399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-40mm-f1-2-nokton-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-50mm-f2",
+    "model_name": "Voigtlander 50mm f/2 (Sony E)",
+    "price": 1399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f2-0-apo-lanthar",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-75mm-f1_8",
+    "model_name": "Voigtlander 75mm f/1.8 (Nikon Z)",
+    "price": 1399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voightlander-75mm-f1-8-portrait-heliar-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-canon-rf-75mm-f1_8",
+    "model_name": "Voigtlander 75mm f/1.8 (Canon RF)",
+    "price": 1399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voightlander-75mm-f1-8-portrait-heliar-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-35mm-f1_4-art_ii",
+    "model_name": "Sigma 35mm f/1.4 ART II (Sony E)",
+    "price": 1399.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-35mm-f1-4-dg-ii-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-35mm-f1_4-art_ii",
+    "model_name": "Sigma 35mm f/1.4 ART II (L-Mount)",
+    "price": 1399.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-35mm-f1-4-dg-ii-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-panasonic-gh5-ii",
+    "model_name": "Panasonic GH5 II",
+    "price": 1399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-gh5-ii-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-20mm-f1_8-s",
+    "model_name": "Nikon 20mm f/1.8 S (Nikon Z)",
+    "price": 1399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-20mm-f1-8-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-16-35mm-f4-pro",
+    "model_name": "Panasonic 16-35mm f/4 PRO (L-Mount)",
+    "price": 1399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-pro-16-35mm-f4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-75mm-f1_5",
+    "model_name": "Voigtlander 75mm f/1.5",
+    "price": 1379.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-75mm-f1-5-nokton-asph-silver",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-20mm-f1_4-art",
+    "model_name": "Sigma 20mm f/1.4 ART (L-Mount)",
+    "price": 1349.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-20mm-f1-4-dg-dn-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-20mm-f1_4-art",
+    "model_name": "Sigma 20mm f/1.4 ART (Sony E)",
+    "price": 1349.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-20mm-f1-4-dg-dn-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-16-35mm-f4-afs_stab",
+    "model_name": "Nikon 16-35mm f/4 AFS STAB (Nikon F)",
+    "price": 1349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-16-35mm-f4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-50mm-f3_5-lm",
+    "model_name": "Fujifilm 50mm f/3.5 LM (Fujifilm G)",
+    "price": 1349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-50mm-f3-5-r-lm-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-10-24mm-f4-stab",
+    "model_name": "Fujifilm 10-24mm f/4 STAB (Fujifilm X)",
+    "price": 1349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-10-24mm-f4-r-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-65mm-f2-macro",
+    "model_name": "Voigtlander 65mm f/2 MACRO",
+    "price": 1329.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-65mm-f2-0-macro-apo-lanthar",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-31mm-f1_8-ltd",
+    "model_name": "Pentax 31mm f/1.8 LTD (Pentax K)",
+    "price": 1329.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-fa-31mm-f1-8-limited",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-35mm-f2-ii",
+    "model_name": "Voigtlander 35mm f/2 II (Nikon Z)",
+    "price": 1299.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f2-apo-lanthar-aspherical-ii-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-50mm-f2-ii",
+    "model_name": "Voigtlander 50mm f/2 II (Nikon Z)",
+    "price": 1299.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f2-apo-lanthar-ii-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f1_7",
+    "model_name": "Voigtlander 35mm f/1.7 (Leica M)",
+    "price": 1299.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-7-ultron-m-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-50mm-f1_4-art",
+    "model_name": "Sigma 50mm f/1.4 ART (L-Mount)",
+    "price": 1299.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-50mm-f1-4-dg-dn-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "camera-nikon-z50-ii",
+    "model_name": "Nikon Z50 II",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z50-ii-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-50mm-f2",
+    "model_name": "Voigtlander 50mm f/2 (Leica M)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f2-0-apo-lanthar-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-28-75mm-f2_8",
+    "model_name": "Nikon 28-75mm f/2.8 (Nikon Z)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-28-75mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24-70mm-f4-s",
+    "model_name": "Nikon 24-70mm f/4 S (Nikon Z)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-24-70mm-f4-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24mm-f1_8-s",
+    "model_name": "Nikon 24mm f/1.8 S (Nikon Z)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-24mm-f1-8-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-nikon-z-35-100mm-f2_8-iii",
+    "model_name": "Tamron 35-100mm f/2.8 III (Nikon Z)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-35-100mm-f2-8-di-iii-vxd-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-70-200mm-f4",
+    "model_name": "Panasonic 70-200mm f/4 (L-Mount)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-s-70-200mm-f4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-21mm-f1_8",
+    "model_name": "Voigtlander 21mm f/1.8 (Leica M)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-21mm-f1-8-ultron-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-50mm-f1_2-ii",
+    "model_name": "Voigtlander 50mm f/1.2 II (Leica M)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-2-nokton-ii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-28mm-f1_5-ii",
+    "model_name": "Voigtlander 28mm f/1.5 II (Leica M)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-28mm-f1-5-nokton-vintage-type-ii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f1_2-iv",
+    "model_name": "Voigtlander 35mm f/1.2 IV (Leica M)",
+    "price": 1299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-8-nokton-iv-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-105mm-f2_8-s_stab",
+    "model_name": "Nikon 105mm f/2.8 S STAB (Nikon Z)",
+    "price": 1289.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-mc-105mm-f2-8-vr-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-18mm-f1_4-lm",
+    "model_name": "Fujifilm 18mm f/1.4 LM (Fujifilm X)",
+    "price": 1274.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-18mm-f1-4-r-lm-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-sony-e-10mm-f2_8",
+    "model_name": "Laowa 10mm f/2.8 (Sony E)",
+    "price": 1259.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-10mm-f2-8-zero-d-ff-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-nikon-z-10mm-f2_8",
+    "model_name": "Laowa 10mm f/2.8 (Nikon Z)",
+    "price": 1259.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-10mm-f2-8-zero-d-ff-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-canon-rf-10mm-f2_8",
+    "model_name": "Laowa 10mm f/2.8 (Canon RF)",
+    "price": 1259.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-10mm-f2-8-zero-d-ff-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-xt30-iii",
+    "model_name": "Fujifilm XT30 III",
+    "price": 1249.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x-t30-iii-body",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-15mm-f4_5",
+    "model_name": "Voigtlander 15mm f/4.5 (Sony E)",
+    "price": 1249.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-15mm-f4-5-super-wide-heliar-sony-e-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-17-40mm-f1_8-art",
+    "model_name": "Sigma 17-40mm f/1.8 ART (Sony E)",
+    "price": 1249.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-17-40mm-f1-8-dc-art-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-fujifilm-x-17-40mm-f1_8-art",
+    "model_name": "Sigma 17-40mm f/1.8 ART (Fujifilm X)",
+    "price": 1249.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-17-40mm-f1-8-dc-art-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-rf-17-40mm-f1_8-art",
+    "model_name": "Sigma 17-40mm f/1.8 ART (Canon RF)",
+    "price": 1249.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-17-40mm-f1-8-dc-art-canon-rf-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-17-40mm-f1_8-art",
+    "model_name": "Sigma 17-40mm f/1.8 ART (L-Mount)",
+    "price": 1249.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-17-40mm-f1-8-dc-art-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-canon-rf-75mm-f1_5",
+    "model_name": "Voigtlander 75mm f/1.5 (Canon RF)",
+    "price": 1249.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-75mm-f1-5-nokton-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-75mm-f1_5",
+    "model_name": "Voigtlander 75mm f/1.5 (Nikon Z)",
+    "price": 1249.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-75mm-f1-5-nokton-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-canon-powershotg7x-iii",
+    "model_name": "Canon POWERSHOTG7X III",
+    "price": 1249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-powershot-g7x-mark-iii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-zfc",
+    "model_name": "Nikon ZFC",
+    "price": 1249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-zfc-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-zeiss-sony-e-55mm-f1_8",
+    "model_name": "Zeiss 55mm f/1.8 (Sony E)",
+    "price": 1249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-sonnar-fe-55mm-f1-8-carl-zeiss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-g-35-70mm-f4_5-5_6",
+    "model_name": "Fujifilm 35-70mm f/4.5-5.6 (Fujifilm G)",
+    "price": 1249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-gf-35-70mm-f4-5-5-6-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-35-100mm-f2_8-iii",
+    "model_name": "Tamron 35-100mm f/2.8 III (Sony E)",
+    "price": 1249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-35-100mm-f2-8-di-iii-vxd-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-35-100mm-f2_8",
+    "model_name": "Panasonic 35-100mm f/2.8 (Micro Four Thirds)",
+    "price": 1249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-dg-vario-elmarit-35-100mm-f3-8-power-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-35mm-f1_5-ii",
+    "model_name": "Voigtlander 35mm f/1.5 II",
+    "price": 1229.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-5-nokton-ii-black",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-24mm-f1_4-art",
+    "model_name": "Sigma 24mm f/1.4 ART (Sony E)",
+    "price": 1199.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-24mm-f1-4-dg-dn-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-24mm-f1_4-art",
+    "model_name": "Sigma 24mm f/1.4 ART (L-Mount)",
+    "price": 1199.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-art-24mm-f1-4-dg-dn-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-18-135mm-f3_5-5_6-lm_stab",
+    "model_name": "Fujifilm 18-135mm f/3.5-5.6 LM STAB (Fujifilm X)",
+    "price": 1199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-18-135mm-f3-5-5-6-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-12-60mm-f2_8-4-stab",
+    "model_name": "Panasonic 12-60mm f/2.8-4 STAB (Micro Four Thirds)",
+    "price": 1199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-leica-vario-elmarit-12-60mm-f2-8-4-ois",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-14mm-f2_8",
+    "model_name": "Fujifilm 14mm f/2.8 (Fujifilm X)",
+    "price": 1199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-14mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-40mm-f1_2-ii",
+    "model_name": "Voigtlander 40mm f/1.2 II (Leica M)",
+    "price": 1199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-40mm-f2-8-nokton-ii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24-200mm-f4-6_3-stab",
+    "model_name": "Nikon 24-200mm f/4-6.3 STAB (Nikon Z)",
+    "price": 1179.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-24-200mm-f4-6-3-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-20-60mm-f2_8-4-c",
+    "model_name": "Sigma 20-60mm f/2.8-4 C (L-Mount)",
+    "price": 1169.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-20-60mm-f2-8-4-fg-contemporary-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-20-60mm-f2_8-4-c",
+    "model_name": "Sigma 20-60mm f/2.8-4 C (Sony E)",
+    "price": 1169.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-20-60mm-f2-8-4-fg-contemporary-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-micro-four-thirds-25mm-f0_9-ii",
+    "model_name": "Voigtlander 25mm f/0.9 II (Micro Four Thirds)",
+    "price": 1149.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-25mm-f0-95-nokton-micro-4-3-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-15mm-f4_5-iii",
+    "model_name": "Voigtlander 15mm f/4.5 III (Leica M)",
+    "price": 1149.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-15mm-f4-5-super-wide-heliar-iii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-18-120mm-f4-lm",
+    "model_name": "Fujifilm 18-120mm f/4 LM (Fujifilm X)",
+    "price": 1149.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-18-120mm-f4-lm-pz-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-24-60mm-f2_8",
+    "model_name": "Panasonic 24-60mm f/2.8 (L-Mount)",
+    "price": 1149.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-24-60mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f2",
+    "model_name": "Voigtlander 35mm f/2 (Leica M)",
+    "price": 1139.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f2-0-ultron-vintage-line-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-50mm-f1_5",
+    "model_name": "Voigtlander 50mm f/1.5 (Leica M)",
+    "price": 1139.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-5-nokton",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-21mm-f2_5",
+    "model_name": "Voigtlander 21mm f/2.5 (Leica M)",
+    "price": 1139.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-21mm-f2-5-color-skopar-asph-vintage-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-40mm-f1_2",
+    "model_name": "Voigtlander 40mm f/1.2 (Nikon Z)",
+    "price": 1129.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-40mm-f1-2-nokton-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-10-24mm-f3_5-4_5-afs_dx",
+    "model_name": "Nikon 10-24mm f/3.5-4.5 AFS DX (Nikon F)",
+    "price": 1129.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-dx-10-24mm-f3-5-4-5",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f2-ii",
+    "model_name": "Voigtlander 35mm f/2 II (Leica M)",
+    "price": 1129.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f2-ultron-asph-ii-black-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-50mm-f1_5-ii",
+    "model_name": "Voigtlander 50mm f/1.5 II (Leica M)",
+    "price": 1129.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-5-nokton-vintage-line-ii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-23mm-f1_4-lm",
+    "model_name": "Fujifilm 23mm f/1.4 LM (Fujifilm X)",
+    "price": 1124.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-23mm-f1-4-r-lm-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-50mm-f1_1",
+    "model_name": "Voigtlander 50mm f/1.1 (Leica M)",
+    "price": 1099.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-50mm-f1-1-nokton-m-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-50mm-f1_5",
+    "model_name": "Voigtlander 50mm f/1.5",
+    "price": 1099.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-heliar-classic-50mm-f1-5",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-16mm-f1_8",
+    "model_name": "Sony 16mm f/1.8 (Sony E)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-16mm-f1-8-g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-70-300mm-f4_5-5_6-macro",
+    "model_name": "Panasonic 70-300mm f/4.5-5.6 MACRO (L-Mount)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-s-70-300mm-f4-5-5-6-macro-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-12-35mm-f2_8",
+    "model_name": "Panasonic 12-35mm f/2.8 (Micro Four Thirds)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-12-35mm-f2-8-asph-leica-dg-vario-elmarit",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-100mm-f2_8-macro",
+    "model_name": "Panasonic 100mm f/2.8 MACRO (L-Mount)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-100mm-f2-8-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-50-120mm-f2_8-c",
+    "model_name": "Sigma 50-120mm f/2.8 C (Sony E)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-50-120mm-f2-8-contemporary-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-fujifilm-x-50-120mm-f2_8-c",
+    "model_name": "Sigma 50-120mm f/2.8 C (Fujifilm X)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-50-120mm-f2-8-contemporary-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-rf-50-120mm-f2_8-c",
+    "model_name": "Sigma 50-120mm f/2.8 C (Canon RF)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-50-120mm-f2-8-contemporary-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-canon-rf-40mm-f1_2",
+    "model_name": "Voigtlander 40mm f/1.2 (Canon RF)",
+    "price": 1099.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-40mm-f1-2-nokton-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-16-80mm-f4-stab",
+    "model_name": "Fujifilm 16-80mm f/4 STAB (Fujifilm X)",
+    "price": 1079.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-16-80-f4-r-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-20mm-f2-c",
+    "model_name": "Sigma 20mm f/2 C (L-Mount)",
+    "price": 1079.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-i-series-20mm-f2-dg-dn-contemporary-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-20mm-f2-c",
+    "model_name": "Sigma 20mm f/2 C (Sony E)",
+    "price": 1079.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-i-series-20mm-f2-dg-dn-contemporary-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-xm5",
+    "model_name": "Fujifilm XM5",
+    "price": 1079.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-x-m5-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-17-28mm-f2_8-iii",
+    "model_name": "Tamron 17-28mm f/2.8 III (Sony E)",
+    "price": 1079.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-17-28mm-f2-8-di-iii-rxd",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-100-400mm-f5_6-8-stab",
+    "model_name": "Sony 100-400mm f/5.6-8 STAB (Sony E)",
+    "price": 1079.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-100-400mm-f5-6-8-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-fujifilm-x-35mm-f2-macro",
+    "model_name": "Voigtlander 35mm f/2 MACRO (Fujifilm X)",
+    "price": 1049.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f2-macro-apo-ultron-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-70-300mm-f4-5_6-lm_stab",
+    "model_name": "Fujifilm 70-300mm f/4-5.6 LM STAB (Fujifilm X)",
+    "price": 1049.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-70-300mm-f4-5-5-6-r-lm-ois-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-zeiss-sony-e-24mm-f1_8",
+    "model_name": "Zeiss 24mm f/1.8 (Sony E)",
+    "price": 1049.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-nex-24mm-f1-8-carl-zeiss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-85mm-f1_8-s",
+    "model_name": "Nikon 85mm f/1.8 S (Nikon Z)",
+    "price": 1019.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-85mm-f1-8-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-35mm-f1_8",
+    "model_name": "Nikon 35mm f/1.8 (Nikon Z)",
+    "price": 1019.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-35mm-f1-8s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-16-50mm-f2_8-dx_stab",
+    "model_name": "Nikon 16-50mm f/2.8 DX STAB (Nikon Z)",
+    "price": 1019.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-16-50mm-f2-8-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-90mm-f2_8",
+    "model_name": "Voigtlander 90mm f/2.8 (Leica M)",
+    "price": 999.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-90mm-f2-8-apo-skopar-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-nikon-z-16-300mm-f3_5-6_7-c_stab",
+    "model_name": "Sigma 16-300mm f/3.5-6.7 C STAB (Nikon Z)",
+    "price": 999.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-contemporary-16-300mm-f3-5-6-7-dc-os-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-sony-a6100",
+    "model_name": "Sony A6100",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-a6100-mirrorless-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-panasonic-g97",
+    "model_name": "Panasonic G97",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g97-with-12-60mm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-20mm-f1_8-afs",
+    "model_name": "Nikon 20mm f/1.8 AFS (Nikon F)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-20mm-f1-8-g-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-24-105mm-f4",
+    "model_name": "Panasonic 24-105mm f/4 (L-Mount)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-s-24-105mm-f4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-7-14mm-f4",
+    "model_name": "Panasonic 7-14mm f/4 (Micro Four Thirds)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-7-14mm-f4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-45mm-f2_8-macro",
+    "model_name": "Panasonic 45mm f/2.8 MACRO (Micro Four Thirds)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-dg-45mm-f2-8-leica-macro-elmarit",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-28-200mm-f4-7_1-macro",
+    "model_name": "Panasonic 28-200mm f/4-7.1 MACRO (L-Mount)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-28-200mm-f4-7-1-macro-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-24mm-f1_8",
+    "model_name": "Panasonic 24mm f/1.8 (L-Mount)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-24mm-f1-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-nikon-z-20-40mm-f2_8-iii",
+    "model_name": "Tamron 20-40mm f/2.8 III (Nikon Z)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-20-40mm-f2-8-di-iii-vxd-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-fujifilm-x-50mm-f1_2",
+    "model_name": "Voigtlander 50mm f/1.2 (Fujifilm X)",
+    "price": 999.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-nokton-m-50mm-f1-2-aspherical-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-sony-e-12mm-f2_8",
+    "model_name": "Laowa 12mm f/2.8 (Sony E)",
+    "price": 979.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-12mm-f2-8-lite-zero-d-ff-5-blade-sony-e-autofocus",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-nikon-z-12mm-f2_8",
+    "model_name": "Laowa 12mm f/2.8 (Nikon Z)",
+    "price": 979.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-12mm-f2-8-lite-zero-d-ff-5-blade-nikon-z-autofocus",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-50-300mm-f4_5-6_3-iii_stab",
+    "model_name": "Tamron 50-300mm f/4.5-6.3 III STAB (Sony E)",
+    "price": 969.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-50-300mm-f4-5-6-3-di-iii-vc-vxd-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-200mm-f2_8",
+    "model_name": "Panasonic 200mm f/2.8 (Micro Four Thirds)",
+    "price": 949.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-2-0x-teleconverter-for-lumix-g-200mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-16-50mm-f2_8-4_8-lm",
+    "model_name": "Fujifilm 16-50mm f/2.8-4.8 LM (Fujifilm X)",
+    "price": 949.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-16-50mm-f2-8-48-r-lm-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-sony-e-21mm-f3_5",
+    "model_name": "Voigtlander 21mm f/3.5 (Sony E)",
+    "price": 949.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-21mm-f3-5-color-skopar-asph-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-24mm-f1_8-afs",
+    "model_name": "Nikon 24mm f/1.8 AFS (Nikon F)",
+    "price": 949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-24mm-f1-8-g-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-nikon-f-35mm-f1_4",
+    "model_name": "Tamron 35mm f/1.4 (Nikon F)",
+    "price": 949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-sp-35mm-f1-4-di-usd-nikon-f",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-20-40mm-f2_8-iii",
+    "model_name": "Tamron 20-40mm f/2.8 III (Sony E)",
+    "price": 949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-20-40mm-f2-8-di-iii-vxd-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-canon-ef-35mm-f1_4",
+    "model_name": "Tamron 35mm f/1.4 (Canon EF)",
+    "price": 949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-sp-35mm-f1-4-di-usd-canon-ef",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-nikon-z-90mm-f2_8-iii_macro",
+    "model_name": "Tamron 90mm f/2.8 III MACRO (Nikon Z)",
+    "price": 949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-90mm-f2-8-di-iii-macro-vxd-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-90mm-f2_8-iii_macro",
+    "model_name": "Tamron 90mm f/2.8 III MACRO (Sony E)",
+    "price": 949.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-90mm-f2-8-di-iii-macro-vxd-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-18-300mm-f3_5-6_3-afs_dx_stab",
+    "model_name": "Nikon 18-300mm f/3.5-6.3 AFS DX STAB (Nikon F)",
+    "price": 919.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-dx-18-300mm-f3-5-6-3-g-ed-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-sony-e-9mm-f5_6",
+    "model_name": "Laowa 9mm f/5.6 (Sony E)",
+    "price": 909.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-9mm-f5-6-ff-rl-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-fujifilm-x-23mm-f1_2",
+    "model_name": "Voigtlander 23mm f/1.2 (Fujifilm X)",
+    "price": 899.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-23mm-f1-2-nokton-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f1_4-ii",
+    "model_name": "Voigtlander 35mm f/1.4 II (Leica M)",
+    "price": 899.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-4-ii-mc-m-mt",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-23mm-f1_2",
+    "model_name": "Voigtlander 23mm f/1.2 (Nikon Z)",
+    "price": 899.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-23mm-f1-2-nokton-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f1_4",
+    "model_name": "Voigtlander 35mm f/1.4 (Leica M)",
+    "price": 899.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-nokton-classic-35mm-f1-4-sc-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-14-28mm-f4-5_6",
+    "model_name": "Panasonic 14-28mm f/4-5.6 (L-Mount)",
+    "price": 899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-14-28mm-f4-5-6",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-18mm-f1_8",
+    "model_name": "Panasonic 18mm f/1.8 (L-Mount)",
+    "price": 899.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-18mm-f1-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-f-58mm-f1_4",
+    "model_name": "Voigtlander 58mm f/1.4 (Nikon F)",
+    "price": 879.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-nokton-slii-s-58mm-f1-4-nikon-f-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-d7500",
+    "model_name": "Nikon D7500",
+    "price": 879.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-d7500-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-60mm-f2_4-macro",
+    "model_name": "Fujifilm 60mm f/2.4 MACRO (Fujifilm X)",
+    "price": 869.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-60mm-f2-4-r-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-18-140mm-f3_5-6_3-dx_stab",
+    "model_name": "Nikon 18-140mm f/3.5-6.3 DX STAB (Nikon Z)",
+    "price": 869.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-18-140mm-f-3-5-6-3-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-28mm-f1_8-afs",
+    "model_name": "Nikon 28mm f/1.8 AFS (Nikon F)",
+    "price": 869.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-28mm-f1-8g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-20-40mm-f2_8-4-ltd",
+    "model_name": "Pentax 20-40mm f/2.8-4 LTD (Pentax K)",
+    "price": 859.97,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-20-40mm-f2-8-4-ed-limited-dc-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-50mm-f2_8",
+    "model_name": "Nikon 50mm f/2.8 (Nikon Z)",
+    "price": 859.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-mc-50mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-12-45mm-f4-pro",
+    "model_name": "OM System 12-45mm f/4 PRO (Micro Four Thirds)",
+    "price": 849.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-12-45mm-f4-pro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-75mm-f2_8",
+    "model_name": "Voigtlander 75mm f/2.8 (Leica M)",
+    "price": 849.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-75mm-f2-8-apo-skopar-m-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-35mm-f1_4",
+    "model_name": "Voigtlander 35mm f/1.4 (Nikon Z)",
+    "price": 849.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-4-nokton-classic-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-canon-rf-35mm-f1_4",
+    "model_name": "Voigtlander 35mm f/1.4 (Canon RF)",
+    "price": 849.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-4-nokton-classic-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-fujifilm-x-35mm-f1_2",
+    "model_name": "Voigtlander 35mm f/1.2 (Fujifilm X)",
+    "price": 839.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-35mm-f1-2-nokton-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-nikon-z-35mm-f1_2",
+    "model_name": "Voigtlander 35mm f/1.2 (Nikon Z)",
+    "price": 829.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-d-35mm-f1-2-nokton-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-20mm-f2_8-afd",
+    "model_name": "Nikon 20mm f/2.8 AFD (Nikon F)",
+    "price": 829.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-20mm-f2-8d",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-30mm-f2_8-lm_macro",
+    "model_name": "Fujifilm 30mm f/2.8 LM MACRO (Fujifilm X)",
+    "price": 809.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-30mm-f2-8-r-lm-wr-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-fujifilm-x-27mm-f2",
+    "model_name": "Voigtlander 27mm f/2 (Fujifilm X)",
+    "price": 799.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voightlander-27mm-f2-ultron-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-nikon-f-105mm-f2_8-macro_stab",
+    "model_name": "Sigma 105mm f/2.8 MACRO STAB (Nikon F)",
+    "price": 799.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-105mm-f2-8-ex-dg-os-macro-nikon-f",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-ef-105mm-f2_8-macro_stab",
+    "model_name": "Sigma 105mm f/2.8 MACRO STAB (Canon EF)",
+    "price": 799.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-105mm-f2-8-ex-dg-os-macro-canon-ef",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-sony-e-23mm-f1_4-c",
+    "model_name": "Sigma 23mm f/1.4 C (Sony E)",
+    "price": 799.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-23mm-f1-4-dc-dn-contemporary-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-zeiss-sony-e-35mm-f2_8",
+    "model_name": "Zeiss 35mm f/2.8 (Sony E)",
+    "price": 799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-sonnar-fe-35mm-f2-8-carl-zeiss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-18mm-f2",
+    "model_name": "Fujifilm 18mm f/2 (Fujifilm X)",
+    "price": 799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-18mm-f2-r",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-17-50mm-f4-iii",
+    "model_name": "Tamron 17-50mm f/4 III (Sony E)",
+    "price": 799.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-17-50mm-f4-di-iii-vxd-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-nikon-z30",
+    "model_name": "Nikon Z30",
+    "price": 779.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z30-body",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-18-135mm-f3_5-5_6-stab",
+    "model_name": "Sony 18-135mm f/3.5-5.6 STAB (Sony E)",
+    "price": 779.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-e-18-135mm-f3-5-5-6-oss",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-50mm-f1_8",
+    "model_name": "Nikon 50mm f/1.8 (Nikon Z)",
+    "price": 769.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-50mm-f1-8s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-canon-powershotsx740",
+    "model_name": "Canon POWERSHOTSX740",
+    "price": 749.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-powershot-sx740-hs",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-35mm-f1_4",
+    "model_name": "Nikon 35mm f/1.4 (Nikon Z)",
+    "price": 749.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-35mm-f1-4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-nikon-z-16-50mm-f2_8",
+    "model_name": "Tamron 16-50mm f/2.8 (Nikon Z)",
+    "price": 749.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-16-50mm-f2-8-a-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-fujifilm-x-16-50mm-f2_8",
+    "model_name": "Tamron 16-50mm f/2.8 (Fujifilm X)",
+    "price": 729.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-16-50mm-f2-8-a-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-28-105mm-f3_5-5_6",
+    "model_name": "Pentax 28-105mm f/3.5-5.6 (Pentax K)",
+    "price": 699.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-d-fa-28-105mm-f3-5-5-6-ed-dc-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-ef-m-56mm-f1_4-c",
+    "model_name": "Sigma 56mm f/1.4 C (Canon EF-M)",
+    "price": 699.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-56mm-f1-4-dc-dn-contemporary-canon-ef-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-l-mount-56mm-f1_4-c",
+    "model_name": "Sigma 56mm f/1.4 C (L-Mount)",
+    "price": 699.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-56mm-f1-4-dc-dn-contemporary-l-mount",
+    "unchanged_since": "2026-10-20"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-14-140mm-f3_5-5_6-ii",
+    "model_name": "Panasonic 14-140mm f/3.5-5.6 II (Micro Four Thirds)",
+    "price": 699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-vario-14-140mm-f3-5-5-6-ii-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-20-60mm-f3_5-5_6",
+    "model_name": "Panasonic 20-60mm f/3.5-5.6 (L-Mount)",
+    "price": 699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-20-60mm-f3-5-5-6-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-20mm-f2_5",
+    "model_name": "Panasonic 20mm f/2.5 (L-Mount)",
+    "price": 699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-20mm-f2-5",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-40mm-f1_4",
+    "model_name": "Voigtlander 40mm f/1.4 (Leica M)",
+    "price": 699.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-40mm-f1-4-sc-nokton-classic-leica-m-1",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-43mm-f1_9-ltd",
+    "model_name": "Pentax 43mm f/1.9 LTD (Pentax K)",
+    "price": 679.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-fa-43mm-f1-9-limited-silver",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-35mm-f1_8-afs",
+    "model_name": "Nikon 35mm f/1.8 AFS (Nikon F)",
+    "price": 679.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-35mm-f1-8-g-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24-105mm-f4-7_1",
+    "model_name": "Nikon 24-105mm f/4-7.1 (Nikon Z)",
+    "price": 679.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-24-105mm-f4-7-1",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-21mm-f4",
+    "model_name": "Voigtlander 21mm f/4",
+    "price": 659.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-m-21mm-f4-0-black",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-35mm-f2_5-ii",
+    "model_name": "Voigtlander 35mm f/2.5 II (Leica M)",
+    "price": 659.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voiglander-35mm-f2-5-color-skopar-ii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-21mm-f4",
+    "model_name": "Voigtlander 21mm f/4 (Leica M)",
+    "price": 659.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-21mm-f4-color-skopar-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-rf-16mm-f1_4-c",
+    "model_name": "Sigma 16mm f/1.4 C (Canon RF)",
+    "price": 649.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-16mm-f1-4-dc-dn-contemporary-canon-rf-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-100-300mm-f4-5_6-ii_stab",
+    "model_name": "Panasonic 100-300mm f/4-5.6 II STAB (Micro Four Thirds)",
+    "price": 649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-vario-100-300mm-f4-5-6-power-ois-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-100mm-f2_8-macro",
+    "model_name": "Pentax 100mm f/2.8 MACRO (Pentax K)",
+    "price": 649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-d-fa-100mm-f2-8-wr-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-50mm-f2_8-macro",
+    "model_name": "Sony 50mm f/2.8 MACRO (Sony E)",
+    "price": 649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-50mm-f2-8-macro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-28-60mm-f4-5_6",
+    "model_name": "Sony 28-60mm f/4-5.6 (Sony E)",
+    "price": 649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-28-60mm-f4-5-6",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-10-17mm-f3_5-5_6-fisheye",
+    "model_name": "Pentax 10-17mm f/3.5-5.6 FISHEYE (Pentax K)",
+    "price": 649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-fisheye-10-17mm-f3-5-5-6-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-12-60mm-f3_5-5_6",
+    "model_name": "Panasonic 12-60mm f/3.5-5.6 (Micro Four Thirds)",
+    "price": 649.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-vario-12-60mm-f3-5-5-6-asph-power-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-15mm-f1_7",
+    "model_name": "Panasonic 15mm f/1.7 (Micro Four Thirds)",
+    "price": 629.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-leica-dg-summilux-15mm-f1-7-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-85mm-f1_8-afs",
+    "model_name": "Nikon 85mm f/1.8 AFS (Nikon F)",
+    "price": 619.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-85mm-f1-8g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-fujifilm-x-9mm-f2_8",
+    "model_name": "Laowa 9mm f/2.8 (Fujifilm X)",
+    "price": 609.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-9mm-f2-8-zero-d-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-laowa-sony-e-9mm-f2_8",
+    "model_name": "Laowa 9mm f/2.8 (Sony E)",
+    "price": 609.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/laowa-9mm-f2-8-zero-d-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-canon-ef-28mm-f2_8",
+    "model_name": "Voigtlander 28mm f/2.8 (Canon EF)",
+    "price": 599.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-color-skopar-slii-28mm-f2-8-canon-ef-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-70mm-f2_4-ltd",
+    "model_name": "Pentax 70mm f/2.4 LTD (Pentax K)",
+    "price": 599.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-70mm-f2-4-limited",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-15mm-f4-ltd",
+    "model_name": "Pentax 15mm f/4 LTD (Pentax K)",
+    "price": 599.67,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-15mm-f4-ed-al-limited",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-28mm-f2",
+    "model_name": "Sony 28mm f/2 (Sony E)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-28mm-f2",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-50mm-f2",
+    "model_name": "Fujifilm 50mm f/2 (Fujifilm X)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-50mm-f2-r-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-9mm-f1_7",
+    "model_name": "Panasonic 9mm f/1.7 (Micro Four Thirds)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-leica-9mm-f1-7-asph-dg-summilux",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-50mm-f1_4",
+    "model_name": "Nikon 50mm f/1.4 (Nikon Z)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-50mm-f1-4",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-14-42mm-f3_5-5_6",
+    "model_name": "Panasonic 14-42mm f/3.5-5.6 (Micro Four Thirds)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-x-vario-pz-14-42mm-f3-5-5-6-asph-power-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-voigtlander-leica-m-40mm-f2_8",
+    "model_name": "Voigtlander 40mm f/2.8 (Leica M)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/voigtlander-40mm-f2-8-heliar-asph-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-40mm-f2",
+    "model_name": "Panasonic 40mm f/2 (L-Mount)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-40mm-f2",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-18-40mm-f4_5-6_3",
+    "model_name": "Panasonic 18-40mm f/4.5-6.3 (L-Mount)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-18-40mm-f4-5-6-3",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-28-70mm-f3_5-5_6-ii_stab",
+    "model_name": "Sony 28-70mm f/3.5-5.6 II STAB (Sony E)",
+    "price": 599.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-fe-28-70mm-f3-5-5-6-oss-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-26mm-f2_8",
+    "model_name": "Nikon 26mm f/2.8 (Nikon Z)",
+    "price": 589.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-26mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-35mm-f1_7-dx",
+    "model_name": "Nikon 35mm f/1.7 DX (Nikon Z)",
+    "price": 579.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-mc-35mm-f1-7",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24-50mm-f4-6_3",
+    "model_name": "Nikon 24-50mm f/4-6.3 (Nikon Z)",
+    "price": 569.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-24-50mm-f4-6-3",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-21mm-f3_2-ltd",
+    "model_name": "Pentax 21mm f/3.2 LTD (Pentax K)",
+    "price": 559.97,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-21mm-f3-2-al-limited",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-23mm-f2_8",
+    "model_name": "Fujifilm 23mm f/2.8 (Fujifilm X)",
+    "price": 559.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-23mm-f2-8-r-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-35mm-f2_8-ltd_macro",
+    "model_name": "Pentax 35mm f/2.8 LTD MACRO (Pentax K)",
+    "price": 558.56,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-35mm-f2-8-macro-limited",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-35mm-f2",
+    "model_name": "Pentax 35mm f/2 (Pentax K)",
+    "price": 549.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-fa-35mm-f2",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-35-100mm-f4-5_6",
+    "model_name": "Panasonic 35-100mm f/4-5.6 (Micro Four Thirds)",
+    "price": 549.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-vario-30-100mm-f4-0-5-6-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-45-175mm-f4-5_6",
+    "model_name": "Panasonic 45-175mm f/4-5.6 (Micro Four Thirds)",
+    "price": 549.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-x-vario-pz-45-175mm-f4-0-5-6-asph-power-o-i-s",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-50-250mm-f4_5-6_3-dx_stab",
+    "model_name": "Nikon 50-250mm f/4.5-6.3 DX STAB (Nikon Z)",
+    "price": 539.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-50-250mm-f4-5-6-3-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-50mm-f1_4-afs",
+    "model_name": "Nikon 50mm f/1.4 AFS (Nikon F)",
+    "price": 539.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-50mm-f1-4g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-50-230mm-f4_5-6_7-ii_stab",
+    "model_name": "Fujifilm 50-230mm f/4.5-6.7 II STAB (Fujifilm X)",
+    "price": 539.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xc-50-230mm-f4-5-6-7-ois-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-canon-powershotelph",
+    "model_name": "Canon POWERSHOTELPH",
+    "price": 529.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-powershot-elph-360-hs-a",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-27mm-f2_8",
+    "model_name": "Fujifilm 27mm f/2.8 (Fujifilm X)",
+    "price": 519.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xf-27mm-f1-7-r-wr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sigma-canon-ef-m-30mm-f1_4-c",
+    "model_name": "Sigma 30mm f/1.4 C (Canon EF-M)",
+    "price": 499.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sigma-30mm-f1-4-dc-dn-contemporary-canon-ef-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-50mm-f1_4",
+    "model_name": "Canon 50mm f/1.4 (Canon EF)",
+    "price": 499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-50mm-f1-4-usm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-45-200mm-f4-5_6-ii_stab",
+    "model_name": "Panasonic 45-200mm f/4-5.6 II STAB (Micro Four Thirds)",
+    "price": 499.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-g-vario-45-200mm-f4-5-6-power-ois-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-13-33mm-f3_5-6_3-stab",
+    "model_name": "Fujifilm 13-33mm f/3.5-6.3 STAB (Fujifilm X)",
+    "price": 489.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xc-13-33mm-f3-5-6-3-ois",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-10-17mm-f3_5-4_5-fisheye",
+    "model_name": "Pentax 10-17mm f/3.5-4.5 FISHEYE (Pentax K)",
+    "price": 464.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-da-10-17mm-f3-5-4-5-fisheye",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-60mm-f2_8-macro",
+    "model_name": "7Artisans 60mm f/2.8 MACRO (Nikon Z)",
+    "price": 462.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-60mm-f2-8-2x-ultra-macro-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-canon-rf-60mm-f2_8-macro",
+    "model_name": "7Artisans 60mm f/2.8 MACRO (Canon RF)",
+    "price": 462.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-60mm-f2-8-2x-ultra-macro-canon-r",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-60mm-f2_8-macro",
+    "model_name": "7Artisans 60mm f/2.8 MACRO (Sony E)",
+    "price": 462.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-60mm-f2-8-2x-ultra-macro-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-40mm-f2_8-ltd",
+    "model_name": "Pentax 40mm f/2.8 LTD (Pentax K)",
+    "price": 458.56,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-hd-da-40mm-f2-8-limited",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-30mm-f2_8-macro_stab",
+    "model_name": "Panasonic 30mm f/2.8 MACRO STAB (Micro Four Thirds)",
+    "price": 449.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-30mm-f2-8-macro-asph-mega-ois",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "camera-fujifilm-x100ii",
+    "model_name": "Fujifilm X100II",
+    "price": 449.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fuji-wcl-x100ii-wide-angle-converter",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-ttartisan-leica-m-21mm-f1_5",
+    "model_name": "TTArtisan 21mm f/1.5 (Leica M)",
+    "price": 449.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/ttartisan-21mm-f1-5-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-12-28mm-f3_5-5_6-dx_stab",
+    "model_name": "Nikon 12-28mm f/3.5-5.6 DX STAB (Nikon Z)",
+    "price": 439.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-12-28mm-f3-5-5-6-pz-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-20mm-f2_8",
+    "model_name": "Sony 20mm f/2.8 (Sony E)",
+    "price": 429.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-nex-20mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-16-50mm-f3_5-6_3-dx_stab",
+    "model_name": "Nikon 16-50mm f/3.5-6.3 DX STAB (Nikon Z)",
+    "price": 429.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-16-50mm-f3-5-6-3-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-rf-18-45mm-f4_5-6_3-stab_stm",
+    "model_name": "Canon 18-45mm f/4.5-6.3 STAB STM (Canon RF)",
+    "price": 429.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-rf-s-18-45mm-f4-5-6-3-is-stm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-50mm-f1",
+    "model_name": "7Artisans 50mm f/1 (Sony E)",
+    "price": 419.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-50mm-f1-05-apo-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-50mm-f1",
+    "model_name": "7Artisans 50mm f/1 (Nikon Z)",
+    "price": 419.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-50mm-f1-05-apo-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-canon-rf-50mm-f1",
+    "model_name": "7Artisans 50mm f/1 (Canon RF)",
+    "price": 419.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-50mm-f1-05-apo-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-14-42mm-f3_5-5_6",
+    "model_name": "OM System 14-42mm f/3.5-5.6 (Micro Four Thirds)",
+    "price": 399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-ed-14-42mm-f3-5-5-6-ez",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-14-42mm-f3_5-5_6-ii",
+    "model_name": "OM System 14-42mm f/3.5-5.6 II (Micro Four Thirds)",
+    "price": 399.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-14-42mm-f3-5-5-6-ii-r",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-canon-rf-15mm-f4",
+    "model_name": "7Artisans 15mm f/4 (Canon RF)",
+    "price": 399.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-15mm-f4-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-15mm-f4",
+    "model_name": "7Artisans 15mm f/4 (Sony E)",
+    "price": 399.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-15mm-f4-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-15mm-f4",
+    "model_name": "7Artisans 15mm f/4 (Nikon Z)",
+    "price": 399.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-15mm-f4-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-l-mount-15mm-f4",
+    "model_name": "7Artisans 15mm f/4 (L-Mount)",
+    "price": 399.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-15mm-f4-l-mount",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-55-250mm-f4-5_6-stab_stm",
+    "model_name": "Canon 55-250mm f/4-5.6 STAB STM (Canon EF)",
+    "price": 399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-s-55-250mm-f4-5-5-6-is-stm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-20mm-f1_7-ii",
+    "model_name": "Panasonic 20mm f/1.7 II (Micro Four Thirds)",
+    "price": 399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-20mm-f1-7-ii-asph-black",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-20mm-f2_8-iii_macro",
+    "model_name": "Tamron 20mm f/2.8 III MACRO (Sony E)",
+    "price": 399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-20mm-f2-8-di-iii-osd-macro-1-2-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-15-45mm-f3_5-5_6-stab",
+    "model_name": "Fujifilm 15-45mm f/3.5-5.6 STAB (Fujifilm X)",
+    "price": 399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xc-15-45mm-f3-5-5-6-ois-pz",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-16-50mm-f3_5-5_6-ii_stab",
+    "model_name": "Sony 16-50mm f/3.5-5.6 II STAB (Sony E)",
+    "price": 399.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-pz-16-50mm-f3-5-5-6-oss-ii",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-leica-m-35mm-f2-ii",
+    "model_name": "7Artisans 35mm f/2 II (Leica M)",
+    "price": 379.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-35mm-f2-ii-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-sony-sony-e-16mm-f2_8",
+    "model_name": "Sony 16mm f/2.8 (Sony E)",
+    "price": 349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/sony-nex-16mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-35mm-f2_8-iii_macro",
+    "model_name": "Tamron 35mm f/2.8 III MACRO (Sony E)",
+    "price": 349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-35mm-f-2-8-di-iii-osd-macro-1-2-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-tamron-sony-e-24mm-f2_8-iii_macro",
+    "model_name": "Tamron 24mm f/2.8 III MACRO (Sony E)",
+    "price": 349.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/tamron-24mm-f-2-8-di-iii-osd-macro-1-2-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-28mm-f2_8",
+    "model_name": "Nikon 28mm f/2.8 (Nikon Z)",
+    "price": 329.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikon-z-28mm-f2-8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-40mm-f2_8-afs_dx_macro",
+    "model_name": "Nikon 40mm f/2.8 AFS DX MACRO (Nikon F)",
+    "price": 319.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-dx-40mm-f2-8g-micro",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-leica-m-28mm-f5_6",
+    "model_name": "7Artisans 28mm f/5.6 (Leica M)",
+    "price": 319.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-28mm-f5-6-leica-m",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-z-24mm-f1_7-dx",
+    "model_name": "Nikon 24mm f/1.7 DX (Nikon Z)",
+    "price": 299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-z-dx-24mm-f1-7",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-18-55mm-f3_5-5_6-afp_dx_stab",
+    "model_name": "Nikon 18-55mm f/3.5-5.6 AFP DX STAB (Nikon F)",
+    "price": 299.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-p-dx-18-55mm-f3-5-5-6g-vr",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-om-system-micro-four-thirds-40-150mm-f4-5_6",
+    "model_name": "OM System 40-150mm f/4-5.6 (Micro Four Thirds)",
+    "price": 269.99,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/olympus-m-zuiko-40-150mm-f4-0-5-6-r-ed",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-fujifilm-fujifilm-x-35mm-f2",
+    "model_name": "Fujifilm 35mm f/2 (Fujifilm X)",
+    "price": 269.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/fujifilm-xc-35mm-f2",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-50mm-f0_9",
+    "model_name": "7Artisans 50mm f/0.9 (Sony E)",
+    "price": 268.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-50mm-f0-95-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-pentax-pentax-k-40mm-f2_8",
+    "model_name": "Pentax 40mm f/2.8 (Pentax K)",
+    "price": 259.64,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/pentax-da-40mm-f2-8-xs-smc",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-l-mount-26mm-f8",
+    "model_name": "Panasonic 26mm f/8 (L-Mount)",
+    "price": 249.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-s-26mm-f8",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-nikon-nikon-f-50mm-f1_8-afs",
+    "model_name": "Nikon 50mm f/1.8 AFS (Nikon F)",
+    "price": 239.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/nikkor-af-s-50mm-f-1-8g",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-24mm-f2_8-stm",
+    "model_name": "Canon 24mm f/2.8 STM (Canon EF)",
+    "price": 199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-s-24mm-f2-8-stm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-25mm-f1_7",
+    "model_name": "Panasonic 25mm f/1.7 (Micro Four Thirds)",
+    "price": 199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-25mm-f1-7-asph",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-panasonic-micro-four-thirds-45-150mm-f4-5_6-stab",
+    "model_name": "Panasonic 45-150mm f/4-5.6 STAB (Micro Four Thirds)",
+    "price": 199.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/panasonic-lumix-g-vario-45-150mm-f4-0-5-6-asph-mega-ois",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-27mm-f2_8",
+    "model_name": "7Artisans 27mm f/2.8 (Nikon Z)",
+    "price": 174.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-af-27mm-f2-8-aps-c-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-27mm-f2_8",
+    "model_name": "7Artisans 27mm f/2.8 (Sony E)",
+    "price": 174.95,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-af-27mm-f2-8-aps-c-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-canon-canon-ef-50mm-f1_8-stm",
+    "model_name": "Canon 50mm f/1.8 STM (Canon EF)",
+    "price": 169.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/canon-ef-50mm-f1-8-stm",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-fujifilm-x-55mm-f1_4-ii",
+    "model_name": "7Artisans 55mm f/1.4 II (Fujifilm X)",
+    "price": 162.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-55mm-f1-4-mark-ii-fujifilm-x",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-55mm-f1_4-ii",
+    "model_name": "7Artisans 55mm f/1.4 II (Sony E)",
+    "price": 162.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-55mm-f1-4-mark-ii-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-55mm-f1_4-ii",
+    "model_name": "7Artisans 55mm f/1.4 II (Nikon Z)",
+    "price": 162.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-55mm-f1-4-mark-ii-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-canon-rf-55mm-f1_4-ii",
+    "model_name": "7Artisans 55mm f/1.4 II (Canon RF)",
+    "price": 162.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-55mm-f1-4-ii-canon-rf",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-lomography-21mm-f",
+    "model_name": "Lomography 21mm",
+    "price": 119.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/lomography-lomoapparat-21mm-wide-angle-camera-camera-neubau-edition",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-sony-e-35mm-f5_6",
+    "model_name": "7Artisans 35mm f/5.6 (Sony E)",
+    "price": 119.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-35mm-f5-6-sony-e",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-35mm-f5_6",
+    "model_name": "7Artisans 35mm f/5.6 (Nikon Z)",
+    "price": 119.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-35mm-f5-6",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-35mm-f1_2-ii",
+    "model_name": "7Artisans 35mm f/1.2 II (Nikon Z)",
+    "price": 109.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-35mm-f1-2-ii-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-7artisans-nikon-z-35mm-f1_2",
+    "model_name": "7Artisans 35mm f/1.2 (Nikon Z)",
+    "price": 99.0,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/7artisans-35mm-f1-2-nikon-z",
+    "unchanged_since": "2026-10-18"
+   },
+   {
+    "model_key": "lens-lomography-35mm-f",
+    "model_name": "Lomography 35mm",
+    "price": 29.87,
+    "dealer": "The Camera Store",
+    "url": "https://thecamerastore.com/products/lomography-simple-use-reloadable-35mm-camera-lomochrome-purple-400",
+    "unchanged_since": "2026-10-18"
+   }
+  ],
+  "tracked_days": 36,
+  "status": "CAD weakened 2.7% against the USD over 30 days. These Canadian new prices haven't changed in 30 days and may rise if dealers reprice imported stock."
  },
  "new_price_models": 890
 }
