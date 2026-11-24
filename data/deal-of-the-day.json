@@ -881,5 +881,20 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-23T22:59:01+00:00",
   "date": "2026-11-23"
+ },
+ {
+  "type": "rebate",
+  "id": "rebate-https://www.canoncreatorlab.ca/offers/bonus-ignite-frame-lab/",
+  "title": "New Canon rebate: Level Up Sales Event - Bonus Rewards - Canon Creator Lab",
+  "url": "https://www.canoncreatorlab.ca/offers/bonus-ignite-frame-lab/",
+  "dealer": "Canon",
+  "price_cad": null,
+  "reasons": [
+   "new manufacturer offer"
+  ],
+  "score": 999,
+  "is_new": true,
+  "fetched_at": "2026-11-24T21:38:01+00:00",
+  "date": "2026-11-24"
  }
 ]

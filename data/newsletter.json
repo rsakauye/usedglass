@@ -1,82 +1,41 @@
 {
- "date": "2026-11-23",
+ "date": "2026-11-24",
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
-   "date": "2026-11-23",
-   "rate": 1.4369,
-   "chg_7d": 0.005,
-   "chg_30d": 0.0269,
-   "text_30d": "The Canadian dollar weakened 2.7% against the USD over 30 days."
+   "date": "2026-11-24",
+   "rate": 1.4296,
+   "chg_7d": 0.0003,
+   "chg_30d": 0.0217,
+   "text_30d": "The Canadian dollar weakened 2.2% against the USD over 30 days."
   },
   "EUR": {
-   "date": "2026-11-23",
-   "rate": 1.5672,
-   "chg_7d": -0.0041,
-   "chg_30d": 0.0003,
+   "date": "2026-11-24",
+   "rate": 1.5679,
+   "chg_7d": -0.003,
+   "chg_30d": 0.0008,
    "text_30d": "The Canadian dollar is flat against the EUR over 30 days."
   },
   "GBP": {
-   "date": "2026-11-23",
-   "rate": 1.8734,
-   "chg_7d": -0.0067,
-   "chg_30d": 0.0011,
-   "text_30d": "The Canadian dollar weakened 0.1% against the GBP over 30 days."
+   "date": "2026-11-24",
+   "rate": 1.8744,
+   "chg_7d": -0.007,
+   "chg_30d": 0.0017,
+   "text_30d": "The Canadian dollar weakened 0.2% against the GBP over 30 days."
   },
   "JPY": {
-   "date": "2026-11-23",
-   "rate": 0.00903,
-   "chg_7d": 0.0078,
-   "chg_30d": 0.0123,
-   "text_30d": "The Canadian dollar weakened 1.2% against the JPY over 30 days."
+   "date": "2026-11-24",
+   "rate": 0.00898,
+   "chg_7d": 0.0011,
+   "chg_30d": 0.0067,
+   "text_30d": "The Canadian dollar weakened 0.7% against the JPY over 30 days."
   }
  },
- "fx_headline": "The Canadian dollar weakened 2.7% against the USD over 30 days.",
+ "fx_headline": "The Canadian dollar weakened 2.2% against the USD over 30 days.",
  "rate_moved": {
-  "status": "CAD weakened 2.7% against the USD over 30 days. These Canadian new prices haven't changed in 30 days and may rise if dealers reprice imported stock.",
-  "direction": "cad_weaker",
-  "items": [
-   {
-    "model_key": "lens-canon-canon-rf-1200mm-f8-l_stab",
-    "model_name": "Canon 1200mm f/8 L STAB (Canon RF)",
-    "price": 28999.0,
-    "dealer": "The Camera Store",
-    "url": "https://thecamerastore.com/products/canon-rf-1200mm-f8-l-is-usm",
-    "unchanged_since": "2026-10-18"
-   },
-   {
-    "model_key": "lens-canon-canon-rf-800mm-f5_6-l_stab",
-    "model_name": "Canon 800mm f/5.6 L STAB (Canon RF)",
-    "price": 24999.0,
-    "dealer": "The Camera Store",
-    "url": "https://thecamerastore.com/products/canon-rf-800mm-f5-6-l-is-usm",
-    "unchanged_since": "2026-10-18"
-   },
-   {
-    "model_key": "lens-leica-leica-m-75mm-f1_2",
-    "model_name": "Leica 75mm f/1.2 (Leica M)",
-    "price": 22015.0,
-    "dealer": "The Camera Store",
-    "url": "https://thecamerastore.com/products/leica-noctilux-m-75mm-f1-25-asph",
-    "unchanged_since": "2026-10-18"
-   },
-   {
-    "model_key": "lens-nikon-nikon-z-600mm-f4-s_stab",
-    "model_name": "Nikon 600mm f/4 S STAB (Nikon Z)",
-    "price": 20819.0,
-    "dealer": "The Camera Store",
-    "url": "https://thecamerastore.com/products/nikkor-z-600mm-f4-tc-vr-s",
-    "unchanged_since": "2026-10-18"
-   },
-   {
-    "model_key": "lens-leica-leica-m-90mm-f1_5",
-    "model_name": "Leica 90mm f/1.5 (Leica M)",
-    "price": 20815.0,
-    "dealer": "The Camera Store",
-    "url": "https://thecamerastore.com/products/leica-summilux-m-90mm-f1-5-asph",
-    "unchanged_since": "2026-10-18"
-   }
-  ]
+  "status": "CAD moved 2.2% against the USD over 30 days, under the 2.5% threshold, so no price flags today.",
+  "direction": null,
+  "items": []
  },
  "currency_gaps": [
   {
@@ -87,18 +46,18 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-23T22:59:01+00:00",
-   "rate": 1.4369,
-   "goods_cad": 43.84,
-   "ship_cad": 9.27,
+   "as_of": "2026-11-24T21:38:01+00:00",
+   "rate": 1.4296,
+   "goods_cad": 43.62,
+   "ship_cad": 9.22,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.66,
-   "landed_cad": 80.76,
+   "tax_cad": 2.64,
+   "landed_cad": 80.48,
    "tax_rate": 0.05,
    "ca_price": 10365.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/leica-q3",
-   "saving_cad": 10284.24,
+   "saving_cad": 10284.52,
    "saving_pct": 0.992,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -111,18 +70,18 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-23T22:59:01+00:00",
-   "rate": 1.4369,
-   "goods_cad": 36.2,
-   "ship_cad": 9.27,
+   "as_of": "2026-11-24T21:38:01+00:00",
+   "rate": 1.4296,
+   "goods_cad": 36.01,
+   "ship_cad": 9.22,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.27,
-   "landed_cad": 72.74,
+   "tax_cad": 2.26,
+   "landed_cad": 72.49,
    "tax_rate": 0.05,
    "ca_price": 6999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/nikon-z9-body",
-   "saving_cad": 6926.26,
+   "saving_cad": 6926.51,
    "saving_pct": 0.99,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -135,18 +94,18 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-23T22:59:01+00:00",
-   "rate": 1.4369,
-   "goods_cad": 38.02,
-   "ship_cad": 9.27,
+   "as_of": "2026-11-24T21:38:01+00:00",
+   "rate": 1.4296,
+   "goods_cad": 37.83,
+   "ship_cad": 9.22,
    "brokerage_cad": 25.0,
-   "tax_cad": 2.36,
-   "landed_cad": 74.65,
+   "tax_cad": 2.35,
+   "landed_cad": 74.4,
    "tax_rate": 0.05,
    "ca_price": 4999.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/canon-eos-r5-mark-ii",
-   "saving_cad": 4924.35,
+   "saving_cad": 4924.6,
    "saving_pct": 0.985,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -159,18 +118,18 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-23T22:59:01+00:00",
-   "rate": 1.4369,
-   "goods_cad": 15.81,
+   "as_of": "2026-11-24T21:38:01+00:00",
+   "rate": 1.4296,
+   "goods_cad": 15.73,
    "ship_cad": 0.0,
    "brokerage_cad": 25.0,
    "tax_cad": 0.79,
-   "landed_cad": 41.6,
+   "landed_cad": 41.51,
    "tax_rate": 0.05,
    "ca_price": 4499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7s-iii",
-   "saving_cad": 4457.4,
+   "saving_cad": 4457.49,
    "saving_pct": 0.991,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -183,18 +142,18 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-23T22:59:01+00:00",
-   "rate": 1.4369,
-   "goods_cad": 54.6,
-   "ship_cad": 15.27,
+   "as_of": "2026-11-24T21:38:01+00:00",
+   "rate": 1.4296,
+   "goods_cad": 54.32,
+   "ship_cad": 15.2,
    "brokerage_cad": 25.0,
-   "tax_cad": 3.49,
-   "landed_cad": 98.37,
+   "tax_cad": 3.48,
+   "landed_cad": 98.0,
    "tax_rate": 0.05,
    "ca_price": 4499.0,
    "ca_where": "The Camera Store",
    "ca_url": "https://thecamerastore.com/products/sony-a7r-v",
-   "saving_cad": 4400.63,
+   "saving_cad": 4401.0,
    "saving_pct": 0.978,
    "flagged": true,
    "label": "Estimate: landed cost depends on your province, courier and the seller's shipping."
@@ -205,10 +164,10 @@
    "title": "Light Lens Lab 35mm f2 8-Element V.1 Black Paint Leica-M Mount Lens",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/820347312823?hash=itembf00829ab7%3Ag%3AuTEAAeSwYj1q9fI2&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 1217.81,
+   "price_cad": 1184.87,
    "deal_score": 100,
    "score_why": [
-    "66% below the median of 6 comparable listings",
+    "67% below the median of 6 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Leica 35mm f/2 (Leica M)"
@@ -217,25 +176,13 @@
    "title": "Leica 90mm f2 Summicron-M Lens Silver 11123 SEOOM BARGAIN",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/820377232153?hash=itembf024b2319%3Ag%3AGjIAAeSw4qBrAG5h&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 615.36,
+   "price_cad": 616.13,
    "deal_score": 100,
    "score_why": [
     "65% below the median of 5 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
    "model_name": "Leica 90mm f/2 (Leica M)"
-  },
-  {
-   "title": "Nikon FE 35mm Film SLR Camera Silver w/ AF Nikkor 50mm f/1.8D Lens & Lowepro Bag",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/920139578969?hash=itemd63c97be59%3Ag%3ATi8AAeSwGGFq9y6w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 190.0,
-   "deal_score": 100,
-   "score_why": [
-    "44% below the median of 14 comparable listings",
-    "looks like a kit or a different version, so it is only compared with similar listings"
-   ],
-   "model_name": "Nikon FE"
   },
   {
    "title": "Pentax K1000 35mm SLR Film Camera With 28mm Lens - Missing Rewind Knob -",
@@ -248,6 +195,18 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Pentax K1000"
+  },
+  {
+   "title": "Nikon FE 35mm Film SLR Camera with Nikkor 50mm f/1.8 Lens Untested Vintage",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/147672280568?hash=item2261f42df8%3Ag%3Auu0AAeSwm9Bq8OcL&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 172.34,
+   "deal_score": 100,
+   "score_why": [
+    "56% below the median of 15 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Nikon FE"
   },
   {
    "title": "Minolta XG-M (EX)(New Seals) used",
@@ -286,6 +245,18 @@
    "model_name": "Pentax 28mm f/2.8 (Pentax K)"
   },
   {
+   "title": "Pentax Spotmatic SPII + SMC Takumar 55mm f1.8 (BGN) used",
+   "dealer": "McBain Camera",
+   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8908143",
+   "price_cad": 69.99,
+   "deal_score": 100,
+   "score_why": [
+    "53% below the median of 21 comparable listings",
+    "looks like a kit or a different version, so it is only compared with similar listings"
+   ],
+   "model_name": "Pentax SPOTMATIC"
+  },
+  {
    "title": "Minolta XG-M 35mm SLR Film Camera 80-200mm f/4 Macro Zoom Lens Tested Working",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/820337705847?hash=itembefff00377%3Ag%3A82YAAeSwiw9q8Wxn&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
@@ -298,28 +269,16 @@
    "model_name": "Minolta XGM"
   },
   {
-   "title": "Pentax Spotmatic SPII + SMC Takumar 55mm f1.8 (BGN) used",
-   "dealer": "McBain Camera",
-   "url": "https://www.mcbaincamera.com/productdetail.php?mcbain_id=U8908143",
-   "price_cad": 69.99,
+   "title": "Nikon FE 35mm Film SLR Camera Silver w/ AF Nikkor 50mm f/1.8D Lens & Lowepro Bag",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/920139578969?hash=itemd63c97be59%3Ag%3ATi8AAeSwGGFq9y6w&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 190.0,
    "deal_score": 100,
    "score_why": [
-    "53% below the median of 20 comparable listings",
+    "52% below the median of 15 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
-   "model_name": "Pentax SPOTMATIC"
-  },
-  {
-   "title": "Lot of 2 Canon EOS Rebel XS & Rebel 35mm Film SLR Camera Bodies Tested Working",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/147682287318?hash=item22628cded6%3Ag%3AybQAAeSw%7EC5q-lFt&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 74.99,
-   "deal_score": 100,
-   "score_why": [
-    "50% below the median of 11 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Canon REBELXS"
+   "model_name": "Nikon FE"
   }
  ]
 }
