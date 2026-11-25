@@ -1,5 +1,5 @@
 {
- "date": "2026-11-24",
+ "date": "2026-11-25",
  "note": "Data hook for the weekly Kit broadcast; regenerated daily.",
  "fx": {
   "USD": {
@@ -46,7 +46,7 @@
    "url": "https://www.ebay.com/itm/800387827859?_skw=Leica+Q3&hash=itemba5ad50893:g:P-MAAeSwmaVqYIll",
    "price": 30.51,
    "currency": "USD",
-   "as_of": "2026-11-24T21:38:01+00:00",
+   "as_of": "2026-11-25T20:46:01+00:00",
    "rate": 1.4296,
    "goods_cad": 43.62,
    "ship_cad": 9.22,
@@ -70,7 +70,7 @@
    "url": "https://www.ebay.com/itm/800874525846?_skw=Nikon+Z9&hash=itemba77d77496:g:yCoAAeSww~1q6swq",
    "price": 25.19,
    "currency": "USD",
-   "as_of": "2026-11-24T21:38:01+00:00",
+   "as_of": "2026-11-25T20:46:01+00:00",
    "rate": 1.4296,
    "goods_cad": 36.01,
    "ship_cad": 9.22,
@@ -94,7 +94,7 @@
    "url": "https://www.ebay.com/itm/366764799690?_skw=Canon+EOS+R5+Mark+II&hash=item5564e2b6ca:g:MkcAAeSwVJFq4MYt",
    "price": 26.46,
    "currency": "USD",
-   "as_of": "2026-11-24T21:38:01+00:00",
+   "as_of": "2026-11-25T20:46:01+00:00",
    "rate": 1.4296,
    "goods_cad": 37.83,
    "ship_cad": 9.22,
@@ -118,7 +118,7 @@
    "url": "https://www.ebay.com/itm/387903320595?_skw=Sony+A7S+III&hash=item5a50d6f213:g:U~kAAeSwB9ZqzUGW",
    "price": 11.0,
    "currency": "USD",
-   "as_of": "2026-11-24T21:38:01+00:00",
+   "as_of": "2026-11-25T20:46:01+00:00",
    "rate": 1.4296,
    "goods_cad": 15.73,
    "ship_cad": 0.0,
@@ -142,7 +142,7 @@
    "url": "https://www.ebay.com/itm/236170303986?_skw=Sony+A7R+V&hash=item36fcd8d9f2:g:GAEAAOSw2Itk3B4o",
    "price": 38.0,
    "currency": "USD",
-   "as_of": "2026-11-24T21:38:01+00:00",
+   "as_of": "2026-11-25T20:46:01+00:00",
    "rate": 1.4296,
    "goods_cad": 54.32,
    "ship_cad": 15.2,
@@ -164,7 +164,7 @@
    "title": "Light Lens Lab 35mm f2 8-Element V.1 Black Paint Leica-M Mount Lens",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/820347312823?hash=itembf00829ab7%3Ag%3AuTEAAeSwYj1q9fI2&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 1184.87,
+   "price_cad": 1177.28,
    "deal_score": 100,
    "score_why": [
     "67% below the median of 6 comparable listings",
@@ -173,25 +173,13 @@
    "model_name": "Leica 35mm f/2 (Leica M)"
   },
   {
-   "title": "Leica 90mm f2 Summicron-M Lens Silver 11123 SEOOM BARGAIN",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/820377232153?hash=itembf024b2319%3Ag%3AGjIAAeSw4qBrAG5h&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "price_cad": 616.13,
-   "deal_score": 100,
-   "score_why": [
-    "65% below the median of 5 comparable listings",
-    "no release-date or successor data for this model yet, so the score uses price history only"
-   ],
-   "model_name": "Leica 90mm f/2 (Leica M)"
-  },
-  {
    "title": "Pentax K1000 35mm SLR Film Camera With 28mm Lens - Missing Rewind Knob -",
    "dealer": "eBay (Canadian sellers)",
    "url": "https://www.ebay.ca/itm/198762510907?hash=item2e472b3a3b%3Ag%3AmXgAAeSwXYNq5jrD&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
    "price_cad": 79.99,
    "deal_score": 100,
    "score_why": [
-    "58% below the median of 32 comparable listings",
+    "59% below the median of 34 comparable listings",
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Pentax K1000"
@@ -221,16 +209,16 @@
    "model_name": "Minolta XGM"
   },
   {
-   "title": "Canon EF 50mm f/1.4",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/canon-usage-8-canon-ef-50mm-f-14-u108226",
-   "price_cad": 99.0,
+   "title": "Canon Zoom Lens EF-S 55-250mm f/4-5.6 IS Telephoto Zoom Lens w/ Canon ET-60 Hood",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/840139393333?hash=itemc39c35c935%3Ag%3A5r4AAeSw9mFq%7EMnX&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 99.99,
    "deal_score": 100,
    "score_why": [
-    "56% below the median of 12 comparable listings",
+    "40% below the median of 10 comparable listings",
     "no release-date or successor data for this model yet, so the score uses price history only"
    ],
-   "model_name": "Canon 50mm f/1.4 (Canon EF)"
+   "model_name": "Canon 55-250mm f/4-5.6 STAB (Canon EF)"
   },
   {
    "title": "Image MC Pentax M(K) 28mm F2.8 Used Lens",
@@ -279,6 +267,18 @@
     "looks like a kit or a different version, so it is only compared with similar listings"
    ],
    "model_name": "Nikon FE"
+  },
+  {
+   "title": "Lot of 2 Canon EOS Rebel XS & Rebel 35mm Film SLR Camera Bodies Tested Working",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/147682287318?hash=item22628cded6%3Ag%3AybQAAeSw%7EC5q-lFt&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "price_cad": 74.99,
+   "deal_score": 100,
+   "score_why": [
+    "50% below the median of 12 comparable listings",
+    "no release-date or successor data for this model yet, so the score uses price history only"
+   ],
+   "model_name": "Canon REBELXS"
   }
  ]
 }
