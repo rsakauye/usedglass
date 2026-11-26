@@ -922,5 +922,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-25T20:46:01+00:00",
   "date": "2026-11-25"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-d96db63172",
+  "title": "Asahi Pentax ES Electro Spotmatic 35mm SLR Camera Body M42 Mount",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/237078403796?hash=item3732f95ad4%3Ag%3ArPEAAeSwZBRqrtOB&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 60.0,
+  "comp_median": 147.5,
+  "comps": 22,
+  "model_key": "camera-pentax-spotmatic",
+  "model_name": "Pentax SPOTMATIC",
+  "condition": null,
+  "reasons": [
+   "59% below the median of 22 comparable listings",
+   "price dropped 20% (was $75)"
+  ],
+  "score": 81.3,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "59% below the median of 22 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-26T20:38:28+00:00",
+  "date": "2026-11-26"
  }
 ]
