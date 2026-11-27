@@ -949,5 +949,32 @@
   "score_basis": "history only (no model metadata yet)",
   "fetched_at": "2026-11-26T20:38:28+00:00",
   "date": "2026-11-26"
+ },
+ {
+  "type": "listing",
+  "id": "ebay-cfd0fe23d9",
+  "title": "Nikon FE 3696599 Chrome 35mm SLR Film Camera w/ Lens Untested Made In Japan",
+  "dealer": "eBay (Canadian sellers)",
+  "url": "https://www.ebay.ca/itm/237161578168?hash=item3737ee7eb8%3Ag%3AY2YAAeSwv%7EFq6io1&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+  "price_cad": 200.0,
+  "comp_median": 395.0,
+  "comps": 15,
+  "model_key": "camera-nikon-fe",
+  "model_name": "Nikon FE",
+  "condition": null,
+  "reasons": [
+   "49% below the median of 15 comparable listings",
+   "price dropped 20% (was $250)"
+  ],
+  "score": 71.4,
+  "is_new": false,
+  "deal_score": 100,
+  "score_why": [
+   "49% below the median of 15 comparable listings",
+   "looks like a kit or a different version, so it is only compared with similar listings"
+  ],
+  "score_basis": "history only (bundle or version mismatch)",
+  "fetched_at": "2026-11-27T20:24:37+00:00",
+  "date": "2026-11-27"
  }
 ]
