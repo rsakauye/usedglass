@@ -1,7 +1,7 @@
 {
- "week_start": "2026-11-20",
- "week_end": "2026-11-27",
- "generated_at": "2026-11-27T20:24:37+00:00",
+ "week_start": "2026-11-21",
+ "week_end": "2026-11-28",
+ "generated_at": "2026-11-28T19:13:10+00:00",
  "count": 25,
  "items": [
   {
@@ -18,6 +18,36 @@
    "saved_cad": 110,
    "drop_date": "2026-11-23",
    "model_path": "/model/lens-tamron-60-300mm-f/"
+  },
+  {
+   "id": "ebay-45ebd10089",
+   "title": "TAMRON Telephoto Zoom Lens AF 70-300mm F4-5.6 Di LD MACRO 1:2 A17",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/198745269027?hash=item2e46242323%3Ag%3AbUoAAeSwElZq3m1Q&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "lens-tamron-70-300mm-f4-5_6-macro",
+   "model_name": "Tamron 70-300mm f/4-5.6 MACRO",
+   "category": "lens",
+   "old_price": 119.19,
+   "new_price": 70.19,
+   "pct": 0.411,
+   "saved_cad": 49,
+   "drop_date": "2026-11-28",
+   "model_path": "/model/lens-tamron-70-300mm-f4-5_6-macro/"
+  },
+  {
+   "id": "ebay-2fda7df97e",
+   "title": "Vintage Canon Sure Shot 76 Zoom SAF 38-76mm Film Camera - Tested Working",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/147617363161?hash=item225eae34d9%3Ag%3AJSMAAeSwxE9qwUnU&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 108.63,
+   "new_price": 64.63,
+   "pct": 0.405,
+   "saved_cad": 44,
+   "drop_date": "2026-11-28",
+   "model_path": null
   },
   {
    "id": "ebay-73e8559c8a",
@@ -110,21 +140,6 @@
    "model_path": null
   },
   {
-   "id": "gosselin-d12a2da229",
-   "title": "Sony 90mm f2.8 macro",
-   "dealer": "Gosselin Photo",
-   "url": "https://gosselinphoto.ca/products/sony-usage-8-sony-90mm-f28-macro-u105251",
-   "model_key": "lens-sony-sony-e-90mm-f2_8-macro",
-   "model_name": "Sony 90mm f/2.8 MACRO (Sony E)",
-   "category": "lens",
-   "old_price": 999,
-   "new_price": 699,
-   "pct": 0.3,
-   "saved_cad": 300,
-   "drop_date": "2026-11-21",
-   "model_path": "/model/lens-sony-sony-e-90mm-f2_8-macro/"
-  },
-  {
    "id": "ebay-24ece7e7a1",
    "title": "Instax Wide 300 (Fujifilm)",
    "dealer": "eBay (Canadian sellers)",
@@ -140,49 +155,19 @@
    "model_path": null
   },
   {
-   "id": "ebay-bcb851fa69",
-   "title": "Pentax Asahi K1000 35mm SLR Camera w/ 50mm f/1.2 Lens Made in Japan -VG",
+   "id": "ebay-9d1def7330",
+   "title": "Canon IXY 10S Pink PowerShot SD3500 IS IXUS 210 14.1MP Camera",
    "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/307212532059?hash=item47874b395b%3Ag%3A%7EFMAAeSwV7hqwDGG&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": "camera-pentax-k1000",
-   "model_name": "Pentax K1000",
+   "url": "https://www.ebay.ca/itm/840105854398?hash=itemc39a3605be%3Ag%3AvIIAAeSwKhlq7-RR&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": "camera-canon-powershotsd3500",
+   "model_name": "Canon POWERSHOTSD3500",
    "category": "camera",
-   "old_price": 499.95,
-   "new_price": 349.96,
+   "old_price": 499,
+   "new_price": 349.3,
    "pct": 0.3,
-   "saved_cad": 149.99,
-   "drop_date": "2026-11-22",
-   "model_path": "/model/camera-pentax-k1000/"
-  },
-  {
-   "id": "ebay-916f439e0b",
-   "title": "Panasonic Lumix DMC-GF3X Digital Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/880133161239?hash=itemccec064117%3Ag%3AXFIAAeSwYKdq%7EyiB&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 350,
-   "new_price": 245,
-   "pct": 0.3,
-   "saved_cad": 105,
-   "drop_date": "2026-11-25",
-   "model_path": null
-  },
-  {
-   "id": "ebay-2fda7df97e",
-   "title": "Vintage Canon Sure Shot 76 Zoom SAF 38-76mm Film Camera - Tested Working",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/147617363161?hash=item225eae34d9%3Ag%3AJSMAAeSwxE9qwUnU&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 108.63,
-   "new_price": 76.04,
-   "pct": 0.3,
-   "saved_cad": 32.59,
-   "drop_date": "2026-11-26",
-   "model_path": null
+   "saved_cad": 149.7,
+   "drop_date": "2026-11-28",
+   "model_path": "/model/camera-canon-powershotsd3500/"
   },
   {
    "id": "ebay-eb1dae62a3",
@@ -275,21 +260,6 @@
    "model_path": "/model/lens-sigma-pentax-k-28-200mm-f4-5_6-macro/"
   },
   {
-   "id": "ebay-755c15528c",
-   "title": "Yashica dental eye Camera",
-   "dealer": "eBay (Canadian sellers)",
-   "url": "https://www.ebay.ca/itm/840146155799?hash=itemc39c9cf917%3Ag%3ArHUAAeSw5f9q%7E24i&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
-   "model_key": null,
-   "model_name": null,
-   "category": "camera",
-   "old_price": 157.74,
-   "new_price": 113.97,
-   "pct": 0.277,
-   "saved_cad": 43.77,
-   "drop_date": "2026-11-27",
-   "model_path": null
-  },
-  {
    "id": "ebay-febf6d98dc",
    "title": "Pentax Asahi K1000 35mm Camera + Case + 80-200mm Lens UNTESTED",
    "dealer": "eBay (Canadian sellers)",
@@ -377,6 +347,36 @@
    "pct": 0.258,
    "saved_cad": 31,
    "drop_date": "2026-11-24",
+   "model_path": null
+  },
+  {
+   "id": "ebay-245449ce62",
+   "title": "Panasonic Lumix DMC-FZ28 Digital Camera Used Tested",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/117505790512?hash=item1b5be41230%3Ag%3ADJ0AAeSwpg1obbNC&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "camera",
+   "old_price": 141.15,
+   "new_price": 105,
+   "pct": 0.256,
+   "saved_cad": 36.15,
+   "drop_date": "2026-11-26",
+   "model_path": null
+  },
+  {
+   "id": "ebay-379b564d1a",
+   "title": "Canon EOS Rebel T7 DSLR Camera Bundle – 18-135mm Lens + Flash + Accessories",
+   "dealer": "eBay (Canadian sellers)",
+   "url": "https://www.ebay.ca/itm/960245212856?hash=itemdf931326b8%3Ag%3AMcEAAeSwh1RrCQtk&mkevt=1&mkcid=1&mkrid=706-53473-19255-0&campid=5339231596&customid=&toolid=10049",
+   "model_key": null,
+   "model_name": null,
+   "category": "flash/lighting",
+   "old_price": 470,
+   "new_price": 350,
+   "pct": 0.255,
+   "saved_cad": 120,
+   "drop_date": "2026-11-28",
    "model_path": null
   }
  ]

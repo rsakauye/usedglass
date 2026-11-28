@@ -976,5 +976,31 @@
   "score_basis": "history only (bundle or version mismatch)",
   "fetched_at": "2026-11-27T20:24:37+00:00",
   "date": "2026-11-27"
+ },
+ {
+  "type": "listing",
+  "id": "gosselin-0e98879b37",
+  "title": "Canon EF 75–300mm f/4-5.6",
+  "dealer": "Gosselin Photo",
+  "url": "https://gosselinphoto.ca/products/canon-usage-7-canon-ef-75300mm-f-4-56-u108787",
+  "price_cad": 89.99,
+  "comp_median": 179.4,
+  "comps": 3,
+  "model_key": "lens-canon-canon-ef-75-300mm-f4-5_6",
+  "model_name": "Canon 75-300mm f/4-5.6 (Canon EF)",
+  "condition": "Fair",
+  "reasons": [
+   "50% below the median of 3 comparable listings"
+  ],
+  "score": 60.8,
+  "is_new": true,
+  "deal_score": 100,
+  "score_why": [
+   "50% below the median of 3 comparable listings",
+   "no release-date or successor data for this model yet, so the score uses price history only"
+  ],
+  "score_basis": "history only (no model metadata yet)",
+  "fetched_at": "2026-11-28T19:13:10+00:00",
+  "date": "2026-11-28"
  }
 ]
